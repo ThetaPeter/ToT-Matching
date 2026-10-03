@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2021_p7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]",
+      "last_claim": "[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.8,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]",
+      "last_claim": "[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\nContinue from: [\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]",
+      "last_claim": "Continue from: [\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\nContinue from:\n[\"Let \\(f(x,y)=(xy-1)^2+(x+y)^2\\). Expanding gives \\(f(x,y)=x^2y^2+x^2+y^2+1\\).\", \"The identity \\(x^2y^2+x^2+y^2+1=(1+x^2)(1+y^2)\\) holds for all real \\(x,y\\).\"]",
+      "last_claim": "[\"Let \\(f(x,y)=(xy-1)^2+(x+y)^2\\). Expanding gives \\(f(x,y)=x^2y^2+x^2+y^2+1\\).\", \"The identity \\(x^2y^2+x^2+y^2+1=(1+x^2)(1+y^2)\\) holds for all real \\(x,y\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nTherefore the given expression is always at least 1.",
+      "last_claim": "Therefore the given expression is always at least 1.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nHence the least possible value is 1.",
+      "last_claim": "Hence the least possible value is 1.",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\nContinue from: [\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\nThis product is always at least 1, since each factor is at least 1.",
+      "last_claim": "This product is always at least 1, since each factor is at least 1.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\nContinue from: [\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\nEquality is attained at x=y=0, so the minimum value is 1.",
+      "last_claim": "Equality is attained at x=y=0, so the minimum value is 1.",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nTherefore the given expression is always at least 1.\n[\"Equality holds when \\(x=y=0\\).\", \"Hence the least possible value of the expression is \\(1\\).\"]",
+      "last_claim": "[\"Equality holds when \\(x=y=0\\).\", \"Hence the least possible value of the expression is \\(1\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nTherefore the given expression is always at least 1.\nContinue from: Therefore the given expression is always at least 1.",
+      "last_claim": "Continue from: Therefore the given expression is always at least 1.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nHence the least possible value is 1.\nTherefore the answer is 1.",
+      "last_claim": "Therefore the answer is 1.",
+      "last_claim_id": "ts_7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "What is the least possible value of $(xy-1)^2+(x+y)^2$ for real numbers $x$ and $y$?\n\n$\\textbf{(A)} ~0\\qquad\\textbf{(B)} ~\\frac{1}{4}\\qquad\\textbf{(C)} ~\\frac{1}{2} \\qquad\\textbf{(D)} ~1 \\qquad\\textbf{(E)} Show that it is \\textbf{(D)} ~1.\n[\"The given expression expands to \\(x^2 y^2 + x^2 + y^2 + 1\\).\", \"Hence it equals \\((1+x^2)(1+y^2)\\).\"]\n[\"Since \\(1+x^2\\ge 1\\) and \\(1+y^2\\ge 1\\), the product is at least \\(1\\).\", \"Equality holds at \\(x=y=0\\), so the minimum value is \\(1\\).\"]\nHence the least possible value is 1.\nThis completes the proof that the minimum is 1.",
+      "last_claim": "This completes the proof that the minimum is 1.",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

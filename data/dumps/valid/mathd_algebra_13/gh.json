@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find $A$ and $B$ such that\n\\[\\frac{4x}{x^2-8x+15} = \\frac{A}{x-3} + \\frac{B}{x-5}\\]for all $x$ besides 3 and 5. Express your answer as an ordered pair in the form $(A, B).$ Show that it is (-6, 10).",
+      "statement": "Find $A$ and $B$ such that\n\\[\\frac{4x}{x^2-8x+15} = \\frac{A}{x-3} + \\frac{B}{x-5}\\]for all $x$ besides 3 and 5. Express your answer as an ordered pair in the form $(A, B).$ Show that it is (-6, 10).",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4262413420606707,
+      "support": null
+    },
+    {
+      "id": "l112",
+      "natural_language": "Advance the argument (step 170): continue from Find $A$ and $B$ such that\n\\[\\frac{4x}{x^2-8x+15} = \\frac{A}{x-3} + \\frac{B}{x-5",
+      "statement": "Advance the argument (step 170): continue from Find $A$ and $B$ such that\n\\[\\frac{4x}{x^2-8x+15} = \\frac{A}{x-3} + \\frac{B}{x-5",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5694947974514994,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2002_p21",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The sequence of units digits is purely periodic.\"]",
+      "last_claim": "[\"The sequence of units digits is purely periodic.\"]",
+      "last_claim_id": "l0",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]",
+      "last_claim": "[\"The minimal period of the sequence is 12.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The sequence of units digits is purely periodic.\"]\nThe sequence is purely periodic with period 12.",
+      "last_claim": "The sequence is purely periodic with period 12.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The sequence of units digits is purely periodic.\"]\nThe repeating block is 4,7,1,8,9,7,6,3,9,2,1,3 and the sum of one period is 60.",
+      "last_claim": "The repeating block is 4,7,1,8,9,7,6,3,9,2,1,3 and the sum of one period is 60.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\n[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]",
+      "last_claim": "[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\nContinue from: [\"The minimal period of the sequence is 12.\"]",
+      "last_claim": "Continue from: [\"The minimal period of the sequence is 12.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_6",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\nContinue from: [\"The minimal period of the sequence is 12.\"]\nThe sum of the twelve terms in one period equals 60.",
+      "last_claim": "The sum of the twelve terms in one period equals 60.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.95,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_6",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\nContinue from: [\"The minimal period of the sequence is 12.\"]\nConsequently 166 complete periods produce the partial sum 9960 at n=1992.",
+      "last_claim": "Consequently 166 complete periods produce the partial sum 9960 at n=1992.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.95,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\n[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]\n[\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]",
+      "last_claim": "[\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]",
+      "last_claim_id": "ts_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\n[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]\nContinue from: [\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]",
+      "last_claim": "Continue from: [\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]",
+      "last_claim_id": "ts_9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\n[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]\n[\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]\n[\"Since every term of the sequence is a positive digit, the partial sums \\(S_n\\) are strictly increasing.\", \"Therefore the smallest \\(n\\) with \\(S_n>10000\\) is exactly \\(1999\\).\"]",
+      "last_claim": "[\"Since every term of the sequence is a positive digit, the partial sums \\(S_n\\) are strictly increasing.\", \"Therefore the smallest \\(n\\) with \\(S_n>10000\\) is exactly \\(1999\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\n[\"The sum of one period of 12 terms is 60.\", \"Thus \\(S_{12k}=60k\\), so \\(S_{1992}=9960\\).\"]\n[\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]\nContinue from: [\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]",
+      "last_claim": "Continue from: [\"The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\).\",\"The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\).\"]",
+      "last_claim_id": "ts_13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\nContinue from: [\"The minimal period of the sequence is 12.\"]\nThe sum of the twelve terms in one period equals 60.\nAfter 166 periods we have n=1992 and S_{1992}=9960.",
+      "last_claim": "After 166 periods we have n=1992 and S_{1992}=9960.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "Consider the sequence of numbers: $4,7,1,8,9,7,6,\\dots$ For $n>2$, the $n$-th term of the sequence is the units digit of the sum of the two previous terms. Let $S_n$ denote the sum of the first $n$ terms of this sequence. The smallest value of $n$ for which $S_n>10,000$ is: \n\n$\n\\text{(A) }1992\n\\qquad\n\\text{(B) }1999\n\\qquad\n\\text{(C) }2001\n\\qquad\n\\text{(D) }2002\n\\qquad\n\\text{(E) }2004\n$ Show that it is (B)1999.\n[\"The minimal period of the sequence is 12.\"]\nContinue from: [\"The minimal period of the sequence is 12.\"]\nThe sum of the twelve terms in one period equals 60.\nThe next seven terms are 4,7,1,8,9,7,6, whence S_{1998}=9996<10000 and S_{1999}=10002>10000.",
+      "last_claim": "The next seven terms are 4,7,1,8,9,7,6, whence S_{1998}=9996<10000 and S_{1999}=10002>10000.",
+      "last_claim_id": "ts_16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

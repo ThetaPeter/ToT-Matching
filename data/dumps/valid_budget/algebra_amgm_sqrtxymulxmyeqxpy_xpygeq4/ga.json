@@ -1,0 +1,495 @@
+{
+  "problem_id": "algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Introduce sum and product variables and rewrite the given condition.",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Introduce the ratio variable t and express s in terms of t.",
+      "statement": "Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Show that the expression for s in terms of t is at least 4 for t\\ge1.",
+      "statement": "Let f(t)=(t^{2}+1)^{2}/(t(t^{2}-1)) for t>1. Then f(t)\\ge4, with equality at t=\\sqrt2+\\sqrt3 or equivalent root of the resulting quartic.",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "From the rewritten equation, square both sides and analyze the quadratic in p to obtain the discriminant condition implying s>=4.",
+      "statement": "From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Reduce the inequality s>=4 to a polynomial inequality in t.",
+      "statement": "It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Square the rewritten condition and obtain the quadratic in p whose discriminant forces s>=4.",
+      "statement": "Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) produces the quadratic equation 4p^2 - s^2 p + s^2 =0; non-negative discriminant requires s^2(s^2-16)>=0, hence s>=4 (with equality possible when the root p lies in (0,s^2/4)).",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Introduce sum and product variables.",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\).",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Apply AM-GM to x and y.",
+      "statement": "By AM-GM, \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\), i.e. \\(s/2\\ge\\sqrt{p}\\).",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "From the quadratic in p having non-negative discriminant, conclude s>=4.",
+      "statement": "The condition that the quadratic 4p^2 - s^2 p + s^2 =0 admits a root p in (0,s^2/4) forces the discriminant s^2(s^2-16)>=0, hence s>=4.",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "statement": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "statement": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l10",
+        "l11"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "statement": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l4",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Square the rewritten condition to obtain a quadratic equation in p.",
+      "statement": "Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) produces the quadratic relation \\(4p^2-s^2 p+s^2=0\\).",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Rewrite the closed-form expression for s as an inequality to be proved.",
+      "statement": "The identity \\(s=(t^2+1)^2/(t(t^2-1))\\) for \\(t>1\\) is equivalent to \\((t^2+1)^2\\ge 4t(t^2-1)\\).",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Square the s,p form of the given equation.",
+      "statement": "Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) yields the quadratic equation \\(4p^2-s^2p+s^2=0\\).",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Non-negative discriminant of the quadratic forces the desired bound on s.",
+      "statement": "The discriminant is \\(s^2(s^2-16)\\); for a real root \\(p\\in(0,s^2/4)\\) we need \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Verify the same bound directly from the closed-form expression in t.",
+      "statement": "The inequality \\((t^2+1)^2\\ge4t(t^2-1)\\) rearranges to \\((t^2-2t-1)^2\\ge0\\), true for all \\(t>1\\).",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l16",
+        "l17"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Equality case in the s,p variables.",
+      "statement": "Equality holds when s=4, whence p=2 and {x,y}={2+√2,2-√2}.",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Equality case in the t variable.",
+      "statement": "Equality holds at t=1+√2, which yields the same pair {x,y}.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l18",
+        "l19"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "statement": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "statement": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l20",
+        "l21"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "The quadratic in p has positive roots satisfying the interval condition precisely when s>=4.",
+      "statement": "The quadratic in \\(p\\) has positive roots \\(p=[s^2\\pm s\\sqrt{s^2-16}]/8\\) satisfying \\(0<p\\le s^2/4\\) precisely when \\(s\\ge4\\), so the given relation forces \\(s\\ge4\\).",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Expanding the desired inequality in t yields a square that is nonnegative.",
+      "statement": "Expanding the desired inequality yields \\(t^4-4t^3+2t^2+4t+1=(t^2-2t-1)^2\\ge0\\) for all \\(t>1\\), with equality at \\(t=1+\\sqrt{2}\\).",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l22",
+        "l23"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "The inequality in t rearranges to a square that is nonnegative for all t>1.",
+      "statement": "The inequality \\((t^2+1)^2\\ge4t(t^2-1)\\) rearranges to \\((t^2-2t-1)^2\\ge0\\), which holds for all t>1, with equality at t=1+\\sqrt{2}.",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_16",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For positive reals x,y with y\\le x and \\sqrt(xy)(x-y)=(x+y), it holds that x+y\\ge4.",
+      "dependencies": [
+        "l4",
+        "l24"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

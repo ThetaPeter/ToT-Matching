@@ -1,0 +1,64 @@
+{
+  "problem_id": "amc12a_2013_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence satisfies S_n = S_{n-2} + S_{n-1} for n >= 3, with S_9 = 110 and S_7 = 42.",
+      "statement": "Fibonacci-like recurrence with given S9 and S7",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "From recurrence, S8 = S7 + S6 so S6 = S8 - S7 evaluates to 26.",
+      "statement": "S6 = 26",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "From recurrence, S7 = S6 + S5 so S5 = S7 - S6 evaluates to 16.",
+      "statement": "S5 = 16",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "S4 evaluates to 10, which is choice (C).",
+      "statement": "S4 = 10 (choice C)",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "S_4=S_6-S_5=26-16=10, matching option (C).",
+      "statement": "S4 = S6 - S5 = 10 (option C)",
+      "dependencies": [
+        "l3",
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

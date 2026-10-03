@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2009_p9",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nNote that a+b+c equals f(1).",
+      "last_claim": "Note that a+b+c equals f(1).",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).",
+      "last_claim": "Substitute x=-2 into the given identity to evaluate f(1).",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim": "This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nSince f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.",
+      "last_claim": "Since f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nNote that a+b+c equals f(1).\n[\"To obtain f(1) set the argument of the given right-hand side equal to 1, i.e., take x=-2.\"]",
+      "last_claim": "[\"To obtain f(1) set the argument of the given right-hand side equal to 1, i.e., take x=-2.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nNote that a+b+c equals f(1).\n[\"Expand a(x+3)^2+b(x+3)+c, equate coefficients with 3x^2+7x+4, and then evaluate a+b+c.\"]",
+      "last_claim": "[\"Expand a(x+3)^2+b(x+3)+c, equate coefficients with 3x^2+7x+4, and then evaluate a+b+c.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\n[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]",
+      "last_claim": "[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\nContinue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim": "Continue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nSince f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.\nTherefore a+b+c equals 2 as required.",
+      "last_claim": "Therefore a+b+c equals 2 as required.",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nSince f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.\nEquating coefficients of f(x+3) with the given quadratic independently confirms the same value.",
+      "last_claim": "Equating coefficients of f(x+3) with the given quadratic independently confirms the same value.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\n[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]\n[\"Therefore \\(a+b+c=2\\).\",\"The required value is thus option (D).\"]",
+      "last_claim": "[\"Therefore \\(a+b+c=2\\).\",\"The required value is thus option (D).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\n[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]\nContinue from: [\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]",
+      "last_claim": "Continue from: [\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\",\"Hence \\(a+b+c=2\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\nContinue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\n[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\", \"Therefore \\(a+b+c=2\\).\"]",
+      "last_claim": "[\"Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).\", \"Therefore \\(a+b+c=2\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $f(x+3)=3x^2 + 7x + 4$ and $f(x)=ax^2 + bx + c$. What is $a+b+c$?\n\n$\\textbf{(A)}\\ -1 \\qquad \\textbf{(B)}\\ 0 \\qquad \\textbf{(C)}\\ 1 \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is 2.\nSubstitute x=-2 into the given identity to evaluate f(1).\nThis substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\nContinue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.\nContinue from: Continue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim": "Continue from: Continue from: This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

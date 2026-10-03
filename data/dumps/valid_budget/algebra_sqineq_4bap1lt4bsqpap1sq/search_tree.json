@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_sqineq_4bap1lt4bsqpap1sq",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.",
+      "last_claim": "Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nMove all terms to one side to obtain 4b^2-4b(a+1)+(a+1)^2.",
+      "last_claim": "Move all terms to one side to obtain 4b^2-4b(a+1)+(a+1)^2.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\n[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]",
+      "last_claim": "[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nContinue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.",
+      "last_claim": "Continue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.",
+      "last_claim_id": "ts_5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nMove all terms to one side to obtain 4b^2-4b(a+1)+(a+1)^2.\nRecognize the left-hand side as the perfect square (2b-(a+1))^2.",
+      "last_claim": "Recognize the left-hand side as the perfect square (2b-(a+1))^2.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nMove all terms to one side to obtain 4b^2-4b(a+1)+(a+1)^2.\nConclude that a square is always \u22650, so the original inequality holds for all real a,b.",
+      "last_claim": "Conclude that a square is always \u22650, so the original inequality holds for all real a,b.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\n[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\n[\"Equality holds precisely when \\(2b=a+1\\).\",\"The original inequality is therefore established for all real \\(a,b\\).\"]",
+      "last_claim": "[\"Equality holds precisely when \\(2b=a+1\\).\",\"The original inequality is therefore established for all real \\(a,b\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.5,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\n[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\nContinue from: [\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]",
+      "last_claim": "Continue from: [\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nContinue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nTherefore the original inequality holds for all real a and b.",
+      "last_claim": "Therefore the original inequality holds for all real a and b.",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nContinue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nEquality holds iff 2b=a+1.",
+      "last_claim": "Equality holds iff 2b=a+1.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\n[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\nContinue from: [\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\nThe proof is thereby complete for all real a and b.",
+      "last_claim": "The proof is thereby complete for all real a and b.",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\n[\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\nContinue from: [\"Expanding yields \\(4b^2-4b(a+1)+(a+1)^2\\geq0\\), which rearranges to the target inequality.\",\"Hence \\(4b(a+1)\\leq4b^2+(a+1)^2\\) holds for all real \\(a,b\\).\"]\nEquality holds if and only if 2b=a+1.",
+      "last_claim": "Equality holds if and only if 2b=a+1.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nContinue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nTherefore the original inequality holds for all real a and b.\n[\"Equality holds iff \\(2b=a+1\\).\",\"This completes the proof.\"]",
+      "last_claim": "[\"Equality holds iff \\(2b=a+1\\).\",\"This completes the proof.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.3,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "For any two real numbers a and b, show that $4b(a+1)\\leq 4b^2+(a+1)^2$.\nRewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nContinue from: Rewrite as (2b-(a+1))^2 >=0 which holds for all reals.\nTherefore the original inequality holds for all real a and b.\nContinue from: Therefore the original inequality holds for all real a and b.",
+      "last_claim": "Continue from: Therefore the original inequality holds for all real a and b.",
+      "last_claim_id": "ts_15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.6,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

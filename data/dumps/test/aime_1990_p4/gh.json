@@ -1,0 +1,37 @@
+{
+  "problem_id": "aime_1990_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find the positive solution to\n<center>$\\frac 1{x^2-10x-29}+\\frac1{x^2-10x-45}-\\frac 2{x^2-10x-69}=0$</center> Show that it is 013.",
+      "statement": "Find the positive solution to\n<center>$\\frac 1{x^2-10x-29}+\\frac1{x^2-10x-45}-\\frac 2{x^2-10x-69}=0$</center> Show that it is 013.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l490",
+      "natural_language": "Advance the argument (step 758): continue from Find the positive solution to\n<center>$\\frac 1{x^2-10x-29}+\\frac1{x^2-10x-45}-\\f",
+      "statement": "Advance the argument (step 758): continue from Find the positive solution to\n<center>$\\frac 1{x^2-10x-29}+\\frac1{x^2-10x-45}-\\f",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7095748751868991,
+      "support": null
+    },
+    {
+      "id": "l502",
+      "natural_language": "Advance the argument (step 779): continue from Advance the argument (step 764): continue from Advance the argument (step 758):",
+      "statement": "Advance the argument (step 779): continue from Advance the argument (step 764): continue from Advance the argument (step 758):",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b23",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

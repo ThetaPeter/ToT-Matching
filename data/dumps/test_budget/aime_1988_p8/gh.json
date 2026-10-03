@@ -1,0 +1,61 @@
+{
+  "problem_id": "aime_1988_p8",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f satisfies f(x,x)=x for positive integers x",
+      "statement": "f(x,x)=x",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8451542547285167,
+      "support": null
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "f satisfies f(x,y)=f(y,x) for positive integers x,y",
+      "statement": "f(x,y)=f(y,x)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8451542547285167,
+      "support": null
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "f satisfies (x+y)f(x,y)=y f(x,x+y) for positive integers x,y",
+      "statement": "(x+y)f(x,y)=y f(x,x+y)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.9036961141150641,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "From the functional equation, f(x,x+y)=(x+y)/y * f(x,y)",
+      "statement": "f(x,x+y)=(x+y)/y * f(x,y)",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5050762722761054,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "f(x,y)=lcm(x,y) for all positive integers x,y",
+      "statement": "f(x,y)=lcm(x,y)",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

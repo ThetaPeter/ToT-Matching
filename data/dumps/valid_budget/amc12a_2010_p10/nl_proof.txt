@@ -1,0 +1,10 @@
+From the given equalities \(9-p=(3p-q)-9=(3p+q)-(3p-q)\), the first two members immediately yield \(3p-q=18-p\), or equivalently \(4p-q=18\). The last two members show that the common difference of the underlying arithmetic progression is \(d=2q\). In particular the first two members also give \(9-p=2q\).
+
+The same first two members may equivalently be rewritten as \((3p-q)-9=2q\), which rearranges to \(p-q=3\). Substituting \(q=p-3\) into \(4p-q=18\) produces \(3p+3=18\), hence \(p=5\) and \(q=2\).
+
+Alternatively, solve \(9-p=2q\) for \(q=(9-p)/2\) and substitute into \(4p-q=18\). Clearing the resulting equation yields \(9p=45\), so again \(p=5\) and therefore \(q=2\). In either case \(d=2q=4\).
+
+The general term of the arithmetic progression with first term \(p=5\) and common difference \(d=4\) is therefore \(a_n=5+(n-1)\cdot4\). Setting \(n=2010\) gives
+\[
+a_{2010}=5+2009\cdot4=8041.
+\]

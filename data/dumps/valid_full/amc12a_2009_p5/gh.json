@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2009_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.",
+      "statement": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6819309069874763,
+      "support": null
+    },
+    {
+      "id": "l2703",
+      "natural_language": "Advance the argument (step 4201): continue from One dimension of a cube is increased by $1$, another is decreased by $1$, and th",
+      "statement": "Advance the argument (step 4201): continue from One dimension of a cube is increased by $1$, another is decreased by $1$, and th",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8046019054983617,
+      "support": null
+    }
+  ]
+}

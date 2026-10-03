@@ -1,0 +1,347 @@
+{
+  "problem_id": "aime_1991_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given the first equation with positive integers x and y",
+      "statement": "xy + x + y = 71",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Given the second equation with positive integers x and y",
+      "statement": "x^{2}y + xy^{2} = 880",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The value of x^2 + y^2 for positive integers x, y satisfying the given equations is 146",
+      "statement": "x^2 + y^2 = 146",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "l4",
+        "l8",
+        "l10",
+        "l14",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21",
+        "l22",
+        "l23",
+        "l24"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let s=x+y and p=xy. Then the given equations become p+s=71 and ps=880.",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\). Then \\(p+s=71\\) and \\(ps=880\\).",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Adding 1 to the first equation produces (x+1)(y+1)=72.",
+      "statement": "(x+1)(y+1)=72",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "s and p are roots of t^2 - 71t + 880 = 0, hence equal to 55 and 16 (in either order).",
+      "statement": "s,p = 55,16 (in either order)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The pair s=16, p=55 is consistent with (x+1)(y+1)=72 and yields x^2 + y^2 = s^2 - 2p = 146; the swapped pair does not.",
+      "statement": "s=16, p=55 gives x^2 + y^2 = 146",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Thus s and p are roots of t^2-71t+880=0",
+      "statement": "s and p are roots of \\(t^2-71t+880=0\\)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The roots are 16 and 55, so {s,p}={16,55}",
+      "statement": "The roots are 16 and 55, so \\{s,p\\}=\\{16,55\\}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The positive integer factor pairs of 72 give candidate values for (x+1,y+1). The pair satisfying ps=880 is (6,12) (or swapped).",
+      "statement": "The pair (x+1,y+1)=(6,12) satisfies the conditions",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus x=5,y=11 (or swapped) and x^2+y^2=s^2-2p=146.",
+      "statement": "x=5,y=11 yields x^2+y^2=146",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Adding 1 to the first equation produces (x+1)(y+1)=72.",
+      "statement": "(x+1)(y+1)=72",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Let s=x+y and p=xy, so that p+s=71 and ps=880",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\), so that \\(p+s=71\\) and \\(ps=880\\)",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Then s and p are roots of t^2-71t+880=0.",
+      "statement": "s and p are roots of \\(t^2-71t+880=0\\)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence x^2 + y^2 = s^2 - 2p",
+      "statement": "x^2 + y^2 = s^2 - 2p",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Let p=xy and s=x+y. Then p+s=71 and ps=880.",
+      "statement": "Let \\(p=xy\\) and \\(s=x+y\\). Then \\(p+s=71\\) and \\(ps=880\\).",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The positive-integer factor pairs of 72 yield candidate pairs (x,y).",
+      "statement": "The positive-integer factor pairs of 72 yield candidate pairs \\((x,y)\\).",
+      "dependencies": [
+        "l13",
+        "l9"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The positive integer factor pairs of 72 are candidates for (x+1,y+1).",
+      "statement": "Factor pairs of 72 give candidate pairs (x+1,y+1)",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Testing pairs shows only (6,12) and (12,6) satisfy ps=880, yielding x=5,y=11 (or swapped).",
+      "statement": "(x+1,y+1)=(6,12) satisfies ps=880",
+      "dependencies": [
+        "l15",
+        "l1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Thus x^2 + y^2 = s^2 - 2p = 16^2 - 2*55 = 146.",
+      "statement": "x=5,y=11 gives x^2 + y^2 = 146",
+      "dependencies": [
+        "l16",
+        "l6"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "The quadratic has discriminant 71^2-3520=1521=39^2, so its roots are 55 and 16.",
+      "statement": "The quadratic \\(t^2-71t+880=0\\) has discriminant \\(1521=39^2\\) and roots 55,16",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Hence {s,p}={16,55}.",
+      "statement": "Hence \\{s,p\\}=\\{16,55\\}.",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "From p + s = 71 we obtain p = 71 - s, hence s(71 - s) = 880.",
+      "statement": "p = 71 - s, so s(71-s)=880",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Expanding yields the quadratic equation s^2 - 71s + 880 = 0.",
+      "statement": "s^2 - 71s + 880 = 0",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "The roots are 16 and 55; the pair s=16, p=55 is consistent with (x+1)(y+1)=72.",
+      "statement": "s=16, p=55 is the consistent pair",
+      "dependencies": [
+        "l21",
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Therefore x^2 + y^2 = s^2 - 2p = 256 - 110 = 146.",
+      "statement": "x^2 + y^2 = 146",
+      "dependencies": [
+        "l22",
+        "l12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Substituting p=71-s into ps=880 yields the quadratic equation s^2-71s+880=0.",
+      "statement": "s^2-71s+880=0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

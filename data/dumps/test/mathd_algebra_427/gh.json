@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_427",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given the equations $3x+y=17,5y+z=14$ and $3x+5z=41$, what is the value of the sum $x+y+z$? Show that it is 12.",
+      "statement": "Given the equations $3x+y=17,5y+z=14$ and $3x+5z=41$, what is the value of the sum $x+y+z$? Show that it is 12.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.21320071635561044,
+      "support": null
+    },
+    {
+      "id": "l8535",
+      "natural_language": "Advance the argument (step 13273): continue from Given the equations $3x+y=17,5y+z=14$ and $3x+5z=41$, what is the value of the s",
+      "statement": "Advance the argument (step 13273): continue from Given the equations $3x+y=17,5y+z=14$ and $3x+5z=41$, what is the value of the s",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.85146931829632,
+      "support": null
+    }
+  ]
+}

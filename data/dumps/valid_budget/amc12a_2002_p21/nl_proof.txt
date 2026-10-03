@@ -1,0 +1,9 @@
+The sequence is given by \(a_1=4\), \(a_2=7\) and \(a_n=(a_{n-2}+a_{n-1})\bmod 10\) for \(n>2\). The sequence of units digits is therefore purely periodic. Direct computation of successive terms shows that the minimal period is \(12\). Combining these two facts yields that the sequence itself is purely periodic of period \(12\).
+
+The repeating block is therefore
+\[
+[4,7,1,8,9,7,6,3,9,2,1,3],
+\]
+whose sum equals \(60\). In particular the sum of one full period is \(60\).
+
+Writing \(n=12k+r\) with \(0\le r<12\), the partial sum \(S_n\) consequently consists of \(k\) complete periods plus a prefix of length \(r\), and is therefore equal to \(60k\) plus the sum of that prefix.

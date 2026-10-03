@@ -1,0 +1,61 @@
+{
+  "problem_id": "amc12a_2003_p24",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume a ≥ b > 1 are real numbers.",
+      "statement": "a ≥ b > 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6804138174397718,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "Let t = log_a b. Then 0 < t ≤ 1 and the expression equals 2 - t - 1/t.",
+      "statement": "t := log_a b ∧ 0 < t ≤ 1 ∧ expr = 2 - t - 1/t",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.06537204504606134,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Rewrite as (1 - log_a b) + (1 - log_b a).",
+      "statement": "expr = (1 - log_a b) + (1 - log_b a)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5129891760425772,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Therefore expr ≤ 0 with equality when a = b, so the largest possible value is 0 and the answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.759113116282117,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "By AM-GM, t + 1/t ≥ 2 for all t > 0, with equality iff t = 1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": 0.5577733510227171,
+      "support": null
+    }
+  ]
+}

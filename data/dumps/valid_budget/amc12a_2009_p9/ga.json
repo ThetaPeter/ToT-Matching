@@ -1,0 +1,206 @@
+{
+  "problem_id": "amc12a_2009_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given that f(x+3) equals 3x squared plus 7x plus 4.",
+      "statement": "f(x+3) = 3x^2 + 7x + 4",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "f is a quadratic polynomial, f(x) = a x^2 + b x + c.",
+      "statement": "f(x) = a x^2 + b x + c",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore a+b+c=2. The required value is thus option (D).",
+      "statement": "a + b + c = 2 (option D)",
+      "dependencies": [
+        "l8",
+        "l12",
+        "l13",
+        "l15",
+        "l17",
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Substitute x=-2 into the given identity to evaluate f(1).",
+      "statement": "f(1) = 3(-2)^2 + 7(-2) + 4 = 2",
+      "dependencies": [
+        "tc_1",
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "This substitution gives f(1)=3(-2)^2+7(-2)+4=12-14+4=2.",
+      "statement": "f(1) = 12 - 14 + 4 = 2",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Since f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.",
+      "statement": "a + b + c = f(1) = 2",
+      "dependencies": [
+        "tc_2",
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "To obtain f(1) set the argument of the given right-hand side equal to 1, i.e., take x=-2.",
+      "statement": "x = -2 yields f(1) from the given identity",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Expand f(x+3) = a(x+3)^2 + b(x+3) + c to obtain a x^2 + (6a + b)x + (9a + 3b + c).",
+      "statement": "f(x+3) = a x^2 + (6a+b)x + (9a+3b+c)",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Equate coefficients with 3x^2 + 7x + 4 to get the system a=3, 6a+b=7, 9a+3b+c=4.",
+      "statement": "a=3, b=-11, c=10",
+      "dependencies": [
+        "tc_1",
+        "l10"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Sum the coefficients: a + b + c = 3 - 11 + 10 = 2.",
+      "statement": "a + b + c = 2",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Equating coefficients of f(x+3) with the given quadratic independently confirms the same value.",
+      "statement": "Coefficient method yields a+b+c=2 independently",
+      "dependencies": [
+        "l11",
+        "l12"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Since f(x)=ax^2+bx+c, it follows that a+b+c=f(1).",
+      "statement": "a + b + c = f(1)",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Hence a+b+c=2.",
+      "statement": "a + b + c = 2",
+      "dependencies": [
+        "l14",
+        "l7"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Since \\(f(x)=ax^2+bx+c\\), it follows that \\(a+b+c=f(1)\\).",
+      "statement": "a + b + c = f(1)",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Therefore \\(a+b+c=2\\).",
+      "statement": "a + b + c = 2",
+      "dependencies": [
+        "l16",
+        "l7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Since f(x)=ax^2+bx+c it follows that a+b+c=f(1)=2.",
+      "statement": "a + b + c = 2",
+      "dependencies": [
+        "tc_2",
+        "l7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

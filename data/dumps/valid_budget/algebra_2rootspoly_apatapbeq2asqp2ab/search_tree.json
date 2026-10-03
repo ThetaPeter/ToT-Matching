@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_2rootspoly_apatapbeq2asqp2ab",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a",
+      "last_claim": "a + a = 2a",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\n(a + a)(a + b) = a(a + b) + a(a + b)",
+      "last_claim": "(a + a)(a + b) = a(a + b) + a(a + b)",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\n(a + a)(a + b) = a(a + b) + a(a + b)\na(a + b) + a(a + b) = (aa + ab) + (aa + ab)",
+      "last_claim": "a(a + b) + a(a + b) = (aa + ab) + (aa + ab)",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.5,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\n(a + a)(a + b) = a(a + b) + a(a + b)\na(a + b) + a(a + b) = 2a(a + b)",
+      "last_claim": "a(a + b) + a(a + b) = 2a(a + b)",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)",
+      "last_claim": "(a+a)(a+b)=2a(a+b)",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n2a(a+b)=2a^{2}+2ab",
+      "last_claim": "2a(a+b)=2a^{2}+2ab",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a\\cdot a+2a\\cdot b",
+      "last_claim": "2a(a+b)=2a\\cdot a+2a\\cdot b",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a^{2}+2ab",
+      "last_claim": "2a(a+b)=2a^{2}+2ab",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\n(a + a)(a + b) = a(a + b) + a(a + b)\na(a + b) + a(a + b) = 2a(a + b)\n2a(a + b) = 2(a^{2} + ab)",
+      "last_claim": "2a(a + b) = 2(a^{2} + ab)",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\n(a + a)(a + b) = a(a + b) + a(a + b)\na(a + b) + a(a + b) = 2a(a + b)\n2a(a + b) = 2a^{2} + 2ab",
+      "last_claim": "2a(a + b) = 2a^{2} + 2ab",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a\\cdot a+2a\\cdot b\n2a\\cdot a=2a^{2}",
+      "last_claim": "2a\\cdot a=2a^{2}",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a\\cdot a+2a\\cdot b\n2a\\cdot b=2ab",
+      "last_claim": "2a\\cdot b=2ab",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a^{2}+2ab\nBy the distributive law of complex multiplication over addition.",
+      "last_claim": "By the distributive law of complex multiplication over addition.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any complex numbers $a$ and $b$, $(a+a)(a+b) = 2a^2 + 2ab$.\na + a = 2a\n(a+a)(a+b)=2a(a+b)\n2a(a+b)=2a^{2}+2ab\nTherefore (a+a)(a+b)=2a^{2}+2ab.",
+      "last_claim": "Therefore (a+a)(a+b)=2a^{2}+2ab.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "problem_id": "aime_1983_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Domain condition 0 < x < \\pi",
+      "statement": "0 < x < \\pi",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5547001962252291,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Rewrite expression as 9t + 4/t with t = x sin x",
+      "statement": "Let t = x sin x > 0; then expression equals 9t + 4/t",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5,
+      "support": null
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Therefore the minimum value on (0,π) is exactly 12",
+      "statement": "Minimum value of the expression on (0, π) is exactly 12",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.778498944161523,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "By AM-GM, 9t + 4/t \\ge 2\\sqrt36 = 12 with equality iff t = 2/3",
+      "statement": "9t + 4/t \\ge 2\\sqrt(9t · 4/t) = 12, equality iff t = 2/3",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": 0.7008766440504625,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Range of t = x sin x on (0, \\pi) includes 2/3 so minimum 12 is attained",
+      "statement": "x sin x : (0, \\pi) \to (0, \\pi/2] is continuous and surjective onto its range, hence attains 2/3",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": 0.19088542889273327,
+      "support": null
+    }
+  ]
+}

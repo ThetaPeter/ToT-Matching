@@ -1,0 +1,397 @@
+{
+  "problem_id": "algebra_9onxpypzleqsum2onxpy",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x, y, z be positive real numbers.",
+      "statement": "x > 0, y > 0, z > 0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: 9/(x+y+z) \\le 2/(x+y) + 2/(y+z) + 2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y) + 2/(y+z) + 2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "By Titu's lemma: sum 1^2/(x+y) >= 9 / 2(x+y+z)",
+      "statement": "\\sum \\frac{1}{x+y} \\ge \\frac{9}{2(x+y+z)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Multiply both sides of l1 by 2 to obtain the target inequality.",
+      "statement": "2 \\sum \\frac{1}{x+y} \\ge \\frac{9}{x+y+z}",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l_amhm",
+      "natural_language": "By AM-HM on the positive numbers x+y, y+z, z+x.",
+      "statement": "\\frac{2(x+y+z)}{3} \\ge \\frac{3}{\\sum 1/(x+y)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Apply Titu's lemma (Cauchy–Schwarz in Engel form) to obtain 1/(x+y)+1/(y+z)+1/(z+x) >= 9/(2(x+y+z)).",
+      "statement": "\\frac{1}{x+y}+\\frac{1}{y+z}+\\frac{1}{z+x} \\ge \\frac{9}{2(x+y+z)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "By homogeneity it is enough to prove the inequality under the additional assumption x+y+z=1.",
+      "statement": "x+y+z=1 \\implies 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "We restate the theorem as the target claim to prove under homogeneity: 9 <= 2/(x+y)+2/(y+z)+2/(z+x) when x+y+z=1.",
+      "statement": "x+y+z=1 \\implies 9 \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z)\\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Rearrangement of AM-HM on x+y, y+z, z+x directly yields the target inequality.",
+      "statement": "\\frac{2(x+y+z)}{3} \\ge \\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Multiplying the Titu bound by 2 immediately produces the target inequality.",
+      "statement": "2 \\sum 1/(x+y) \\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Equality holds in AM-HM precisely when x+y=y+z=z+x, hence when x=y=z.",
+      "statement": "Equality in AM-HM on x+y,y+z,z+x holds iff x=y=z",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Equality holds in Titu/Cauchy when x+y=y+z=z+x, hence when x=y=z.",
+      "statement": "Equality in Titu's lemma holds iff x=y=z",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu, with equality precisely when x=y=z: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x) with equality iff x=y=z",
+      "dependencies": [
+        "tc_1",
+        "l7",
+        "l8",
+        "l9",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z)\\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l11",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "The claimed inequality is homogeneous of degree -1.",
+      "statement": "The inequality 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x) is homogeneous of degree -1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Equality holds if and only if x=y=z.",
+      "statement": "Equality in 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x) holds iff x=y=z",
+      "dependencies": [
+        "l_amhm",
+        "l3"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "We restate the theorem as the target claim proved via AM-HM or Titu, using homogeneity and with equality iff x=y=z: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x) with equality iff x=y=z",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l6",
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z)\\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l15",
+        "l16"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\).",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Multiplying Titu's inequality by 2 immediately yields the claimed bound.",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l17",
+        "l18"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z)\\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l19",
+        "l20"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

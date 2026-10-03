@@ -1,0 +1,548 @@
+{
+  "problem_id": "aime_1994_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The equation to solve is sum_{k=1}^n floor(log_2 k) = 1994 for positive integer n",
+      "statement": "Find positive integer n with floor(log2 1) + ... + floor(log2 n) = 1994",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "For each m >= 0 the value floor(log2 k) equals m exactly for the 2^m integers k from 2^m to 2^{m+1}-1",
+      "statement": "floor(log2 k)=m for precisely 2^m values of k in [2^m,2^{m+1})",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The partial sum up to 2^{M+1}-1 equals sum_{m=1}^M m*2^m",
+      "statement": "sum_{k=1}^{2^{M+1}-1} floor(log2 k) = sum_{m=1}^M m 2^m",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The closed form sum_{m=1}^M m 2^m = (M-1)2^{M+1} + 2",
+      "statement": "sum_{m=1}^M m 2^m = (M-1)2^{M+1} + 2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Direct computation shows that n=312 yields exactly 1994, hence the required positive integer is 312",
+      "statement": "n=312 satisfies the given sum equation",
+      "dependencies": [
+        "l3",
+        "l1",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let s(n)=sum_{k=1}^n floor(log_2 k). We seek the unique positive integer n satisfying s(n)=1994",
+      "statement": "Define s(n) and seek unique n with s(n)=1994",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Observe that floor(log_2 k)=m precisely when k lies in the interval [2^m,2^{m+1}-1]",
+      "statement": "floor(log_2 k)=m exactly for k in [2^m,2^{m+1}-1]",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The sum up to 2^8-1=255 equals (8-1)2^9 +2=1538",
+      "statement": "s(255)=(M-1)2^{M+1}+2 with M=7 gives 1538",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "For k from 256 to n, floor(log2 k)=8, adding 8(n-255) to the sum",
+      "statement": "s(n)=1538+8(n-255) when 255<=n<=511",
+      "dependencies": [
+        "l4",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Solving 1538+8(n-255)=1994 yields n=312, and direct verification confirms the sum equals 1994",
+      "statement": "n=312 is the unique solution",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "Let s(n)=sum_{k=1}^n floor(log_2 k). We seek the unique positive integer n satisfying s(n)=1994",
+      "statement": "Define s(n) and seek unique n with s(n)=1994",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Observe that floor(log_2 k)=m precisely when 2^m <= k <= 2^{m+1}-1",
+      "statement": "floor(log_2 k)=m exactly for k in [2^m,2^{m+1}-1]",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Solving via the interval counts and closed-form partial sums yields n=312 as the unique solution satisfying the equation",
+      "statement": "n=312 is the unique positive integer solution",
+      "dependencies": [
+        "l7",
+        "l6",
+        "ts_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Set 1538 + 8(n-255) = 1994 and solve the linear equation to obtain n-255 = 57 hence n=312",
+      "statement": "1538 + 8(n-255) = 1994 implies n = 312",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "312 lies in the interval [256,511] so the formula of l6 applies and the sum equals exactly 1994",
+      "statement": "312 is valid for the partial-sum formula and yields sum = 1994",
+      "dependencies": [
+        "l8",
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The unique positive integer n satisfying the sum equation is 312",
+      "statement": "n=312 is the unique solution to the given floor-log sum equation",
+      "dependencies": [
+        "l9",
+        "ts_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Evaluating the closed form yields s(2^8-1)=1538 and s(2^9-1)=3586",
+      "statement": "s(255)=1538 and s(511)=3586",
+      "dependencies": [
+        "l3",
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Hence 1538 \\le 1994 < 3586 forces M=8, so 256 \\le n < 512 and s(n)=1538+8(n-255)",
+      "statement": "M=8 implies 256 \\le n < 512 and s(n)=1538+8(n-255)",
+      "dependencies": [
+        "l10",
+        "tc_2"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Solving 1538+8(n-255)=1994 yields n=312 as the unique solution",
+      "statement": "n=312 is the unique positive integer satisfying the sum equation",
+      "dependencies": [
+        "l11",
+        "l6",
+        "l9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "For M=8 the closed form gives s(255)=(8-2)2^8 +2=1538",
+      "statement": "s(255)=(M-2)2^M +2 with M=8 equals 1538",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Thus when 256<=n<512 we have s(n)=1538+8(n-255)",
+      "statement": "s(n)=1538+8(n-255) for 256<=n<=511",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Solve 1538+8(n-255)=1994 to obtain n=312",
+      "statement": "1538+8(n-255)=1994 implies n=312",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "n=312 lies in [256,511] so the formula applies and yields exactly 1994, hence the unique solution is 312",
+      "statement": "n=312 is the unique positive integer satisfying the sum equation",
+      "dependencies": [
+        "l14",
+        "l9",
+        "ts_5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Therefore if 2^M \\le n \\le 2^{M+1}-1 then s(n)=\\sum_{m=1}^{M-1} m·2^m + M(n-2^M +1)",
+      "statement": "s(n)=\\sum_{m=1}^{M-1}m 2^m + M(n-2^M+1) for 2^M\\le n\\le2^{M+1}-1",
+      "dependencies": [
+        "tc_2",
+        "l4"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "The closed form \\sum_{m=1}^k m 2^m = (k-1)2^{k+1}+2 holds",
+      "statement": "sum_{m=1}^k m 2^m = (k-1)2^{k+1}+2",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Substituting the closed form into the general expression for s(n) and solving the resulting linear equation for M=8 yields n=312 as the unique solution",
+      "statement": "n=312 is the unique positive integer satisfying s(n)=1994",
+      "dependencies": [
+        "l16",
+        "l6",
+        "l11"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The partial sum s(2^M-1) equals sum_{m=1}^{M-1} m 2^m which simplifies to (M-2)2^M + 2",
+      "statement": "s(2^M-1)=(M-2)2^M + 2",
+      "dependencies": [
+        "tc_2",
+        "l4"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "For M=8 we obtain s(255)=1538, hence when 256 \\le n \\le 511 the expression becomes s(n)=1538 + 8(n-255)",
+      "statement": "s(n)=1538+8(n-255) for n in [256,511]",
+      "dependencies": [
+        "l17",
+        "l4"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Setting 1538 + 8(n-255) = 1994 and solving the linear equation produces n=312",
+      "statement": "1538 + 8(n-255)=1994 implies n=312",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "n=312 lies inside the interval [256,511] so the formula applies and yields exactly 1994, hence the unique solution is 312",
+      "statement": "n=312 is the unique positive integer satisfying the sum equation",
+      "dependencies": [
+        "l19",
+        "l18",
+        "ts_2"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Solving 1538+8(n-255)=1994 yields 8(n-255)=456, hence n-255=57",
+      "statement": "1538+8(n-255)=1994 implies n-255=57",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Thus n=312, which lies in [256,512) and therefore satisfies s(n)=1994",
+      "statement": "n=312 lies in [256,512) and satisfies s(n)=1994",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The unique positive integer n satisfying the sum equation is 312",
+      "statement": "n=312 is the unique solution to the given floor-log sum equation",
+      "dependencies": [
+        "l21",
+        "ts_8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "Set 1538 + 8(n-255) = 1994 and solve the linear equation to obtain n-255 = 57 hence n=312",
+      "statement": "1538 + 8(n-255) = 1994 implies n = 312",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "312 lies in the interval [256,511] so the formula of l11 applies and the sum equals exactly 1994",
+      "statement": "312 is valid for the partial-sum formula and yields sum = 1994",
+      "dependencies": [
+        "l22",
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The unique positive integer n satisfying the sum equation is 312",
+      "statement": "n=312 is the unique solution to the given floor-log sum equation",
+      "dependencies": [
+        "l23",
+        "ts_5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Hence s(2^8-1)=(8-2)2^8+2=1538 while s(2^9-1)=(9-2)2^9+2=3586>1994, so necessarily 2^8 \\le n < 2^9",
+      "statement": "s(255)=1538 and s(511)=3586>1994 implies 256 \\le n < 512",
+      "dependencies": [
+        "l17",
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "The formula then becomes s(n)=1538+8(n-255); setting this equal to 1994 yields n-255=57, hence n=312",
+      "statement": "s(n)=1538+8(n-255)=1994 implies n=312",
+      "dependencies": [
+        "l24",
+        "l18"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "n=312 lies in [256,511] so the formula applies and yields exactly 1994, hence the unique solution is 312",
+      "statement": "n=312 is the unique positive integer satisfying the sum equation",
+      "dependencies": [
+        "l25",
+        "l23",
+        "ts_10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l26",
+      "natural_language": "For M=8 the closed form gives s(255)=(8-2)2^8 +2=1538",
+      "statement": "s(255)=(M-2)2^M +2 with M=8 equals 1538",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l27",
+      "natural_language": "Since s(255)=1538 <=1994 < s(511)=3586 we have M=8 and thus s(n)=1538+8(n-255) for 256<=n<=511",
+      "statement": "M=8 implies s(n)=1538+8(n-255) for n in [256,511]",
+      "dependencies": [
+        "l26",
+        "l15"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l28",
+      "natural_language": "Set 1538+8(n-255)=1994 and solve to obtain n-255=57 hence n=312",
+      "statement": "1538+8(n-255)=1994 implies n=312",
+      "dependencies": [
+        "l27"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "n=312 lies in [256,511] so the formula applies and yields exactly 1994, hence the unique solution is 312",
+      "statement": "n=312 is the unique positive integer satisfying the sum equation",
+      "dependencies": [
+        "l28",
+        "l27"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

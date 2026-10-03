@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_150",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the smallest positive integer $N$ such that the value $7 + (30 \\times N)$ is not a prime number? Show that it is 6.",
+      "statement": "What is the smallest positive integer $N$ such that the value $7 + (30 \\times N)$ is not a prime number? Show that it is 6.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.45738935374634826,
+      "support": null
+    },
+    {
+      "id": "l9561",
+      "natural_language": "Advance the argument (step 14869): continue from What is the smallest positive integer $N$ such that the value $7 + (30 \\times N)",
+      "statement": "Advance the argument (step 14869): continue from What is the smallest positive integer $N$ such that the value $7 + (30 \\times N)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7348094335140691,
+      "support": null
+    }
+  ]
+}

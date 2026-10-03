@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_282",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let \\[f(x) =\n\\begin{cases}\n|\\lfloor{x}\\rfloor| &\\text{if }x\\text{ is rational}, \\\\\n\\lceil{x}\\rceil^2 &\\text{if }x\\text{ is irrational}.\n\\end{cases}\n\\] Find $f(\\sqrt[3]{-8})+f(-\\pi)+f(\\sqrt{50})+f\\left(\\frac{9}{2}\\right)$. Show that it is 79.",
+      "statement": "Let \\[f(x) =\n\\begin{cases}\n|\\lfloor{x}\\rfloor| &\\text{if }x\\text{ is rational}, \\\\\n\\lceil{x}\\rceil^2 &\\text{if }x\\text{ is irrational}.\n\\end{cases}\n\\] Find $f(\\sqrt[3]{-8})+f(-\\pi)+f(\\sqrt{50})+f\\left(\\frac{9}{2}\\right)$. Show that it is 79.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l7456",
+      "natural_language": "Advance the argument (step 11594): continue from Let \\[f(x) =\n\\begin{cases}\n|\\lfloor{x}\\rfloor| &\\text{if }x\\text{ is rational},",
+      "statement": "Advance the argument (step 11594): continue from Let \\[f(x) =\n\\begin{cases}\n|\\lfloor{x}\\rfloor| &\\text{if }x\\text{ is rational},",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.57452425971407,
+      "support": null
+    },
+    {
+      "id": "l_dead_4141",
+      "natural_language": "dead-end unused case 11595: discard this alternative",
+      "statement": "dead-end unused case 11595: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.19876159799998128,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "problem_id": "aime_1991_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given sec x + tan x = 22/7",
+      "statement": "sec(x) + tan(x) = 22/7",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Also 2 tan x = a - 1/a = 435/154 so tan x = 435/308",
+      "statement": "tan(x)=435/308",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6456639979721241,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Thus sin x = tan x * cos x = 435/533",
+      "statement": "sin(x)=435/533",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6917144638660747,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "csc x + cot x = (1 + cos x)/sin x = 841/435",
+      "statement": "csc(x) + cot(x) = 841/435",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.46153846153846156,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "841/435 reduces to 29/15 since 841=29^2 and 435=15*29",
+      "statement": "841/435 = 29/15",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore m + n = 44",
+      "statement": "m+n=44",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4682929057908471,
+      "support": null
+    }
+  ]
+}

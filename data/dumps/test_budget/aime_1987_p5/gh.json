@@ -1,0 +1,101 @@
+{
+  "problem_id": "aime_1987_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x and y are integers such that y^2 + 3x^2 y^2 = 30x^2 + 517",
+      "statement": "x,y \\in \\Z \\land y^2 + 3x^2 y^2 = 30x^2 + 517",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5948118774794627,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "(3x² + 1)(y² - 10) = 507",
+      "statement": "(3x^2 + 1)(y^2 - 10) = 507",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "3x^2 + 1 divides 507 and 3x^2 + 1 >= 1",
+      "statement": "3x^2 + 1 \\mid 507 \\land 3x^2 + 1 \\ge 1",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Possible values of 3x^{2} + 1 are the positive divisors of 507 that are ≡1 (mod 3): 1, 13, 169",
+      "statement": "3x^2 + 1 \\in \\{1,13,169\\}",
+      "dependencies": [
+        "l3",
+        "l7"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": 0.43915503282683993,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "the positive divisors of 507 that are 1 mod 3 are 1, 13 and 169",
+      "statement": "\\{d > 0 : d \\mid 507 \\land d \\equiv 1 \\pmod{3}\\} = \\{1,13,169\\}",
+      "dependencies": [
+        "l3",
+        "l6"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": 0.35007002100700246,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "If 3x^{2}+1=1 then x=0 and y^{2}=517 which is not a square",
+      "statement": "3x^2 + 1 = 1 \\implies x = 0 \\land y^2 = 517 \\land \\lnot \\exists k \\in \\Z (k^2 = 517)",
+      "dependencies": [
+        "l8",
+        "l1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.1345345587992625,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "If 3x^{2}+1=169 then x^{2}=56 which is not a square",
+      "statement": "3x^2 + 1 = 169 \\implies x^2 = 56 \\land \\lnot \\exists k \\in \\Z (k^2 = 56)",
+      "dependencies": [
+        "l8",
+        "l1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.2672612419124244,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "The positive divisors of 507 are 1, 3, 13, 39, 169 and 507",
+      "statement": "{d > 0 : d \\mid 507} = \\{1,3,13,39,169,507\\}",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.6864064729836441,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2015_p10",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.",
+      "last_claim": "Add 1 to both sides of the given equation.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nRewrite the equation in the equivalent form (x+1)(y+1)=81.",
+      "last_claim": "Rewrite the equation in the equivalent form (x+1)(y+1)=81.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nRewrite the equation in the equivalent form (x+1)(y+1)=81.\nSince x>y>0 are integers, x+1>y+1>1 are integers whose product is 81.",
+      "last_claim": "Since x>y>0 are integers, x+1>y+1>1 are integers whose product is 81.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.7,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nRewrite the equation in the equivalent form (x+1)(y+1)=81.\nThe ordered pairs of integers (a,b) with a>b>1 and a b=81 are (27,3) and (9,9).",
+      "last_claim": "The ordered pairs of integers (a,b) with a>b>1 and a b=81 are (27,3) and (9,9).",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nThis yields (x+1)(y+1)=81.",
+      "last_claim": "This yields (x+1)(y+1)=81.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nFactor the left-hand side as (x+1)(y+1).",
+      "last_claim": "Factor the left-hand side as (x+1)(y+1).",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nThis yields (x+1)(y+1)=81.\nx+1 and y+1 are integers satisfying x+1>y+1>1 whose product is 81.",
+      "last_claim": "x+1 and y+1 are integers satisfying x+1>y+1>1 whose product is 81.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nThis yields (x+1)(y+1)=81.\nThe only such ordered factor pair of 81 is (27,3).",
+      "last_claim": "The only such ordered factor pair of 81 is (27,3).",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nFactor the left-hand side as (x+1)(y+1).\nThus (x+1)(y+1)=81.",
+      "last_claim": "Thus (x+1)(y+1)=81.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nFactor the left-hand side as (x+1)(y+1).\nThe integer factor pairs of 81 with first factor strictly larger than the second and both greater than 1 yield x=26.",
+      "last_claim": "The integer factor pairs of 81 with first factor strictly larger than the second and both greater than 1 yield x=26.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nFactor the left-hand side as (x+1)(y+1).\nThus (x+1)(y+1)=81.\n[\"Since \\(x>y>0\\) are integers, \\(x+1>y+1>1\\) are integers whose product is 81.\",\"The only ordered pair of integers \\((a,b)\\) with \\(a>b>1\\) and \\(ab=81\\) is \\((27,3)\\).\"]",
+      "last_claim": "[\"Since \\(x>y>0\\) are integers, \\(x+1>y+1>1\\) are integers whose product is 81.\",\"The only ordered pair of integers \\((a,b)\\) with \\(a>b>1\\) and \\(ab=81\\) is \\((27,3)\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nFactor the left-hand side as (x+1)(y+1).\nThus (x+1)(y+1)=81.\nContinue from: Thus (x+1)(y+1)=81.",
+      "last_claim": "Continue from: Thus (x+1)(y+1)=81.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nThis yields (x+1)(y+1)=81.\nx+1 and y+1 are integers satisfying x+1>y+1>1 whose product is 81.\nThe pairs of integers (a,b) with a>b>1 and ab=81 are (27,3) only (since 9=9 fails a>b).",
+      "last_claim": "The pairs of integers (a,b) with a>b>1 and ab=81 are (27,3) only (since 9=9 fails a>b).",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.\nAdd 1 to both sides of the given equation.\nThis yields (x+1)(y+1)=81.\nx+1 and y+1 are integers satisfying x+1>y+1>1 whose product is 81.\nHence x+1=27, so x=26.",
+      "last_claim": "Hence x+1=27, so x=26.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

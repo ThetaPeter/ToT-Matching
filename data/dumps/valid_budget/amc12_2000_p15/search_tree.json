@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12_2000_p15",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]",
+      "last_claim": "[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\n[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim": "[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\nContinue from: [\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]",
+      "last_claim": "Continue from: [\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\n[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]",
+      "last_claim": "[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\n[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\n[\"Thus the sum of all such \\(z\\) is \\(-\\frac19\\).\", \"Dividing the quadratic by \\(3\\) yields \\(27z^2+3z-2=0\\), whose roots still sum to \\(-\\frac{3}{27}=-\\frac19\\).\"]",
+      "last_claim": "[\"Thus the sum of all such \\(z\\) is \\(-\\frac19\\).\", \"Dividing the quadratic by \\(3\\) yields \\(27z^2+3z-2=0\\), whose roots still sum to \\(-\\frac{3}{27}=-\\frac19\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\n[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\nContinue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim": "Continue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\n[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]\n[\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]",
+      "last_claim": "[\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\n[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]\nContinue from: [\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]",
+      "last_claim": "Continue from: [\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\n[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\nContinue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\n[\"Hence the required sum of all such \\(z\\) equals \\(-1/9\\).\", \"This is option (B).\"]",
+      "last_claim": "[\"Hence the required sum of all such \\(z\\) equals \\(-1/9\\).\", \"This is option (B).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\n[\"Let \\( t=x/3 \\), whence \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) so that \\( f(3z)=x^2+x+1 \\), hence \\( x=9z \\) and \\( 81z^2+9z+1=7 \\).\"]\n[\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\nContinue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]\nContinue from: Continue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Then \\(81z^{2}+9z+1=7\\), hence \\(81z^{2}+9z-6=0\\).\",\"The quadratic \\(81z^{2}+9z-6=0\\) has sum of roots \\(-9/81=-1/9\\).\"]",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\n[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]\n[\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]\n[\"Thus the required sum of all such \\(z\\) is \\(-\\frac19\\).\", \"This matches answer choice (B).\"]",
+      "last_claim": "[\"Thus the required sum of all such \\(z\\) is \\(-\\frac19\\).\", \"This matches answer choice (B).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Let $f$ be a [[function]] for which $f\\left(\\dfrac{x}{3}\\right) = x^2 + x + 1$. Find the sum of all values of $z$ for which $f(3z) = 7$.\n\n$\\text {(A)}\\ -1/3 \\qquad \\text {(B)}\\ -1/9 \\qquad \\text {(C)}\\ 0 \\qquad \\text {(D)}\\ 5/9 \\qquad \\text {(E)}\\ 5/3$ Show that it is \\textbf{(B) }-\\frac19.\nContinue from:\n[\"Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).\",\"Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).\"]\n[\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]\nContinue from: [\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]",
+      "last_claim": "Continue from: [\"Then \\(81z^2+9z+1=7\\), so \\(81z^2+9z-6=0\\).\",\"The quadratic formula (or Vieta) on the equivalent equation \\(27z^2+3z-2=0\\) yields that the sum of the roots is \\(-3/27=-1/9\\).\"]",
+      "last_claim_id": "l23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

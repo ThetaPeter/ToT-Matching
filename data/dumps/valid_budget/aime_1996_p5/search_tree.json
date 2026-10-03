@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1996_p5",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim": "[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim": "[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim": "Continue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\nContinue from:\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\",\"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim": "[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\",\"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\n[\"This completes the proof that \\(t=23\\).\", \"The identity can be verified by expanding both sides and using elementary symmetric polynomials.\"]",
+      "last_claim": "[\"This completes the proof that \\(t=23\\).\", \"The identity can be verified by expanding both sides and using elementary symmetric polynomials.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\nContinue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Therefore \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic, the product of its roots equals \\(-t\\), so \\(t=23\\).\"]",
+      "last_claim": "[\"Therefore \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic, the product of its roots equals \\(-t\\), so \\(t=23\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: Continue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim": "Continue from: Continue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\nContinue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\n[\"Hence \\(t=23\\) as required.\", \"The values of \\(r\\) and \\(s\\) are not needed to determine \\(t\\).\"]",
+      "last_claim": "[\"Hence \\(t=23\\) as required.\", \"The values of \\(r\\) and \\(s\\) are not needed to determine \\(t\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\nContinue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]\nContinue from: Continue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Thus \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic the product of its roots equals \\(-t\\), hence \\(t=23\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Therefore \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic, the product of its roots equals \\(-t\\), so \\(t=23\\).\"]\nThe proof is complete: t equals 23.",
+      "last_claim": "The proof is complete: t equals 23.",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.\n[\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\nContinue from: [\"By Vieta, \\(a+b+c=-3\\), \\(ab+bc+ca=4\\) and \\(abc=11\\).\", \"The identity \\((a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc\\) holds.\"]\n[\"Therefore \\((a+b)(b+c)(c+a)=(-3)(4)-11=-23\\).\", \"By Vieta on the second cubic, the product of its roots equals \\(-t\\), so \\(t=23\\).\"]\nThe same Vieta relations also yield r=6 and s=-1, confirming consistency of the transformed cubic.",
+      "last_claim": "The same Vieta relations also yield r=6 and s=-1, confirming consistency of the transformed cubic.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "problem_id": "imo_1961_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given the system x+y+z=a, x^{2}+y^{2}+z^{2}=b^{2}, xy=z^{2} with a,b constants, find conditions on a,b such that solutions x,y,z are distinct positive reals.",
+      "statement": "∃ distinct x,y,z>0 satisfying the system ⇔ a,b satisfy the required inequalities derived from Vieta and positivity constraints",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3152441624956403,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "From (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "statement": "a^{2} = b^{2} + 2(xy + z(x + y))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.1324532357065044,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "x and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "statement": "x,y are roots of t^{2} - (a-z)t + z^{2} = 0",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.6289709020331511,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "The discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).",
+      "statement": "D=(a-z)^2-4z^2=(a-3z)(a+z)",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": 0.8333333333333333,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Then x and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "statement": "x,y are roots of t^{2} - (a-z)t + z^{2} = 0",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.11785113019775795,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Require z>0 together with a-z>0 and D=(a-3z)(a+z)>0; substituting z=(a^{2}-b^{2})/(2a) produces the explicit inequalities a>0, b^{2}>(2a^{2})/3 and a^{3}-3ab^{2}+2a^{3}/27>0.",
+      "statement": "z>0 \\wedge a-z>0 \\wedge (a-3z)(a+z)>0 \\Leftrightarrow a>0, b^{2}>(2a^{2})/3, a^{3}-3ab^{2}+2a^{3}/27>0",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": 0.37796447300922725,
+      "support": null
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The system admits distinct positive solutions x,y,z precisely when a>0, b^{2}>(2a^{2})/3 and a^{3}-3ab^{2}+2a^{3}/27>0.",
+      "statement": "distinct positive x,y,z exist ⇔ a>0 ∧ b^{2}>(2a^{2})/3 ∧ a^{3}-3ab^{2}+2a^{3}/27>0",
+      "dependencies": [
+        "tc_1",
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": 0.5661385170722979,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "For x,y real and distinct we need D>0, i.e. (a-3z)(a+z)>0.",
+      "statement": "x,y real and distinct ⇒ D>0 ⇒ (a-3z)(a+z)>0",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.3651483716701108,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "z>0 together with a-z>0 (hence a>0) is necessary and sufficient for both roots x,y to be positive",
+      "statement": "z>0 \\wedge (a-z)>0 \\Leftrightarrow x>0 \\wedge y>0",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.19611613513818407,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "x,y,z are pairwise distinct precisely when z\neq0 and neither root equals z, i.e., when a\neq3z.",
+      "statement": "x,y,z pairwise distinct \\Leftrightarrow z\neq0 \\wedge a\neq3z",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.3273268353539886,
+      "support": null
+    }
+  ]
+}

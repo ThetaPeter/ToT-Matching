@@ -1,0 +1,113 @@
+{
+  "problem_id": "amc12b_2021_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Positive real solutions x satisfy x^{2^{\\sqrt{2}}}=\\sqrt{2}^{2^x}",
+      "statement": "x>0 and x^{2^{\\sqrt{2}}}=2^{2^{x-1}}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "S=\\sqrt{2}+r satisfies 2\\le S<6",
+      "statement": "S=\\sum x_i where x_i are the solutions, and 2\\le S<6",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The given equation is equivalent (for x>0) to x=2^{2^{x-1-\\sqrt{2}}}",
+      "statement": "x>0 \\Rightarrow (x^{2^{\\sqrt{2}}}=\\sqrt{2}^{2^x} \\Leftrightarrow x=2^{2^{x-1-\\sqrt{2}}})",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "x=\\sqrt{2} is a positive real solution",
+      "statement": "(\\sqrt{2})=2^{2^{\\sqrt{2}-1-\\sqrt{2}}}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Taking the natural logarithm of both sides yields ln x = 2^{x-1-\\sqrt{2}} ln 2",
+      "statement": "x>0 \\Rightarrow (x^{2^{\\sqrt{2}}}=2^{2^{x-1}} \\Leftrightarrow \\ln x = 2^{x-1-\\sqrt{2}} \\ln 2)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The larger root is strictly less than 4.",
+      "statement": "The larger root r satisfies r<4",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Taking the base-2 logarithm of both sides of the equivalent equation yields log_2 x = 2^{x-1-\\sqrt{2}}",
+      "statement": "x>0 \\Rightarrow (x=2^{2^{x-1-\\sqrt{2}}} \\Leftrightarrow log_2 x = 2^{x-1-\\sqrt{2}})",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The equation log_2 x = 2^{x-1-\\sqrt{2}} has a second positive real root strictly larger than 2",
+      "statement": "There exists a second root r>2 satisfying log_2 r = 2^{r-1-\\sqrt{2}}",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "The two positive real solutions are \\sqrt{2} and one root r with 2<r<4",
+      "statement": "Solutions are exactly \\sqrt{2} and r where 2<r<4",
+      "dependencies": [
+        "l6",
+        "l17",
+        "l15"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

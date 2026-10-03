@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2016_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nRewrite all bases as powers of 10: 100=10^2 and 1000=10^3.",
+      "last_claim": "Rewrite all bases as powers of 10: 100=10^2 and 1000=10^3.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.",
+      "last_claim": "Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\n[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]",
+      "last_claim": "[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nContinue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.",
+      "last_claim": "Continue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nRewrite all bases as powers of 10: 100=10^2 and 1000=10^3.\n[\"Substitute the rewritten bases into the equation to obtain \\(10^{x}\\cdot(10^{2})^{2x}=(10^{3})^{5}\\).\",\"Apply the power-of-a-power rule to rewrite the equation as \\(10^{x}\\cdot10^{4x}=10^{15}\\).\"]",
+      "last_claim": "[\"Substitute the rewritten bases into the equation to obtain \\(10^{x}\\cdot(10^{2})^{2x}=(10^{3})^{5}\\).\",\"Apply the power-of-a-power rule to rewrite the equation as \\(10^{x}\\cdot10^{4x}=10^{15}\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nRewrite all bases as powers of 10: 100=10^2 and 1000=10^3.\nContinue from: Rewrite all bases as powers of 10: 100=10^2 and 1000=10^3.",
+      "last_claim": "Continue from: Rewrite all bases as powers of 10: 100=10^2 and 1000=10^3.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\n[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]\nEquate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.",
+      "last_claim": "Equate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\n[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]\nDivide both sides by 5 to conclude that x=3.",
+      "last_claim": "Divide both sides by 5 to conclude that x=3.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nContinue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nApply the power rule (a^b)^c=a^{bc} to rewrite as 10^x * 10^{4x}=(10^3)^5.",
+      "last_claim": "Apply the power rule (a^b)^c=a^{bc} to rewrite as 10^x * 10^{4x}=(10^3)^5.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nContinue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nRewrite the right-hand side as 10^{15} using (a^b)^c=a^{bc}.",
+      "last_claim": "Rewrite the right-hand side as 10^{15} using (a^b)^c=a^{bc}.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\n[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]\nEquate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.\n[\"Divide both sides by 5 to obtain the equivalent equation \\(x=3\\).\",\"Conclude that the unique solution is \\(x=3\\), which is choice \\(\\textbf{(C)}\\).\"]",
+      "last_claim": "[\"Divide both sides by 5 to obtain the equivalent equation \\(x=3\\).\",\"Conclude that the unique solution is \\(x=3\\), which is choice \\(\\textbf{(C)}\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\n[\"Rewrite using the power rule (a^b)^c=a^{bc} to obtain the equivalent equation 10^x\\cdot10^{4x}=10^{15}.\",\"Combine the left-hand powers of 10 via a^m\\cdot a^n=a^{m+n} to obtain the equivalent equation 10^{5x}=10^{15}.\"]\nEquate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.\nContinue from: Equate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.",
+      "last_claim": "Continue from: Equate the exponents using injectivity of the base-10 exponential to obtain the equivalent equation 5x=15.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nContinue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nApply the power rule (a^b)^c=a^{bc} to rewrite as 10^x * 10^{4x}=(10^3)^5.\nApply a^m a^n = a^{m+n} on the left to rewrite as 10^{5x}=(10^3)^5.",
+      "last_claim": "Apply a^m a^n = a^{m+n} on the left to rewrite as 10^{5x}=(10^3)^5.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "For what value of $x$ does $10^{x}\\cdot 100^{2x}=1000^{5}$?\n\n$\\textbf{(A)}\\ 1 \\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5$ Show that it is \\textbf{(C)}\\;3.\nSubstitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nContinue from: Substitute to obtain the equivalent equation 10^x*(10^2)^{2x}=(10^3)^5.\nApply the power rule (a^b)^c=a^{bc} to rewrite as 10^x * 10^{4x}=(10^3)^5.\nApply (a^b)^c=a^{bc} on the right to rewrite as 10^x * 10^{4x}=10^{15}.",
+      "last_claim": "Apply (a^b)^c=a^{bc} on the right to rewrite as 10^x * 10^{4x}=10^{15}.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

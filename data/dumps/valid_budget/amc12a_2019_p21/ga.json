@@ -1,0 +1,113 @@
+{
+  "problem_id": "amc12a_2019_p21",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "z is a primitive 8th root of unity, so z^8=1 and the value of z^{n^2} depends only on n^2 mod 8.",
+      "statement": "z primitive 8th root of unity implies z^8=1 and z^k depends only on k mod 8",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "For n=1 to 12 the possible residues of n^2 mod 8 are 0,1,4, yielding the respective powers 1, z and -1.",
+      "statement": "n^2 mod 8 \\in {0,1,4} implies z^{n^2} \\in {1,z,-1}",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "There are six n in 1..12 with n^{2}≡1 mod 8, three with ≡4 and three with ≡0.",
+      "statement": "Among n=1..12: exactly 3 with n^{2}≡0 (mod 8), 6 with ≡1, 3 with ≡4",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Hence the first sum equals 3*1 + 6*z + 3*(-1) = 6z",
+      "statement": "sum_{k=1}^{12} z^{k^2} = 6z",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "The second factor equals 6/z by the same residue counts (or equivalently as the conjugate of the first factor).",
+      "statement": "sum_{k=1}^{12} z^{-k^2} = 6/z",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore the product equals 36, as required.",
+      "statement": "product = 36",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Since |z|=1 the second sum is the complex conjugate of the first.",
+      "statement": "|z|=1 implies sum z^{-k^2} = conjugate(sum z^{k^2})",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Hence the product of the two sums is |6z|^2=36.",
+      "statement": "product = |6z|^2 = 36",
+      "dependencies": [
+        "l5",
+        "l14",
+        "l13"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus the product equals 36.",
+      "statement": "product = 36",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

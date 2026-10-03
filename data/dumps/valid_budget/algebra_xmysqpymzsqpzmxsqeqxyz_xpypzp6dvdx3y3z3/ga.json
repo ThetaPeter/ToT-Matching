@@ -1,0 +1,156 @@
+{
+  "problem_id": "algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume x, y, z are integers satisfying (x-y)^2 + (y-z)^2 + (z-x)^2 = xyz",
+      "statement": "x,y,z ∈ ℤ ∧ (x-y)^{2}+(y-z)^{2}+(z-x)^{2}=xyz",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Under the above condition, (x+y+z+6) divides (x³+y³+z³).",
+      "statement": "tc_1 ⇒ (x+y+z+6) | (x³+y³+z³)",
+      "dependencies": [
+        "tc_28",
+        "tc_20",
+        "tc_25",
+        "tc_29"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let s=x+y+z, p=xy+yz+zx and q=xyz.",
+      "statement": "s=x+y+z ∧ p=xy+yz+zx ∧ q=xyz",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "The given hypothesis is equivalent to 2(s^2-3p)=q.",
+      "statement": "tc_1 ∧ tc_2 ⇒ 2(s^{2}-3p)=q",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_20",
+      "natural_language": "Recall the identity x^{3} + y^{3} + z^{3} = s^{3} - 3 s p + 3 q.",
+      "statement": "tc_2 ⇒ x^{3}+y^{3}+z^{3} = s^{3}-3sp+3q",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_23",
+      "natural_language": "We have x^{3}+y^{3}+z^{3}-3q=s(s^{2}-3p).",
+      "statement": "tc_2 ∧ tc_3 ⇒ x^{3}+y^{3}+z^{3}-3q=s(s^{2}-3p)",
+      "dependencies": [
+        "tc_2",
+        "tc_3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_24",
+      "natural_language": "Hence x^{3}+y^{3}+z^{3}=(s+6)(s^{2}-3p).",
+      "statement": "tc_23 ⇒ x^{3}+y^{3}+z^{3}=(s+6)(s^{2}-3p)",
+      "dependencies": [
+        "tc_23"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_25",
+      "natural_language": "Since s^{2}-3p is an integer, s+6 divides x^{3}+y^{3}+z^{3}.",
+      "statement": "tc_24 ⇒ (s+6) | (x^{3}+y^{3}+z^{3})",
+      "dependencies": [
+        "tc_24"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_26",
+      "natural_language": "Since q=2(s^2-3p), the quantity q/2=s^2-3p is an integer.",
+      "statement": "tc_3 ⇒ q/2 ∈ ℤ",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_27",
+      "natural_language": "We have x^{3}+y^{3}+z^{3}-3q=s(s^{2}-3p). Thus x^{3}+y^{3}+z^{3}=3q+s·(q/2)=(q/2)(s+6).",
+      "statement": "tc_2 ∧ tc_3 ∧ tc_26 ⇒ x^{3}+y^{3}+z^{3}=(q/2)(s+6)",
+      "dependencies": [
+        "tc_2",
+        "tc_3",
+        "tc_26"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_28",
+      "natural_language": "Hence (s+6) divides x^{3}+y^{3}+z^{3}.",
+      "statement": "tc_27 ∧ tc_26 ⇒ (s+6) | (x^{3}+y^{3}+z^{3})",
+      "dependencies": [
+        "tc_27",
+        "tc_26"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_29",
+      "natural_language": "Hence x³+y³+z³=(s+6)·(q/2) with q/2∈ℤ, so s+6 divides x³+y³+z³.",
+      "statement": "tc_27 ∧ tc_26 ⇒ (s+6) | (x³+y³+z³)",
+      "dependencies": [
+        "tc_27",
+        "tc_26"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

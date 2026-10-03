@@ -1,0 +1,47 @@
+{
+  "problem_id": "aime_1996_p5",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "By Vieta's formulas: a+b+c=-3, ab+bc+ca=4, abc=11",
+      "statement": "Vieta(a+b+c=-3,ab+bc+ca=4,abc=11)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.25,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Identity: (a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc",
+      "statement": "(a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "By Vieta on the second cubic the product of its roots equals -t",
+      "statement": "product((a+b),(b+c),(c+a))=-t",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.1324532357065044,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "By Vieta on the second cubic, the product of its roots equals -t, so t=23",
+      "statement": "product((a+b),(b+c),(c+a))=-t => t=23",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_81",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Determine the remainder of 71 (mod 3). Show that it is 2.",
+      "statement": "Determine the remainder of 71 (mod 3). Show that it is 2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12315",
+      "natural_language": "Advance the argument (step 19153): continue from Determine the remainder of 71 (mod 3). Show that it is 2.",
+      "statement": "Advance the argument (step 19153): continue from Determine the remainder of 71 (mod 3). Show that it is 2.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.828078671210825,
+      "support": null
+    },
+    {
+      "id": "l_dead_6841",
+      "natural_language": "dead-end unused case 19155: discard this alternative",
+      "statement": "dead-end unused case 19155: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.223606797749979,
+      "support": null
+    }
+  ]
+}

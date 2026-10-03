@@ -1,0 +1,27 @@
+### Setup.
+Let \(e\) and \(r\) be arbitrary complex numbers. We establish the identity \(2er + e^2 + r^2 = (-r + (-e))^2\) by chaining the given equalities.
+
+### Intermediate identities.
+By the given claim \(\mathrm{l4}\), we have
+\[
+(-r + (-e))^2 = (-e - r)^2.
+\]
+By the given claim \(\mathrm{l5}\) (which itself rests on \(\mathrm{l3}\) and \(\mathrm{l1}\)), we have
+\[
+(-e - r)^2 = e^2 + 2er + r^2.
+\]
+(The same expansion of a square also appears as the given claim \(\mathrm{l6}\), which rests on \(\mathrm{l3}\); likewise \(\mathrm{l2}\) records that \([-(e+r)]^2 = (e+r)^2\).) Combining the two displayed identities therefore yields
+\[
+(-r + (-e))^2 = e^2 + 2er + r^2.
+\]
+Finally, the given claim \(\mathrm{l7}\) rearranges the right-hand side by commutativity of addition:
+\[
+e^2 + 2er + r^2 = 2er + e^2 + r^2.
+\]
+
+### Conclusion.
+Substituting the last rearrangement into the previous identity produces
+\[
+2er + e^2 + r^2 = (-r + (-e))^2,
+\]
+as required.

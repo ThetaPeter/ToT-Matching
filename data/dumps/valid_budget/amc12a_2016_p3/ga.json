@@ -1,0 +1,356 @@
+{
+  "problem_id": "amc12a_2016_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x=3/8 and y=-2/5. By definition rem(x,y)=x-y*floor(x/y).",
+      "statement": "x=3/8 ∧ y=-2/5 ∧ rem(x,y)=x-y·⌊x/y⌋",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Compute x/y = (3/8)/(-2/5) = -15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Substitute to obtain rem(x,y)=3/8-(-2/5)·(-1)=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Confirm ⌊-15/16⌋=-1 since -1<-15/16<0.",
+      "statement": "⌊-15/16⌋=-1",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Then x-y(-1)=3/8+(-2/5)=-1/40.",
+      "statement": "rem(x,y)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Compute x/y = (3/8)/(-2/5) = -15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The greatest integer \\le -15/16 is -1.",
+      "statement": "⌊-15/16⌋=-1",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus rem(x,y)=x-y(-1)=3/8-(-2/5)(-1)=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Compute x/y=(3/8)/(-2/5)=-15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Note that -1<-15/16<0, so floor(x/y)=-1.",
+      "statement": "⌊x/y⌋=-1",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Thus rem(x,y)=x-y⌊x/y⌋=3/8-(-2/5)(-1)=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l10",
+        "l12"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Thus rem(x,y)=x+y because floor(x/y)=-1 and y<0 implies -y*floor(x/y)=y.",
+      "statement": "rem(x,y)=x+y",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Thus rem(x,y)=x+y=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l11"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Compute 3/8-2/5=(15-16)/40=-1/40.",
+      "statement": "3/8-2/5=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Compute 3/8-2/5=15/40-16/40=-1/40.",
+      "statement": "3/8-2/5=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Hence rem(3/8,-2/5)=-1/40.",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l13"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Confirm ⌊-15/16⌋=-1 since -1<-15/16<0.",
+      "statement": "⌊-15/16⌋=-1",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Then x-y(-1)=3/8+(-2/5)=-1/40.",
+      "statement": "rem(x,y)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l14"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Thus rem(3/8,-2/5)=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Compute 3/8-2/5=(15-16)/40=-1/40.",
+      "statement": "3/8-2/5=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Therefore rem(3/8,-2/5)=-1/40. Hence the value is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40 ∧ answer=(B)",
+      "dependencies": [
+        "l3",
+        "l8",
+        "l16"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Compute 3/8-2/5=(15-16)/40=-1/40.",
+      "statement": "3/8-2/5=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Thus rem(3/8,-2/5)=x-y⌊x/y⌋=3/8-(-2/5)(-1)=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40 ∧ answer=(B)",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l17"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Thus rem(x,y)=x+y because floor(x/y)=-1 and y<0 implies -y*floor(x/y)=y.",
+      "statement": "rem(x,y)=x+y",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Compute 3/8-2/5=15/40-16/40=-1/40.",
+      "statement": "3/8-2/5=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Hence rem(3/8,-2/5)=-1/40.",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l18",
+        "l19"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Thus rem(x,y)=x+y because floor(x/y)=-1 and y<0 implies -y*floor(x/y)=y.",
+      "statement": "rem(x,y)=x+y",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Thus rem(x,y)=x+y=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l20",
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

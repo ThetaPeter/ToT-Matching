@@ -1,0 +1,49 @@
+{
+  "problem_id": "algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4",
+  "nodes": [
+    {
+      "id": "l3",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6793662204867575,
+      "support": null
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3185110286353031,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Therefore \\(x=-4\\) and \\(e=11\\)",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.2672612419124244,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.45291081365783836,
+      "support": null
+    }
+  ]
+}

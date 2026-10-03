@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_239",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12. $$ Show that it is 2.",
+      "statement": "Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10 + 11 + 12. $$ Show that it is 2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l10209",
+      "natural_language": "Advance the argument (step 15877): continue from Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6",
+      "statement": "Advance the argument (step 15877): continue from Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6760966493992568,
+      "support": null
+    },
+    {
+      "id": "l10210",
+      "natural_language": "Advance the argument (step 15878): continue from Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6",
+      "statement": "Advance the argument (step 15878): continue from Determine the modulo 4 remainder of the following sum: $$ 1 + 2 + 3 + 4 + 5 + 6",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.852052700748531,
+      "support": null
+    }
+  ]
+}

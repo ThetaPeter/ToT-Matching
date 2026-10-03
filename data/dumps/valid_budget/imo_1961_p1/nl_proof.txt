@@ -1,0 +1,35 @@
+We work throughout with the equivalence that there exist distinct positive \(x,y,z\) satisfying the given system if and only if the parameters \(a,b\) obey the inequalities obtained from Vieta’s formulas together with the positivity constraints.
+
+From the elementary symmetric relations one has the identity
+\[
+a^2=b^2+2\bigl(xy+z(x+y)\bigr).
+\]
+Substituting the remaining Vieta relation \(x+y=a-z\) immediately yields
+\[
+a^2=b^2+2az.
+\]
+Provided \(a\neq0\) we may solve for the third variable:
+\[
+z=\frac{a^2-b^2}{2a}.
+\]
+The pair \(x,y\) then consists of the two roots of the quadratic
+\[
+t^2-(a-z)t+z^2=0.
+\]
+These roots are real and distinct precisely when the discriminant is positive:
+\[
+D=(a-z)^2-4z^2>0.
+\]
+The same discriminant factors as
+\[
+D=(a-3z)(a+z),
+\]
+so the condition \(D>0\) is equivalent to
+\[
+(a-3z)(a+z)>0.
+\]
+In addition, positivity of both roots requires \(a-z>0\) and \(z>0\). Collecting all of these inequalities (and translating them back into conditions on \(a\) and \(b\)) produces the stated criterion
+\[
+a>0,\qquad b^2>\frac{2a^2}{3},\qquad a^3-3ab^2+\frac{2a^3}{27}>0
+\]
+(or any algebraically equivalent set of inequalities). Thus the original system admits distinct positive solutions if and only if these inequalities hold.

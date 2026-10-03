@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_143",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show that it is 8.",
+      "statement": "If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show that it is 8.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5015503913178176,
+      "support": null
+    },
+    {
+      "id": "l6214",
+      "natural_language": "Advance the argument (step 9662): continue from If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show tha",
+      "statement": "Advance the argument (step 9662): continue from If $f(x) = x + 1$ and $g(x) = x^2 + 3$, what is the value of $f(g(2))$? Show tha",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7923547734168842,
+      "support": null
+    }
+  ]
+}

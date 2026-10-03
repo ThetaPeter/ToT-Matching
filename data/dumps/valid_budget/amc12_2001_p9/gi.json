@@ -1,0 +1,62 @@
+{
+  "problem_id": "amc12_2001_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Functional equation holds for all positive reals x,y",
+      "statement": "f(xy) = f(x)/y",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Given value at 500",
+      "statement": "f(500) = 3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Express 600 as multiple of 500",
+      "statement": "600 = 500 * (6/5)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Apply functional equation with x=500, y=6/5 to obtain f(600)",
+      "statement": "f(600)=f(500)/(6/5)=3*5/6=5/2",
+      "dependencies": [
+        "tc_1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Set x=500 and y=6/5",
+      "statement": "x=500, y=6/5",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

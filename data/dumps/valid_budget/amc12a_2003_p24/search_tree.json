@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2003_p24",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim": "[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim": "[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\nContinue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim": "Continue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\nContinue from:\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\", \"Rewrite as \\( (1-\\log_a b)+(1-\\log_b a) \\).\"]",
+      "last_claim": "[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\", \"Rewrite as \\( (1-\\log_a b)+(1-\\log_b a) \\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\n[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]",
+      "last_claim": "[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\nContinue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim": "Continue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\nContinue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is always \\(\\le0\\).\"]",
+      "last_claim": "[\"By AM-GM, \\(t+1/t\\ge2\\) for \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is always \\(\\le0\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\nContinue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\nContinue from: Continue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\n[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]\n[\"The proof is complete: the expression equals \\(2-t-1/t\\le0\\) with equality at \\(t=1\\).\",\"Direct substitution \\(a=b>1\\) recovers the value \\(0\\), confirming it is attained.\"]",
+      "last_claim": "[\"The proof is complete: the expression equals \\(2-t-1/t\\le0\\) with equality at \\(t=1\\).\",\"Direct substitution \\(a=b>1\\) recovers the value \\(0\\), confirming it is attained.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\n[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]\nContinue from: [\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]",
+      "last_claim": "Continue from: [\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\), and the largest possible value is \\(0\\).\"]",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\nContinue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\n[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\) and the largest possible value is \\(0\\).\"]",
+      "last_claim": "[\"Equality holds precisely when \\(t=1\\), i.e., when \\(a=b>1\\), so the bound \\(0\\) is attained.\",\"Thus the original expression never exceeds \\(0\\) and the largest possible value is \\(0\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "If $a\\geq b > 1,$ what is the largest possible value of $\\log_{a}(a/b) + \\log_{b}(b/a)?$\n\n$\n\\mathrm{(A)}\\ -2      \\qquad\n\\mathrm{(B)}\\ 0     \\qquad\n\\mathrm{(C)}\\ 2      \\qquad\n\\mathrm{(D)}\\ 3      \\qquad\n\\mathrm{(E)}\\ 4\n$ Show that it is \\textbf{B}.\n[\"Let \\( t=\\log_a b \\). Then \\( 0<t\\le 1 \\) and the expression equals \\( 2-t-1/t \\).\",\"When \\( a=b \\) the expression equals \\( 0 \\); it remains to show the expression is always \\(\\le 0\\).\"]\n[\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\nContinue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]\nContinue from: Continue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"By AM-GM, \\(t+1/t\\ge2\\) for all \\(t>0\\), with equality iff \\(t=1\\).\",\"Hence \\(2-t-1/t\\le0\\) on \\((0,1]\\), so the original expression is at most \\(0\\).\"]",
+      "last_claim_id": "ts_14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

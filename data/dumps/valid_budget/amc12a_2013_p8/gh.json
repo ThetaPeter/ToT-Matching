@@ -1,0 +1,51 @@
+{
+  "problem_id": "amc12a_2013_p8",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x and y are distinct nonzero reals satisfying x + 2/x = y + 2/y",
+      "statement": "x,y \\in \\mathbb{R}\\setminus\\{0\\}, x\neq y, x+2/x=y+2/y",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "multiply both sides by xy to clear denominators",
+      "statement": "xy(x+2/x)=xy(y+2/y) implies x^2 y + 2y = x y^2 + 2x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.20412414523193154,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "rearrange terms to factor",
+      "statement": "x^2 y - x y^2 + 2y - 2x =0 implies xy(x-y)-2(x-y)=0",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.1767766952966369,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Multiply both sides of the given equation by \\(xy\\) to obtain \\(x^2 y + 2y = xy^2 + 2x\\)",
+      "statement": "xy(x + 2/x) = xy(y + 2/y) implies x^2 y + 2 y = x y^2 + 2 x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.41702882811414954,
+      "support": null
+    }
+  ]
+}

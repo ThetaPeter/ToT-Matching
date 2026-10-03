@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1988_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1| + |x_2| + \\dots + |x_n| = 19 + |x_1 + x_2 + \\dots + x_n|.\n$\nWhat is the smallest possible value of $n$? Show that it is 020.",
+      "statement": "Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1| + |x_2| + \\dots + |x_n| = 19 + |x_1 + x_2 + \\dots + x_n|.\n$\nWhat is the smallest possible value of $n$? Show that it is 020.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l435",
+      "natural_language": "Advance the argument (step 673): continue from Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1|",
+      "statement": "Advance the argument (step 673): continue from Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1|",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.17002045681689024,
+      "support": null
+    },
+    {
+      "id": "l436",
+      "natural_language": "Advance the argument (step 674): continue from Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1|",
+      "statement": "Advance the argument (step 674): continue from Suppose that $|x_i| < 1$ for $i = 1, 2, \\dots, n$.  Suppose further that\n$\n|x_1|",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.38089410770598775,
+      "support": null
+    }
+  ]
+}

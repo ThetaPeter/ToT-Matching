@@ -1,0 +1,496 @@
+{
+  "problem_id": "algebra_amgm_sumasqdivbsqgeqsumbdiva",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c be positive real numbers",
+      "statement": "a>0 \\land b>0 \\land c>0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "By AM-GM, a^2/b^2 + b^2/c^2 >= 2a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} \\ge 2\\frac{a}{c}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Let x=a/b, y=b/c, z=c/a (so xyz=1)",
+      "statement": "x=\\frac{a}{b} \\land y=\\frac{b}{c} \\land z=\\frac{c}{a} \\land xyz=1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "By AM-GM, b^2/c^2 + c^2/a^2 >= 2b/a",
+      "statement": "\\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\ge 2\\frac{b}{a}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "By AM-GM, c^2/a^2 + a^2/b^2 >= 2c/b",
+      "statement": "\\frac{c^2}{a^2} + \\frac{a^2}{b^2} \\ge 2\\frac{c}{b}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Adding the three AM-GM inequalities yields the result after dividing by 2",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l1",
+        "l3",
+        "l4",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The inequality rewrites as x^2+y^2+z^2 >= yz+zx+xy",
+      "statement": "x^2 + y^2 + z^2 \\ge yz + zx + xy",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Applying AM-GM cyclically and adding the three inequalities yields the result",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Rewrite target inequality in x,y,z: x^2 + y^2 + z^2 >= 1/x + 1/y + 1/z (using xyz=1)",
+      "statement": "x^2 + y^2 + z^2 \\ge \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "By AM-GM on each pair after clearing denominators or rearrangement: x^2 + 1/x^2 >= x + 1/x etc., but directly x^2 - 1/x >= yz - y - z + cyclic sum yields non-negative",
+      "statement": "x^2 + y^2 + z^2 - \\frac{1}{x} - \\frac{1}{y} - \\frac{1}{z} \\ge 0",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Substitution plus cyclic AM-GM on rewritten form completes the proof",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Let \\(x=a/b\\), \\(y=b/c\\), \\(z=c/a\\). Then \\(xyz=1\\) and the desired inequality is equivalent to \\(x^2+y^2+z^2\\ge 1/x+1/y+1/z\\)",
+      "statement": "x=\\frac{a}{b} \\land y=\\frac{b}{c} \\land z=\\frac{c}{a} \\land xyz=1 \\land (\\frac{a^2}{b^2}+\\frac{b^2}{c^2}+\\frac{c^2}{a^2}\\ge\\frac{b}{a}+\\frac{c}{b}+\\frac{a}{c} \\iff x^2+y^2+z^2\\ge\\frac1x+\\frac1y+\\frac1z)",
+      "dependencies": [
+        "tc_1",
+        "l2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "With the same substitution one has \\(1/x+1/y+1/z=xy+yz+zx\\), so it suffices to prove \\(x^2+y^2+z^2\\ge xy+yz+zx\\)",
+      "statement": "\\frac1x+\\frac1y+\\frac1z=xy+yz+zx \\land (x^2+y^2+z^2\\ge\\frac1x+\\frac1y+\\frac1z \\iff x^2+y^2+z^2\\ge xy+yz+zx)",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "x^2 + y^2 + z^2 - xy - yz - zx = 1/2*((x-y)^2 + (y-z)^2 + (z-x)^2) >= 0",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The inequality x^2+y^2+z^2 >= xy+yz+zx is equivalent to 1/2*((x-y)^2+(y-z)^2+(z-x)^2) >=0, which holds for all real x,y,z",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Adding the three AM-GM inequalities x^2+y^2 >=2xy, y^2+z^2>=2yz and z^2+x^2>=2zx immediately yields x^2+y^2+z^2 >= xy+yz+zx",
+      "statement": "x^2 + y^2 \\ge 2xy \\land y^2 + z^2 \\ge 2yz \\land z^2 + x^2 \\ge 2zx \\implies x^2 + y^2 + z^2 \\ge xy + yz + zx",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "x^2 + y^2 + z^2 - xy - yz - zx = 1/2*((x-y)^2 + (y-z)^2 + (z-x)^2) >= 0",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The rewritten form is equivalent to (x-y)^2+(y-z)^2+(z-x)^2\\ge0",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Equality holds if and only if a=b=c",
+      "statement": "Equality holds \\iff a=b=c",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c, with equality iff a=b=c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} with equality \\iff a=b=c",
+      "dependencies": [
+        "l15",
+        "l16"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "x^2 + y^2 + z^2 - yz - zx - xy = 1/2*((x-y)^2 + (y-z)^2 + (z-x)^2) >= 0",
+      "statement": "x^2 + y^2 + z^2 - yz - zx - xy = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l6",
+        "l17"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Since xyz=1, we recover xy+yz+zx=1/x+1/y+1/z, and therefore x^2+y^2+z^2\\ge1/x+1/y+1/z, which is the substituted form of the original inequality.",
+      "statement": "xyz=1 \\implies (xy+yz+zx=1/x+1/y+1/z) \\land (x^2+y^2+z^2\\ge xy+yz+zx \\implies x^2+y^2+z^2\\ge 1/x+1/y+1/z)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Equality holds if and only if x=y=z, hence x=y=z=1 (using xyz=1), which is equivalent to a=b=c.",
+      "statement": "Equality \\iff x=y=z=1 \\iff a=b=c",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c, with equality iff a=b=c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c} with equality \\iff a=b=c",
+      "dependencies": [
+        "l18",
+        "l19"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "The inequality x^2+y^2+z^2 >= xy+yz+zx is equivalent to 1/2*((x-y)^2+(y-z)^2+(z-x)^2) >=0, which holds for all real x,y,z",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Adding the three AM-GM inequalities x^2+y^2 >=2xy, y^2+z^2>=2yz and z^2+x^2>=2zx immediately yields x^2+y^2+z^2 >= xy+yz+zx",
+      "statement": "x^2 + y^2 \\ge 2xy \\land y^2 + z^2 \\ge 2yz \\land z^2 + x^2 \\ge 2zx \\implies x^2 + y^2 + z^2 \\ge xy + yz + zx",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l20",
+        "l21"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "The inequality \\(x^2+y^2+z^2\\ge xy+yz+zx\\) is equivalent to \\(\\frac12\\bigl((x-y)^2+(y-z)^2+(z-x)^2\\bigr)\\ge0\\), which holds for all real \\(x,y,z\\)",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "By AM-GM one has \\(x^2+y^2\\ge2xy\\), \\(y^2+z^2\\ge2yz\\) and \\(z^2+x^2\\ge2zx\\); adding these three inequalities yields \\(2(x^2+y^2+z^2)\\ge2(xy+yz+zx)\\)",
+      "statement": "x^2 + y^2 \\ge 2xy \\land y^2 + z^2 \\ge 2yz \\land z^2 + x^2 \\ge 2zx \\implies 2(x^2 + y^2 + z^2) \\ge 2(xy + yz + zx)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l22",
+        "l23"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "x^2 + y^2 + z^2 - xy - yz - zx = 1/2*((x-y)^2 + (y-z)^2 + (z-x)^2) >= 0",
+      "statement": "x^2 + y^2 + z^2 - xy - yz - zx = \\frac12((x-y)^2 + (y-z)^2 + (z-x)^2) \\ge 0",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "l24"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

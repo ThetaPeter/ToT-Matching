@@ -1,0 +1,27 @@
+{
+  "problem_id": "algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume the two given equations over complex numbers x and e",
+      "statement": "x + e = 7 ∧ 2x + e = 3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "problem_id": "amc12a_2019_p21",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "z is a primitive 8th root of unity, so z^8=1 and the value of z^{n^2} depends only on n^2 mod 8.",
+      "statement": "z primitive 8th root of unity implies z^8=1 and z^k depends only on k mod 8",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.464834840100684,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "For n=1 to 12 the possible residues of n^2 mod 8 are 0,1,4, yielding the respective powers 1, z and -1.",
+      "statement": "n^2 mod 8 \\in {0,1,4} implies z^{n^2} \\in {1,z,-1}",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.18752289237539815,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "There are six n in 1..12 with n^{2}≡1 mod 8, three with ≡4 and three with ≡0.",
+      "statement": "Among n=1..12: exactly 3 with n^{2}≡0 (mod 8), 6 with ≡1, 3 with ≡4",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.17888543819998315,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Hence the first sum equals 3*1 + 6*z + 3*(-1) = 6z",
+      "statement": "sum_{k=1}^{12} z^{k^2} = 6z",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.30151134457776363,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "Since |z|=1 the second sum is the complex conjugate of the first.",
+      "statement": "|z|=1 implies sum z^{-k^2} = conjugate(sum z^{k^2})",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.33333333333333337,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "Hence the product of the two sums is |6z|^2=36.",
+      "statement": "product = |6z|^2 = 36",
+      "dependencies": [
+        "l5",
+        "l14"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.11322770341445959,
+      "support": null
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus the product equals 36.",
+      "statement": "product = 36",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": 0.6708203932499369,
+      "support": null
+    }
+  ]
+}

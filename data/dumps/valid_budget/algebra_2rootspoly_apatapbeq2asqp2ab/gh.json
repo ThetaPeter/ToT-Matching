@@ -1,0 +1,49 @@
+{
+  "problem_id": "algebra_2rootspoly_apatapbeq2asqp2ab",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any complex numbers a and b, (a + a)(a + b) = 2a^2 + 2ab",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5330017908890261,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "By definition of scalar multiplication.",
+      "statement": "a + a = 2a",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "By substitution of l13 into the left factor.",
+      "statement": "(a + a)(a + b) = 2a(a + b)",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.6000000000000001,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "By the distributive law of complex multiplication over addition.",
+      "statement": "2a(a + b) = 2a^2 + 2ab",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.08703882797784893,
+      "support": null
+    }
+  ]
+}

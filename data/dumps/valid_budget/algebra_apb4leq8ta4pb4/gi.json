@@ -1,0 +1,73 @@
+{
+  "problem_id": "algebra_apb4leq8ta4pb4",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any positive real numbers a and b, (a+b)^4 \\le 8(a^4 + b^4).",
+      "dependencies": [
+        "l5",
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.",
+      "statement": "(a^2 + b^2)^2 \\le 2(a^4 + b^4) for all real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).",
+      "statement": "(a + b)^2 \\le 2(a^2 + b^2) for all real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).",
+      "statement": "(a + b)^4 \\le 8(a^4 + b^4) for all real a, b",
+      "dependencies": [
+        "l4",
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).",
+      "statement": "(a + b)^2 \\le 2(a^2 + b^2) for all real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.",
+      "statement": "(a + b)^4 \\le 8(a^4 + b^4) for all real a, b",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+Let \(z\) be a primitive eighth root of unity. Then \(z^8=1\), so the value of \(z^k\) depends only on the residue of \(k\) modulo \(8\).
+
+Any integer square is congruent to \(0\), \(1\), or \(4\) modulo \(8\). Consequently \(z^{n^2}\) equals \(1\), \(z\), or \(-1\) according as \(n^2\equiv 0\), \(1\), or \(4\pmod{8}\).
+
+Among the twelve integers \(n=1,\dots,12\) there are exactly three for which \(n^2\equiv 0\pmod{8}\), six for which \(n^2\equiv 1\pmod{8}\), and three for which \(n^2\equiv 4\pmod{8}\). Therefore
+\[
+\sum_{k=1}^{12}z^{k^2}=3\cdot 1+6\cdot z+3\cdot(-1)=6z.
+\]
+The same counting of residues yields
+\[
+\sum_{k=1}^{12}z^{-k^2}=6/z.
+\]
+Since \(|z|=1\), the second sum is the complex conjugate of the first. The product of the two sums is therefore
+\[
+|6z|^2=36.
+\]

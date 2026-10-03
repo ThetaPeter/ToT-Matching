@@ -1,0 +1,55 @@
+{
+  "problem_id": "amc12a_2009_p15",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "Set n = 97 = 4·24 + 1. Then Re(S) = 49 and Im(S) = -48, so S = 48 + 49i, confirming the target equation.",
+      "statement": "n=97 ⇒ S=48+49i",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.46917155840855507,
+      "support": null
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Set n=97=4·24+1. Then Re(S)=49 and Im(S)=-48, hence S=48+49i, confirming the target equation holds precisely for this n among the choices.",
+      "statement": "n=97 \\Rightarrow S=48+49i (and no other option works)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": 0.3973597071195132,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "The successive powers of i cycle every four terms as i,-1,-i,1.",
+      "statement": "i^k cycles as i,-1,-i,1 for k mod 4",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": 0.3535533905932738,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "For n ≡ 1 (mod 4), after substituting into the closed form and simplifying by multiplying numerator and denominator by the conjugate of the denominator, Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+1 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": 0.44020438924006666,
+      "support": null
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The only solution among the choices is n=97=4*24+1, confirming answer D.",
+      "statement": "sum=48+49i ⇔ n=97 (answer D)",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.7345586196235957,
+      "support": null
+    }
+  ]
+}

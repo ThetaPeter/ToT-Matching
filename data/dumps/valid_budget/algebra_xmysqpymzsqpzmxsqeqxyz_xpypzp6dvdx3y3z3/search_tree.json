@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim": "[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim": "[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim_id": "tc_6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim_id": "tc_8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\nContinue from:\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\), \\(q=xyz\\). The hypothesis is equivalent to \\(2(s^2-3p)=q\\).\", \"Recall the identity \\(x^3+y^3+z^3=s^3-3sp+3q\\).\"]",
+      "last_claim": "[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\), \\(q=xyz\\). The hypothesis is equivalent to \\(2(s^2-3p)=q\\).\", \"Recall the identity \\(x^3+y^3+z^3=s^3-3sp+3q\\).\"]",
+      "last_claim_id": "tc_10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_13",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.2,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\n[\"Since \\(s^2-3p\\) is an integer, \\(s+6\\) divides \\(x^3+y^3+z^3\\).\", \"From the hypothesis we also have \\(s^2-3p=q/2\\), so \\(q\\) is even and the identity is consistent over the integers.\"]",
+      "last_claim": "[\"Since \\(s^2-3p\\) is an integer, \\(s+6\\) divides \\(x^3+y^3+z^3\\).\", \"From the hypothesis we also have \\(s^2-3p=q/2\\), so \\(q\\) is even and the identity is consistent over the integers.\"]",
+      "last_claim_id": "tc_14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\nContinue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim": "Continue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim_id": "tc_16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\",\"Thus \\(x^3+y^3+z^3=3q+s\\cdot(q/2)=(q/2)(s+6)\\).\"]",
+      "last_claim": "[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\",\"Thus \\(x^3+y^3+z^3=3q+s\\cdot(q/2)=(q/2)(s+6)\\).\"]",
+      "last_claim_id": "tc_17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: Continue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]",
+      "last_claim_id": "tc_20",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\nContinue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\n[\"Since \\(s^2-3p\\) is an integer, \\(s+6\\) divides \\(x^3+y^3+z^3\\).\",\"This establishes the required divisibility.\"]",
+      "last_claim": "[\"Since \\(s^2-3p\\) is an integer, \\(s+6\\) divides \\(x^3+y^3+z^3\\).\",\"This establishes the required divisibility.\"]",
+      "last_claim_id": "tc_23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\nContinue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]\nContinue from: Continue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\", \"Hence \\(x^3+y^3+z^3=(s+6)(s^2-3p)\\).\"]",
+      "last_claim_id": "tc_16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\",\"Thus \\(x^3+y^3+z^3=3q+s\\cdot(q/2)=(q/2)(s+6)\\).\"]\n[\"Since \\(q=2(s^2-3p)\\), the quantity \\(q/2=s^2-3p\\) is an integer.\"]",
+      "last_claim": "[\"Since \\(q=2(s^2-3p)\\), the quantity \\(q/2=s^2-3p\\) is an integer.\"]",
+      "last_claim_id": "tc_26",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.\n[\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\nContinue from: [\"Let \\(s=x+y+z\\), \\(p=xy+yz+zx\\) and \\(q=xyz\\).\", \"The given hypothesis is equivalent to \\(2(s^2-3p)=q\\).\"]\n[\"We have \\(x^3+y^3+z^3-3q=s(s^2-3p)\\).\",\"Thus \\(x^3+y^3+z^3=3q+s\\cdot(q/2)=(q/2)(s+6)\\).\"]\n[\"Hence \\(x^3+y^3+z^3=(s+6)\\cdot(q/2)\\) with \\(q/2\\in\\mathbb{Z}\\), so \\(s+6\\) divides \\(x^3+y^3+z^3\\).\"]",
+      "last_claim": "[\"Hence \\(x^3+y^3+z^3=(s+6)\\cdot(q/2)\\) with \\(q/2\\in\\mathbb{Z}\\), so \\(s+6\\) divides \\(x^3+y^3+z^3\\).\"]",
+      "last_claim_id": "tc_29",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

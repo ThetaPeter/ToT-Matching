@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12_2001_p9",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\n[\"Set \\(x=500\\) and \\(y=6/5\\).\", \"Then \\(f(600)=f(500)/(6/5)=3\\cdot5/6=5/2\\).\"]",
+      "last_claim": "[\"Set \\(x=500\\) and \\(y=6/5\\).\", \"Then \\(f(600)=f(500)/(6/5)=3\\cdot5/6=5/2\\).\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.7,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\n[\"Set \\(x=500\\) and \\(y=6/5\\).\", \"Then \\(f(600)=f(500)/(6/5)=3\\cdot5/6=5/2\\).\"]\nNote that 500*(6/5)=600 so the given equation applies directly and yields the value.",
+      "last_claim": "Note that 500*(6/5)=600 so the given equation applies directly and yields the value.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\n[\"Set \\(x=500\\) and \\(y=6/5\\).\", \"Then \\(f(600)=f(500)/(6/5)=3\\cdot5/6=5/2\\).\"]\nThe same relation is recovered by the inverse substitution x=600 and y=5/6, confirming consistency.",
+      "last_claim": "The same relation is recovered by the inverse substitution x=600 and y=5/6, confirming consistency.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nSet x=500 and y=6/5 so that xy=600.",
+      "last_claim": "Set x=500 and y=6/5 so that xy=600.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nApply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.",
+      "last_claim": "Apply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nSet x=500 and y=6/5 so that xy=600.\nThen f(600)=f(500)/(6/5).",
+      "last_claim": "Then f(600)=f(500)/(6/5).",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nSet x=500 and y=6/5 so that xy=600.\nHence f(600)=3*(5/6)=5/2.",
+      "last_claim": "Hence f(600)=3*(5/6)=5/2.",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nApply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.\nThe substitution x=500 and y=6/5 is valid because 500*(6/5)=600 and both factors are positive reals.",
+      "last_claim": "The substitution x=500 and y=6/5 is valid because 500*(6/5)=600 and both factors are positive reals.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nApply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.\nThe same value is recovered by writing 600=500*(6/5) and applying the functional equation once.",
+      "last_claim": "The same value is recovered by writing 600=500*(6/5) and applying the functional equation once.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nSet x=500 and y=6/5 so that xy=600.\nThen f(600)=f(500)/(6/5).\nTherefore f(600)=3/(6/5).",
+      "last_claim": "Therefore f(600)=3/(6/5).",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nSet x=500 and y=6/5 so that xy=600.\nThen f(600)=f(500)/(6/5).\nHence f(600)=3*(5/6)=5/2.",
+      "last_claim": "Hence f(600)=3*(5/6)=5/2.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nApply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.\nThe substitution x=500 and y=6/5 is valid because 500*(6/5)=600 and both factors are positive reals.\nTherefore f(600)=5/2, which is option C.",
+      "last_claim": "Therefore f(600)=5/2, which is option C.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Let $f$ be a function satisfying $f(xy) = \\frac{f(x)}y$ for all positive real numbers $x$ and $y$. If $f(500) =3$, what is the value of $f(600)$?\n\n$(\\mathrm{A})\\ 1 \\qquad (\\mathrm{B})\\ 2 \\qquad (\\mathrm{C})\\ \\frac52 \\qquad (\\mathrm{D})\\ 3 \\qquad (\\mathrm{E})\\ \\frac{18}5$ Show that it is \\textbf{C } \\frac52.\nContinue from:\nApply the given equation to obtain f(600)=f(500)/(6/5)=3*(5/6)=5/2.\nThe substitution x=500 and y=6/5 is valid because 500*(6/5)=600 and both factors are positive reals.\nThe functional equation applies to all positive reals, so no further restrictions arise.",
+      "last_claim": "The functional equation applies to all positive reals, so no further restrictions arise.",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

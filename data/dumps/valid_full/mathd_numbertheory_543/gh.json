@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_543",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^4$. Show that it is 123.",
+      "statement": "Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^4$. Show that it is 123.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l11829",
+      "natural_language": "Advance the argument (step 18397): continue from Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^",
+      "statement": "Advance the argument (step 18397): continue from Find the number of distinct positive divisors of $(30)^4$ excluding 1 and $(30)^",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.670820393249937,
+      "support": null
+    },
+    {
+      "id": "l_dead_6571",
+      "natural_language": "dead-end unused case 18399: discard this alternative",
+      "statement": "dead-end unused case 18399: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.291111254869791,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1984_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find the value of $a_2+a_4+a_6+a_8+\\ldots+a_{98}$ if $a_1$, $a_2$, $a_3\\ldots$ is an [[arithmetic progression]] with common difference 1, and $a_1+a_2+a_3+\\ldots+a_{98}=137$. Show that it is 093.",
+      "statement": "Find the value of $a_2+a_4+a_6+a_8+\\ldots+a_{98}$ if $a_1$, $a_2$, $a_3\\ldots$ is an [[arithmetic progression]] with common difference 1, and $a_1+a_2+a_3+\\ldots+a_{98}=137$. Show that it is 093.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.14870075103173058,
+      "support": null
+    },
+    {
+      "id": "l165",
+      "natural_language": "Advance the argument (step 253): continue from Find the value of $a_2+a_4+a_6+a_8+\\ldots+a_{98}$ if $a_1$, $a_2$, $a_3\\ldots$ i",
+      "statement": "Advance the argument (step 253): continue from Find the value of $a_2+a_4+a_6+a_8+\\ldots+a_{98}$ if $a_1$, $a_2$, $a_3\\ldots$ i",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6362090102803518,
+      "support": null
+    }
+  ]
+}

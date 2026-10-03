@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2003_p17",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]",
+      "last_claim": "[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.7,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.3,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\n[\"Solving the linear system yields \\(a=2/5\\) and \\(b=1/5\\).\", \"A suitable linear combination of the two original equations produces \\(\\log(xy)=3/5\\).\"]",
+      "last_claim": "[\"Solving the linear system yields \\(a=2/5\\) and \\(b=1/5\\).\", \"A suitable linear combination of the two original equations produces \\(\\log(xy)=3/5\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\n[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]",
+      "last_claim": "[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nSolving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.",
+      "last_claim": "Solving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nLinear combination (1/5)(a+3b)+(2/5)(2a+b) equals a+b and therefore equals 3/5.",
+      "last_claim": "Linear combination (1/5)(a+3b)+(2/5)(2a+b) equals a+b and therefore equals 3/5.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\n[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]\n[\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]",
+      "last_claim": "[\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\n[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nSolving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.\n[\"Therefore \\(\\log(xy)=a+b=\\frac{3}{5}\\).\",\"Hence \\(\\log(xy)=\\frac{3}{5}\\), which is option (D).\"]",
+      "last_claim": "[\"Therefore \\(\\log(xy)=a+b=\\frac{3}{5}\\).\",\"Hence \\(\\log(xy)=\\frac{3}{5}\\), which is option (D).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.5,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\n[\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nContinue from: [\"Let \\(a=\\log x\\) and \\(b=\\log y\\), so the given equations become \\(a+3b=1\\) and \\(2a+b=1\\).\",\"Adding the given equations yields \\(\\log(x^3 y^4)=2\\).\"]\nSolving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.\nContinue from: Solving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.",
+      "last_claim": "Continue from: Solving the system a+3b=1 and 2a+b=1 produces a=2/5 and b=1/5, so a+b=3/5.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\n[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]\n[\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]\n[\"Thus \\(\\log(xy)=\\frac{3}{5}\\), corresponding to option (D).\", \"Verification confirms \\(a+3c=\\frac{2}{5}+\\frac{3}{5}=1\\) and \\(2a+c=\\frac{4}{5}+\\frac{1}{5}=1\\).\"]",
+      "last_claim": "[\"Thus \\(\\log(xy)=\\frac{3}{5}\\), corresponding to option (D).\", \"Verification confirms \\(a+3c=\\frac{2}{5}+\\frac{3}{5}=1\\) and \\(2a+c=\\frac{4}{5}+\\frac{1}{5}=1\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.\nContinue from:\n[\"Let \\(a=\\log x\\) and \\(c=\\log y\\). Then the given equations become \\(a+3c=1\\) and \\(2a+c=1\\).\", \"Adding twice the first equation to the second yields \\(4a+7c=3\\), but more directly we may solve the linear system to obtain \\(a+c=3/5\\).\"]\n[\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]\nContinue from: [\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]",
+      "last_claim": "Continue from: [\"Hence \\(\\log(xy)=a+c=\\frac{3}{5}\\).\", \"Explicitly solving the system yields \\(a=\\frac{2}{5}\\) and \\(c=\\frac{1}{5}\\), whence \\(a+c=\\frac{3}{5}\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

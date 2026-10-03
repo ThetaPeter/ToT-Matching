@@ -1,0 +1,95 @@
+{
+  "problem_id": "amc12a_2020_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "n is a positive multiple of 5 whose prime factors lie in {2,3,5,7}",
+      "statement": "n=2^a 3^b 5^c 7^d with a,b,c,d non-negative integers, c\\ge1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7337993857053429,
+      "support": null
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus there are 6·4·1·2=48 such positive integers n",
+      "statement": "total number of admissible n is 48",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.29417420270727607,
+      "support": null
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The equality of prime exponents in lcm(5!,n)=5⋅gcd(10!,n) must hold separately for each of 2,3,5,7",
+      "statement": "exponent equalities are independent across primes",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5962847939999439,
+      "support": null
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "total number of admissible n is 48",
+      "statement": "multiply the numbers of choices for the four exponents",
+      "dependencies": [
+        "ts_10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5039526306789697,
+      "support": null
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "the number of such n is 48, which is choice (D)",
+      "statement": "answer is 48",
+      "dependencies": [
+        "ts_7",
+        "ts_11",
+        "ts_22"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.5720775535473555,
+      "support": null
+    },
+    {
+      "id": "ts_17",
+      "natural_language": "exponent conditions reduce to a\\in{3..8} (6 choices), b\\in{1..4} (4 choices), c=3 (1 choice), d\\in{0,1} (2 choices)",
+      "statement": "independent per-prime solution counts",
+      "dependencies": [
+        "ts_10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.3333333333333334,
+      "support": null
+    },
+    {
+      "id": "ts_18",
+      "natural_language": "total admissible n equals 6\times4\times1\times2=48",
+      "statement": "product of exponent cardinalities",
+      "dependencies": [
+        "ts_17"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "ts_22",
+      "natural_language": "The four independent exponent ranges therefore enumerate all solutions, confirming that the number of admissible n is exactly 48.",
+      "statement": "ranges enumerate all solutions and total is exactly 48",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": 0.28915746598312014,
+      "support": null
+    }
+  ]
+}

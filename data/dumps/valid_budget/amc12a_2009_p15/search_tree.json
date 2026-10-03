@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2009_p15",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim": "[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.65,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\n[\"The closed form \\(\\sum_{k=1}^n k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) holds for \\(r=i\\).\",\"Powers of \\(i\\) are periodic of period 4, so the value of the sum depends on \\(n\\bmod 4\\).\"]",
+      "last_claim": "[\"The closed form \\(\\sum_{k=1}^n k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) holds for \\(r=i\\).\",\"Powers of \\(i\\) are periodic of period 4, so the value of the sum depends on \\(n\\bmod 4\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l3c",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\n[\"Substituting \\(r=i\\) into the arithmetico-geometric formula produces the explicit value \\(S=i\\frac{1-(n+1)i^n+ni^{n+1}}{(1-i)^2}\\), which simplifies after multiplying numerator and denominator by the conjugate of the denominator.\",\"Grouping the summands in complete residue classes modulo 4 yields four arithmetic series whose closed forms can be evaluated separately according to \\(n\\bmod 4\\), after which the unique multiple-choice candidate that matches \\(48+49i\\) is identified.\"]",
+      "last_claim": "[\"Substituting \\(r=i\\) into the arithmetico-geometric formula produces the explicit value \\(S=i\\frac{1-(n+1)i^n+ni^{n+1}}{(1-i)^2}\\), which simplifies after multiplying numerator and denominator by the conjugate of the denominator.\",\"Grouping the summands in complete residue classes modulo 4 yields four arithmetic series whose closed forms can be evaluated separately according to \\(n\\bmod 4\\), after which the unique multiple-choice candidate that matches \\(48+49i\\) is identified.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\nContinue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim": "Continue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\n[\"The successive powers of \\(i\\) cycle every four terms as \\(i,-1,-i,1\\).\",\"Grouping the sum into complete 4-term blocks beginning at indices \\(4j+1\\) shows that each such block contributes exactly \\(2-2i\\).\"]",
+      "last_claim": "[\"The successive powers of \\(i\\) cycle every four terms as \\(i,-1,-i,1\\).\",\"Grouping the sum into complete 4-term blocks beginning at indices \\(4j+1\\) shows that each such block contributes exactly \\(2-2i\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: Continue from: ",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\nContinue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\n[\"Substituting \\(r=i\\) into the closed form and using \\((1-i)^2=-2i\\) produces the explicit expression \\(S=\\frac12\\bigl((n+1)i^n-ni^{n+1}-1\\bigr)\\).\",\"Grouping the summands in complete periods of length 4 yields a closed arithmetic expression for each residue class \\(n\\equiv r\\pmod4\\), which can then be set equal to \\(48+49i\\).\"]",
+      "last_claim": "[\"Substituting \\(r=i\\) into the closed form and using \\((1-i)^2=-2i\\) produces the explicit expression \\(S=\\frac12\\bigl((n+1)i^n-ni^{n+1}-1\\bigr)\\).\",\"Grouping the summands in complete periods of length 4 yields a closed arithmetic expression for each residue class \\(n\\equiv r\\pmod4\\), which can then be set equal to \\(48+49i\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\nContinue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]\nContinue from: Continue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(S=\\sum_{k=1}^n k i^k\\). The closed-form formula \\(\\sum k r^k=r\\frac{1-(n+1)r^n+nr^{n+1}}{(1-r)^2}\\) with \\(r=i\\) yields an explicit expression for \\(S\\).\",\"Because \\(i^4=1\\), the summands \\(k i^k\\) are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of \\(n\\) modulo 4.\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\n[\"The successive powers of \\(i\\) cycle every four terms as \\(i,-1,-i,1\\).\",\"Grouping the sum into complete 4-term blocks beginning at indices \\(4j+1\\) shows that each such block contributes exactly \\(2-2i\\).\"]\n[\"Let \\(n=4q+r\\) with \\(0\\le r<4\\). Then the sum equals \\(q(2-2i)\\) plus the contribution of the remaining \\(r\\) terms.\"]",
+      "last_claim": "[\"Let \\(n=4q+r\\) with \\(0\\le r<4\\). Then the sum equals \\(q(2-2i)\\) plus the contribution of the remaining \\(r\\) terms.\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\n[\"The successive powers of \\(i\\) cycle every four terms as \\(i,-1,-i,1\\).\",\"Grouping the sum into complete 4-term blocks beginning at indices \\(4j+1\\) shows that each such block contributes exactly \\(2-2i\\).\"]\n[\"The target \\(48+49i\\) has positive imaginary part, so \\(r\\) cannot be \\(0\\) (which yields a purely non-positive imaginary part).\"]",
+      "last_claim": "[\"The target \\(48+49i\\) has positive imaginary part, so \\(r\\) cannot be \\(0\\) (which yields a purely non-positive imaginary part).\"]",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from:\n[\"Let \\(S=\\sum_{k=1}^n k i^k\\). Then \\(S=i\\frac{1-(n+1)i^n+n i^{n+1}}{(1-i)^2}\\).\",\"Since \\(i^4=1\\), the powers of \\(i\\) are periodic with period 4, so it suffices to consider \\(n\\) modulo 4.\"]",
+      "last_claim": "[\"Let \\(S=\\sum_{k=1}^n k i^k\\). Then \\(S=i\\frac{1-(n+1)i^n+n i^{n+1}}{(1-i)^2}\\).\",\"Since \\(i^4=1\\), the powers of \\(i\\) are periodic with period 4, so it suffices to consider \\(n\\) modulo 4.\"]",
+      "last_claim_id": "l23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "For what value of $n$ is $i + 2i^2 + 3i^3 + \\cdots + ni^n = 48 + 49i$?\n\nNote: here $i = \\sqrt { - 1}$.\n\n$\\textbf{(A)}\\ 24 \\qquad \\textbf{(B)}\\ 48 \\qquad \\textbf{(C)}\\ 49 \\qquad \\textbf{(D)}\\ 97 \\qquad \\textbf{(E)}\\ 98$ Show that it is \\mathbf{D}.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from:\nContinue from: Continue from: Continue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: Continue from: Continue from: ",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

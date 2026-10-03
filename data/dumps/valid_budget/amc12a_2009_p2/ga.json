@@ -1,0 +1,231 @@
+{
+  "problem_id": "amc12a_2009_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The expression to evaluate is 1 + 1/(1 + 1/(1 + 1))",
+      "statement": "1 + 1/(1 + 1/(1 + 1))",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The innermost sum 1+1 equals 2.",
+      "statement": "1 + 1 = 2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Adding the outer 1 gives 1 + 2/3 = 5/3, matching option C",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Then \\(1+\\frac{1}{2}=\\frac{3}{2}\\), so the expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).",
+      "statement": "1 + 1/2 = 3/2 implies 1 + 1/(1 + 1/(1 + 1)) = 1 + 1/(3/2)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "1/(3/2) equals 2/3.",
+      "statement": "1/(3/2) = 2/3",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The original expression is identical to 1 + 2/3.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 1 + 2/3",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "1/(3/2) equals 2/3.",
+      "statement": "1/(3/2) = 2/3",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "The original expression is identical to 1 + 2/3.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 1 + 2/3",
+      "dependencies": [
+        "l22"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Adding the outer 1 gives 1 + 2/3 = 5/3, matching option C",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "1 + 2/3 equals 5/3.",
+      "statement": "1 + 2/3 = 5/3",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Adding the outer 1 gives 1 + 2/3 = 5/3, matching option C",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l24"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "1 + 2/3 equals 5/3.",
+      "statement": "1 + 2/3 = 5/3",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The original expression equals 5/3, which is option C.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l25"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l26",
+      "natural_language": "Then \\(1+\\frac12=\\frac32\\), so the expression equals \\(1+\\frac1{\\frac32}\\).",
+      "statement": "1 + 1/2 = 3/2 implies 1 + 1/(1 + 1/(1 + 1)) = 1 + 1/(3/2)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l27",
+      "natural_language": "Then \\(\\frac1{\\frac32}=\\frac23\\), so the expression equals \\(1+\\frac23=\\frac53\\).",
+      "statement": "1/(3/2) = 2/3 implies 1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l26"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The original expression equals 5/3, which is option C.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l27"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l28",
+      "natural_language": "Then 1/(3/2) equals 2/3, so the expression equals 1 + 2/3.",
+      "statement": "1/(3/2) = 2/3 implies 1 + 1/(1 + 1/(1 + 1)) = 1 + 2/3",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l29",
+      "natural_language": "1 + 2/3 equals 5/3.",
+      "statement": "1 + 2/3 = 5/3",
+      "dependencies": [
+        "l28"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "The original expression equals 5/3, which is option C.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l29"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2021_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose$2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+x}}}=\\frac{144}{53}.$What is the value of $x?$\n\n$\\textbf{(A) }\\frac34 \\qquad \\textbf{(B) }\\frac78 \\qquad \\textbf{(C) }\\frac{14}{15} \\qquad \\textbf{(D) }\\frac{37}{38} \\qquad \\textbf{(E) }\\frac{52}{53}$ Show that it is \\text{A}.",
+      "statement": "Suppose$2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+x}}}=\\frac{144}{53}.$What is the value of $x?$\n\n$\\textbf{(A) }\\frac34 \\qquad \\textbf{(B) }\\frac78 \\qquad \\textbf{(C) }\\frac{14}{15} \\qquad \\textbf{(D) }\\frac{37}{38} \\qquad \\textbf{(E) }\\frac{52}{53}$ Show that it is \\text{A}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.11933359262635951,
+      "support": null
+    },
+    {
+      "id": "l4054",
+      "natural_language": "Advance the argument (step 6302): continue from Suppose$2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+x}}}=\\frac{144}{53}.$What is the valu",
+      "statement": "Advance the argument (step 6302): continue from Suppose$2+\\frac{1}{1+\\frac{1}{2+\\frac{2}{3+x}}}=\\frac{144}{53}.$What is the valu",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.4045566970313675,
+      "support": null
+    }
+  ]
+}

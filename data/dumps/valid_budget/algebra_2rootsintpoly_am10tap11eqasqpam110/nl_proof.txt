@@ -1,0 +1,32 @@
+### Setup and algebraic identities.
+We work throughout with the usual ring operations (in particular, the distributive law). Let \(a\) be an indeterminate (or an element of a commutative ring). By distributivity we have
+\[
+(a-10)(a+11)=a(a+11)-10(a+11).
+\]
+Distributing on the first summand yields \(a(a+11)=a^2+11a\), and therefore
+\[
+(a-10)(a+11)=a^2+11a-10(a+11).
+\]
+Separately, the identity \(10(a+11)=10a+110\) immediately implies (upon multiplying by \(-1\))
+\[
+-10(a+11)=-10a-110.
+\]
+Substituting the latter into the previous expansion gives
+\[
+(a-10)(a+11)=a^2+11a-10a-110.
+\]
+The linear terms combine as \(11a-10a=a\), so
+\[
+a^2+11a-10a-110=a^2+a-110,
+\]
+and we conclude
+\[
+(a-10)(a+11)=a^2+a-110.
+\]
+
+### Specialization.
+The identity just obtained holds in the polynomial ring \(\mathbb{R}[a]\), and likewise holds for every element \(a\) of an arbitrary commutative ring \(R\). In particular, taking \(R=\mathbb{C}\) (or evaluating the identity of \(\mathbb{R}[a]\) at complex numbers) we obtain
+\[
+\forall\,a\in\mathbb{C},\qquad(a-10)(a+11)=a^2+a-110,
+\]
+as required.

@@ -1,0 +1,61 @@
+{
+  "problem_id": "aime_1983_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given x,y,z >1 and w>0 with log_x w=24, log_y w=40, log_{xyz} w=12, prove log_z w=60.",
+      "statement": "x>1 ∧ y>1 ∧ z>1 ∧ w>0 ∧ log_x(w)=24 ∧ log_y(w)=40 ∧ log_{xyz}(w)=12 ⊢ log_z(w)=60",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4264014327112209,
+      "support": null
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "Rewrite the three given logarithm equations in exponential form.",
+      "statement": "x=w^{1/24} ∧ y=w^{1/40} ∧ xyz=w^{1/12}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7006490497453707,
+      "support": null
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "Substitute the known reciprocal values log_w(x)=1/24 and log_w(y)=1/40 into the sum identity of tc_2.",
+      "statement": "log_w(x)=1/24 ∧ log_w(y)=1/40 ∧ (log_w(x)+log_w(y)+log_w(z)=1/12) ⊢ 1/24+1/40+log_w(z)=1/12",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.6671243849949912,
+      "support": null
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "From the substituted sum 1/24+1/40+log_w(z)=1/12 solve the linear equation for the unknown term to obtain log_w(z)=1/60, hence log_z(w)=60 by l1.",
+      "statement": "(1/24+1/40+log_w(z)=1/12) ⊢ log_w(z)=1/60 ∧ log_z(w)=60",
+      "dependencies": [
+        "tc_4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.5031152949374528,
+      "support": null
+    },
+    {
+      "id": "tc_7",
+      "natural_language": "From xyz=w^{1/12} solve for z by division: z=w^{1/12}/(xy).",
+      "statement": "xyz=w^{1/12} ⊢ z=w^{1/12}/(xy)",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.20412414523193154,
+      "support": null
+    }
+  ]
+}

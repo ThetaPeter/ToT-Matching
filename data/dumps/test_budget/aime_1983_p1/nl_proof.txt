@@ -1,0 +1,14 @@
+### Setup and given data.
+Let \(x>1\), \(y>1\), \(z>1\) and \(w>0\) be such that \(\log_x(w)=24\), \(\log_y(w)=40\) and \(\log_{xyz}(w)=12\). The goal is to conclude \(\log_z(w)=60\).
+
+### Change of base.
+By the reciprocal identity for logarithms, \(\log_w(x)=1/24\) and \(\log_w(y)=1/40\). Writing \(k:=\log_z(w)\), the same identity likewise yields \(\log_w(z)=1/k\).
+
+### Product rule.
+The two-factor product rule for logarithms gives \(\log_w(xy)=\log_w(x)+\log_w(y)\). Applying the same rule once more produces \(\log_w(xyz)=\log_w(xy)+\log_w(z)\), hence \(\log_w(xyz)=\log_w(x)+\log_w(y)+\log_w(z)\). On the other hand the reciprocal identity applied to the given datum \(\log_{xyz}(w)=12\) yields \(\log_w(xyz)=1/12\). Combining these observations produces the numerical relation
+\[
+\frac1{24}+\frac1{40}+\frac1k=\frac1{12}.
+\]
+
+### Conclusion.
+The preceding identities together with the displayed numerical relation imply \(k=60\), as required. Thus \(\log_z(w)=60\).

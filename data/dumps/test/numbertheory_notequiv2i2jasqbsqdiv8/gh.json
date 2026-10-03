@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_notequiv2i2jasqbsqdiv8",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $a$ and $b$ be two integer numbers. Show that the following statement is false: $a$ and $b$ are both even iff $8 \\mid a^2 + b^2$.",
+      "statement": "Let $a$ and $b$ be two integer numbers. Show that the following statement is false: $a$ and $b$ are both even iff $8 \\mid a^2 + b^2$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4290581651605166,
+      "support": null
+    },
+    {
+      "id": "l12801",
+      "natural_language": "Advance the argument (step 19909): continue from Let $a$ and $b$ be two integer numbers. Show that the following statement is fal",
+      "statement": "Advance the argument (step 19909): continue from Let $a$ and $b$ be two integer numbers. Show that the following statement is fal",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6617241025372945,
+      "support": null
+    }
+  ]
+}

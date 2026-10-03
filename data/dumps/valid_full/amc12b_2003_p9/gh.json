@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2003_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)?$\n\n$\n\\text {(A) } 12 \\qquad \\text {(B) } 18 \\qquad \\text {(C) } 24 \\qquad \\text {(D) } 30 \\qquad \\text {(E) } 36\n$ Show that it is \\text {(D) } 30.",
+      "statement": "Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)?$\n\n$\n\\text {(A) } 12 \\qquad \\text {(B) } 18 \\qquad \\text {(C) } 24 \\qquad \\text {(D) } 30 \\qquad \\text {(E) } 36\n$ Show that it is \\text {(D) } 30.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l3945",
+      "natural_language": "Advance the argument (step 6133): continue from Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)",
+      "statement": "Advance the argument (step 6133): continue from Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.617960619616285,
+      "support": null
+    },
+    {
+      "id": "l3946",
+      "natural_language": "Advance the argument (step 6134): continue from Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)",
+      "statement": "Advance the argument (step 6134): continue from Let $f$ be a linear function for which $f(6) - f(2) = 12.$ What is $f(12) - f(2)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.4217756949399826,
+      "support": null
+    }
+  ]
+}

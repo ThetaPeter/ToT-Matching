@@ -1,0 +1,64 @@
+{
+  "problem_id": "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c, d be arbitrary complex numbers.",
+      "statement": "a,b,c,d ∈ ℂ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7071067811865476,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Observe that (a-b)(a-c)=a^{2}-(b+c)a + bc.",
+      "statement": "(a-b)(a-c) = a^{2} - (b+c)a + bc",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Let p=a^{2}-(b+c)a+cb. Then the RHS equals p(a-d).",
+      "statement": "Let p = a^{2} - (b+c)a + cb. Then RHS = p(a-d)",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.18898223650461363,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus the RHS equals (a-b)(a-c)(a-d), which is identical to the LHS.",
+      "statement": "RHS = (a-b)(a-c)(a-d) = LHS",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.43852900965351466,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Therefore both sides are identical, so the claimed equality holds for all complex a,b,c,d.",
+      "statement": "Both sides identical ⇒ equality holds ∀ a,b,c,d ∈ ℂ",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.41602514716892186,
+      "support": null
+    }
+  ]
+}

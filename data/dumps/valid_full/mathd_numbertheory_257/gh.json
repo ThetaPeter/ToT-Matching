@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_257",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Cards are numbered from 1 to 100. One card is removed and the values on the other 99 are added. The resulting sum is a multiple of 77. What number was on the card that was removed? Show that it is 45.",
+      "statement": "Cards are numbered from 1 to 100. One card is removed and the values on the other 99 are added. The resulting sum is a multiple of 77. What number was on the card that was removed? Show that it is 45.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5049193032800972,
+      "support": null
+    },
+    {
+      "id": "l10533",
+      "natural_language": "Advance the argument (step 16381): continue from Cards are numbered from 1 to 100. One card is removed and the values on the othe",
+      "statement": "Advance the argument (step 16381): continue from Cards are numbered from 1 to 100. One card is removed and the values on the othe",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7433919416750282,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_sqineq_36azm9asqle36zsq",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]",
+      "last_claim": "[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim": "[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\nContinue from: [\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]",
+      "last_claim": "Continue from: [\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\nContinue from:\n[\"Rearrange to equivalent form \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Recognize the rearranged left-hand side as the square \\((6z-3a)^{2}\\).\"]",
+      "last_claim": "[\"Rearrange to equivalent form \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Recognize the rearranged left-hand side as the square \\((6z-3a)^{2}\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\n[\"Thus the original inequality holds for all real \\(a,z\\).\",\"Equality occurs precisely when \\(z=a/2\\).\"]",
+      "last_claim": "[\"Thus the original inequality holds for all real \\(a,z\\).\",\"Equality occurs precisely when \\(z=a/2\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\nContinue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim": "Continue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim_id": "ts_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\nContinue from: [\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\nSince any square of a real is nonnegative, (6z-3a)^2 >= 0.",
+      "last_claim": "Since any square of a real is nonnegative, (6z-3a)^2 >= 0.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\nContinue from: [\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\nThis yields the rewritten form and thus the original inequality.",
+      "last_claim": "This yields the rewritten form and thus the original inequality.",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\n[\"Thus the original inequality holds for all real \\(a,z\\).\",\"Equality occurs precisely when \\(z=a/2\\).\"]\nThe inequality is therefore established for all real a and z.",
+      "last_claim": "The inequality is therefore established for all real a and z.",
+      "last_claim_id": "ts_11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\n[\"Thus the original inequality holds for all real \\(a,z\\).\",\"Equality occurs precisely when \\(z=a/2\\).\"]\nSubstituting the equality case z=a/2 yields identical sides, confirming sharpness.",
+      "last_claim": "Substituting the equality case z=a/2 yields identical sides, confirming sharpness.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\nContinue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\n[\"The original inequality therefore holds for all real \\(a\\) and \\(z\\).\",\"Equality holds precisely when \\(6z-3a=0\\), i.e., when \\(z=a/2\\).\"]",
+      "last_claim": "[\"The original inequality therefore holds for all real \\(a\\) and \\(z\\).\",\"Equality holds precisely when \\(6z-3a=0\\), i.e., when \\(z=a/2\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "For real numbers a and z, show that $36az - 9a^2 \\leq 36z^2$.\n[\"Rewrite as \\(36z^{2}-36az+9a^{2}\\geq0\\).\",\"Observe that the left-hand side equals \\((6z-3a)^{2}\\).\"]\n[\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\nContinue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]\nContinue from: Continue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim": "Continue from: Continue from: [\"Note that any square of a real number is nonnegative, so \\((6z-3a)^{2}\\\\geq0\\).\",\"Conclude that the rewritten inequality holds for all real \\(a,z\\), which is equivalent to the original claim.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

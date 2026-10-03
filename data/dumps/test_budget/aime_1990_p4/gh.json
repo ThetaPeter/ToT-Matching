@@ -1,0 +1,72 @@
+{
+  "problem_id": "aime_1990_p4",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: the positive solution equals 013.",
+      "statement": "The unique positive real solution x to \\frac{1}{x^2-10x-29}+\\frac{1}{x^2-10x-45}-\\frac{2}{x^2-10x-69}=0 equals 013.",
+      "dependencies": [
+        "l6",
+        "l11",
+        "l20",
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Let t = x^{2} - 10x. The equation is then equivalent to 1/(t-29) + 1/(t-45) - 2/(t-69) = 0.",
+      "statement": "Let t = x^{2} - 10x. The equation is then equivalent to \\frac{1}{t-29} + \\frac{1}{t-45} - \\frac{2}{t-69} = 0.",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.3244428422615251,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Clear the equation of denominators to obtain the equivalent polynomial identity (t-45)(t-69) + (t-29)(t-69) - 2(t-29)(t-45) = 0.",
+      "statement": "Clear the equation of denominators to obtain the equivalent polynomial identity (t-45)(t-69) + (t-29)(t-69) - 2(t-29)(t-45) = 0.",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.2886751345948129,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Set -64t+2496=0 to obtain t=39.",
+      "statement": "The equation -64t+2496=0 has the unique solution t=39.",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l20",
+      "natural_language": "The quadratic x^{2}-10x-39=0 has positive root 13.",
+      "statement": "The quadratic x^{2}-10x-39=0 has positive root 13.",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.43643578047198484,
+      "support": null
+    },
+    {
+      "id": "l22",
+      "natural_language": "The quadratic x^{2}-10x-39=0 has positive root 13.",
+      "statement": "The quadratic x^{2}-10x-39=0 has positive root 13.",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.733799385705343,
+      "support": null
+    }
+  ]
+}

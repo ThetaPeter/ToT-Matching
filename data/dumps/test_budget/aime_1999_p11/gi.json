@@ -1,0 +1,159 @@
+{
+  "problem_id": "aime_1999_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sum equals tan(m/n) with m,n coprime, m/n<90, and we seek m+n",
+      "statement": "sum_{k=1}^{35} sin(5k°) = tan(m/n) implies m+n=177",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Target claim: m+n=177",
+      "statement": "m+n=177",
+      "dependencies": [
+        "tc_1",
+        "l12",
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Sum of sines formula: sum_{k=1}^n sin(k\theta) = sin(n\theta/2) sin((n+1)\theta/2) / sin(\theta/2)",
+      "statement": "sum formula holds for \theta=5°, n=35",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Geometric series sum of complex exponentials yields the sine sum",
+      "statement": "Im(sum e^{i5k°} from k=1 to 35) equals the closed form",
+      "dependencies": [
+        "l0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Plugging in values: sum = sin(87.5°) / sin(2.5°) = cot(2.5°) = tan(87.5°)",
+      "statement": "sum = tan(175/2)",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "175 and 2 are coprime and 175/2 <90",
+      "statement": "m=175, n=2, m+n=177",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The sum of sines equals the imaginary part of the geometric sum of complex exponentials",
+      "statement": "sum_{k=1}^{35} sin(5k°) = Im(\\sum_{k=1}^{35} exp(i 5k °))",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Closed-form for sum of sines in AP: sum_{k=0}^{n-1} sin(a + k d) = [sin(n d /2) / sin(d/2)] * sin(a + (n-1)d/2)",
+      "statement": "sum formula holds for a=5°, d=5°, n=35",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Apply formula with a=d=5°, n=35 yields [sin(87.5°)/sin(2.5°)] sin(90°)",
+      "statement": "sum = [sin(87.5°)/sin(2.5°)] sin(90°)=sin(87.5°)/sin(2.5°)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Since sin(87.5°)=cos(2.5°), the sum simplifies to cot(2.5°)=tan(87.5°)",
+      "statement": "sum = cot(2.5°)=tan(87.5°)",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "cot(2.5°)=tan(87.5°), hence m=175, n=2 and m+n=177",
+      "statement": "sum = tan(175/2) with m=175,n=2 coprime and m/n<90 implies m+n=177",
+      "dependencies": [
+        "l7",
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus the given sum equals tan(87.5°)",
+      "statement": "sum_{k=1}^{35} sin(5k°) = tan(87.5°)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Hence m/n=175/2 with m,n coprime, so m+n=177",
+      "statement": "sum = tan(175/2) with m=175,n=2 coprime and m/n<90 implies m+n=177",
+      "dependencies": [
+        "l8",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

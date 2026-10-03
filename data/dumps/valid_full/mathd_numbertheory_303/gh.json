@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_303",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $n>1$ is an integer, the notation $a\\equiv b\\pmod{n}$ means that $(a-b)$ is a multiple of $n$. Find the sum of all possible values of $n$ such that both of the following are true: $171\\equiv80\\pmod{n}$ and $468\\equiv13\\pmod{n}$. Show that it is 111.",
+      "statement": "If $n>1$ is an integer, the notation $a\\equiv b\\pmod{n}$ means that $(a-b)$ is a multiple of $n$. Find the sum of all possible values of $n$ such that both of the following are true: $171\\equiv80\\pmod{n}$ and $468\\equiv13\\pmod{n}$. Show that it is 111.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2886751345948129,
+      "support": null
+    },
+    {
+      "id": "l10804",
+      "natural_language": "Advance the argument (step 16802): continue from If $n>1$ is an integer, the notation $a\\equiv b\\pmod{n}$ means that $(a-b)$ is a",
+      "statement": "Advance the argument (step 16802): continue from If $n>1$ is an integer, the notation $a\\equiv b\\pmod{n}$ means that $(a-b)$ is a",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6507614678256672,
+      "support": null
+    }
+  ]
+}

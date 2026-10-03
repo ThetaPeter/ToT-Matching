@@ -1,0 +1,49 @@
+{
+  "problem_id": "amc12_2000_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given |x-2|=p and x<2",
+      "statement": "|x-2|=p ∧ x<2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Since x<2, we have |x-2|=2-x",
+      "statement": "|x-2|=2-x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.15811388300841897,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus 2-x=p, so x=2-p",
+      "statement": "x=2-p",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.75,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Simplify: x-p=2-2p",
+      "statement": "x-p=2-2p",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5,
+      "support": null
+    }
+  ]
+}

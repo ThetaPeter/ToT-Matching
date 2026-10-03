@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_sqmod4in01d",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For any integer $a$, show that $a^2 \\equiv 0 \\pmod{4}$ or $a^2 \\equiv 1 \\pmod{4}$.",
+      "statement": "For any integer $a$, show that $a^2 \\equiv 0 \\pmod{4}$ or $a^2 \\equiv 1 \\pmod{4}$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.46667280310152986,
+      "support": null
+    },
+    {
+      "id": "l12801",
+      "natural_language": "Advance the argument (step 19909): continue from For any integer $a$, show that $a^2 \\equiv 0 \\pmod{4}$ or $a^2 \\equiv 1 \\pmod{4}",
+      "statement": "Advance the argument (step 19909): continue from For any integer $a$, show that $a^2 \\equiv 0 \\pmod{4}$ or $a^2 \\equiv 1 \\pmod{4}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8257228238447705,
+      "support": null
+    }
+  ]
+}

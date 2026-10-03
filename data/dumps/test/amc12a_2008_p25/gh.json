@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12a_2008_p25",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A sequence $(a_1,b_1)$, $(a_2,b_2)$, $(a_3,b_3)$, $\\ldots$ of points in the coordinate plane satisfies\n\n$(a_{n + 1}, b_{n + 1}) = (\\sqrt {3}a_n - b_n, \\sqrt {3}b_n + a_n)$  for $n = 1,2,3,\\ldots$.\n\nSuppose that $(a_{100},b_{100}) = (2,4)$.  What is $a_1 + b_1$?\n\n$\\mathrm{(A)}\\ -\\frac{1}{2^{97}}\\qquad\\mathrm{(B)}\\ -\\frac{1}{2^{99}}\\qquad\\mathrm{(C)}\\ 0\\qquad\\mathrm{(D)}\\ \\frac{1}{2^{98}}\\qquad\\mathrm{(E)}\\ \\frac{1}{2^{96}}$ Show that it is \\mathrm{(D)}.",
+      "statement": "A sequence $(a_1,b_1)$, $(a_2,b_2)$, $(a_3,b_3)$, $\\ldots$ of points in the coordinate plane satisfies\n\n$(a_{n + 1}, b_{n + 1}) = (\\sqrt {3}a_n - b_n, \\sqrt {3}b_n + a_n)$  for $n = 1,2,3,\\ldots$.\n\nSuppose that $(a_{100},b_{100}) = (2,4)$.  What is $a_1 + b_1$?\n\n$\\mathrm{(A)}\\ -\\frac{1}{2^{97}}\\qquad\\mathrm{(B)}\\ -\\frac{1}{2^{99}}\\qquad\\mathrm{(C)}\\ 0\\qquad\\mathrm{(D)}\\ \\frac{1}{2^{98}}\\qquad\\mathrm{(E)}\\ \\frac{1}{2^{96}}$ Show that it is \\mathrm{(D)}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l2326",
+      "natural_language": "Advance the argument (step 3614): continue from A sequence $(a_1,b_1)$, $(a_2,b_2)$, $(a_3,b_3)$, $\\ldots$ of points in the coor",
+      "statement": "Advance the argument (step 3614): continue from A sequence $(a_1,b_1)$, $(a_2,b_2)$, $(a_3,b_3)$, $\\ldots$ of points in the coor",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3700454016955818,
+      "support": null
+    },
+    {
+      "id": "l2373",
+      "natural_language": "Advance the argument (step 3688): continue from Advance the argument (step 3674): continue from Advance the argument (step 3661)",
+      "statement": "Advance the argument (step 3688): continue from Advance the argument (step 3674): continue from Advance the argument (step 3661)",
+      "dependencies": [],
+      "search_node_id": "sn_62",
+      "branch_id": "b76",
+      "salience": 0.3781514453051097,
+      "support": null
+    }
+  ]
+}

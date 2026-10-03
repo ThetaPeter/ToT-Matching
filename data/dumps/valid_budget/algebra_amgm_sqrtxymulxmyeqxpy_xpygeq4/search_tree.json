@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim": "[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim": "[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\nContinue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\nContinue from:\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\).\",\"By AM-GM, \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\).\"]",
+      "last_claim": "[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\).\",\"By AM-GM, \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\n[\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]",
+      "last_claim": "[\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\nContinue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim": "Continue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\nContinue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) produces the quadratic relation \\(4p^2-s^2 p+s^2=0\\).\", \"The identity \\(s=(t^2+1)^2/(t(t^2-1))\\) for \\(t>1\\) is equivalent to \\((t^2+1)^2\\ge 4t(t^2-1)\\).\"]",
+      "last_claim": "[\"Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) produces the quadratic relation \\(4p^2-s^2 p+s^2=0\\).\", \"The identity \\(s=(t^2+1)^2/(t(t^2-1))\\) for \\(t>1\\) is equivalent to \\((t^2+1)^2\\ge 4t(t^2-1)\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\nContinue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\nContinue from: Continue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\n[\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]\n[\"Equality holds when s=4, whence p=2 and {x,y}={2+\\sqrt2,2-\\sqrt2}.\",\"Equality holds at t=1+\\sqrt2, which yields the same pair {x,y}.\"]",
+      "last_claim": "[\"Equality holds when s=4, whence p=2 and {x,y}={2+\\sqrt2,2-\\sqrt2}.\",\"Equality holds at t=1+\\sqrt2, which yields the same pair {x,y}.\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\n[\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]\nContinue from: [\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]",
+      "last_claim": "Continue from: [\"The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).\",\"The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\nContinue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\n[\"The quadratic in \\(p\\) has positive roots \\(p=[s^2\\pm s\\sqrt{s^2-16}]/8\\) satisfying \\(0<p\\le s^2/4\\) precisely when \\(s\\ge4\\), so the given relation forces \\(s\\ge4\\).\",\"Expanding the desired inequality yields \\(t^4-4t^3+2t^2+4t+1=(t^2-2t-1)^2\\ge0\\) for all \\(t>1\\), with equality at \\(t=1+\\sqrt{2}\\).\"]",
+      "last_claim": "[\"The quadratic in \\(p\\) has positive roots \\(p=[s^2\\pm s\\sqrt{s^2-16}]/8\\) satisfying \\(0<p\\le s^2/4\\) precisely when \\(s\\ge4\\), so the given relation forces \\(s\\ge4\\).\",\"Expanding the desired inequality yields \\(t^4-4t^3+2t^2+4t+1=(t^2-2t-1)^2\\ge0\\) for all \\(t>1\\), with equality at \\(t=1+\\sqrt{2}\\).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $x$ and $y$ are positive real numbers with $y\\leq x$, and that $\\sqrt{xy}(x-y)=(x+y)$.\nProve that $x+y\\geq 4$.\n[\"Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\) and the given equation becomes \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\).\", \"Set \\(t=\\sqrt{x/y}\\ge 1\\). Substituting \\(x=yt^2\\) into the given equation yields \\(y=(t^2+1)/(t(t^2-1))\\), whence \\(s=(t^2+1)^2/(t(t^2-1))\\).\"]\n[\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\nContinue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]\nContinue from: Continue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"From \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) squaring gives \\(p(s^2-4p)=s^2\\), so the quadratic \\(4p^2-s^2 p+s^2=0\\) in \\(p\\) has discriminant \\(s^2(s^2-16)\\ge0\\), hence \\(s\\ge4\\).\",\"It suffices to show \\(s=(t^2+1)^2/(t(t^2-1))\\ge4\\) for \\(t>1\\), i.e. \\((t^2+1)^2\\ge4t(t^2-1)\\).\"]",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

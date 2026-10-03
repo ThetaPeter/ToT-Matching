@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1984_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.",
+      "statement": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l219",
+      "natural_language": "Advance the argument (step 337): continue from The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)",
+      "statement": "Advance the argument (step 337): continue from The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7027642214999339,
+      "support": null
+    },
+    {
+      "id": "l220",
+      "natural_language": "Advance the argument (step 338): continue from The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)",
+      "statement": "Advance the argument (step 338): continue from The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.34743961448615174,
+      "support": null
+    }
+  ]
+}

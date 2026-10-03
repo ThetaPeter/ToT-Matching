@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1961_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.",
+      "statement": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.03131121455425747,
+      "support": null
+    },
+    {
+      "id": "l4162",
+      "natural_language": "Advance the argument (step 6470): continue from (''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x",
+      "statement": "Advance the argument (step 6470): continue from (''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5645344869818584,
+      "support": null
+    }
+  ]
+}

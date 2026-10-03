@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1984_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find one pair of positive integers $a,b$ such that $ab(a+b)$ is not divisible by $7$, but $(a+b)^7-a^7-b^7$ is divisible by $7^7$.",
+      "statement": "Find one pair of positive integers $a,b$ such that $ab(a+b)$ is not divisible by $7$, but $(a+b)^7-a^7-b^7$ is divisible by $7^7$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l4863",
+      "natural_language": "Advance the argument (step 7561): continue from Find one pair of positive integers $a,b$ such that $ab(a+b)$ is not divisible by",
+      "statement": "Advance the argument (step 7561): continue from Find one pair of positive integers $a,b$ such that $ab(a+b)$ is not divisible by",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7509392614826383,
+      "support": null
+    },
+    {
+      "id": "l_dead_2701",
+      "natural_language": "dead-end unused case 7563: discard this alternative",
+      "statement": "dead-end unused case 7563: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.23800714032131612,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "problem_id": "amc12a_2008_p15",
+  "nodes": [
+    {
+      "id": "l5",
+      "natural_language": "The units digit of k is 0.",
+      "statement": "k ≡ 0 (mod 10)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.21483446221182984,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "statement": "k^{2} + 2^k ≡ 6 (mod 10)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "statement": "k^{2} + 2^k ≡ 6 (mod 10)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6793662204867574,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "k is even and in fact k ≡ 0 (mod 10), so the units digit of k^{2} is 0.",
+      "statement": "units digit of k^{2} is 0",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4414147946478205,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "The exponent k satisfies k ≡ 0 (mod 4), hence the units digit of 2^k is 6.",
+      "statement": "2^k ≡ 6 (mod 10)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6438763875992325,
+      "support": null
+    }
+  ]
+}

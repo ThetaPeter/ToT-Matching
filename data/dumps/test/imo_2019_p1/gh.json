@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_2019_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "'Let $\\mathbb{Z}$ be the set of integers. Determine all functions $f : \\mathbb{Z} \\to \\mathbb{Z}$ such that, for all\n''integers $a$ and $b$, $f(2a) + 2f(b) = f(f(a + b)).$''",
+      "statement": "'Let $\\mathbb{Z}$ be the set of integers. Determine all functions $f : \\mathbb{Z} \\to \\mathbb{Z}$ such that, for all\n''integers $a$ and $b$, $f(2a) + 2f(b) = f(f(a + b)).$''",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.48997894350611143,
+      "support": null
+    },
+    {
+      "id": "l5188",
+      "natural_language": "Advance the argument (step 8066): continue from 'Let $\\mathbb{Z}$ be the set of integers. Determine all functions $f : \\mathbb{Z",
+      "statement": "Advance the argument (step 8066): continue from 'Let $\\mathbb{Z}$ be the set of integers. Determine all functions $f : \\mathbb{Z",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.44721359549995804,
+      "support": null
+    }
+  ]
+}

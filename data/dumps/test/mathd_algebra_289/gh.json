@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_289",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The two positive integer solutions of the equation $x^2 - mx + n = 0$ are $k$ and $t$, where $m$ and $n$ are both prime numbers and $k > t$. What is the value of $m^n + n^m + k^t + t^k$? Show that it is 20.",
+      "statement": "The two positive integer solutions of the equation $x^2 - mx + n = 0$ are $k$ and $t$, where $m$ and $n$ are both prime numbers and $k > t$. What is the value of $m^n + n^m + k^t + t^k$? Show that it is 20.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2867073193284778,
+      "support": null
+    },
+    {
+      "id": "l7401",
+      "natural_language": "Advance the argument (step 11509): continue from The two positive integer solutions of the equation $x^2 - mx + n = 0$ are $k$ an",
+      "statement": "Advance the argument (step 11509): continue from The two positive integer solutions of the equation $x^2 - mx + n = 0$ are $k$ an",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5473503368998213,
+      "support": null
+    }
+  ]
+}

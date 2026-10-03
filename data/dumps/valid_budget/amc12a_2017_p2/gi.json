@@ -1,0 +1,50 @@
+{
+  "problem_id": "amc12a_2017_p2",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).",
+      "statement": "x + y = 4xy ∧ x ≠ 0 ∧ y ≠ 0",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).",
+      "statement": "1/x + 1/y = 4",
+      "dependencies": [
+        "l1",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).",
+      "statement": "(x + y) / (xy) = 4",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Observe that the desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).",
+      "statement": "1/x + 1/y = (x + y) / (xy)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

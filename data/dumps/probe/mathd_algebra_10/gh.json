@@ -1,0 +1,38 @@
+{
+  "problem_id": "mathd_algebra_10",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "120 percent of 30 equals 36",
+      "statement": "1.2 * 30 = 36",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "130 percent of 20 equals 26",
+      "statement": "1.3 * 20 = 26",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The positive difference is 10",
+      "statement": "|36 - 26| = 10",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5270462766947299,
+      "support": null
+    }
+  ]
+}

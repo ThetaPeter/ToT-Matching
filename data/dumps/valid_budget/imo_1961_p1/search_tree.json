@@ -1,0 +1,204 @@
+{
+  "problem_id": "imo_1961_p1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nFrom (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "last_claim": "From (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).",
+      "last_claim": "Substituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nFrom (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).\n[\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]",
+      "last_claim": "[\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nFrom (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).\nContinue from: From (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "last_claim": "Continue from: From (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "last_claim": "x and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nFor x,y to be real and distinct the discriminant (a-z)^{2}-4z^{2} must be positive.",
+      "last_claim": "For x,y to be real and distinct the discriminant (a-z)^{2}-4z^{2} must be positive.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nThe discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).",
+      "last_claim": "The discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nx and y are real and distinct iff (a-3z)(a+z)>0.",
+      "last_claim": "x and y are real and distinct iff (a-3z)(a+z)>0.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nFrom (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).\n[\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]\n[\"Then \\(x\\) and \\(y\\) are the two roots of the quadratic \\(t^2-(a-z)t+z^2=0\\).\",\"The discriminant of this quadratic is \\(D=(a-z)^2-4z^2\\), so \\(x\\) and \\(y\\) are real and distinct if and only if \\(D>0\\).\"]",
+      "last_claim": "[\"Then \\(x\\) and \\(y\\) are the two roots of the quadratic \\(t^2-(a-z)t+z^2=0\\).\",\"The discriminant of this quadratic is \\(D=(a-z)^2-4z^2\\), so \\(x\\) and \\(y\\) are real and distinct if and only if \\(D>0\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.5,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nFrom (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).\n[\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]\nContinue from: [\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]",
+      "last_claim": "Continue from: [\"Substituting \\(xy=z^2\\) and \\(x+y=a-z\\) into the identity yields \\(a^2=b^2+2az\\).\",\"Hence \\(z=(a^2-b^2)/(2a)\\) whenever \\(a\\neq0\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nThe discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).\n[\"For x,y real and distinct we need D>0, i.e. (a-3z)(a+z)>0.\"]",
+      "last_claim": "[\"For x,y real and distinct we need D>0, i.e. (a-3z)(a+z)>0.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nThe discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).\n[\"x,y>0 also requires a-z>0 (hence a+z>0 automatically if z>0).\"]",
+      "last_claim": "[\"x,y>0 also requires a-z>0 (hence a+z>0 automatically if z>0).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nx and y are real and distinct iff (a-3z)(a+z)>0.\nz>0 together with a-z>0 (hence a>0) is necessary and sufficient for both roots x,y to be positive",
+      "last_claim": "z>0 together with a-z>0 (hence a>0) is necessary and sufficient for both roots x,y to be positive",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.3,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "(''Hungary'')\nSolve the system of equations:\n\n<center>\n$\n\\begin{matrix}\n\\quad x + y + z \\!\\!\\! &= a \\; \\, \\\\\nx^2 +y^2+z^2 \\!\\!\\! &=b^2 \\\\\n\\qquad \\qquad xy \\!\\!\\!  &= z^2\n\\end{matrix}\n$\n</center>\n\nwhere $a $ and $b $ are constants.  Give the conditions that $a $ and $b $ must satisfy so that $x, y, z $ (the solutions of the system) are distinct positive numbers.\nSubstituting xy = z^2 and x+y = a-z yields a^2 - b^2 = 2az, hence z = (a^2 - b^2)/(2a) (a \neq 0).\nx and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.\nx and y are real and distinct iff (a-3z)(a+z)>0.\nx,y,z are pairwise distinct precisely when z\neq0 and neither root equals z, i.e., when a\neq3z",
+      "last_claim": "x,y,z are pairwise distinct precisely when z\neq0 and neither root equals z, i.e., when a\neq3z",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.3,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

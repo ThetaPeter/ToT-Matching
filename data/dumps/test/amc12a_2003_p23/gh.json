@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2003_p23",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot \\hdots \\cdot 9!$?\n\n$ \\textbf{(A)}\\ 504\\qquad\\textbf{(B)}\\ 672\\qquad\\textbf{(C)}\\ 864\\qquad\\textbf{(D)}\\ 936\\qquad\\textbf{(E)}\\ 1008 $ Show that it is \\mathrm{(B)}.",
+      "statement": "How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot \\hdots \\cdot 9!$?\n\n$ \\textbf{(A)}\\ 504\\qquad\\textbf{(B)}\\ 672\\qquad\\textbf{(C)}\\ 864\\qquad\\textbf{(D)}\\ 936\\qquad\\textbf{(E)}\\ 1008 $ Show that it is \\mathrm{(B)}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5030113777009964,
+      "support": null
+    },
+    {
+      "id": "l2218",
+      "natural_language": "Advance the argument (step 3446): continue from How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot",
+      "statement": "Advance the argument (step 3446): continue from How many perfect squares are divisors of the product $1! \\cdot 2! \\cdot 3! \\cdot",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7231566384075333,
+      "support": null
+    }
+  ]
+}

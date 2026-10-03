@@ -1,0 +1,59 @@
+{
+  "problem_id": "amc12b_2003_p6",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "Let the first term be \\(a\\) and the common ratio be \\(r\\), so that the second term is \\(ar=2\\) and the fourth term is \\(ar^3=6\\).",
+      "statement": "first term = a ∧ common ratio = r ∧ ar = 2 ∧ ar^3 = 6",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": 0.849733142523057,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Dividing the fourth term by the second term yields \\(r^2=3\\).",
+      "statement": "r^2 = 3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": 0.26111648393354686,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Then a = 2/r = 2/(-\\sqrt{3}) = -2\\sqrt{3}/3 after rationalizing the denominator.",
+      "statement": "a = -2\\sqrt{3}/3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": 0.21320071635561044,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "The possible first terms are therefore \\( \\frac{2\\sqrt{3}}{3} \\) and \\( -\\frac{2\\sqrt{3}}{3} \\).",
+      "statement": "(a = 2\\sqrt{3}/3) \\vee (a = -2\\sqrt{3}/3)",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": 0.778498944161523,
+      "support": null
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus the answer is \textbf{(B)} -\\frac{2\\sqrt{3}}{3}.",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.31622776601683794,
+      "support": null
+    }
+  ]
+}

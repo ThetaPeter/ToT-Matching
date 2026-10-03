@@ -1,0 +1,47 @@
+{
+  "knobs": {
+    "k": 2,
+    "depth": 4,
+    "beam": 2,
+    "t": 0.9,
+    "lean_resumes": 1
+  },
+  "provider": "mock",
+  "skip_lean_compile": false,
+  "route_weights": "data\\dumps\\valid_budget\\route_weights.npz",
+  "prior_applied": true,
+  "n": 1,
+  "rows": [
+    {
+      "id": "mathd_algebra_10",
+      "lean_success": true,
+      "alignment_f1": 0.5,
+      "prune_ratio": {
+        "node_ratio": 0.037037037037037035,
+        "token_ratio": 0.04838709677419355
+      },
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3",
+        "tc_1"
+      ],
+      "dump_dir": "data\\dumps\\prior_smoke\\mathd_algebra_10",
+      "k": 2,
+      "depth": 4,
+      "beam": 2,
+      "t": 0.9,
+      "lean_resumes_budget": 1,
+      "nr_pred_ids": [
+        "l1",
+        "l3",
+        "l4",
+        "l5",
+        "tc_1"
+      ],
+      "keep_threshold": 0.45
+    }
+  ]
+}

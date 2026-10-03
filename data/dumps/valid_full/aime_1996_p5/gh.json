@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1996_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.",
+      "statement": "Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that the roots of $x^3+rx^2+sx+t=0$ are $a+b$, $b+c$, and $c+a$. Find $t$. Show that it is 23.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.12691827064170239,
+      "support": null
+    },
+    {
+      "id": "l705",
+      "natural_language": "Advance the argument (step 1093): continue from Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that",
+      "statement": "Advance the argument (step 1093): continue from Suppose that the [[root]]s of $x^3+3x^2+4x-11=0$ are $a$, $b$, and $c$, and that",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7510676161988108,
+      "support": null
+    }
+  ]
+}

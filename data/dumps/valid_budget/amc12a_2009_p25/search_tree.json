@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2009_p25",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\n[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]",
+      "last_claim": "[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.8,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\n[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]\n[\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]",
+      "last_claim": "[\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.6,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\n[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]\nContinue from: [\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]",
+      "last_claim": "Continue from: [\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.5,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim": "[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.6,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\n[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]\n[\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]\n[\"The sequence \\(F_n\\bmod 12\\) is periodic of period 24 (the Pisano period \\(\\pi(12)\\)).\", \"Hence \\(F_{2006}\\equiv F_{14}\\pmod{12}\\) and \\(F_{2007}\\equiv F_{15}\\pmod{12}\\), so it remains only to evaluate \\(3F_{15}+2F_{14}\\) modulo 12.\"]",
+      "last_claim": "[\"The sequence \\(F_n\\bmod 12\\) is periodic of period 24 (the Pisano period \\(\\pi(12)\\)).\", \"Hence \\(F_{2006}\\equiv F_{14}\\pmod{12}\\) and \\(F_{2007}\\equiv F_{15}\\pmod{12}\\), so it remains only to evaluate \\(3F_{15}+2F_{14}\\) modulo 12.\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.3,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\n[\"The given recurrence is the tangent-addition formula, so \\(a_n=\\tan\\theta_n\\) whenever \\(\\theta_{n+2}=\\theta_n+\\theta_{n+1}\\) (provided the relevant tangents are defined).\", \"The initial data force \\(\\theta_1=\\pi/4\\) and \\(\\theta_2=\\pi/6\\), and therefore \\(\\theta_n=F_{n-2}\\cdot\\pi/4+F_{n-3}\\cdot\\pi/6\\) where \\(F_k\\) is the Fibonacci sequence (with the usual conventions \\(F_{-1}=1\\), \\(F_0=0\\)).\"]\n[\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]\nContinue from: [\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]",
+      "last_claim": "Continue from: [\"Hence \\(a_{2009}=\\tan(F_{2007}\\pi/4+F_{2006}\\pi/6)\\).\",\"The value is zero precisely when \\(3F_{2007}+2F_{2006}\\) is a multiple of \\(12\\).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\n[\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]",
+      "last_claim": "[\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\nContinue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim": "Continue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\n[\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]\n[\"The sequence of Fibonacci numbers modulo 12 is periodic of period 24, so it suffices to reduce the indices 2007 and 2008 modulo 24.\",\"Direct evaluation then yields 3F_{15}+2F_{16}\\equiv0 (mod 12), hence \\theta_{2009} is an integer multiple of \\pi and a_{2009}=0.\"]",
+      "last_claim": "[\"The sequence of Fibonacci numbers modulo 12 is periodic of period 24, so it suffices to reduce the indices 2007 and 2008 modulo 24.\",\"Direct evaluation then yields 3F_{15}+2F_{16}\\equiv0 (mod 12), hence \\theta_{2009} is an integer multiple of \\pi and a_{2009}=0.\"]",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\n[\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]\nContinue from: [\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]",
+      "last_claim": "Continue from: [\"The angles therefore admit the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).\",\"Hence \\theta_n is an integer multiple of \\pi if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\nContinue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\n[\"The sequence of angles therefore obeys the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (F_1=F_2=1), so a_n=0 precisely when this quantity is an integer multiple of \\pi (and is not a pole of tan).\",\"Direct computation of the first few terms after a_5 shows a_6=a_4, a_7=a_6 and thereafter the sequence of a_n is periodic of period 6, hence a_{2009}=a_5=0.\"]",
+      "last_claim": "[\"The sequence of angles therefore obeys the closed form \\theta_n=F_{n-2}(\\pi/4)+F_{n-1}(\\pi/6) (F_1=F_2=1), so a_n=0 precisely when this quantity is an integer multiple of \\pi (and is not a pole of tan).\",\"Direct computation of the first few terms after a_5 shows a_6=a_4, a_7=a_6 and thereafter the sequence of a_n is periodic of period 6, hence a_{2009}=a_5=0.\"]",
+      "last_claim_id": "l27",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "The first two terms of a sequence are $a_1 = 1$ and $a_2 = \\frac {1}{\\sqrt3}$. For $n\\ge1$,\n\n<center>$a_{n + 2} = \\frac {a_n + a_{n + 1}}{1 - a_na_{n + 1}}.$</center>\n\nWhat is $|a_{2009}|$?\n\n$\\textbf{(A)}\\ 0\\qquad \\textbf{(B)}\\ 2 - \\sqrt3\\qquad \\textbf{(C)}\\ \\frac {1}{\\sqrt3}\\qquad \\textbf{(D)}\\ 1\\qquad \\textbf{(E)}\\ 2 + \\sqrt3$ Show that it is \\textbf{(A)}\\ 0.\nContinue from:\n[\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\nContinue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]\nContinue from: Continue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim": "Continue from: Continue from: [\"The given recurrence is identical to the tangent-addition formula, so there exist angles \\theta_n satisfying a_n=tan \\theta_n together with the linear relation \\theta_{n+2}=\\theta_n+\\theta_{n+1} (modulo the period and poles of tan).\",\"The initial data determine \\theta_1=\\pi/4 and \\theta_2=\\pi/6, whence the first few angles are \\theta_3=5\\pi/12, \\theta_4=7\\pi/12 and \\theta_5=\\pi, which already yields a_5=tan \\pi=0.\"]",
+      "last_claim_id": "ts_11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.2,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "problem_id": "algebra_sqineq_36azm9asqle36zsq",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a and z be real numbers.",
+      "statement": "a ∈ ℝ ∧ z ∈ ℝ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: 36az − 9a² ≤ 36z².",
+      "statement": "36*a*z − 9*a*a ≤ 36*z*z",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

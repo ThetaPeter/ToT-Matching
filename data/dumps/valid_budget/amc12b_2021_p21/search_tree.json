@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2021_p21",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]",
+      "last_claim": "[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.4,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.2,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\n[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim": "[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\nContinue from: [\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]",
+      "last_claim": "Continue from: [\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]",
+      "last_claim": "[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"Taking the natural logarithm of both sides of the equation yields \\(\\ln x=2^{x-1-\\sqrt{2}}\\ln 2\\).\"]",
+      "last_claim": "[\"Taking the natural logarithm of both sides of the equation yields \\(\\ln x=2^{x-1-\\sqrt{2}}\\ln 2\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\n[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\n[\"The function \\(f(x)=\\log_2 x-2^{x-1-\\sqrt{2}}\\) satisfies \\(f(4)<0\\), so the second root lies in \\((2,4)\\).\",\"\\(f\\) has exactly two positive zeros (hence \\(S=\\sqrt{2}+r\\) with \\(2<r<4\\)).\"]",
+      "last_claim": "[\"The function \\(f(x)=\\log_2 x-2^{x-1-\\sqrt{2}}\\) satisfies \\(f(4)<0\\), so the second root lies in \\((2,4)\\).\",\"\\(f\\) has exactly two positive zeros (hence \\(S=\\sqrt{2}+r\\) with \\(2<r<4\\)).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\n[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\nContinue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim": "Continue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]\n[\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]",
+      "last_claim": "[\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.8,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]\nContinue from: [\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]",
+      "last_claim": "Continue from: [\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.7,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\n[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\nContinue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\n[\"There are exactly two positive real solutions to the equation.\",\"The larger root is strictly less than \\(4\\).\"]",
+      "last_claim": "[\"There are exactly two positive real solutions to the equation.\",\"The larger root is strictly less than \\(4\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\n[\"The given equation is equivalent (for \\(x>0\\)) to \\(x=2^{2^{x-1-\\sqrt{2}}}\\).\",\"\\(x=\\sqrt{2}\\) is a positive real solution.\"]\n[\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\nContinue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]\nContinue from: Continue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Taking the base-2 logarithm of both sides of the equivalent equation yields \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\).\",\"The equation \\(\\log_2 x=2^{x-1-\\sqrt{2}}\\) has a second positive real root strictly larger than \\(2\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.3,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]\n[\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]\n[\"Taking the base-2 logarithm of both sides immediately yields \\(\\log_2 x=2^{x-\\sqrt{2}-1}\\).\", \"The only positive solutions of the original equation are the positive roots of \\(f(x)=\\log_2 x-2^{x-\\sqrt{2}-1}\\).\"]",
+      "last_claim": "[\"Taking the base-2 logarithm of both sides immediately yields \\(\\log_2 x=2^{x-\\sqrt{2}-1}\\).\", \"The only positive solutions of the original equation are the positive roots of \\(f(x)=\\log_2 x-2^{x-\\sqrt{2}-1}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Let $S$ be the sum of all positive real numbers $x$ for which$x^{2^{\\sqrt2}}=\\sqrt2^{2^x}.$Which of the following statements is true?\n\n$\\textbf{(A) }S<\\sqrt2 \\qquad \\textbf{(B) }S=\\sqrt2 \\qquad \\textbf{(C) }\\sqrt2<S<2\\qquad \\textbf{(D) }2\\le S<6 \\qquad \\textbf{(E) }S\\ge 6$ Show that it is \\textbf{(D) }2\\le S<6.\nContinue from:\n[\"\\(x=\\sqrt{2}\\) satisfies the given equation.\"]\n[\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]\nContinue from: [\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]",
+      "last_claim": "Continue from: [\"Taking the natural logarithm of both sides of the equation yields \\(2^{\\sqrt{2}}\\ln x=2^x\\cdot(\\ln 2)/2\\).\", \"It follows that \\(x=2^{2^{x-\\sqrt{2}-1}}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.65,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

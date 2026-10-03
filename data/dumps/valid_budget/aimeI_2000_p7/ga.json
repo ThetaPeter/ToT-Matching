@@ -1,0 +1,361 @@
+{
+  "problem_id": "aimeI_2000_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x, y, z > 0 satisfy xyz = 1, x + 1/z = 5 and y + 1/x = 29",
+      "statement": "positive_reals(x) ∧ positive_reals(y) ∧ positive_reals(z) ∧ (x*y*z = 1) ∧ (x + 1/z = 5) ∧ (y + 1/x = 29)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "From xyz=1 and x+1/z=5 rewrite as x(1+y)=5",
+      "statement": "x*(1 + y) = 5",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "From the third equation y + 1/x = 29, it follows that x = 1/(29 - y)",
+      "statement": "x = 1/(29 - y)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Substituting this expression for x into x(1 + y) = 5 yields (1 + y)/(29 - y) = 5",
+      "statement": "(1 + y)/(29 - y) = 5",
+      "dependencies": [
+        "l20",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "Cross-multiplying and solving the linear equation yields y = 24",
+      "statement": "y = 24",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Back-substitute y = 24 into x = 1/(29 - y) to obtain x = 1/5",
+      "statement": "x = 1/5",
+      "dependencies": [
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Back-substitute x = 1/5 and y = 24 into xyz = 1 to obtain z = 5/24",
+      "statement": "z = 5/24",
+      "dependencies": [
+        "l23",
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Compute z + 1/y = 5/24 + 1/24 = 1/4",
+      "statement": "z + 1/y = 1/4",
+      "dependencies": [
+        "l24",
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The required value of m + n where 1/4 = m/n in lowest terms is 005",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "From x(1+y)=5 and y+1/x=29 solve the system by substitution to obtain x=1/5, y=24",
+      "statement": "x=1/5 ∧ y=24",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l26",
+      "natural_language": "Substitute x=1/5, y=24 into xyz=1 to obtain z=5/24",
+      "statement": "z=5/24",
+      "dependencies": [
+        "l25"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Compute z + 1/y = 5/24 + 1/24 = 1/4",
+      "statement": "z + 1/y = 1/4",
+      "dependencies": [
+        "l26"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The required value of m + n where 1/4 = m/n in lowest terms is 005",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "ts_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l27",
+      "natural_language": "Multiplying both sides of (5y)/(1+y)+1=29*(5)/(1+y) by (1+y) yields 5y+1+y=145",
+      "statement": "6y + 1 = 145",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Solving 6y+1=145 yields y=24, hence z+1/y=1/4 so m+n=5",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "l27",
+        "l24"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l28",
+      "natural_language": "Multiplying both sides of (5y)/(1+y)+1=29*(5)/(1+y) by (1+y) yields 5y+1+y=145",
+      "statement": "6y + 1 = 145",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l29",
+      "natural_language": "Solving 6y+1=145 yields y=24",
+      "statement": "y = 24",
+      "dependencies": [
+        "l28"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l30",
+      "natural_language": "Back-substitute y=24 into x=5/(1+y) to obtain x=1/5",
+      "statement": "x = 1/5",
+      "dependencies": [
+        "l29"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l31",
+      "natural_language": "Back-substitute x=1/5 and y=24 into xyz=1 to obtain z=5/24",
+      "statement": "z = 5/24",
+      "dependencies": [
+        "l30",
+        "l29"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Compute z + 1/y = 5/24 + 1/24 = 1/4, hence m+n=5",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "l31",
+        "l29"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l32",
+      "natural_language": "Substituting x=5/(1+y) into xy+1=29x yields 5y/(1+y)+1=145/(1+y)",
+      "statement": "(5y)/(1+y) + 1 = 145/(1+y)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l33",
+      "natural_language": "Rearranging xy+1=29x instead gives x=1/(29-y), so 5/(1+y)=1/(29-y)",
+      "statement": "5/(1+y) = 1/(29-y)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Solving either form yields y=24, hence z+1/y=1/4 so m+n=5",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "l32",
+        "l33",
+        "l24"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l34",
+      "natural_language": "Substitute x=5/(1+y) into xy+1=29x to obtain 5y/(1+y)+1=145/(1+y)",
+      "statement": "(5y)/(1+y) + 1 = 145/(1+y)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l35",
+      "natural_language": "Multiply both sides by (1+y) to clear the denominator yielding 5y+1+y=145",
+      "statement": "6y + 1 = 145",
+      "dependencies": [
+        "l34"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l36",
+      "natural_language": "Solve the linear equation to obtain y=24",
+      "statement": "y = 24",
+      "dependencies": [
+        "l35"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l37",
+      "natural_language": "Back-substitute y=24 into x=5/(1+y) to obtain x=1/5",
+      "statement": "x = 1/5",
+      "dependencies": [
+        "l36"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l38",
+      "natural_language": "Back-substitute x=1/5 and y=24 into xyz=1 to obtain z=5/24",
+      "statement": "z = 5/24",
+      "dependencies": [
+        "l37",
+        "l36"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Compute z + 1/y = 5/24 + 1/24 = 1/4, hence m+n=5",
+      "statement": "m + n = 5",
+      "dependencies": [
+        "l38",
+        "l36"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "problem_id": "algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume the two given equations over complex numbers x and e",
+      "statement": "x + e = 7 ∧ 2x + e = 3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Subtracting the first equation from the second yields \\(x=-4\\)",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → x = -4",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\)",
+      "statement": "x = -4 → ((x + e = 7) → e = 11)",
+      "dependencies": [
+        "l1",
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Therefore \\(x=-4\\) and \\(e=11\\)",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Substituting these values back into both original equations confirms they hold",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) ∧ (x = -4 ∧ e = 11)",
+      "dependencies": [
+        "l4",
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l4",
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Subtracting the first equation from the second yields \\(x=-4\\)",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → x = -4",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Solving the first equation for \\(e\\) gives \\(e=7-x\\)",
+      "statement": "(x + e = 7) → e = 7 - x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Substituting \\(x=-4\\) into \\(e=7-x\\) yields \\(e=11\\)",
+      "statement": "x = -4 → (e = 7 - x → e = 11)",
+      "dependencies": [
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l7",
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency",
+      "statement": "(x = -4 ∧ e = 11) → (2x + e = 3)",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\)",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The two original equations are therefore satisfied simultaneously",
+      "statement": "(x = -4 ∧ e = 11) → ((x + e = 7) ∧ (2x + e = 3))",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l14",
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The coefficient matrix of the system is invertible (det = -1 \neq 0)",
+      "statement": "det([[1,1],[2,1]]) = -1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Uniqueness follows because the coefficient matrix is invertible",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → unique(x,e)",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l16",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The coefficient matrix of the linear system is invertible over \\(\\mathbb{C}\\), so the solution pair is unique",
+      "statement": "det([[1,1],[2,1]]) = -1 \\to unique(x,e)",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Both original equations are recovered upon substituting the obtained values, completing the proof",
+      "statement": "(x = -4 \\wedge e = 11) \\to ((x + e = 7) \\wedge (2x + e = 3))",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 \\wedge 2x + e = 3) \\to (e = 11 \\wedge x = -4)",
+      "dependencies": [
+        "l17",
+        "l18",
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Therefore \\(x=-4\\) and \\(e=11\\)",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Substituting into the second equation confirms \\(2(-4)+11=3\\)",
+      "statement": "(x = -4 ∧ e = 11) → (2x + e = 3)",
+      "dependencies": [
+        "l19"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l19",
+        "l20"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Combining x = -4 and e = 11 yields the conjunction",
+      "statement": "x = -4 ∧ e = 11",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "Restate the theorem as the target claim to prove: the assumptions imply e = 11 and x = -4",
+      "statement": "(x + e = 7 ∧ 2x + e = 3) → (e = 11 ∧ x = -4)",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "problem_id": "algebra_amgm_prod1toneq1_sum1tongeqn",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).",
+      "statement": "Proof of the claim proceeds by induction on n, with the base case n=1 immediate and the inductive step using the WLOG assumption a_{n-1}\\ge1, a_{n-2}\\le1.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).",
+      "statement": "The target inequality is precisely the AM-GM inequality on the n-tuple (a_0,\\dots,a_{n-1}).",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The theorem follows by direct application of AM-GM (or by the inductive argument).",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Base case n=1 holds since a_0=1 implies a_0>=1.",
+      "statement": "When n=1 the hypothesis forces a_0=1, hence the conclusion a_0>=1 is immediate.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Inductive step: replace a_{n-2},a_{n-1} by a_{n-2}a_{n-1} and 1; the product remains 1 and the sum does not increase.",
+      "statement": "If a_{n-1}>=1>=a_{n-2} then (a_{n-2}a_{n-1},1) has the same product and smaller or equal sum compared with (a_{n-2},a_{n-1}).",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l3",
+        "l4",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "If a_{n-1}≥1 and a_{n-2}≤1 then (a_{n-1}-1)(1-a_{n-2})≥0, hence a_{n-1}+a_{n-2}≥1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.",
+      "statement": "Under the WLOG assumption a_{n-1}≥1≥a_{n-2} the replacement (a_{n-2},a_{n-1}) → (a_{n-2}a_{n-1},1) does not increase the sum while preserving the product, allowing the inductive hypothesis on n-1 variables to finish the step.",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "By the AM-GM inequality the arithmetic mean of a_0,… ,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.",
+      "statement": "AM(a_0,…,a_{n-1}) ≥ GM(a_0,…,a_{n-1}) = 1, hence \\sum a_i ≥ n.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i\\inℕ, a_i\\ge0, if \\prod_{i=0}^{n-1} a_i=1, then \\sum_{i=0}^{n-1} a_i\\ge n.",
+      "dependencies": [
+        "l3",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "By the inductive hypothesis the (n-1)-tuple obtained after the replacement satisfies the sum bound \\ge n-1; adding the extra 1 yields the n-term bound.",
+      "statement": "After the replacement the inductive hypothesis supplies \\sum_{i=0}^{n-3} a_i + a_{n-2}a_{n-1} \\ge n-1, hence the original sum is at least n.",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in ℕ, a_i \\ge 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\ge n.",
+      "dependencies": [
+        "l1",
+        "l2",
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "If some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "statement": "Under the hypothesis \\prod_{i=0}^{n-1} a_i = 1 with a_i \\ge 0, it follows that a_i > 0 for all i.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality (after establishing positivity).",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l8",
+        "l3",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "We proceed by induction on n.",
+      "statement": "Proof of the claim proceeds by induction on n.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The theorem follows by induction on n.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.",
+      "statement": "Under the hypothesis, if a_i \\ge 1 for all i then each a_i = 1; likewise if a_i \\le 1 for all i. Hence there exist indices with a_j \\ge 1 \\ge a_k, permitting the WLOG ordering a_{n-1} \\ge 1 \\ge a_{n-2}.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.",
+      "statement": "AM-GM equality holds precisely when a_0 = ⋯ = a_{n-1}; combined with ∏ a_i = 1 this forces a_i = 1 for every i.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality (after justifying the WLOG ordering and characterizing equality).",
+      "statement": "For any real-valued function a on the natural numbers such that ∀ i ∈ ℕ, a_i \\ge 0, if ∏_{i=0}^{n-1} a_i = 1, then ∑_{i=0}^{n-1} a_i \\ge n.",
+      "dependencies": [
+        "l1",
+        "l2",
+        "l10",
+        "l11"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l3",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "By the AM-GM inequality, 1/n sum a_i >= (prod a_i)^{1/n} = 1, hence sum a_i >= n.",
+      "statement": "By the AM-GM inequality, \\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1, hence \\sum a_i\\ge n.",
+      "dependencies": [
+        "l8",
+        "ts_1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "We proceed by induction on n.",
+      "statement": "Proof of the claim proceeds by induction on n.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The theorem follows by the AM-GM inequality (after establishing positivity) or by induction on n.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l12",
+        "l13"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "If some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "statement": "Under the hypothesis \\prod_{i=0}^{n-1} a_i = 1 with a_i \\ge 0, it follows that a_i > 0 for all i.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "By the AM-GM inequality, 1/n sum a_i >= (prod a_i)^{1/n} = 1, hence sum a_i >= n.",
+      "statement": "By the AM-GM inequality, \\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1, hence \\sum a_i\\ge n.",
+      "dependencies": [
+        "l14",
+        "ts_1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "The theorem follows by the AM-GM inequality after establishing positivity.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l14",
+        "l15"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "The case n=1 is immediate, since a_0=1 forces the sum to equal 1.",
+      "statement": "When n=1 the hypothesis forces a_0=1, hence the conclusion a_0>=1 is immediate.",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Assume the claim holds for products of length n-1>=1; for length n apply the inductive hypothesis after rescaling two of the factors so that their product is 1.",
+      "statement": "Assume the claim holds for n-1; for n, replace two factors a_j,a_k by a_j a_k and 1 (preserving product 1) so the inductive hypothesis on the resulting (n-1)-tuple yields the bound.",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The theorem follows by the AM-GM inequality after establishing positivity, or equivalently by induction on n after the same positivity step.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l14",
+        "l15",
+        "l16",
+        "l17"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "By the AM-GM inequality, 1/n sum a_i >= (prod a_i)^{1/n} = 1, hence sum a_i >= n.",
+      "statement": "By the AM-GM inequality, \\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1, hence \\sum a_i\\ge n.",
+      "dependencies": [
+        "l14",
+        "ts_1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "We proceed by induction on n.",
+      "statement": "Proof of the claim proceeds by induction on n.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "The theorem follows by the AM-GM inequality after establishing positivity, or equivalently by induction on n after the same positivity step.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in \\mathbb{N}, a_i \\geq 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\geq n.",
+      "dependencies": [
+        "l18",
+        "l19"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "From a_{n-1}≥1 and a_{n-2}≤1 we obtain (a_{n-1}-1)(1-a_{n-2})≥0, which rearranges to a_{n-1}+a_{n-2}≥1+a_{n-1}a_{n-2}.",
+      "statement": "Under the WLOG assumption a_{n-1}≥1≥a_{n-2}, the inequality (a_{n-1}-1)(1-a_{n-2})≥0 rearranges directly to a_{n-1}+a_{n-2}≥1+a_{n-1}a_{n-2}.",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The (n-1)-tuple (a_0,…,a_{n-3},a_{n-1}a_{n-2}) is nonnegative and has product 1, so the inductive hypothesis supplies ∑_{i=0}^{n-3}a_i+a_{n-1}a_{n-2}≥n-1, and adding the preceding inequality yields the desired bound for n.",
+      "statement": "The (n-1)-tuple obtained by the replacement satisfies the inductive hypothesis, and adding the rearranged sum inequality recovers the n-term bound.",
+      "dependencies": [
+        "l20",
+        "l1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that ∀i\\inℕ, a_i\\ge0, if ∏_{i=0}^{n-1}a_i=1, then ∑_{i=0}^{n-1}a_i\\ge n.",
+      "dependencies": [
+        "l3",
+        "l21",
+        "l6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

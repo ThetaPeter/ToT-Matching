@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12_2001_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim": "[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.95,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim": "[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\nContinue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\nContinue from:\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation is then equivalent to \\(10a+b=ab+a+b\\).\"]",
+      "last_claim": "[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation is then equivalent to \\(10a+b=ab+a+b\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\n[\"Therefore the units digit of \\(N\\) is \\(b=9\\).\", \"Substituting \\(b=9\\) recovers the identity \\(10a+9=9a+a+9\\), so every such \\(N\\) works.\"]",
+      "last_claim": "[\"Therefore the units digit of \\(N\\) is \\(b=9\\).\", \"Substituting \\(b=9\\) recovers the identity \\(10a+9=9a+a+9\\), so every such \\(N\\) works.\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\nContinue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim": "Continue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\nContinue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Subtracting \\(b\\) from both sides yields \\(10a=ab+a\\).\",\"Rearranging then gives \\(9a=ab\\).\"]",
+      "last_claim": "[\"Subtracting \\(b\\) from both sides yields \\(10a=ab+a\\).\",\"Rearranging then gives \\(9a=ab\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\nContinue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\nContinue from: Continue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\n[\"Therefore the units digit of \\(N\\) is \\(b=9\\).\", \"Substituting \\(b=9\\) recovers the identity \\(10a+9=9a+a+9\\), so every such \\(N\\) works.\"]\nHence every two-digit N ending in 9 satisfies the given equation, so the units digit is invariably 9.",
+      "last_claim": "Hence every two-digit N ending in 9 satisfies the given equation, so the units digit is invariably 9.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\n[\"Therefore the units digit of \\(N\\) is \\(b=9\\).\", \"Substituting \\(b=9\\) recovers the identity \\(10a+9=9a+a+9\\), so every such \\(N\\) works.\"]\nThe multiple-choice answer is therefore (E).",
+      "last_claim": "The multiple-choice answer is therefore (E).",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\nContinue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\n[\"Thus the units digit of \\(N\\) is \\(b=9\\).\", \"Hence \\(N\\) corresponds to choice (E).\"]",
+      "last_claim": "[\"Thus the units digit of \\(N\\) is \\(b=9\\).\", \"Hence \\(N\\) corresponds to choice (E).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Let $P(n)$ and $S(n)$ denote the product and the sum, respectively, of the digits\nof the integer $n$. For example, $P(23) = 6$ and $S(23) = 5$. Suppose $N$ is a\ntwo-digit number such that $N = P(N)+S(N)$. What is the units digit of $N$?\n\n$\\text{(A)}\\ 2\\qquad \\text{(B)}\\ 3\\qquad \\text{(C)}\\ 6\\qquad \\text{(D)}\\ 8\\qquad \\text{(E)}\\ 9$ Show that it is (\\text{E})9.\n[\"Let \\(N=10a+b\\) where \\(a\\in\\{1,\\dots,9\\}\\) and \\(b\\in\\{0,\\dots,9\\}\\).\",\"The given equation becomes \\(10a+b=ab+a+b\\).\"]\n[\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\nContinue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]\nContinue from: Continue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Rearranging terms yields \\(9a=ab\\).\",\"Since \\(a\\neq0\\), it follows that \\(b=9\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

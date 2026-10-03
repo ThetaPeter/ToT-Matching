@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_234",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the sixth term in the geometric sequence $\\frac{27}{125}, \\frac{9}{25}, \\frac{3}{5},\\ldots$?  Express your answer as a common fraction. Show that it is \\frac{25}{9}.",
+      "statement": "What is the sixth term in the geometric sequence $\\frac{27}{125}, \\frac{9}{25}, \\frac{3}{5},\\ldots$?  Express your answer as a common fraction. Show that it is \\frac{25}{9}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3651483716701107,
+      "support": null
+    },
+    {
+      "id": "l7131",
+      "natural_language": "Advance the argument (step 11089): continue from What is the sixth term in the geometric sequence $\\frac{27}{125}, \\frac{9}{25},",
+      "statement": "Advance the argument (step 11089): continue from What is the sixth term in the geometric sequence $\\frac{27}{125}, \\frac{9}{25},",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6880329612324522,
+      "support": null
+    }
+  ]
+}

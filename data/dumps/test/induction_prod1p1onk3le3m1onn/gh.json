@@ -1,0 +1,39 @@
+{
+  "problem_id": "induction_prod1p1onk3le3m1onn",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq 3 - 1/n$.",
+      "statement": "Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq 3 - 1/n$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l5619",
+      "natural_language": "Advance the argument (step 8737): continue from Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq",
+      "statement": "Advance the argument (step 8737): continue from Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7656414934887763,
+      "support": null
+    },
+    {
+      "id": "l5620",
+      "natural_language": "Advance the argument (step 8738): continue from Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq",
+      "statement": "Advance the argument (step 8738): continue from Show that for any positive integer $n$, we have $\\prod_{k=1}^n (1 + 1/k^3) \\leq",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7296629837287961,
+      "support": null
+    }
+  ]
+}

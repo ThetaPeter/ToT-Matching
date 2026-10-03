@@ -1,0 +1,26 @@
+Let \(x=\bigl(\sum_{n=1}^{44}\cos n^\circ\bigr)/\bigl(\sum_{n=1}^{44}\sin n^\circ\bigr)\). The summation formulae
+\[
+\sum_{n=1}^{44}\sin n^\circ=\frac{\sin22^\circ\sin22.5^\circ}{\sin0.5^\circ},\qquad
+\sum_{n=1}^{44}\cos n^\circ=\frac{\sin22^\circ\cos22.5^\circ}{\sin0.5^\circ}
+\]
+immediately yield \(x=\cot22.5^\circ\).
+
+The double-angle identity \(\tan45^\circ=1=2\tan22.5^\circ/(1-\tan^2 22.5^\circ)\) forces \(\tan22.5^\circ=\sqrt2-1\), hence
+\[
+x=\cot22.5^\circ=\sqrt2+1.
+\]
+(The same algebraic conclusion is reached by first writing \(\cot22.5^\circ=1+\sqrt2\) and then substituting the value of the tangent.)
+
+Thus \(100x=100(1+\sqrt2)\). Direct computation of squares gives
+\[
+1.41421^2=1.9999928241<2\implies\sqrt2>1.41421
+\]
+and
+\[
+1.41422^2=2.0000182084>2\implies\sqrt2<1.41422.
+\]
+Consequently
+\[
+241.421<100x<241.422,
+\]
+so \(\lfloor100x\rfloor=241\).

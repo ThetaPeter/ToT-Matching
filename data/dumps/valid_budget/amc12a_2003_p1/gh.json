@@ -1,0 +1,49 @@
+{
+  "problem_id": "amc12a_2003_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Restate the target claim: the difference between the sum of the first 2003 even counting numbers and the sum of the first 2003 odd counting numbers equals 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7348469228349535,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "The sum of the first n odd counting numbers is n^2.",
+      "statement": "sum_{k=1}^n (2k-1) = n^2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5892556509887896,
+      "support": null
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Hence the desired difference of sums equals the sum of 2003 ones, which is 2003.",
+      "statement": "sum_{k=1}^{2003} [(2k)-(2k-1)] = 2003·1 = 2003",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.16012815380508716,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Therefore the required difference equals 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [
+        "ts_2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": 0.15811388300841897,
+      "support": null
+    }
+  ]
+}

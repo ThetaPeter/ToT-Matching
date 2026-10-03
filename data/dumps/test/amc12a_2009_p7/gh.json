@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2009_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The first three terms of an arithmetic sequence are $2x - 3$, $5x - 11$, and $3x + 1$ respectively. The $n$th term of the sequence is $2009$. What is $n$?\n\n$\\textbf{(A)}\\ 255 \\qquad \\textbf{(B)}\\ 502 \\qquad \\textbf{(C)}\\ 1004 \\qquad \\textbf{(D)}\\ 1506 \\qquad \\textbf{(E)}\\ 8037$ Show that it is 502.",
+      "statement": "The first three terms of an arithmetic sequence are $2x - 3$, $5x - 11$, and $3x + 1$ respectively. The $n$th term of the sequence is $2009$. What is $n$?\n\n$\\textbf{(A)}\\ 255 \\qquad \\textbf{(B)}\\ 502 \\qquad \\textbf{(C)}\\ 1004 \\qquad \\textbf{(D)}\\ 1506 \\qquad \\textbf{(E)}\\ 8037$ Show that it is 502.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.22941573387056177,
+      "support": null
+    },
+    {
+      "id": "l2433",
+      "natural_language": "Advance the argument (step 3781): continue from The first three terms of an arithmetic sequence are $2x - 3$, $5x - 11$, and $3x",
+      "statement": "Advance the argument (step 3781): continue from The first three terms of an arithmetic sequence are $2x - 3$, $5x - 11$, and $3x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5091331749765982,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "problem_id": "amc12a_2008_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Target claim: the reciprocal of 1/2 + 2/3 equals 6/7",
+      "statement": "reciprocal(1/2 + 2/3) = 6/7",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Compute the sum: 1/2 + 2/3 = 7/6",
+      "statement": "(1/2 + 2/3) = 7/6",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The reciprocal of 7/6 is 6/7",
+      "statement": "reciprocal(7/6) = 6/7",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore the reciprocal is 6/7 as required",
+      "statement": "reciprocal(1/2 + 2/3) = 6/7",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

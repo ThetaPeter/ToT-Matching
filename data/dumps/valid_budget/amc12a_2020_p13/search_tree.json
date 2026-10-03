@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2020_p13",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]",
+      "last_claim": "[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.2,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\n[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim": "[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\nContinue from: [\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]",
+      "last_claim": "Continue from: [\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\n[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]",
+      "last_claim": "[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\n[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]\n[\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]",
+      "last_claim": "[\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\n[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]\nContinue from: [\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]",
+      "last_claim": "Continue from: [\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\n[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\n[\"Since 25 and 36 are coprime, \\(abc\\) must be a multiple of 36.\",\"Thus \\(c(b+1)\\equiv-1\\pmod{25}\\).\"]",
+      "last_claim": "[\"Since 25 and 36 are coprime, \\(abc\\) must be a multiple of 36.\",\"Thus \\(c(b+1)\\equiv-1\\pmod{25}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\n[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\nContinue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim": "Continue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\n[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]\n[\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]\n[\"Thus \\(25\\mid(b+1)c+1\\), so \\((b+1)c\\equiv-1\\pmod{25}\\).\", \"Hence \\(\\gcd(c,25)=1\\), so \\(c\\) is invertible modulo \\(25\\).\"]",
+      "last_claim": "[\"Thus \\(25\\mid(b+1)c+1\\), so \\((b+1)c\\equiv-1\\pmod{25}\\).\", \"Hence \\(\\gcd(c,25)=1\\), so \\(c\\) is invertible modulo \\(25\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\nContinue from:\n[\"The nested expression equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"Thus \\(\\frac{1+(1+1/c)/b}{a}=25/36\\) with integers \\(a,b,c>1\\).\"]\n[\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]\nContinue from: [\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]",
+      "last_claim": "Continue from: [\"Thus \\(36[(b+1)c+1]=25abc\\).\", \"Hence \\(abc\\) is a multiple of 36 and \\((b+1)c+1\\) is a multiple of 25.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\n[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\nContinue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\n[\"Since 25 and 36 are coprime, 36 divides \\(abc\\).\",\"The positive integers \\(a,b,c>1\\) are therefore a factorization of a multiple of 36 into three factors each at least 2.\"]",
+      "last_claim": "[\"Since 25 and 36 are coprime, 36 divides \\(abc\\).\",\"The positive integers \\(a,b,c>1\\) are therefore a factorization of a multiple of 36 into three factors each at least 2.\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.65,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..\n[\"The nested radical equals \\(N^{[1+(1+1/c)/b]/a}\\).\",\"The resulting exponent identity \\([1+(1+1/c)/b]/a=25/36\\) holds for integers \\(a,b,c>1\\).\"]\n[\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\nContinue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]\nContinue from: Continue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim": "Continue from: Continue from: [\"The equation rearranges to \\(25abc=36(bc+c+1)\\).\",\"Hence \\(bc+c+1\\) is a multiple of 25.\"]",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

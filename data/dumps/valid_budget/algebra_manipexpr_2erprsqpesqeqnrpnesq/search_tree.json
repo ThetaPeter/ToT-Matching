@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_manipexpr_2erprsqpesqeqnrpnesq",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2",
+      "last_claim": "(-r + (-e))^2 = (-e - r)^2",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.4,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-e - r)^2 = (e + r)^2",
+      "last_claim": "(-e - r)^2 = (e + r)^2",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.4,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2",
+      "last_claim": "(-e - r)^2 = [-(e + r)]^2",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = e^2 + 2er + r^2",
+      "last_claim": "(-e - r)^2 = e^2 + 2er + r^2",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-e - r)^2 = (e + r)^2\n(-r+(-e))^2=(-e-r)^2",
+      "last_claim": "(-r+(-e))^2=(-e-r)^2",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-e - r)^2 = (e + r)^2\n(e+r)^2=e^2+2er+r^2",
+      "last_claim": "(e+r)^2=e^2+2er+r^2",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n[-(e + r)]^2 = (e + r)^2",
+      "last_claim": "[-(e + r)]^2 = (e + r)^2",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n(e + r)^2 = e^2 + 2er + r^2",
+      "last_claim": "(e + r)^2 = e^2 + 2er + r^2",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = e^2 + 2er + r^2\ne^2 + 2er + r^2 = 2er + e^2 + r^2",
+      "last_claim": "e^2 + 2er + r^2 = 2er + e^2 + r^2",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = e^2 + 2er + r^2\ntherefore 2er + e^2 + r^2 = (-r + (-e))^2",
+      "last_claim": "therefore 2er + e^2 + r^2 = (-r + (-e))^2",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n[-(e + r)]^2 = (e + r)^2\n(e + r)^2 = e^2 + 2er + r^2",
+      "last_claim": "(e + r)^2 = e^2 + 2er + r^2",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n[-(e + r)]^2 = (e + r)^2\ne^2 + 2er + r^2 = 2er + e^2 + r^2",
+      "last_claim": "e^2 + 2er + r^2 = 2er + e^2 + r^2",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n(e + r)^2 = e^2 + 2er + r^2\n[-(e + r)]^2 = (e + r)^2",
+      "last_claim": "[-(e + r)]^2 = (e + r)^2",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any two complex numbers e and r, $2er + e^2 + r^2 = (-r + (-e))^2$.\n(-r + (-e))^2 = (-e - r)^2\n(-e - r)^2 = [-(e + r)]^2\n(e + r)^2 = e^2 + 2er + r^2\n2er + e^2 + r^2 = (-r + (-e))^2",
+      "last_claim": "2er + e^2 + r^2 = (-r + (-e))^2",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "problem_id": "algebra_amgm_sumasqdivbsqgeqsumbdiva",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c be positive real numbers",
+      "statement": "a>0 \\land b>0 \\land c>0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "By AM-GM, a^2/b^2 + b^2/c^2 >= 2a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} \\ge 2\\frac{a}{c}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Let x=a/b, y=b/c, z=c/a (so xyz=1)",
+      "statement": "x=\\frac{a}{b} \\land y=\\frac{b}{c} \\land z=\\frac{c}{a} \\land xyz=1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

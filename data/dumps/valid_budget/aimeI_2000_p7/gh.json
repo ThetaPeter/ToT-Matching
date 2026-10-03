@@ -1,0 +1,71 @@
+{
+  "problem_id": "aimeI_2000_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x, y, z > 0 satisfy xyz = 1, x + 1/z = 5 and y + 1/x = 29",
+      "statement": "positive_reals(x) ∧ positive_reals(y) ∧ positive_reals(z) ∧ (x*y*z = 1) ∧ (x + 1/z = 5) ∧ (y + 1/x = 29)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.13867504905630731,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "From xyz=1 and x+1/z=5 rewrite as x(1+y)=5",
+      "statement": "x*(1 + y) = 5",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.21081851067789198,
+      "support": null
+    },
+    {
+      "id": "l20",
+      "natural_language": "From the third equation y + 1/x = 29, it follows that x = 1/(29 - y)",
+      "statement": "x = 1/(29 - y)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2223747949983304,
+      "support": null
+    },
+    {
+      "id": "l24",
+      "natural_language": "Back-substitute x = 1/5 and y = 24 into xyz = 1 to obtain z = 5/24",
+      "statement": "z = 5/24",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l36",
+      "natural_language": "Solve the linear equation to obtain y=24",
+      "statement": "y = 24",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l37",
+      "natural_language": "Back-substitute y=24 into x=5/(1+y) to obtain x=1/5",
+      "statement": "x = 1/5",
+      "dependencies": [
+        "l36"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.5698028822981899,
+      "support": null
+    }
+  ]
+}

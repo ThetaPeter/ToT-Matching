@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_48",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Simplify $(9-4i)-(-3-4i)$. Show that it is 12.",
+      "statement": "Simplify $(9-4i)-(-3-4i)$. Show that it is 12.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l8320",
+      "natural_language": "Advance the argument (step 12938): continue from Simplify $(9-4i)-(-3-4i)$. Show that it is 12.",
+      "statement": "Advance the argument (step 12938): continue from Simplify $(9-4i)-(-3-4i)$. Show that it is 12.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7826237921249265,
+      "support": null
+    },
+    {
+      "id": "l_dead_4621",
+      "natural_language": "dead-end unused case 12939: discard this alternative",
+      "statement": "dead-end unused case 12939: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.11952286093343938,
+      "support": null
+    }
+  ]
+}

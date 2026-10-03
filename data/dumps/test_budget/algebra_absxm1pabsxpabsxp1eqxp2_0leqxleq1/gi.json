@@ -1,0 +1,27 @@
+{
+  "problem_id": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any real number x, if |x-1| + |x| + |x+1| = x + 2, then 0 ≤ x ≤ 1.",
+      "statement": "∀x∈ℝ (|x−1|+|x|+|x+1|=x+2 ⟹ 0≤x≤1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Theorem solution: the implication holds for the given interval.",
+      "statement": "∀x∈ℝ (|x−1|+|x|+|x+1|=x+2 ⟹ 0≤x≤1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

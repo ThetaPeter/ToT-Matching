@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2009_p5",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim": "[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim": "[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim": "Continue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\nContinue from:\n[\"Let the side length of the original cube be \\(s>1\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)\\).\"]",
+      "last_claim": "[\"Let the side length of the original cube be \\(s>1\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\n[\"Since \\(s=5>1\\), the new dimensions \\(s+1\\), \\(s-1\\) and \\(s\\) are all positive.\", \"The original volume is therefore \\(125\\), which is choice (D).\"]",
+      "last_claim": "[\"Since \\(s=5>1\\), the new dimensions \\(s+1\\), \\(s-1\\) and \\(s\\) are all positive.\", \"The original volume is therefore \\(125\\), which is choice (D).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\nContinue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim": "Continue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]",
+      "last_claim": "[\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: Continue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\nContinue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\n[\"Since the new solid must have positive side lengths we require \\(s>1\\), so \\(s=5\\) is admissible.\", \"The original volume is therefore \\(125\\), corresponding to choice \\(\\textbf{(D)}\\).\"]",
+      "last_claim": "[\"Since the new solid must have positive side lengths we require \\(s>1\\), so \\(s=5\\) is admissible.\", \"The original volume is therefore \\(125\\), corresponding to choice \\(\\textbf{(D)}\\).\"]",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\nContinue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]\nContinue from: Continue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).\", \"Hence \\(s=5\\) and the original volume is \\(s^3=125\\).\"]",
+      "last_claim_id": "l23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]\n[\"Since \\(s=5>1\\), the new dimensions \\(6\\), \\(4\\) and \\(5\\) are all positive, so they form a valid rectangular solid.\", \"Direct substitution confirms the volumes: the cube has volume \\(125\\) while the new solid has volume \\(6\\cdot4\\cdot5=120\\), which is indeed \\(5\\) less.\"]",
+      "last_claim": "[\"Since \\(s=5>1\\), the new dimensions \\(6\\), \\(4\\) and \\(5\\) are all positive, so they form a valid rectangular solid.\", \"Direct substitution confirms the volumes: the cube has volume \\(125\\) while the new solid has volume \\(6\\cdot4\\cdot5=120\\), which is indeed \\(5\\) less.\"]",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "One dimension of a cube is increased by $1$, another is decreased by $1$, and the third is left unchanged. The volume of the new rectangular solid is $5$ less than that of the cube. What was the volume of the cube?\n\n$\\textbf{(A)}\\ 8 \\qquad \\textbf{(B)}\\ 27 \\qquad \\textbf{(C)}\\ 64 \\qquad \\textbf{(D)}\\ 125 \\qquad \\textbf{(E)}\\ 216$ Show that it is \\text{(D)}.\n[\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\nContinue from: [\"Let the side length of the cube be \\(s>0\\).\", \"The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).\"]\n[\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]\nContinue from: [\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]",
+      "last_claim": "Continue from: [\"The new volume is 5 less than the cube's volume \\(s^3\\), so \\(s^3-s=s^3-5\\).\", \"Equating and simplifying therefore yields \\(s=5\\), hence the original volume is \\(125\\).\"]",
+      "last_claim_id": "l26",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

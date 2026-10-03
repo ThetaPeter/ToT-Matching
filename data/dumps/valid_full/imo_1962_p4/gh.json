@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1962_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Solve the equation $\\cos^2{x}+\\cos^2{2x}+\\cos^2{3x}=1$.",
+      "statement": "Solve the equation $\\cos^2{x}+\\cos^2{2x}+\\cos^2{3x}=1$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.36745216973970035,
+      "support": null
+    },
+    {
+      "id": "l4216",
+      "natural_language": "Advance the argument (step 6554): continue from Solve the equation $\\cos^2{x}+\\cos^2{2x}+\\cos^2{3x}=1$.",
+      "statement": "Advance the argument (step 6554): continue from Solve the equation $\\cos^2{x}+\\cos^2{2x}+\\cos^2{3x}=1$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7537783614444091,
+      "support": null
+    }
+  ]
+}

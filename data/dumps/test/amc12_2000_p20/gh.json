@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12_2000_p20",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y + \\frac{1}{z} = 1, \\qquad \\text{and} \\qquad z + \\frac{1}{x} = \\frac{7}{3}$\n\nThen what is the value of $xyz$ ?\n\n$\\text {(A)}\\ \\frac{2}{3} \\qquad \\text {(B)}\\ 1 \\qquad \\text {(C)}\\ \\frac{4}{3} \\qquad \\text {(D)}\\ 2 \\qquad \\text {(E)}\\ \\frac{7}{3}$ Show that it is xyz = 1 \\rightarrow B.",
+      "statement": "If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y + \\frac{1}{z} = 1, \\qquad \\text{and} \\qquad z + \\frac{1}{x} = \\frac{7}{3}$\n\nThen what is the value of $xyz$ ?\n\n$\\text {(A)}\\ \\frac{2}{3} \\qquad \\text {(B)}\\ 1 \\qquad \\text {(C)}\\ \\frac{4}{3} \\qquad \\text {(D)}\\ 2 \\qquad \\text {(E)}\\ \\frac{7}{3}$ Show that it is xyz = 1 \\rightarrow B.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1893",
+      "natural_language": "Advance the argument (step 2941): continue from If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y",
+      "statement": "Advance the argument (step 2941): continue from If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.29073751372465245,
+      "support": null
+    },
+    {
+      "id": "l1894",
+      "natural_language": "Advance the argument (step 2942): continue from If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y",
+      "statement": "Advance the argument (step 2942): continue from If $x,y,$ and $z$ are positive numbers satisfying\n\n$x + \\frac{1}{y} = 4,\\qquad y",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.479583152331272,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+We are given that \(|x_i|<1\) for every \(i\in\{1,\dots,n\}\) and that \(S-|T|=19\), where \(S=\sum|x_i|\) and \(T=\sum x_i\).
+
+Write \(P\) for the sum of the positive terms and \(N\) for the sum of the absolute values of the negative terms. Then \(S=P+N\) and \(T=P-N\), so
+\[
+S-|T|=2\min(P,N)=19.
+\]
+Hence \(\min(P,N)=9.5\). Because each \(|x_i|<1\), a sum of \(9.5\) cannot be realized with fewer than \(10\) terms (nine terms would be strictly less than \(9\)). The same lower bound of \(10\) terms therefore applies to both the positive group and the negative group, so the smallest possible \(n\) is \(20\).
+
+Final answer: \(20\)

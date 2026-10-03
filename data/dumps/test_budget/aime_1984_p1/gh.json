@@ -1,0 +1,62 @@
+{
+  "problem_id": "aime_1984_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence a1 to a98 forms an arithmetic progression with common difference 1.",
+      "statement": "is_AP(a[1..98], d=1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6741998624632421,
+      "support": null
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The sum of the first 98 terms equals 137.",
+      "statement": "sum(a[1..98]) = 137",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7453559924999299,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Let the first term of the AP be \\(a\\). Then the \\(n\\)th term is \\(a+(n-1)\\).",
+      "statement": "term(n) = a + (n-1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6761234037828133,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "The given sum of the first 98 terms equals \\(\\frac{98}{2}(2a+97)=137\\).",
+      "statement": "49*(2a+97)=137",
+      "dependencies": [
+        "tc_2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5275043787166296,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Solve the equation 49*(2a+97)=137 to obtain a=(137/49-97)/2.",
+      "statement": "a = (137/49 - 97)/2",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.48507125007266594,
+      "support": null
+    }
+  ]
+}

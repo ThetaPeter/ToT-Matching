@@ -1,0 +1,221 @@
+{
+  "problem_id": "aime_1984_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "first given equation",
+      "statement": "\\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "second given equation",
+      "statement": "\\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "third given equation",
+      "statement": "\\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "fourth given equation",
+      "statement": "\\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "sum of squares equals 36",
+      "statement": "x²+y²+z²+w²=36",
+      "dependencies": [
+        "l18",
+        "l19",
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "definition of polynomials P and Q",
+      "statement": "Let Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2}) and P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "recognition as Cauchy matrix system",
+      "statement": "The given linear system is a Cauchy system C\\mathbf{v}=\\mathbf{1} with C_{jk}=1/(e_j^{2}-o_k^{2})",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "tc_3",
+        "tc_4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "rational function identity from interpolation",
+      "statement": "\\sum_k v_k/(s-b_k^2)=1-P(s)/Q(s) for all s",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "asymptotic expansion of the rational function",
+      "statement": "As \\(s\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\)",
+      "dependencies": [
+        "l4",
+        "l17"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "leading coefficient comparison",
+      "statement": "sum v_k = \\sum e_j^2 - \\sum o_k^2 =120-84=36",
+      "dependencies": [
+        "l6",
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "explicit Lagrange basis formula for each v_k",
+      "statement": "v_k=-P(o_k^2)/Q'(o_k^2)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "sum of residues equals desired total",
+      "statement": "x^2+y^2+z^2+w^2=\\sum_k -P(o_k^2)/Q'(o_k^2)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "direct evaluation of the finite sum yields 36",
+      "statement": "\\sum_k -P(o_k^2)/Q'(o_k^2)=36",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "explicit evaluation of the sums",
+      "statement": "\\sum p_k=4+16+36+64=120 and \\sum q_j=1+9+25+49=84",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "substitute a=x² etc and rewrite system",
+      "statement": "Let a=x²,b=y²,c=z²,d=w² and write the given equations as ∑_j a_j/(p_k-q_j)=1 for k=1,2,3,4 where p_k=(2k)² and q_j=(2j-1)²",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "tc_3",
+        "tc_4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Both P and Q are monic of degree 4, confirming the s^3 coefficient of Q-P",
+      "statement": "Both P and Q are monic of degree 4, confirming the s^3 coefficient of Q-P is \\sum e_j^2-\\sum o_k^2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Therefore sum of squares equals sum v_k",
+      "statement": "x^2+y^2+z^2+w^2=\\sum v_k=36",
+      "dependencies": [
+        "l7",
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "v is the vector of squares",
+      "statement": "v=(x²,y²,z²,w²) so desired sum equals ∑v_k",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

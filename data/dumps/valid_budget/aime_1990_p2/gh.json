@@ -1,0 +1,57 @@
+{
+  "problem_id": "aime_1990_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let \\alpha = 52 + 6\\sqrt43 and \\beta = 52 - 6\\sqrt43. The goal is to evaluate \\alpha^{3/2} - \\beta^{3/2}.",
+      "statement": "Define \\alpha := 52 + 6\\sqrt43, \\beta := 52 - 6\\sqrt43; compute \\alpha^{3/2} - \\beta^{3/2}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.49236596391733095,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Expand cubes: (3 + \\sqrt43)^3 = 414 + 70\\sqrt43 and (\\sqrt43 - 3)^3 = -414 + 70\\sqrt43.",
+      "statement": "(3 + \\sqrt43)^3 = 414 + 70\\sqrt43 ∧ (\\sqrt43 - 3)^3 = -414 + 70\\sqrt43.",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Subtract the cubes to obtain 828.",
+      "statement": "\\alpha^{3/2} - \\beta^{3/2} = 828.",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5962847939999442,
+      "support": null
+    },
+    {
+      "id": "l26",
+      "natural_language": "Expand cubes: (3 + √43)³ = 414 + 70√43 and (√43 - 3)³ = -414 + 70√43.",
+      "statement": "(3 + √43)³ = 414 + 70√43 ∧ (√43 - 3)³ = -414 + 70√43.",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.575355961782461,
+      "support": null
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Subtract the cubes to obtain the target value 828.",
+      "statement": "\\alpha^{3/2}-\\beta^{3/2}=828.",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.6092717958449425,
+      "support": null
+    }
+  ]
+}

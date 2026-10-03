@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2017_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.",
+      "statement": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l3297",
+      "natural_language": "Advance the argument (step 5125): continue from The sum of two nonzero real numbers is 4 times their product. What is the sum of",
+      "statement": "Advance the argument (step 5125): continue from The sum of two nonzero real numbers is 4 times their product. What is the sum of",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8429272304235247,
+      "support": null
+    },
+    {
+      "id": "l_dead_1831",
+      "natural_language": "dead-end unused case 5127: discard this alternative",
+      "statement": "dead-end unused case 5127: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.07018624063435965,
+      "support": null
+    }
+  ]
+}

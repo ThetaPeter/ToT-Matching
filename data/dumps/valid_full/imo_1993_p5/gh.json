@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1993_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $\\mathbb{N} = \\{1,2,3, \\ldots\\}$. Determine if there exists a strictly increasing function $f: \\mathbb{N} \\mapsto \\mathbb{N}$ with the following properties:\n\n(i) $f(1) = 2$;\n\n(ii) $f(f(n)) = f(n) + n, (n \\in \\mathbb{N})$.",
+      "statement": "Let $\\mathbb{N} = \\{1,2,3, \\ldots\\}$. Determine if there exists a strictly increasing function $f: \\mathbb{N} \\mapsto \\mathbb{N}$ with the following properties:\n\n(i) $f(1) = 2$;\n\n(ii) $f(f(n)) = f(n) + n, (n \\in \\mathbb{N})$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.11785113019775792,
+      "support": null
+    },
+    {
+      "id": "l5133",
+      "natural_language": "Advance the argument (step 7981): continue from Let $\\mathbb{N} = \\{1,2,3, \\ldots\\}$. Determine if there exists a strictly incre",
+      "statement": "Advance the argument (step 7981): continue from Let $\\mathbb{N} = \\{1,2,3, \\ldots\\}$. Determine if there exists a strictly incre",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.44585082870893744,
+      "support": null
+    }
+  ]
+}

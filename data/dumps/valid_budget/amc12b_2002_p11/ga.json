@@ -1,0 +1,358 @@
+{
+  "problem_id": "amc12b_2002_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A, B, A-B, A+B are all positive prime numbers",
+      "statement": "prime(A) ∧ prime(B) ∧ prime(A-B) ∧ prime(A+B) ∧ A>B>0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Sum S = A + B + (A-B) + (A+B) simplifies to 3A + B",
+      "statement": "S=3*A+B",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.",
+      "statement": "¬(odd(A) ∧ odd(B) ∧ odd(A-B) ∧ odd(A+B))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The only even prime is 2, so exactly one of the four numbers equals 2.",
+      "statement": "exactly_one_of_four_equals_2",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1",
+      "statement": "exactly_one_of_four_equals_2 → B=2",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "B must be 2 (the only even prime). Then A-B=2 forces A=4 (composite) is false, but valid solution A=5,B=2 yields primes 5,2,3,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "With B=2 the four primes become A-2, A, A+2 (all odd)",
+      "statement": "prime(A-2) ∧ prime(A) ∧ prime(A+2)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7",
+      "statement": "A=5",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "A cannot equal 2, so B=2 and A, A-2, A+2 are all odd primes.",
+      "statement": "¬(A=2) → (B=2 ∧ prime(A) ∧ prime(A-2) ∧ prime(A+2) ∧ odd(A))",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l11",
+        "l10"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus A, A-2 and A+2 are all odd primes (so they form a prime triplet of the form n, n+2, n+4).",
+      "statement": "prime(A) ∧ prime(A-2) ∧ prime(A+2) ∧ odd(A) ∧ triplet_form(n,n+2,n+4)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l12",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Among any three integers of the form n, n+2, n+4, exactly one is divisible by 3",
+      "statement": "∀ n (div3(n) ⊕ div3(n+2) ⊕ div3(n+4))",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "hence the only possibility with all three >3 impossible, forcing A-2=3 so A=5",
+      "statement": "prime_triplet(A-2,A,A+2) → A=5",
+      "dependencies": [
+        "l13",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l14"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Hence A=5.",
+      "statement": "A=5",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l15"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "The remaining even prime must be B=2.",
+      "statement": "B=2",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l16",
+        "l10"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "B must be 2, as B=3 yields A+B=8 which is composite.",
+      "statement": "B=2",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "B must be 2 and A=5, yielding primes 3,5,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l17",
+        "l10"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "With B=2 and A=5 the four primes are exactly 5,2,3,7",
+      "statement": "primes={5,2,3,7}",
+      "dependencies": [
+        "l10",
+        "l8"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The four primes are then 2,3,5,7 whose sum 17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l18"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Thus the four numbers are 5, 2, 3 and 7, all prime.",
+      "statement": "primes={5,2,3,7}",
+      "dependencies": [
+        "l10",
+        "l8"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The four primes are 2,3,5,7 whose sum 17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l19"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "With A=5 and B=2, S=3A+B evaluates to 17",
+      "statement": "S=17",
+      "dependencies": [
+        "l5",
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Their sum equals 17, which is itself prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

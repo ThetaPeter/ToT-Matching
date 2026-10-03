@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_96",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $x$, $y$, and $z$ are positive real numbers satisfying: \\begin{align*}\n\\log x - \\log y &= a, \\\\\n\\log y - \\log z &= 15, \\text{ and} \\\\\n\\log z - \\log x &= -7, \\\\\n\\end{align*}where $a$ is a real number, what is $a$? Show that it is -8.",
+      "statement": "If $x$, $y$, and $z$ are positive real numbers satisfying: \\begin{align*}\n\\log x - \\log y &= a, \\\\\n\\log y - \\log z &= 15, \\text{ and} \\\\\n\\log z - \\log x &= -7, \\\\\n\\end{align*}where $a$ is a real number, what is $a$? Show that it is -8.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.09128709291752769,
+      "support": null
+    },
+    {
+      "id": "l9237",
+      "natural_language": "Advance the argument (step 14365): continue from If $x$, $y$, and $z$ are positive real numbers satisfying: \\begin{align*}\n\\log x",
+      "statement": "Advance the argument (step 14365): continue from If $x$, $y$, and $z$ are positive real numbers satisfying: \\begin{align*}\n\\log x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.47958315233127197,
+      "support": null
+    }
+  ]
+}

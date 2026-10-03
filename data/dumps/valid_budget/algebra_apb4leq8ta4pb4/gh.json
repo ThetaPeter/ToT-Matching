@@ -1,0 +1,69 @@
+{
+  "problem_id": "algebra_apb4leq8ta4pb4",
+  "nodes": [
+    {
+      "id": "l8",
+      "natural_language": "By the QM-AM inequality or equivalently (a-b)^2\\ge0 we have (a+b)^2\\le2(a^2+b^2).",
+      "statement": "(a + b)^2 ≤ 2(a^2 + b^2) for all real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5400617248673218,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Expand the left-hand side as a^4+4a^3b+6a^2b^2+4ab^3+b^4 and rearrange the desired inequality.",
+      "statement": "(a + b)^4 ≤ 8(a^4 + b^4) for all positive real a, b",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.4296689244236598,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "By AM-GM, a^4 + b^4 \\ge 2a^2b^2 and (a+b)^4 = a^4 + 4a^3b + 6a^2b^2 + 4ab^3 + b^4 \\le 8(a^4 + b^4) after collecting like terms and using a,b>0.",
+      "statement": "(a + b)^4 \\le 8(a^4 + b^4) for all positive real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.5026246899500346,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "Equality holds in the original inequality if and only if a=b.",
+      "statement": "Equality holds in (a + b)^4 \\le 8(a^4 + b^4) iff a = b for positive real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.2461829819586655,
+      "support": null
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any positive real numbers a and b, (a+b)^4 \\le 8(a^4 + b^4).",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.43750000000000006,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Equality holds if and only if a=b.",
+      "statement": "Equality holds in (a + b)^4 ≤ 8(a^4 + b^4) iff a = b for positive real a, b",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.33333333333333337,
+      "support": null
+    }
+  ]
+}

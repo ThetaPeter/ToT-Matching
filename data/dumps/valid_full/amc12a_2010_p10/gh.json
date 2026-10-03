@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2010_p10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.",
+      "statement": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.44474958999666075,
+      "support": null
+    },
+    {
+      "id": "l2811",
+      "natural_language": "Advance the argument (step 4369): continue from The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$.",
+      "statement": "Advance the argument (step 4369): continue from The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5557189302262113,
+      "support": null
+    }
+  ]
+}

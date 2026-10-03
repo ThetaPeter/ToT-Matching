@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1960_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For what values of the variable $x$ does the following inequality hold:\n\n$\\dfrac{4x^2}{(1 - \\sqrt {2x + 1})^2} < 2x + 9 \\ ?$",
+      "statement": "For what values of the variable $x$ does the following inequality hold:\n\n$\\dfrac{4x^2}{(1 - \\sqrt {2x + 1})^2} < 2x + 9 \\ ?$",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l4270",
+      "natural_language": "Advance the argument (step 6638): continue from For what values of the variable $x$ does the following inequality hold:\n\n$\\dfrac",
+      "statement": "Advance the argument (step 6638): continue from For what values of the variable $x$ does the following inequality hold:\n\n$\\dfrac",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5163977794943223,
+      "support": null
+    },
+    {
+      "id": "l_dead_2371",
+      "natural_language": "dead-end unused case 6639: discard this alternative",
+      "statement": "dead-end unused case 6639: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.33333333333333337,
+      "support": null
+    }
+  ]
+}

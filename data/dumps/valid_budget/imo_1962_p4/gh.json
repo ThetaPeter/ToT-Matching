@@ -1,0 +1,47 @@
+{
+  "problem_id": "imo_1962_p4",
+  "nodes": [
+    {
+      "id": "l8",
+      "natural_language": "The original equation is equivalent to sin^{2}x+sin^{2}2x+sin^{2}3x=2.",
+      "statement": "cos^{2}x+cos^{2}2x+cos^{2}3x=1 \\Leftrightarrow sin^{2}x+sin^{2}2x+sin^{2}3x=2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6735753140545634,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Convert the factored form into a product of sines via Weierstrass or auxiliary angle substitution and solve the resulting sin(k u)=0 cases.",
+      "statement": "After substitution the equation reduces to sin(u/2)·sin(3u/2)·(2cos u +1)=0 or equivalent clean product",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.5976143046671969,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "Both approaches reduce the problem to solving the same trigonometric equation.",
+      "statement": "cos^{2}x + cos^{2}2x + cos^{2}3x =1 \\Leftrightarrow cos2x + cos4x + cos6x =-1",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": 0.4868644955601477,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Factor LHS via sum-to-product identities to obtain a product equation ready for case analysis.",
+      "statement": "cos2x + cos4x + cos6x = cos4x(2cos2x +1) =-1",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": 0.4714045207910318,
+      "support": null
+    }
+  ]
+}

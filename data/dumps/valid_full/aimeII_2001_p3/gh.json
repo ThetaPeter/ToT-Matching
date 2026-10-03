@@ -1,0 +1,39 @@
+{
+  "problem_id": "aimeII_2001_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given that\n\n$$\n\\begin{align*}x_{1}&=211,\\\\\nx_{2}&=375,\\\\\nx_{3}&=420,\\\\\nx_{4}&=523,\\ \\text{and}\\\\\nx_{n}&=x_{n-1}-x_{n-2}+x_{n-3}-x_{n-4}\\ \\text{when}\\ n\\geq5, \\end{align*}\n$$\n\nfind the value of $x_{531}+x_{753}+x_{975}$. Show that it is 898.",
+      "statement": "Given that\n\n$$\n\\begin{align*}x_{1}&=211,\\\\\nx_{2}&=375,\\\\\nx_{3}&=420,\\\\\nx_{4}&=523,\\ \\text{and}\\\\\nx_{n}&=x_{n-1}-x_{n-2}+x_{n-3}-x_{n-4}\\ \\text{when}\\ n\\geq5, \\end{align*}\n$$\n\nfind the value of $x_{531}+x_{753}+x_{975}$. Show that it is 898.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Advance the argument (step 2): continue from Given that\n\n$$\n\\begin{align*}x_{1}&=211,\\\\\nx_{2}&=375,\\\\\nx_{3}&=420,\\\\\nx_{4}&=52",
+      "statement": "Advance the argument (step 2): continue from Given that\n\n$$\n\\begin{align*}x_{1}&=211,\\\\\nx_{2}&=375,\\\\\nx_{3}&=420,\\\\\nx_{4}&=52",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5896618941607872,
+      "support": null
+    },
+    {
+      "id": "l_dead_1",
+      "natural_language": "dead-end unused case 3: discard this alternative",
+      "statement": "dead-end unused case 3: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.22247460415730488,
+      "support": null
+    }
+  ]
+}

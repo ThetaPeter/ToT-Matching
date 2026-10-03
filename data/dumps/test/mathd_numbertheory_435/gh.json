@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_435",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find the smallest positive integer $k$ such that, for every positive integer $n$, $6n+k$ is relatively prime to each of $6n+3$, $6n+2$, and $6n+1$. Show that it is 5.",
+      "statement": "Find the smallest positive integer $k$ such that, for every positive integer $n$, $6n+k$ is relatively prime to each of $6n+3$, $6n+2$, and $6n+1$. Show that it is 5.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.28214404682341737,
+      "support": null
+    },
+    {
+      "id": "l11289",
+      "natural_language": "Advance the argument (step 17557): continue from Find the smallest positive integer $k$ such that, for every positive integer $n$",
+      "statement": "Advance the argument (step 17557): continue from Find the smallest positive integer $k$ such that, for every positive integer $n$",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5369248441712194,
+      "support": null
+    }
+  ]
+}

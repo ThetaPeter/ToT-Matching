@@ -1,0 +1,26 @@
+From the given relation \((x+y)f(x,y)=y f(x,x+y)\) it follows immediately that
+\[
+f(x,x+y)=\frac{x+y}{y}f(x,y).
+\]
+In particular, the identity \(f(x,x)=x\) together with the preceding identity yields \(f(1,n)=n\) for every positive integer \(n\). Substituting this special case back into the same identity then produces the more general evaluation
+\[
+f(d,kd)=kd
+\]
+for every pair of positive integers \(d\) and \(k\).
+
+The least-common-multiple function satisfies the three identities
+\[
+\operatorname{lcm}(x,x)=x,\qquad\operatorname{lcm}(x,y)=\operatorname{lcm}(y,x),\qquad(x+y)\operatorname{lcm}(x,y)=y\operatorname{lcm}(x,x+y).
+\]
+Consequently the two functions \(f\) and \(\operatorname{lcm}\) obey exactly the same functional equations and the same special values already established for \(f\). Therefore
+\[
+f(x,y)=\operatorname{lcm}(x,y)
+\]
+for all positive integers \(x,y\). Direct computation of the least common multiple then gives
+\[
+\operatorname{lcm}(14,52)=364,
+\]
+and the identification of \(f\) with \(\operatorname{lcm}\) yields the required value
+\[
+f(14,52)=364.
+\]

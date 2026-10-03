@@ -1,0 +1,328 @@
+{
+  "problem_id": "mathd_algebra_10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.",
+      "statement": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.\nAdvance the argument (step 1): continue from What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show th\nAdvance the argument (step 3): continue from Advance the argument (step 1): continue from What is the positive difference bet\nAdvance the argument (step 7): continue from Advance the argument (step 3): continue from Advance the argument (step 1): cont",
+      "statement": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.\nAdvance the argument (step 1): continue from What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show th\nAdvance the argument (step 3): continue from Advance the argument (step 1): continue from What is the positive difference bet\nAdvance the argument (step 7): continue from Advance the argument (step 3): continue from Advance the argument (step 1): cont",
+      "dependencies": [
+        "l6",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "l3",
+      "natural_language": "Advance the argument (step 1): continue from What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show th",
+      "statement": "Advance the argument (step 1): continue from What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show th",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.75
+    },
+    {
+      "id": "l_dead_1",
+      "natural_language": "dead-end unused case 2: discard this alternative",
+      "statement": "dead-end unused case 2: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.25
+    },
+    {
+      "id": "ts_dead_1",
+      "natural_language": "dead-end unused case 2: discard this alternative",
+      "statement": "dead-end unused case 2: discard this alternative",
+      "dependencies": [
+        "l_dead_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Advance the argument (step 3): continue from Advance the argument (step 1): continue from What is the positive difference bet",
+      "statement": "Advance the argument (step 3): continue from Advance the argument (step 1): continue from What is the positive difference bet",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.5
+    },
+    {
+      "id": "l_dead_2",
+      "natural_language": "dead-end unused case 4: discard this alternative",
+      "statement": "dead-end unused case 4: discard this alternative",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.25
+    },
+    {
+      "id": "ts_dead_2",
+      "natural_language": "dead-end unused case 4: discard this alternative",
+      "statement": "dead-end unused case 4: discard this alternative",
+      "dependencies": [
+        "l_dead_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_3",
+      "natural_language": "Advance the argument (step 5): continue from dead-end unused case 2: discard this alternative",
+      "statement": "Advance the argument (step 5): continue from dead-end unused case 2: discard this alternative",
+      "dependencies": [
+        "l_dead_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_3",
+      "natural_language": "Advance the argument (step 5): continue from dead-end unused case 2: discard this alternative",
+      "statement": "Advance the argument (step 5): continue from dead-end unused case 2: discard this alternative",
+      "dependencies": [
+        "l_dead_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_4",
+      "natural_language": "dead-end unused case 6: discard this alternative",
+      "statement": "dead-end unused case 6: discard this alternative",
+      "dependencies": [
+        "l_dead_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_4",
+      "natural_language": "dead-end unused case 6: discard this alternative",
+      "statement": "dead-end unused case 6: discard this alternative",
+      "dependencies": [
+        "l_dead_4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Advance the argument (step 7): continue from Advance the argument (step 3): continue from Advance the argument (step 1): cont",
+      "statement": "Advance the argument (step 7): continue from Advance the argument (step 3): continue from Advance the argument (step 1): cont",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.25
+    },
+    {
+      "id": "l_dead_5",
+      "natural_language": "dead-end unused case 8: discard this alternative",
+      "statement": "dead-end unused case 8: discard this alternative",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.25
+    },
+    {
+      "id": "ts_dead_5",
+      "natural_language": "dead-end unused case 8: discard this alternative",
+      "statement": "dead-end unused case 8: discard this alternative",
+      "dependencies": [
+        "l_dead_5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_6",
+      "natural_language": "Advance the argument (step 9): continue from dead-end unused case 4: discard this alternative",
+      "statement": "Advance the argument (step 9): continue from dead-end unused case 4: discard this alternative",
+      "dependencies": [
+        "l_dead_2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_6",
+      "natural_language": "Advance the argument (step 9): continue from dead-end unused case 4: discard this alternative",
+      "statement": "Advance the argument (step 9): continue from dead-end unused case 4: discard this alternative",
+      "dependencies": [
+        "l_dead_6"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_7",
+      "natural_language": "dead-end unused case 10: discard this alternative",
+      "statement": "dead-end unused case 10: discard this alternative",
+      "dependencies": [
+        "l_dead_2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_7",
+      "natural_language": "dead-end unused case 10: discard this alternative",
+      "statement": "dead-end unused case 10: discard this alternative",
+      "dependencies": [
+        "l_dead_7"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Advance the argument (step 11): continue from Advance the argument (step 7): continue from Advance the argument (step 3): cont",
+      "statement": "Advance the argument (step 11): continue from Advance the argument (step 7): continue from Advance the argument (step 3): cont",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "l_dead_8",
+      "natural_language": "dead-end unused case 12: discard this alternative",
+      "statement": "dead-end unused case 12: discard this alternative",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_8",
+      "natural_language": "dead-end unused case 12: discard this alternative",
+      "statement": "dead-end unused case 12: discard this alternative",
+      "dependencies": [
+        "l_dead_8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_9",
+      "natural_language": "Advance the argument (step 13): continue from dead-end unused case 8: discard this alternative",
+      "statement": "Advance the argument (step 13): continue from dead-end unused case 8: discard this alternative",
+      "dependencies": [
+        "l_dead_5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_9",
+      "natural_language": "Advance the argument (step 13): continue from dead-end unused case 8: discard this alternative",
+      "statement": "Advance the argument (step 13): continue from dead-end unused case 8: discard this alternative",
+      "dependencies": [
+        "l_dead_9"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_10",
+      "natural_language": "dead-end unused case 14: discard this alternative",
+      "statement": "dead-end unused case 14: discard this alternative",
+      "dependencies": [
+        "l_dead_5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.125
+    },
+    {
+      "id": "ts_dead_10",
+      "natural_language": "dead-end unused case 14: discard this alternative",
+      "statement": "dead-end unused case 14: discard this alternative",
+      "dependencies": [
+        "l_dead_10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

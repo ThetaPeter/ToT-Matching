@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12a_2021_p7",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "The minimum value of the expression is exactly 1, attained at x=y=0.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6793662204867575,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Let f(x,y)=(xy-1)^2+(x+y)^2. Expanding gives f(x,y)=x^2 y^2 + x^2 + y^2 + 1.",
+      "statement": "∀x,y ∈ ℝ, f(x,y) = x^2 y^2 + x^2 + y^2 + 1",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.7655318158241115,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "The identity x^2 y^2 + x^2 + y^2 + 1 = (1+x^2)(1+y^2) holds for all real x,y.",
+      "statement": "∀x,y ∈ ℝ, x^2 y^2 + x^2 + y^2 + 1 = (1+x^2)(1+y^2)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.7292928985449755,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_276",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$ are integers. What is $AB + B$? Show that it is 12.",
+      "statement": "The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$ are integers. What is $AB + B$? Show that it is 12.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l7293",
+      "natural_language": "Advance the argument (step 11341): continue from The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$",
+      "statement": "Advance the argument (step 11341): continue from The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.2365249583956331,
+      "support": null
+    },
+    {
+      "id": "l7294",
+      "natural_language": "Advance the argument (step 11342): continue from The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$",
+      "statement": "Advance the argument (step 11342): continue from The expression $10x^2-x-24$ can be written as $(Ax-8)(Bx+3),$ where $A$ and $B$",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.49543369430686224,
+      "support": null
+    }
+  ]
+}

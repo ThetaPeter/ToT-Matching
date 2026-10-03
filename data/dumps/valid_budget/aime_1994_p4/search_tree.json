@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1994_p4",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]",
+      "last_claim": "[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.65,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim": "[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\nContinue from: [\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\nContinue from:\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]",
+      "last_claim": "[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\n[\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]",
+      "last_claim": "[\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\nContinue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim": "Continue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\nContinue from:\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]\n[\"Therefore if \\(2^M\\le n\\le 2^{M+1}-1\\) then \\(s(n)=\\sum_{m=1}^{M-1}m\\cdot2^m+M(n-2^M+1)\\).\",\"The closed form \\(\\sum_{m=1}^{k}m2^m=(k-1)2^{k+1}+2\\) holds.\"]",
+      "last_claim": "[\"Therefore if \\(2^M\\le n\\le 2^{M+1}-1\\) then \\(s(n)=\\sum_{m=1}^{M-1}m\\cdot2^m+M(n-2^M+1)\\).\",\"The closed form \\(\\sum_{m=1}^{k}m2^m=(k-1)2^{k+1}+2\\) holds.\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\nContinue from:\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]\nContinue from: [\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\).\",\"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(2^m\\le k\\le 2^{m+1}-1\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\n[\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]\n[\"Solving \\(1538+8(n-255)=1994\\) yields \\(8(n-255)=456\\), hence \\(n-255=57\\).\", \"Thus \\(n=312\\), which lies in \\([256,512)\\) and therefore satisfies \\(s(n)=1994\\).\"]",
+      "last_claim": "[\"Solving \\(1538+8(n-255)=1994\\) yields \\(8(n-255)=456\\), hence \\(n-255=57\\).\", \"Thus \\(n=312\\), which lies in \\([256,512)\\) and therefore satisfies \\(s(n)=1994\\).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\n[\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]\nContinue from: [\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]",
+      "last_claim": "Continue from: [\"Evaluating the closed form yields \\(s(2^8-1)=1538\\) and \\(s(2^9-1)=3586\\).\", \"Hence \\(1538\\\\le 1994<3586\\) forces \\(M=8\\), so \\(256\\\\le n<512\\) and \\(s(n)=1538+8(n-255)\\).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\nContinue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\n[\"Hence \\(s(2^8-1)=(8-2)2^8+2=1538\\) while \\(s(2^9-1)=(9-2)2^9+2=3586>1994\\), so necessarily \\(2^8\\le n<2^9\\).\", \"The formula then becomes \\(s(n)=1538+8(n-255)\\); setting this equal to \\(1994\\) yields \\(n-255=57\\), hence \\(n=312\\).\"]",
+      "last_claim": "[\"Hence \\(s(2^8-1)=(8-2)2^8+2=1538\\) while \\(s(2^9-1)=(9-2)2^9+2=3586>1994\\), so necessarily \\(2^8\\le n<2^9\\).\", \"The formula then becomes \\(s(n)=1538+8(n-255)\\); setting this equal to \\(1994\\) yields \\(n-255=57\\), hence \\(n=312\\).\"]",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Find the positive integer $n\\,$ for which\n$\n\\lfloor\\log_2{1}\\rfloor+\\lfloor\\log_2{2}\\rfloor+\\lfloor\\log_2{3}\\rfloor+\\cdots+\\lfloor\\log_2{n}\\rfloor=1994\n$\n(For real $x\\,$, $\\lfloor x\\rfloor\\,$ is the greatest integer $\\le x.\\,$) Show that it is 312.\n[\"Let \\(s(n)=\\sum_{k=1}^n\\lfloor\\log_2 k\\rfloor\\). We seek the unique positive integer \\(n\\) satisfying \\(s(n)=1994\\).\", \"Observe that \\(\\lfloor\\log_2 k\\rfloor=m\\) precisely when \\(k\\) lies in the interval \\([2^m,2^{m+1}-1]\\).\"]\n[\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\nContinue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]\nContinue from: Continue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Thus if \\(2^M\\le n<2^{M+1}\\) then \\(s(n)=s(2^M-1)+M(n-2^M+1)\\).\",\"The closed form \\(s(2^M-1)=\\sum_{k=1}^{M-1}k\\cdot2^k=(M-2)2^M+2\\) holds for every \\(M\\ge1\\).\"]",
+      "last_claim_id": "l26",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12_2000_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.",
+      "statement": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1839",
+      "natural_language": "Advance the argument (step 2857): continue from If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\tex",
+      "statement": "Advance the argument (step 2857): continue from If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\tex",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.2691909510290828,
+      "support": null
+    },
+    {
+      "id": "l_dead_1028",
+      "natural_language": "dead-end unused case 2874: discard this alternative",
+      "statement": "dead-end unused case 2874: discard this alternative",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b18",
+      "salience": 0.5455954715763789,
+      "support": null
+    }
+  ]
+}

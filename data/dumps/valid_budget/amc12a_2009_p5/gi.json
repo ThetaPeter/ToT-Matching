@@ -1,0 +1,74 @@
+{
+  "problem_id": "amc12a_2009_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let the side length of the cube be a positive real number s.",
+      "statement": "s > 0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Original volume of the cube is s cubed.",
+      "statement": "V = s^3",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Given that the new volume is 5 less than the original volume.",
+      "statement": "V' = V - 5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Equating the two expressions for V' yields s^3 - s = s^3 - 5, hence s = 5 and V = 125.",
+      "statement": "V = 125",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let the side length of the cube be \\(s>0\\).",
+      "statement": "s > 0",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).",
+      "statement": "V' = s^3 - s",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

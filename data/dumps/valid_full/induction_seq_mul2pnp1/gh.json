@@ -1,0 +1,39 @@
+{
+  "problem_id": "induction_seq_mul2pnp1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $u_n$ a sequence defined by $u_0 = 0$ and $\\forall n \\geq 0, u_{n+1} = 2 u_n + (n + 1)$. Show that $\\forall n \\geq 0, u(n) = 2^{n+1} - (n+2)$.",
+      "statement": "Let $u_n$ a sequence defined by $u_0 = 0$ and $\\forall n \\geq 0, u_{n+1} = 2 u_n + (n + 1)$. Show that $\\forall n \\geq 0, u(n) = 2^{n+1} - (n+2)$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.223606797749979,
+      "support": null
+    },
+    {
+      "id": "l5457",
+      "natural_language": "Advance the argument (step 8485): continue from Let $u_n$ a sequence defined by $u_0 = 0$ and $\\forall n \\geq 0, u_{n+1} = 2 u_n",
+      "statement": "Advance the argument (step 8485): continue from Let $u_n$ a sequence defined by $u_0 = 0$ and $\\forall n \\geq 0, u_{n+1} = 2 u_n",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6902367702516611,
+      "support": null
+    }
+  ]
+}

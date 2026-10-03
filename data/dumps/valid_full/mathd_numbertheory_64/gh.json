@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_64",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the smallest positive integer that satisfies the congruence $30x \\equiv 42 \\pmod{47}$? Show that it is 39.",
+      "statement": "What is the smallest positive integer that satisfies the congruence $30x \\equiv 42 \\pmod{47}$? Show that it is 39.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2917299829957891,
+      "support": null
+    },
+    {
+      "id": "l11937",
+      "natural_language": "Advance the argument (step 18565): continue from What is the smallest positive integer that satisfies the congruence $30x \\equiv",
+      "statement": "Advance the argument (step 18565): continue from What is the smallest positive integer that satisfies the congruence $30x \\equiv",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.787878787878788,
+      "support": null
+    }
+  ]
+}

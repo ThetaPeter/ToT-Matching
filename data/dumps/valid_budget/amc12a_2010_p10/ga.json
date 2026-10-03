@@ -1,0 +1,153 @@
+{
+  "problem_id": "amc12a_2010_p10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence is arithmetic, so consecutive terms differ by a constant d.",
+      "statement": "9 - p = (3p - q) - 9 = (3p + q) - (3p - q)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Equate first two differences to obtain relation between p and q.",
+      "statement": "3p - q = 18 - p, hence 4p - q = 18",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The last two terms immediately yield that the common difference equals 2q.",
+      "statement": "d = 2q",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Hence q=2, the first term is 5 and the common difference is 4, so the 2010th term equals 5+2009*4=8041.",
+      "statement": "a_2010=5+2009*4=8041",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Equating the second and third consecutive differences yields the linear relation p-q=3.",
+      "statement": "(3p-q)-9=2q rearranges to p-q=3",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Substitute q=p-3 into 4p-q=18 to solve the system.",
+      "statement": "3p+3=18 hence p=5 and q=2",
+      "dependencies": [
+        "l1",
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "From p=5 and q=2 the common difference is 4.",
+      "statement": "d = 2q = 4",
+      "dependencies": [
+        "l13",
+        "tc_2",
+        "l17"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "The common difference also equals the third consecutive difference 2q.",
+      "statement": "9 - p = 2q",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Solve 9-p=2q for q.",
+      "statement": "q = (9-p)/2",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Substitute q=(9-p)/2 into 4p-q=18 to obtain p=5.",
+      "statement": "4p-(9-p)/2=18 clears to 9p=45 hence p=5",
+      "dependencies": [
+        "l1",
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "With p=5 we recover q=2 from q=(9-p)/2.",
+      "statement": "q=2",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Hence q=2, the first term is 5 and the common difference is 4.",
+      "statement": "q=2, p=5, d=4",
+      "dependencies": [
+        "l17",
+        "l16",
+        "l15"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

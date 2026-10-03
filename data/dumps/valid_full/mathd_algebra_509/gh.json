@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_509",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Simplify the following expression to a simplified fraction: $$\\sqrt{\\dfrac{\\dfrac{5}{\\sqrt{80}}+\\dfrac{\\sqrt{845}}{9}+\\sqrt{45}}{\\sqrt5}}.$$ Show that it is \\frac{13}{6}.",
+      "statement": "Simplify the following expression to a simplified fraction: $$\\sqrt{\\dfrac{\\dfrac{5}{\\sqrt{80}}+\\dfrac{\\sqrt{845}}{9}+\\sqrt{45}}{\\sqrt5}}.$$ Show that it is \\frac{13}{6}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3466876226407682,
+      "support": null
+    },
+    {
+      "id": "l8481",
+      "natural_language": "Advance the argument (step 13189): continue from Simplify the following expression to a simplified fraction: $$\\sqrt{\\dfrac{\\dfra",
+      "statement": "Advance the argument (step 13189): continue from Simplify the following expression to a simplified fraction: $$\\sqrt{\\dfrac{\\dfra",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6299407883487121,
+      "support": null
+    }
+  ]
+}

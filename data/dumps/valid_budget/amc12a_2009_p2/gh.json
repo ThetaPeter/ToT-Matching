@@ -1,0 +1,69 @@
+{
+  "problem_id": "amc12a_2009_p2",
+  "nodes": [
+    {
+      "id": "l5",
+      "natural_language": "The innermost sum 1+1 equals 2.",
+      "statement": "1 + 1 = 2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3333333333333333,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Adding the outer 1 gives 1 + 2/3 = 5/3, matching option C",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5163977794943223,
+      "support": null
+    },
+    {
+      "id": "l21",
+      "natural_language": "The original expression is identical to 1 + 2/3.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 1 + 2/3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6363636363636364,
+      "support": null
+    },
+    {
+      "id": "l25",
+      "natural_language": "1 + 2/3 equals 5/3.",
+      "statement": "1 + 2/3 = 5/3",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": 0.6,
+      "support": null
+    },
+    {
+      "id": "l27",
+      "natural_language": "Then \\(\\frac1{\\frac32}=\\frac23\\), so the expression equals \\(1+\\frac23=\\frac53\\).",
+      "statement": "1/(3/2) = 2/3 implies 1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.16666666666666669,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The original expression equals 5/3, which is option C.",
+      "statement": "1 + 1/(1 + 1/(1 + 1)) = 5/3",
+      "dependencies": [
+        "l27"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5773502691896257,
+      "support": null
+    }
+  ]
+}

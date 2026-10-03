@@ -1,0 +1,275 @@
+{
+  "problem_id": "algebra_binomnegdiscrineq_10alt28asqp1",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "Rewrite the desired inequality as \\(28a^2-10a+1\\ge0\\).",
+      "statement": "10a ≤ 28a² + 1 is equivalent to 28a² - 10a + 1 ≥ 0.",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_5",
+      "natural_language": "Observe that the quadratic \\(28x^2-10x+1\\) has negative discriminant \\(100-112=-12\\) and positive leading coefficient.",
+      "statement": "The quadratic 28x² - 10x + 1 has discriminant 100 - 112 = -12 < 0 and positive leading coefficient.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.",
+      "statement": "For any real number a, 10a ≤ 28a² + 1.",
+      "dependencies": [
+        "tc_4",
+        "tc_5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_6",
+      "natural_language": "Equality never holds, so \\(10a<28a^2+1\\) for every real \\(a\\).",
+      "statement": "The quadratic 28x² - 10x + 1 is always strictly positive, hence 10a < 28a² + 1 for every real a.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "The argument is complete.",
+      "statement": "For any real number a, 10a ≤ 28a² + 1.",
+      "dependencies": [
+        "tc_4",
+        "tc_5",
+        "tc_6"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_7",
+      "natural_language": "Thus the quadratic 28x^{2}-10x+1>0 for every real x.",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Therefore 28a^{2}-10a+1\\ge0 holds for every real a, which is the desired inequality.",
+      "statement": "For any real number a, 10a\\le28a^{2}+1.",
+      "dependencies": [
+        "tc_4",
+        "tc_7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_8",
+      "natural_language": "Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_9",
+      "natural_language": "Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.",
+      "statement": "28a^{2}-10a+1>0 for every real a, hence 10a<28a^{2}+1 for every real a.",
+      "dependencies": [
+        "tc_4",
+        "tc_8"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The argument is complete.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_9"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Therefore 28a²-10a+1 ≥ 0 holds for every real a, which is the desired inequality.",
+      "statement": "For any real number a, 10a ≤ 28a² + 1.",
+      "dependencies": [
+        "tc_4",
+        "tc_5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_10",
+      "natural_language": "The original inequality therefore holds for every real number a.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_7",
+        "ts_4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_11",
+      "natural_language": "In fact the inequality is always strict, since the quadratic never vanishes.",
+      "statement": "28x^{2}-10x+1>0 for every real x, hence 10a<28a^{2}+1 for every real a.",
+      "dependencies": [
+        "tc_7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The argument is complete.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_10",
+        "tc_11"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_12",
+      "natural_language": "Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_4",
+        "tc_12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_13",
+      "natural_language": "The original inequality therefore holds for every real a, and is in fact strict.",
+      "statement": "For any real number a, 10a < 28a² + 1.",
+      "dependencies": [
+        "tc_9"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "This completes the proof.",
+      "statement": "For any real number a, 10a ≤ 28a² + 1.",
+      "dependencies": [
+        "tc_13"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_14",
+      "natural_language": "Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_15",
+      "natural_language": "Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.",
+      "statement": "28a^{2}-10a+1>0 for every real a, hence 10a<28a^{2}+1 for every real a.",
+      "dependencies": [
+        "tc_4",
+        "tc_14"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The argument is complete.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_15"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

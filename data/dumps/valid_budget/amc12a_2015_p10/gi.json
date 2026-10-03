@@ -1,0 +1,75 @@
+{
+  "problem_id": "amc12a_2015_p10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Integers x and y satisfy x > y > 0 and x + y + xy = 80.",
+      "statement": "x,y ∈ ℤ ∧ x > y > 0 ∧ x + y + xy = 80",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The pair a=27, b=3 yields x=26, y=2 which satisfies x>y>0; (9,9) yields x=y. Hence x=26.",
+      "statement": "x=26",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Rewrite the equation in the equivalent form (x+1)(y+1)=81.",
+      "statement": "x + y + xy = 80 → (x+1)(y+1) = 81",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Positive divisors of 81 are exactly {1,3,9,27,81}.",
+      "statement": "divisors(81)={1,3,9,27,81}",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Only ordered pair of divisors (a,b) with a>b>1 and ab=81 is (27,3).",
+      "statement": "only(a>b>1 ∧ ab=81)=(27,3)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Hence x+1=27 and y+1=3, so x=26 and y=2.",
+      "statement": "x=26 ∧ y=2",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

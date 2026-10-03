@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim": "[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.4,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.75,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\n[\"Assume without loss of generality that \\(ab+bc+ca=3\\).\",\"Apply Cauchy-Schwarz in Engel form to obtain \\(\\sum\\frac{a}{\\sqrt{a+b}}\\ge\\frac{(a+b+c)^2}{\\sum a\\sqrt{a+b}}\\).\"]",
+      "last_claim": "[\"Assume without loss of generality that \\(ab+bc+ca=3\\).\",\"Apply Cauchy-Schwarz in Engel form to obtain \\(\\sum\\frac{a}{\\sqrt{a+b}}\\ge\\frac{(a+b+c)^2}{\\sum a\\sqrt{a+b}}\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.2,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.7,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\n[\"Let \\(s=a+b+c\\). Then \\(s^2\\geq 3(ab+bc+ca)=9\\), hence \\(s\\geq 3\\).\",\"Apply Cauchy-Schwarz in the form \\(\\bigl(\\sum a/\\sqrt{a+b}\\bigr)^2\\geq(a+b+c)^2/\\sum(a+b)\\).\"]",
+      "last_claim": "[\"Let \\(s=a+b+c\\). Then \\(s^2\\geq 3(ab+bc+ca)=9\\), hence \\(s\\geq 3\\).\",\"Apply Cauchy-Schwarz in the form \\(\\bigl(\\sum a/\\sqrt{a+b}\\bigr)^2\\geq(a+b+c)^2/\\sum(a+b)\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.2,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim": "Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.65,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\nContinue from: Continue from:\nIt suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.",
+      "last_claim": "It suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.8,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\nContinue from: Continue from:\nBy Titu's lemma, \\sum a/\\sqrt{a+b}\\ge(\\sum\\sqrt{a})^2/\\sum\\sqrt{a(a+b)}.",
+      "last_claim": "By Titu's lemma, \\sum a/\\sqrt{a+b}\\ge(\\sum\\sqrt{a})^2/\\sum\\sqrt{a(a+b)}.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.2,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\n[\"By Cauchy-Schwarz, \\(\\bigl(\\sum a/\\sqrt{a+b}\\bigr)^2\\ge(a+b+c)^2/\\sum(a+b)\\).\",\"We have \\(\\sum(a+b)=2(a+b+c)\\).\"]",
+      "last_claim": "[\"By Cauchy-Schwarz, \\(\\bigl(\\sum a/\\sqrt{a+b}\\bigr)^2\\ge(a+b+c)^2/\\sum(a+b)\\).\",\"We have \\(\\sum(a+b)=2(a+b+c)\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.2,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_10",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\n[\"By Titu's lemma, \\(\\sum a/\\sqrt{a+b}\\ge(\\sum a)^2/\\sum a\\sqrt{a+b}\\).\", \"By AM-GM we have \\(a+b+c\\ge3\\), with equality at \\(a=b=c=1\\).\"]",
+      "last_claim": "[\"By Titu's lemma, \\(\\sum a/\\sqrt{a+b}\\ge(\\sum a)^2/\\sum a\\sqrt{a+b}\\).\", \"By AM-GM we have \\(a+b+c\\ge3\\), with equality at \\(a=b=c=1\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.2,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_10",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\n[\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]\nContinue from: Continue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim": "Continue from: Continue from: Continue from: [\"WLOG we may assume \\(ab+bc+ca=3\\).\", \"Equality holds at \\(a=b=c=1\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.65,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\nContinue from: Continue from:\nIt suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.\n[\"Equality holds when a=b=c=1.\",\"By cyclic symmetry we may assume a\\ge b\\ge c>0.\"]",
+      "last_claim": "[\"Equality holds when a=b=c=1.\",\"By cyclic symmetry we may assume a\\ge b\\ge c>0.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "For positive real numbers a, b, c, such that $3 \\leq ab+bc+ca$, show that $3/\\sqrt{2} \\leq a/\\sqrt{a+b} + b/\\sqrt{b+c} + c/\\sqrt{c+a}$.\nContinue from:\nContinue from: Continue from:\nIt suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.\nContinue from: It suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.",
+      "last_claim": "Continue from: It suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

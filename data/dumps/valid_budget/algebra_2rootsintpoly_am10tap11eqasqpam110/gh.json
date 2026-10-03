@@ -1,0 +1,38 @@
+{
+  "problem_id": "algebra_2rootsintpoly_am10tap11eqasqpam110",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [
+        "l9",
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5590169943749476,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "The same algebraic identity holds in any commutative ring, hence in ℂ.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.33806170189140666,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "The same identity therefore holds after substituting any complex value for a.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.25819888974716115,
+      "support": null
+    }
+  ]
+}

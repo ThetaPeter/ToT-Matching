@@ -1,0 +1,47 @@
+{
+  "problem_id": "amc12a_2008_p2",
+  "nodes": [
+    {
+      "id": "l2",
+      "natural_language": "The reciprocal of 7/6 is 6/7",
+      "statement": "reciprocal(7/6) = 6/7",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.48507125007266594,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "1/2 + 2/3 = 7/6",
+      "statement": "(1/2 + 2/3) = 7/6",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.39999999999999997,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "The reciprocal of 7/6 equals 6/7",
+      "statement": "reciprocal(7/6) = 6/7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.6123724356957946,
+      "support": null
+    },
+    {
+      "id": "ts_17",
+      "natural_language": "Therefore the reciprocal of 1/2 + 2/3 equals 6/7",
+      "statement": "reciprocal(1/2 + 2/3) = 6/7",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.21821789023599242,
+      "support": null
+    }
+  ]
+}

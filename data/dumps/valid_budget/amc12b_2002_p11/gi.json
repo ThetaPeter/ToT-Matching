@@ -1,0 +1,77 @@
+{
+  "problem_id": "amc12b_2002_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A, B, A-B, A+B are all positive prime numbers",
+      "statement": "prime(A) ∧ prime(B) ∧ prime(A-B) ∧ prime(A+B) ∧ A>B>0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Sum S = A + B + (A-B) + (A+B) simplifies to 3A + B",
+      "statement": "S=3*A+B",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.",
+      "statement": "¬(odd(A) ∧ odd(B) ∧ odd(A-B) ∧ odd(A+B))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The only even prime is 2, so exactly one of the four numbers equals 2.",
+      "statement": "exactly_one_of_four_equals_2",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1",
+      "statement": "exactly_one_of_four_equals_2 → B=2",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "B must be 2 (the only even prime). Then A-B=2 forces A=4 (composite) is false, but valid solution A=5,B=2 yields primes 5,2,3,7 whose sum S=17 is prime",
+      "statement": "S is prime",
+      "dependencies": [
+        "l5",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

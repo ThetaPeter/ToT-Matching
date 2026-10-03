@@ -1,0 +1,246 @@
+{
+  "problem_id": "amc12a_2021_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The expression (xy-1)^2 + (x+y)^2 equals (x^2+1)(y^2+1) for all real x,y.",
+      "statement": "∀x,y ∈ ℝ, (xy-1)^2 + (x+y)^2 = (x^2+1)(y^2+1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "For all real z, z^2 + 1 \\ge 1.",
+      "statement": "∀z ∈ ℝ, z^2 + 1 \\ge 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The minimum value of the expression is exactly 1, attained at x=y=0.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "At x = y = 0 the expression equals 1.",
+      "statement": "(0*0-1)^2 + (0+0)^2 = 1",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Let f(x,y)=(xy-1)^2+(x+y)^2. Expanding gives f(x,y)=x^2 y^2 + x^2 + y^2 + 1.",
+      "statement": "∀x,y ∈ ℝ, f(x,y) = x^2 y^2 + x^2 + y^2 + 1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "The identity x^2 y^2 + x^2 + y^2 + 1 = (1+x^2)(1+y^2) holds for all real x,y.",
+      "statement": "∀x,y ∈ ℝ, x^2 y^2 + x^2 + y^2 + 1 = (1+x^2)(1+y^2)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Since 1+x^2 ≥ 1 and 1+y^2 ≥ 1, the product is at least 1.",
+      "statement": "∀x,y ∈ ℝ, (1+x^2)(1+y^2) ≥ 1",
+      "dependencies": [
+        "l9",
+        "l1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Equality holds at x=y=0, so the minimum value is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l12",
+        "l5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Therefore the given expression is always at least 1.",
+      "statement": "∀x,y ∈ ℝ, (xy-1)^2 + (x+y)^2 ≥ 1",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Hence the least possible value is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "This product is always at least 1, since each factor is at least 1.",
+      "statement": "∀x,y ∈ ℝ, (1+x^2)(1+y^2) ≥ 1",
+      "dependencies": [
+        "l9",
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Hence the least possible value is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l13",
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Equality is attained at x=y=0, so the minimum value is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l13",
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Hence the least possible value is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Equality holds when x=y=0.",
+      "statement": "Equality in (1+x^2)(1+y^2) ≥ 1 holds at x=y=0",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Hence the least possible value of the expression is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l15",
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "The expression equals 1 at x=y=0, hence the minimum cannot exceed 1.",
+      "statement": "∀x,y ∈ ℝ, (xy-1)^2 + (x+y)^2 ≥ 1 and equals 1 at (0,0)",
+      "dependencies": [
+        "l12",
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Hence the least possible value is exactly 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Therefore the answer is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1 (hence answer (D))",
+      "dependencies": [
+        "ts_6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "This completes the proof that the minimum is 1.",
+      "statement": "min{(xy-1)^2 + (x+y)^2 | x,y ∈ ℝ} = 1 (hence answer (D))",
+      "dependencies": [
+        "ts_7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

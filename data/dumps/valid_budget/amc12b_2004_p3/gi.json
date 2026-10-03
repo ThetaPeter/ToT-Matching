@@ -1,0 +1,193 @@
+{
+  "problem_id": "amc12b_2004_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x and y are positive integers satisfying 2^x 3^y = 1296",
+      "statement": "x,y ∈ ℤ^+, 2^x 3^y = 1296",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The value of x+y is 8 (unique solution)",
+      "statement": "x+y=8",
+      "dependencies": [
+        "l9",
+        "l6",
+        "l8",
+        "l11",
+        "l13",
+        "l14",
+        "l15",
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "1296 equals 6 to the fourth power, verified by 6 squared is 36 and 36 squared is 1296",
+      "statement": "1296 = 6^4",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4",
+      "statement": "6=2*3 \\implies 1296=(2*3)^4=2^4 3^4 \\implies x=4 \\land y=4",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "By unique prime factorization this is the only pair of positive integers (x,y)",
+      "statement": "\\forall x',y'\\in\\mathbb{Z}^+ (2^{x'}3^{y'}=1296\\implies x'=x\\land y'=y)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Thus the prime factorization of 1296 is uniquely 2^4 3^4, so x=4 and y=4",
+      "statement": "unique factorization \\implies 1296=2^4 3^4 \\implies x=4 \\land y=4",
+      "dependencies": [
+        "l4",
+        "l6"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Hence x+y=8",
+      "statement": "x+y=8",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "x=4 and y=4 implies x+y=8",
+      "statement": "x=4 \\land y=4 \\implies x+y=8",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Indeed 2^4 · 3^4 = 16 · 81 = 1296",
+      "statement": "2^4 · 3^4 = 16 · 81 = 1296",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "By uniqueness of prime factorization no other pair of nonnegative integers (x,y) works",
+      "statement": "unique factorization ⇒ ¬∃(x',y')≠(4,4) with 2^{x'}3^{y'}=1296",
+      "dependencies": [
+        "l10",
+        "l6"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus the prime factorization of 1296 is uniquely 2^4 3^4, so x=4 and y=4",
+      "statement": "unique factorization \\implies 1296=2^4 3^4 \\implies x=4 \\land y=4",
+      "dependencies": [
+        "l4",
+        "l6"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Hence x+y=8",
+      "statement": "x+y=8",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Therefore x=4 and y=4, hence x+y=8",
+      "statement": "x=4 \\land y=4 \\implies x+y=8",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "By the fundamental theorem of arithmetic the exponents are unique, so this is the only solution",
+      "statement": "\\forall x',y'\\in\\mathbb{Z}^+ (2^{x'}3^{y'}=1296\\implies x'=4\\land y'=4)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4",
+      "statement": "6=2*3 \\implies 1296=(2*3)^4=2^4 3^4 \\implies x=4 \\land y=4",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

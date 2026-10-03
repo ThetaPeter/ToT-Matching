@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_139",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $a \\star b = \\dfrac{\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)}{(a - b)}$, express $3 \\star 11$ as a common fraction. Show that it is \\frac{1}{33}.",
+      "statement": "If $a \\star b = \\dfrac{\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)}{(a - b)}$, express $3 \\star 11$ as a common fraction. Show that it is \\frac{1}{33}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.21566554640687685,
+      "support": null
+    },
+    {
+      "id": "l6052",
+      "natural_language": "Advance the argument (step 9410): continue from If $a \\star b = \\dfrac{\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)}{(a - b)}$, expr",
+      "statement": "Advance the argument (step 9410): continue from If $a \\star b = \\dfrac{\\left(\\dfrac{1}{b} - \\dfrac{1}{a}\\right)}{(a - b)}$, expr",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6804138174397718,
+      "support": null
+    }
+  ]
+}

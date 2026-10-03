@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1988_p8",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The function $f$, defined on the set of ordered pairs of positive integers, satisfies the following properties:\n$ f(x, x) = x,\\; f(x, y) = f(y, x), {\\rm \\ and\\ } (x+y)f(x, y) = yf(x, x+y). $\nCalculate $f(14,52)$. Show that it is 364.",
+      "statement": "The function $f$, defined on the set of ordered pairs of positive integers, satisfies the following properties:\n$ f(x, x) = x,\\; f(x, y) = f(y, x), {\\rm \\ and\\ } (x+y)f(x, y) = yf(x, x+y). $\nCalculate $f(14,52)$. Show that it is 364.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l327",
+      "natural_language": "Advance the argument (step 505): continue from The function $f$, defined on the set of ordered pairs of positive integers, sati",
+      "statement": "Advance the argument (step 505): continue from The function $f$, defined on the set of ordered pairs of positive integers, sati",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6686137412403139,
+      "support": null
+    },
+    {
+      "id": "l_dead_181",
+      "natural_language": "dead-end unused case 507: discard this alternative",
+      "statement": "dead-end unused case 507: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.5350591231874497,
+      "support": null
+    }
+  ]
+}

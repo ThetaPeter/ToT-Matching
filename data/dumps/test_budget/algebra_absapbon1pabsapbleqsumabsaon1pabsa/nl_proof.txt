@@ -1,0 +1,15 @@
+Let \(f(x)=x/(1+x)\). By the given fact that \(f\) is increasing on \([0,\infty)\), it suffices to prove the desired inequality under the additional assumption that \(a\ge 0\) and \(b\ge 0\).
+
+Under that assumption it is enough to show \(f(|a+b|)\le f(|a|)+f(|b|)\). Since \(f\) is increasing on \([0,\infty)\) one has \(f(|a+b|)\le f(|a|+|b|)\). Combined with the subadditivity relation \(f(x+y)\le f(x)+f(y)\) (valid for all \(x,y\ge 0\)) this yields the required bound.
+
+The subadditivity relation itself follows from the identity
+\[
+f(x+y)-f(x)=\frac{y}{(1+x)(1+x+y)}\le\frac{y}{1+y}=f(y),
+\]
+which in turn is a consequence of the non-negativity
+\[
+f(x)+f(y)-f(x+y)=\frac{xy(x+y+2)}{(1+x)(1+y)(1+x+y)}\ge 0
+\]
+(itself a consequence of the fact that \(f\) is increasing on \([0,\infty)\)).
+
+Thus the original inequality holds for all real \(a,b\).

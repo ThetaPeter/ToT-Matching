@@ -1,0 +1,15 @@
+Let \( t = x^2 - 10x \). The given equation is then equivalent to
+\[
+\frac{1}{t-29} + \frac{1}{t-45} - \frac{2}{t-69} = 0.
+\]
+Clearing denominators yields the equivalent polynomial identity
+\[
+(t-45)(t-69) + (t-29)(t-69) - 2(t-29)(t-45) = 0.
+\]
+Expanding produces
+\[
+t^2 - 114t + 3105 + t^2 - 98t + 2001 - 2(t^2 - 74t + 1305) = 0,
+\]
+which simplifies to the linear equation \( -64t + 2496 = 0 \). (Equivalently, the original polynomial expands and simplifies directly to \( -64t + 2496 \).) This equation has the unique solution \( t = 39 \).
+
+Substituting \( t = 39 \) gives \( x^2 - 10x = 39 \), or equivalently \( x^2 - 10x - 39 = 0 \). The unique positive root of this quadratic is \( x = 13 \). Thus the unique positive real solution of the original equation is \( 13 \).

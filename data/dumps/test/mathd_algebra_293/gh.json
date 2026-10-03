@@ -1,0 +1,37 @@
+{
+  "problem_id": "mathd_algebra_293",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Calculate $\\sqrt{60x} \\cdot \\sqrt{12x} \\cdot \\sqrt{63x}$ . Express your answer in simplest radical form in terms of $x$.\n\nNote: When entering a square root with more than one character, you must use parentheses or brackets.  For example, you should enter $\\sqrt{14}$ as \"sqrt(14)\" or \"sqrt{14}\". Show that it is 36x \\sqrt{35x}.",
+      "statement": "Calculate $\\sqrt{60x} \\cdot \\sqrt{12x} \\cdot \\sqrt{63x}$ . Express your answer in simplest radical form in terms of $x$.\n\nNote: When entering a square root with more than one character, you must use parentheses or brackets.  For example, you should enter $\\sqrt{14}$ as \"sqrt(14)\" or \"sqrt{14}\". Show that it is 36x \\sqrt{35x}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l7456",
+      "natural_language": "Advance the argument (step 11594): continue from Calculate $\\sqrt{60x} \\cdot \\sqrt{12x} \\cdot \\sqrt{63x}$ . Express your answer i",
+      "statement": "Advance the argument (step 11594): continue from Calculate $\\sqrt{60x} \\cdot \\sqrt{12x} \\cdot \\sqrt{63x}$ . Express your answer i",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.4892460547900817,
+      "support": null
+    },
+    {
+      "id": "ts_dead_4159",
+      "natural_language": "dead-end unused case 11643: discard this alternative",
+      "statement": "dead-end unused case 11643: discard this alternative",
+      "dependencies": [],
+      "search_node_id": "sn_37",
+      "branch_id": "b51",
+      "salience": 0.15877683720748895,
+      "support": null
+    }
+  ]
+}

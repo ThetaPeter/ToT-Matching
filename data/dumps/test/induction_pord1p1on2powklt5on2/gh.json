@@ -1,0 +1,37 @@
+{
+  "problem_id": "induction_pord1p1on2powklt5on2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for positive integer $n$, $(\\prod_{k=1}^{n} (1 + 1/2^k)) < 5/2$.",
+      "statement": "Show that for positive integer $n$, $(\\prod_{k=1}^{n} (1 + 1/2^k)) < 5/2$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l5512",
+      "natural_language": "Advance the argument (step 8570): continue from Show that for positive integer $n$, $(\\prod_{k=1}^{n} (1 + 1/2^k)) < 5/2$.",
+      "statement": "Advance the argument (step 8570): continue from Show that for positive integer $n$, $(\\prod_{k=1}^{n} (1 + 1/2^k)) < 5/2$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.19744962591969747,
+      "support": null
+    },
+    {
+      "id": "l_dead_3062",
+      "natural_language": "dead-end unused case 8574: discard this alternative",
+      "statement": "dead-end unused case 8574: discard this alternative",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": 0.12909944487358058,
+      "support": null
+    }
+  ]
+}

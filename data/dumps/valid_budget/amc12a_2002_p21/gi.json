@@ -1,0 +1,89 @@
+{
+  "problem_id": "amc12a_2002_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence is defined by a1=4, a2=7 and an = (a_{n-2}+a_{n-1}) mod 10 for n>2.",
+      "statement": "a_1=4, a_2=7, a_n=(a_{n-2}+a_{n-1}) mod 10 (n>2)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "S_n=60k + prefix_r where n=12k+r and prefix_r is the sum of the first r terms of the block.",
+      "statement": "S_n=60k + prefix_r (n=12k+r)",
+      "dependencies": [
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The sequence of units digits is purely periodic.",
+      "statement": "purely_periodic(units(a))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The minimal period of the sequence is 12.",
+      "statement": "min_period(a,12)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The sequence is purely periodic with period 12.",
+      "statement": "purely_periodic(a) and period(a,12)",
+      "dependencies": [
+        "l0",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The repeating block is 4,7,1,8,9,7,6,3,9,2,1,3 and the sum of one period is 60.",
+      "statement": "block=[4,7,1,8,9,7,6,3,9,2,1,3] and sum(block)=60",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The sum of one period of 12 terms is 60.",
+      "statement": "sum(block)=60",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

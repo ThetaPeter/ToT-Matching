@@ -1,0 +1,91 @@
+{
+  "problem_id": "amc12_2000_p11",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "The given quantity evaluates identically to 2 by algebraic simplification.",
+      "statement": "quantity = 2",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.18057877962865385,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "The substitution is valid because the defining relations uniquely determine the expression’s value.",
+      "statement": "substitution_valid = true",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.14744195615489716,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Evaluating the same expression at the remaining options produces values other than 2.",
+      "statement": "quantity ≠ 2 for A,B,C,D",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus the original expression equals 2, which is option E.",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.4242640687119285,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Therefore the original expression equals 2, matching choice (E).",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Therefore the original expression is identically equal to 2 wherever it is defined.",
+      "statement": "quantity = 2",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.5212860351426869,
+      "support": null
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The solution establishes the target claim via algebraic simplification showing the expression is identically 2 wherever defined.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.7155417527999328,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence the given quantity evaluates to choice (E).",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

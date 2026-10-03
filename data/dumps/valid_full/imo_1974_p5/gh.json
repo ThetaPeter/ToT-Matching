@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1974_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Determine all possible values of $S = \\frac{a}{a+b+d}+\\frac{b}{a+b+c}+\\frac{c}{b+c+d}+\\frac{d}{a+c+d}$ where $a, b, c, d,$ are arbitrary positive numbers.",
+      "statement": "Determine all possible values of $S = \\frac{a}{a+b+d}+\\frac{b}{a+b+c}+\\frac{c}{b+c+d}+\\frac{d}{a+c+d}$ where $a, b, c, d,$ are arbitrary positive numbers.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.18042195912175804,
+      "support": null
+    },
+    {
+      "id": "l4647",
+      "natural_language": "Advance the argument (step 7225): continue from Determine all possible values of $S = \\frac{a}{a+b+d}+\\frac{b}{a+b+c}+\\frac{c}{b",
+      "statement": "Advance the argument (step 7225): continue from Determine all possible values of $S = \\frac{a}{a+b+d}+\\frac{b}{a+b+c}+\\frac{c}{b",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6351073488299559,
+      "support": null
+    }
+  ]
+}

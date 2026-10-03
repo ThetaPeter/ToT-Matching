@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2008_p8",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim": "[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]",
+      "last_claim": "[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim": "Continue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\nContinue from:\n[\"Let the cube of volume 1 have side length \\(s=1\\).\", \"The surface area of a cube of volume 1 is \\(6\\\\cdot 1^2=6\\).\"]",
+      "last_claim": "[\"Let the cube of volume 1 have side length \\(s=1\\).\", \"The surface area of a cube of volume 1 is \\(6\\\\cdot 1^2=6\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]\n[\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]",
+      "last_claim": "[\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]\nContinue from: [\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]",
+      "last_claim": "Continue from: [\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]",
+      "last_claim": "[\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: Continue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]\n[\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]\n[\"The volume \\(2\\sqrt{2}\\) is option \\(\\mathrm{(C)}\\).\", \"Direct substitution confirms the new cube has surface area twice that of the unit-volume cube.\"]",
+      "last_claim": "[\"The volume \\(2\\sqrt{2}\\) is option \\(\\mathrm{(C)}\\).\", \"Direct substitution confirms the new cube has surface area twice that of the unit-volume cube.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"If its side length is \\(t\\), then \\(6t^{2}=12\\).\"]\n[\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]\nContinue from: [\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).\",\"The desired volume is therefore \\(t^{3}=(\\sqrt{2})^{3}=2\\sqrt{2}\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]\n[\"Solving yields \\(t=\\sqrt{2}\\).\", \"The desired volume is therefore \\(t^3=2\\sqrt{2}\\).\"]",
+      "last_claim": "[\"Solving yields \\(t=\\sqrt{2}\\).\", \"The desired volume is therefore \\(t^3=2\\sqrt{2}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "What is the [[volume]] of a [[cube]] whose [[surface area]] is twice that of a cube with volume 1? \n\n$\\mathrm{(A)}\\ \\sqrt{2}\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 2\\sqrt{2}\\qquad\\mathrm{(D)}\\ 4\\qquad\\mathrm{(E)}\\ 8$ Show that it is \\mathrm{(C)}.\n[\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\nContinue from: [\"Let the cube of volume 1 have side length \\(s=1\\).\",\"The surface area of any cube of volume 1 equals \\(6\\).\"]\n[\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]\nContinue from: [\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]",
+      "last_claim": "Continue from: [\"The desired cube therefore has surface area \\(12\\).\",\"Let the desired cube have side length \\(t\\), so that \\(6t^2=12\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

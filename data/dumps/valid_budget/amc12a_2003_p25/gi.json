@@ -1,0 +1,117 @@
+{
+  "problem_id": "amc12a_2003_p25",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f(x) = sqrt(a x^2 + b x) with b > 0",
+      "statement": "Domain D = {x in R | a x^2 + b x >= 0} and range R = f(D) must satisfy D = R as sets.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "D must be a closed interval [0, M] or [0, +inf) for some M",
+      "statement": "D is [0, +inf) or [0, M] (M finite) because b > 0 forces 0 in D and D unbounded above or bounded by root -b/a.",
+      "dependencies": [
+        "tc_1",
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "f maps D onto [0, sup f) or [0, sup f]",
+      "statement": "Range equals [0, lim x->inf f(x)) or [0, f(x_max)] depending on a sign and vertex location.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Case a = 0 forces D = [0, +inf) and range = [0, +inf) only if b arbitrary positive",
+      "statement": "a = 0 yields D = [0, +inf) and range = [0, +inf), satisfying equality.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Case a < 0 yields bounded D = [0, -b/a] and quadratic max forces range match only for specific a = -b/4",
+      "statement": "a < 0 produces exactly one a = -1/4 satisfying range = D after scaling b = 1.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Case a > 0 yields D unbounded or empty; range never matches D except impossible limits",
+      "statement": "a > 0 produces no solutions because range is bounded while D is unbounded or range misses 0 endpoint.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Exactly two real a (namely a = 0 and a = -1/4) admit at least one b > 0 making domain equal range",
+      "statement": "Number of valid real a is 2.",
+      "dependencies": [
+        "l3",
+        "l4",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The range of f is contained in [0,\\infty), so if the domain D equals the range then necessarily D\\subseteq[0,\\infty).",
+      "statement": "Range(f) \\subseteq [0,\\infty) \\Rightarrow (D = Range(f) \\Rightarrow D \\subseteq [0,\\infty)).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "Consequently D={x:ax^{2}+bx\\ge0} and this set must be contained in the non-negative reals.",
+      "statement": "D = {x \\in ℝ | a x^{2} + b x \\ge 0} \\subseteq [0,\\infty).",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

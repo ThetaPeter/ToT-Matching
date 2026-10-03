@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2002_p6",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the sum of roots satisfies a+b=-a.",
+      "last_claim": "By Vieta, the sum of roots satisfies a+b=-a.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.75,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.",
+      "last_claim": "By Vieta, the product of roots satisfies ab=b.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim": "[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\nContinue from: By Vieta, the product of roots satisfies ab=b.",
+      "last_claim": "Continue from: By Vieta, the product of roots satisfies ab=b.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the sum of roots satisfies a+b=-a.\n[\"Thus \\(2a+b=0\\).\", \"By Vieta, the product of roots satisfies \\(ab=b\\).\"]",
+      "last_claim": "[\"Thus \\(2a+b=0\\).\", \"By Vieta, the product of roots satisfies \\(ab=b\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.5,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the sum of roots satisfies a+b=-a.\nContinue from: By Vieta, the sum of roots satisfies a+b=-a.",
+      "last_claim": "Continue from: By Vieta, the sum of roots satisfies a+b=-a.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\n[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]",
+      "last_claim": "[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\nContinue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim": "Continue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\nContinue from: By Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), it follows that \\(a=1\\).\",\"By Vieta the sum of the roots satisfies \\(a+b=-a\\).\"]",
+      "last_claim": "[\"Since \\(b\\neq 0\\), it follows that \\(a=1\\).\",\"By Vieta the sum of the roots satisfies \\(a+b=-a\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\nContinue from: By Vieta, the product of roots satisfies ab=b.\nContinue from: Continue from: By Vieta, the product of roots satisfies ab=b.",
+      "last_claim": "Continue from: Continue from: By Vieta, the product of roots satisfies ab=b.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\n[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]\n[\"The quadratic is \\(x^2+x-2=0\\), which factors as \\((x-1)(x+2)=0\\) and therefore has roots \\(1\\) and \\(-2\\).\", \"Hence \\(a=1\\) and \\(b=-2\\) are indeed the roots, so the pair is \\((1,-2)\\).\"]",
+      "last_claim": "[\"The quadratic is \\(x^2+x-2=0\\), which factors as \\((x-1)(x+2)=0\\) and therefore has roots \\(1\\) and \\(-2\\).\", \"Hence \\(a=1\\) and \\(b=-2\\) are indeed the roots, so the pair is \\((1,-2)\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\n[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]\nContinue from: [\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]",
+      "last_claim": "Continue from: [\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\), so \\(b=-2\\).\", \"Hence the pair is \\((1,-2)\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\nContinue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\n[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\).\", \"Solving for \\(b\\) then gives \\(b=-2\\).\"]",
+      "last_claim": "[\"Substituting \\(a=1\\) into \\(a+b=-a\\) yields \\(1+b=-1\\).\", \"Solving for \\(b\\) then gives \\(b=-2\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $a$ and $b$ are nonzero real numbers, and that the [[equation]] $x^2 + ax + b = 0$ has solutions $a$ and $b$. Then the pair $(a,b)$ is\n\n$\\mathrm{(A)}\\ (-2,1)\n\\qquad\\mathrm{(B)}\\ (-1,2)\n\\qquad\\mathrm{(C)}\\ (1,-2)\n\\qquad\\mathrm{(D)}\\ (2,-1)\n\\qquad\\mathrm{(E)}\\ (4,4)$ Show that it is \\mathrm{(C)}\\ (1,-2).\nBy Vieta, the product of roots satisfies ab=b.\n[\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\nContinue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]\nContinue from: Continue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Since \\(b\\neq 0\\), dividing both sides of \\(ab=b\\) yields \\(a=1\\).\", \"By Vieta the sum of the roots also satisfies \\(a+b=-a\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

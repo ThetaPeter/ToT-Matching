@@ -1,0 +1,61 @@
+{
+  "problem_id": "amc12a_2010_p10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence is arithmetic, so consecutive terms differ by a constant d.",
+      "statement": "9 - p = (3p - q) - 9 = (3p + q) - (3p - q)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.24343224778007386,
+      "support": null
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The last two terms immediately yield that the common difference equals 2q.",
+      "statement": "d = 2q",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.13245323570650444,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Hence q=2, the first term is 5 and the common difference is 4, so the 2010th term equals 5+2009*4=8041.",
+      "statement": "a_2010=5+2009*4=8041",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3646452637445894,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "With p=5 we recover q=2 from q=(9-p)/2.",
+      "statement": "q=2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.20519567041703085,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Hence q=2, the first term is 5 and the common difference is 4.",
+      "statement": "q=2, p=5, d=4",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.17457431218879393,
+      "support": null
+    }
+  ]
+}

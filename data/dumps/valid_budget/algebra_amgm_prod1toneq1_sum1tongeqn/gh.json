@@ -1,0 +1,35 @@
+{
+  "problem_id": "algebra_amgm_prod1toneq1_sum1tongeqn",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "Inductive step: replace a_{n-2},a_{n-1} by a_{n-2}a_{n-1} and 1; the product remains 1 and the sum does not increase.",
+      "statement": "If a_{n-1}>=1>=a_{n-2} then (a_{n-2}a_{n-1},1) has the same product and smaller or equal sum compared with (a_{n-2},a_{n-1}).",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.40291148201269017,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "By the AM-GM inequality the arithmetic mean of a_0,… ,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.",
+      "statement": "AM(a_0,…,a_{n-1}) ≥ GM(a_0,…,a_{n-1}) = 1, hence \\sum a_i ≥ n.",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.3273268353539886,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The theorem follows by induction together with the AM-GM inequality.",
+      "statement": "For any real-valued function a on the natural numbers such that \\forall i \\in ℕ, a_i \\ge 0, if \\prod_{i=0}^{n-1} a_i = 1, then \\sum_{i=0}^{n-1} a_i \\ge n.",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.5533985905294664,
+      "support": null
+    }
+  ]
+}

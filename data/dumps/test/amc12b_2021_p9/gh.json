@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2021_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the value of$\\frac{\\log_2 80}{\\log_{40}2}-\\frac{\\log_2 160}{\\log_{20}2}?$$\\textbf{(A) }0 \\qquad \\textbf{(B) }1 \\qquad \\textbf{(C) }\\frac54 \\qquad \\textbf{(D) }2 \\qquad \\textbf{(E) }\\log_2 5$ Show that it is \\text{(D)}.",
+      "statement": "What is the value of$\\frac{\\log_2 80}{\\log_{40}2}-\\frac{\\log_2 160}{\\log_{20}2}?$$\\textbf{(A) }0 \\qquad \\textbf{(B) }1 \\qquad \\textbf{(C) }\\frac54 \\qquad \\textbf{(D) }2 \\qquad \\textbf{(E) }\\log_2 5$ Show that it is \\text{(D)}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l4161",
+      "natural_language": "Advance the argument (step 6469): continue from What is the value of$\\frac{\\log_2 80}{\\log_{40}2}-\\frac{\\log_2 160}{\\log_{20}2}?",
+      "statement": "Advance the argument (step 6469): continue from What is the value of$\\frac{\\log_2 80}{\\log_{40}2}-\\frac{\\log_2 160}{\\log_{20}2}?",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.47434164902525694,
+      "support": null
+    },
+    {
+      "id": "l_dead_2311",
+      "natural_language": "dead-end unused case 6471: discard this alternative",
+      "statement": "dead-end unused case 6471: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.34426518632954817,
+      "support": null
+    }
+  ]
+}

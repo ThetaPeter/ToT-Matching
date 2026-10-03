@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2020_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many $4$-digit positive integers (that is, integers between $1000$ and $9999$, inclusive) having only even digits are divisible by $5?$\n\n$\\textbf{(A) } 80 \\qquad \\textbf{(B) } 100 \\qquad \\textbf{(C) } 125 \\qquad \\textbf{(D) } 200 \\qquad \\textbf{(E) } 500$ Show that it is \\textbf{(B) } 100.",
+      "statement": "How many $4$-digit positive integers (that is, integers between $1000$ and $9999$, inclusive) having only even digits are divisible by $5?$\n\n$\\textbf{(A) } 80 \\qquad \\textbf{(B) } 100 \\qquad \\textbf{(C) } 125 \\qquad \\textbf{(D) } 200 \\qquad \\textbf{(E) } 500$ Show that it is \\textbf{(B) } 100.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.26886642896893254,
+      "support": null
+    },
+    {
+      "id": "l2757",
+      "natural_language": "Advance the argument (step 4285): continue from How many $4$-digit positive integers (that is, integers between $1000$ and $9999",
+      "statement": "Advance the argument (step 4285): continue from How many $4$-digit positive integers (that is, integers between $1000$ and $9999",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.548202444686843,
+      "support": null
+    }
+  ]
+}

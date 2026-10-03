@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2017_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.",
+      "statement": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3508232077228117,
+      "support": null
+    },
+    {
+      "id": "l3351",
+      "natural_language": "Advance the argument (step 5209): continue from Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(",
+      "statement": "Advance the argument (step 5209): continue from Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5159505656064198,
+      "support": null
+    }
+  ]
+}

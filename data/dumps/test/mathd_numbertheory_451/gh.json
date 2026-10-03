@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_451",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A positive integer $n$ is nice if there is a positive integer $m$ with exactly four positive divisors (including $1$ and $m$) such that the sum of the four divisors is equal to $n.$ Find the sum of all the nice numbers in the set $\\{ 2010,2011,2012,\\dots,2019 \\}.$ Show that it is 2016.",
+      "statement": "A positive integer $n$ is nice if there is a positive integer $m$ with exactly four positive divisors (including $1$ and $m$) such that the sum of the four divisors is equal to $n.$ Find the sum of all the nice numbers in the set $\\{ 2010,2011,2012,\\dots,2019 \\}.$ Show that it is 2016.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4133502057145282,
+      "support": null
+    },
+    {
+      "id": "l11397",
+      "natural_language": "Advance the argument (step 17725): continue from A positive integer $n$ is nice if there is a positive integer $m$ with exactly f",
+      "statement": "Advance the argument (step 17725): continue from A positive integer $n$ is nice if there is a positive integer $m$ with exactly f",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6899985073517824,
+      "support": null
+    }
+  ]
+}

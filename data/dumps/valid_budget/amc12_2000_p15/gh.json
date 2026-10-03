@@ -1,0 +1,49 @@
+{
+  "problem_id": "amc12_2000_p15",
+  "nodes": [
+    {
+      "id": "l10",
+      "natural_language": "By Vieta's formulas, for az^{2} + bz + c = 0 the sum of roots is -b/a.",
+      "statement": "sum of roots = -b/a",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.26462806201248157,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "The quadratic formula (or Vieta) on the equivalent equation 27z^{2}+3z-2=0 yields that the sum of the roots is -3/27=-1/9.",
+      "statement": "sum of roots = -3/27 = -1/9",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": 0.7440697862050947,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Subtract 7 from both sides of 81z^{2}+9z+1=7 to obtain 81z^{2}+9z-6=0.",
+      "statement": "81z^{2}+9z-6=0",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.1666666666666667,
+      "support": null
+    },
+    {
+      "id": "l19",
+      "natural_language": "By Vieta's formulas, the quadratic 27z^{2}+3z-2=0 has sum of roots -3/27=-1/9.",
+      "statement": "sum of roots = -3/27 = -1/9",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.18333969940564226,
+      "support": null
+    }
+  ]
+}

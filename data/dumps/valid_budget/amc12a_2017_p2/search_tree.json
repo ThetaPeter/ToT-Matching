@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2017_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim": "[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim": "[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\nContinue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim": "Continue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\nContinue from:\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"Observe that the desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim": "[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"Observe that the desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\n[\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]",
+      "last_claim": "[\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]",
+      "last_claim_id": "ts_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\nContinue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim": "Continue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim_id": "ts_4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\nContinue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Substituting \\(x+y=4xy\\) into \\(\\frac{x+y}{xy}\\) immediately yields \\(\\frac{4xy}{xy}=4\\).\",\"Dividing both sides of \\(x+y=4xy\\) by \\(xy\\) produces \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim": "[\"Substituting \\(x+y=4xy\\) into \\(\\frac{x+y}{xy}\\) immediately yields \\(\\frac{4xy}{xy}=4\\).\",\"Dividing both sides of \\(x+y=4xy\\) by \\(xy\\) produces \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\nContinue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\nContinue from: Continue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\n[\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]\n[\"An explicit pair satisfying the hypothesis is \\(x=1\\) and \\(y=\\frac13\\), for which \\(\\frac1x+\\frac1y=4\\).\", \"Any other pair is a scalar multiple of this one in the sense that both reciprocals still sum to 4.\"]",
+      "last_claim": "[\"An explicit pair satisfying the hypothesis is \\(x=1\\) and \\(y=\\frac13\\), for which \\(\\frac1x+\\frac1y=4\\).\", \"Any other pair is a scalar multiple of this one in the sense that both reciprocals still sum to 4.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.25,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\n[\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]\nContinue from: [\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\(\\frac1x+\\frac1y=4\\).\", \"The common value is therefore option \\(\\textbf{(C)}\\).\"]",
+      "last_claim_id": "ts_9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\nContinue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\n[\"Thus the sum of the reciprocals equals 4, matching choice C.\", \"The division is valid because \\(x\\) and \\(y\\) are nonzero, so \\(xy\\neq 0\\).\"]",
+      "last_claim": "[\"Thus the sum of the reciprocals equals 4, matching choice C.\", \"The division is valid because \\(x\\) and \\(y\\) are nonzero, so \\(xy\\neq 0\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The sum of two nonzero real numbers is 4 times their product. What is the sum of the reciprocals of the two numbers?\n\n$\\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 4\\qquad\\textbf{(D)}\\ 8\\qquad\\textbf{(E)}\\ 12$ Show that it is \\textbf{C}.\n[\"Let the two nonzero reals be \\(x\\) and \\(y\\), so that \\(x+y=4xy\\).\", \"The desired quantity is \\(\\frac1x+\\frac1y=\\frac{x+y}{xy}\\).\"]\n[\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\nContinue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]\nContinue from: Continue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Therefore \\(\\frac{x+y}{xy}=\\frac{4xy}{xy}=4\\).\", \"Dividing the given equation by \\(xy\\) immediately yields \\(\\frac1x+\\frac1y=4\\).\"]",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

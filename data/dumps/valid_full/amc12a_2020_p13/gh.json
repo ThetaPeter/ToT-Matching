@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2020_p13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..",
+      "statement": "There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{N\\sqrt[b]{N\\sqrt[c]{N}}} = \\sqrt[36]{N^{25}}$\n\nfor all $N \\neq 1$. What is $b$?\n\n$\\textbf{(A) } 2 \\qquad \\textbf{(B) } 3 \\qquad \\textbf{(C) } 4 \\qquad \\textbf{(D) } 5 \\qquad \\textbf{(E) } 6$ Show that it is \\textbf{(B) } 3..",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l3513",
+      "natural_language": "Advance the argument (step 5461): continue from There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{",
+      "statement": "Advance the argument (step 5461): continue from There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.590240205812357,
+      "support": null
+    },
+    {
+      "id": "l3514",
+      "natural_language": "Advance the argument (step 5462): continue from There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{",
+      "statement": "Advance the argument (step 5462): continue from There are integers $a, b,$ and $c,$ each greater than $1,$ such that\n\n$\\sqrt[a]{",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6045603888763708,
+      "support": null
+    }
+  ]
+}

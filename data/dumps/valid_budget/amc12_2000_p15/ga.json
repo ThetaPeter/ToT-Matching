@@ -1,0 +1,270 @@
+{
+  "problem_id": "amc12_2000_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given f(x/3)=x^{2}+x+1, find sum of all z with f(3z)=7",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus the sum of all such z is -1/9",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).",
+      "statement": "f(t)=9t^2+3t+1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).",
+      "statement": "81z^2+9z+1=7",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "By Vieta's formulas, for az^{2} + bz + c = 0 the sum of roots is -b/a.",
+      "statement": "sum of roots = -b/a",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Then 81z^{2}+9z+1=7, hence 81z^{2}+9z-6=0.",
+      "statement": "81z^{2}+9z-6=0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The quadratic 81z^{2}+9z-6=0 has sum of roots -9/81=-1/9.",
+      "statement": "sum of roots = -9/81 = -1/9",
+      "dependencies": [
+        "l13",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Then 81z^{2}+9z+1=7, so 81z^{2}+9z-6=0.",
+      "statement": "81z^{2}+9z-6=0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "The quadratic formula (or Vieta) on the equivalent equation 27z^{2}+3z-2=0 yields that the sum of the roots is -3/27=-1/9.",
+      "statement": "sum of roots = -3/27 = -1/9",
+      "dependencies": [
+        "l15",
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus the sum of all such z is -1/9",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Subtract 7 from both sides of 81z^{2}+9z+1=7 to obtain 81z^{2}+9z-6=0.",
+      "statement": "81z^{2}+9z-6=0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Divide the equation 81z^{2}+9z-6=0 by 3 to obtain the equivalent equation 27z^{2}+3z-2=0.",
+      "statement": "27z^{2}+3z-2=0",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "By Vieta's formulas, the quadratic 27z^{2}+3z-2=0 has sum of roots -3/27=-1/9.",
+      "statement": "sum of roots = -3/27 = -1/9",
+      "dependencies": [
+        "l18",
+        "l10"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Thus the sum of all such z is -1/9",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l19"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Hence the required sum of all such z equals -1/9.",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "This is option (B).",
+      "statement": "The answer is -1/9",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The equation 81z^{2}+9z-6=0 is quadratic, so by Vieta the sum of its roots is -9/81=-1/9.",
+      "statement": "sum of roots = -9/81 = -1/9",
+      "dependencies": [
+        "l13",
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Thus the sum of all such z is -1/9.",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "Thus the required sum of all such z is -1/9.",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "This matches answer choice (B).",
+      "statement": "The answer is -1/9",
+      "dependencies": [
+        "l22"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "The quadratic formula (or Vieta) on the equivalent equation 27z^{2}+3z-2=0 yields that the sum of the roots is -3/27=-1/9.",
+      "statement": "sum of roots = -3/27 = -1/9",
+      "dependencies": [
+        "l15",
+        "l10"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus the sum of all such z is -1/9.",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

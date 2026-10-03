@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2019_p12",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Positive real numbers $x \\neq 1$ and $y \\neq 1$ satisfy $\\log_2{x} = \\log_y{16}$ and $xy = 64$. What is $(\\log_2{\\tfrac{x}{y}})^2$?\n\n$\\textbf{(A) } \\frac{25}{2} \\qquad\\textbf{(B) } 20 \\qquad\\textbf{(C) } \\frac{45}{2} \\qquad\\textbf{(D) } 25 \\qquad\\textbf{(E) } 32$ Show that it is \\textbf{(B) } 20.",
+      "statement": "Positive real numbers $x \\neq 1$ and $y \\neq 1$ satisfy $\\log_2{x} = \\log_y{16}$ and $xy = 64$. What is $(\\log_2{\\tfrac{x}{y}})^2$?\n\n$\\textbf{(A) } \\frac{25}{2} \\qquad\\textbf{(B) } 20 \\qquad\\textbf{(C) } \\frac{45}{2} \\qquad\\textbf{(D) } 25 \\qquad\\textbf{(E) } 32$ Show that it is \\textbf{(B) } 20.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3046168265919412,
+      "support": null
+    },
+    {
+      "id": "l2541",
+      "natural_language": "Advance the argument (step 3949): continue from Positive real numbers $x \\neq 1$ and $y \\neq 1$ satisfy $\\log_2{x} = \\log_y{16}$",
+      "statement": "Advance the argument (step 3949): continue from Positive real numbers $x \\neq 1$ and $y \\neq 1$ satisfy $\\log_2{x} = \\log_y{16}$",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.401358691998836,
+      "support": null
+    }
+  ]
+}

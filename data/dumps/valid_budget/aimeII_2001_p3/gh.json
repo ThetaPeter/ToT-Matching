@@ -1,0 +1,61 @@
+{
+  "problem_id": "aimeII_2001_p3",
+  "nodes": [
+    {
+      "id": "l0",
+      "natural_language": "The linear recurrence implies that the generating sequence of consecutive 4-tuples is completely determined by the initial 4-tuple, so it suffices to compute the first several terms until the initial 4-tuple reappears.",
+      "statement": "future evolution and periodicity determined by 4-tuple state repetition",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.1606438657804998,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Direct computation of the first 12 terms yields x11=x1 and x12=x2, and by the recurrence the sequence is therefore periodic with period 10.",
+      "statement": "sequence is periodic with period 10",
+      "dependencies": [
+        "l0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5160468465421401,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Computing successive terms of the recurrence produces the 4-tuple (x_{11},x_{12},x_{13},x_{14})=(211,375,420,523), which coincides with the initial 4-tuple, so the sequence of 4-tuples (and hence the sequence itself) is periodic of period 10.",
+      "statement": "4-tuple (x11..x14) matches initial 4-tuple hence period 10",
+      "dependencies": [
+        "l0"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.6301260378126045,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "The residues of the three indices modulo 10 are uniquely determined by the last digits of those indices, confirming 531≡1, 753≡3 and 975≡5.",
+      "statement": "last digits determine residues mod 10 confirming given congruences",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.2684624220856098,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Adding the three corresponding terms of the fundamental period therefore yields exactly 211+420+267=898.",
+      "statement": "sum of reduced terms equals 898",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.4545454545454546,
+      "support": null
+    }
+  ]
+}

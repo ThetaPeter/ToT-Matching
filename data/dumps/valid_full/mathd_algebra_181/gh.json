@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_181",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $\\displaystyle\\frac{n+5}{n-3} = 2$ what is the value of $n$? Show that it is 11.",
+      "statement": "If $\\displaystyle\\frac{n+5}{n-3} = 2$ what is the value of $n$? Show that it is 11.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l6699",
+      "natural_language": "Advance the argument (step 10417): continue from If $\\displaystyle\\frac{n+5}{n-3} = 2$ what is the value of $n$? Show that it is",
+      "statement": "Advance the argument (step 10417): continue from If $\\displaystyle\\frac{n+5}{n-3} = 2$ what is the value of $n$? Show that it is",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8557169633109853,
+      "support": null
+    },
+    {
+      "id": "l_dead_3721",
+      "natural_language": "dead-end unused case 10419: discard this alternative",
+      "statement": "dead-end unused case 10419: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.1432229748078866,
+      "support": null
+    }
+  ]
+}

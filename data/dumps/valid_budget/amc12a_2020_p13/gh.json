@@ -1,0 +1,69 @@
+{
+  "problem_id": "amc12a_2020_p13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The given nested radical equation holds for all N \neq 1 with integers a,b,c > 1",
+      "statement": "√[a](N \\sqrt[b](N \\sqrt[c](N))) = \\sqrt[36](N^{25})",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.37712361663282545,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "The nested radical equals N^{[1+(1+1/c)/b]/a}",
+      "statement": "LHS = N^{[1+(1+1/c)/b]/a}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.316227766016838,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "The resulting exponent identity [1+(1+1/c)/b]/a=25/36 holds for integers a,b,c>1",
+      "statement": "[1+(1+1/c)/b]/a = 25/36",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3333333333333333,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "bc + c + 1 is a multiple of 25",
+      "statement": "bc + c + 1 ≡ 0 (mod 25)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.25000000000000006,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Rewrite the equation as 36[(b+1)c +1 ] =25 a b c",
+      "statement": "36[(b+1)c +1]=25 a b c",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.18898223650461363,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The unique solution with a,b,c >1 integers yields b=3 (and a=4, c=6)",
+      "statement": "b=3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.36273812505500586,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2021_p19",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$?\n\n$\\textbf{(A) }0 \\qquad \\textbf{(B) }1 \\qquad \\textbf{(C) }2 \\qquad \\textbf{(D) }3\\qquad \\textbf{(E) }4$ Show that it is \\textbf{(C) }2.",
+      "statement": "How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos \\left( \\frac{\\pi}2 \\sin x\\right)$ have in the closed interval $[0,\\pi]$?\n\n$\\textbf{(A) }0 \\qquad \\textbf{(B) }1 \\qquad \\textbf{(C) }2 \\qquad \\textbf{(D) }3\\qquad \\textbf{(E) }4$ Show that it is \\textbf{(C) }2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.15033787285564523,
+      "support": null
+    },
+    {
+      "id": "l3081",
+      "natural_language": "Advance the argument (step 4789): continue from How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos",
+      "statement": "Advance the argument (step 4789): continue from How many solutions does the equation $\\sin \\left( \\frac{\\pi}2 \\cos x\\right)=\\cos",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6611430912519523,
+      "support": null
+    }
+  ]
+}

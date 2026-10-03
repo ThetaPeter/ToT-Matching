@@ -1,0 +1,47 @@
+{
+  "problem_id": "amc12a_2002_p12",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "Let the roots be primes p and q. Then p+q=63 and pq=k.",
+      "statement": "p + q = 63 and k = p*q for primes p, q",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.14638501094227999,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Since 63 is odd, one of p,q is even, hence equal to 2.",
+      "statement": "One root is even and hence equals 2",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5331139899831832,
+      "support": null
+    },
+    {
+      "id": "l22",
+      "natural_language": "Hence the only possible value is k=122.",
+      "statement": "Only possible value of k is 122",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8153742483272115,
+      "support": null
+    },
+    {
+      "id": "l23",
+      "natural_language": "The corresponding quadratic x^2-63x+122=0 therefore has both roots prime.",
+      "statement": "x^2-63x+122=0 has both roots prime",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.43643578047198484,
+      "support": null
+    }
+  ]
+}

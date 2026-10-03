@@ -1,0 +1,175 @@
+{
+  "problem_id": "algebra_2rootsintpoly_am10tap11eqasqpam110",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [
+        "l4",
+        "l9",
+        "l11",
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Apply left distributivity over subtraction to the product.",
+      "statement": "(a-10)(a+11)=a(a+11)-10(a+11)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Expanding the left-hand side yields a^2+11a-10a-110.",
+      "statement": "(a-10)(a+11)=a^2+11a-10a-110",
+      "dependencies": [
+        "l7",
+        "l6"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Combining like terms gives a^2+(11-10)a-110=a^2+a-110.",
+      "statement": "a^2+11a-10a-110=a^2+a-110",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Hence the expanded left-hand side equals the right-hand side.",
+      "statement": "(a-10)(a+11)=a^2+a-110",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Apply distributivity to the first factor from l1.",
+      "statement": "a(a+11)=a^2+11a",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Apply right distributivity to the second term from l1.",
+      "statement": "-10(a+11)=-10a-110",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The algebraic identity holds in any commutative ring by the same distributivity and commutativity steps.",
+      "statement": "∀ R commutative ring, ∀ a ∈ R, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "The same algebraic identity holds in any commutative ring, hence in ℂ.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Substituting the expansion of a(a+11) into the expression from l1 yields the partially expanded product.",
+      "statement": "(a-10)(a+11)=a^{2}+11a-10(a+11)",
+      "dependencies": [
+        "l1",
+        "l5"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "The two sides are identical as elements of ℝ[a].",
+      "statement": "(a-10)(a+11) = a^2 + a - 110 in ℝ[a]",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "The same identity therefore holds after substituting any complex value for a.",
+      "statement": "∀ a ∈ ℂ, (a-10)(a+11) = a^2 + a - 110",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "By distributivity, 10(a+11)=10a+110.",
+      "statement": "10(a+11)=10a+110",
+      "dependencies": [],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Negating the expansion yields the second factor from l1.",
+      "statement": "-10(a+11)=-10a-110",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

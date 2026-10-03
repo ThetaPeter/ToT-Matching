@@ -1,0 +1,51 @@
+{
+  "problem_id": "amc12a_2016_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x=3/8 and y=-2/5. By definition rem(x,y)=x-y*floor(x/y).",
+      "statement": "x=3/8 ∧ y=-2/5 ∧ rem(x,y)=x-y·⌊x/y⌋",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.1336306209562122,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Compute x/y = (3/8)/(-2/5) = -15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Compute x/y = (3/8)/(-2/5) = -15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.4714045207910318,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Hence rem(3/8,-2/5)=-1/40.",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.31622776601683794,
+      "support": null
+    }
+  ]
+}

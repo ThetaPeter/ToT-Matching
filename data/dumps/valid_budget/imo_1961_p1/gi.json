@@ -1,0 +1,173 @@
+{
+  "problem_id": "imo_1961_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given the system x+y+z=a, x^{2}+y^{2}+z^{2}=b^{2}, xy=z^{2} with a,b constants, find conditions on a,b such that solutions x,y,z are distinct positive reals.",
+      "statement": "∃ distinct x,y,z>0 satisfying the system ⇔ a,b satisfy the required inequalities derived from Vieta and positivity constraints",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Restate the theorem as the target claim to prove: the system admits distinct positive solutions x,y,z precisely when a,b meet the derived conditions.",
+      "statement": "The solutions x,y,z are distinct positive numbers if and only if a>0, b^{2}>(2a^{2})/3 and a^{3}-3ab^{2}+2a^{3}/27>0 (or equivalent simplified inequalities).",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l3",
+        "l4",
+        "l6",
+        "l7",
+        "l8",
+        "l9",
+        "l10",
+        "l11",
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "From (x+y+z)^2 = x^2+y^2+z^2 + 2(xy+yz+zx) we obtain a^2 = b^2 + 2(xy + z(x+y)).",
+      "statement": "a^{2} = b^{2} + 2(xy + z(x + y))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Substituting xy=z^{2} and x+y=a-z into the identity a^{2}=b^{2}+2(xy+z(x+y)) yields a^{2}=b^{2}+2az.",
+      "statement": "a^{2}=b^{2}+2az",
+      "dependencies": [
+        "l1",
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Hence z=(a^{2}-b^{2})/(2a) whenever a\neq0.",
+      "statement": "z=(a^{2}-b^{2})/(2a) (a\neq0)",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "x and y are roots of the quadratic equation t^{2} - (a - z)t + z^{2} = 0.",
+      "statement": "x,y are roots of t^{2} - (a-z)t + z^{2} = 0",
+      "dependencies": [
+        "l4",
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "For x,y to be distinct positive reals, the discriminant D = (a-z)^{2} - 4z^{2} must be positive, and both roots positive (sum a-z>0, product z^{2}>0).",
+      "statement": "D=(a-z)^{2}-4z^{2}>0 and a-z>0, z>0 for distinct positive x,y",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "x and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "statement": "x,y are roots of t^{2} - (a-z)t + z^{2} = 0",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "For x,y to be real and distinct the discriminant (a-z)^{2}-4z^{2} must be positive.",
+      "statement": "D=(a-z)^{2}-4z^{2}>0",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "The discriminant of the quadratic is (a-z)^2-4z^2=(a-3z)(a+z).",
+      "statement": "D=(a-z)^2-4z^2=(a-3z)(a+z)",
+      "dependencies": [
+        "l6",
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "x and y are real and distinct iff (a-3z)(a+z)>0.",
+      "statement": "x,y real and distinct ⇔ (a-3z)(a+z)>0",
+      "dependencies": [
+        "l9",
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Then x and y are the two roots of the quadratic t^{2}-(a-z)t+z^{2}=0.",
+      "statement": "x,y are roots of t^{2} - (a-z)t + z^{2} = 0",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The discriminant of this quadratic is D=(a-z)^{2}-4z^{2}, so x and y are real and distinct if and only if D>0.",
+      "statement": "x,y real and distinct \\Leftrightarrow D=(a-z)^{2}-4z^{2}>0",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

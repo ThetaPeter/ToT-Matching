@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_126",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The midpoint of the line segment between $(x,y)$ and $(-9,1)$ is $(3,-5)$. Find $(x,y)$. Show that it is (15,-11).",
+      "statement": "The midpoint of the line segment between $(x,y)$ and $(-9,1)$ is $(3,-5)$. Find $(x,y)$. Show that it is (15,-11).",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.25000000000000006,
+      "support": null
+    },
+    {
+      "id": "l6160",
+      "natural_language": "Advance the argument (step 9578): continue from The midpoint of the line segment between $(x,y)$ and $(-9,1)$ is $(3,-5)$. Find",
+      "statement": "Advance the argument (step 9578): continue from The midpoint of the line segment between $(x,y)$ and $(-9,1)$ is $(3,-5)$. Find",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7487048859271458,
+      "support": null
+    }
+  ]
+}

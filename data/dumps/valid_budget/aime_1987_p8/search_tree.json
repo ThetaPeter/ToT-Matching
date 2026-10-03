@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1987_p8",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]",
+      "last_claim": "[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\n[\"If \\(n<56\\), the open interval has length \\(<1\\) and thus contains at most one integer \\(k\\).\",\"When \\(n=112\\) the length equals \\(2\\), so the number of integers \\(k\\) in the interval is \\(1\\) or \\(2\\) according to the positions of the endpoints modulo \\(1\\).\"]",
+      "last_claim": "[\"If \\(n<56\\), the open interval has length \\(<1\\) and thus contains at most one integer \\(k\\).\",\"When \\(n=112\\) the length equals \\(2\\), so the number of integers \\(k\\) in the interval is \\(1\\) or \\(2\\) according to the positions of the endpoints modulo \\(1\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.65,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]",
+      "last_claim": "Continue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim": "[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_0",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\n[\"For \\(n>112\\) the length exceeds 2, hence the open interval contains at least two integers.\", \"For \\(n=112\\) the interval equals \\((96,98)\\), which contains the unique integer 97.\"]",
+      "last_claim": "[\"For \\(n>112\\) the length exceeds 2, hence the open interval contains at least two integers.\", \"For \\(n=112\\) the interval equals \\((96,98)\\), which contains the unique integer 97.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim": "Continue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\nAn open interval of length >2 contains at least two integers, so n>112 yields at least two k.",
+      "last_claim": "An open interval of length >2 contains at least two integers, so n>112 yields at least two k.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The length of this open interval is \\(\\frac{n}{56}\\).\"]\nFor n=112 the interval is (96,98), containing the unique integer 97.",
+      "last_claim": "For n=112 the interval is (96,98), containing the unique integer 97.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.7,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\n[\"For \\(n>112\\) the length exceeds 2, hence the open interval contains at least two integers.\", \"For \\(n=112\\) the interval equals \\((96,98)\\), which contains the unique integer 97.\"]\nTherefore no integer n>112 can admit a unique positive integer k in the interval.",
+      "last_claim": "Therefore no integer n>112 can admit a unique positive integer k in the interval.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\n[\"For \\(n>112\\) the length exceeds 2, hence the open interval contains at least two integers.\", \"For \\(n=112\\) the interval equals \\((96,98)\\), which contains the unique integer 97.\"]\nDirect substitution shows that k=97 lies in (96,98) and hence is the unique integer satisfying the original inequality when n=112.",
+      "last_claim": "Direct substitution shows that k=97 lies in (96,98) and hence is the unique integer satisfying the original inequality when n=112.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\n[\"Thus if \\(n\\le 55\\) then the length is strictly less than \\(1\\), so the interval contains at most one integer.\", \"If \\(n=112\\) then the length is exactly \\(2\\).\"]",
+      "last_claim": "[\"Thus if \\(n\\le 55\\) then the length is strictly less than \\(1\\), so the interval contains at most one integer.\", \"If \\(n=112\\) then the length is exactly \\(2\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.6,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "What is the largest positive integer $n$ for which there is a unique integer $k$ such that $\\frac{8}{15} < \\frac{n}{n + k} < \\frac{7}{13}$? Show that it is 112.\nContinue from:\n[\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\nContinue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]\nContinue from: Continue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The given inequality is equivalent to \\(\\frac{6n}{7}<k<\\frac{7n}{8}\\) for a positive integer \\(k\\).\",\"The open interval \\(\\bigl(\\frac{6n}{7},\\frac{7n}{8}\\bigr)\\) has length \\(\\frac{n}{56}\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

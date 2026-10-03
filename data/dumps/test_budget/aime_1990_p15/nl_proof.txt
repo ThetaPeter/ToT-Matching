@@ -1,0 +1,8 @@
+We are given \(p_1=3\), \(p_2=7\), \(p_3=16\) and \(p_4=42\). The terms of the sequence satisfy the recurrence \(p_k=s\,p_{k-1}-r\,p_{k-2}\) for every \(k\ge3\). Substituting the known values for \(k=3\) and \(k=4\) therefore produces the linear system
+\[
+7s-3r=16,\qquad 16s-7r=42.
+\]
+The unique solution of this system is \(s=-14\) and \(p=-38\). Combining the latter pair of constants with the four given initial terms yields \(u_5=20\). Consequently
+\[
+ax^5+by^5=20.
+\]

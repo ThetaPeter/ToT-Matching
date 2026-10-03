@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_2006_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any real numbers $a$, $b$, and $c$, we have $(ab(a^2 - b^2)) + (bc(b^2 - c^2)) + (ca(c^2 - a^2)) \\leq \\frac{9\\sqrt{2}}{32}(a^2 + b^2 + c^2)^2$.",
+      "statement": "Show that for any real numbers $a$, $b$, and $c$, we have $(ab(a^2 - b^2)) + (bc(b^2 - c^2)) + (ca(c^2 - a^2)) \\leq \\frac{9\\sqrt{2}}{32}(a^2 + b^2 + c^2)^2$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.634219707098028,
+      "support": null
+    },
+    {
+      "id": "l5188",
+      "natural_language": "Advance the argument (step 8066): continue from Show that for any real numbers $a$, $b$, and $c$, we have $(ab(a^2 - b^2)) + (bc",
+      "statement": "Advance the argument (step 8066): continue from Show that for any real numbers $a$, $b$, and $c$, we have $(ab(a^2 - b^2)) + (bc",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5715476066494084,
+      "support": null
+    }
+  ]
+}

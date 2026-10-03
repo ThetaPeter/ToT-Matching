@@ -1,0 +1,104 @@
+{
+  "problem_id": "aime_1991_p1",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "Let s=x+y and p=xy. Then the given equations become p+s=71 and ps=880.",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\). Then \\(p+s=71\\) and \\(ps=880\\).",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5298129428260177,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "s and p are roots of t^2 - 71t + 880 = 0, hence equal to 55 and 16 (in either order).",
+      "statement": "s,p = 55,16 (in either order)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3553345272593507,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence x^2 + y^2 = s^2 - 2p",
+      "statement": "x^2 + y^2 = s^2 - 2p",
+      "dependencies": [],
+      "search_node_id": "sn_6",
+      "branch_id": "b8",
+      "salience": 0.45184805705753206,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "The positive integer factor pairs of 72 are candidates for (x+1,y+1).",
+      "statement": "Factor pairs of 72 give candidate pairs (x+1,y+1)",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.6139406135149206,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "Testing pairs shows only (6,12) and (12,6) satisfy ps=880, yielding x=5,y=11 (or swapped).",
+      "statement": "(x+1,y+1)=(6,12) satisfies ps=880",
+      "dependencies": [
+        "l15",
+        "l1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.10540925533894599,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Thus x^2 + y^2 = s^2 - 2p = 16^2 - 2*55 = 146.",
+      "statement": "x=5,y=11 gives x^2 + y^2 = 146",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": 0.36514837167011077,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "The quadratic has discriminant 71^2-3520=1521=39^2, so its roots are 55 and 16.",
+      "statement": "The quadratic \\(t^2-71t+880=0\\) has discriminant \\(1521=39^2\\) and roots 55,16",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.43643578047198484,
+      "support": null
+    },
+    {
+      "id": "l21",
+      "natural_language": "Expanding yields the quadratic equation s^2 - 71s + 880 = 0.",
+      "statement": "s^2 - 71s + 880 = 0",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.19069251784911848,
+      "support": null
+    },
+    {
+      "id": "l23",
+      "natural_language": "Therefore x^2 + y^2 = s^2 - 2p = 256 - 110 = 146.",
+      "statement": "x^2 + y^2 = 146",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.492365963917331,
+      "support": null
+    }
+  ]
+}

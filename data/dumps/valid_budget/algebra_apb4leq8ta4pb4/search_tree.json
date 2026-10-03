@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_apb4leq8ta4pb4",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim": "[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]",
+      "last_claim": "[\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim": "Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\nContinue from:\n[\"By the QM-AM inequality or equivalently (a-b)^2\\ge0 we have (a+b)^2\\le2(a^2+b^2).\",\"Expand the left-hand side as a^4+4a^3b+6a^2b^2+4ab^3+b^4 and rearrange the desired inequality.\"]",
+      "last_claim": "[\"By the QM-AM inequality or equivalently (a-b)^2\\ge0 we have (a+b)^2\\le2(a^2+b^2).\",\"Expand the left-hand side as a^4+4a^3b+6a^2b^2+4ab^3+b^4 and rearrange the desired inequality.\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]",
+      "last_claim": "[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim": "Continue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]\n[\"The second quadratic bound follows identically by replacing a,b with a^{2},b^{2} (or by expanding (a^{2}-b^{2})^{2}\\ge0).\",\"Equality holds in the original inequality if and only if a=b.\"]",
+      "last_claim": "[\"The second quadratic bound follows identically by replacing a,b with a^{2},b^{2} (or by expanding (a^{2}-b^{2})^{2}\\ge0).\",\"Equality holds in the original inequality if and only if a=b.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]\nContinue from: [\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]",
+      "last_claim": "Continue from: [\"(a-b)^2\\ge0 expands to a^{2}+b^{2}\\ge2ab, hence (a+b)^{2}=a^{2}+2ab+b^{2}\\le2(a^{2}+b^{2}).\",\"Squaring the first bound and substituting the second yields (a+b)^4\\le[2(a^{2}+b^{2})]^{2}=4(a^{2}+b^{2})^{2}\\le8(a^{4}+b^{4}).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]\n[\"Equality holds if and only if a=b.\",\"The same two quadratic inequalities iterate to give (a+b)^{2^n}\\le2^{2^n-1}(a^{2^n}+b^{2^n}) for every n\\ge1.\"]",
+      "last_claim": "[\"Equality holds if and only if a=b.\",\"The same two quadratic inequalities iterate to give (a+b)^{2^n}\\le2^{2^n-1}(a^{2^n}+b^{2^n}) for every n\\ge1.\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.25,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]\nContinue from: [\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]",
+      "last_claim": "Continue from: [\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) (both nonnegative) yields (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the second quadratic bound then produces (a+b)^4 \\le 4\u00b72(a^4+b^4)=8(a^4+b^4).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\n[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) produces (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the bound (a^2+b^2)^2 \\le 2(a^4+b^4) into the previous display immediately yields (a+b)^4 \\le 8(a^4+b^4).\"]",
+      "last_claim": "[\"Squaring both sides of (a+b)^2 \\le 2(a^2+b^2) produces (a+b)^4 \\le 4(a^2+b^2)^2.\",\"Substituting the bound (a^2+b^2)^2 \\le 2(a^4+b^4) into the previous display immediately yields (a+b)^4 \\le 8(a^4+b^4).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any positive real numbers $a$ and $b$, $(a+b)^4 \\leq 8(a^4 + b^4)$.\n[\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]\nContinue from: Continue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim": "Continue from: Continue from: Continue from: [\"(a+b)^2 \\le 2(a^2+b^2) holds for all real a,b (by expanding or by AM-GM on a^2,b^2).\",\"(a^2+b^2)^2 \\le 2(a^4+b^4) holds for all real a,b, whence the desired bound follows by composing the two quadratic inequalities.\"]",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

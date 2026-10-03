@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_765",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$ Show that it is -449.",
+      "statement": "What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~?$$ Show that it is -449.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3686048903872429,
+      "support": null
+    },
+    {
+      "id": "l12316",
+      "natural_language": "Advance the argument (step 19154): continue from What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~",
+      "statement": "Advance the argument (step 19154): continue from What is the largest negative integer $x$ satisfying $$24x \\equiv 15 \\pmod{1199}~",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7949962992933262,
+      "support": null
+    }
+  ]
+}

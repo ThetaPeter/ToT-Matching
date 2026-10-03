@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_140",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The expression $24x^2-19x-35$ can be written as $(Ax-5)(2Bx+C)$, where $A$, $B$, and $C$ are positive numbers. Find $AB-3C$. Show that it is -9.",
+      "statement": "The expression $24x^2-19x-35$ can be written as $(Ax-5)(2Bx+C)$, where $A$, $B$, and $C$ are positive numbers. Find $AB-3C$. Show that it is -9.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.14744195615489716,
+      "support": null
+    },
+    {
+      "id": "l6375",
+      "natural_language": "Advance the argument (step 9913): continue from The expression $24x^2-19x-35$ can be written as $(Ax-5)(2Bx+C)$, where $A$, $B$,",
+      "statement": "Advance the argument (step 9913): continue from The expression $24x^2-19x-35$ can be written as $(Ax-5)(2Bx+C)$, where $A$, $B$,",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5570860145311556,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "imo_1964_p1_1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.",
+      "last_claim": "The multiplicative order of 2 modulo 7 equals 3.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\n2^3 \\equiv 1 \\pmod{7}.",
+      "last_claim": "2^3 \\equiv 1 \\pmod{7}.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.65,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim": "2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\nIf 7 divides 2^n-1 then 3 divides n.",
+      "last_claim": "If 7 divides 2^n-1 then 3 divides n.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\n2^3 \\equiv 1 \\pmod{7}.\n[\"The multiplicative order of 2 modulo 7 is therefore 3.\",\"Hence 2^n \\equiv 1 (mod 7) if and only if 3 divides n.\"]",
+      "last_claim": "[\"The multiplicative order of 2 modulo 7 is therefore 3.\",\"Hence 2^n \\equiv 1 (mod 7) if and only if 3 divides n.\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\n2^3 \\equiv 1 \\pmod{7}.\nContinue from: 2^3 \\equiv 1 \\pmod{7}.",
+      "last_claim": "Continue from: 2^3 \\equiv 1 \\pmod{7}.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\nIf 7 divides 2^n-1 then 3 divides n.\n[\"If \\(2^n\\equiv 1\\pmod{7}\\), then the multiplicative order of 2 modulo 7 divides \\(n\\).\",\"Hence 3 divides \\(n\\).\"]",
+      "last_claim": "[\"If \\(2^n\\equiv 1\\pmod{7}\\), then the multiplicative order of 2 modulo 7 divides \\(n\\).\",\"Hence 3 divides \\(n\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.95,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\nIf 7 divides 2^n-1 then 3 divides n.\nContinue from: If 7 divides 2^n-1 then 3 divides n.",
+      "last_claim": "Continue from: If 7 divides 2^n-1 then 3 divides n.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.3,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\n[\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]",
+      "last_claim": "[\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\nContinue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim": "Continue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\n[\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]\n[\"The order of 2 modulo 7 is exactly 3, so the congruence \\(2^n\\equiv 1\\pmod7\\) holds precisely when \\(3\\mid n\\).\",\"Hence \\(7\\mid(2^n-1)\\) implies \\(3\\mid n\\), as required.\"]",
+      "last_claim": "[\"The order of 2 modulo 7 is exactly 3, so the congruence \\(2^n\\equiv 1\\pmod7\\) holds precisely when \\(3\\mid n\\).\",\"Hence \\(7\\mid(2^n-1)\\) implies \\(3\\mid n\\), as required.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\n[\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]\nContinue from: [\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]",
+      "last_claim": "Continue from: [\"Therefore if 7 divides \\(2^n-1\\) then \\(3\\) divides \\(n\\).\",\"This completes the proof.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\nContinue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.\n[\"Since \\(7\\mid 2^n-1\\) if and only if \\(2^n\\equiv 1\\pmod{7}\\), the preceding equivalence yields \\(7\\mid 2^n-1\\) if and only if \\(3\\mid n\\).\",\"In particular the forward implication holds, which is the required statement.\"]",
+      "last_claim": "[\"Since \\(7\\mid 2^n-1\\) if and only if \\(2^n\\equiv 1\\pmod{7}\\), the preceding equivalence yields \\(7\\mid 2^n-1\\) if and only if \\(3\\mid n\\).\",\"In particular the forward implication holds, which is the required statement.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "Let $n$ be a natural number. Show that if $7$ divides $2^n-1$, then $3$ divides $n$.\nThe multiplicative order of 2 modulo 7 equals 3.\n2^n \\equiv 1 (mod 7) if and only if 3 divides n.\nContinue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.\nContinue from: Continue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim": "Continue from: Continue from: 2^n \\equiv 1 (mod 7) if and only if 3 divides n.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

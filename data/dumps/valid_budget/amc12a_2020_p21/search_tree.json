@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2020_p21",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]",
+      "last_claim": "[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.75,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.1,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]",
+      "last_claim": "[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]",
+      "last_claim_id": "ts_6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\nContinue from: [\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]",
+      "last_claim": "Continue from: [\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\nContinue from:\n[\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]",
+      "last_claim": "[\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\n[\"The four exponent conditions are independent, so the number of admissible tuples \\((x,y,z,w)\\) is the product of the sizes of the four sets of admissible exponents.\", \"Hence exactly \\(6\\cdot4\\cdot1\\cdot2=48\\) such \\(n\\) exist, which is option (D).\"]",
+      "last_claim": "[\"The four exponent conditions are independent, so the number of admissible tuples \\((x,y,z,w)\\) is the product of the sizes of the four sets of admissible exponents.\", \"Hence exactly \\(6\\cdot4\\cdot1\\cdot2=48\\) such \\(n\\) exist, which is option (D).\"]",
+      "last_claim_id": "ts_13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\nContinue from: [\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]",
+      "last_claim": "Continue from: [\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]",
+      "last_claim_id": "ts_15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\nContinue from:\n[\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]\n[\"For the prime 2 the exponent condition is \\(\\max(3,a)=\\min(8,a)\\).\",\"For the prime 3 the exponent condition is \\(\\max(1,b)=\\min(4,b)\\).\"]",
+      "last_claim": "[\"For the prime 2 the exponent condition is \\(\\max(3,a)=\\min(8,a)\\).\",\"For the prime 3 the exponent condition is \\(\\max(1,b)=\\min(4,b)\\).\"]",
+      "last_claim_id": "ts_16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\nContinue from:\n[\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]\nContinue from: [\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]",
+      "last_claim": "Continue from: [\"n is of the form \\(2^a 3^b 5^c 7^d\\) with \\(c\\geq 1\\).\",\"The equality of prime exponents in \\(\\operatorname{lcm}(5!,n)=5\\cdot\\operatorname{gcd}(10!,n)\\) must hold separately for each of \\(2,3,5,7\\).\"]",
+      "last_claim_id": "ts_17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\nContinue from: [\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\nThese exponent ranges are readily checked to satisfy the four independent max/min conditions, so every such n works.",
+      "last_claim": "These exponent ranges are readily checked to satisfy the four independent max/min conditions, so every such n works.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\nContinue from: [\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\nTherefore exactly 48 positive integers n satisfy the given conditions.",
+      "last_claim": "Therefore exactly 48 positive integers n satisfy the given conditions.",
+      "last_claim_id": "ts_21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\n[\"The four exponent conditions are independent, so the number of admissible tuples \\((x,y,z,w)\\) is the product of the sizes of the four sets of admissible exponents.\", \"Hence exactly \\(6\\cdot4\\cdot1\\cdot2=48\\) such \\(n\\) exist, which is option (D).\"]\nNo primes other than 2, 3, 5 and 7 may divide n, for any such prime would appear to a positive power on the left-hand side of the given LCM\u2013GCD identity but to power 0 on the right-hand side.",
+      "last_claim": "No primes other than 2, 3, 5 and 7 may divide n, for any such prime would appear to a positive power on the left-hand side of the given LCM\u2013GCD identity but to power 0 on the right-hand side.",
+      "last_claim_id": "tc_5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.\n[\"n is of the form \\(2^x 3^y 5^z 7^w\\) with \\(x,y,w\\\\ge 0\\) and \\(z\\\\ge 1\\).\", \"Equating prime exponents in \\(\\\\operatorname{lcm}(5!,n)=5\\\\operatorname{gcd}(10!,n)\\) yields the four independent conditions \\(\\\\max(3,x)=\\\\min(8,x)\\), \\(\\\\max(1,y)=\\\\min(4,y)\\), \\(z=1+\\\\min(2,z)\\) and \\(w=\\\\min(1,w)\\).\"]\n[\"The exponent conditions are equivalent to \\(x\\in\\{3,4,5,6,7,8\\}\\), \\(y\\in\\{1,2,3,4\\}\\), \\(z=3\\) and \\(w\\in\\{0,1\\}\\).\", \"Thus there are \\(6\\cdot4\\cdot1\\cdot2=48\\) such positive integers \\(n\\).\"]\n[\"The four exponent conditions are independent, so the number of admissible tuples \\((x,y,z,w)\\) is the product of the sizes of the four sets of admissible exponents.\", \"Hence exactly \\(6\\cdot4\\cdot1\\cdot2=48\\) such \\(n\\) exist, which is option (D).\"]\nThe four independent exponent ranges therefore enumerate all solutions, confirming that the number of admissible n is exactly 48.",
+      "last_claim": "The four independent exponent ranges therefore enumerate all solutions, confirming that the number of admissible n is exactly 48.",
+      "last_claim_id": "ts_22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

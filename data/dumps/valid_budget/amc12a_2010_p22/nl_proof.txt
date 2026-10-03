@@ -1,0 +1,23 @@
+The function under consideration is \(f(x)=\sum_{k=1}^{119}|kx-1|\). Equivalently, \(f(x)=\sum_{k=1}^{119}k|x-1/k|\). Thus a minimizer of \(f\) is a weighted median of the points \(\{1/k\}_{k=1}^{119}\) with respective weights \(k\).
+
+The total weight is \(7140\), so any weighted median must have cumulative weight at least \(3570\) on each side. The right-hand partial sum \(\sum_{k=85}^{119}k=3570\) therefore forces every minimizer to lie in the interval \([1/85,1/84]\).
+
+The slope of \(f\) increases by \(2k\) at each kink \(1/k\). In particular the slope on \((-\infty,1/119)\) equals \(-7140\), and the same increment rule shows that the slope vanishes throughout the closed interval \([1/85,1/84]\). Convexity of \(f\) then implies that the constant value of \(f\) on this interval is the global minimum.
+
+It remains only to evaluate the constant. At the left endpoint one has
+\[
+|kx-1|=\begin{cases}
+1-k/85 & (k\le84),\\
+0 & (k=85),\\
+k/85-1 & (k\ge86).
+\end{cases}
+\]
+Hence
+\[
+f(1/85)=\sum_{k=1}^{84}(1-k/85)+\sum_{k=86}^{119}(k/85-1).
+\]
+The coefficients of \(1/85\) cancel, leaving the constant \(84-35=49\). The same arithmetic may be rewritten
+\[
+f(1/85)=\sum_{k=1}^{84}|k/85-1|+|1-1|+\sum_{k=86}^{119}|k/85-1|=84-3570/85+3485/85-34=49.
+\]
+Thus the minimum value of \(f\) is \(49\).

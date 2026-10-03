@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_780",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and $6^{-1}\\equiv 6^2\\pmod m$. What is $m$? Show that it is 43.",
+      "statement": "Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and $6^{-1}\\equiv 6^2\\pmod m$. What is $m$? Show that it is 43.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12261",
+      "natural_language": "Advance the argument (step 19069): continue from Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and",
+      "statement": "Advance the argument (step 19069): continue from Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.40032038451271784,
+      "support": null
+    },
+    {
+      "id": "l12262",
+      "natural_language": "Advance the argument (step 19070): continue from Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and",
+      "statement": "Advance the argument (step 19070): continue from Suppose $m$ is a two-digit positive integer such that $6^{-1}\\pmod m$ exists and",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7302967433402215,
+      "support": null
+    }
+  ]
+}

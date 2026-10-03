@@ -1,0 +1,74 @@
+{
+  "problem_id": "algebra_binomnegdiscrineq_10alt28asqp1",
+  "nodes": [
+    {
+      "id": "tc_7",
+      "natural_language": "Thus the quadratic 28x^{2}-10x+1>0 for every real x.",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.31622776601683794,
+      "support": null
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Therefore 28a^{2}-10a+1\\ge0 holds for every real a, which is the desired inequality.",
+      "statement": "For any real number a, 10a\\le28a^{2}+1.",
+      "dependencies": [
+        "tc_7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "tc_8",
+      "natural_language": "Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).",
+      "statement": "28x^{2}-10x+1>0 for every real x.",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.19069251784911848,
+      "support": null
+    },
+    {
+      "id": "tc_9",
+      "natural_language": "Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.",
+      "statement": "28a^{2}-10a+1>0 for every real a, hence 10a<28a^{2}+1 for every real a.",
+      "dependencies": [
+        "tc_8"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.10050378152592121,
+      "support": null
+    },
+    {
+      "id": "tc_10",
+      "natural_language": "The original inequality therefore holds for every real number a.",
+      "statement": "For any real number a, 10a ≤ 28a^{2} + 1.",
+      "dependencies": [
+        "tc_7",
+        "ts_4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.4950737714883372,
+      "support": null
+    },
+    {
+      "id": "tc_11",
+      "natural_language": "In fact the inequality is always strict, since the quadratic never vanishes.",
+      "statement": "28x^{2}-10x+1>0 for every real x, hence 10a<28a^{2}+1 for every real a.",
+      "dependencies": [
+        "tc_7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

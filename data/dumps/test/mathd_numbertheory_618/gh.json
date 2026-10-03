@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_618",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers for many small positive integer values of $n$. What is the smallest positive integer $n$ for which $p(n)$ and $p(n+1)$ share a common factor greater than $1$? Show that it is 41.",
+      "statement": "Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers for many small positive integer values of $n$. What is the smallest positive integer $n$ for which $p(n)$ and $p(n+1)$ share a common factor greater than $1$? Show that it is 41.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12045",
+      "natural_language": "Advance the argument (step 18733): continue from Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers",
+      "statement": "Advance the argument (step 18733): continue from Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.4751310967331989,
+      "support": null
+    },
+    {
+      "id": "l12046",
+      "natural_language": "Advance the argument (step 18734): continue from Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers",
+      "statement": "Advance the argument (step 18734): continue from Euler discovered that the polynomial $p(n) = n^2 - n + 41$ yields prime numbers",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6981064763052496,
+      "support": null
+    }
+  ]
+}

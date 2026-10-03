@@ -1,0 +1,1435 @@
+{
+  "problem_id": "mathd_algebra_214",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$. Show that it is 7.",
+      "statement": "The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$. Show that it is 7.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$. Show that it is 7.\nAdvance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th\nAdvance the argument (step 10840): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$\nAdvance the argument (step 10849): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083\nAdvance the argument (step 10861): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084\nAdvance the argument (step 10873): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084\nAdvance the argument (step 10886): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086\nAdvance the argument (step 10901): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "statement": "The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  The vertex of this parabola is $(2,3)$ and the parabola contains the point $(4,4)$.  Find the value of $y$ when $x=6$. Show that it is 7.\nAdvance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th\nAdvance the argument (step 10840): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$\nAdvance the argument (step 10849): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083\nAdvance the argument (step 10861): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084\nAdvance the argument (step 10873): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084\nAdvance the argument (step 10886): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086\nAdvance the argument (step 10901): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7022",
+        "l1",
+        "l6979",
+        "l6980",
+        "l6981",
+        "l6982",
+        "l6987",
+        "l6988",
+        "l6989",
+        "l6990",
+        "l6995",
+        "l6996",
+        "l6997",
+        "l6998",
+        "l7003",
+        "l7004",
+        "l7005",
+        "l7006",
+        "l7011",
+        "l7012",
+        "l7013",
+        "l7014",
+        "l7015",
+        "l7016",
+        "l7017",
+        "l7018",
+        "l7019",
+        "l7020",
+        "l7021"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6969",
+      "natural_language": "Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th",
+      "statement": "Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.8947368421052632
+    },
+    {
+      "id": "l6970",
+      "natural_language": "Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th",
+      "statement": "Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$ is a parabola with vertical axis of symmetry.  Th",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3871",
+      "natural_language": "dead-end unused case 10839: discard this alternative",
+      "statement": "dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.05263157894736842
+    },
+    {
+      "id": "ts_dead_3871",
+      "natural_language": "dead-end unused case 10839: discard this alternative",
+      "statement": "dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "l_dead_3871"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6971",
+      "natural_language": "Advance the argument (step 10840): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$",
+      "statement": "Advance the argument (step 10840): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$",
+      "dependencies": [
+        "l6969"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.8245614035087719
+    },
+    {
+      "id": "l6972",
+      "natural_language": "Advance the argument (step 10841): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$",
+      "statement": "Advance the argument (step 10841): continue from Advance the argument (step 10837): continue from The graph of $y=ax^2 + bx + c$",
+      "dependencies": [
+        "l6969"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3872",
+      "natural_language": "dead-end unused case 10842: discard this alternative",
+      "statement": "dead-end unused case 10842: discard this alternative",
+      "dependencies": [
+        "l6969"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3872",
+      "natural_language": "dead-end unused case 10842: discard this alternative",
+      "statement": "dead-end unused case 10842: discard this alternative",
+      "dependencies": [
+        "l_dead_3872"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6973",
+      "natural_language": "Advance the argument (step 10843): continue from Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$",
+      "statement": "Advance the argument (step 10843): continue from Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$",
+      "dependencies": [
+        "l6970"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l6974",
+      "natural_language": "Advance the argument (step 10844): continue from Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$",
+      "statement": "Advance the argument (step 10844): continue from Advance the argument (step 10838): continue from The graph of $y=ax^2 + bx + c$",
+      "dependencies": [
+        "l6970"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3873",
+      "natural_language": "dead-end unused case 10845: discard this alternative",
+      "statement": "dead-end unused case 10845: discard this alternative",
+      "dependencies": [
+        "l6970"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3873",
+      "natural_language": "dead-end unused case 10845: discard this alternative",
+      "statement": "dead-end unused case 10845: discard this alternative",
+      "dependencies": [
+        "l_dead_3873"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_3874",
+      "natural_language": "Advance the argument (step 10846): continue from dead-end unused case 10839: discard this alternative",
+      "statement": "Advance the argument (step 10846): continue from dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "l_dead_3871"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3874",
+      "natural_language": "Advance the argument (step 10846): continue from dead-end unused case 10839: discard this alternative",
+      "statement": "Advance the argument (step 10846): continue from dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "l_dead_3874"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_3875",
+      "natural_language": "Advance the argument (step 10847): continue from dead-end unused case 10839: discard this alternative",
+      "statement": "Advance the argument (step 10847): continue from dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "l_dead_3871"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3875",
+      "natural_language": "Advance the argument (step 10847): continue from dead-end unused case 10839: discard this alternative",
+      "statement": "Advance the argument (step 10847): continue from dead-end unused case 10839: discard this alternative",
+      "dependencies": [
+        "l_dead_3875"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l_dead_3876",
+      "natural_language": "dead-end unused case 10848: discard this alternative",
+      "statement": "dead-end unused case 10848: discard this alternative",
+      "dependencies": [
+        "l_dead_3871"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3876",
+      "natural_language": "dead-end unused case 10848: discard this alternative",
+      "statement": "dead-end unused case 10848: discard this alternative",
+      "dependencies": [
+        "l_dead_3876"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6975",
+      "natural_language": "Advance the argument (step 10849): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10849): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6971"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.7543859649122807
+    },
+    {
+      "id": "l6976",
+      "natural_language": "Advance the argument (step 10850): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10850): continue from Advance the argument (step 10840): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6971"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3877",
+      "natural_language": "dead-end unused case 10851: discard this alternative",
+      "statement": "dead-end unused case 10851: discard this alternative",
+      "dependencies": [
+        "l6971"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b15",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3877",
+      "natural_language": "dead-end unused case 10851: discard this alternative",
+      "statement": "dead-end unused case 10851: discard this alternative",
+      "dependencies": [
+        "l_dead_3877"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b15",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6977",
+      "natural_language": "Advance the argument (step 10852): continue from Advance the argument (step 10841): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10852): continue from Advance the argument (step 10841): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6972"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b16",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l6978",
+      "natural_language": "Advance the argument (step 10853): continue from Advance the argument (step 10841): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10853): continue from Advance the argument (step 10841): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6972"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b17",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3878",
+      "natural_language": "dead-end unused case 10854: discard this alternative",
+      "statement": "dead-end unused case 10854: discard this alternative",
+      "dependencies": [
+        "l6972"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b18",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3878",
+      "natural_language": "dead-end unused case 10854: discard this alternative",
+      "statement": "dead-end unused case 10854: discard this alternative",
+      "dependencies": [
+        "l_dead_3878"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b18",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6979",
+      "natural_language": "Advance the argument (step 10855): continue from Advance the argument (step 10843): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10855): continue from Advance the argument (step 10843): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6973"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b19",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6980",
+      "natural_language": "Advance the argument (step 10856): continue from Advance the argument (step 10843): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10856): continue from Advance the argument (step 10843): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6973"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b20",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3879",
+      "natural_language": "dead-end unused case 10857: discard this alternative",
+      "statement": "dead-end unused case 10857: discard this alternative",
+      "dependencies": [
+        "l6973"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b21",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3879",
+      "natural_language": "dead-end unused case 10857: discard this alternative",
+      "statement": "dead-end unused case 10857: discard this alternative",
+      "dependencies": [
+        "l_dead_3879"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b21",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6981",
+      "natural_language": "Advance the argument (step 10858): continue from Advance the argument (step 10844): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10858): continue from Advance the argument (step 10844): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6974"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b22",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6982",
+      "natural_language": "Advance the argument (step 10859): continue from Advance the argument (step 10844): continue from Advance the argument (step 1083",
+      "statement": "Advance the argument (step 10859): continue from Advance the argument (step 10844): continue from Advance the argument (step 1083",
+      "dependencies": [
+        "l6974"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b23",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3880",
+      "natural_language": "dead-end unused case 10860: discard this alternative",
+      "statement": "dead-end unused case 10860: discard this alternative",
+      "dependencies": [
+        "l6974"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b24",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3880",
+      "natural_language": "dead-end unused case 10860: discard this alternative",
+      "statement": "dead-end unused case 10860: discard this alternative",
+      "dependencies": [
+        "l_dead_3880"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b24",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6983",
+      "natural_language": "Advance the argument (step 10861): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10861): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6975"
+      ],
+      "search_node_id": "sn_13",
+      "branch_id": "b25",
+      "salience": null,
+      "support": 0.6842105263157895
+    },
+    {
+      "id": "l6984",
+      "natural_language": "Advance the argument (step 10862): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10862): continue from Advance the argument (step 10849): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6975"
+      ],
+      "search_node_id": "sn_13",
+      "branch_id": "b26",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3881",
+      "natural_language": "dead-end unused case 10863: discard this alternative",
+      "statement": "dead-end unused case 10863: discard this alternative",
+      "dependencies": [
+        "l6975"
+      ],
+      "search_node_id": "sn_13",
+      "branch_id": "b27",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3881",
+      "natural_language": "dead-end unused case 10863: discard this alternative",
+      "statement": "dead-end unused case 10863: discard this alternative",
+      "dependencies": [
+        "l_dead_3881"
+      ],
+      "search_node_id": "sn_13",
+      "branch_id": "b27",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6985",
+      "natural_language": "Advance the argument (step 10864): continue from Advance the argument (step 10850): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10864): continue from Advance the argument (step 10850): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6976"
+      ],
+      "search_node_id": "sn_14",
+      "branch_id": "b28",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l6986",
+      "natural_language": "Advance the argument (step 10865): continue from Advance the argument (step 10850): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10865): continue from Advance the argument (step 10850): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6976"
+      ],
+      "search_node_id": "sn_14",
+      "branch_id": "b29",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3882",
+      "natural_language": "dead-end unused case 10866: discard this alternative",
+      "statement": "dead-end unused case 10866: discard this alternative",
+      "dependencies": [
+        "l6976"
+      ],
+      "search_node_id": "sn_14",
+      "branch_id": "b30",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3882",
+      "natural_language": "dead-end unused case 10866: discard this alternative",
+      "statement": "dead-end unused case 10866: discard this alternative",
+      "dependencies": [
+        "l_dead_3882"
+      ],
+      "search_node_id": "sn_14",
+      "branch_id": "b30",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6987",
+      "natural_language": "Advance the argument (step 10867): continue from Advance the argument (step 10852): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10867): continue from Advance the argument (step 10852): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6977"
+      ],
+      "search_node_id": "sn_16",
+      "branch_id": "b31",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6988",
+      "natural_language": "Advance the argument (step 10868): continue from Advance the argument (step 10852): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10868): continue from Advance the argument (step 10852): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6977"
+      ],
+      "search_node_id": "sn_16",
+      "branch_id": "b32",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3883",
+      "natural_language": "dead-end unused case 10869: discard this alternative",
+      "statement": "dead-end unused case 10869: discard this alternative",
+      "dependencies": [
+        "l6977"
+      ],
+      "search_node_id": "sn_16",
+      "branch_id": "b33",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3883",
+      "natural_language": "dead-end unused case 10869: discard this alternative",
+      "statement": "dead-end unused case 10869: discard this alternative",
+      "dependencies": [
+        "l_dead_3883"
+      ],
+      "search_node_id": "sn_16",
+      "branch_id": "b33",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6989",
+      "natural_language": "Advance the argument (step 10870): continue from Advance the argument (step 10853): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10870): continue from Advance the argument (step 10853): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6978"
+      ],
+      "search_node_id": "sn_17",
+      "branch_id": "b34",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6990",
+      "natural_language": "Advance the argument (step 10871): continue from Advance the argument (step 10853): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10871): continue from Advance the argument (step 10853): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6978"
+      ],
+      "search_node_id": "sn_17",
+      "branch_id": "b35",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3884",
+      "natural_language": "dead-end unused case 10872: discard this alternative",
+      "statement": "dead-end unused case 10872: discard this alternative",
+      "dependencies": [
+        "l6978"
+      ],
+      "search_node_id": "sn_17",
+      "branch_id": "b36",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3884",
+      "natural_language": "dead-end unused case 10872: discard this alternative",
+      "statement": "dead-end unused case 10872: discard this alternative",
+      "dependencies": [
+        "l_dead_3884"
+      ],
+      "search_node_id": "sn_17",
+      "branch_id": "b36",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6991",
+      "natural_language": "Advance the argument (step 10873): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10873): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6983"
+      ],
+      "search_node_id": "sn_25",
+      "branch_id": "b37",
+      "salience": null,
+      "support": 0.6140350877192983
+    },
+    {
+      "id": "l6992",
+      "natural_language": "Advance the argument (step 10874): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10874): continue from Advance the argument (step 10861): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6983"
+      ],
+      "search_node_id": "sn_25",
+      "branch_id": "b38",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3885",
+      "natural_language": "dead-end unused case 10875: discard this alternative",
+      "statement": "dead-end unused case 10875: discard this alternative",
+      "dependencies": [
+        "l6983"
+      ],
+      "search_node_id": "sn_25",
+      "branch_id": "b39",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3885",
+      "natural_language": "dead-end unused case 10875: discard this alternative",
+      "statement": "dead-end unused case 10875: discard this alternative",
+      "dependencies": [
+        "l_dead_3885"
+      ],
+      "search_node_id": "sn_25",
+      "branch_id": "b39",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6993",
+      "natural_language": "Advance the argument (step 10876): continue from Advance the argument (step 10862): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10876): continue from Advance the argument (step 10862): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6984"
+      ],
+      "search_node_id": "sn_26",
+      "branch_id": "b40",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l6994",
+      "natural_language": "Advance the argument (step 10877): continue from Advance the argument (step 10862): continue from Advance the argument (step 1084",
+      "statement": "Advance the argument (step 10877): continue from Advance the argument (step 10862): continue from Advance the argument (step 1084",
+      "dependencies": [
+        "l6984"
+      ],
+      "search_node_id": "sn_26",
+      "branch_id": "b41",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3886",
+      "natural_language": "dead-end unused case 10878: discard this alternative",
+      "statement": "dead-end unused case 10878: discard this alternative",
+      "dependencies": [
+        "l6984"
+      ],
+      "search_node_id": "sn_26",
+      "branch_id": "b42",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3886",
+      "natural_language": "dead-end unused case 10878: discard this alternative",
+      "statement": "dead-end unused case 10878: discard this alternative",
+      "dependencies": [
+        "l_dead_3886"
+      ],
+      "search_node_id": "sn_26",
+      "branch_id": "b42",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6995",
+      "natural_language": "Advance the argument (step 10879): continue from Advance the argument (step 10864): continue from Advance the argument (step 1085",
+      "statement": "Advance the argument (step 10879): continue from Advance the argument (step 10864): continue from Advance the argument (step 1085",
+      "dependencies": [
+        "l6985"
+      ],
+      "search_node_id": "sn_28",
+      "branch_id": "b43",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6996",
+      "natural_language": "Advance the argument (step 10880): continue from Advance the argument (step 10864): continue from Advance the argument (step 1085",
+      "statement": "Advance the argument (step 10880): continue from Advance the argument (step 10864): continue from Advance the argument (step 1085",
+      "dependencies": [
+        "l6985"
+      ],
+      "search_node_id": "sn_28",
+      "branch_id": "b44",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3887",
+      "natural_language": "dead-end unused case 10881: discard this alternative",
+      "statement": "dead-end unused case 10881: discard this alternative",
+      "dependencies": [
+        "l6985"
+      ],
+      "search_node_id": "sn_28",
+      "branch_id": "b45",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3887",
+      "natural_language": "dead-end unused case 10881: discard this alternative",
+      "statement": "dead-end unused case 10881: discard this alternative",
+      "dependencies": [
+        "l_dead_3887"
+      ],
+      "search_node_id": "sn_28",
+      "branch_id": "b45",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6997",
+      "natural_language": "Advance the argument (step 10882): continue from Advance the argument (step 10865): continue from Advance the argument (step 1085",
+      "statement": "Advance the argument (step 10882): continue from Advance the argument (step 10865): continue from Advance the argument (step 1085",
+      "dependencies": [
+        "l6986"
+      ],
+      "search_node_id": "sn_29",
+      "branch_id": "b46",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l6998",
+      "natural_language": "Advance the argument (step 10883): continue from Advance the argument (step 10865): continue from Advance the argument (step 1085",
+      "statement": "Advance the argument (step 10883): continue from Advance the argument (step 10865): continue from Advance the argument (step 1085",
+      "dependencies": [
+        "l6986"
+      ],
+      "search_node_id": "sn_29",
+      "branch_id": "b47",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3888",
+      "natural_language": "dead-end unused case 10884: discard this alternative",
+      "statement": "dead-end unused case 10884: discard this alternative",
+      "dependencies": [
+        "l6986"
+      ],
+      "search_node_id": "sn_29",
+      "branch_id": "b48",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3888",
+      "natural_language": "dead-end unused case 10884: discard this alternative",
+      "statement": "dead-end unused case 10884: discard this alternative",
+      "dependencies": [
+        "l_dead_3888"
+      ],
+      "search_node_id": "sn_29",
+      "branch_id": "b48",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6999",
+      "natural_language": "Advance the argument (step 10885): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10885): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6991"
+      ],
+      "search_node_id": "sn_37",
+      "branch_id": "b49",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l7000",
+      "natural_language": "Advance the argument (step 10886): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10886): continue from Advance the argument (step 10873): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6991"
+      ],
+      "search_node_id": "sn_37",
+      "branch_id": "b50",
+      "salience": null,
+      "support": 0.543859649122807
+    },
+    {
+      "id": "l_dead_3889",
+      "natural_language": "dead-end unused case 10887: discard this alternative",
+      "statement": "dead-end unused case 10887: discard this alternative",
+      "dependencies": [
+        "l6991"
+      ],
+      "search_node_id": "sn_37",
+      "branch_id": "b51",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3889",
+      "natural_language": "dead-end unused case 10887: discard this alternative",
+      "statement": "dead-end unused case 10887: discard this alternative",
+      "dependencies": [
+        "l_dead_3889"
+      ],
+      "search_node_id": "sn_37",
+      "branch_id": "b51",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7001",
+      "natural_language": "Advance the argument (step 10888): continue from Advance the argument (step 10874): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10888): continue from Advance the argument (step 10874): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6992"
+      ],
+      "search_node_id": "sn_38",
+      "branch_id": "b52",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l7002",
+      "natural_language": "Advance the argument (step 10889): continue from Advance the argument (step 10874): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10889): continue from Advance the argument (step 10874): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6992"
+      ],
+      "search_node_id": "sn_38",
+      "branch_id": "b53",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3890",
+      "natural_language": "dead-end unused case 10890: discard this alternative",
+      "statement": "dead-end unused case 10890: discard this alternative",
+      "dependencies": [
+        "l6992"
+      ],
+      "search_node_id": "sn_38",
+      "branch_id": "b54",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3890",
+      "natural_language": "dead-end unused case 10890: discard this alternative",
+      "statement": "dead-end unused case 10890: discard this alternative",
+      "dependencies": [
+        "l_dead_3890"
+      ],
+      "search_node_id": "sn_38",
+      "branch_id": "b54",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7003",
+      "natural_language": "Advance the argument (step 10891): continue from Advance the argument (step 10876): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10891): continue from Advance the argument (step 10876): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6993"
+      ],
+      "search_node_id": "sn_40",
+      "branch_id": "b55",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7004",
+      "natural_language": "Advance the argument (step 10892): continue from Advance the argument (step 10876): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10892): continue from Advance the argument (step 10876): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6993"
+      ],
+      "search_node_id": "sn_40",
+      "branch_id": "b56",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3891",
+      "natural_language": "dead-end unused case 10893: discard this alternative",
+      "statement": "dead-end unused case 10893: discard this alternative",
+      "dependencies": [
+        "l6993"
+      ],
+      "search_node_id": "sn_40",
+      "branch_id": "b57",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3891",
+      "natural_language": "dead-end unused case 10893: discard this alternative",
+      "statement": "dead-end unused case 10893: discard this alternative",
+      "dependencies": [
+        "l_dead_3891"
+      ],
+      "search_node_id": "sn_40",
+      "branch_id": "b57",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7005",
+      "natural_language": "Advance the argument (step 10894): continue from Advance the argument (step 10877): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10894): continue from Advance the argument (step 10877): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6994"
+      ],
+      "search_node_id": "sn_41",
+      "branch_id": "b58",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7006",
+      "natural_language": "Advance the argument (step 10895): continue from Advance the argument (step 10877): continue from Advance the argument (step 1086",
+      "statement": "Advance the argument (step 10895): continue from Advance the argument (step 10877): continue from Advance the argument (step 1086",
+      "dependencies": [
+        "l6994"
+      ],
+      "search_node_id": "sn_41",
+      "branch_id": "b59",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3892",
+      "natural_language": "dead-end unused case 10896: discard this alternative",
+      "statement": "dead-end unused case 10896: discard this alternative",
+      "dependencies": [
+        "l6994"
+      ],
+      "search_node_id": "sn_41",
+      "branch_id": "b60",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3892",
+      "natural_language": "dead-end unused case 10896: discard this alternative",
+      "statement": "dead-end unused case 10896: discard this alternative",
+      "dependencies": [
+        "l_dead_3892"
+      ],
+      "search_node_id": "sn_41",
+      "branch_id": "b60",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7007",
+      "natural_language": "Advance the argument (step 10897): continue from Advance the argument (step 10885): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10897): continue from Advance the argument (step 10885): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l6999"
+      ],
+      "search_node_id": "sn_49",
+      "branch_id": "b61",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l7008",
+      "natural_language": "Advance the argument (step 10898): continue from Advance the argument (step 10885): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10898): continue from Advance the argument (step 10885): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l6999"
+      ],
+      "search_node_id": "sn_49",
+      "branch_id": "b62",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3893",
+      "natural_language": "dead-end unused case 10899: discard this alternative",
+      "statement": "dead-end unused case 10899: discard this alternative",
+      "dependencies": [
+        "l6999"
+      ],
+      "search_node_id": "sn_49",
+      "branch_id": "b63",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3893",
+      "natural_language": "dead-end unused case 10899: discard this alternative",
+      "statement": "dead-end unused case 10899: discard this alternative",
+      "dependencies": [
+        "l_dead_3893"
+      ],
+      "search_node_id": "sn_49",
+      "branch_id": "b63",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7009",
+      "natural_language": "Advance the argument (step 10900): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10900): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7000"
+      ],
+      "search_node_id": "sn_50",
+      "branch_id": "b64",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l7010",
+      "natural_language": "Advance the argument (step 10901): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10901): continue from Advance the argument (step 10886): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7000"
+      ],
+      "search_node_id": "sn_50",
+      "branch_id": "b65",
+      "salience": null,
+      "support": 0.5087719298245614
+    },
+    {
+      "id": "l_dead_3894",
+      "natural_language": "dead-end unused case 10902: discard this alternative",
+      "statement": "dead-end unused case 10902: discard this alternative",
+      "dependencies": [
+        "l7000"
+      ],
+      "search_node_id": "sn_50",
+      "branch_id": "b66",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3894",
+      "natural_language": "dead-end unused case 10902: discard this alternative",
+      "statement": "dead-end unused case 10902: discard this alternative",
+      "dependencies": [
+        "l_dead_3894"
+      ],
+      "search_node_id": "sn_50",
+      "branch_id": "b66",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7011",
+      "natural_language": "Advance the argument (step 10903): continue from Advance the argument (step 10888): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10903): continue from Advance the argument (step 10888): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7001"
+      ],
+      "search_node_id": "sn_52",
+      "branch_id": "b67",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7012",
+      "natural_language": "Advance the argument (step 10904): continue from Advance the argument (step 10888): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10904): continue from Advance the argument (step 10888): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7001"
+      ],
+      "search_node_id": "sn_52",
+      "branch_id": "b68",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3895",
+      "natural_language": "dead-end unused case 10905: discard this alternative",
+      "statement": "dead-end unused case 10905: discard this alternative",
+      "dependencies": [
+        "l7001"
+      ],
+      "search_node_id": "sn_52",
+      "branch_id": "b69",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3895",
+      "natural_language": "dead-end unused case 10905: discard this alternative",
+      "statement": "dead-end unused case 10905: discard this alternative",
+      "dependencies": [
+        "l_dead_3895"
+      ],
+      "search_node_id": "sn_52",
+      "branch_id": "b69",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7013",
+      "natural_language": "Advance the argument (step 10906): continue from Advance the argument (step 10889): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10906): continue from Advance the argument (step 10889): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7002"
+      ],
+      "search_node_id": "sn_53",
+      "branch_id": "b70",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7014",
+      "natural_language": "Advance the argument (step 10907): continue from Advance the argument (step 10889): continue from Advance the argument (step 1087",
+      "statement": "Advance the argument (step 10907): continue from Advance the argument (step 10889): continue from Advance the argument (step 1087",
+      "dependencies": [
+        "l7002"
+      ],
+      "search_node_id": "sn_53",
+      "branch_id": "b71",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3896",
+      "natural_language": "dead-end unused case 10908: discard this alternative",
+      "statement": "dead-end unused case 10908: discard this alternative",
+      "dependencies": [
+        "l7002"
+      ],
+      "search_node_id": "sn_53",
+      "branch_id": "b72",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3896",
+      "natural_language": "dead-end unused case 10908: discard this alternative",
+      "statement": "dead-end unused case 10908: discard this alternative",
+      "dependencies": [
+        "l_dead_3896"
+      ],
+      "search_node_id": "sn_53",
+      "branch_id": "b72",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7015",
+      "natural_language": "Advance the argument (step 10909): continue from Advance the argument (step 10897): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10909): continue from Advance the argument (step 10897): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7007"
+      ],
+      "search_node_id": "sn_61",
+      "branch_id": "b73",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7016",
+      "natural_language": "Advance the argument (step 10910): continue from Advance the argument (step 10897): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10910): continue from Advance the argument (step 10897): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7007"
+      ],
+      "search_node_id": "sn_61",
+      "branch_id": "b74",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3897",
+      "natural_language": "dead-end unused case 10911: discard this alternative",
+      "statement": "dead-end unused case 10911: discard this alternative",
+      "dependencies": [
+        "l7007"
+      ],
+      "search_node_id": "sn_61",
+      "branch_id": "b75",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3897",
+      "natural_language": "dead-end unused case 10911: discard this alternative",
+      "statement": "dead-end unused case 10911: discard this alternative",
+      "dependencies": [
+        "l_dead_3897"
+      ],
+      "search_node_id": "sn_61",
+      "branch_id": "b75",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7017",
+      "natural_language": "Advance the argument (step 10912): continue from Advance the argument (step 10898): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10912): continue from Advance the argument (step 10898): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7008"
+      ],
+      "search_node_id": "sn_62",
+      "branch_id": "b76",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7018",
+      "natural_language": "Advance the argument (step 10913): continue from Advance the argument (step 10898): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10913): continue from Advance the argument (step 10898): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7008"
+      ],
+      "search_node_id": "sn_62",
+      "branch_id": "b77",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3898",
+      "natural_language": "dead-end unused case 10914: discard this alternative",
+      "statement": "dead-end unused case 10914: discard this alternative",
+      "dependencies": [
+        "l7008"
+      ],
+      "search_node_id": "sn_62",
+      "branch_id": "b78",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3898",
+      "natural_language": "dead-end unused case 10914: discard this alternative",
+      "statement": "dead-end unused case 10914: discard this alternative",
+      "dependencies": [
+        "l_dead_3898"
+      ],
+      "search_node_id": "sn_62",
+      "branch_id": "b78",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7019",
+      "natural_language": "Advance the argument (step 10915): continue from Advance the argument (step 10900): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10915): continue from Advance the argument (step 10900): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7009"
+      ],
+      "search_node_id": "sn_64",
+      "branch_id": "b79",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7020",
+      "natural_language": "Advance the argument (step 10916): continue from Advance the argument (step 10900): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10916): continue from Advance the argument (step 10900): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7009"
+      ],
+      "search_node_id": "sn_64",
+      "branch_id": "b80",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3899",
+      "natural_language": "dead-end unused case 10917: discard this alternative",
+      "statement": "dead-end unused case 10917: discard this alternative",
+      "dependencies": [
+        "l7009"
+      ],
+      "search_node_id": "sn_64",
+      "branch_id": "b81",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3899",
+      "natural_language": "dead-end unused case 10917: discard this alternative",
+      "statement": "dead-end unused case 10917: discard this alternative",
+      "dependencies": [
+        "l_dead_3899"
+      ],
+      "search_node_id": "sn_64",
+      "branch_id": "b81",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7021",
+      "natural_language": "Advance the argument (step 10918): continue from Advance the argument (step 10901): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10918): continue from Advance the argument (step 10901): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7010"
+      ],
+      "search_node_id": "sn_65",
+      "branch_id": "b82",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l7022",
+      "natural_language": "Advance the argument (step 10919): continue from Advance the argument (step 10901): continue from Advance the argument (step 1088",
+      "statement": "Advance the argument (step 10919): continue from Advance the argument (step 10901): continue from Advance the argument (step 1088",
+      "dependencies": [
+        "l7010"
+      ],
+      "search_node_id": "sn_65",
+      "branch_id": "b83",
+      "salience": null,
+      "support": 0.49122807017543857
+    },
+    {
+      "id": "l_dead_3900",
+      "natural_language": "dead-end unused case 10920: discard this alternative",
+      "statement": "dead-end unused case 10920: discard this alternative",
+      "dependencies": [
+        "l7010"
+      ],
+      "search_node_id": "sn_65",
+      "branch_id": "b84",
+      "salience": null,
+      "support": 0.017543859649122806
+    },
+    {
+      "id": "ts_dead_3900",
+      "natural_language": "dead-end unused case 10920: discard this alternative",
+      "statement": "dead-end unused case 10920: discard this alternative",
+      "dependencies": [
+        "l_dead_3900"
+      ],
+      "search_node_id": "sn_65",
+      "branch_id": "b84",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

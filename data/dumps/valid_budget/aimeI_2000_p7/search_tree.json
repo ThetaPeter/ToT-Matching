@@ -1,0 +1,204 @@
+{
+  "problem_id": "aimeI_2000_p7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim": "[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim": "[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\nContinue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim": "Continue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\nContinue from:\n[\"Since \\(xyz=1\\), we have \\(\\frac{1}{z}=xy\\), so the second equation becomes \\(x+xy=5\\), or equivalently \\(x(1+y)=5\\).\", \"From the third equation we have \\(\\frac{1}{x}=29-y\\), hence \\(x=\\frac{1}{29-y}\\).\"]",
+      "last_claim": "[\"Since \\(xyz=1\\), we have \\(\\frac{1}{z}=xy\\), so the second equation becomes \\(x+xy=5\\), or equivalently \\(x(1+y)=5\\).\", \"From the third equation we have \\(\\frac{1}{x}=29-y\\), hence \\(x=\\frac{1}{29-y}\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\n[\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]",
+      "last_claim": "[\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\nContinue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\nContinue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"From the third equation \\(y + 1/x = 29\\), it follows that \\(x = 1/(29 - y)\\).\", \"Substituting this expression for \\(x\\) into \\(x(1 + y) = 5\\) yields \\((1 + y)/(29 - y) = 5\\).\"]",
+      "last_claim": "[\"From the third equation \\(y + 1/x = 29\\), it follows that \\(x = 1/(29 - y)\\).\", \"Substituting this expression for \\(x\\) into \\(x(1 + y) = 5\\) yields \\((1 + y)/(29 - y) = 5\\).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\nContinue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\nContinue from: Continue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\n[\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]\n[\"Multiplying both sides of \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\) by \\(1+y\\) yields \\(5y+1+y=145\\).\", \"The equation \\(x(30-\\\\frac{1}{x})=5\\) expands to \\(30x-1=5\\).\"]",
+      "last_claim": "[\"Multiplying both sides of \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\) by \\(1+y\\) yields \\(5y+1+y=145\\).\", \"The equation \\(x(30-\\\\frac{1}{x})=5\\) expands to \\(30x-1=5\\).\"]",
+      "last_claim_id": "l27",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\n[\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]\nContinue from: [\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]",
+      "last_claim": "Continue from: [\"Substituting \\(x=\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\frac{5y}{1+y}+1=29\\cdot\\frac{5}{1+y}\\).\", \"From \\(xy+1=29x\\) we obtain \\(y=29-\\frac{1}{x}\\), which substitutes into \\(x(1+y)=5\\) to give \\(x(30-\\frac{1}{x})=5\\).\"]",
+      "last_claim_id": "l28",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\nContinue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\n[\"Substituting \\(x=\\\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\\\frac{5y}{1+y}+1=\\\\frac{145}{1+y}\\).\", \"Rearranging \\(xy+1=29x\\) instead gives \\(x=\\\\frac{1}{29-y}\\), so \\(\\\\frac{5}{1+y}=\\\\frac{1}{29-y}\\).\"]",
+      "last_claim": "[\"Substituting \\(x=\\\\frac{5}{1+y}\\) into \\(xy+1=29x\\) yields \\(\\\\frac{5y}{1+y}+1=\\\\frac{145}{1+y}\\).\", \"Rearranging \\(xy+1=29x\\) instead gives \\(x=\\\\frac{1}{29-y}\\), so \\(\\\\frac{5}{1+y}=\\\\frac{1}{29-y}\\).\"]",
+      "last_claim_id": "l32",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.\n[\"From \\(xyz=1\\) it follows that \\(xy=1/z\\).\", \"The second given equation therefore rewrites as \\(x(1+y)=5\\).\"]\n[\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\nContinue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]\nContinue from: Continue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Thus \\(x=\\\\frac{5}{1+y}\\).\", \"Multiplying the third equation by \\(x\\) yields \\(xy+1=29x\\).\"]",
+      "last_claim_id": "l34",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

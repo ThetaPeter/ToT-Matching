@@ -1,0 +1,96 @@
+{
+  "problem_id": "algebra_manipexpr_2erprsqpesqeqnrpnesq",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any two complex numbers e and r, 2er + e^2 + r^2 = (-r + (-e))^2",
+      "dependencies": [
+        "l4",
+        "l5",
+        "l7",
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "By commutativity of addition, -r + (-e) equals -e - r, so their squares are identical.",
+      "statement": "(-r + (-e))^2 = (-e - r)^2",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Expanding the square gives (e + r)^2 = e^2 + 2 e r + r^2.",
+      "statement": "(e + r)^2 = e^2 + 2er + r^2",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Squaring removes the negative sign: [-(e + r)]^2 = (e + r)^2.",
+      "statement": "[-(e + r)]^2 = (e + r)^2",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Expanding the square gives (-e - r)^2 = e^2 + 2 e r + r^2.",
+      "statement": "(-e - r)^2 = e^2 + 2er + r^2",
+      "dependencies": [
+        "l3",
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Expanding the square gives (e + r)^2 = e^2 + 2er + r^2.",
+      "statement": "(e + r)^2 = e^2 + 2er + r^2",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "By commutativity of addition, the terms e^2 + 2er + r^2 can be reordered to 2er + e^2 + r^2.",
+      "statement": "e^2 + 2er + r^2 = 2er + e^2 + r^2",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Squaring removes the negative sign: [-(e + r)]^2 = (e + r)^2.",
+      "statement": "[-(e + r)]^2 = (e + r)^2",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

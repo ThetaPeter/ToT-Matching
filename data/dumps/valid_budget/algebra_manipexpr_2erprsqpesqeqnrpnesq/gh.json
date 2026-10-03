@@ -1,0 +1,51 @@
+{
+  "problem_id": "algebra_manipexpr_2erprsqpesqeqnrpnesq",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any two complex numbers e and r, 2er + e^2 + r^2 = (-r + (-e))^2",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5892556509887896,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Expanding the square gives (e + r)^2 = e^2 + 2er + r^2.",
+      "statement": "(e + r)^2 = e^2 + 2er + r^2",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.3086066999241839,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Squaring removes the negative sign: [-(e + r)]^2 = (e + r)^2.",
+      "statement": "[-(e + r)]^2 = (e + r)^2",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.42257712736425834,
+      "support": null
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "We restate the target equality obtained by chaining the expansions and commutativity steps.",
+      "statement": "2er + e^2 + r^2 = (-r + (-e))^2",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.17407765595569785,
+      "support": null
+    }
+  ]
+}

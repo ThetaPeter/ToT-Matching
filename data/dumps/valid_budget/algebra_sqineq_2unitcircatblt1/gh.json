@@ -1,0 +1,51 @@
+{
+  "problem_id": "algebra_sqineq_2unitcircatblt1",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For any real numbers a and b such that a^{2} + b^{2} = 2, ab ≤ 1.",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5303300858899107,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Substituting a² + b² = 2 into a² + b² ≥ 2ab gives 2 ≥ 2ab",
+      "statement": "a² + b² = 2 ∧ a² + b² ≥ 2ab ⇒ 2 ≥ 2ab",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.2020305089104422,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Dividing both sides of 2 \\ge 2ab by 2 yields 1 \\ge ab.",
+      "statement": "2 \\ge 2ab \\implies 1 \\ge ab",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.16692446522239718,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "The inequality 1 \\ge ab is equivalent to ab \\le 1.",
+      "statement": "1 \\ge ab \\iff ab \\le 1",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.1386750490563073,
+      "support": null
+    }
+  ]
+}

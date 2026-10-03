@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_200",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and takes a total of $139$ steps, walking in a circle (so that after the 11th step he reaches the first step again). Which step of the cakewalk does he end on? Show that it is 7.",
+      "statement": "Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and takes a total of $139$ steps, walking in a circle (so that after the 11th step he reaches the first step again). Which step of the cakewalk does he end on? Show that it is 7.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l10047",
+      "natural_language": "Advance the argument (step 15625): continue from Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and",
+      "statement": "Advance the argument (step 15625): continue from Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6888023143796645,
+      "support": null
+    },
+    {
+      "id": "l10048",
+      "natural_language": "Advance the argument (step 15626): continue from Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and",
+      "statement": "Advance the argument (step 15626): continue from Tim is doing a cakewalk with $11$ steps. He takes his first step on step $1$ and",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.12009611535381537,
+      "support": null
+    }
+  ]
+}

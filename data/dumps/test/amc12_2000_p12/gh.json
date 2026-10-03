@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12_2000_p12",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $A, M,$ and $C$ be [[nonnegative integer]]s such that $A + M + C=12$. What is the maximum value of $A \\cdot M \\cdot C + A \\cdot M + M \\cdot C + A \\cdot C$?\n\n$ \\mathrm{(A) \\ 62 } \\qquad \\mathrm{(B) \\ 72 } \\qquad \\mathrm{(C) \\ 92 } \\qquad \\mathrm{(D) \\ 102 } \\qquad \\mathrm{(E) \\ 112 }  $ Show that it is \\text{E}.",
+      "statement": "Let $A, M,$ and $C$ be [[nonnegative integer]]s such that $A + M + C=12$. What is the maximum value of $A \\cdot M \\cdot C + A \\cdot M + M \\cdot C + A \\cdot C$?\n\n$ \\mathrm{(A) \\ 62 } \\qquad \\mathrm{(B) \\ 72 } \\qquad \\mathrm{(C) \\ 92 } \\qquad \\mathrm{(D) \\ 102 } \\qquad \\mathrm{(E) \\ 112 }  $ Show that it is \\text{E}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.10159281922178945,
+      "support": null
+    },
+    {
+      "id": "ts_dead_1024",
+      "natural_language": "Advance the argument (step 2866): continue from dead-end unused case 2859: discard this alternative",
+      "statement": "Advance the argument (step 2866): continue from dead-end unused case 2859: discard this alternative",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": 0.6405126152203487,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_314",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $r$ be the remainder when $1342$ is divided by $13$.\n\nDetermine the smallest positive integer that has these two properties:\n\n$\\bullet~$ It is a multiple of $1342$.\n\n$\\bullet~$ Its remainder upon being divided by $13$ is smaller than $r$. Show that it is 6710.",
+      "statement": "Let $r$ be the remainder when $1342$ is divided by $13$.\n\nDetermine the smallest positive integer that has these two properties:\n\n$\\bullet~$ It is a multiple of $1342$.\n\n$\\bullet~$ Its remainder upon being divided by $13$ is smaller than $r$. Show that it is 6710.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.32101211891111664,
+      "support": null
+    },
+    {
+      "id": "l10641",
+      "natural_language": "Advance the argument (step 16549): continue from Let $r$ be the remainder when $1342$ is divided by $13$.\n\nDetermine the smallest",
+      "statement": "Advance the argument (step 16549): continue from Let $r$ be the remainder when $1342$ is divided by $13$.\n\nDetermine the smallest",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6119900613621045,
+      "support": null
+    }
+  ]
+}

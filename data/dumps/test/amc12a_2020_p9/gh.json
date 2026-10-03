@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2020_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many solutions does the equation $\\tan(2x)=\\cos(\\tfrac{x}{2})$ have on the interval $[0,2\\pi]?$\n\n$ \\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5 $ Show that it is \\textbf{(E)}\\ 5.",
+      "statement": "How many solutions does the equation $\\tan(2x)=\\cos(\\tfrac{x}{2})$ have on the interval $[0,2\\pi]?$\n\n$ \\textbf{(A)}\\ 1\\qquad\\textbf{(B)}\\ 2\\qquad\\textbf{(C)}\\ 3\\qquad\\textbf{(D)}\\ 4\\qquad\\textbf{(E)}\\ 5 $ Show that it is \\textbf{(E)}\\ 5.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4510033457272161,
+      "support": null
+    },
+    {
+      "id": "l2865",
+      "natural_language": "Advance the argument (step 4453): continue from How many solutions does the equation $\\tan(2x)=\\cos(\\tfrac{x}{2})$ have on the i",
+      "statement": "Advance the argument (step 4453): continue from How many solutions does the equation $\\tan(2x)=\\cos(\\tfrac{x}{2})$ have on the i",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6445033866354897,
+      "support": null
+    }
+  ]
+}

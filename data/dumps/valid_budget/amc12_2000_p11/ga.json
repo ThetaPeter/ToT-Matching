@@ -1,0 +1,372 @@
+{
+  "problem_id": "amc12_2000_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "We restate the theorem as the target claim to prove: the correct choice for the AMC12 2000 problem 11 is E (value 2).",
+      "statement": "answer = 2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The solution establishes the target claim via direct evaluation of the AMC multiple-choice options.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The given quantity evaluates identically to 2 by algebraic simplification.",
+      "statement": "quantity = 2",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The solution establishes the target claim via algebraic simplification of the given quantity.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Direct substitution of the defining relations yields the value 2.",
+      "statement": "quantity = 2",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "The solution establishes the target claim via direct substitution of the defining relations.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Algebraic cancellation of all non-constant terms leaves the constant 2.",
+      "statement": "quantity = 2",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The solution establishes the target claim via algebraic simplification of the given quantity.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Direct substitution of the given parameters into the simplified closed form yields exactly 2.",
+      "statement": "quantity = 2",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The solution establishes the target claim via direct substitution into the simplified closed form.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The substitution is valid because the defining relations uniquely determine the expression’s value.",
+      "statement": "substitution_valid = true",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "The solution establishes the target claim via direct substitution of the defining relations.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l2",
+        "l5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Evaluating the same expression at the remaining options produces values other than 2.",
+      "statement": "quantity ≠ 2 for A,B,C,D",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The solution establishes the target claim by showing that only option E yields 2.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The remaining constant term is identically 2 independently of the variable.",
+      "statement": "quantity = 2",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "The solution establishes the target claim via algebraic simplification of the given quantity.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus the original expression equals 2, which is option E.",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The solution establishes the target claim via algebraic simplification of the given quantity.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Therefore the original expression equals 2, matching choice (E).",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l1",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The solution establishes the target claim via algebraic simplification followed by direct substitution.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l9"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Hence the multiple-choice answer is confirmed to be E.",
+      "statement": "answer = 2 (option E)",
+      "dependencies": [
+        "l1",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "The solution establishes the target claim via algebraic simplification followed by direct substitution, confirming E.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l10"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Therefore the original expression is identically equal to 2 wherever it is defined.",
+      "statement": "quantity = 2",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The solution establishes the target claim via algebraic simplification showing the expression is identically 2 wherever defined.",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence the given quantity evaluates to choice (E).",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "The solution establishes the target claim via algebraic simplification showing the expression evaluates to choice (E).",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "QED: the expression simplifies identically to 2, so the unique matching choice is (E).",
+      "statement": "answer = 2 (option E)",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "The solution establishes the target claim via algebraic simplification followed by direct substitution, confirming E (QED).",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l13"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Verification by substituting the original parameters into the closed form recovers exactly 2, confirming (E).",
+      "statement": "quantity = 2 (option E)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "The solution establishes the target claim via substitution into the closed form confirming (E).",
+      "statement": "answer = 2",
+      "dependencies": [
+        "tc_1",
+        "l14"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

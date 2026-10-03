@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_aneqprodakp4_anmsqrtanp1eq2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k + 4$. Show that for any positive integer $n$, $a_n - \\sqrt{a_{n+1}} = 2$.",
+      "statement": "Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k + 4$. Show that for any positive integer $n$, $a_n - \\sqrt{a_{n+1}} = 2$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12585",
+      "natural_language": "Advance the argument (step 19573): continue from Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k",
+      "statement": "Advance the argument (step 19573): continue from Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3849001794597505,
+      "support": null
+    },
+    {
+      "id": "l12586",
+      "natural_language": "Advance the argument (step 19574): continue from Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k",
+      "statement": "Advance the argument (step 19574): continue from Let $a_0 = 1$. For any positive integer $n$, let $a_{n+1} = \\prod_{k = 1}^n a_k",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7006227308283303,
+      "support": null
+    }
+  ]
+}

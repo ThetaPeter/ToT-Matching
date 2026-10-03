@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1990_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Determine all integers $n > 1$ such that $\\frac{2^n+1}{n^2}$ is an integer.",
+      "statement": "Determine all integers $n > 1$ such that $\\frac{2^n+1}{n^2}$ is an integer.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2134003986288042,
+      "support": null
+    },
+    {
+      "id": "l5079",
+      "natural_language": "Advance the argument (step 7897): continue from Determine all integers $n > 1$ such that $\\frac{2^n+1}{n^2}$ is an integer.",
+      "statement": "Advance the argument (step 7897): continue from Determine all integers $n > 1$ such that $\\frac{2^n+1}{n^2}$ is an integer.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8552359741197582,
+      "support": null
+    }
+  ]
+}

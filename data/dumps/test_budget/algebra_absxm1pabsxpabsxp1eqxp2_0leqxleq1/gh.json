@@ -1,0 +1,83 @@
+{
+  "problem_id": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any real number x, if |x-1| + |x| + |x+1| = x + 2, then 0 ≤ x ≤ 1.",
+      "statement": "∀x∈ℝ (|x−1|+|x|+|x+1|=x+2 ⟹ 0≤x≤1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2182178902359924,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Assume 0 ≤ x ≤ 1. Then LHS = (1-x) + x + (x+1) = x+2, so equality holds and thus 0 ≤ x ≤ 1.",
+      "statement": "∀x (0≤x≤1 ∧ (|x-1|+|x|+|x+1|=x+2) ⟹ 0≤x≤1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5604485383178051,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "For 0 ≤ x ≤ 1 the equality holds identically, therefore combined with the boundary cases from l1 and l2 the solutions are exactly [0,1].",
+      "statement": "∀x ( (|x-1|+|x|+|x+1|=x+2) ⟹ 0≤x≤1)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.6559360493526303,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "Assume 0 ≤ x ≤ 1. Then LHS = (1-x) + x + (x+1) = x+2, so equality holds and thus 0 ≤ x ≤ 1.",
+      "statement": "∀x (0≤x≤1 ∧ (|x-1|+|x|+|x+1|=x+2) ⟹ 0≤x≤1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": 0.31069425495224695,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "If \\(x<-1\\), then \\(|x-1|+|x|+|x+1|=-3x>x+2\\).",
+      "statement": "∀x (x<-1 ∧ (|x-1|+|x|+|x+1|=x+2) ⟹ ⊥)",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.1825741858350554,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Assume 0 ≤ x ≤ 1. Then LHS = (1-x) + x + (x+1) = x+2, so equality holds and thus 0 ≤ x ≤ 1.",
+      "statement": "∀x (0≤x≤1 ∧ (|x-1|+|x|+|x+1|=x+2) ⟹ 0≤x≤1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": 0.19925419255468715,
+      "support": null
+    },
+    {
+      "id": "l21",
+      "natural_language": "Assume 0 ≤ x ≤ 1. Then LHS = (1-x) + x + (x+1) = x+2, so equality holds.",
+      "statement": "∀x (0≤x≤1 ∧ (|x-1|+|x|+|x+1|=x+2) ⟹ 0≤x≤1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": 0.5388602512436508,
+      "support": null
+    }
+  ]
+}

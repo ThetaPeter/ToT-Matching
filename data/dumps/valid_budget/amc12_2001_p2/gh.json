@@ -1,0 +1,69 @@
+{
+  "problem_id": "amc12_2001_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let N be a two-digit integer satisfying N = P(N) + S(N).",
+      "statement": "N=10a+b with a\\in{1..9}, b\\in{0..9} and 10a+b=a*b+a+b",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3535533905932738,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Algebraic simplification of the defining equation.",
+      "statement": "10a+b=a*b+a+b implies 9a=a*b",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Subtract a+b from both sides of the equation.",
+      "statement": "10a+b=ab+a+b implies 9a=ab",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.6324555320336759,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Therefore the units digit of N is b=9.",
+      "statement": "units digit of N is 9",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.819891591749923,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Since a\neq0 we may divide by a.",
+      "statement": "9a=ab implies b=9",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.7669649888473704,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Substitute b=9 into the original equation to obtain an identity.",
+      "statement": "For b=9 the equation 10a+9=9a+a+9 holds for every a in {1..9}",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.6000000000000001,
+      "support": null
+    }
+  ]
+}

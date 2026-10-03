@@ -1,0 +1,49 @@
+{
+  "problem_id": "amc12a_2002_p1",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "Factor the equation as (2x+3)[(x-4)+(x-6)]=0 which simplifies to (2x+3)(2x-10)=0",
+      "statement": "(2x+3)(x-4)+(2x+3)(x-6) = (2x+3)(2x-10)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3333333333333333,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "The sum of these roots is -3/2 + 5 = 7/2",
+      "statement": "(-3/2) + 5 = 7/2",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.20100756305184242,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "The equation (2x+3)(2x-10)=0 holds iff 2x+3=0 or 2x-10=0, hence the roots are x=-3/2 and x=5",
+      "statement": "(2x+3)(2x-10)=0 iff 2x+3=0 or 2x-10=0 hence roots={-3/2,5}",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.4879500364742666,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "The sum of the roots is therefore -3/2+5=7/2",
+      "statement": "sum_roots((2x+3)(x-4)+(2x+3)(x-6)=0) = (-3/2)+5=7/2",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.6761234037828133,
+      "support": null
+    }
+  ]
+}

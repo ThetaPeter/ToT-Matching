@@ -1,0 +1,57 @@
+{
+  "problem_id": "amc12a_2008_p8",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "Side length of smaller cube is therefore 1.",
+      "statement": "side(small) = 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5892556509887897,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "Thus \\(t^{2}=2\\), so \\(t=\\sqrt{2}\\) (taking the positive root).",
+      "statement": "side(large) = sqrt(2)",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.21997067253203,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Solving yields \\(t=\\sqrt{2}\\).",
+      "statement": "side(large) = sqrt(2)",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Dividing both sides by 6 yields t^2 = 2.",
+      "statement": "t^2 = 2",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": 0.4719399037242694,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Thus t = sqrt(2) (positive root).",
+      "statement": "t = sqrt(2)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

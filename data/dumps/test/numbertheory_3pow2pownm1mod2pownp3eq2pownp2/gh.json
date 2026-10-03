@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_3pow2pownm1mod2pownp3eq2pownp2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2} \\mod 2^{n+3}$.",
+      "statement": "Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2} \\mod 2^{n+3}$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12531",
+      "natural_language": "Advance the argument (step 19489): continue from Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2}",
+      "statement": "Advance the argument (step 19489): continue from Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.2508264485351739,
+      "support": null
+    },
+    {
+      "id": "l12532",
+      "natural_language": "Advance the argument (step 19490): continue from Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2}",
+      "statement": "Advance the argument (step 19490): continue from Show that for positive integer $n$, the remainder of $3^{2^n} - 1 \\equiv 2^{n+2}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7456011350793258,
+      "support": null
+    }
+  ]
+}

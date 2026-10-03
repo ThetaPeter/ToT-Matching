@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1991_p6",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\n[\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim": "[\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\n[\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\n[\"Since \\(0\\le f<1\\) and \\(19/100\\le k/100\\le91/100\\), it follows that \\(0.19\\le f+k/100<1.91\\), so each \\(\\lfloor f+k/100\\rfloor\\) equals \\(0\\) or \\(1\\).\", \"There are \\(73\\) terms, so \\(0\\le S\\le73\\) where \\(S=\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor\\), and \\(73n+S=546\\) forces \\(n=7\\) and \\(S=35\\).\"]",
+      "last_claim": "[\"Since \\(0\\le f<1\\) and \\(19/100\\le k/100\\le91/100\\), it follows that \\(0.19\\le f+k/100<1.91\\), so each \\(\\lfloor f+k/100\\rfloor\\) equals \\(0\\) or \\(1\\).\", \"There are \\(73\\) terms, so \\(0\\le S\\le73\\) where \\(S=\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor\\), and \\(73n+S=546\\) forces \\(n=7\\) and \\(S=35\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\n[\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\nContinue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and \\(f=\\{r\\}\\), so that \\(r=n+f\\) with \\(n\\in\\mathbb{Z}\\) and \\(0\\le f<1\\).\", \"Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim": "[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\n[\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]",
+      "last_claim": "[\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\nContinue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\nContinue from: Continue from:\n[\"Let \\( n = \\\\lfloor r \\\\rfloor \\) and \\( f = r-n \\) with \\( 0\\\\le f<1 \\).\", \"There are 73 terms in the sum, so it equals \\( 73n+s=546 \\) where \\( s \\) is the number of integers \\( k\\\\in[19,91] \\) such that \\( f+k/100\\\\ge 1 \\).\"]",
+      "last_claim": "[\"Let \\( n = \\\\lfloor r \\\\rfloor \\) and \\( f = r-n \\) with \\( 0\\\\le f<1 \\).\", \"There are 73 terms in the sum, so it equals \\( 73n+s=546 \\) where \\( s \\) is the number of integers \\( k\\\\in[19,91] \\) such that \\( f+k/100\\\\ge 1 \\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: Continue from: ",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.8,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\nContinue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\n[\"Each \\(\\lfloor f+k/100\\rfloor\\) equals 0 or 1, so their sum \\(S\\) satisfies \\(0\\le S\\le 73\\).\", \"Hence \\(73n\\le 546\\le 73n+73\\), which forces \\(n=7\\) and \\(S=35\\).\"]",
+      "last_claim": "[\"Each \\(\\lfloor f+k/100\\rfloor\\) equals 0 or 1, so their sum \\(S\\) satisfies \\(0\\le S\\le 73\\).\", \"Hence \\(73n\\le 546\\le 73n+73\\), which forces \\(n=7\\) and \\(S=35\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\nContinue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\nContinue from: Continue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.1,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\n[\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]\n[\"The sum equals the number of integers \\(k\\) with \\(19\\le k\\le91\\) and \\(k\\ge t\\), which is therefore 35.\", \"Thus \\(91-\\max(19,\\lceil t\\rceil)+1=35\\), so \\(\\max(19,\\lceil t\\rceil)=57\\) and hence \\(\\lceil t\\rceil=57\\).\"]",
+      "last_claim": "[\"The sum equals the number of integers \\(k\\) with \\(19\\le k\\le91\\) and \\(k\\ge t\\), which is therefore 35.\", \"Thus \\(91-\\max(19,\\lceil t\\rceil)+1=35\\), so \\(\\max(19,\\lceil t\\rceil)=57\\) and hence \\(\\lceil t\\rceil=57\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "Suppose $r^{}_{}$ is a [[real number]] for which\n<div style=\"text-align:center\">$\n\\left\\lfloor r + \\frac{19}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{20}{100} \\right\\rfloor + \\left\\lfloor r + \\frac{21}{100} \\right\\rfloor + \\cdots + \\left\\lfloor r + \\frac{91}{100} \\right\\rfloor = 546.\n$</div>\nFind $\\lfloor 100r \\rfloor$. (For real $x^{}_{}$, $\\lfloor x \\rfloor$ is the [[floor function|greatest integer]] less than or equal to $x^{}_{}$.) Show that it is 743.\nContinue from:\n[\"Let \\(n=\\lfloor r\\rfloor\\) and write \\(r=n+f\\) with \\(0\\le f<1\\).\", \"There are 73 summands, so the given equation becomes \\(73n+\\sum_{k=19}^{91}\\lfloor f+k/100\\rfloor=546\\).\"]\n[\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]\nContinue from: [\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]",
+      "last_claim": "Continue from: [\"Since \\(0\\\\le\\\\sum_{k=19}^{91}\\\\lfloor f+k/100\\\\rfloor\\\\le73\\), necessarily \\(n=7\\) and the sum of floors equals \\(35\\).\", \"Let \\(t=100(1-f)\\). Then \\(\\\\lfloor f+k/100\\\\rfloor=0\\) for all \\(k<t\\) (with \\(19\\\\le k\\\\le91\\)) and equals \\(1\\) otherwise.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

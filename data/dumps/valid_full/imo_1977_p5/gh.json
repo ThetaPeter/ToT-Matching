@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1977_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the remainder $r$ and the quotient $q.$ Determine all pairs $(a, b)$ for which $q^2 + r = 1977.$ Show that it is (a,b)=(37,50) , (7, 50).",
+      "statement": "Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the remainder $r$ and the quotient $q.$ Determine all pairs $(a, b)$ for which $q^2 + r = 1977.$ Show that it is (a,b)=(37,50) , (7, 50).",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.27602622373694174,
+      "support": null
+    },
+    {
+      "id": "l4702",
+      "natural_language": "Advance the argument (step 7310): continue from Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the",
+      "statement": "Advance the argument (step 7310): continue from Let $a,b$ be two natural numbers. When we divide $a^2+b^2$ by $a+b$, we the the",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7142857142857143,
+      "support": null
+    }
+  ]
+}

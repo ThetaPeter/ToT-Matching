@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_59",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2, 3) = 12$? Show that it is 1.",
+      "statement": "If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2, 3) = 12$? Show that it is 1.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l8859",
+      "natural_language": "Advance the argument (step 13777): continue from If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2,",
+      "statement": "Advance the argument (step 13777): continue from If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2,",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.36753833509901335,
+      "support": null
+    },
+    {
+      "id": "l8860",
+      "natural_language": "Advance the argument (step 13778): continue from If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2,",
+      "statement": "Advance the argument (step 13778): continue from If $F(a, b, c, d) = a^b + c ^ d$, what is the value of $b$ such that $F(4, b, 2,",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8565861529340608,
+      "support": null
+    }
+  ]
+}

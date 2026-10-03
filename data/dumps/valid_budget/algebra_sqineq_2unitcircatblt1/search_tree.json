@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_sqineq_2unitcircatblt1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab",
+      "last_claim": "(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\nAM-GM gives (a^2 + b^2)/2 >= |ab|",
+      "last_claim": "AM-GM gives (a^2 + b^2)/2 >= |ab|",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\n[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim": "[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nContinue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab",
+      "last_claim": "Continue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\nAM-GM gives (a^2 + b^2)/2 >= |ab|\n[\"Substituting a^{2}+b^{2}=2 into the AM-GM inequality immediately yields 1\\ge|ab|.\",\"Because |ab|\\ge ab for all real a,b, the bound |ab|\\le1 implies ab\\le1.\"]",
+      "last_claim": "[\"Substituting a^{2}+b^{2}=2 into the AM-GM inequality immediately yields 1\\ge|ab|.\",\"Because |ab|\\ge ab for all real a,b, the bound |ab|\\le1 implies ab\\le1.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\nAM-GM gives (a^2 + b^2)/2 >= |ab|\nContinue from: AM-GM gives (a^2 + b^2)/2 >= |ab|",
+      "last_claim": "Continue from: AM-GM gives (a^2 + b^2)/2 >= |ab|",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\n[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\n[\"Equality holds precisely when a=b, which together with a^{2}+b^{2}=2 forces a=b=\\pm1 and thus ab=1.\",\"The argument is valid for all real a,b satisfying the given constraint, completing the proof.\"]",
+      "last_claim": "[\"Equality holds precisely when a=b, which together with a^{2}+b^{2}=2 forces a=b=\\pm1 and thus ab=1.\",\"The argument is valid for all real a,b satisfying the given constraint, completing the proof.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\n[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\nContinue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim": "Continue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nContinue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nSubstituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.",
+      "last_claim": "Substituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nContinue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nDividing a^{2} + b^{2} \u2265 2ab by 2 produces (a^{2} + b^{2})/2 \u2265 ab, which with a^{2} + b^{2} = 2 becomes 1 \u2265 ab.",
+      "last_claim": "Dividing a^{2} + b^{2} \u2265 2ab by 2 produces (a^{2} + b^{2})/2 \u2265 ab, which with a^{2} + b^{2} = 2 becomes 1 \u2265 ab.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\n[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\nContinue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\n[\"Thus ab \\le 1 as required.\",\"Equality holds precisely when a = b.\"]",
+      "last_claim": "[\"Thus ab \\le 1 as required.\",\"Equality holds precisely when a = b.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\n[\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\nContinue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]\nContinue from: Continue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim": "Continue from: Continue from: [\"Since a^{2} + b^{2} = 2, the inequality becomes 2 \\ge 2ab\",\"Dividing both sides by 2 yields ab \\le 1\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nContinue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nSubstituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.\n[\"Dividing both sides of 2 \\ge 2ab by 2 yields 1 \\ge ab.\", \"The inequality 1 \\ge ab is equivalent to ab \\le 1.\"]",
+      "last_claim": "[\"Dividing both sides of 2 \\ge 2ab by 2 yields 1 \\ge ab.\", \"The inequality 1 \\ge ab is equivalent to ab \\le 1.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any real numbers $a$ and $b$ such that $a^2 + b^2 = 2$, $ab \\leq 1$.\n(a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nContinue from: (a-b)^2 >= 0 expands to a^2 + b^2 >= 2ab\nSubstituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.\nContinue from: Substituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.",
+      "last_claim": "Continue from: Substituting a^{2} + b^{2} = 2 into a^{2} + b^{2} \u2265 2ab yields 2 \u2265 2ab.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

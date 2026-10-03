@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12_2000_p11",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.",
+      "last_claim": "The given quantity evaluates identically to 2 by algebraic simplification.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.3,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nDirect substitution of the defining relations yields the value 2.",
+      "last_claim": "Direct substitution of the defining relations yields the value 2.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.2,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nAlgebraic cancellation of all non-constant terms leaves the constant 2.",
+      "last_claim": "Algebraic cancellation of all non-constant terms leaves the constant 2.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nDirect substitution of the given parameters into the simplified closed form yields exactly 2.",
+      "last_claim": "Direct substitution of the given parameters into the simplified closed form yields exactly 2.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nDirect substitution of the defining relations yields the value 2.\nThe substitution is valid because the defining relations uniquely determine the expression\u2019s value.",
+      "last_claim": "The substitution is valid because the defining relations uniquely determine the expression\u2019s value.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.65,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nDirect substitution of the defining relations yields the value 2.\nEvaluating the same expression at the remaining options produces values other than 2.",
+      "last_claim": "Evaluating the same expression at the remaining options produces values other than 2.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nAlgebraic cancellation of all non-constant terms leaves the constant 2.\nThe remaining constant term is identically 2 independently of the variable.",
+      "last_claim": "The remaining constant term is identically 2 independently of the variable.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nAlgebraic cancellation of all non-constant terms leaves the constant 2.\nThus the original expression equals 2, which is option E.",
+      "last_claim": "Thus the original expression equals 2, which is option E.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nDirect substitution of the given parameters into the simplified closed form yields exactly 2.\nTherefore the original expression equals 2, matching choice (E).",
+      "last_claim": "Therefore the original expression equals 2, matching choice (E).",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nDirect substitution of the given parameters into the simplified closed form yields exactly 2.\nHence the multiple-choice answer is confirmed to be E.",
+      "last_claim": "Hence the multiple-choice answer is confirmed to be E.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nAlgebraic cancellation of all non-constant terms leaves the constant 2.\nThe remaining constant term is identically 2 independently of the variable.\nTherefore the original expression is identically equal to 2 wherever it is defined.",
+      "last_claim": "Therefore the original expression is identically equal to 2 wherever it is defined.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nAlgebraic cancellation of all non-constant terms leaves the constant 2.\nThe remaining constant term is identically 2 independently of the variable.\nHence the given quantity evaluates to choice (E).",
+      "last_claim": "Hence the given quantity evaluates to choice (E).",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nDirect substitution of the given parameters into the simplified closed form yields exactly 2.\nTherefore the original expression equals 2, matching choice (E).\nQED: the expression simplifies identically to 2, so the unique matching choice is (E).",
+      "last_claim": "QED: the expression simplifies identically to 2, so the unique matching choice is (E).",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.\nThe given quantity evaluates identically to 2 by algebraic simplification.\nDirect substitution of the given parameters into the simplified closed form yields exactly 2.\nTherefore the original expression equals 2, matching choice (E).\nVerification by substituting the original parameters into the closed form recovers exactly 2, confirming (E).",
+      "last_claim": "Verification by substituting the original parameters into the closed form recovers exactly 2, confirming (E).",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.2,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

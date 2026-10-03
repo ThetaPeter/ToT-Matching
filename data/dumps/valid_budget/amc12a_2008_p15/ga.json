@@ -1,0 +1,250 @@
+{
+  "problem_id": "amc12a_2008_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define k = 2008^2 + 2^2008 and target the units digit of k^2 + 2^k.",
+      "statement": "k = 2008^2 + 2^2008; prove units digit of k^2 + 2^k is 6",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The units digit of 2008^2 is 4.",
+      "statement": "2008^2 ≡ 4 (mod 10)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The units digit of 2^2008 is 6.",
+      "statement": "2^2008 ≡ 6 (mod 10)",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "k ≡ 0 (mod 4) because both 2008^2 and 2^2008 are ≡0 (mod 4); thus 2^k ends in 6 (cycle position 0).",
+      "statement": "2^k ≡ 6 (mod 10)",
+      "dependencies": [
+        "l7",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "k^{2} ends in 0 and 2^k ends in 6 so their sum ends in 6.",
+      "statement": "units digit of k^{2} + 2^k is 6",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The units digit of k is 0.",
+      "statement": "k ≡ 0 (mod 10)",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The units digit of k^{2} is 0.",
+      "statement": "k^{2} ≡ 0 (mod 10)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "k is divisible by 4.",
+      "statement": "k ≡ 0 (mod 4)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The units digits of successive powers of 2 cycle every 4 as 2, 4, 8, 6.",
+      "statement": "units digits of 2^n cycle every 4: 2,4,8,6",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "statement": "k^{2} + 2^k ≡ 6 (mod 10)",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Hence the required units digit is 6, which is option D.",
+      "statement": "units digit of k^2 + 2^k is 6 (option D)",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Therefore the units digit of k^2 + 2^k is 6.",
+      "statement": "units digit of k^2 + 2^k is 6",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Hence the answer is (D).",
+      "statement": "units digit of k^2 + 2^k is 6 (option D)",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "statement": "k^{2} + 2^k ≡ 6 (mod 10)",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Hence the units digit is 6 (option D).",
+      "statement": "units digit of k^2 + 2^k is 6 (option D)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Since the units digits of k² and 2^k are 0 and 6 respectively, their sum has units digit 6.",
+      "statement": "k² + 2^k ≡ 6 (mod 10)",
+      "dependencies": [
+        "l6",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Hence the required units digit is 6, which is option D.",
+      "statement": "units digit of k^2 + 2^k is 6 (option D)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "k is even and in fact k ≡ 0 (mod 10), so the units digit of k^{2} is 0.",
+      "statement": "units digit of k^{2} is 0",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "The exponent k satisfies k ≡ 0 (mod 4), hence the units digit of 2^k is 6.",
+      "statement": "2^k ≡ 6 (mod 10)",
+      "dependencies": [
+        "l7",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Hence the required units digit is 6, which is option D.",
+      "statement": "units digit of k^2 + 2^k is 6 (option D)",
+      "dependencies": [
+        "l12",
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

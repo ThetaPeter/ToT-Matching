@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2002_p3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]",
+      "last_claim": "[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.1,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=1 and n=2 the product equals 0, which is not prime.",
+      "last_claim": "For n=1 and n=2 the product equals 0, which is not prime.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=3 the product equals 2, which is prime.",
+      "last_claim": "For n=3 the product equals 2, which is prime.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim": "[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=1 and n=2 the product equals 0, which is not prime.\n[\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]",
+      "last_claim": "[\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=1 and n=2 the product equals 0, which is not prime.\nContinue from: For n=1 and n=2 the product equals 0, which is not prime.",
+      "last_claim": "Continue from: For n=1 and n=2 the product equals 0, which is not prime.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.7,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\n[\"For \\(n=3\\) the product equals \\(2\\), which is prime.\",\"For every other positive integer \\(n\\) the product is \\(0\\), negative, or a product of two integers whose absolute values both exceed \\(1\\), hence not prime.\"]",
+      "last_claim": "[\"For \\(n=3\\) the product equals \\(2\\), which is prime.\",\"For every other positive integer \\(n\\) the product is \\(0\\), negative, or a product of two integers whose absolute values both exceed \\(1\\), hence not prime.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\nContinue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim": "Continue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=1 and n=2 the product equals 0, which is not prime.\n[\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]\n[\"All positive integers n have now been classified: n=1 and n=2 yield 0 (not prime), n=3 yields the prime 2, and every n\\ge4 yields a composite.\", \"Consequently there is exactly one such n, which establishes option (B).\"]",
+      "last_claim": "[\"All positive integers n have now been classified: n=1 and n=2 yield 0 (not prime), n=3 yields the prime 2, and every n\\ge4 yields a composite.\", \"Consequently there is exactly one such n, which establishes option (B).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"For every integer \\(n\\geq 4\\) both factors are integers strictly larger than \\(1\\), so the product is composite.\"]\nFor n=1 and n=2 the product equals 0, which is not prime.\n[\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]\nContinue from: [\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]",
+      "last_claim": "Continue from: [\"For n=3 the factorization yields 2\\cdot1=2, which is prime.\",\"Therefore exactly one positive integer n makes the expression prime.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\nContinue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\n[\"For \\(n=3\\) we have \\((n-1)(n-2)=2\\cdot1=2\\), which is prime.\",\"For every other positive integer \\(n\\) at least one of \\(|n-1|\\) and \\(|n-2|\\) is different from \\(1\\), so the product is either \\(0\\), negative, or composite.\"]",
+      "last_claim": "[\"For \\(n=3\\) we have \\((n-1)(n-2)=2\\cdot1=2\\), which is prime.\",\"For every other positive integer \\(n\\) at least one of \\(|n-1|\\) and \\(|n-2|\\) is different from \\(1\\), so the product is either \\(0\\), negative, or composite.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.4,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "For how many positive integers $n$ is $n^2 - 3n + 2$ a [[prime]] number?\n\n$\\mathrm{(A)}\\ \\text{none}\n\\qquad\\mathrm{(B)}\\ \\text{one}\n\\qquad\\mathrm{(C)}\\ \\text{two}\n\\qquad\\mathrm{(D)}\\ \\text{more\\ than\\ two,\\ but\\ finitely\\ many}\n\\qquad\\mathrm{(E)}\\ \\text{infinitely\\ many}$ Show that it is \\mathrm{(B)}\\ \\text{one}.\nContinue from:\n[\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\nContinue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]\nContinue from: Continue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The expression factors as \\(n^2-3n+2=(n-1)(n-2)\\).\",\"The only positive integer \\(n\\) for which one factor equals \\(1\\) (and the product is therefore prime) is \\(n=3\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

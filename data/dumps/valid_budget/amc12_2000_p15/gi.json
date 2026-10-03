@@ -1,0 +1,86 @@
+{
+  "problem_id": "amc12_2000_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given f(x/3)=x^{2}+x+1, find sum of all z with f(3z)=7",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus the sum of all such z is -1/9",
+      "statement": "sum_z {z | f(3z)=7} = -1/9",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Let \\( t=x/3 \\), whence \\( x=3t \\) and thus \\( f(t)=(3t)^2+3t+1=9t^2+3t+1 \\).",
+      "statement": "f(t)=9t^2+3t+1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Set \\( x/3=3z \\) (so \\( x=9z \\)) in the given equation to obtain \\( (9z)^2+9z+1=7 \\).",
+      "statement": "81z^2+9z+1=7",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "By Vieta's formulas, for az^{2} + bz + c = 0 the sum of roots is -b/a.",
+      "statement": "sum of roots = -b/a",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Then 81z^{2}+9z+1=7, hence 81z^{2}+9z-6=0.",
+      "statement": "81z^{2}+9z-6=0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The quadratic 81z^{2}+9z-6=0 has sum of roots -9/81=-1/9.",
+      "statement": "sum of roots = -9/81 = -1/9",
+      "dependencies": [
+        "l13",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

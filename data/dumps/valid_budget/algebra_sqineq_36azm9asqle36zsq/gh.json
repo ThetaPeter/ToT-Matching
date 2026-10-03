@@ -1,0 +1,39 @@
+{
+  "problem_id": "algebra_sqineq_36azm9asqle36zsq",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a and z be real numbers.",
+      "statement": "a ∈ ℝ ∧ z ∈ ℝ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8432740427115679,
+      "support": null
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Conclude that the rewritten inequality holds for all real a,z, which is equivalent to the original claim.",
+      "statement": "36*z*z - 36*a*z + 9*a*a >= 0",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.13764944032233709,
+      "support": null
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "All branches establish the equivalent nonnegative square form, hence the target inequality holds for all real a, z.",
+      "statement": "36*a*z - 9*a*a <= 36*z*z",
+      "dependencies": [
+        "ts_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.4419417382415923,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_84",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the digit in the hundredths place of the decimal equivalent of $\\frac{9}{160}$? Show that it is 5.",
+      "statement": "What is the digit in the hundredths place of the decimal equivalent of $\\frac{9}{160}$? Show that it is 5.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.368932393686311,
+      "support": null
+    },
+    {
+      "id": "l12370",
+      "natural_language": "Advance the argument (step 19238): continue from What is the digit in the hundredths place of the decimal equivalent of $\\frac{9}",
+      "statement": "Advance the argument (step 19238): continue from What is the digit in the hundredths place of the decimal equivalent of $\\frac{9}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8457800632220621,
+      "support": null
+    }
+  ]
+}

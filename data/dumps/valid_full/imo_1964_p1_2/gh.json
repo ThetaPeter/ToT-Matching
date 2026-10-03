@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1964_p1_2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any natural number $n$, $7$ does not divide $2^n + 1$.\n",
+      "statement": "Show that for any natural number $n$, $7$ does not divide $2^n + 1$.\n",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l4324",
+      "natural_language": "Advance the argument (step 6722): continue from Show that for any natural number $n$, $7$ does not divide $2^n + 1$.",
+      "statement": "Advance the argument (step 6722): continue from Show that for any natural number $n$, $7$ does not divide $2^n + 1$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8164965809277261,
+      "support": null
+    },
+    {
+      "id": "l_dead_2403",
+      "natural_language": "dead-end unused case 6729: discard this alternative",
+      "statement": "dead-end unused case 6729: discard this alternative",
+      "dependencies": [
+        "l4324"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b9",
+      "salience": 0.3302891295379082,
+      "support": null
+    }
+  ]
+}

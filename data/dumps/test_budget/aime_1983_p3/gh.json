@@ -1,0 +1,49 @@
+{
+  "problem_id": "aime_1983_p3",
+  "nodes": [
+    {
+      "id": "tc_3",
+      "natural_language": "The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).",
+      "statement": "|x+9| >=6 (domain)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.47628967220784024,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Solve t^2 - 2t - 15 = 0 to obtain t = 5 (valid since t >= 0).",
+      "statement": "t = 5",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4490731195102493,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Back-substitute t = 5 to obtain x^2 + 18x + 20 = 0.",
+      "statement": "x^2 + 18x + 20 = 0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.626628313658313,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "By Vieta the product of roots of x^2 + 18x + 20 = 0 is 20.",
+      "statement": "product of roots = 20",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.35651204795369046,
+      "support": null
+    }
+  ]
+}

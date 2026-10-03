@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_149",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A group of $N$ students, where $N < 50$, is on a field trip. If their teacher puts them in groups of 8, the last group has 5 students. If their teacher instead puts them in groups of 6, the last group has 3 students. What is the sum of all possible values of $N$? Show that it is 66.",
+      "statement": "A group of $N$ students, where $N < 50$, is on a field trip. If their teacher puts them in groups of 8, the last group has 5 students. If their teacher instead puts them in groups of 6, the last group has 3 students. What is the sum of all possible values of $N$? Show that it is 66.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.24743582965269678,
+      "support": null
+    },
+    {
+      "id": "l9723",
+      "natural_language": "Advance the argument (step 15121): continue from A group of $N$ students, where $N < 50$, is on a field trip. If their teacher pu",
+      "statement": "Advance the argument (step 15121): continue from A group of $N$ students, where $N < 50$, is on a field trip. If their teacher pu",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5570860145311556,
+      "support": null
+    }
+  ]
+}

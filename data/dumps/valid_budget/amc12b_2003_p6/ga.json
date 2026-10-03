@@ -1,0 +1,506 @@
+{
+  "problem_id": "amc12b_2003_p6",
+  "nodes": [
+    {
+      "id": "tc_0",
+      "natural_language": "Let the first term be \\(a\\) and the common ratio be \\(r\\).",
+      "statement": "first term = a ∧ common ratio = r",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_1",
+      "natural_language": "Let the geometric sequence have first term a and common ratio r. Then the second term is a r = 2 and the fourth term is a r^3 = 6.",
+      "statement": "ar = 2 ∧ a r^3 = 6",
+      "dependencies": [
+        "tc_0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Dividing the two equations yields r^2 = 3, so r = \\sqrt3 or r = -\\sqrt3.",
+      "statement": "r^2 = 3 \\Rightarrow (r = \\sqrt3) \\vee (r = -\\sqrt3)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Solving for a gives a = 2/r. Substituting each possible r produces a = 2/\\sqrt3 or a = -2/\\sqrt3/3.",
+      "statement": "(r = \\sqrt3 \\Rightarrow a = 2/\\sqrt3) \\wedge (r = -\\sqrt3 \\Rightarrow a = -2\\sqrt3/3)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus one possible value for the first term is -2√3/3, which is option (B).",
+      "statement": "a = -2√3/3 is possible",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Substituting a = -2√3/3 and r = -√3 recovers the given terms: ar = 2 and ar^3 = 6.",
+      "statement": "(a = -2√3/3 ∧ r = -√3) ⇒ (ar = 2 ∧ ar^3 = 6)",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let the first term be \\(a\\) and the common ratio be \\(r\\), so that the second term is \\(ar=2\\) and the fourth term is \\(ar^3=6\\).",
+      "statement": "first term = a ∧ common ratio = r ∧ ar = 2 ∧ ar^3 = 6",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Dividing the fourth term by the second term yields \\(r^2=3\\).",
+      "statement": "r^2 = 3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus one possible value for the first term is -2√3/3, which is option (B).",
+      "statement": "a = -2\\sqrt{3}/3 is possible",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Choosing the negative root r = -\\sqrt{3} (which satisfies r^2 = 3).",
+      "statement": "r = -\\sqrt{3}",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Then a = 2/r = 2/(-\\sqrt{3}) = -2\\sqrt{3}/3 after rationalizing the denominator.",
+      "statement": "a = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l5",
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Thus one possible value for the first term is -2\\sqrt{3}/3, which is option (B).",
+      "statement": "a = -2\\sqrt{3}/3 is possible",
+      "dependencies": [
+        "l6",
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Dividing the equations yields \\(r^2=3\\).",
+      "statement": "r^2 = 3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "(r = \\sqrt{3} \\vee r = -\\sqrt{3}) \\wedge (a = 2\\sqrt{3}/3 \\vee a = -2\\sqrt{3}/3)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Thus one possible value for the first term is -2\\sqrt{3}/3, which is option (B).",
+      "statement": "a = -2\\sqrt{3}/3 is possible",
+      "dependencies": [
+        "l8",
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Dividing the equations ar^3 = 6 and ar = 2 yields r^2 = 3.",
+      "statement": "r^2 = 3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Select the negative root r = -√3 (satisfying r^2 = 3).",
+      "statement": "r = -√3",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Then a = 2/r = 2/(-√3) = -2√3/3 after rationalizing.",
+      "statement": "a = -2√3/3",
+      "dependencies": [
+        "l10",
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The pair (a,r) = (-2√3/3, -√3) recovers ar = 2 and ar^3 = 6.",
+      "statement": "(a = -2√3/3 ∧ r = -√3) ⇒ (ar = 2 ∧ ar^3 = 6)",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Thus one possible value for the first term is -2√3/3, which is option (B).",
+      "statement": "a = -2√3/3 is possible",
+      "dependencies": [
+        "l11",
+        "l12"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Hence the possible values of the first term are \\(\\dfrac{2\\sqrt{3}}{3}\\) and \\(-\\dfrac{2\\sqrt{3}}{3}\\).",
+      "statement": "(a = 2\\sqrt{3}/3) \\vee (a = -2\\sqrt{3}/3)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Only the latter value appears among the given answer choices.",
+      "statement": "(-2\\sqrt{3}/3) is among the answer choices",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Thus the answer is \\textbf{(B)} \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "The possible first terms are therefore \\( \\frac{2\\sqrt{3}}{3} \\) and \\( -\\frac{2\\sqrt{3}}{3} \\).",
+      "statement": "(a = 2\\sqrt{3}/3) \\vee (a = -2\\sqrt{3}/3)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Only the value \\( -\\frac{2\\sqrt{3}}{3} \\) appears among the answer choices.",
+      "statement": "(-2\\sqrt{3}/3) is among the answer choices",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus the answer is \\textbf{(B)} \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l16",
+        "l3"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Dividing the two equations gives \\(r^2=3\\).",
+      "statement": "r^2 = 3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Hence \\(r=\\sqrt{3}\\) or \\(r=-\\sqrt{3}\\).",
+      "statement": "r = \\sqrt{3} \\vee r = -\\sqrt{3}",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Thus one possible value for the first term is \\(-2\\sqrt{3}/3\\), which is option (B).",
+      "statement": "a = -2\\sqrt{3}/3 is possible",
+      "dependencies": [
+        "l18",
+        "l3"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Select the negative root r = -\\sqrt3.",
+      "statement": "r = -√3",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Then a = 2/r = 2/(-\\sqrt3) = -2\\sqrt3/3 after rationalizing.",
+      "statement": "a = -2\\sqrt3/3",
+      "dependencies": [
+        "l19",
+        "tc_2"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The pair (a,r) = (-2\\sqrt3/3, -\\sqrt3) satisfies ar = 2 and ar^3 = 6.",
+      "statement": "(a = -2\\sqrt3/3 ∧ r = -√3) ⇒ (ar = 2 ∧ ar^3 = 6)",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Thus one possible value for the first term is -2\\sqrt3/3, which is option (B).",
+      "statement": "a = -2\\sqrt3/3 is possible",
+      "dependencies": [
+        "l20",
+        "l21"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Therefore a possible first term is \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "a = -2\\sqrt{3}/3 is possible",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "The value -2\\sqrt{3}/3 matches choice (B).",
+      "statement": "(-2\\sqrt{3}/3) matches choice (B)",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus the answer is \textbf{(B)} -\\frac{2\\sqrt{3}}{3}.",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l22"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Both values of \\(a\\) work, as \\(ar^3=(ar)r^2=2\\cdot3=6\\).",
+      "statement": "(a = 2\\sqrt{3}/3 \\vee a = -2\\sqrt{3}/3) \\Rightarrow (ar^3 = 6)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Only \\(-\\frac{2\\sqrt{3}}{3}\\) is among the choices, hence (B).",
+      "statement": "(-2\\sqrt{3}/3) is among the answer choices",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Thus the answer is \\textbf{(B)} \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l24",
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "Only the negative value \\(a = -\\frac{2\\sqrt{3}}{3}\\) appears among the answer choices.",
+      "statement": "(-2\\sqrt{3}/3) is among the answer choices",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Thus the answer is \\textbf{(B)} \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "statement": "first term = -2\\sqrt{3}/3",
+      "dependencies": [
+        "l25",
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

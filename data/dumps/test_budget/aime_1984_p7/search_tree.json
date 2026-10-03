@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1984_p7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nSince 84<1000 we have f(84)=f(f(89)).",
+      "last_claim": "Since 84<1000 we have f(84)=f(f(89)).",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.8,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.",
+      "last_claim": "Compute f on [995,1004] by unfolding the definition once.",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.7,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nSince 84<1000 we have f(84)=f(f(89)).\nSince 89<1000 we have f(89)=f(f(94)), hence f(84)=f(f(f(94))).",
+      "last_claim": "Since 89<1000 we have f(89)=f(f(94)), hence f(84)=f(f(f(94))).",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nSince 84<1000 we have f(84)=f(f(89)).\nWe unfold the recurrence until the argument is at least 1000, at which point the first clause applies.",
+      "last_claim": "We unfold the recurrence until the argument is at least 1000, at which point the first clause applies.",
+      "last_claim_id": "tc_5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.65,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [1000,1004], f(n)=n-3, so f(1000)=997, f(1001)=998, f(1002)=999, f(1003)=1000, f(1004)=1001.",
+      "last_claim": "For n in [1000,1004], f(n)=n-3, so f(1000)=997, f(1001)=998, f(1002)=999, f(1003)=1000, f(1004)=1001.",
+      "last_claim_id": "tc_6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.",
+      "last_claim": "For n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.",
+      "last_claim_id": "tc_7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_6",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nThen f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.",
+      "last_claim": "Then f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.",
+      "last_claim_id": "tc_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_6",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nUnfold once more on [990,994] to obtain f(990)=f(f(995)), f(991)=f(f(996)), f(992)=f(f(997)), f(993)=f(f(998)), f(994)=f(f(999)).",
+      "last_claim": "Unfold once more on [990,994] to obtain f(990)=f(f(995)), f(991)=f(f(996)), f(992)=f(f(997)), f(993)=f(f(998)), f(994)=f(f(999)).",
+      "last_claim_id": "tc_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nSince 84<1000 we have f(84)=f(f(89)).\nSince 89<1000 we have f(89)=f(f(94)), hence f(84)=f(f(f(94))).\nSince 94<1000 we have f(94)=f(f(99)), hence f(84)=f(f(f(f(99)))).",
+      "last_claim": "Since 94<1000 we have f(94)=f(f(99)), hence f(84)=f(f(f(f(99)))).",
+      "last_claim_id": "tc_9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nSince 84<1000 we have f(84)=f(f(89)).\nSince 89<1000 we have f(89)=f(f(94)), hence f(84)=f(f(f(94))).\nRepeating the unfolding yields f(84)=f^{184}(1004) after 184 applications of n |-> n+5 starting from 84.",
+      "last_claim": "Repeating the unfolding yields f(84)=f^{184}(1004) after 184 applications of n |-> n+5 starting from 84.",
+      "last_claim_id": "tc_10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.3,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nThen f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.\n[\"For 990\\le n\\le994 unfold once to get f(994)=f(f(999))=f(998)=997, f(993)=f(f(998))=f(997)=998, f(992)=f(f(997))=f(998)=997, f(991)=f(f(996))=f(997)=998 and f(990)=f(f(995))=f(998)=997.\", \"Thus on [990,999] one has f(n)=997 for even n and f(n)=998 for odd n.\"]",
+      "last_claim": "[\"For 990\\le n\\le994 unfold once to get f(994)=f(f(999))=f(998)=997, f(993)=f(f(998))=f(997)=998, f(992)=f(f(997))=f(998)=997, f(991)=f(f(996))=f(997)=998 and f(990)=f(f(995))=f(998)=997.\", \"Thus on [990,999] one has f(n)=997 for even n and f(n)=998 for odd n.\"]",
+      "last_claim_id": "tc_11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nThen f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.\nContinue from: Then f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.",
+      "last_claim": "Continue from: Then f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.",
+      "last_claim_id": "tc_13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nUnfold once more on [990,994] to obtain f(990)=f(f(995)), f(991)=f(f(996)), f(992)=f(f(997)), f(993)=f(f(998)), f(994)=f(f(999)).\nSubstitute the already computed values to obtain f(993)=f(997) and f(994)=997.",
+      "last_claim": "Substitute the already computed values to obtain f(993)=f(997) and f(994)=997.",
+      "last_claim_id": "tc_7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The [[function]] f is defined on the [[set]] of [[integer]]s and satisfies $f(n)=\\begin{cases}\nn-3&\\mbox{if}\\ n\\ge 1000\\\\\nf(f(n+5))&\\mbox{if}\\ n<1000\\end{cases}$\n\nFind $f(84)$. Show that it is 997.\nCompute f on [995,1004] by unfolding the definition once.\nFor n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.\nUnfold once more on [990,994] to obtain f(990)=f(f(995)), f(991)=f(f(996)), f(992)=f(f(997)), f(993)=f(f(998)), f(994)=f(f(999)).\nLikewise substitute to obtain f(990)=f(f(995)), f(991)=f(f(996)) and f(992)=f(f(997)), which by the relations on [995,999] become nested applications of f to 997,998,999.",
+      "last_claim": "Likewise substitute to obtain f(990)=f(f(995)), f(991)=f(f(996)) and f(992)=f(f(997)), which by the relations on [995,999] become nested applications of f to 997,998,999.",
+      "last_claim_id": "tc_14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

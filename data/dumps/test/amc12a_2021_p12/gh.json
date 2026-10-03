@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2021_p12",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "All the roots of the polynomial $z^6-10z^5+Az^4+Bz^3+Cz^2+Dz+16$ are positive integers, possibly repeated. What is the value of $B$?\n\n$\\textbf{(A) }{-}88 \\qquad \\textbf{(B) }{-}80 \\qquad \\textbf{(C) }{-}64 \\qquad \\textbf{(D) }{-}41\\qquad \\textbf{(E) }{-}40$ Show that it is \\textbf{(A) }{-}88.",
+      "statement": "All the roots of the polynomial $z^6-10z^5+Az^4+Bz^3+Cz^2+Dz+16$ are positive integers, possibly repeated. What is the value of $B$?\n\n$\\textbf{(A) }{-}88 \\qquad \\textbf{(B) }{-}80 \\qquad \\textbf{(C) }{-}64 \\qquad \\textbf{(D) }{-}41\\qquad \\textbf{(E) }{-}40$ Show that it is \\textbf{(A) }{-}88.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.46569031542379974,
+      "support": null
+    },
+    {
+      "id": "l2920",
+      "natural_language": "Advance the argument (step 4538): continue from All the roots of the polynomial $z^6-10z^5+Az^4+Bz^3+Cz^2+Dz+16$ are positive in",
+      "statement": "Advance the argument (step 4538): continue from All the roots of the polynomial $z^6-10z^5+Az^4+Bz^3+Cz^2+Dz+16$ are positive in",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.550019098216927,
+      "support": null
+    }
+  ]
+}

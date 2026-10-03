@@ -1,0 +1,39 @@
+{
+  "problem_id": "algebra_2rootsintpoly_am10tap11eqasqpam110",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.",
+      "statement": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l867",
+      "natural_language": "Advance the argument (step 1345): continue from Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.",
+      "statement": "Advance the argument (step 1345): continue from Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7717436331412898,
+      "support": null
+    },
+    {
+      "id": "l_dead_481",
+      "natural_language": "dead-end unused case 1347: discard this alternative",
+      "statement": "dead-end unused case 1347: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.34641016151377546,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "problem_id": "mathd_algebra_10",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.\n120% of 30 equals 36.",
+      "last_claim": "120% of 30 equals 36.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_1",
+      "proof_state": "What is the positive difference between $120\\%$ of 30 and $130\\%$ of 20? Show that it is 10.\n120% of 30 equals 36.\n130% of 20 equals 26.",
+      "last_claim": "130% of 20 equals 26.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b2"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b2",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

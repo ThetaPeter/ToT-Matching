@@ -1,0 +1,100 @@
+{
+  "problem_id": "amc12_2000_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given |x-2|=p and x<2",
+      "statement": "|x-2|=p ∧ x<2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Since x<2, we have |x-2|=2-x",
+      "statement": "|x-2|=2-x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus 2-x=p, so x=2-p",
+      "statement": "x=2-p",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Subtract p: x-p=(2-p)-p",
+      "statement": "x-p=(2-p)-p",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Simplify: x-p=2-2p",
+      "statement": "x-p=2-2p",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The target expression equals 2-2p, matching choice (C)",
+      "statement": "x-p=2-2p ∧ choice=(C) ∧ ¬(E always)",
+      "dependencies": [
+        "l9",
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Therefore x-p=2-2p, which is option (C).",
+      "statement": "x-p=2-2p ∧ choice=(C)",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Note that p=|x-2|≥0 so the identity holds for all such x<2.",
+      "statement": "p≥0 ⇒ (x-p=2-2p holds ∀ x<2)",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "problem_id": "aime_1984_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given equation log_8 a + log_4 (b^2) = 5",
+      "statement": "log_8 a + log_4 b^2 = 5",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8249579113843054,
+      "support": null
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Given equation log_8 b + log_4 (a^2) = 7",
+      "statement": "log_8 b + log_4 a^2 = 7",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.816496580927726,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Express logs in base 8: let x = log_8 a, y = log_8 b; then log_4 a = (3/2)x and log_4 b = (3/2)y",
+      "statement": "x + 3y = 5 and 3x + y = 7 where x = log_8 a, y = log_8 b",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3962969619506086,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Add the two equations x + 3y = 5 and 3x + y = 7 to obtain 4x + 4y = 12, hence x + y = 3",
+      "statement": "x + y = 3",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.41522739926869984,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus ab = 8^x * 8^y = 8^{x+y} = 8^3 = 512",
+      "statement": "ab = 512",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.492365963917331,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Solve linear system: multiply first equation by 3 to get 3x + 9y = 15, subtract second equation to obtain 8y = 8 hence y = 1; back-substitute to find x = 2",
+      "statement": "x = 2, y = 1",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": 0.43617837214497934,
+      "support": null
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus a = 8^2 = 64, b = 8^1 = 8 and ab = 512",
+      "statement": "ab = 512",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": 0.29880715233359845,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Adding the equations yields 4x+4y=12, hence x+y=3",
+      "statement": "x + y = 3",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

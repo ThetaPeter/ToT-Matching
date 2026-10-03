@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12b_2004_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "x and y are positive integers satisfying 2^x 3^y = 1296",
+      "statement": "x,y ∈ ℤ^+, 2^x 3^y = 1296",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8461538461538461,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "Indeed 2^4 · 3^4 = 16 · 81 = 1296",
+      "statement": "2^4 · 3^4 = 16 · 81 = 1296",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": 0.6324555320336759,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "By uniqueness of prime factorization no other pair of nonnegative integers (x,y) works",
+      "statement": "unique factorization ⇒ ¬∃(x',y')≠(4,4) with 2^{x'}3^{y'}=1296",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": 0.12309149097933275,
+      "support": null
+    }
+  ]
+}

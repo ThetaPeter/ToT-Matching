@@ -1,0 +1,60 @@
+{
+  "problem_id": "amc12a_2003_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Restate the target claim: the difference between the sum of the first 2003 even counting numbers and the sum of the first 2003 odd counting numbers equals 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The sum of the first n even counting numbers is n(n+1).",
+      "statement": "sum_{k=1}^n 2k = n(n+1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The sum of the first n odd counting numbers is n^2.",
+      "statement": "sum_{k=1}^n (2k-1) = n^2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Substitute n=2003 into the even and odd sum formulas, then subtract to obtain the difference 2003.",
+      "statement": "2003*2004 - 2003^2 = 2003",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.",
+      "statement": "\\forall k\\in\\{1..2003\\}, (even_k=2k)\\land(odd_k=2k-1)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

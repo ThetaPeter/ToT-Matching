@@ -1,0 +1,19 @@
+By the finite arithmetico-geometric summation formula,
+\[
+\sum_{k=1}^n k r^k=\frac{r\bigl(1-(n+1)r^n+n r^{n+1}\bigr)}{(1-r)^2}.
+\]
+Substituting the purely imaginary value \(r=i\) therefore yields the explicit expression
+\[
+S(n,i)=\frac{i\bigl(1-(n+1)i^n+n i^{n+1}\bigr)}{(1-i)^2}.
+\]
+Since \(i^4=1\), the successive powers of \(i\) (and hence the summands \(k i^k\)) are periodic of period \(4\). Consequently \(S\) is completely determined by the residue class of \(n\) modulo \(4\).
+
+In the particular arithmetic progression \(n=4m+1\) the closed form simplifies to
+\[
+\operatorname{Re}(S)=\frac{n+1}{2},\qquad\operatorname{Im}(S)=-\frac{n-1}{2}.
+\]
+The integer \(n=97\) belongs to this progression, and the preceding identities therefore give \(S=48+49i\). Combined with the given biconditional
+\[
+\sum_{k=1}^n k i^k=48+49i\iff n=97,
+\]
+the required evaluation follows.

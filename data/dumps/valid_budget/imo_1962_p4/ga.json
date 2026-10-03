@@ -1,0 +1,291 @@
+{
+  "problem_id": "imo_1962_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "Find all real x satisfying cos²x + cos²2x + cos²3x = 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Apply the power-reduction identity ϵθ=(1+cos2θ)/2 to each term.",
+      "statement": "cos^{2}x=(1+cos2x)/2, cos^{2}2x=(1+cos4x)/2, cos^{2}3x=(1+cos6x)/2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The original equation is equivalent to cos2x+cos4x+cos6x=-1.",
+      "statement": "cos^{2}x+cos^{2}2x+cos^{2}3x=1 \\Leftrightarrow cos2x+cos4x+cos6x=-1",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Solve the factored sine equation for \theta and back-substitute to obtain all real x.",
+      "statement": "All real solutions are x = k\\pi/2 or x = \\pm\\pi/3 + 2k\\pi/3 for integer k",
+      "dependencies": [
+        "l4",
+        "l6",
+        "l10",
+        "l9",
+        "l11",
+        "l13",
+        "l16",
+        "l18",
+        "l20",
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Substitute \theta=2x and apply the Dirichlet kernel sum formula to the left-hand side.",
+      "statement": "cos\theta + cos2\theta + cos3\theta = [sin(3\theta/2)·cos(2\theta)]/sin(\theta/2) with \theta=2x",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Clear the denominator and rearrange the resulting trigonometric equation into a product of sines that factors cleanly.",
+      "statement": "sin(\theta/2)·(2cos2\theta+1) + sin(3\theta/2) = 0 after algebraic rearrangement",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Factor the sum after setting \theta=2x: cos\theta + cos2\theta + cos3\theta = cos2\theta(2cos\theta + 1).",
+      "statement": "cos2x + cos4x + cos6x = cos4x(2cos2x + 1) = -1",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Rearrange into a product equation and solve the resulting cases cos4x = 0 or 2cos2x + 1 = -1/cos4x, but better convert to polynomial in cosines or sines.",
+      "statement": "cos4x(2cos2x + 1) + 1 = 0 leads after substitution to sin factors",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The original equation is equivalent to sin^{2}x+sin^{2}2x+sin^{2}3x=2.",
+      "statement": "cos^{2}x+cos^{2}2x+cos^{2}3x=1 \\Leftrightarrow sin^{2}x+sin^{2}2x+sin^{2}3x=2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Set u=2x and rewrite the equation cos2u(2cos u +1)+1=0 as a polynomial in cos u after double-angle expansion.",
+      "statement": "cos2u(2cos u +1)+1=0 expands to 2cos^{3}u + cos2u +1=0 which factors as (2cos u +1)(cos2u +1) - cos u =0 after trig identities",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Convert the factored form into a product of sines via Weierstrass or auxiliary angle substitution and solve the resulting sin(k u)=0 cases.",
+      "statement": "After substitution the equation reduces to sin(u/2)·sin(3u/2)·(2cos u +1)=0 or equivalent clean product",
+      "dependencies": [
+        "l7",
+        "l4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Using sum-to-product on cos2x+cos6x yields the equivalent equation cos4x(2cos2x+1)=-1.",
+      "statement": "cos2x + cos4x + cos6x = cos4x(2cos2x + 1) = -1",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "The identity sin^{2}\theta=(1-cos2\theta)/2 applied to sin^{2}x+sin^{2}2x+sin^{2}3x=2 recovers cos2x+cos4x+cos6x=-1.",
+      "statement": "sin^{2}x + sin^{2}2x + sin^{2}3x = 2 \\Leftrightarrow cos2x + cos4x + cos6x = -1",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Both approaches reduce the problem to solving the same trigonometric equation.",
+      "statement": "cos^{2}x + cos^{2}2x + cos^{2}3x =1 \\Leftrightarrow cos2x + cos4x + cos6x =-1",
+      "dependencies": [
+        "l2",
+        "l11"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Factor LHS via sum-to-product identities to obtain a product equation ready for case analysis.",
+      "statement": "cos2x + cos4x + cos6x = cos4x(2cos2x +1) =-1",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Multiply the equation cos2x + cos4x + cos6x = -1 by 2 sin x and convert products to sums.",
+      "statement": "sin(3x) + sin(5x) + sin(7x) - sin(x) = 0",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Apply sum-to-product identities repeatedly to obtain a product of sines.",
+      "statement": "sin(x)·sin(2x)·(2cos(3x) + 1) = 0",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Solve the three cases sin x = 0, sin 2x = 0 and 2cos 3x + 1 = 0 separately.",
+      "statement": "x = k\\pi/2 or x = m\\pi/2 or x = \\pm\\pi/3 + 2k\\pi/3",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Letting t=cos2x and using cos4x=2t^{2}-1 produces the equivalent equation (2t^{2}-1)(2t+1)=-1.",
+      "statement": "(2t^{2}-1)(2t+1)=-1 with t=cos2x",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Expanding and simplifying yields 2t(2t^{2}+t-1)=0, so cos2x=0 or 2cos^{2}2x+cos2x-1=0.",
+      "statement": "2t(2t^{2}+t-1)=0",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Solve the cubic equation 2t(2t^{2}+t-1)=0 in t=cos2x to obtain the three roots t=0, t=1/2, t=-1.",
+      "statement": "cos2x=0 or cos2x=1/2 or cos2x=-1",
+      "dependencies": [
+        "l18"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Back-substitute each cosine root and solve the resulting elementary trigonometric equations for real x.",
+      "statement": "cos2x=0 \\Rightarrow x=k\\pi/2; cos2x=1/2 \\Rightarrow x=\\pm\\pi/3+2k\\pi/3; cos2x=-1 \\Rightarrow x=\\pi/2+k\\pi",
+      "dependencies": [
+        "l19"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Both given equivalences reduce the original problem to solving the auxiliary equation cos2x + cos4x + cos6x = -1.",
+      "statement": "cos^{2}x + cos^{2}2x + cos^{2}3x = 1 \\Leftrightarrow cos2x + cos4x + cos6x = -1 (via either cosine or sine power-reduction)",
+      "dependencies": [
+        "l2",
+        "l11"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

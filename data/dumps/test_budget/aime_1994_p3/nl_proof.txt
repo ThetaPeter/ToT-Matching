@@ -1,0 +1,22 @@
+From the given functional equation \(f(x)+f(x-1)=x^2\) it follows at once that
+\[
+f(n)=n^2-f(n-1)
+\]
+holds for every integer \(n\). Iterating this identity from \(n=94\) down to \(n=20\) produces an expression for \(f(94)\) as an alternating sum of \(75\) consecutive squares together with the remainder term \((-1)^{75}f(19)\).
+
+The same alternating sum may be rewritten by grouping even-odd pairs after the initial square \(20^2\):
+\[
+\text{sum}=20^2+\sum_{k=11}^{47}\bigl((2k)^2-(2k-1)^2\bigr).
+\]
+Each summand simplifies by difference of squares:
+\[
+(2k)^2-(2k-1)^2=4k-1,
+\]
+so
+\[
+\text{sum}=20^2+\sum_{m=11}^{47}(4m-1).
+\]
+The finite arithmetic sum evaluates to \(4255\). Combining this value with the already-established expression for \(f(94)\) yields
+\[
+f(94)\equiv561\pmod{1000}.
+\]

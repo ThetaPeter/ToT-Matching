@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2020_p13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Which of the following is the value of $\\sqrt{\\log_2{6}+\\log_3{6}}?$\n\n$\\textbf{(A) } 1 \\qquad\\textbf{(B) } \\sqrt{\\log_5{6}} \\qquad\\textbf{(C) } 2 \\qquad\\textbf{(D) } \\sqrt{\\log_2{3}}+\\sqrt{\\log_3{2}} \\qquad\\textbf{(E) } \\sqrt{\\log_2{6}}+\\sqrt{\\log_3{6}}$ Show that it is \\textbf{(D) } \\sqrt{\\log_2{3}}+\\sqrt{\\log_3{2}}.",
+      "statement": "Which of the following is the value of $\\sqrt{\\log_2{6}+\\log_3{6}}?$\n\n$\\textbf{(A) } 1 \\qquad\\textbf{(B) } \\sqrt{\\log_5{6}} \\qquad\\textbf{(C) } 2 \\qquad\\textbf{(D) } \\sqrt{\\log_2{3}}+\\sqrt{\\log_3{2}} \\qquad\\textbf{(E) } \\sqrt{\\log_2{6}}+\\sqrt{\\log_3{6}}$ Show that it is \\textbf{(D) } \\sqrt{\\log_2{3}}+\\sqrt{\\log_3{2}}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2572478777137633,
+      "support": null
+    },
+    {
+      "id": "l3621",
+      "natural_language": "Advance the argument (step 5629): continue from Which of the following is the value of $\\sqrt{\\log_2{6}+\\log_3{6}}?$\n\n$\\textbf{(",
+      "statement": "Advance the argument (step 5629): continue from Which of the following is the value of $\\sqrt{\\log_2{6}+\\log_3{6}}?$\n\n$\\textbf{(",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.4333890711087691,
+      "support": null
+    }
+  ]
+}

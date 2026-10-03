@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1984_p15",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]",
+      "last_claim": "[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.75,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\n[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]",
+      "last_claim": "[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\nContinue from: [\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\n[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]",
+      "last_claim": "[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\n[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]\n[\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]",
+      "last_claim": "[\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\n[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]\nContinue from: [\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]",
+      "last_claim": "Continue from: [\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\n[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]\nEquating leading coefficients of the two monic degree-4 polynomials shows that the scalar multiple equals -1.",
+      "last_claim": "Equating leading coefficients of the two monic degree-4 polynomials shows that the scalar multiple equals -1.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\n[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]\nComparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).",
+      "last_claim": "Comparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_10",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\n[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]\nComparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).\n[\"Thus \\(x^2+y^2+z^2+w^2=a+b+c+d=36\\).\", \"Explicitly \\(\\sum p_k=4+16+36+64=120\\) and \\(\\sum q_j=1+9+25+49=84\\), confirming the difference is 36.\"]",
+      "last_claim": "[\"Thus \\(x^2+y^2+z^2+w^2=a+b+c+d=36\\).\", \"Explicitly \\(\\sum p_k=4+16+36+64=120\\) and \\(\\sum q_j=1+9+25+49=84\\), confirming the difference is 36.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_10",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\nContinue from:\n[\"Let \\(a=x^2\\), \\(b=y^2\\), \\(c=z^2\\), \\(d=w^2\\) and write the given equations as \\(\\sum_j a_j/(p_k-q_j)=1\\) for \\(k=1,2,3,4\\), where \\(p_k=(2k)^2\\) and \\(q_j=(2j-1)^2\\).\", \"Consider the rational function \\(f(r)=\\sum_j a_j/(r-q_j)-1\\), which vanishes at each \\(p_k\\); clearing the common denominator \\(P(r)=\\prod(r-q_j)\\) yields a degree-4 numerator that must therefore be a scalar multiple of \\(\\prod(r-p_k)\\).\"]\nComparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).\nContinue from: Comparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).",
+      "last_claim": "Continue from: Comparing the coefficients of r^3 in the resulting identity then yields \\(a+b+c+d=\\sum p_k-\\sum q_j=36\\).",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\n[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]\n[\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]\n[\"Therefore \\(x^2+y^2+z^2+w^2=\\sum v_k=36\\).\", \"Both \\(P\\) and \\(Q\\) are monic of degree 4, confirming the \\(s^3\\) coefficient of \\(Q-P\\) is \\(\\sum e_j^2-\\sum o_k^2\\).\"]",
+      "last_claim": "[\"Therefore \\(x^2+y^2+z^2+w^2=\\sum v_k=36\\).\", \"Both \\(P\\) and \\(Q\\) are monic of degree 4, confirming the \\(s^3\\) coefficient of \\(Q-P\\) is \\(\\sum e_j^2-\\sum o_k^2\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "Determine $x^2+y^2+z^2+w^2$ if\n\n<div style=\"text-align:center;\">$ \\frac{x^2}{2^2-1}+\\frac{y^2}{2^2-3^2}+\\frac{z^2}{2^2-5^2}+\\frac{w^2}{2^2-7^2}=1 $<br />$ \\frac{x^2}{4^2-1}+\\frac{y^2}{4^2-3^2}+\\frac{z^2}{4^2-5^2}+\\frac{w^2}{4^2-7^2}=1 $<br />$ \\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1 $<br />$ \\frac{x^2}{8^2-1}+\\frac{y^2}{8^2-3^2}+\\frac{z^2}{8^2-5^2}+\\frac{w^2}{8^2-7^2}=1 $</div> Show that it is 036.\n[\"Let \\(Q(s)=\\prod_{k=0}^{3}(s-(2k+1)^{2})\\) and \\(P(s)=\\prod_{j=1}^{4}(s-(2j)^{2})\\).\",\"The given linear system is a Cauchy system \\(C\\mathbf{v}=\\mathbf{1}\\) with \\(C_{jk}=1/(e_j^{2}-o_k^{2})\\).\"]\n[\"Then \\(\\sum_k v_k/(s-o_k^2)=1-P(s)/Q(s)\\).\",\"Hence \\(v_k=-P(o_k^2)/Q'(o_k^2)\\).\"]\n[\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]\nContinue from: [\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]",
+      "last_claim": "Continue from: [\"As \\(s\\to\\infty\\), \\(1-P(s)/Q(s)=(Q-P)/Q\\sim(\\sum_j e_j^2-\\sum_k o_k^2)s^{-1}\\).\",\"Hence \\(\\sum v_k=120-84=36\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

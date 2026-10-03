@@ -1,0 +1,114 @@
+{
+  "problem_id": "aime_1987_p8",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "The given inequality is equivalent to 6n/7 < k < 7n/8 for a positive integer k",
+      "statement": "(6n/7) < k < (7n/8) for positive integer k",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The length of this open interval is n/56",
+      "statement": "(7n/8 - 6n/7) = n/56",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Largest n with exactly one integer k in the open interval is 112",
+      "statement": "max {n \\in ℕ | |((6n/7),(7n/8)) \\cap ℤ| = 1} = 112",
+      "dependencies": [
+        "l0",
+        "l8",
+        "l12",
+        "l15"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_0",
+      "natural_language": "Find largest positive integer n with exactly one positive integer k satisfying 8/15 < n/(n+k) < 7/13",
+      "statement": "max {n ∈ ℕ | |{k ∈ ℤ | 8/15 < n/(n+k) < 7/13}| = 1}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The given inequality is equivalent to 6n/7 < k < 7n/8",
+      "statement": "8/15 < n/(n+k) < 7/13 \\Leftrightarrow 6n/7 < k < 7n/8",
+      "dependencies": [
+        "tc_0",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "For n=112 the interval equals (96,98) and therefore contains exactly one integer k=97",
+      "statement": "((6*112/7),(7*112/8)) ∩ ℤ = {97}",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "An open interval of length >2 contains at least two integers, so n>112 yields at least two k",
+      "statement": "length((6n/7,7n/8))>2 ⇒ |((6n/7,7n/8)) ∩ ℤ| ≥ 2; n>112 ⇒ length>2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Direct substitution shows that k=97 lies in (96,98) and hence is the unique integer satisfying the original inequality when n=112",
+      "statement": "97 \\in ((6*112/7),(7*112/8)) and it is the unique positive integer k satisfying the original inequality for n=112",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "For all n>112 the interval length exceeds 2 hence contains at least two integers k",
+      "statement": "n>112 ⇒ |(6n/7,7n/8) ∩ ℤ| \\ge 2",
+      "dependencies": [
+        "l2",
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

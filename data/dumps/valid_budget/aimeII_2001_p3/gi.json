@@ -1,0 +1,91 @@
+{
+  "problem_id": "aimeII_2001_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define the sequence by x1=211, x2=375, x3=420, x4=523 and xn=xn-1-xn-2+xn-3-xn-4 for n>=5.",
+      "statement": "sequence defined by given initials and linear recurrence of order 4",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The linear recurrence implies that the generating sequence of consecutive 4-tuples is completely determined by the initial 4-tuple, so it suffices to compute the first several terms until the initial 4-tuple reappears.",
+      "statement": "future evolution and periodicity determined by 4-tuple state repetition",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Direct computation of the first 12 terms yields x11=x1 and x12=x2, and by the recurrence the sequence is therefore periodic with period 10.",
+      "statement": "sequence is periodic with period 10",
+      "dependencies": [
+        "tc_1",
+        "l0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "For any positive integer k, x_{10k+r}=x_r when 1<=r<=10.",
+      "statement": "explicit reduction of index modulo 10",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "531≡1 mod 10 so x531=x1=211; 753≡3 mod 10 so x753=x3=420; 975≡5 mod 10 so x975=x5=267; their sum is 211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l2",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Computing successive terms of the recurrence produces the 4-tuple (x_{11},x_{12},x_{13},x_{14})=(211,375,420,523), which coincides with the initial 4-tuple, so the sequence of 4-tuples (and hence the sequence itself) is periodic of period 10.",
+      "statement": "4-tuple (x11..x14) matches initial 4-tuple hence period 10",
+      "dependencies": [
+        "tc_1",
+        "l0"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Consequently every term depends only on its index modulo 10, and the required sum may be evaluated by reducing the three indices 531, 753 and 975 modulo 10.",
+      "statement": "terms depend only on index mod 10; sum obtained by reducing indices mod 10",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

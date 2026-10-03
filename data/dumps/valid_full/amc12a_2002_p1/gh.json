@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2002_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.",
+      "statement": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5521576303742328,
+      "support": null
+    },
+    {
+      "id": "l2001",
+      "natural_language": "Advance the argument (step 3109): continue from Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A)",
+      "statement": "Advance the argument (step 3109): continue from Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5490214034302319,
+      "support": null
+    }
+  ]
+}

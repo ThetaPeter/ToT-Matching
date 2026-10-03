@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_141",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A rectangular patio has an area of $180$ square feet and a perimeter of $54$ feet. What is the length of the diagonal (in feet) squared? Show that it is 369.",
+      "statement": "A rectangular patio has an area of $180$ square feet and a perimeter of $54$ feet. What is the length of the diagonal (in feet) squared? Show that it is 369.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5465850224091323,
+      "support": null
+    },
+    {
+      "id": "l6105",
+      "natural_language": "Advance the argument (step 9493): continue from A rectangular patio has an area of $180$ square feet and a perimeter of $54$ fee",
+      "statement": "Advance the argument (step 9493): continue from A rectangular patio has an area of $180$ square feet and a perimeter of $54$ fee",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7765163665331186,
+      "support": null
+    }
+  ]
+}

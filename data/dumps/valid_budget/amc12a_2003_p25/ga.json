@@ -1,0 +1,507 @@
+{
+  "problem_id": "amc12a_2003_p25",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f(x) = sqrt(a x^2 + b x) with b > 0",
+      "statement": "Domain D = {x in R | a x^2 + b x >= 0} and range R = f(D) must satisfy D = R as sets.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "D must be a closed interval [0, M] or [0, +inf) for some M",
+      "statement": "D is [0, +inf) or [0, M] (M finite) because b > 0 forces 0 in D and D unbounded above or bounded by root -b/a.",
+      "dependencies": [
+        "tc_1",
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "f maps D onto [0, sup f) or [0, sup f]",
+      "statement": "Range equals [0, lim x->inf f(x)) or [0, f(x_max)] depending on a sign and vertex location.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Case a = 0 forces D = [0, +inf) and range = [0, +inf) only if b arbitrary positive",
+      "statement": "a = 0 yields D = [0, +inf) and range = [0, +inf), satisfying equality.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Case a < 0 yields bounded D = [0, -b/a] and quadratic max forces range match only for specific a = -b/4",
+      "statement": "a < 0 produces exactly one a = -1/4 satisfying range = D after scaling b = 1.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Case a > 0 yields D unbounded or empty; range never matches D except impossible limits",
+      "statement": "a > 0 produces no solutions because range is bounded while D is unbounded or range misses 0 endpoint.",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Exactly two real a (namely a = 0 and a = -1/4) admit at least one b > 0 making domain equal range",
+      "statement": "Number of valid real a is 2.",
+      "dependencies": [
+        "l3",
+        "l4",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The range of f is contained in [0,\\infty), so if the domain D equals the range then necessarily D\\subseteq[0,\\infty).",
+      "statement": "Range(f) \\subseteq [0,\\infty) \\Rightarrow (D = Range(f) \\Rightarrow D \\subseteq [0,\\infty)).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "Consequently D={x:ax^{2}+bx\\ge0} and this set must be contained in the non-negative reals.",
+      "statement": "D = {x \\in ℝ | a x^{2} + b x \\ge 0} \\subseteq [0,\\infty).",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Scale b=1 wlog by homogeneity; explicit check confirms a=0 and a=-1/4 both work",
+      "statement": "For b=1, a=0 gives D=R=[0,\\infty); a=-1/4 gives D=R=[0,2].",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Exactly two real values of a admit at least one b>0 with domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "l6",
+        "l5",
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "If a>0 then D notsubseteq [0,infty)",
+      "statement": "If a>0, the roots of ax^{2}+bx are 0 and -b/a<0, so ax^{2}+bx\\ge0 for x\\le-b/a or x\\ge0, and thus D⊈[0,\\infty).",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "If a=0 then D=range=[0,\\infty)",
+      "statement": "If a=0, then D=[0,\\infty) and the range of \\sqrt(bx) is likewise [0,\\infty), so the two sets coincide.",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "a must satisfy a \\le 0, else D not \\subseteq [0,\\infty)",
+      "statement": "If a > 0 then D contains negative numbers, contradicting tc_3.",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "a = 0 works for any b > 0",
+      "statement": "a = 0 yields D = range = [0, \\infty).",
+      "dependencies": [
+        "tc_4",
+        "tc_3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "a < 0 yields exactly one valid ratio a/b",
+      "statement": "a < 0 forces D = [0, -b/a] finite; matching range requires a = -b/4.",
+      "dependencies": [
+        "tc_4",
+        "tc_3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Exactly two real a admit at least one b > 0",
+      "statement": "Valid a are 0 and -1/4 (after scaling).",
+      "dependencies": [
+        "l9",
+        "l10",
+        "tc_6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_5",
+      "natural_language": "The range of f is contained in [0,\\infty), so the common set D satisfies D\\subseteq[0,\\infty).",
+      "statement": "Range(f) \\subseteq [0,\\infty) \\Rightarrow (D = Range(f) \\Rightarrow D \\subseteq [0,\\infty)).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_6",
+      "natural_language": "Consequently the inequality ax^2+bx\\ge0 holds if and only if x\\in D.",
+      "statement": "D = {x \\in \\mathbb{R} | a x^2 + b x \\ge 0}.",
+      "dependencies": [
+        "tc_5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "a=0 and a=-1/4 are the only values that work after scaling b=1",
+      "statement": "The only real a that admit b>0 with D=Range(f) are a=0 and a=-1/4.",
+      "dependencies": [
+        "l9",
+        "l10",
+        "l7"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "l11",
+        "tc_6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_7",
+      "natural_language": "If a>0 then the quadratic ax^{2}+bx opens upwards and is nonnegative outside the interval with endpoints 0 and -b/a; the presence of the negative root -b/a therefore forces D to contain an interval of negative numbers, contradicting D\\subseteq[0,\\infty).",
+      "statement": "a>0 implies D contains negative numbers, contradicting tc_3.",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "If a=0 then D={x:bx\\ge0}=[0,\\infty) (since b>0), so it remains only to check whether the range of f(x)=\\sqrt(bx) equals [0,\\infty).",
+      "statement": "a=0 yields D=[0,\\infty) and range of \\sqrt(bx) is likewise [0,\\infty).",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "l12",
+        "tc_7",
+        "l10"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "a = 0 works for any b > 0",
+      "statement": "a = 0 yields D = range = [0, \\infty).",
+      "dependencies": [
+        "tc_4",
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "a < 0 yields exactly one valid ratio a/b",
+      "statement": "a < 0 forces D = [0, -b/a] finite; matching range requires a = -b/4.",
+      "dependencies": [
+        "tc_4",
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Exactly two real a admit at least one b > 0",
+      "statement": "Valid a are 0 and -1/4 (after scaling).",
+      "dependencies": [
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_8",
+      "natural_language": "The range of f is always contained in [0,∞), so any a for which domain equals range must have domain contained in [0,∞).",
+      "statement": "Range(f) ⊆ [0,∞) \\Rightarrow (D = Range(f) \\Rightarrow D ⊆ [0,∞)).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_9",
+      "natural_language": "If a>0 then ax^{2}+bx\\ge0 on an unbounded set that includes an interval of negative reals, so the domain cannot equal the range.",
+      "statement": "a>0 \\Rightarrow D contains negative numbers, contradicting D ⊆ [0,∞).",
+      "dependencies": [
+        "tc_8",
+        "tc_3"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "tc_9",
+        "l9",
+        "l10"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "l11",
+        "l6",
+        "ts_7"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_10",
+      "natural_language": "Hence ax² + bx <0 for all x<0",
+      "statement": "ax² + bx < 0 for all x < 0",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_11",
+      "natural_language": "In particular the only possible root of ax + b =0 that could lie in the non-positive reals is x=0",
+      "statement": "The only possible root of ax + b = 0 lying in (-∞,0] is x = 0",
+      "dependencies": [
+        "tc_10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2",
+      "dependencies": [
+        "tc_11",
+        "l9",
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Exactly two real a admit at least one b > 0",
+      "statement": "Valid a are 0 and -1/4 (after scaling).",
+      "dependencies": [
+        "l9",
+        "l10"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_12",
+      "natural_language": "The range of f is contained in [0,∞), so if the domain D equals the range then necessarily D\\subseteq[0,∞).",
+      "statement": "Range(f) \\subseteq [0,∞) \\Rightarrow (D = Range(f) \\Rightarrow D \\subseteq [0,∞)).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_13",
+      "natural_language": "The inequality x(ax+b)\\ge0 together with D\\subseteq[0,∞) forces D to be a closed interval of the form [0,c] or [c,∞) (or a singleton) for some c\\ge0.",
+      "statement": "D = {x \\in ℝ | a x^{2} + b x \\ge 0} \\subseteq [0,∞) implies D is [0,c], [c,∞) or {0} for some c \\ge 0.",
+      "dependencies": [
+        "tc_12",
+        "tc_3"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "tc_13",
+        "l9",
+        "l10",
+        "l11"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "l9",
+        "l10",
+        "l11"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

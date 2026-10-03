@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_342",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sum of the first 5 terms of an arithmetic series is $70$.  The sum of the first 10 terms of this  arithmetic series is $210$.  What is the first term of the series? Show that it is \\frac{42}{5}.",
+      "statement": "The sum of the first 5 terms of an arithmetic series is $70$.  The sum of the first 10 terms of this  arithmetic series is $210$.  What is the first term of the series? Show that it is \\frac{42}{5}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3031571819794864,
+      "support": null
+    },
+    {
+      "id": "l7996",
+      "natural_language": "Advance the argument (step 12434): continue from The sum of the first 5 terms of an arithmetic series is $70$.  The sum of the fi",
+      "statement": "Advance the argument (step 12434): continue from The sum of the first 5 terms of an arithmetic series is $70$.  The sum of the fi",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8528384633965111,
+      "support": null
+    }
+  ]
+}

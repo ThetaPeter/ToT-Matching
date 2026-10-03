@@ -1,0 +1,106 @@
+{
+  "problem_id": "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c, d be arbitrary complex numbers.",
+      "statement": "a,b,c,d ∈ ℂ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The equality (a-d)(a-c)(a-b) = -(((a^{2} - (b+c)a) + cb)d) + (a^{2} - (b+c)a + cb)a holds.",
+      "statement": "(a-d)(a-c)(a-b) = -(((a^{2} - (b+c)a) + cb)d) + (a^{2} - (b+c)a + cb)a",
+      "dependencies": [
+        "tc_1",
+        "l2",
+        "l11",
+        "l12",
+        "l13",
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Observe that (a-b)(a-c)=a^{2}-(b+c)a + bc.",
+      "statement": "(a-b)(a-c) = a^{2} - (b+c)a + bc",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Let p=a^{2}-(b+c)a+cb. Then the RHS equals p(a-d).",
+      "statement": "Let p = a^{2} - (b+c)a + cb. Then RHS = p(a-d)",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Since bc=cb, we have p=(a-b)(a-c).",
+      "statement": "p = (a-b)(a-c) (since bc=cb)",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus the RHS equals (a-b)(a-c)(a-d), which is identical to the LHS.",
+      "statement": "RHS = (a-b)(a-c)(a-d) = LHS",
+      "dependencies": [
+        "l2",
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Therefore both sides are identical, so the claimed equality holds for all complex a,b,c,d.",
+      "statement": "Both sides identical ⇒ equality holds ∀ a,b,c,d ∈ ℂ",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "This finishes the algebraic verification.",
+      "statement": "Algebraic verification complete",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_345",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the remainder when $2000+2001+2002+2003+2004+2005+2006$ is divided by $7$? Show that it is 0.",
+      "statement": "What is the remainder when $2000+2001+2002+2003+2004+2005+2006$ is divided by $7$? Show that it is 0.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l11073",
+      "natural_language": "Advance the argument (step 17221): continue from What is the remainder when $2000+2001+2002+2003+2004+2005+2006$ is divided by $7",
+      "statement": "Advance the argument (step 17221): continue from What is the remainder when $2000+2001+2002+2003+2004+2005+2006$ is divided by $7",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6666666666666667,
+      "support": null
+    },
+    {
+      "id": "l_dead_6151",
+      "natural_language": "dead-end unused case 17223: discard this alternative",
+      "statement": "dead-end unused case 17223: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.31943828249996997,
+      "support": null
+    }
+  ]
+}

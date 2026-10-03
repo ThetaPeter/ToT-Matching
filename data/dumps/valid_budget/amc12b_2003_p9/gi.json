@@ -1,0 +1,51 @@
+{
+  "problem_id": "amc12b_2003_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f is linear and f(6) - f(2) = 12",
+      "statement": "f linear ∧ (f(6) - f(2) = 12)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "A linear function has the form f(x)=mx+b",
+      "statement": "linear f → ∃ m,b \\forall x (f(x)=mx+b)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus f(6)-f(2)=4m=12, so the slope is m=3",
+      "statement": "m=3",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "f(12) - f(2) = 10m = 30",
+      "statement": "f(12) - f(2) = 30",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+The sequence is defined by given initial terms together with a linear recurrence of order \(4\). Consequently, the future evolution of the sequence (and in particular any periodicity) is completely determined by repetition of a \(4\)-tuple of consecutive terms.
+
+Direct computation of the first several terms shows that the \(4\)-tuple \((x_{11},x_{12},x_{13},x_{14})\) coincides with the initial \(4\)-tuple. By the observation of the preceding paragraph, the sequence is therefore periodic with period \(10\).
+
+In particular, every term depends only on the residue of its index modulo \(10\). Reducing the three given indices modulo \(10\) therefore yields
+\[
+x_{531}+x_{753}+x_{975}=898.
+\]

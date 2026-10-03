@@ -1,0 +1,19 @@
+### Setup and algebraic reduction.
+Let \(0<x<\pi\). Then
+\[
+\frac{9x^2\sin^2 x+4}{x\sin x}=9x\sin x+\frac{4}{x\sin x}.
+\]
+Set \(t=x\sin x>0\). The expression therefore equals \(9t+4/t\).
+
+### Lower bound via AM-GM.
+By the AM-GM inequality,
+\[
+9t+\frac{4}{t}\ge 2\sqrt{9t\cdot\frac{4}{t}}=12,
+\]
+with equality if and only if \(t=2/3\).
+
+### Attainment.
+There exists \(x\in(0,\pi)\) such that \(x\sin x=2/3\). Consequently equality holds for some \(x\in(0,\pi)\), so the original expression attains the value \(12\).
+
+### Conclusion.
+The minimum of the expression on \((0,\pi)\) is therefore equal to \(12\).

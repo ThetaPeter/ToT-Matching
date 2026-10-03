@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_exk2powkeqapb2mulbpa2_aeq1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $a$ and $b$ are positive integers and there exists a positive integer $k$ such that $2^k = (a + b^2) (b + a^2)$, then show that $a = 1$.",
+      "statement": "If $a$ and $b$ are positive integers and there exists a positive integer $k$ such that $2^k = (a + b^2) (b + a^2)$, then show that $a = 1$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12693",
+      "natural_language": "Advance the argument (step 19741): continue from If $a$ and $b$ are positive integers and there exists a positive integer $k$ suc",
+      "statement": "Advance the argument (step 19741): continue from If $a$ and $b$ are positive integers and there exists a positive integer $k$ suc",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5850179393017045,
+      "support": null
+    },
+    {
+      "id": "l12694",
+      "natural_language": "Advance the argument (step 19742): continue from If $a$ and $b$ are positive integers and there exists a positive integer $k$ suc",
+      "statement": "Advance the argument (step 19742): continue from If $a$ and $b$ are positive integers and there exists a positive integer $k$ suc",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3173803627134354,
+      "support": null
+    }
+  ]
+}

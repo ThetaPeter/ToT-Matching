@@ -1,0 +1,64 @@
+{
+  "problem_id": "aime_1990_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The numbers a,b,x,y satisfy the four given power-sum equations p1=3, p2=7, p3=16, p4=42 where pk=ax^k+by^k.",
+      "statement": "p1=3 ∧ p2=7 ∧ p3=16 ∧ p4=42",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.420084025208403,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "x and y satisfy the quadratic t^2-s t+r=0, so the sequence pk obeys the linear recurrence pk=s p_{k-1}-r p_{k-2} for k\\ge3.",
+      "statement": "∀ k\\ge3, pk=s p_{k-1}-r p_{k-2}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6831300510639734,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "The two instances of the recurrence at k=3 and k=4 produce the linear system 7s-3r=16 and 16s-7r=42.",
+      "statement": "7s-3r=16 ∧ 16s-7r=42",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6668859288553503,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Solving the linear system 7s-3p=16 and 16s-7p=42 yields s=-14 and p=-38.",
+      "statement": "s=-14 ∧ p=-38",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": 0.6289709020331511,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "The pair (s,p)=(-14,-38) is consistent with the recurrence applied at n=3.",
+      "statement": "recurrence holds at n=3 for (s,p)=(-14,-38)",
+      "dependencies": [
+        "l3",
+        "l1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": 0.5439282932204212,
+      "support": null
+    }
+  ]
+}

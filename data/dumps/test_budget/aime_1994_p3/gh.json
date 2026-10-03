@@ -1,0 +1,61 @@
+{
+  "problem_id": "aime_1994_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The function f satisfies f(x) + f(x-1) = x^2 for all real x, and f(19) = 94.",
+      "statement": "forall x, f(x)+f(x-1)=x^2 and f(19)=94",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4913036844405175,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "The given relation specializes to the recurrence f(n)=n^2-f(n-1) for every integer n.",
+      "statement": "forall integer n, f(n)=n^2-f(n-1)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Iterating the recurrence 75 times therefore yields an explicit formula for f(94) as an alternating sum of 75 consecutive squares plus \\pm f(19).",
+      "statement": "f(94) equals alternating sum of 75 consecutive squares plus (-1)^{75} f(19)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4364357804719848,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "The 75-term sum consists of the 37 consecutive pairs (94^2-93^2)+(92^2-91^2)+⋯+(22^2-21^2) together with the leftover positive term 20^2.",
+      "statement": "sum = 20^2 + sum_{k=11}^{47} ((2k)^2 - (2k-1)^2)",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l20",
+      "natural_language": "The arithmetic series sum_{m=11}^{47}(4m-1) evaluates to 37*115=4255.",
+      "statement": "sum_{m=11 to 47}(4m-1)=4255",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.18898223650461363,
+      "support": null
+    }
+  ]
+}

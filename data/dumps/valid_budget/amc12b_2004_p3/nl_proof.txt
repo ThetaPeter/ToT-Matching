@@ -1,0 +1,13 @@
+Let \(x,y\) be positive integers satisfying \(2^x 3^y=1296\).
+
+Observe that \(1296=6^4\). Since \(6=2\cdot 3\), it follows that
+\[
+1296=(2\cdot 3)^4=2^4 3^4,
+\]
+and therefore \(x=4\) and \(y=4\). Direct verification also gives \(2^4\cdot 3^4=16\cdot 81=1296\).
+
+By unique factorization of positive integers, the representation of \(1296\) as a product of powers of \(2\) and \(3\) is unique. Consequently there do not exist positive integers \(x',y'\) other than \(4,4\) such that \(2^{x'}3^{y'}=1296\). In other words,
+\[
+\forall x',y'\in\mathbb{Z}^+\bigl(2^{x'}3^{y'}=1296\implies x'=4\land y'=4\bigr).
+\]
+In particular the given pair \((x,y)\) must be \((4,4)\). Adding these exponents yields \(x+y=8\).

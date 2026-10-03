@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_99",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Solve the congruence $2n \\equiv 15 \\pmod{47}$, as a residue modulo 47.  (Give an answer between 0 and 46.) Show that it is 31.",
+      "statement": "Solve the congruence $2n \\equiv 15 \\pmod{47}$, as a residue modulo 47.  (Give an answer between 0 and 46.) Show that it is 31.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.30618621784789724,
+      "support": null
+    },
+    {
+      "id": "l12424",
+      "natural_language": "Advance the argument (step 19322): continue from Solve the congruence $2n \\equiv 15 \\pmod{47}$, as a residue modulo 47.  (Give an",
+      "statement": "Advance the argument (step 19322): continue from Solve the congruence $2n \\equiv 15 \\pmod{47}$, as a residue modulo 47.  (Give an",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7715167498104596,
+      "support": null
+    }
+  ]
+}

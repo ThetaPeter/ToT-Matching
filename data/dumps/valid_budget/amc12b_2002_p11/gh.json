@@ -1,0 +1,59 @@
+{
+  "problem_id": "amc12b_2002_p11",
+  "nodes": [
+    {
+      "id": "l9",
+      "natural_language": "With B=2 the four primes become A-2, A, A+2 (all odd)",
+      "statement": "prime(A-2) ∧ prime(A) ∧ prime(A+2)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.502518907629606,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7",
+      "statement": "A=5",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3768891807222045,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus A, A-2 and A+2 are all odd primes (so they form a prime triplet of the form n, n+2, n+4).",
+      "statement": "prime(A) ∧ prime(A-2) ∧ prime(A+2) ∧ odd(A) ∧ triplet_form(n,n+2,n+4)",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.5090278103806223,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Among any three integers of the form n, n+2, n+4, exactly one is divisible by 3",
+      "statement": "∀ n (div3(n) ⊕ div3(n+2) ⊕ div3(n+4))",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.29880715233359845,
+      "support": null
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The four primes are then 2,3,5,7 whose sum 17 is prime",
+      "statement": "S is prime",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": 0.6784005252999682,
+      "support": null
+    }
+  ]
+}

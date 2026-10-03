@@ -1,0 +1,61 @@
+{
+  "problem_id": "aime_1995_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given (1+sin t)(1+cos t)=5/4",
+      "statement": "(1+sin t)(1+cos t)=5/4",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3535533905932738,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let s=sin t + cos t and p=sin t cos t. Expanding the given identity produces s+p=1/4.",
+      "statement": "s + p = 1/4",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.831726846581919,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Let x=sin t + cos t and y=sin t cos t.",
+      "statement": "x = sin t + cos t, y = sin t cos t",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": 0.8036972934368553,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "Substituting s=-1+sqrt(10)/2 yields 13/4-sqrt(10)",
+      "statement": "(1-sin t)(1-cos t) = 13/4 - sqrt(10)",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.07537783614444092,
+      "support": null
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "k=10, m=13, n=4 are positive integers with m,n coprime so k+m+n=27",
+      "statement": "k+m+n=27",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.9486832980505138,
+      "support": null
+    }
+  ]
+}

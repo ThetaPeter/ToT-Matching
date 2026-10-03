@@ -1,0 +1,47 @@
+{
+  "problem_id": "aimeII_2020_p6",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "Hence the sequence is periodic of period 5",
+      "statement": "t_{n+5}=t_n for all n>=1",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.34020690871988585,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "Verify that t_6=t_1 and t_7=t_2, so the sequence is periodic with period 5",
+      "statement": "t_6=t_1 ∧ t_7=t_2 ⇒ t_{n+5}=t_n for all n>=1",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.29277002188455997,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "Compute t_3=(5 t_2+1)/(25 t_1)=53/250",
+      "statement": "t_3=53/250",
+      "dependencies": [],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.41602514716892186,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "Verify that t_6=t_1 and t_7=t_2, so the sequence is periodic with period 5",
+      "statement": "t_6=t_1 ∧ t_7=t_2 ⇒ t_{n+5}=t_n for all n>=1",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.5715476066494083,
+      "support": null
+    }
+  ]
+}

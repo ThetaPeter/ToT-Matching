@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_3rootspoly_amdtamctambeqnasqmbpctapcbtdpasqmbpctapcbta",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim": "[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim": "[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim": "Continue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\nContinue from:\nLet p = a^2 - (b+c)a + cb. The RHS equals p(a-d).",
+      "last_claim": "Let p = a^2 - (b+c)a + cb. The RHS equals p(a-d).",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\nContinue from:\np equals (a-b)(a-c).",
+      "last_claim": "p equals (a-b)(a-c).",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\n[\"By commutativity of multiplication in \\(\\mathbb{C}\\), \\((a-b)(a-c)(a-d)=(a-d)(a-c)(a-b)\\).\",\"This establishes the claimed identity.\"]",
+      "last_claim": "[\"By commutativity of multiplication in \\(\\mathbb{C}\\), \\((a-b)(a-c)(a-d)=(a-d)(a-c)(a-b)\\).\",\"This establishes the claimed identity.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\nContinue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim": "Continue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim": "[\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: Continue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\nContinue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\n[\"Therefore both sides are identical, so the claimed equality holds for all complex \\(a,b,c,d\\).\",\"This completes the algebraic verification of the identity.\"]",
+      "last_claim": "[\"Therefore both sides are identical, so the claimed equality holds for all complex \\(a,b,c,d\\).\",\"This completes the algebraic verification of the identity.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\nContinue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\nContinue from: Continue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim": "Continue from: Continue from: [\"Thus \\(p=(a-b)(a-c)\\).\",\"Hence the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\n[\"The two sides are therefore identical, so the claimed identity holds for all complex \\(a,b,c,d\\).\",\"This finishes the algebraic verification.\"]",
+      "last_claim": "[\"The two sides are therefore identical, so the claimed identity holds for all complex \\(a,b,c,d\\).\",\"This finishes the algebraic verification.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any complex numbers $a$, $b$, $c$, $d$, $(a-d)(a-c)(a-b) = -(((a^2 - (b+c)a) + cb)d) + (a^2 - (b+c)a + cb)a$.\n[\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\nContinue from: [\"Let \\(p=a^{2}-(b+c)a+cb\\). Then the RHS equals \\(p(a-d)\\).\",\"Observe that \\((a-b)(a-c)=a^{2}-(b+c)a+bc\\).\"]\n[\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]\nContinue from: [\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim": "Continue from: [\"Since \\(bc=cb\\), we have \\(p=(a-b)(a-c)\\).\",\"Thus the RHS equals \\((a-b)(a-c)(a-d)\\), which is identical to the LHS.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

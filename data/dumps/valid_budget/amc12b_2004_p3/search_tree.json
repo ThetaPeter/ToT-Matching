@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2004_p3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n1296=6^4 since 6^2=36 and 36^2=1296.",
+      "last_claim": "1296=6^4 since 6^2=36 and 36^2=1296.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim": "6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]",
+      "last_claim": "[\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim": "Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n1296=6^4 since 6^2=36 and 36^2=1296.\n6^4=(2\\cdot3)^4=2^4 3^4, so x=4 and y=4.",
+      "last_claim": "6^4=(2\\cdot3)^4=2^4 3^4, so x=4 and y=4.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n1296=6^4 since 6^2=36 and 36^2=1296.\nHence x+y=8.",
+      "last_claim": "Hence x+y=8.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]\n[\"Verification: \\(2^4\\cdot 3^4=16\\cdot 81=1296\\).\",\"No other pair of positive integers works by uniqueness of prime factorization.\"]",
+      "last_claim": "[\"Verification: \\(2^4\\cdot 3^4=16\\cdot 81=1296\\).\",\"No other pair of positive integers works by uniqueness of prime factorization.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]\nContinue from: [\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]",
+      "last_claim": "Continue from: [\"Therefore \\(x+y=4+4=8\\).\", \"By unique prime factorization this is the only pair of positive integers \\((x,y)\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]",
+      "last_claim": "[\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim": "Continue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]\n[\"Indeed \\(2^4\\cdot 3^4=16\\cdot 81=1296\\).\",\"By uniqueness of prime factorization no other pair of nonnegative integers \\((x,y)\\) works.\"]",
+      "last_claim": "[\"Indeed \\(2^4\\cdot 3^4=16\\cdot 81=1296\\).\",\"By uniqueness of prime factorization no other pair of nonnegative integers \\((x,y)\\) works.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]\nContinue from: [\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]",
+      "last_claim": "Continue from: [\"Thus the prime factorization of 1296 is uniquely \\(2^4 3^4\\), so \\(x=4\\) and \\(y=4\\).\",\"Hence \\(x+y=8\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\n[\"Therefore \\(x=4\\) and \\(y=4\\), hence \\(x+y=8\\).\", \"By the fundamental theorem of arithmetic the exponents are unique, so this is the only solution.\"]",
+      "last_claim": "[\"Therefore \\(x=4\\) and \\(y=4\\), hence \\(x+y=8\\).\", \"By the fundamental theorem of arithmetic the exponents are unique, so this is the only solution.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "If $x$ and $y$ are positive integers for which $2^x3^y=1296$, what is the value of $x+y$?\n\n$(\\mathrm {A})\\ 8 \\qquad (\\mathrm {B})\\ 9 \\qquad (\\mathrm {C})\\ 10 \\qquad (\\mathrm {D})\\ 11 \\qquad (\\mathrm {E})\\ 12$ Show that it is 8.\n6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.\nContinue from: Continue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim": "Continue from: Continue from: Continue from: 6=2*3 implies 1296=(2*3)^4=2^4 3^4 so x=4,y=4.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

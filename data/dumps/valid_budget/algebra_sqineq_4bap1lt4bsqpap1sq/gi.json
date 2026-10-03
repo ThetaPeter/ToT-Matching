@@ -1,0 +1,27 @@
+{
+  "problem_id": "algebra_sqineq_4bap1lt4bsqpap1sq",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a and b be arbitrary real numbers.",
+      "statement": "a ∈ ℝ ∧ b ∈ ℝ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: 4b(a+1) ≤ 4b² + (a+1)².",
+      "statement": "4b(a + 1) ≤ 4b² + (a + 1)²",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

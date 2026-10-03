@@ -1,0 +1,84 @@
+{
+  "problem_id": "amc12b_2003_p17",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "Given log(x^2 y)=1",
+      "statement": "log(x^2 y)=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7745966692414834,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let a=log x and b=log y",
+      "statement": "a=log x ∧ b=log y",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Equations become a+3b=1 and 2a+b=1",
+      "statement": "a+3b=1 ∧ 2a+b=1",
+      "dependencies": [
+        "tc_2",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Solve linear system to obtain a=2/5 and b=1/5",
+      "statement": "a=2/5 ∧ b=1/5",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3872983346207417,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "A suitable linear combination of the two original equations produces log(xy)=3/5",
+      "statement": "log(xy)=3/5",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.25197631533948484,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Let a=log x and c=log y",
+      "statement": "a=log x ∧ c=log y",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.21081851067789198,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Linear combination (1/5)(a+3b)+(2/5)(2a+b) equals a+b and therefore equals 3/5",
+      "statement": "(1/5)(a+3b)+(2/5)(2a+b)=a+b=3/5",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": 0.25,
+      "support": null
+    }
+  ]
+}

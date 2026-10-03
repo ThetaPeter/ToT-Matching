@@ -1,0 +1,45 @@
+{
+  "problem_id": "algebra_2complexrootspoly_xsqp49eqxp7itxpn7i",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "Expand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.",
+      "statement": "(x + 7i) * (x - 7i) = x^2 - (7i)^2",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.31622776601683794,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Compute (7i)^2 = 49 i^2 = -49, hence x^2 - (7i)^2 = x^2 + 49.",
+      "statement": "(7i)^2 = -49 ∧ (x^2 - (7i)^2 = x^2 + 49)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.34992710611188266,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "By the difference of squares formula, x^2-(7i)^2=(x-7i)(x+7i).",
+      "statement": "x^2 - (7i)^2 = (x - 7i) * (x + 7i)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.4472135954999579,
+      "support": null
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Hence the expanded RHS equals the LHS for every complex x.",
+      "statement": "forall x:complex. x^2 + 49 = (x + 7i) * (x - 7i)",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.6030226891555273,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2002_p11",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.\"]",
+      "last_claim": "[\"If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]",
+      "last_claim": "[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]",
+      "last_claim": "[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]",
+      "last_claim": "[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.\"]\n[\"Thus exactly one of A or B equals 2 (the unique even prime).\"]",
+      "last_claim": "[\"Thus exactly one of A or B equals 2 (the unique even prime).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"If A, B, A-B and A+B are all odd then A-B and A+B are both even and greater than 2, which is impossible for primes.\"]\n[\"A cannot equal 2, so B=2 and A, A-2, A+2 are all odd primes.\"]",
+      "last_claim": "[\"A cannot equal 2, so B=2 and A, A-2, A+2 are all odd primes.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]\nThus A, A-2 and A+2 are all odd primes (so they form a prime triplet of the form n, n+2, n+4).",
+      "last_claim": "Thus A, A-2 and A+2 are all odd primes (so they form a prime triplet of the form n, n+2, n+4).",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]\nAmong any three integers of the form n, n+2, n+4, exactly one is divisible by 3, hence the only possibility with all three >3 impossible, forcing A-2=3 so A=5.",
+      "last_claim": "Among any three integers of the form n, n+2, n+4, exactly one is divisible by 3, hence the only possibility with all three >3 impossible, forcing A-2=3 so A=5.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]\nHence A=5.",
+      "last_claim": "Hence A=5.",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]\nThe remaining even prime must be B=2.",
+      "last_claim": "The remaining even prime must be B=2.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]\nHence A=5.\n[\"B must be 2, as B=3 yields A+B=8 which is composite.\"]",
+      "last_claim": "[\"B must be 2, as B=3 yields A+B=8 which is composite.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.4,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"Thus A-2, A and A+2 form a prime triplet of odd primes, hence must be 3,5,7.\"]\nHence A=5.\n[\"The four primes are then 2,3,5,7 whose sum 17 is prime.\"]",
+      "last_claim": "[\"The four primes are then 2,3,5,7 whose sum 17 is prime.\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]\nAmong any three integers of the form n, n+2, n+4, exactly one is divisible by 3, hence the only possibility with all three >3 impossible, forcing A-2=3 so A=5.\nThus the four numbers are 5, 2, 3 and 7, all prime.",
+      "last_claim": "Thus the four numbers are 5, 2, 3 and 7, all prime.",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The positive integers $A, B, A-B, $ and $A+B$ are all prime numbers. The sum of these four primes is\n\n$\\mathrm{(A)}\\ \\mathrm{even}\n\\qquad\\mathrm{(B)}\\ \\mathrm{divisible\\ by\\ }3\n\\qquad\\mathrm{(C)}\\ \\mathrm{divisible\\ by\\ }5\n\\qquad\\mathrm{(D)}\\ \\mathrm{divisible\\ by\\ }7\n\\qquad\\mathrm{(E)}\\ \\mathrm{prime}$ Show that it is \\mathrm{(E)}\\ \\text{prime}.\n[\"The only even prime is 2, so exactly one of the four numbers equals 2.\"]\n[\"B=2 is the only possibility, as A=2 forces B=1 (not prime), A-B=2 forces A+B even and >2 (not prime), and A+B=2 is impossible for positive integers A,B>1.\"]\nAmong any three integers of the form n, n+2, n+4, exactly one is divisible by 3, hence the only possibility with all three >3 impossible, forcing A-2=3 so A=5.\nTheir sum equals 17, which is itself prime.",
+      "last_claim": "Their sum equals 17, which is itself prime.",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

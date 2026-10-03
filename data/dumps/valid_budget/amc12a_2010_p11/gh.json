@@ -1,0 +1,51 @@
+{
+  "problem_id": "amc12a_2010_p11",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "Rewrite 7^{x+7}=8^x as 7^x · 7^7 = 8^x",
+      "statement": "7^x · 7^7 = 8^x",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.1767766952966369,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Divide both sides by 7^x to obtain 7^7 = (8/7)^x",
+      "statement": "7^7 = (8/7)^x",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.35355339059327384,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "Take logarithm base 8/7 of both sides of 7^7 = (8/7)^x to obtain x = log_{8/7} 7^7",
+      "statement": "x = \\log_{8/7} 7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4728662437434605,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Note that the same identity follows from taking log_{8/7} of both sides of 7^7=(8/7)^x",
+      "statement": "Identity follows from log_{8/7} of both sides of 7^7=(8/7)^x",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.47809144373375756,
+      "support": null
+    }
+  ]
+}

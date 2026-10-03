@@ -1,0 +1,15 @@
+### Setup and first reduction.
+We seek all real \(x\) such that \(\cos^2 x+\cos^2 2x+\cos^2 3x=1\). Using the power-reduction formulae \(\cos^2 x=(1+\cos 2x)/2\), \(\cos^2 2x=(1+\cos 4x)/2\) and \(\cos^2 3x=(1+\cos 6x)/2\), the original equation is equivalent to \(\cos 2x+\cos 4x+\cos 6x=-1\). (The same equivalence is recovered from the companion identity \(\cos^2 x+\cos^2 2x+\cos^2 3x=1\Leftrightarrow\sin^2 x+\sin^2 2x+\sin^2 3x=2\).)
+
+### Factorization in terms of a double angle.
+The left-hand side of the reduced equation may be rewritten as \(\cos 4x(2\cos 2x+1)=-1\). Setting \(t=\cos 2x\) (so that \(\cos 4x=2t^2-1\)) produces the cubic relation \((2t^2-1)(2t+1)=-1\), which rearranges at once to \(2t(2t^2+t-1)=0\).
+
+### Solving the cubic.
+The roots are therefore \(t=0\), or \(2t^2+t-1=0\), i.e., \(t=1/2\) or \(t=-1\). In other words \(\cos 2x=0\), or \(\cos 2x=1/2\), or \(\cos 2x=-1\).
+
+### Recovering the solutions.
+- \(\cos 2x=0\) yields \(x=k\pi/2\) for \(k\in\mathbb{Z}\);
+- \(\cos 2x=1/2\) yields \(x=\pm\pi/3+2k\pi/3\) for \(k\in\mathbb{Z}\);
+- \(\cos 2x=-1\) yields \(x=\pi/2+k\pi\), which is already contained in the first family.
+
+Thus every real solution is of one of the two forms \(x=k\pi/2\) or \(x=\pm\pi/3+2k\pi/3\) (\(k\in\mathbb{Z}\)). (An independent trigonometric factorization of the same reduced equation, \(\sin x\cdot\sin 2x\cdot(2\cos 3x+1)=0\), produces the same complete list of solutions.)

@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2009_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]",
+      "last_claim": "[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.7,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\n[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim": "[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.2,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\n[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]",
+      "last_claim": "[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\nContinue from: [\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]",
+      "last_claim": "Continue from: [\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\n[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\n[\"Then \\(1+\\frac{1}{2}=\\frac{3}{2}\\), so the expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\",\"Then \\(\\frac{1}{\\frac{3}{2}}=\\frac{2}{3}\\), so the expression equals \\(1+\\frac{2}{3}=\\frac{5}{3}\\).\"]",
+      "last_claim": "[\"Then \\(1+\\frac{1}{2}=\\frac{3}{2}\\), so the expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\",\"Then \\(\\frac{1}{\\frac{3}{2}}=\\frac{2}{3}\\), so the expression equals \\(1+\\frac{2}{3}=\\frac{5}{3}\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\n[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\nContinue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim": "Continue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\n[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]\n[\"1/(3/2) equals 2/3.\",\"The original expression is identical to \\(1+\\\\frac{2}{3}\\).\"]",
+      "last_claim": "[\"1/(3/2) equals 2/3.\",\"The original expression is identical to \\(1+\\\\frac{2}{3}\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\n[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]\nContinue from: [\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]",
+      "last_claim": "Continue from: [\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\n[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]\n[\"1/(3/2) equals 2/3.\",\"The original expression is identical to \\(1+\\\\frac{2}{3}\\).\"]\n1 + 2/3 equals 5/3.",
+      "last_claim": "1 + 2/3 equals 5/3.",
+      "last_claim_id": "l24",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\n[\"The innermost sum 1+1 equals 2.\",\"The original expression is identical to \\(1+\\frac{1}{1+\\frac12}\\).\"]\n[\"1 + 1/2 equals 3/2.\",\"The original expression is identical to \\(1 + \\\\frac{1}{3/2}\\).\"]\n[\"1/(3/2) equals 2/3.\",\"The original expression is identical to \\(1+\\\\frac{2}{3}\\).\"]\nThe original expression equals 5/3, which is option C.",
+      "last_claim": "The original expression equals 5/3, which is option C.",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\n[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\nContinue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\n[\"Then \\(1+\\frac12=\\frac32\\), so the expression equals \\(1+\\frac1{\\frac32}\\).\",\"Then \\(\\frac1{\\frac32}=\\frac23\\), so the expression equals \\(1+\\frac23=\\frac53\\).\"]",
+      "last_claim": "[\"Then \\(1+\\frac12=\\frac32\\), so the expression equals \\(1+\\frac1{\\frac32}\\).\",\"Then \\(\\frac1{\\frac32}=\\frac23\\), so the expression equals \\(1+\\frac23=\\frac53\\).\"]",
+      "last_claim_id": "l26",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.\nContinue from:\n[\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\nContinue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]\nContinue from: Continue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The innermost sum 1+1 equals 2, so the original expression equals \\(1+\\frac{1}{1+\\frac{1}{2}}\\).\",\"The innermost sum 1+1 equals 2, so \\(1+\\frac{1}{2}=\\frac{3}{2}\\) and the original expression equals \\(1+\\frac{1}{\\frac{3}{2}}\\).\"]",
+      "last_claim_id": "l28",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

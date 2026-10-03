@@ -1,0 +1,87 @@
+{
+  "problem_id": "amc12b_2003_p17",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given log(xy^3)=1",
+      "statement": "log(xy^3)=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Given log(x^2 y)=1",
+      "statement": "log(x^2 y)=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let a=log x and b=log y",
+      "statement": "a=log x ∧ b=log y",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Equations become a+3b=1 and 2a+b=1",
+      "statement": "a+3b=1 ∧ 2a+b=1",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Solve linear system to obtain a=2/5 and b=1/5",
+      "statement": "a=2/5 ∧ b=1/5",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus log(xy)=3/5, which is option (D)",
+      "statement": "log(xy)=3/5 ∧ answer=(D)",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "A suitable linear combination of the two original equations produces log(xy)=3/5",
+      "statement": "log(xy)=3/5",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

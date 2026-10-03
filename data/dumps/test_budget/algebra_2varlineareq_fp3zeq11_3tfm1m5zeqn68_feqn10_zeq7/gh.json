@@ -1,0 +1,85 @@
+{
+  "problem_id": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "The second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.",
+      "statement": "3f - 5z = -65",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "The first equation rearranges to f=11-3z.",
+      "statement": "f = 11 - 3z",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6666666666666666,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Expand the second equation independently to \\(3f-3-5z=-68\\), then insert \\(f=11-3z\\).",
+      "statement": "3f-3-5z=-68 ∧ f=11-3z",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.5892556509887897,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Substitute f=11-3z into the second equation to obtain 3((11-3z)-1)-5z=-68.",
+      "statement": "3((11-3z)-1)-5z=-68",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b7",
+      "salience": 0.5,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "Subtracting \\(3f-5z=-65\\) from \\(3f+9z=33\\) yields \\(14z=98\\).",
+      "statement": "14z = 98",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Substituting \\(f=11-3z\\) into \\(3f-5z=-65\\) yields \\(3(11-3z)-5z=-65\\).",
+      "statement": "3(11-3z)-5z=-65",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.2357022603955159,
+      "support": null
+    },
+    {
+      "id": "l20",
+      "natural_language": "Substitute to obtain 3(11-3z)-5z=-65.",
+      "statement": "3(11-3z)-5z=-65",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5303300858899107,
+      "support": null
+    }
+  ]
+}

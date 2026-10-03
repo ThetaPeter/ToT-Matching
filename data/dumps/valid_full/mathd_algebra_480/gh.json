@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_480",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let \\[f(x) = \\begin{cases}\n-x^2 - 1 &\\text{if }x<0, \\\\\n2&\\text{if }0 \\le x< 4, \\\\\n\\sqrt{x}&\\text{if }x \\ge 4.\n\\end{cases}\n\\]Find $f(\\pi)$. Show that it is 2.",
+      "statement": "Let \\[f(x) = \\begin{cases}\n-x^2 - 1 &\\text{if }x<0, \\\\\n2&\\text{if }0 \\le x< 4, \\\\\n\\sqrt{x}&\\text{if }x \\ge 4.\n\\end{cases}\n\\]Find $f(\\pi)$. Show that it is 2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3354101966249685,
+      "support": null
+    },
+    {
+      "id": "l8374",
+      "natural_language": "Advance the argument (step 13022): continue from Let \\[f(x) = \\begin{cases}\n-x^2 - 1 &\\text{if }x<0, \\\\\n2&\\text{if }0 \\le x< 4, \\",
+      "statement": "Advance the argument (step 13022): continue from Let \\[f(x) = \\begin{cases}\n-x^2 - 1 &\\text{if }x<0, \\\\\n2&\\text{if }0 \\le x< 4, \\",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7155417527999327,
+      "support": null
+    }
+  ]
+}

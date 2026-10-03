@@ -1,0 +1,208 @@
+{
+  "problem_id": "amc12a_2011_p18",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given condition on x and y",
+      "statement": "|x+y| + |x-y| = 2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Rewrite objective expression by completing the square",
+      "statement": "x^2 - 6x + y^2 = (x-3)^2 + y^2 - 9",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Apply identity to given condition",
+      "statement": "|x+y| + |x-y| = 2 max(|x|,|y|) so hypothesis equivalent to max(|x|,|y|)=1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Maximum value of expression is 8",
+      "statement": "max((x-3)^2 + y^2 - 9) = 8 under max(|x|,|y|)=1",
+      "dependencies": [
+        "l4",
+        "l5",
+        "l7",
+        "l8",
+        "l9",
+        "l10",
+        "l11",
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Rewrite the objective as (x-3)^2 + y^2 -9.",
+      "statement": "x^2 - 6x + y^2 = (x-3)^2 + y^2 - 9",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Objective rewrites as (x-3)^2 + y^2 - 9, so maximize (x-3)^2 + y^2 on max(|x|,|y|)=1",
+      "statement": "x^2 - 6x + y^2 = (x-3)^2 + y^2 - 9 and max(|x|,|y|)=1 imply maximize (x-3)^2 + y^2 subject to max(|x|,|y|)=1",
+      "dependencies": [
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Feasible set is boundary of square, objective maximized at vertices",
+      "statement": "The feasible set is thus the boundary of the square [-1,1]×[-1,1], and (x-3)^2+y^2 is maximized at the vertices (-1,±1)",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Bound the variables from the max condition",
+      "statement": "max(|x|,|y|)=1 implies |x|≤1 and |y|≤1",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Bound (x-3)^2 + y^2 on the square boundary",
+      "statement": "(x-3)^2 + y^2 is at most 16 + 1 = 17 (attained at x = -1, |y| = 1)",
+      "dependencies": [
+        "l7",
+        "l5"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Evaluate objective at maximizing vertices",
+      "statement": "At (-1, \\pm 1) we obtain (x-3)^2 + y^2 = 17, so the objective equals 8",
+      "dependencies": [
+        "l7",
+        "l8"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Check value at remaining vertices to confirm maximizer",
+      "statement": "The remaining vertices (1,±1) give the strictly smaller value 5-9=-4.",
+      "dependencies": [
+        "l7",
+        "l5"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Verify that the candidate vertices satisfy the constraint",
+      "statement": "The vertices (-1,±1) lie on the feasible set since |(-1)+1|+|(-1)-1|=2 (and likewise for the other sign)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Conclude the maximum value from verified maximizer",
+      "statement": "Hence the maximum of the original expression is 8",
+      "dependencies": [
+        "l11",
+        "l9"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Maximum value of expression is 8, hence answer D",
+      "statement": "max(x^2-6x+y^2)=8 under the given constraint, so the answer is 8",
+      "dependencies": [
+        "l14",
+        "l13"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Verify achievement at point (-1,1)",
+      "statement": "At (-1,1) we have max(|x|,|y|)=1 so the constraint holds, and (x-3)^2+y^2=17 hence the original expression equals 8.",
+      "dependencies": [
+        "l3",
+        "l5",
+        "l8"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Equality in the bound (x-3)^2+y^2\\le17 is attained inside the feasible set",
+      "statement": "Equality in the bound (x-3)^2+y^2\\le17 is attained inside the feasible set, so the maximum of the original expression is exactly 8",
+      "dependencies": [
+        "l8",
+        "l11"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

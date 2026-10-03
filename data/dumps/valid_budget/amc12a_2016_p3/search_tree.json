@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2016_p3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]",
+      "last_claim": "[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.2,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n[\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]",
+      "last_claim": "[\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]",
+      "last_claim": "Continue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\nContinue from:\n[\"Compute \\(x/y=(3/8)/(-2/5)=-15/16\\).\", \"Note that \\(-1<-15/16<0\\), so \\(\\lfloor x/y\\rfloor=-1\\).\"]",
+      "last_claim": "[\"Compute \\(x/y=(3/8)/(-2/5)=-15/16\\).\", \"Note that \\(-1<-15/16<0\\), so \\(\\lfloor x/y\\rfloor=-1\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nThus rem(x,y)=x+y=3/8-2/5 because y=-2/5.",
+      "last_claim": "Thus rem(x,y)=x+y=3/8-2/5 because y=-2/5.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n3/8-2/5=(15-16)/40=-1/40.",
+      "last_claim": "3/8-2/5=(15-16)/40=-1/40.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n[\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]\n[\"Compute \\(\\dfrac{3}{8}-\\dfrac{2}{5}=\\dfrac{15}{40}-\\dfrac{16}{40}=-\\dfrac{1}{40}\\).\",\"Hence \\(\\operatorname{rem}(\\tfrac{3}{8},-\\tfrac{2}{5})=-\\dfrac{1}{40}\\).\"]",
+      "last_claim": "[\"Compute \\(\\dfrac{3}{8}-\\dfrac{2}{5}=\\dfrac{15}{40}-\\dfrac{16}{40}=-\\dfrac{1}{40}\\).\",\"Hence \\(\\operatorname{rem}(\\tfrac{3}{8},-\\tfrac{2}{5})=-\\dfrac{1}{40}\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.3,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n[\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]\nContinue from: [\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]",
+      "last_claim": "Continue from: [\"Confirm \\(\\lfloor -15/16\\rfloor=-1\\) since \\(-1<-15/16<0\\).\", \"Then \\(x-y(-1)=3/8+(-2/5)=-1/40\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n3/8-2/5=(15-16)/40=-1/40.\n[\"Therefore \\(\\operatorname{rem}(\\frac{3}{8},-\\frac{2}{5})=-\\frac{1}{40}\\).\", \"Hence the value is option \\(\\textbf{(B)}\\).\"]",
+      "last_claim": "[\"Therefore \\(\\operatorname{rem}(\\frac{3}{8},-\\frac{2}{5})=-\\frac{1}{40}\\).\", \"Hence the value is option \\(\\textbf{(B)}\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\n3/8-2/5=(15-16)/40=-1/40.\nContinue from: 3/8-2/5=(15-16)/40=-1/40.",
+      "last_claim": "Continue from: 3/8-2/5=(15-16)/40=-1/40.",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nThus rem(x,y)=x+y=3/8-2/5 because y=-2/5.\n[\"Compute \\(\\frac{3}{8}-\\frac{2}{5}=\\frac{15}{40}-\\frac{16}{40}=-\\frac{1}{40}\\).\", \"Hence \\(\\operatorname{rem}(\\frac{3}{8},-\\frac{2}{5})=-\\frac{1}{40}\\).\"]",
+      "last_claim": "[\"Compute \\(\\frac{3}{8}-\\frac{2}{5}=\\frac{15}{40}-\\frac{16}{40}=-\\frac{1}{40}\\).\", \"Hence \\(\\operatorname{rem}(\\frac{3}{8},-\\frac{2}{5})=-\\frac{1}{40}\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "The remainder can be defined for all real numbers $x$ and $y$ with $y \\neq 0$ by $\\text{rem} (x ,y)=x-y\\left \\lfloor \\frac{x}{y} \\right \\rfloor$where $\\left \\lfloor \\tfrac{x}{y} \\right \\rfloor$ denotes the greatest integer less than or equal to $\\tfrac{x}{y}$. What is the value of $\\text{rem} (\\tfrac{3}{8}, -\\tfrac{2}{5} )$?\n\n$\\textbf{(A) } -\\frac{3}{8} \\qquad \\textbf{(B) } -\\frac{1}{40} \\qquad \\textbf{(C) } 0 \\qquad \\textbf{(D) } \\frac{3}{8} \\qquad \\textbf{(E) } \\frac{31}{40}$ Show that it is \\textbf{(B) } -\\frac{1}{40}.\n[\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nContinue from: [\"Compute \\(\\frac{x}{y}=\\frac{3/8}{-2/5}=-\\frac{15}{16}\\).\", \"The greatest integer \\(\\leq -15/16\\) is \\(-1\\), so \\(\\operatorname{rem}(x,y)=x-y(-1)=\\frac{3}{8}-\\frac{2}{5}=-\\frac{1}{40}\\).\"]\nThus rem(x,y)=x+y=3/8-2/5 because y=-2/5.\nContinue from: Thus rem(x,y)=x+y=3/8-2/5 because y=-2/5.",
+      "last_claim": "Continue from: Thus rem(x,y)=x+y=3/8-2/5 because y=-2/5.",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

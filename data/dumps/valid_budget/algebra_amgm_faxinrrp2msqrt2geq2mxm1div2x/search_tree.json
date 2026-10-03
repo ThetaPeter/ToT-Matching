@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_amgm_faxinrrp2msqrt2geq2mxm1div2x",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim": "[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim": "[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim": "Continue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\nContinue from:\n[\"The desired inequality is equivalent to \\(x + \\\\frac{1}{2x} \\\\ge \\\\sqrt{2}\\) for all \\(x > 0\\).\",\"By the AM-GM inequality one has \\(x + \\\\frac{1}{2x} \\\\ge 2\\\\sqrt{x \\\\cdot \\\\frac{1}{2x}} = \\\\sqrt{2}\\).\"]",
+      "last_claim": "[\"The desired inequality is equivalent to \\(x + \\\\frac{1}{2x} \\\\ge \\\\sqrt{2}\\) for all \\(x > 0\\).\",\"By the AM-GM inequality one has \\(x + \\\\frac{1}{2x} \\\\ge 2\\\\sqrt{x \\\\cdot \\\\frac{1}{2x}} = \\\\sqrt{2}\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\n[\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]",
+      "last_claim": "[\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim": "Continue from: [\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Thus the rearranged inequality holds for all \\(x>0\\), and therefore so does the original inequality.\", \"Equality is attained precisely when \\(x=1/\\sqrt{2}\\), which is admissible.\"]",
+      "last_claim": "[\"Thus the rearranged inequality holds for all \\(x>0\\), and therefore so does the original inequality.\", \"Equality is attained precisely when \\(x=1/\\sqrt{2}\\), which is admissible.\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\nContinue from: Continue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\n[\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]\n[\"Therefore \\(2-\\sqrt{2}\\ge 2-x-1/(2x)\\) holds for every \\(x>0\\).\", \"The two summands in AM-GM are positive for all \\(x>0\\), so no extra restrictions arise.\"]",
+      "last_claim": "[\"Therefore \\(2-\\sqrt{2}\\ge 2-x-1/(2x)\\) holds for every \\(x>0\\).\", \"The two summands in AM-GM are positive for all \\(x>0\\), so no extra restrictions arise.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\n[\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]\nContinue from: [\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]",
+      "last_claim": "Continue from: [\"The inequality is therefore established for every positive real \\(x\\), with the stated equality case.\", \"No further restrictions on \\(x\\) are needed, as AM-GM applies on the whole positive reals.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\nThis completes the proof of the inequality.",
+      "last_claim": "This completes the proof of the inequality.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Let $x$ be a positive real number. Show that $2 - \\sqrt{2} \\geq 2 - x - \\frac{1}{2x}$.\n[\"The desired inequality is equivalent (after rearranging and multiplying by -1) to \\(x + 1/(2x) \\geq \\sqrt{2}\\) for all \\(x>0\\).\", \"By the AM-GM inequality we have \\(x + 1/(2x) \\geq 2\\sqrt{x\\cdot 1/(2x)} = \\sqrt{2}\\), with equality at \\(x=1/\\sqrt{2}\\).\"]\n[\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\nContinue from: [\"Hence the original inequality holds for all \\(x>0\\).\", \"Equality holds if and only if \\(x=1/\\sqrt{2}\\).\"]\nThe bound is sharp, as equality is attained.",
+      "last_claim": "The bound is sharp, as equality is attained.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

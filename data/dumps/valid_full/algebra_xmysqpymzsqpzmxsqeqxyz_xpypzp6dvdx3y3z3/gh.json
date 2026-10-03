@@ -1,0 +1,39 @@
+{
+  "problem_id": "algebra_xmysqpymzsqpzmxsqeqxyz_xpypzp6dvdx3y3z3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.",
+      "statement": "Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+z+6)$ divides $(x^3 + y^3 + z^3)$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3849001794597505,
+      "support": null
+    },
+    {
+      "id": "l1677",
+      "natural_language": "Advance the argument (step 2605): continue from Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+",
+      "statement": "Advance the argument (step 2605): continue from Let x, y, and z be integers. If $(x-y)^2 + (y-z)^2 + (z-x)^2 = xyz$, then $(x+y+",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7795794428691073,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "algebra_amgm_sum1toneqn_prod1tonleq1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For a sequence of nonnegative real numbers $a_1, a_2, \\ldots, a_n$ such that $\\sum_{i=1}^n a_i = n$, show that $\\prod_{i=1}^n a_i \\leq 1$.",
+      "statement": "For a sequence of nonnegative real numbers $a_1, a_2, \\ldots, a_n$ such that $\\sum_{i=1}^n a_i = n$, show that $\\prod_{i=1}^n a_i \\leq 1$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4225771273642583,
+      "support": null
+    },
+    {
+      "id": "l1083",
+      "natural_language": "Advance the argument (step 1681): continue from For a sequence of nonnegative real numbers $a_1, a_2, \\ldots, a_n$ such that $\\s",
+      "statement": "Advance the argument (step 1681): continue from For a sequence of nonnegative real numbers $a_1, a_2, \\ldots, a_n$ such that $\\s",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7037037037037037,
+      "support": null
+    }
+  ]
+}

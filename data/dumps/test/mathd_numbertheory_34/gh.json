@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_34",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 and 99, inclusive.) Show that it is 89.",
+      "statement": "Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 and 99, inclusive.) Show that it is 89.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l10857",
+      "natural_language": "Advance the argument (step 16885): continue from Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 an",
+      "statement": "Advance the argument (step 16885): continue from Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 an",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5366734884263649,
+      "support": null
+    },
+    {
+      "id": "l10858",
+      "natural_language": "Advance the argument (step 16886): continue from Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 an",
+      "statement": "Advance the argument (step 16886): continue from Find $9^{-1} \\pmod{100}$, as a residue modulo 100.  (Give an answer between 0 an",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.737027731190089,
+      "support": null
+    }
+  ]
+}

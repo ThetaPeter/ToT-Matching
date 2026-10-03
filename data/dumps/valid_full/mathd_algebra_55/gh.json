@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_55",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What fraction is the same as \\[\n\\frac{2-4+6-8+10-12+14}{3-6+9-12+15-18+21}?\n\\] Show that it is \\frac{2}{3}.",
+      "statement": "What fraction is the same as \\[\n\\frac{2-4+6-8+10-12+14}{3-6+9-12+15-18+21}?\n\\] Show that it is \\frac{2}{3}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.20412414523193154,
+      "support": null
+    },
+    {
+      "id": "l8751",
+      "natural_language": "Advance the argument (step 13609): continue from What fraction is the same as \\[\n\\frac{2-4+6-8+10-12+14}{3-6+9-12+15-18+21}?\n\\] S",
+      "statement": "Advance the argument (step 13609): continue from What fraction is the same as \\[\n\\frac{2-4+6-8+10-12+14}{3-6+9-12+15-18+21}?\n\\] S",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5960395606792698,
+      "support": null
+    }
+  ]
+}

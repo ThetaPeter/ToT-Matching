@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1988_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^{2} + b^{2}$. Show that\n$\n\\frac {a^{2} + b^{2}}{ab + 1}\n$\nis the square of an integer.",
+      "statement": "Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^{2} + b^{2}$. Show that\n$\n\\frac {a^{2} + b^{2}}{ab + 1}\n$\nis the square of an integer.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l5025",
+      "natural_language": "Advance the argument (step 7813): continue from Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^{2} + b^{2}$.",
+      "statement": "Advance the argument (step 7813): continue from Let $a$ and $b$ be positive integers such that $ab + 1$ divides $a^{2} + b^{2}$.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.740012869900955,
+      "support": null
+    },
+    {
+      "id": "l5028",
+      "natural_language": "Advance the argument (step 7817): continue from Advance the argument (step 7813): continue from Let $a$ and $b$ be positive inte",
+      "statement": "Advance the argument (step 7817): continue from Advance the argument (step 7813): continue from Let $a$ and $b$ be positive inte",
+      "dependencies": [
+        "l5025"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.48301570400147903,
+      "support": null
+    }
+  ]
+}

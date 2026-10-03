@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_135",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can be written in base $10$ as $ABCACCBAB$, where $A,B,C$ are distinct digits such that $A$ and $C$ are odd and $B$ is not divisible by $3$, find $100A + 10B + C$. Show that it is 129.",
+      "statement": "Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can be written in base $10$ as $ABCACCBAB$, where $A,B,C$ are distinct digits such that $A$ and $C$ are odd and $B$ is not divisible by $3$, find $100A + 10B + C$. Show that it is 129.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l9507",
+      "natural_language": "Advance the argument (step 14785): continue from Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can",
+      "statement": "Advance the argument (step 14785): continue from Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.48023398431175707,
+      "support": null
+    },
+    {
+      "id": "l9508",
+      "natural_language": "Advance the argument (step 14786): continue from Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can",
+      "statement": "Advance the argument (step 14786): continue from Let $n = 3^{17} + 3^{10}$. It is known that $11$ divides into $n+1$. If $n$ can",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5653337710833068,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1987_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $n $ be an integer greater than or equal to 2.  Prove that if $k^2 + k + n $ is prime for all integers $k $ such that $ 0 \\leq k \\leq \\sqrt{n/3} $, then $k^2 + k + n $ is prime for all integers $k $ such that $0 \\leq k \\leq n - 2 $.",
+      "statement": "Let $n $ be an integer greater than or equal to 2.  Prove that if $k^2 + k + n $ is prime for all integers $k $ such that $ 0 \\leq k \\leq \\sqrt{n/3} $, then $k^2 + k + n $ is prime for all integers $k $ such that $0 \\leq k \\leq n - 2 $.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5815799980377997,
+      "support": null
+    },
+    {
+      "id": "l4972",
+      "natural_language": "Advance the argument (step 7730): continue from Let $n $ be an integer greater than or equal to 2.  Prove that if $k^2 + k + n $",
+      "statement": "Advance the argument (step 7730): continue from Let $n $ be an integer greater than or equal to 2.  Prove that if $k^2 + k + n $",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5498186093932096,
+      "support": null
+    }
+  ]
+}

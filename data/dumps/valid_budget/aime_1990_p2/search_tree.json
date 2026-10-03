@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1990_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim": "[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim": "[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\nContinue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim": "Continue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\nContinue from:\n[\"Let \\alpha=52+6\\sqrt43 and \\beta=52-6\\sqrt43, so the expression is \\alpha^{3/2}-\\beta^{3/2}.\"]",
+      "last_claim": "[\"Let \\alpha=52+6\\sqrt43 and \\beta=52-6\\sqrt43, so the expression is \\alpha^{3/2}-\\beta^{3/2}.\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\nContinue from:\n[\"Observe that (3+\\sqrt43)^2=52+6\\sqrt43 and (\\sqrt43-3)^2=52-6\\sqrt43.\"]",
+      "last_claim": "[\"Observe that (3+\\sqrt43)^2=52+6\\sqrt43 and (\\sqrt43-3)^2=52-6\\sqrt43.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\n[\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]",
+      "last_claim": "[\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\nContinue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim": "Continue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\nContinue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields \\(p^{2}+43q^{2}+2pq\\sqrt{43}=52+6\\sqrt{43}\\).\",\"Equating rational and irrational parts therefore produces the system \\(p^{2}+43q^{2}=52\\) and \\(2pq=6\\).\"]",
+      "last_claim": "[\"Expanding the square yields \\(p^{2}+43q^{2}+2pq\\sqrt{43}=52+6\\sqrt{43}\\).\",\"Equating rational and irrational parts therefore produces the system \\(p^{2}+43q^{2}=52\\) and \\(2pq=6\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\nContinue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\nContinue from: Continue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\n[\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]\n[\"Then \\(\\alpha-\\beta=6\\) and \\(\\alpha\\beta=34\\).\", \"Hence \\(\\alpha^3-\\beta^3=(\\alpha-\\beta)(\\alpha^2+\\alpha\\beta+\\beta^2)=6((\\alpha+\\beta)^2-\\alpha\\beta)=6(172-34)=828\\).\"]",
+      "last_claim": "[\"Then \\(\\alpha-\\beta=6\\) and \\(\\alpha\\beta=34\\).\", \"Hence \\(\\alpha^3-\\beta^3=(\\alpha-\\beta)(\\alpha^2+\\alpha\\beta+\\beta^2)=6((\\alpha+\\beta)^2-\\alpha\\beta)=6(172-34)=828\\).\"]",
+      "last_claim_id": "l23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\n[\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]\nContinue from: [\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\(52+6\\sqrt{43}=(3+\\sqrt{43})^2\\), so \\(\\alpha=3+\\sqrt{43}\\).\",\"Likewise \\(52-6\\sqrt{43}=(\\sqrt{43}-3)^2\\), so \\(\\beta=\\sqrt{43}-3\\).\"]",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\nContinue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\n[\"Therefore \\(\\alpha=3+\\sqrt{43}\\) and \\(\\beta=\\sqrt{43}-3\\).\",\"Then \\(\\alpha^3-\\beta^3=(\\alpha-\\beta)(\\alpha^2+\\alpha\\beta+\\beta^2)\\).\"]",
+      "last_claim": "[\"Therefore \\(\\alpha=3+\\sqrt{43}\\) and \\(\\beta=\\sqrt{43}-3\\).\",\"Then \\(\\alpha^3-\\beta^3=(\\alpha-\\beta)(\\alpha^2+\\alpha\\beta+\\beta^2)\\).\"]",
+      "last_claim_id": "l27",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Find the value of $(52+6\\sqrt{43})^{3/2}-(52-6\\sqrt{43})^{3/2}$. Show that it is 828.\n[\"Let \\\\(\\\\alpha=\\\\sqrt{52+6\\\\sqrt{43}}\\\\) and \\\\(\\\\beta=\\\\sqrt{52-6\\\\sqrt{43}}\\\\), so the target expression equals \\\\(\\\\alpha^3-\\\\beta^3\\\\).\",\"Suppose \\(52+6\\sqrt{43}=(p+q\\sqrt{43})^2\\) for rationals \\(p,q>0\\).\"]\n[\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\nContinue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]\nContinue from: Continue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim": "Continue from: Continue from: [\"Expanding the square yields the system \\(p^2+43q^2=52\\) and \\(2pq=6\\).\",\"The positive integers \\(p=3\\), \\(q=1\\) satisfy both equations.\"]",
+      "last_claim_id": "l29",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

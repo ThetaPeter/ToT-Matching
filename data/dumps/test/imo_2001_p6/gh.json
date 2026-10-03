@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_2001_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "$K > L > M > N$ are positive integers such that $KM + LN = (K + L - M + N)(-K + L + M + N)$. Prove that $KL + MN$ is not prime.",
+      "statement": "$K > L > M > N$ are positive integers such that $KM + LN = (K + L - M + N)(-K + L + M + N)$. Prove that $KL + MN$ is not prime.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.45564782730606285,
+      "support": null
+    },
+    {
+      "id": "l5133",
+      "natural_language": "Advance the argument (step 7981): continue from $K > L > M > N$ are positive integers such that $KM + LN = (K + L - M + N)(-K +",
+      "statement": "Advance the argument (step 7981): continue from $K > L > M > N$ are positive integers such that $KM + LN = (K + L - M + N)(-K +",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8893299984205232,
+      "support": null
+    }
+  ]
+}

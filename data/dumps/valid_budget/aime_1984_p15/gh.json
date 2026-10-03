@@ -1,0 +1,72 @@
+{
+  "problem_id": "aime_1984_p15",
+  "nodes": [
+    {
+      "id": "tc_3",
+      "natural_language": "third given equation",
+      "statement": "\\frac{x^2}{6^2-1}+\\frac{y^2}{6^2-3^2}+\\frac{z^2}{6^2-5^2}+\\frac{w^2}{6^2-7^2}=1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.560112033611204,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "sum of squares equals 36",
+      "statement": "x²+y²+z²+w²=36",
+      "dependencies": [
+        "l18",
+        "l19"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4714045207910318,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "recognition as Cauchy matrix system",
+      "statement": "The given linear system is a Cauchy system C\\mathbf{v}=\\mathbf{1} with C_{jk}=1/(e_j^{2}-o_k^{2})",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "Both P and Q are monic of degree 4, confirming the s^3 coefficient of Q-P",
+      "statement": "Both P and Q are monic of degree 4, confirming the s^3 coefficient of Q-P is \\sum e_j^2-\\sum o_k^2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.17149858514250885,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "Therefore sum of squares equals sum v_k",
+      "statement": "x^2+y^2+z^2+w^2=\\sum v_k=36",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.12909944487358058,
+      "support": null
+    },
+    {
+      "id": "l19",
+      "natural_language": "v is the vector of squares",
+      "statement": "v=(x²,y²,z²,w²) so desired sum equals ∑v_k",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.31980107453341566,
+      "support": null
+    }
+  ]
+}

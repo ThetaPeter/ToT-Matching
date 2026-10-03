@@ -1,0 +1,63 @@
+{
+  "problem_id": "amc12a_2009_p5",
+  "nodes": [
+    {
+      "id": "l1",
+      "natural_language": "Original volume of the cube is s cubed.",
+      "statement": "V = s^3",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6060915267313266,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Given that the new volume is 5 less than the original volume.",
+      "statement": "V' = V - 5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.07715167498104597,
+      "support": null
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The original volume is therefore \\(125\\), which is choice (D).",
+      "statement": "V=125 (option D)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.6784005252999681,
+      "support": null
+    },
+    {
+      "id": "l19",
+      "natural_language": "The new volume is 5 less than the original volume, so V' = s^3 - 5.",
+      "statement": "V' = s^3 - 5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": 0.35355339059327384,
+      "support": null
+    },
+    {
+      "id": "l25",
+      "natural_language": "Direct substitution confirms the volumes: the cube has volume \\(125\\) while the new solid has volume \\(6\\cdot4\\cdot5=120\\), which is indeed \\(5\\) less.",
+      "statement": "V=125, V'=120=V-5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.14824986333222026,
+      "support": null
+    }
+  ]
+}

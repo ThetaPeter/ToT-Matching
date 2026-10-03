@@ -1,0 +1,51 @@
+{
+  "problem_id": "amc12a_2019_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define b_n = 1/a_n. The recursion implies b_n = 2 b_{n-1} - b_{n-2}.",
+      "statement": "b_n = 2*b_{n-1} - b_{n-2}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "The characteristic equation (r-1)^2=0 yields the general solution b_n = A + B*n.",
+      "statement": "b_n = A + B*n",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Apply initial conditions: b_1=1 gives A+B=1; b_2=7/3 gives A+2B=7/3. Solving yields A=-1/3, B=4/3.",
+      "statement": "A=-1/3, B=4/3",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Thus b_n=(4n-1)/3, so a_n=3/(4n-1).",
+      "statement": "a_n=3/(4n-1)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

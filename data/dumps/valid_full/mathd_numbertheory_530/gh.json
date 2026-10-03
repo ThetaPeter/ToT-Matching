@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_530",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $n$ and $k$ are positive integers such that $5<\\frac nk<6$, then what is the smallest possible value of $\\frac{\\mathop{\\text{lcm}}[n,k]}{\\gcd(n,k)}$? Show that it is 22.",
+      "statement": "If $n$ and $k$ are positive integers such that $5<\\frac nk<6$, then what is the smallest possible value of $\\frac{\\mathop{\\text{lcm}}[n,k]}{\\gcd(n,k)}$? Show that it is 22.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4633482043145936,
+      "support": null
+    },
+    {
+      "id": "l11776",
+      "natural_language": "Advance the argument (step 18314): continue from If $n$ and $k$ are positive integers such that $5<\\frac nk<6$, then what is the",
+      "statement": "Advance the argument (step 18314): continue from If $n$ and $k$ are positive integers such that $5<\\frac nk<6$, then what is the",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8146130799625568,
+      "support": null
+    }
+  ]
+}

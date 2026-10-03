@@ -1,0 +1,47 @@
+{
+  "problem_id": "amc12a_2010_p22",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define f(x) = sum_{k=1 to 119} |k x - 1|",
+      "statement": "f(x)=\\sum_{k=1}^{119}|kx-1|",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.36273812505500586,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Minimizer of sum w_i |x-a_i| is weighted median of points {1/k} with weights k",
+      "statement": "minimizer is weighted median of {1/k} w.r.t. weights k",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3872983346207416,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "At the minimizer x=1/85, kx\\le1 for all k\\le85 and kx\\ge1 for all k\\ge85, so f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)",
+      "statement": "f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": 0.46537892099551725,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "The total weight is \\sum_{k=1}^{119}k=7140, so a weighted median occurs where the cumulative weight on each side is at least 3570.",
+      "statement": "total weight 7140 so weighted median has cum. weight \\ge3570 on each side",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.4048204523763682,
+      "support": null
+    }
+  ]
+}

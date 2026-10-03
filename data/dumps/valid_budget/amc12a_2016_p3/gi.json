@@ -1,0 +1,65 @@
+{
+  "problem_id": "amc12a_2016_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x=3/8 and y=-2/5. By definition rem(x,y)=x-y*floor(x/y).",
+      "statement": "x=3/8 ∧ y=-2/5 ∧ rem(x,y)=x-y·⌊x/y⌋",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Compute x/y = (3/8)/(-2/5) = -15/16.",
+      "statement": "x/y = -15/16",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Substitute to obtain rem(x,y)=3/8-(-2/5)·(-1)=3/8-2/5=-1/40, which is option (B).",
+      "statement": "rem(3/8,-2/5)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Confirm ⌊-15/16⌋=-1 since -1<-15/16<0.",
+      "statement": "⌊-15/16⌋=-1",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Then x-y(-1)=3/8+(-2/5)=-1/40.",
+      "statement": "rem(x,y)=-1/40",
+      "dependencies": [
+        "tc_1",
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

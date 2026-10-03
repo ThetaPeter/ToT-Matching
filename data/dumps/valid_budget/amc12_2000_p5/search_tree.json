@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12_2000_p5",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim": "[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\nContinue from:\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Thus \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim": "[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Thus \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim": "[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim": "Continue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\n[\"Thus \\(x-p=2-2p\\), matching choice (C).\", \"The identity holds for all \\(p>0\\) with \\(x=2-p<2\\).\"]",
+      "last_claim": "[\"Thus \\(x-p=2-2p\\), matching choice (C).\", \"The identity holds for all \\(p>0\\) with \\(x=2-p<2\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\nContinue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim": "Continue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim": "[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: Continue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\nContinue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\n[\"Therefore \\(x-p=2-2p\\), which is option (C).\", \"Since \\(p=|x-2|\\geq0\\), this also equals \\(|2-2p|\\) only if \\(p\\leq1\\), so (E) is not always true.\"]",
+      "last_claim": "[\"Therefore \\(x-p=2-2p\\), which is option (C).\", \"Since \\(p=|x-2|\\geq0\\), this also equals \\(|2-2p|\\) only if \\(p\\leq1\\), so (E) is not always true.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\nContinue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\nContinue from: Continue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\n[\"Therefore \\(x-p=2-2p\\), which is option (C).\", \"Note that \\(p=|x-2|\\ge0\\) so the identity holds for all such \\(x<2\\).\"]",
+      "last_claim": "[\"Therefore \\(x-p=2-2p\\), which is option (C).\", \"Note that \\(p=|x-2|\\ge0\\) so the identity holds for all such \\(x<2\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "If $|x - 2| = p$, where $x < 2$, then $x - p =$\n\n$ \\textbf{(A)} \\ -2 \\qquad \\textbf{(B)} \\ 2 \\qquad \\textbf{(C)} \\ 2-2p \\qquad \\textbf{(D)} \\ 2p-2 \\qquad \\textbf{(E)} \\ |2p-2|  $ Show that it is \\text{(C)2-2p}.\n[\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\nContinue from: [\"Since \\(x<2\\), we have \\(|x-2|=2-x\\).\", \"Hence \\(2-x=p\\), so \\(x=2-p\\).\"]\n[\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]\nContinue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim": "Continue from: [\"Then \\(x-p=(2-p)-p\\).\", \"Hence \\(x-p=2-2p\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

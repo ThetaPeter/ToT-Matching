@@ -1,0 +1,48 @@
+{
+  "problem_id": "amc12a_2011_p18",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "Objective rewrites as (x-3)^2 + y^2 - 9, so maximize (x-3)^2 + y^2 on max(|x|,|y|)=1",
+      "statement": "x^2 - 6x + y^2 = (x-3)^2 + y^2 - 9 and max(|x|,|y|)=1 imply maximize (x-3)^2 + y^2 subject to max(|x|,|y|)=1",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.33968311024337877,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Bound (x-3)^2 + y^2 on the square boundary",
+      "statement": "(x-3)^2 + y^2 is at most 16 + 1 = 17 (attained at x = -1, |y| = 1)",
+      "dependencies": [],
+      "search_node_id": "sn_5",
+      "branch_id": "b8",
+      "salience": 0.49497474683058323,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Verify that the candidate vertices satisfy the constraint",
+      "statement": "The vertices (-1,±1) lie on the feasible set since |(-1)+1|+|(-1)-1|=2 (and likewise for the other sign)",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": 0.3354101966249685,
+      "support": null
+    },
+    {
+      "id": "l14",
+      "natural_language": "Equality in the bound (x-3)^2+y^2\\le17 is attained inside the feasible set",
+      "statement": "Equality in the bound (x-3)^2+y^2\\le17 is attained inside the feasible set, so the maximum of the original expression is exactly 8",
+      "dependencies": [
+        "l8",
+        "l11"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.45760431532242946,
+      "support": null
+    }
+  ]
+}

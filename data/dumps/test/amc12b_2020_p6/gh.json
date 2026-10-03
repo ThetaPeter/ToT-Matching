@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2020_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For all integers $n \\geq 9,$ the value of\n$\\frac{(n+2)!-(n+1)!}{n!}$is always which of the following?\n\n$\\textbf{(A) } \\text{a multiple of 4} \\qquad \\textbf{(B) } \\text{a multiple of 10} \\qquad \\textbf{(C) } \\text{a prime number} \\qquad \\textbf{(D) } \\text{a perfect square} \\qquad \\textbf{(E) } \\text{a perfect cube}$ Show that it is \\textbf{(D) } \\text{a perfect square}.",
+      "statement": "For all integers $n \\geq 9,$ the value of\n$\\frac{(n+2)!-(n+1)!}{n!}$is always which of the following?\n\n$\\textbf{(A) } \\text{a multiple of 4} \\qquad \\textbf{(B) } \\text{a multiple of 10} \\qquad \\textbf{(C) } \\text{a prime number} \\qquad \\textbf{(D) } \\text{a perfect square} \\qquad \\textbf{(E) } \\text{a perfect cube}$ Show that it is \\textbf{(D) } \\text{a perfect square}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5786375623578448,
+      "support": null
+    },
+    {
+      "id": "l3837",
+      "natural_language": "Advance the argument (step 5965): continue from For all integers $n \\geq 9,$ the value of\n$\\frac{(n+2)!-(n+1)!}{n!}$is always wh",
+      "statement": "Advance the argument (step 5965): continue from For all integers $n \\geq 9,$ the value of\n$\\frac{(n+2)!-(n+1)!}{n!}$is always wh",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3571998131845465,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "problem_id": "aime_1997_p11",
+  "nodes": [
+    {
+      "id": "l2",
+      "natural_language": "Consequently x = cot 22.5°",
+      "statement": "x=\\cot 22.5^\\circ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.38138503569823695,
+      "support": null
+    },
+    {
+      "id": "l6",
+      "natural_language": "The half-angle formula yields tan 22.5°=√2-1, so x=1+√2",
+      "statement": "\\tan 22.5^\\circ=\\sqrt{2}-1 \\implies x=1+\\sqrt{2}",
+      "dependencies": [],
+      "search_node_id": "sn_10",
+      "branch_id": "b11",
+      "salience": 0.08838834764831845,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Thus 100x=100(1+√2). The bounds 1.41421<√2<1.41422 yield 241.421<100x<241.422, so floor(100x)=241",
+      "statement": "100x=100(1+\\sqrt{2}), \\quad 1.41421<\\sqrt{2}<1.41422 \\implies 241.421<100x<241.422 \\implies \\lfloor 100x\\rfloor=241",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b11",
+      "salience": 0.26726124191242445,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "The lower bound follows from \\(1.41421^2=1.9999928241<2\\), hence \\(\\sqrt{2}>1.41421\\).",
+      "statement": "1.41421^2=1.9999928241<2 \\implies \\sqrt{2}>1.41421",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.31622776601683794,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2002_p1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].",
+      "last_claim": "The left-hand side factors as (2x+3)[(x-4)+(x-6)].",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe equation is equivalent to (2x+3)(2x-10)=0.",
+      "last_claim": "The equation is equivalent to (2x+3)(2x-10)=0.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.95,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nSimplifying inside the second factor yields (2x+3)(2x-10)=0.",
+      "last_claim": "Simplifying inside the second factor yields (2x+3)(2x-10)=0.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nThe roots are therefore x=-3/2 and x=5, which sum to 7/2.",
+      "last_claim": "The roots are therefore x=-3/2 and x=5, which sum to 7/2.",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe equation is equivalent to (2x+3)(2x-10)=0.\nThe solutions satisfy 2x+3=0 or 2x-10=0, hence the roots are x=-3/2 and x=5.",
+      "last_claim": "The solutions satisfy 2x+3=0 or 2x-10=0, hence the roots are x=-3/2 and x=5.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe equation is equivalent to (2x+3)(2x-10)=0.\nThe sum of these roots is -3/2+5=7/2.",
+      "last_claim": "The sum of these roots is -3/2+5=7/2.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nSimplifying inside the second factor yields (2x+3)(2x-10)=0.\nThe equation (2x+3)(2x-10)=0 holds iff 2x+3=0 or 2x-10=0, hence the roots are x=-3/2 and x=5.",
+      "last_claim": "The equation (2x+3)(2x-10)=0 holds iff 2x+3=0 or 2x-10=0, hence the roots are x=-3/2 and x=5.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nSimplifying inside the second factor yields (2x+3)(2x-10)=0.\nThe sum of the roots is therefore -3/2+5=7/2.",
+      "last_claim": "The sum of the roots is therefore -3/2+5=7/2.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nThe roots are therefore x=-3/2 and x=5, which sum to 7/2.\n[\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]",
+      "last_claim": "[\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nThe roots are therefore x=-3/2 and x=5, which sum to 7/2.\nContinue from: The roots are therefore x=-3/2 and x=5, which sum to 7/2.",
+      "last_claim": "Continue from: The roots are therefore x=-3/2 and x=5, which sum to 7/2.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nSimplifying inside the second factor yields (2x+3)(2x-10)=0.\nThe sum of the roots is therefore -3/2+5=7/2.\nHence the required sum equals 7/2, matching choice (A).",
+      "last_claim": "Hence the required sum equals 7/2, matching choice (A).",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nSimplifying inside the second factor yields (2x+3)(2x-10)=0.\nThe sum of the roots is therefore -3/2+5=7/2.\nBoth roots are valid solutions of the original equation, so no further adjustment of the sum is needed.",
+      "last_claim": "Both roots are valid solutions of the original equation, so no further adjustment of the sum is needed.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nThe roots are therefore x=-3/2 and x=5, which sum to 7/2.\n[\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]\n[\"Hence the required sum of the roots is \\(7/2\\).\", \"This value corresponds to choice (A).\"]",
+      "last_claim": "[\"Hence the required sum of the roots is \\(7/2\\).\", \"This value corresponds to choice (A).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Compute the sum of all the roots of\n$(2x+3)(x-4)+(2x+3)(x-6)=0 $\n\n$ \\textbf{(A) } \\frac{7}{2}\\qquad \\textbf{(B) } 4\\qquad \\textbf{(C) } 5\\qquad \\textbf{(D) } 7\\qquad \\textbf{(E) } 13 $ Show that it is \\textbf{(A) }7/2.\nThe left-hand side factors as (2x+3)[(x-4)+(x-6)].\nThe roots are therefore x=-3/2 and x=5, which sum to 7/2.\n[\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]\nContinue from: [\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]",
+      "last_claim": "Continue from: [\"The two roots of the factored equation are therefore \\(x=-3/2\\) and \\(x=5\\).\", \"Adding these roots yields \\(-3/2+5=7/2\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

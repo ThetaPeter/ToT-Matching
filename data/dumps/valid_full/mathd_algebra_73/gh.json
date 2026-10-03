@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_73",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (r-p)(r-q)$ is $x=r$. Find the other solution in terms of $p$, $q$, and $r$. Show that it is p+q-r.",
+      "statement": "Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (r-p)(r-q)$ is $x=r$. Find the other solution in terms of $p$, $q$, and $r$. Show that it is p+q-r.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4124789556921528,
+      "support": null
+    },
+    {
+      "id": "l9075",
+      "natural_language": "Advance the argument (step 14113): continue from Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (",
+      "statement": "Advance the argument (step 14113): continue from Let $p$, $q$, and $r$ be constants. One solution to the equation $(x-p)(x-q) = (",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5520524474738835,
+      "support": null
+    }
+  ]
+}

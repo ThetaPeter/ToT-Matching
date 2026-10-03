@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_559",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the same as the units digit of a number that is 4 more than a multiple of 5. What is the smallest possible value of $X$? Show that it is 14.",
+      "statement": "A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the same as the units digit of a number that is 4 more than a multiple of 5. What is the smallest possible value of $X$? Show that it is 14.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l11937",
+      "natural_language": "Advance the argument (step 18565): continue from A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the sa",
+      "statement": "Advance the argument (step 18565): continue from A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the sa",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6132189521422172,
+      "support": null
+    },
+    {
+      "id": "l11938",
+      "natural_language": "Advance the argument (step 18566): continue from A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the sa",
+      "statement": "Advance the argument (step 18566): continue from A positive integer $X$ is 2 more than a multiple of 3. Its units digit is the sa",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8272711832847803,
+      "support": null
+    }
+  ]
+}

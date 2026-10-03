@@ -1,0 +1,199 @@
+{
+  "problem_id": "algebra_absapbon1pabsapbleqsumabsaon1pabsa",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "For all real a, b: |a+b|/(1+|a+b|) ≤ |a|/(1+|a|) + |b|/(1+|b|)",
+      "dependencies": [
+        "tc_1",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The map f(x)=x/(1+x) is increasing on [0,∞).",
+      "statement": "f(x)=x/(1+x) is increasing on [0,∞)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_1",
+      "natural_language": "Without loss of generality it suffices to treat the case a,b≥0.",
+      "statement": "It suffices to prove the claim under the assumption a≥0 and b≥0",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "f is subadditive on [0,∞), i.e., f(x+y)≤f(x)+f(y) for x,y\\ge0.",
+      "statement": "f(x+y)≤f(x)+f(y) holds for all x,y\\ge0",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "We have f(x)+f(y)-f(x+y)=xy(x+y+2)/[(1+x)(1+y)(1+x+y)] >=0.",
+      "statement": "f(x)+f(y)-f(x+y)=\\frac{xy(x+y+2)}{(1+x)(1+y)(1+x+y)}\\ge0",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Equivalently, f(x+y)-f(x)=y/[(1+x)(1+x+y)] <= y/(1+y)=f(y).",
+      "statement": "f(x+y)-f(x)=\\frac{y}{(1+x)(1+x+y)}\\le\\frac{y}{1+y}=f(y)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Since f is increasing and |a+b|≤|a|+|b|, we have f(|a+b|)≤f(|a|+|b|).",
+      "statement": "f(|a+b|) ≤ f(|a| + |b|) for a,b ≥ 0",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Combining with subadditivity of f yields f(|a+b|)≤f(|a|)+f(|b|), which is the desired inequality.",
+      "statement": "f(|a+b|) ≤ f(|a|) + f(|b|) for a,b ≥ 0",
+      "dependencies": [
+        "l7",
+        "l2"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The proof is complete, as the last inequality is exactly the claimed statement.",
+      "statement": "For all real a, b: |a+b|/(1+|a+b|) ≤ |a|/(1+|a|) + |b|/(1+|b|)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "No further steps are required once subadditivity and monotonicity of f have been applied.",
+      "statement": "For all real a, b: |a+b|/(1+|a+b|) ≤ |a|/(1+|a|) + |b|/(1+|b|)",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Hence f(x+y)≤f(x)+f(y) holds for all x,y\\ge0.",
+      "statement": "f(x+y)≤f(x)+f(y) holds for all x,y\\ge0",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Combining with f(|a+b|)≤f(|a|+|b|) yields the claimed inequality.",
+      "statement": "f(|a+b|)≤f(|a|)+f(|b|) for a,b\\ge0",
+      "dependencies": [
+        "l7",
+        "l9"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "The proof is complete, as the last inequality is exactly the claimed statement.",
+      "statement": "For all real a, b: |a+b|/(1+|a+b|) ≤ |a|/(1+|a|) + |b|/(1+|b|)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Hence f(x+y)≤f(x)+f(y) holds for all x,y\\ge0.",
+      "statement": "f(x+y)≤f(x)+f(y) holds for all x,y\\ge0",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Combining with f(|a+b|)≤f(|a|+|b|) yields the claimed inequality.",
+      "statement": "f(|a+b|)≤f(|a|)+f(|b|) for a,b\\ge0",
+      "dependencies": [
+        "l7",
+        "l11"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The proof is complete, as the last inequality is exactly the claimed statement.",
+      "statement": "For all real a, b: |a+b|/(1+|a+b|) ≤ |a|/(1+|a|) + |b|/(1+|b|)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

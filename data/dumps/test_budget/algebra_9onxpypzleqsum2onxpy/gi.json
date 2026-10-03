@@ -1,0 +1,89 @@
+{
+  "problem_id": "algebra_9onxpypzleqsum2onxpy",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x, y, z be positive real numbers.",
+      "statement": "x > 0, y > 0, z > 0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: 9/(x+y+z) \\le 2/(x+y) + 2/(y+z) + 2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y) + 2/(y+z) + 2/(z+x)",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "By Titu's lemma: sum 1^2/(x+y) >= 9 / 2(x+y+z)",
+      "statement": "\\sum \\frac{1}{x+y} \\ge \\frac{9}{2(x+y+z)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Multiply both sides of l1 by 2 to obtain the target inequality.",
+      "statement": "2 \\sum \\frac{1}{x+y} \\ge \\frac{9}{x+y+z}",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l_amhm",
+      "natural_language": "By AM-HM on the positive numbers x+y, y+z, z+x.",
+      "statement": "\\frac{2(x+y+z)}{3} \\ge \\frac{3}{\\sum 1/(x+y)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)} \\implies 9/(x+y+z)\\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).",
+      "statement": "2\\sum 1/(x+y)\\ge 9/(x+y+z) implies the target inequality",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "problem_id": "amc12a_2016_p2",
+  "nodes": [
+    {
+      "id": "l3",
+      "natural_language": "Apply exponent rules to simplify left and right sides",
+      "statement": "10^x * 10^{4x} = 10^{15}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2857142857142857,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Combine exponents on the left side",
+      "statement": "10^{5x} = 10^{15}",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.35355339059327384,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Divide both sides by 5 to obtain the equivalent equation x=3",
+      "statement": "x=3",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.33968311024337877,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "Apply a^m a^n = a^{m+n} on the left to rewrite as 10^{5x}=(10^3)^5",
+      "statement": "10^{5x} = (10^3)^5",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": 0.3241018617760823,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "Apply (a^b)^c=a^{bc} on the right to rewrite as 10^x * 10^{4x}=10^{15}",
+      "statement": "10^x * 10^{4x} = 10^{15}",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": 0.3223291856101521,
+      "support": null
+    }
+  ]
+}

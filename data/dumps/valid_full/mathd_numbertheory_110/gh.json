@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_110",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2\\pmod{10}$ and $2a+b\\equiv 1\\pmod{10}$, then what is the last digit of $a-b$? Show that it is 6.",
+      "statement": "In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2\\pmod{10}$ and $2a+b\\equiv 1\\pmod{10}$, then what is the last digit of $a-b$? Show that it is 6.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l9453",
+      "natural_language": "Advance the argument (step 14701): continue from In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2",
+      "statement": "Advance the argument (step 14701): continue from In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6128258770283412,
+      "support": null
+    },
+    {
+      "id": "l9454",
+      "natural_language": "Advance the argument (step 14702): continue from In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2",
+      "statement": "Advance the argument (step 14702): continue from In this problem, $a$ and $b$ are integers, such that $a \\ge b.$\n\nIf $a+b\\equiv 2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.21912524504463884,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "problem_id": "amc12a_2009_p25",
+  "nodes": [
+    {
+      "id": "l8",
+      "natural_language": "The value is zero precisely when 3F_2007 + 2F_2006 is a multiple of 12.",
+      "statement": "tan(F_2007 π/4 + F_2006 π/6)=0 ⇔ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.7144345083117604,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "The given recurrence is identical to the tangent-addition formula, so there exist angles θ_n satisfying a_n=tan θ_n together with the linear relation θ_{n+2}=θ_n+θ_{n+1} (modulo the period and poles of tan).",
+      "statement": "a_n=tan(θ_n) ∧ (θ_{n+2}=θ_n+θ_{n+1} mod period/poles)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.41573970964154905,
+      "support": null
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Therefore a_2009 = tan(kπ) = 0 hence |a_2009|=0",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5,
+      "support": null
+    },
+    {
+      "id": "l25",
+      "natural_language": "The sequence of Fibonacci numbers modulo 12 is periodic of period 24, so it suffices to reduce the indices 2007 and 2008 modulo 24.",
+      "statement": "F_n mod 12 has period 24 ⇒ reduce 2007,2008 mod 24",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.31980107453341566,
+      "support": null
+    },
+    {
+      "id": "l26",
+      "natural_language": "Direct evaluation then yields 3F_{15}+2F_{16}≡0 (mod 12), hence θ_{2009} is an integer multiple of π and a_{2009}=0.",
+      "statement": "3F_{15}+2F_{16}≡0 (mod 12) ⇒ θ_{2009}≡0 (mod π) ⇒ a_{2009}=0",
+      "dependencies": [
+        "l25"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3344968040028363,
+      "support": null
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Therefore |a_{2009}|=0.",
+      "statement": "|a_{2009}|=0",
+      "dependencies": [
+        "l26"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.23570226039551584,
+      "support": null
+    },
+    {
+      "id": "l27",
+      "natural_language": "The sequence of angles therefore obeys the closed form θ_n=F_{n-2}(π/4)+F_{n-1}(π/6) (F_1=F_2=1), so a_n=0 precisely when this quantity is an integer multiple of π (and is not a pole of tan).",
+      "statement": "θ_n = F_{n-2}·(π/4) + F_{n-1}·(π/6) ∧ (a_n=0 ⇔ θ_n ≡ 0 (mod π))",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.30588764516074907,
+      "support": null
+    }
+  ]
+}

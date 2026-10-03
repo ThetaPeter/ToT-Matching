@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2020_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many positive integers $n$ satisfy $\\dfrac{n+1000}{70} = \\lfloor \\sqrt{n} \\rfloor?$(Recall that $\\lfloor x\\rfloor$ is the greatest integer not exceeding $x$.)\n\n$\\textbf{(A) } 2 \\qquad\\textbf{(B) } 4 \\qquad\\textbf{(C) } 6 \\qquad\\textbf{(D) } 30 \\qquad\\textbf{(E) } 32$ Show that it is \\textbf{(C) }6.",
+      "statement": "How many positive integers $n$ satisfy $\\dfrac{n+1000}{70} = \\lfloor \\sqrt{n} \\rfloor?$(Recall that $\\lfloor x\\rfloor$ is the greatest integer not exceeding $x$.)\n\n$\\textbf{(A) } 2 \\qquad\\textbf{(B) } 4 \\qquad\\textbf{(C) } 6 \\qquad\\textbf{(D) } 30 \\qquad\\textbf{(E) } 32$ Show that it is \\textbf{(C) }6.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.23211917272131485,
+      "support": null
+    },
+    {
+      "id": "l3730",
+      "natural_language": "Advance the argument (step 5798): continue from How many positive integers $n$ satisfy $\\dfrac{n+1000}{70} = \\lfloor \\sqrt{n} \\r",
+      "statement": "Advance the argument (step 5798): continue from How many positive integers $n$ satisfy $\\dfrac{n+1000}{70} = \\lfloor \\sqrt{n} \\r",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.2750095491084634,
+      "support": null
+    }
+  ]
+}

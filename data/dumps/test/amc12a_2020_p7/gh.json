@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2020_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Seven cubes, whose volumes are $1$, $8$, $27$, $64$, $125$, $216$, and $343$ cubic units, are stacked vertically to form a tower in which the volumes of the cubes decrease from bottom to top. Except for the bottom cube, the bottom face of each cube lies completely on top of the cube below it. What is the total surface area of the tower (including the bottom) in square units?\n\n$ \\textbf{(A)}\\ 644\\qquad\\textbf{(B)}\\ 658\\qquad\\textbf{(C)}\\ 664\\qquad\\textbf{(D)}\\ 720\\qquad\\textbf{(E)}\\ 749 $ Show that it is \\textbf{(B) }658.",
+      "statement": "Seven cubes, whose volumes are $1$, $8$, $27$, $64$, $125$, $216$, and $343$ cubic units, are stacked vertically to form a tower in which the volumes of the cubes decrease from bottom to top. Except for the bottom cube, the bottom face of each cube lies completely on top of the cube below it. What is the total surface area of the tower (including the bottom) in square units?\n\n$ \\textbf{(A)}\\ 644\\qquad\\textbf{(B)}\\ 658\\qquad\\textbf{(C)}\\ 664\\qquad\\textbf{(D)}\\ 720\\qquad\\textbf{(E)}\\ 749 $ Show that it is \\textbf{(B) }658.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5534245329124855,
+      "support": null
+    },
+    {
+      "id": "l2811",
+      "natural_language": "Advance the argument (step 4369): continue from Seven cubes, whose volumes are $1$, $8$, $27$, $64$, $125$, $216$, and $343$ cub",
+      "statement": "Advance the argument (step 4369): continue from Seven cubes, whose volumes are $1$, $8$, $27$, $64$, $125$, $216$, and $343$ cub",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3649874171204507,
+      "support": null
+    }
+  ]
+}

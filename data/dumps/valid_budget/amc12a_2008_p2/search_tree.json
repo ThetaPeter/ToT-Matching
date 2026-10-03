@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2008_p2",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "Continue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "ts_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\nContinue from:\n[\"\\(\\frac{1}{2}+\\frac{2}{3}=\\frac{7}{6}\\).\", \"The reciprocal of \\(\\frac{7}{6}\\) equals \\(\\frac{6}{7}\\).\"]",
+      "last_claim": "[\"\\(\\frac{1}{2}+\\frac{2}{3}=\\frac{7}{6}\\).\", \"The reciprocal of \\(\\frac{7}{6}\\) equals \\(\\frac{6}{7}\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac{3}{6}+\\frac{4}{6}=\\frac{7}{6}\\).\",\"Inverting the fraction \\(\\frac{7}{6}\\) produces \\(\\frac{6}{7}\\).\"]",
+      "last_claim": "[\"\\(\\frac{3}{6}+\\frac{4}{6}=\\frac{7}{6}\\).\",\"Inverting the fraction \\(\\frac{7}{6}\\) produces \\(\\frac{6}{7}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "Continue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "ts_11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]",
+      "last_claim": "[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]",
+      "last_claim_id": "ts_13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: Continue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "ts_15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"Hence the given expression equals option (A).\"]",
+      "last_claim": "[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"Hence the given expression equals option (A).\"]",
+      "last_claim_id": "ts_17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: Continue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"\\(\\frac12=\\frac36\\) and \\(\\frac23=\\frac46\\), so their sum is \\(\\frac76\\).\",\"The reciprocal of \\(\\frac ab\\) (with \\(a\\neq0\\)) is \\(\\frac ba\\), hence the reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]",
+      "last_claim_id": "ts_19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]\n[\"The identity \\(1/(a+b)=(1/a\\cdot 1/b)/(1/a+1/b)\\) is not needed here, as the direct computation already yields \\(\\frac67\\).\",\"No further algebraic simplification of \\(\\frac67\\) is required, so the proof terminates.\"]",
+      "last_claim": "[\"The identity \\(1/(a+b)=(1/a\\cdot 1/b)/(1/a+1/b)\\) is not needed here, as the direct computation already yields \\(\\frac67\\).\",\"No further algebraic simplification of \\(\\frac67\\) is required, so the proof terminates.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "What is the [[reciprocal]] of $\\frac{1}{2}+\\frac{2}{3}$?\n\n$\\mathrm{(A)}\\ \\frac{6}{7}\\qquad\\mathrm{(B)}\\ \\frac{7}{6}\\qquad\\mathrm{(C)}\\ \\frac{5}{3}\\qquad\\mathrm{(D)}\\ 3\\qquad\\mathrm{(E)}\\ \\frac{7}{2}$ Show that it is \\frac{6}{7}.\n[\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\nContinue from: [\"The sum \\(\\frac12+\\frac23\\) equals \\(\\frac76\\).\",\"The reciprocal of \\(\\frac76\\) is \\(\\frac67\\).\"]\n[\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]\nContinue from: [\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]",
+      "last_claim": "Continue from: [\"Therefore the reciprocal of \\(\\frac12+\\frac23\\) equals \\(\\frac67\\).\",\"This matches choice (A).\"]",
+      "last_claim_id": "ts_22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

@@ -1,0 +1,351 @@
+{
+  "problem_id": "amc12b_2003_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f is linear and f(6) - f(2) = 12",
+      "statement": "f linear ∧ (f(6) - f(2) = 12)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "A linear function has the form f(x)=mx+b",
+      "statement": "linear f → ∃ m,b \\forall x (f(x)=mx+b)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus f(6)-f(2)=4m=12, so the slope is m=3",
+      "statement": "m=3",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "f(12) - f(2) = 10m = 30",
+      "statement": "f(12) - f(2) = 30",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus f(12)-f(2)=30, which is choice (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "ts_1",
+        "ts_3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Hence f(x)=3x+b",
+      "statement": "f(x)=3x+b",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "f(12)-f(2)=(36+b)-(6+b)=30",
+      "statement": "f(12)-f(2)=30",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "A linear function has the form f(x)=mx+b",
+      "statement": "linear f → ∃ m,b ∀x (f(x)=mx+b)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "For a linear f, differences satisfy f(x)-f(y)=m(x-y)",
+      "statement": "linear f → ∀x,y (f(x)-f(y)=m(x-y))",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "f(12)-f(2)=m(10)=30 and answer=D",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l7",
+        "tc_1",
+        "l4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "f(12)-f(2)=30 and answer=D",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "ts_4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Then f(12)-f(2)=(12m+b)-(2m+b)=10m",
+      "statement": "f(12)-f(2)=10m",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Substituting m=3 therefore yields f(12)-f(2)=30",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l8",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Hence f(x)=3x+b",
+      "statement": "f(x)=3x+b",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "f(12)-f(2)=(36+b)-(6+b)=30 and answer=D",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "The constant term b cancels in any difference f(a)-f(c), so the result is independent of b",
+      "statement": "∀a,c (f(a)-f(c) independent of b)",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Therefore f(12)-f(2)=30, which is option (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "ts_6",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Then f(12)-f(2)=10m=30",
+      "statement": "f(12)-f(2)=10m=30",
+      "dependencies": [
+        "l4",
+        "l7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Hence f(x)=3x+b, so f(12)-f(2)=(36+b)-(6+b)=30",
+      "statement": "f(x)=3x+b ∧ f(12)-f(2)=30",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "f(12)-f(2)=30 and answer=D",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l11",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Equivalently, the constant increment of slope times interval length gives 3·10=30",
+      "statement": "m·(12-2)=30",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Thus the required difference equals 30, which is option (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "ts_6",
+        "l13"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus f(12)-f(2)=30, which is choice (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "ts_6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The constant term b cancels in any difference f(a)-f(c), confirming the result is independent of b",
+      "statement": "∀a,c (f(a)-f(c) independent of b)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Therefore f(12)-f(2)=30, which is option (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l8",
+        "ts_6",
+        "l14"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Then f(12)-f(2)=10m=30",
+      "statement": "f(12)-f(2)=10m=30",
+      "dependencies": [
+        "l4",
+        "l7"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Hence f(x)=3x+b, so f(12)-f(2)=(36+b)-(6+b)=30",
+      "statement": "f(x)=3x+b ∧ f(12)-f(2)=30",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Thus f(12)-f(2)=30, which is choice (D)",
+      "statement": "f(12)-f(2)=30 ∧ answer=D",
+      "dependencies": [
+        "l15",
+        "l16"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

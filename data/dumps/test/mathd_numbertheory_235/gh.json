@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_235",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Find the units digit of $29 \\cdot 79 + 31 \\cdot 81$. Show that it is 2.",
+      "statement": "Find the units digit of $29 \\cdot 79 + 31 \\cdot 81$. Show that it is 2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l10101",
+      "natural_language": "Advance the argument (step 15709): continue from Find the units digit of $29 \\cdot 79 + 31 \\cdot 81$. Show that it is 2.",
+      "statement": "Advance the argument (step 15709): continue from Find the units digit of $29 \\cdot 79 + 31 \\cdot 81$. Show that it is 2.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.9035624609139907,
+      "support": null
+    },
+    {
+      "id": "l_dead_5611",
+      "natural_language": "dead-end unused case 15711: discard this alternative",
+      "statement": "dead-end unused case 15711: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.24096579867074966,
+      "support": null
+    }
+  ]
+}

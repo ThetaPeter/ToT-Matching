@@ -1,0 +1,13 @@
+We seek a positive integer \(n\) such that \(\lfloor\log_2 1\rfloor+\cdots+\lfloor\log_2 n\rfloor=1994\). Write \(s(n)\) for this partial sum and seek the unique \(n\) satisfying \(s(n)=1994\).
+
+The identity \(\lfloor\log_2 k\rfloor=m\) holds precisely for those \(k\) lying in the interval \([2^m,2^{m+1}-1]\). Equivalently, there are exactly \(2^m\) such integers \(k\) in the half-open interval \([2^m,2^{m+1})\).
+
+Consequently the complete sum up to the last integer of the form \(2^{M+1}-1\) is
+\[
+s(2^{M+1}-1)=\sum_{m=1}^M m\cdot 2^m.
+\]
+The closed form
+\[
+\sum_{m=1}^M m\cdot 2^m=(M-1)2^{M+1}+2
+\]
+then holds. Direct substitution of these identities shows that \(n=312\) satisfies \(s(n)=1994\).

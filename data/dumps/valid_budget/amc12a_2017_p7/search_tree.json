@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2017_p7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.",
+      "last_claim": "f(n)=n+1 for every positive integer n.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.",
+      "last_claim": "The claimed closed form holds for the base cases n=1 and n=2.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.6,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nWe prove the claim by induction on n.",
+      "last_claim": "We prove the claim by induction on n.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nThe base case n=1 holds because f(1)=2=1+1.",
+      "last_claim": "The base case n=1 holds because f(1)=2=1+1.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is even and the closed form holds at n-1, then it holds at n.\"]",
+      "last_claim": "[\"If n is even and the closed form holds at n-1, then it holds at n.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]",
+      "last_claim": "[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nWe prove the claim by induction on n.\nBase case: f(1)=2=1+1.",
+      "last_claim": "Base case: f(1)=2=1+1.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nWe prove the claim by induction on n.\nInductive step: assume f(k)=k+1 for all k<n and prove f(n)=n+1.",
+      "last_claim": "Inductive step: assume f(k)=k+1 for all k<n and prove f(n)=n+1.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]\nIf n is even and the closed form holds at n-1, then it holds at n.",
+      "last_claim": "If n is even and the closed form holds at n-1, then it holds at n.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]\nThe closed form therefore holds for every positive integer n.",
+      "last_claim": "The closed form therefore holds for every positive integer n.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.3,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]\nIf n is even and the closed form holds at n-1, then it holds at n.\nThe closed form therefore holds for every positive integer n by induction on n.",
+      "last_claim": "The closed form therefore holds for every positive integer n by induction on n.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nThe claimed closed form holds for the base cases n=1 and n=2.\n[\"If n is odd and greater than 1 and the closed form holds at n-2, then it holds at n.\"]\nIf n is even and the closed form holds at n-1, then it holds at n.\nIn particular f(2017)=2018.",
+      "last_claim": "In particular f(2017)=2018.",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nWe prove the claim by induction on n.\nInductive step: assume f(k)=k+1 for all k<n and prove f(n)=n+1.\nIf n is even then f(n)=f(n-1)+1=(n-1)+1+1=n+1.",
+      "last_claim": "If n is even then f(n)=f(n-1)+1=(n-1)+1+1=n+1.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.7,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Define a function on the positive integers recursively by $f(1) = 2$, $f(n) = f(n-1) + 1$ if $n$ is even, and $f(n) = f(n-2) + 2$ if $n$ is odd and greater than $1$. What is $f(2017)$?\n\n$ \\textbf{(A)}\\ 2017 \\qquad\\textbf{(B)}\\ 2018 \\qquad\\textbf{(C)}\\ 4034 \\qquad\\textbf{(D)}\\ 4035 \\qquad\\textbf{(E)}\\ 4036 $ Show that it is \\textbf{(B)}.\nf(n)=n+1 for every positive integer n.\nWe prove the claim by induction on n.\nInductive step: assume f(k)=k+1 for all k<n and prove f(n)=n+1.\nIf n is odd and n>1 then f(n)=f(n-2)+2=(n-2)+1+2=n+1.",
+      "last_claim": "If n is odd and n>1 then f(n)=f(n-2)+2=(n-2)+1+2=n+1.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.4,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

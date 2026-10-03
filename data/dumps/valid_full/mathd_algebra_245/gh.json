@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_245",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left( \\frac{1}{2x} \\right)^{-3}$. Show that it is 18x^8.",
+      "statement": "Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left( \\frac{1}{2x} \\right)^{-3}$. Show that it is 18x^8.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l7185",
+      "natural_language": "Advance the argument (step 11173): continue from Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left(",
+      "statement": "Advance the argument (step 11173): continue from Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left(",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3809696588797297,
+      "support": null
+    },
+    {
+      "id": "l7186",
+      "natural_language": "Advance the argument (step 11174): continue from Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left(",
+      "statement": "Advance the argument (step 11174): continue from Simplify $\\left( \\frac{4}{x} \\right)^{-1} \\left( \\frac{3x^3}{x} \\right)^2 \\left(",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6666666666666666,
+      "support": null
+    }
+  ]
+}

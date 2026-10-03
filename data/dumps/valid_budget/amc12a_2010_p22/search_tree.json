@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2010_p22",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"f(x)=\\\\sum_{k=1}^{119}k\\\\lvert x-1/k\\\\rvert, so the minimizer is a weighted median of the points \\\\{1/k\\\\} with weights k.\"]",
+      "last_claim": "[\"f(x)=\\\\sum_{k=1}^{119}k\\\\lvert x-1/k\\\\rvert, so the minimizer is a weighted median of the points \\\\{1/k\\\\} with weights k.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]",
+      "last_claim": "[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]",
+      "last_claim": "[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\nContinue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]",
+      "last_claim": "Continue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"f(x)=\\\\sum_{k=1}^{119}k\\\\lvert x-1/k\\\\rvert, so the minimizer is a weighted median of the points \\\\{1/k\\\\} with weights k.\"]\n[\"The total weight is \\\\sum_{k=1}^{119}k=7140, so a weighted median occurs where the cumulative weight on each side is at least 3570.\"]",
+      "last_claim": "[\"The total weight is \\\\sum_{k=1}^{119}k=7140, so a weighted median occurs where the cumulative weight on each side is at least 3570.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"f(x)=\\\\sum_{k=1}^{119}k\\\\lvert x-1/k\\\\rvert, so the minimizer is a weighted median of the points \\\\{1/k\\\\} with weights k.\"]\n[\"Ordering the knots increasingly as 1/119<\\\\cdots<1 with respective weights 119,\\\\ldots,1, the left-cumulative first reaches 3570 at the knot 1/70.\"]",
+      "last_claim": "[\"Ordering the knots increasingly as 1/119<\\\\cdots<1 with respective weights 119,\\\\ldots,1, the left-cumulative first reaches 3570 at the knot 1/70.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.2,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]\nThe first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.",
+      "last_claim": "The first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]\nConvexity of f together with vanishing slope on [1/85,1/84] implies that the attained value 49 is the global minimum.",
+      "last_claim": "Convexity of f together with vanishing slope on [1/85,1/84] implies that the attained value 49 is the global minimum.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\nContinue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]",
+      "last_claim": "[\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\nContinue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"The resulting arithmetic yields 84-3570/85+3485/85-34=49, which is therefore the global minimum.\"]",
+      "last_claim": "[\"The resulting arithmetic yields 84-3570/85+3485/85-34=49, which is therefore the global minimum.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]\nThe first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.\n[\"Hence \\(f(1/85)=49\\).\", \"Because the slope vanishes throughout the interval \\([1/85,1/84]\\), this common value is the global minimum of \\(f\\).\"]",
+      "last_claim": "[\"Hence \\(f(1/85)=49\\).\", \"Because the slope vanishes throughout the interval \\([1/85,1/84]\\), this common value is the global minimum of \\(f\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"At the minimizer \\(x=1/85\\), we have \\(kx\\le1\\) for all \\(k\\le85\\) and \\(kx\\ge1\\) for all \\(k\\ge85\\), so \\(f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=85}^{119}(k/85-1)\\).\",\"The two sums of coefficients of \\(1/85\\) cancel (both equal \\(3570\\)), leaving \\(f(1/85)=84-35=49\\).\"]\nThe first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.\nContinue from: The first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.",
+      "last_claim": "Continue from: The first sum has 84 terms of +1 and the second has 35 terms of -1, so the constant part is exactly 84-35=49 after the 1/85 coefficients cancel.",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\nContinue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]\n[\"For x=1/85 one has |kx-1|=1-k/85 when k\\le84, |kx-1|=0 when k=85, and |kx-1|=k/85-1 when k\\ge86.\", \"Hence f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=86}^{119}(k/85-1).\"]",
+      "last_claim": "[\"For x=1/85 one has |kx-1|=1-k/85 when k\\le84, |kx-1|=0 when k=85, and |kx-1|=k/85-1 when k\\ge86.\", \"Hence f(1/85)=\\sum_{k=1}^{84}(1-k/85)+\\sum_{k=86}^{119}(k/85-1).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "What is the minimum value of $f(x)=\\left|x-1\\right| + \\left|2x-1\\right| + \\left|3x-1\\right| + \\cdots + \\left|119x - 1 \\right|$?\n\n$\\textbf{(A)}\\ 49 \\qquad \\textbf{(B)}\\ 50 \\qquad \\textbf{(C)}\\ 51 \\qquad \\textbf{(D)}\\ 52 \\qquad \\textbf{(E)}\\ 53$ Show that it is 49\\ \\textbf{(A)}.\n[\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\nContinue from: [\"The total weight is 7140, and \\\\sum_{k=85}^{119}k=3570 exactly, hence any x\\\\in[1/85,1/84] is a minimizer and the slope vanishes on that interval.\"]\n[\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]\nContinue from: [\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]",
+      "last_claim": "Continue from: [\"Evaluate f at the left endpoint x=1/85 of the minimizing interval by splitting the sum into k\\le84, k=85 and k\\ge86.\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

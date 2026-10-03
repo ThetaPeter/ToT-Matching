@@ -1,0 +1,15 @@
+The given constraint is \(|x+y|+|x-y|=2\). This identity equals \(2\max(|x|,|y|)\), so the constraint is equivalent to \(\max(|x|,|y|)=1\).
+
+The algebraic identity \(x^2-6x+y^2=(x-3)^2+y^2-9\) therefore reduces the original maximization problem to that of maximizing \((x-3)^2+y^2\) (equivalently, maximizing the original expression) subject to \(\max(|x|,|y|)=1\).
+
+The condition \(\max(|x|,|y|)=1\) forces \(|x|\le 1\) and \(|y|\le 1\), so the feasible set is the boundary of the square \([-1,1]\times[-1,1]\). The continuous function \((x-3)^2+y^2\) attains its maximum on this compact set at a vertex, and the vertices farthest from the point \((3,0)\) are \((-1,\pm 1)\). At those points one has
+\[
+(x-3)^2+y^2\le 16+1=17,
+\]
+with equality at \(x=-1\) and \(|y|=1\). Consequently the original expression equals \(17-9=8\).
+
+(The remaining vertices \((1,\pm 1)\) yield the strictly smaller value \(5-9=-4\).) The points \((-1,\pm 1)\) themselves satisfy the original constraint, since
+\[
+|(-1)+1|+|(-1)-1|=2
+\]
+(and likewise for the opposite sign of \(y\)). Hence the maximum value of the original expression is \(8\).

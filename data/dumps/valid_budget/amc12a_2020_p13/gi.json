@@ -1,0 +1,114 @@
+{
+  "problem_id": "amc12a_2020_p13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The given nested radical equation holds for all N \neq 1 with integers a,b,c > 1",
+      "statement": "√[a](N \\sqrt[b](N \\sqrt[c](N))) = \\sqrt[36](N^{25})",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The nested radical equals N^{[1+(1+1/c)/b]/a}",
+      "statement": "LHS = N^{[1+(1+1/c)/b]/a}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The resulting exponent identity [1+(1+1/c)/b]/a=25/36 holds for integers a,b,c>1",
+      "statement": "[1+(1+1/c)/b]/a = 25/36",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Multiply both sides of the exponent equation by a b c and rearrange",
+      "statement": "36(bc + c + 1) = 25 a b c",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "bc + c + 1 is a multiple of 25",
+      "statement": "bc + c + 1 ≡ 0 (mod 25)",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Rewrite the equation as 36[(b+1)c +1 ] =25 a b c",
+      "statement": "36[(b+1)c +1]=25 a b c",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Since 25 and 36 are coprime, 36 divides abc",
+      "statement": "36 | abc",
+      "dependencies": [
+        "l13",
+        "l15"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Testing small integers b>1 with bc+c+1 divisible by 25 and abc divisible by 36 yields unique solution a=4,b=3,c=6",
+      "statement": "Only solution is a=4,b=3,c=6",
+      "dependencies": [
+        "l20",
+        "l15",
+        "l17"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The unique solution with a,b,c >1 integers yields b=3 (and a=4, c=6)",
+      "statement": "b=3",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

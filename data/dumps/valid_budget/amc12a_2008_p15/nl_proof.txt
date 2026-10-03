@@ -1,0 +1,11 @@
+Let \(k=2008^2+2^{2008}\). The units digits of the powers of \(2\) cycle every four exponents as \(2,4,8,6\). In particular, since the exponent \(2008\) is a multiple of \(4\), one has \(2^{2008}\equiv6\pmod{10}\). Also \(2008^2\equiv4\pmod{10}\), so
+\[
+k\equiv4+6\equiv0\pmod{10}.
+\]
+Squaring therefore yields \(k^2\equiv0\pmod{10}\).
+
+The same definition of \(k\) shows that \(k\) is a multiple of \(4\). Consequently the cycle of units digits of powers of \(2\) gives \(2^k\equiv6\pmod{10}\). Adding the two congruences produces
+\[
+k^2+2^k\equiv0+6\equiv6\pmod{10},
+\]
+so the units digit of \(k^2+2^k\) is \(6\).

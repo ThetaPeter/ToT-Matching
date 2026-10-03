@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_412",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder when $(x + 1)^2 (y + 5)^3$ is divided by 19. Show that it is 13.",
+      "statement": "If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder when $(x + 1)^2 (y + 5)^3$ is divided by 19. Show that it is 13.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l11343",
+      "natural_language": "Advance the argument (step 17641): continue from If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder wh",
+      "statement": "Advance the argument (step 17641): continue from If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder wh",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.22547801696496664,
+      "support": null
+    },
+    {
+      "id": "l11344",
+      "natural_language": "Advance the argument (step 17642): continue from If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder wh",
+      "statement": "Advance the argument (step 17642): continue from If $x \\equiv 4 \\pmod{19}$ and $y \\equiv 7 \\pmod{19}$, then find the remainder wh",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5868569175418032,
+      "support": null
+    }
+  ]
+}

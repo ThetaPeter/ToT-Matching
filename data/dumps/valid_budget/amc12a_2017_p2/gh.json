@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12a_2017_p2",
+  "nodes": [
+    {
+      "id": "l5",
+      "natural_language": "Dividing both sides of \\(x+y=4xy\\) by \\(xy\\) produces \\(\\frac1x+\\frac1y=4\\).",
+      "statement": "1/x + 1/y = 4",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.29250896965085227,
+      "support": null
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus the sum of the reciprocals equals 4, matching choice C.",
+      "statement": "answer = C",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5454545454545454,
+      "support": null
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Thus the sum of the reciprocals equals 4, which is option C.",
+      "statement": "answer = C",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.5103103630798288,
+      "support": null
+    }
+  ]
+}

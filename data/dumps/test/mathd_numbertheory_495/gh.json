@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_495",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose $a$ and $b$ are positive integers such that the units digit of $a$ is $2$, the units digit of $b$ is $4$, and the greatest common divisor of $a$ and $b$ is $6$.\n\nWhat is the smallest possible value of the least common multiple of $a$ and $b$? Show that it is 108.",
+      "statement": "Suppose $a$ and $b$ are positive integers such that the units digit of $a$ is $2$, the units digit of $b$ is $4$, and the greatest common divisor of $a$ and $b$ is $6$.\n\nWhat is the smallest possible value of the least common multiple of $a$ and $b$? Show that it is 108.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3867829673470476,
+      "support": null
+    },
+    {
+      "id": "l11560",
+      "natural_language": "Advance the argument (step 17978): continue from Suppose $a$ and $b$ are positive integers such that the units digit of $a$ is $2",
+      "statement": "Advance the argument (step 17978): continue from Suppose $a$ and $b$ are positive integers such that the units digit of $a$ is $2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.583511636524512,
+      "support": null
+    }
+  ]
+}

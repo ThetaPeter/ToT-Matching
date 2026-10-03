@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]",
+      "last_claim": "[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.4,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\n[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim": "[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\nContinue from: [\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]",
+      "last_claim": "Continue from: [\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\n[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim": "[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\n[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\n[\"If \\(-1\\\\leq x<0\\), then \\(|x-1|+|x|+|x+1|=2-x>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|=3x>x+2\\).\"]",
+      "last_claim": "[\"If \\(-1\\\\leq x<0\\), then \\(|x-1|+|x|+|x+1|=2-x>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|=3x>x+2\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.4,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\n[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\nContinue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim": "Continue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\n[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\n[\"Therefore the equality cannot hold unless \\(0\\leq x\\leq 1\\).\", \"The desired implication follows at once.\"]",
+      "last_claim": "[\"Therefore the equality cannot hold unless \\(0\\leq x\\leq 1\\).\", \"The desired implication follows at once.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\n[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\nContinue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim": "Continue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\n[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\nContinue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\n[\"If \\(x<-1\\), then \\(|x-1|+|x|+|x+1|=-3x>x+2\\).\", \"If \\(-1\\\\leq x<0\\), then \\(|x-1|+|x|+|x+1|=2-x>x+2\\).\"]",
+      "last_claim": "[\"If \\(x<-1\\), then \\(|x-1|+|x|+|x+1|=-3x>x+2\\).\", \"If \\(-1\\\\leq x<0\\), then \\(|x-1|+|x|+|x+1|=2-x>x+2\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\nContinue from:\n[\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\nContinue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]\nContinue from: Continue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"If \\(x<0\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\", \"If \\(x>1\\), then \\(|x-1|+|x|+|x+1|>x+2\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\n[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\nContinue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\n[\"Thus if the equality holds then necessarily \\(0\\leq x\\leq 1\\).\", \"If \\(0\\leq x\\leq 1\\) then \\(|x-1|+|x|+|x+1|=x+2\\), so the hypothesis holds throughout the interval.\"]",
+      "last_claim": "[\"Thus if the equality holds then necessarily \\(0\\leq x\\leq 1\\).\", \"If \\(0\\leq x\\leq 1\\) then \\(|x-1|+|x|+|x+1|=x+2\\), so the hypothesis holds throughout the interval.\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "Show that for any real number $x$, if $|x-1| + |x| + |x+1| = x + 2$, then $0 \\leq x \\leq 1$.\n[\"Assume \\(x\\geq 1\\). Then the left-hand side equals \\(3x\\), so the equality forces \\(x=1\\).\", \"Assume \\(x\\leq 0\\). Then the left-hand side is at least \\(2-x\\), so the equality forces \\(x=0\\).\"]\n[\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\nContinue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]\nContinue from: Continue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim": "Continue from: Continue from: [\"If \\(x>1\\), then \\(3x=x+2\\) is impossible, so the hypothesis fails.\", \"If \\(x<0\\), then LHS \\(\\ge 2-x>x+2\\), so the hypothesis fails.\"]",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

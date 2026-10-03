@@ -1,0 +1,39 @@
+{
+  "problem_id": "algebra_amgm_prod1toneq1_sum1tongeqn",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.",
+      "statement": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.45643546458763845,
+      "support": null
+    },
+    {
+      "id": "l1137",
+      "natural_language": "Advance the argument (step 1765): continue from Show that for any real-valued function $a$ on the natural numbers such that $\\fo",
+      "statement": "Advance the argument (step 1765): continue from Show that for any real-valued function $a$ on the natural numbers such that $\\fo",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5216405309573012,
+      "support": null
+    }
+  ]
+}

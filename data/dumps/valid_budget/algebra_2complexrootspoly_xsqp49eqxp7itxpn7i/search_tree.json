@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_2complexrootspoly_xsqp49eqxp7itxpn7i",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.",
+      "last_claim": "Expand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.",
+      "last_claim": "Compute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.6,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nCompute (7i)^2=49 i^2=-49 using i^2=-1.",
+      "last_claim": "Compute (7i)^2=49 i^2=-49 using i^2=-1.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nHence x^2-(7i)^2=x^2+49, equaling the LHS.",
+      "last_claim": "Hence x^2-(7i)^2=x^2+49, equaling the LHS.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\n[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]",
+      "last_claim": "[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\nContinue from: Compute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.",
+      "last_claim": "Continue from: Compute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nCompute (7i)^2=49 i^2=-49 using i^2=-1.\n[\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]",
+      "last_claim": "[\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nCompute (7i)^2=49 i^2=-49 using i^2=-1.\nContinue from: Compute (7i)^2=49 i^2=-49 using i^2=-1.",
+      "last_claim": "Continue from: Compute (7i)^2=49 i^2=-49 using i^2=-1.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.7,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\n[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]\n[\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]",
+      "last_claim": "[\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\n[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]\nContinue from: [\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]",
+      "last_claim": "Continue from: [\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nCompute (7i)^2=49 i^2=-49 using i^2=-1.\n[\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]\n[\"The identity of polynomials therefore holds identically over \\(\\mathbb{C}\\).\", \"All algebraic operations used are valid in the field \\(\\mathbb{C}\\), so no extra restrictions on \\(x\\) arise.\"]",
+      "last_claim": "[\"The identity of polynomials therefore holds identically over \\(\\mathbb{C}\\).\", \"All algebraic operations used are valid in the field \\(\\mathbb{C}\\), so no extra restrictions on \\(x\\) arise.\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nExpand the RHS via FOIL/distributivity to obtain x^{2}-(7i)^{2}.\nCompute (7i)^2=49 i^2=-49 using i^2=-1.\n[\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]\nContinue from: [\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]",
+      "last_claim": "Continue from: [\"Thus \\(x^2-(7i)^2=x^2-(-49)=x^2+49\\).\", \"Hence the expanded RHS equals the LHS for every complex \\(x\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\n[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]\n[\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]\n[\"The identity therefore holds for every complex number \\(x\\).\", \"This completes the proof.\"]",
+      "last_claim": "[\"The identity therefore holds for every complex number \\(x\\).\", \"This completes the proof.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any complex number $x$, $x^2 + 49 = (x + 7i)(x - 7i)$.\nCompute (7i)^{2}=49i^{2}=-49, hence x^{2}-(-49)=x^{2}+49.\n[\"Therefore \\(x^2+49=x^2-(7i)^2\\).\", \"By the difference of squares formula, \\(x^2-(7i)^2=(x-7i)(x+7i)\\).\"]\n[\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]\nContinue from: [\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]",
+      "last_claim": "Continue from: [\"Therefore \\(x^2+49=(x-7i)(x+7i)\\).\", \"By commutativity of multiplication this equals \\((x+7i)(x-7i)\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

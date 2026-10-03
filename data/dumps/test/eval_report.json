@@ -1,0 +1,5032 @@
+{
+  "pipeline": "mock",
+  "note": "Mock-pipeline holdout: no live API keys at preflight. Not thesis accuracy. NR trained numpy 50 epochs on mock valid_full (mean train NR-vs-GH F1=0.0). NCP stub trained on 240 GI dumps.",
+  "n": 239,
+  "lean_success_rate": 1.0,
+  "mean_gi_vs_gh_f1": 0.5,
+  "mean_nr_vs_gh_f1": 0.0,
+  "mean_proof_token_f1": 0.17844929291634534,
+  "mean_proof_embedding_cosine": 0.31297203404414264,
+  "proof_quality_metric": "token_f1 + MiniLM cosine vs human writeup",
+  "rows": [
+    {
+      "id": "aime_1983_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.021360314783586284
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.125,
+      "proof_embedding_cosine": 0.2921743548953888
+    },
+    {
+      "id": "aime_1983_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016646848989298454
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l58",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18181818181818182,
+      "proof_embedding_cosine": 0.5106904825836196
+    },
+    {
+      "id": "aime_1983_p3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016519174041297935
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l112",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10256410256410256,
+      "proof_embedding_cosine": 0.43099841900894326
+    },
+    {
+      "id": "aime_1984_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014466546112115732
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l165",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18867924528301885,
+      "proof_embedding_cosine": 0.2955750681952525
+    },
+    {
+      "id": "aime_1984_p7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014925373134328358
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l219",
+        "l220",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11023622047244093,
+      "proof_embedding_cosine": 0.1417366773784602
+    },
+    {
+      "id": "aime_1987_p5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01415929203539823
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l273",
+        "l274",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2696629213483146,
+      "proof_embedding_cosine": 0.5040776654484607
+    },
+    {
+      "id": "aime_1988_p8",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02564102564102564
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l327",
+        "l_dead_181",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.05769230769230769,
+      "proof_embedding_cosine": 0.08624334713475672
+    },
+    {
+      "id": "aime_1989_p8",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03861671469740634
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15873015873015872,
+      "proof_embedding_cosine": 0.24820833497671765
+    },
+    {
+      "id": "aime_1990_p15",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.025448235974551765
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l435",
+        "l436",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.07692307692307693,
+      "proof_embedding_cosine": 0.44402397522464115
+    },
+    {
+      "id": "aime_1990_p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007960808328230252
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l490",
+        "l502",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11111111111111112,
+      "proof_embedding_cosine": -0.1987866419864727
+    },
+    {
+      "id": "aime_1991_p9",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014997000599880024
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l544",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10144927536231886,
+      "proof_embedding_cosine": -0.24390303858717116
+    },
+    {
+      "id": "aime_1994_p3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018946121965660152
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l597",
+        "l598",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11538461538461539,
+      "proof_embedding_cosine": 0.3021932406871159
+    },
+    {
+      "id": "aime_1995_p7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01852958756724447
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l651",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.060000000000000005,
+      "proof_embedding_cosine": -0.028161333752350512
+    },
+    {
+      "id": "aime_1997_p9",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.030760301799187463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10227272727272728,
+      "proof_embedding_cosine": 0.10151186875537208
+    },
+    {
+      "id": "aime_1999_p11",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.019184652278177457
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l759",
+        "l760",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.07246376811594202,
+      "proof_embedding_cosine": -0.085090007133003
+    },
+    {
+      "id": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013969732246798603
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l813",
+        "l814",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.34374999999999994,
+      "proof_embedding_cosine": 0.5099917178017539
+    },
+    {
+      "id": "algebra_9onxpypzleqsum2onxpy",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008469449485783424
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l867",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11428571428571428,
+      "proof_embedding_cosine": 0.08508712596230342
+    },
+    {
+      "id": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012552301255230125
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l921",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06741573033707865,
+      "proof_embedding_cosine": 0.4097562925669911
+    },
+    {
+      "id": "algebra_absapbon1pabsapbleqsumabsaon1pabsa",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006682867557715674
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l975",
+        "l976",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0,
+      "proof_embedding_cosine": 0.36084391824351614
+    },
+    {
+      "id": "algebra_absxm1pabsxpabsxp1eqxp2_0leqxleq1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013553329404832056
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1029",
+        "l1030",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2631578947368421,
+      "proof_embedding_cosine": 0.4471750586607389
+    },
+    {
+      "id": "algebra_amgm_sum1toneqn_prod1tonleq1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013739545997610514
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l1083",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14545454545454545,
+      "proof_embedding_cosine": 0.3491486243775878
+    },
+    {
+      "id": "algebra_amgm_sumasqdivbgeqsuma",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.019687319050376375
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1137",
+        "l1138",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.40540540540540543,
+      "proof_embedding_cosine": 0.8547043234472845
+    },
+    {
+      "id": "algebra_apbmpcneq0_aeq0anbeq0anceq0",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.022634939059779455
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1191",
+        "l1192",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.12213740458015267,
+      "proof_embedding_cosine": 0.4835065934960954
+    },
+    {
+      "id": "algebra_apbon2pownleqapownpbpowon2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011911852293031567
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l1246",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15,
+      "proof_embedding_cosine": 0.2948173896382008
+    },
+    {
+      "id": "algebra_apbpceq2_abpbcpcaeq1_aleq1on3anbleq1ancleq4on3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01985981308411215
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l1300",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09259259259259259,
+      "proof_embedding_cosine": 0.09642798888372446
+    },
+    {
+      "id": "algebra_bleqa_apbon2msqrtableqambsqon8b",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011911852293031567
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1353",
+        "l1354",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.23333333333333334,
+      "proof_embedding_cosine": 0.047075115315785045
+    },
+    {
+      "id": "algebra_cubrtrp1oncubrtreq3_rcubp1onrcubeq5778",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011983223487118035
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1407",
+        "l1408",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.20895522388059704,
+      "proof_embedding_cosine": 0.5869337007274514
+    },
+    {
+      "id": "algebra_ineq_nto1onlt2m1on",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008428657435279952
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1461",
+        "l1462",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1839080459770115,
+      "proof_embedding_cosine": 0.3670855119037599
+    },
+    {
+      "id": "algebra_others_exirrpowirrrat",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012552301255230125
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1515",
+        "l1516",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.17777777777777778,
+      "proof_embedding_cosine": 0.58025385831422
+    },
+    {
+      "id": "algebra_sqineq_at2malt1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.005501222493887531
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1569",
+        "l1570",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.33333333333333337,
+      "proof_embedding_cosine": 0.2872134789517764
+    },
+    {
+      "id": "algebra_sqineq_unitcircatbpabsamblt1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.00960960960960961
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l1623",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2,
+      "proof_embedding_cosine": 0.08819477274048472
+    },
+    {
+      "id": "algebra_sqineq_unitcircatbpamblt1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008992805755395683
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1677",
+        "l1678",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0784313725490196,
+      "proof_embedding_cosine": 0.15617376188860613
+    },
+    {
+      "id": "algebra_sum1onsqrt2to1onsqrt10000lt198",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0037359900373599006
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1731",
+        "l1732",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21276595744680854,
+      "proof_embedding_cosine": 0.19611613513818407
+    },
+    {
+      "id": "amc12_2000_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03752131893121091
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l1785",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1518987341772152,
+      "proof_embedding_cosine": 0.5335916278470331
+    },
+    {
+      "id": "amc12_2000_p12",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03876404494382023
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_dead_1024"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.125,
+      "proof_embedding_cosine": -0.3108256130858209
+    },
+    {
+      "id": "amc12_2000_p20",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.035287421741605006
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1893",
+        "l1894",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25806451612903225,
+      "proof_embedding_cosine": 0.08905809508907862
+    },
+    {
+      "id": "amc12_2000_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02456140350877193
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1947",
+        "l1948",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19565217391304346,
+      "proof_embedding_cosine": 0.30806279826323085
+    },
+    {
+      "id": "amc12_2001_p21",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0391156462585034
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2001",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15476190476190477,
+      "proof_embedding_cosine": 0.4931773293173935
+    },
+    {
+      "id": "amc12_2001_p5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018890200708382526
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l2055",
+        "l_dead_1141",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13559322033898305,
+      "proof_embedding_cosine": 0.5072340999585931
+    },
+    {
+      "id": "amc12a_2002_p13",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02464788732394366
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l2109",
+        "l2110",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21238938053097345,
+      "proof_embedding_cosine": 0.280008960430103
+    },
+    {
+      "id": "amc12a_2002_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.028935185185185185
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_dead_1205"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2898550724637681,
+      "proof_embedding_cosine": 0.023986954644045853
+    },
+    {
+      "id": "amc12a_2003_p23",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01831069108092144
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2218",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14545454545454545,
+      "proof_embedding_cosine": 0.4075936053342164
+    },
+    {
+      "id": "amc12a_2003_p5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02497096399535424
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l2271",
+        "l2272",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09836065573770492,
+      "proof_embedding_cosine": 0.08770580193070293
+    },
+    {
+      "id": "amc12a_2008_p25",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.030903790087463558
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l2326",
+        "l2373",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13245033112582782,
+      "proof_embedding_cosine": -0.04848811378764269
+    },
+    {
+      "id": "amc12a_2009_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.025360230547550433
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2380",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10169491525423728,
+      "proof_embedding_cosine": -0.05587987562271125
+    },
+    {
+      "id": "amc12a_2009_p7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02870264064293915
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2433",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2790697674418605,
+      "proof_embedding_cosine": 0.3064182399136626
+    },
+    {
+      "id": "amc12a_2013_p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012121212121212121
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1276595744680851,
+      "proof_embedding_cosine": 0.0
+    },
+    {
+      "id": "amc12a_2019_p12",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.025087514585764293
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2541",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14285714285714285,
+      "proof_embedding_cosine": 0.35028472205202943
+    },
+    {
+      "id": "amc12a_2020_p10",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02633118782913985
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l2595",
+        "l_dead_1441",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10434782608695652,
+      "proof_embedding_cosine": 0.31885114555093863
+    },
+    {
+      "id": "amc12a_2020_p15",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03621958121109225
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2649",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2838709677419355,
+      "proof_embedding_cosine": 0.49868247465327653
+    },
+    {
+      "id": "amc12a_2020_p25",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.05022321428571429
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2704",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15017064846416384,
+      "proof_embedding_cosine": 0.6936508623435921
+    },
+    {
+      "id": "amc12a_2020_p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.027469316189362946
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2757",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21359223300970873,
+      "proof_embedding_cosine": 0.3668340967322255
+    },
+    {
+      "id": "amc12a_2020_p7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.04626532887402453
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2811",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3164556962025316,
+      "proof_embedding_cosine": 0.7759010862496903
+    },
+    {
+      "id": "amc12a_2020_p9",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015559545182525433
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2865",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09615384615384615,
+      "proof_embedding_cosine": 0.47552209460599393
+    },
+    {
+      "id": "amc12a_2021_p12",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.021893491124260357
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2920",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15584415584415584,
+      "proof_embedding_cosine": 0.5101381811386222
+    },
+    {
+      "id": "amc12a_2021_p14",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01854066985645933
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l2973",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15384615384615385,
+      "proof_embedding_cosine": 0.17215243080183323
+    },
+    {
+      "id": "amc12a_2021_p18",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.038829487900956666
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3027",
+        "l3028",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.171875,
+      "proof_embedding_cosine": 0.6690924275368115
+    },
+    {
+      "id": "amc12a_2021_p19",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.023543260741612712
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3081",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.17307692307692307,
+      "proof_embedding_cosine": 0.1952700215184426
+    },
+    {
+      "id": "amc12a_2021_p22",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02459016393442623
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3135",
+        "l3136",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14035087719298245,
+      "proof_embedding_cosine": 0.3254726033315235
+    },
+    {
+      "id": "amc12a_2021_p25",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.04121964991530209
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3189",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16494845360824742,
+      "proof_embedding_cosine": 0.16185079642762903
+    },
+    {
+      "id": "amc12a_2021_p3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02880184331797235
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3243",
+        "l3244",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25806451612903225,
+      "proof_embedding_cosine": 0.4766914657832077
+    },
+    {
+      "id": "amc12a_2021_p8",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.031322505800464036
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3298",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.12499999999999997,
+      "proof_embedding_cosine": 0.3048206937525827
+    },
+    {
+      "id": "amc12a_2021_p9",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.021971496437054632
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3355",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.12195121951219512,
+      "proof_embedding_cosine": 0.3935208907339702
+    },
+    {
+      "id": "amc12b_2002_p19",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.022235225277940317
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3405",
+        "l3406",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.07058823529411765,
+      "proof_embedding_cosine": 0.2706069630676317
+    },
+    {
+      "id": "amc12b_2002_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.019755955839628123
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3459",
+        "l3460",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19607843137254902,
+      "proof_embedding_cosine": 0.029934217004462416
+    },
+    {
+      "id": "amc12b_2002_p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03302961275626424
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3513",
+        "l3514",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2608695652173913,
+      "proof_embedding_cosine": 0.43581435662194873
+    },
+    {
+      "id": "amc12b_2002_p7",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.021841794569067298
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l3567",
+        "l3568",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.32,
+      "proof_embedding_cosine": 0.5740389334947205
+    },
+    {
+      "id": "amc12b_2020_p13",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0184194890077243
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3621",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.125,
+      "proof_embedding_cosine": 0.6041585400191987
+    },
+    {
+      "id": "amc12b_2020_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.022392457277548614
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3676",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19999999999999998,
+      "proof_embedding_cosine": 0.3894855955310974
+    },
+    {
+      "id": "amc12b_2020_p21",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.024662360540223135
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3730",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1626016260162602,
+      "proof_embedding_cosine": 0.6018492343940257
+    },
+    {
+      "id": "amc12b_2020_p22",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0166073546856465
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3783",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13698630136986303,
+      "proof_embedding_cosine": 0.1872514715682846
+    },
+    {
+      "id": "amc12b_2020_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03166378814047208
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3837",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.23076923076923075,
+      "proof_embedding_cosine": 0.4714770836361919
+    },
+    {
+      "id": "amc12b_2021_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013772455089820359
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3891",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.03846153846153846,
+      "proof_embedding_cosine": 0.06642111641550714
+    },
+    {
+      "id": "amc12b_2021_p13",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018386714116251483
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l3946",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11764705882352941,
+      "proof_embedding_cosine": 0.2831639422345617
+    },
+    {
+      "id": "amc12b_2021_p18",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.020130254588513915
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4000",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.030303030303030304,
+      "proof_embedding_cosine": 0.30973229592158924
+    },
+    {
+      "id": "amc12b_2021_p3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015403573629081947
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4054",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.08,
+      "proof_embedding_cosine": 0.3900540496339354
+    },
+    {
+      "id": "amc12b_2021_p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.043454038997214485
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4107",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2531645569620254,
+      "proof_embedding_cosine": 0.717940604413928
+    },
+    {
+      "id": "amc12b_2021_p9",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015719467956469165
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l4161",
+        "l_dead_2311",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11320754716981132,
+      "proof_embedding_cosine": 0.150278272444572
+    },
+    {
+      "id": "imo_1959_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007326007326007326
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4216",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16666666666666666,
+      "proof_embedding_cosine": -0.07715167498104596
+    },
+    {
+      "id": "imo_1960_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01434548714883443
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l4270",
+        "l_dead_2371",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0625,
+      "proof_embedding_cosine": -0.2945137539309163
+    },
+    {
+      "id": "imo_1962_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0132291040288635
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4324",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06796116504854369,
+      "proof_embedding_cosine": 0.3162168771933918
+    },
+    {
+      "id": "imo_1963_p5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0018915510718789407
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l4377",
+        "l_dead_2437",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0,
+      "proof_embedding_cosine": 0.15811388300841897
+    },
+    {
+      "id": "imo_1964_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.00785024154589372
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4432",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.08,
+      "proof_embedding_cosine": 0.34050261230349954
+    },
+    {
+      "id": "imo_1965_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.04340473506200677
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4485",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.22222222222222224,
+      "proof_embedding_cosine": 0.5515034167452693
+    },
+    {
+      "id": "imo_1968_p5_1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02104032729398013
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l4539",
+        "l4540",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0967741935483871,
+      "proof_embedding_cosine": 0.12989810752181602
+    },
+    {
+      "id": "imo_1969_p2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01376421304608019
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4594",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1886792452830189,
+      "proof_embedding_cosine": 0.1669244652223972
+    },
+    {
+      "id": "imo_1974_p3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008557457212713936
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4647",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13675213675213677,
+      "proof_embedding_cosine": 0.2984290921385421
+    },
+    {
+      "id": "imo_1977_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013165769000598444
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4701",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.12738853503184713,
+      "proof_embedding_cosine": 0.1919085607229207
+    },
+    {
+      "id": "imo_1981_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013309134906231096
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l4755",
+        "l4756",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": 0.011990028442779218
+    },
+    {
+      "id": "imo_1982_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018375815056312982
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4809",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09411764705882354,
+      "proof_embedding_cosine": -0.12159336427848003
+    },
+    {
+      "id": "imo_1983_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01757469244288225
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4863",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15555555555555556,
+      "proof_embedding_cosine": 0.2719376606805483
+    },
+    {
+      "id": "imo_1984_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014319809069212411
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4917",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09937888198757763,
+      "proof_embedding_cosine": 0.23949198791149606
+    },
+    {
+      "id": "imo_1985_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.020722320899940794
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l4971",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10945273631840796,
+      "proof_embedding_cosine": 0.3120099844792576
+    },
+    {
+      "id": "imo_1992_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.026136363636363635
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5025",
+        "l5026",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16666666666666666,
+      "proof_embedding_cosine": 0.2976402008865773
+    },
+    {
+      "id": "imo_1997_p5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015901060070671377
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5079",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06134969325153374,
+      "proof_embedding_cosine": 0.13252442799098182
+    },
+    {
+      "id": "imo_2001_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.021118721461187213
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5133",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06451612903225806,
+      "proof_embedding_cosine": 0.07228181235327595
+    },
+    {
+      "id": "imo_2019_p1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.017804154302670624
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5188",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16822429906542055,
+      "proof_embedding_cosine": 0.4525490243440658
+    },
+    {
+      "id": "imosl_2007_algebra_p6",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01259748050389922
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5242",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09615384615384615,
+      "proof_embedding_cosine": 0.357260867763778
+    },
+    {
+      "id": "induction_11div10tonmn1ton",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006703229737964655
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5295",
+        "l5296",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.32558139534883723,
+      "proof_embedding_cosine": 0.1756820922315767
+    },
+    {
+      "id": "induction_12dvd4expnp1p20",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007290400972053463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5349",
+        "l5350",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.36363636363636365,
+      "proof_embedding_cosine": 0.29274527692217917
+    },
+    {
+      "id": "induction_1pxpownlt1pnx",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01130952380952381
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5404",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.30588235294117644,
+      "proof_embedding_cosine": 0.37279936996959717
+    },
+    {
+      "id": "induction_nfactltnexpnm1ngt3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.00785024154589372
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5457",
+        "l5458",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1016949152542373,
+      "proof_embedding_cosine": 0.08326910724800536
+    },
+    {
+      "id": "induction_pord1p1on2powklt5on2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007290400972053463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5512",
+        "l_dead_3062",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14634146341463414,
+      "proof_embedding_cosine": 0.07897985036787898
+    },
+    {
+      "id": "induction_pprime_pdvdapowpma",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010714285714285714
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5565",
+        "l5566",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1839080459770115,
+      "proof_embedding_cosine": 0.3886670702584256
+    },
+    {
+      "id": "induction_prod1p1onk3le3m1onn",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01022864019253911
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5619",
+        "l5620",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2619047619047619,
+      "proof_embedding_cosine": 0.6821793431642633
+    },
+    {
+      "id": "induction_sumkexp3eqsumksq",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007290400972053463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5673",
+        "l5674",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19444444444444445,
+      "proof_embedding_cosine": 0.38388594797495734
+    },
+    {
+      "id": "mathd_algebra_107",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013002364066193853
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5727",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.32142857142857145,
+      "proof_embedding_cosine": 0.4793949970044498
+    },
+    {
+      "id": "mathd_algebra_113",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0112893642305407
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l5781",
+        "l5782",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11594202898550725,
+      "proof_embedding_cosine": 0.35856858280031817
+    },
+    {
+      "id": "mathd_algebra_114",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009586578789694428
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5835",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10526315789473685,
+      "proof_embedding_cosine": -0.033825504574586905
+    },
+    {
+      "id": "mathd_algebra_125",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018790369935408103
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5889",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2058823529411765,
+      "proof_embedding_cosine": 0.2548235957188128
+    },
+    {
+      "id": "mathd_algebra_129",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.005552128315854411
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5944",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.030303030303030304,
+      "proof_embedding_cosine": 0.040291148201269035
+    },
+    {
+      "id": "mathd_algebra_137",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.019127316198445904
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l5998",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26666666666666666,
+      "proof_embedding_cosine": 0.39794191945684376
+    },
+    {
+      "id": "mathd_algebra_139",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013813813813813814
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6052",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.24561403508771928,
+      "proof_embedding_cosine": 0.26916687204956063
+    },
+    {
+      "id": "mathd_algebra_141",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018278301886792452
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6105",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1818181818181818,
+      "proof_embedding_cosine": 0.5010362705417047
+    },
+    {
+      "id": "mathd_algebra_142",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0172311348781937
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6160",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2033898305084746,
+      "proof_embedding_cosine": 0.20336295869552104
+    },
+    {
+      "id": "mathd_algebra_143",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013434579439252336
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6214",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.07692307692307691,
+      "proof_embedding_cosine": 0.18111541908698964
+    },
+    {
+      "id": "mathd_algebra_148",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.00850546780072904
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6267",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18604651162790697,
+      "proof_embedding_cosine": 0.34914862437758787
+    },
+    {
+      "id": "mathd_algebra_153",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.029971181556195964
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6321",
+        "l6322",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2222222222222222,
+      "proof_embedding_cosine": 0.5743458608529733
+    },
+    {
+      "id": "mathd_algebra_156",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.017261904761904763
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6375",
+        "l6376",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1388888888888889,
+      "proof_embedding_cosine": 0.3883024802900143
+    },
+    {
+      "id": "mathd_algebra_158",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0198482194979568
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6429",
+        "l6430",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26373626373626374,
+      "proof_embedding_cosine": 0.5138052261524559
+    },
+    {
+      "id": "mathd_algebra_160",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.032664756446991405
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1978021978021978,
+      "proof_embedding_cosine": 0.09301145060422841
+    },
+    {
+      "id": "mathd_algebra_17",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007361963190184049
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6537",
+        "l6538",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.03571428571428572,
+      "proof_embedding_cosine": -0.020336295869552115
+    },
+    {
+      "id": "mathd_algebra_170",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009575104727707959
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6591",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2105263157894737,
+      "proof_embedding_cosine": 0.03123475237772122
+    },
+    {
+      "id": "mathd_algebra_176",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009057971014492754
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6645",
+        "l6646",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1951219512195122,
+      "proof_embedding_cosine": 0.39028281425843653
+    },
+    {
+      "id": "mathd_algebra_184",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011480362537764351
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6699",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21818181818181817,
+      "proof_embedding_cosine": 0.036037498507822376
+    },
+    {
+      "id": "mathd_algebra_188",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012704174228675136
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6753",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14545454545454548,
+      "proof_embedding_cosine": 0.19289712886816485
+    },
+    {
+      "id": "mathd_algebra_196",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009575104727707959
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6807",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19607843137254902,
+      "proof_embedding_cosine": 0.1239553015137613
+    },
+    {
+      "id": "mathd_algebra_208",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007917174177831911
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6861",
+        "l6862",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.04878048780487805,
+      "proof_embedding_cosine": -0.1414213562373095
+    },
+    {
+      "id": "mathd_algebra_209",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009779951100244499
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l6915",
+        "l6916",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.05128205128205128,
+      "proof_embedding_cosine": -0.04667600280093366
+    },
+    {
+      "id": "mathd_algebra_215",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011834319526627219
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l6969",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2692307692307692,
+      "proof_embedding_cosine": 0.6444163369068286
+    },
+    {
+      "id": "mathd_algebra_24",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01884570082449941
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7023",
+        "l7024",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3673469387755102,
+      "proof_embedding_cosine": 0.6628836424029037
+    },
+    {
+      "id": "mathd_algebra_246",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009714632665452338
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7077",
+        "l7078",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13157894736842105,
+      "proof_embedding_cosine": 0.11638287479252926
+    },
+    {
+      "id": "mathd_algebra_263",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006112469437652812
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7131",
+        "l7132",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13043478260869565,
+      "proof_embedding_cosine": 0.1722921969015792
+    },
+    {
+      "id": "mathd_algebra_270",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008428657435279952
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7185",
+        "l7186",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.17142857142857143,
+      "proof_embedding_cosine": 0.18245011229994043
+    },
+    {
+      "id": "mathd_algebra_275",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01167076167076167
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7239",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.04761904761904763,
+      "proof_embedding_cosine": 0.048795003647426664
+    },
+    {
+      "id": "mathd_algebra_276",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014457831325301205
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7293",
+        "l7294",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1739130434782609,
+      "proof_embedding_cosine": 2.7755575615628914e-17
+    },
+    {
+      "id": "mathd_algebra_288",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0272938443670151
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7347",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2666666666666666,
+      "proof_embedding_cosine": 0.5543377181127929
+    },
+    {
+      "id": "mathd_algebra_289",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02772963604852686
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7401",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26666666666666666,
+      "proof_embedding_cosine": 0.45366939857921595
+    },
+    {
+      "id": "mathd_algebra_293",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.029807130333138514
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7456",
+        "tc_1",
+        "ts_dead_4159"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1627906976744186,
+      "proof_embedding_cosine": 0.03313829924943067
+    },
+    {
+      "id": "mathd_algebra_296",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.017119244391971666
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7509",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.20833333333333334,
+      "proof_embedding_cosine": -0.06447454596056303
+    },
+    {
+      "id": "mathd_algebra_304",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006112469437652812
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7563",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0625,
+      "proof_embedding_cosine": -0.2794815423200416
+    },
+    {
+      "id": "mathd_algebra_313",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.027469316189362946
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7617",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1518987341772152,
+      "proof_embedding_cosine": 0.23177626732527665
+    },
+    {
+      "id": "mathd_algebra_314",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009025270758122744
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7671",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": 0.42089054035481455
+    },
+    {
+      "id": "mathd_algebra_320",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.026436781609195402
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7725",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21782178217821782,
+      "proof_embedding_cosine": 0.032163376045133855
+    },
+    {
+      "id": "mathd_algebra_329",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02120141342756184
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7780",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16867469879518074,
+      "proof_embedding_cosine": 0.51025189328759
+    },
+    {
+      "id": "mathd_algebra_33",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014092777451556078
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7833",
+        "l7834",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.04761904761904762,
+      "proof_embedding_cosine": 0.360667853866973
+    },
+    {
+      "id": "mathd_algebra_332",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014201183431952662
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7887",
+        "l7888",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.09090909090909091,
+      "proof_embedding_cosine": 0.33806170189140666
+    },
+    {
+      "id": "mathd_algebra_338",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012805587892898719
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l7941",
+        "l7942",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18666666666666665,
+      "proof_embedding_cosine": 0.7123198559404469
+    },
+    {
+      "id": "mathd_algebra_342",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.022569444444444444
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l7996",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26666666666666666,
+      "proof_embedding_cosine": 0.31968385757417755
+    },
+    {
+      "id": "mathd_algebra_346",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011296076099881093
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8049",
+        "l8050",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.05405405405405406,
+      "proof_embedding_cosine": 0.11180339887498947
+    },
+    {
+      "id": "mathd_algebra_354",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016587677725118485
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8103",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2222222222222222,
+      "proof_embedding_cosine": 0.3672409296131653
+    },
+    {
+      "id": "mathd_algebra_359",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011855364552459988
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8157",
+        "l8158",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14035087719298245,
+      "proof_embedding_cosine": 0.05869672708837492
+    },
+    {
+      "id": "mathd_algebra_362",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010863005431502716
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8212",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13793103448275862,
+      "proof_embedding_cosine": 0.30079260375911915
+    },
+    {
+      "id": "mathd_algebra_388",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0074119827053736875
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8265",
+        "l8266",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10256410256410256,
+      "proof_embedding_cosine": 0.35320862855067836
+    },
+    {
+      "id": "mathd_algebra_392",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016577856719952634
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8319",
+        "l8320",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26666666666666666,
+      "proof_embedding_cosine": 0.756915550414835
+    },
+    {
+      "id": "mathd_algebra_398",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015817223198594025
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8373",
+        "l8374",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.4262295081967213,
+      "proof_embedding_cosine": 0.44684182473699013
+    },
+    {
+      "id": "mathd_algebra_400",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010727056019070322
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8428",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2162162162162162,
+      "proof_embedding_cosine": 0.4303314829119351
+    },
+    {
+      "id": "mathd_algebra_412",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014705882352941176
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8481",
+        "l8482",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15789473684210525,
+      "proof_embedding_cosine": 0.48181205582971587
+    },
+    {
+      "id": "mathd_algebra_427",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011494252873563218
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8535",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2352941176470588,
+      "proof_embedding_cosine": 0.2860387767736777
+    },
+    {
+      "id": "mathd_algebra_432",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.004345127250155183
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8589",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0,
+      "proof_embedding_cosine": 0.2142857142857143
+    },
+    {
+      "id": "mathd_algebra_44",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016004742145820983
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8643",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.17391304347826086,
+      "proof_embedding_cosine": 0.29880715233359845
+    },
+    {
+      "id": "mathd_algebra_440",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.022183304144775248
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8698",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3714285714285714,
+      "proof_embedding_cosine": 0.5117663157191591
+    },
+    {
+      "id": "mathd_algebra_441",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008583690987124463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l8751",
+        "l8752",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1568627450980392,
+      "proof_embedding_cosine": 0.4781704867108594
+    },
+    {
+      "id": "mathd_algebra_452",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014302741358760428
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8806",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3137254901960784,
+      "proof_embedding_cosine": 0.5319148936170213
+    },
+    {
+      "id": "mathd_algebra_459",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.07165437302423604
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "tc_1",
+        "ts_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25125628140703515,
+      "proof_embedding_cosine": 0.26770616613979864
+    },
+    {
+      "id": "mathd_algebra_478",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03342776203966006
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8914",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13114754098360654,
+      "proof_embedding_cosine": -0.03127716210856122
+    },
+    {
+      "id": "mathd_algebra_487",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010247136829415311
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l8967",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1408450704225352,
+      "proof_embedding_cosine": 0.3713906763541037
+    },
+    {
+      "id": "mathd_algebra_513",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.011438892233594221
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9021",
+        "l9022",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.28571428571428575,
+      "proof_embedding_cosine": -0.034647946433761866
+    },
+    {
+      "id": "mathd_algebra_598",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01094224924012158
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l9075",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14285714285714288,
+      "proof_embedding_cosine": -0.19162020190612147
+    },
+    {
+      "id": "mathd_algebra_756",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008976660682226212
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9129",
+        "l9130",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.125,
+      "proof_embedding_cosine": 0.33709993123162113
+    },
+    {
+      "id": "mathd_algebra_76",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02064896755162242
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l9183",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.07142857142857142,
+      "proof_embedding_cosine": 0.13975424859373686
+    },
+    {
+      "id": "mathd_algebra_80",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0049813200498132005
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9237",
+        "l_dead_5131",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.0,
+      "proof_embedding_cosine": -0.2860387767736777
+    },
+    {
+      "id": "mathd_numbertheory_100",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009036144578313253
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9291",
+        "l9292",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.12244897959183672,
+      "proof_embedding_cosine": 0.1607060866333063
+    },
+    {
+      "id": "mathd_numbertheory_1124",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010922330097087379
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9345",
+        "l9346",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.22535211267605634,
+      "proof_embedding_cosine": 0.4149637600983033
+    },
+    {
+      "id": "mathd_numbertheory_12",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009603841536614645
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9399",
+        "l9400",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3076923076923077,
+      "proof_embedding_cosine": 0.42712109808862453
+    },
+    {
+      "id": "mathd_numbertheory_127",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014125956444967627
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9453",
+        "l9454",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21621621621621623,
+      "proof_embedding_cosine": 0.7379156097570451
+    },
+    {
+      "id": "mathd_numbertheory_135",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03076923076923077
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9507",
+        "l9508",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21875,
+      "proof_embedding_cosine": 0.42214806755384743
+    },
+    {
+      "id": "mathd_numbertheory_150",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01542111506524318
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l9561",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.11111111111111112,
+      "proof_embedding_cosine": 0.33143876451243465
+    },
+    {
+      "id": "mathd_numbertheory_175",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0072683222289521504
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9615",
+        "l9616",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16901408450704225,
+      "proof_embedding_cosine": 0.40640040640060965
+    },
+    {
+      "id": "mathd_numbertheory_185",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016489988221436984
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9669",
+        "l9670",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.35555555555555557,
+      "proof_embedding_cosine": 0.34151450937027694
+    },
+    {
+      "id": "mathd_numbertheory_207",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006112469437652812
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l9723",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": -0.20254787341673336
+    },
+    {
+      "id": "mathd_numbertheory_212",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009047044632086852
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9777",
+        "l9778",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21621621621621623,
+      "proof_embedding_cosine": 0.683685327756172
+    },
+    {
+      "id": "mathd_numbertheory_222",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.020047169811320754
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9832",
+        "l_dead_5461",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.17543859649122806,
+      "proof_embedding_cosine": 0.09981302570118994
+    },
+    {
+      "id": "mathd_numbertheory_227",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03485714285714286
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l9886",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.27368421052631586,
+      "proof_embedding_cosine": 0.6551362757648281
+    },
+    {
+      "id": "mathd_numbertheory_229",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009030704394942806
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9939",
+        "l9940",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13114754098360656,
+      "proof_embedding_cosine": 0.26622333025588873
+    },
+    {
+      "id": "mathd_numbertheory_233",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01791044776119403
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l9993",
+        "l9994",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18918918918918917,
+      "proof_embedding_cosine": 0.3344898836895255
+    },
+    {
+      "id": "mathd_numbertheory_234",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012658227848101266
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10047",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.051948051948051945,
+      "proof_embedding_cosine": 0.36013855046788434
+    },
+    {
+      "id": "mathd_numbertheory_235",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010143198090692125
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10101",
+        "l_dead_5611",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3243243243243243,
+      "proof_embedding_cosine": -0.11085479909473862
+    },
+    {
+      "id": "mathd_numbertheory_237",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009079903147699757
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10155",
+        "l10156",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10958904109589042,
+      "proof_embedding_cosine": 0.5799816700047755
+    },
+    {
+      "id": "mathd_numbertheory_239",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02264808362369338
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10209",
+        "l10210",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1379310344827586,
+      "proof_embedding_cosine": 0.7560153527108575
+    },
+    {
+      "id": "mathd_numbertheory_247",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01436265709156194
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10263",
+        "l10264",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25396825396825395,
+      "proof_embedding_cosine": 0.6637384880265758
+    },
+    {
+      "id": "mathd_numbertheory_254",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0327774583093732
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10318",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3384615384615385,
+      "proof_embedding_cosine": 0.46236434165380697
+    },
+    {
+      "id": "mathd_numbertheory_277",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.020636792452830188
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10371",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.23913043478260868,
+      "proof_embedding_cosine": 0.4550353783739851
+    },
+    {
+      "id": "mathd_numbertheory_293",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013674197384066587
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10425",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25581395348837205,
+      "proof_embedding_cosine": 0.336096809823852
+    },
+    {
+      "id": "mathd_numbertheory_296",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0148720999405116
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10479",
+        "l10480",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18918918918918917,
+      "proof_embedding_cosine": 0.6438285514574748
+    },
+    {
+      "id": "mathd_numbertheory_299",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.014109347442680775
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10533",
+        "l10534",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3157894736842105,
+      "proof_embedding_cosine": 0.48107023544236394
+    },
+    {
+      "id": "mathd_numbertheory_3",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013048635824436536
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10587",
+        "l10588",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3076923076923077,
+      "proof_embedding_cosine": 0.8896940405527108
+    },
+    {
+      "id": "mathd_numbertheory_314",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.0261172373766686
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10641",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16326530612244897,
+      "proof_embedding_cosine": 0.4021470500644759
+    },
+    {
+      "id": "mathd_numbertheory_320",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009124087591240875
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10695",
+        "l_dead_5941",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.05714285714285715,
+      "proof_embedding_cosine": 0.0
+    },
+    {
+      "id": "mathd_numbertheory_321",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015114873035066506
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l10749",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18749999999999997,
+      "proof_embedding_cosine": 0.6789347398332044
+    },
+    {
+      "id": "mathd_numbertheory_328",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01130952380952381
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10803",
+        "l10804",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.20930232558139536,
+      "proof_embedding_cosine": 0.3822353935782192
+    },
+    {
+      "id": "mathd_numbertheory_34",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012612612612612612
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10857",
+        "l10858",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.13043478260869565,
+      "proof_embedding_cosine": 0.4065785563073631
+    },
+    {
+      "id": "mathd_numbertheory_341",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01189767995240928
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10911",
+        "l10912",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18918918918918917,
+      "proof_embedding_cosine": 0.702569362618371
+    },
+    {
+      "id": "mathd_numbertheory_342",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007290400972053463
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l10966",
+        "l_dead_6091",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": -0.33436692754521175
+    },
+    {
+      "id": "mathd_numbertheory_343",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013625592417061612
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11019",
+        "l11020",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.47058823529411764,
+      "proof_embedding_cosine": 0.7835143501188127
+    },
+    {
+      "id": "mathd_numbertheory_345",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009113001215066828
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11073",
+        "l_dead_6151",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16,
+      "proof_embedding_cosine": 0.3030457633656632
+    },
+    {
+      "id": "mathd_numbertheory_353",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.012971698113207548
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11127",
+        "l11128",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3278688524590164,
+      "proof_embedding_cosine": 0.4331798560007006
+    },
+    {
+      "id": "mathd_numbertheory_427",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01584507042253521
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11181",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.24,
+      "proof_embedding_cosine": 0.4954805974958933
+    },
+    {
+      "id": "mathd_numbertheory_430",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02883506343713956
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11235",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.22222222222222224,
+      "proof_embedding_cosine": 0.7144994461248109
+    },
+    {
+      "id": "mathd_numbertheory_435",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01728247914183552
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11289",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26016260162601623,
+      "proof_embedding_cosine": 0.585127680009992
+    },
+    {
+      "id": "mathd_numbertheory_447",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.013585351447135264
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11343",
+        "l11344",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2891566265060241,
+      "proof_embedding_cosine": 0.7967271051536908
+    },
+    {
+      "id": "mathd_numbertheory_451",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.03045977011494253
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11397",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.19095477386934673,
+      "proof_embedding_cosine": 0.5047188850096951
+    },
+    {
+      "id": "mathd_numbertheory_457",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01022864019253911
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11451",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.16666666666666666,
+      "proof_embedding_cosine": 0.4132529353976821
+    },
+    {
+      "id": "mathd_numbertheory_483",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.025
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11505",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2247191011235955,
+      "proof_embedding_cosine": 0.4954672532151031
+    },
+    {
+      "id": "mathd_numbertheory_495",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.030998851894374284
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11560",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2074074074074074,
+      "proof_embedding_cosine": 0.6884788303944914
+    },
+    {
+      "id": "mathd_numbertheory_5",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01369047619047619
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11613",
+        "l11614",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.5217391304347826,
+      "proof_embedding_cosine": 0.7297575507997905
+    },
+    {
+      "id": "mathd_numbertheory_517",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009575104727707959
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11667",
+        "l11668",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.18749999999999997,
+      "proof_embedding_cosine": 0.3519947346980236
+    },
+    {
+      "id": "mathd_numbertheory_521",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01378070701018574
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l11721",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.22500000000000003,
+      "proof_embedding_cosine": 0.5841623822026591
+    },
+    {
+      "id": "mathd_numbertheory_541",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.016023738872403562
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11775",
+        "l11776",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25,
+      "proof_embedding_cosine": 0.5277504136509363
+    },
+    {
+      "id": "mathd_numbertheory_551",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007312614259597806
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11830",
+        "l_dead_6571",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": -0.1318760946791574
+    },
+    {
+      "id": "mathd_numbertheory_552",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.023864959254947613
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11883",
+        "l_dead_6601",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.30769230769230765,
+      "proof_embedding_cosine": 0.581533542869141
+    },
+    {
+      "id": "mathd_numbertheory_559",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02702702702702703
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11937",
+        "l11938",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3888888888888889,
+      "proof_embedding_cosine": 0.769291098100077
+    },
+    {
+      "id": "mathd_numbertheory_582",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018626309662398137
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l11991",
+        "l11992",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.3283582089552239,
+      "proof_embedding_cosine": 0.6300255180485393
+    },
+    {
+      "id": "mathd_numbertheory_618",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.02732558139534884
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12045",
+        "l12046",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.31007751937984496,
+      "proof_embedding_cosine": 0.43538320432955746
+    },
+    {
+      "id": "mathd_numbertheory_66",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.007312614259597806
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12099",
+        "l12100",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.06666666666666667,
+      "proof_embedding_cosine": 0.36004114991154784
+    },
+    {
+      "id": "mathd_numbertheory_711",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.020636792452830188
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12153",
+        "l12154",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2365591397849462,
+      "proof_embedding_cosine": 0.45296442208717425
+    },
+    {
+      "id": "mathd_numbertheory_728",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.006723716381418093
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12207",
+        "l12208",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.20833333333333334,
+      "proof_embedding_cosine": 0.1813296301838414
+    },
+    {
+      "id": "mathd_numbertheory_764",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.018823529411764704
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12261",
+        "l12262",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25,
+      "proof_embedding_cosine": 0.5823252839340409
+    },
+    {
+      "id": "mathd_numbertheory_765",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010265700483091788
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12316",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1411764705882353,
+      "proof_embedding_cosine": 0.28751678888398885
+    },
+    {
+      "id": "mathd_numbertheory_769",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009047044632086852
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12369",
+        "l12370",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.05479452054794521,
+      "proof_embedding_cosine": 0.2412686555261953
+    },
+    {
+      "id": "mathd_numbertheory_99",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01436265709156194
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12424",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25806451612903225,
+      "proof_embedding_cosine": 0.4983079477700619
+    },
+    {
+      "id": "numbertheory_2pownm1prime_nprime",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.010707911957168352
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12477",
+        "l12478",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.25000000000000006,
+      "proof_embedding_cosine": 0.3982127423915737
+    },
+    {
+      "id": "numbertheory_3pow2pownm1mod2pownp3eq2pownp2",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009667673716012085
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12531",
+        "l12532",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.21428571428571427,
+      "proof_embedding_cosine": -0.11165085542764537
+    },
+    {
+      "id": "numbertheory_4x3m7y3neq2003",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.009603841536614645
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12585",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.15584415584415584,
+      "proof_embedding_cosine": 0.01992047682223991
+    },
+    {
+      "id": "numbertheory_aoddbdiv4asqpbsqmod8eq1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015891701000588582
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12640",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.26666666666666666,
+      "proof_embedding_cosine": 0.30536031721877677
+    },
+    {
+      "id": "numbertheory_exk2powkeqapb2mulbpa2_aeq1",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01768867924528302
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12693",
+        "l12694",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.2735042735042735,
+      "proof_embedding_cosine": 0.47180076684252387
+    },
+    {
+      "id": "numbertheory_fxeq4powxp6powxp9powx_f2powmdvdf2pown",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.01466275659824047
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l12747",
+        "l12748",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.1320754716981132,
+      "proof_embedding_cosine": 0.2684604872422236
+    },
+    {
+      "id": "numbertheory_notequiv2i2jasqbsqdiv8",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.015976331360946745
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12801",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.14545454545454548,
+      "proof_embedding_cosine": 0.4175024555559607
+    },
+    {
+      "id": "numbertheory_x5neqy2p4",
+      "lean_success": true,
+      "prune_ratio": {
+        "node_ratio": 0.008547008547008548,
+        "token_ratio": 0.008454106280193236
+      },
+      "gi_vs_gh_f1": 0.5,
+      "gi_ids": [
+        "tc_1"
+      ],
+      "gh_ids": [
+        "l1",
+        "l12855",
+        "tc_1"
+      ],
+      "nr_vs_gh_f1": 0.0,
+      "nr_pred_ids": [],
+      "proof_token_f1": 0.10526315789473682,
+      "proof_embedding_cosine": 0.05282705437953744
+    }
+  ]
+}

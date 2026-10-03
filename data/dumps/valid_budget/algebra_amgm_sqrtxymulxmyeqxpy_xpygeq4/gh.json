@@ -1,0 +1,65 @@
+{
+  "problem_id": "algebra_amgm_sqrtxymulxmyeqxpy_xpygeq4",
+  "nodes": [
+    {
+      "id": "l6",
+      "natural_language": "Square the rewritten condition and obtain the quadratic in p whose discriminant forces s>=4.",
+      "statement": "Squaring \\(\\sqrt{p}\\sqrt{s^2-4p}=s\\) produces the quadratic equation 4p^2 - s^2 p + s^2 =0; non-negative discriminant requires s^2(s^2-16)>=0, hence s>=4 (with equality possible when the root p lies in (0,s^2/4)).",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": 0.3849001794597506,
+      "support": null
+    },
+    {
+      "id": "l7",
+      "natural_language": "Introduce sum and product variables.",
+      "statement": "Let \\(s=x+y\\) and \\(p=xy\\). Then \\(x-y=\\sqrt{s^2-4p}\\).",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.22360679774997896,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Apply AM-GM to x and y.",
+      "statement": "By AM-GM, \\(\\frac{x+y}{2}\\ge\\sqrt{xy}\\), i.e. \\(s/2\\ge\\sqrt{p}\\).",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": 0.46291004988627577,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "statement": "The quadratic in p has real roots if and only if s^{2}(s^{2}-16)\\ge0, hence s\\ge4 (and the resulting p is positive and at most s^{2}/4).",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.446108908109597,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "statement": "The inequality (t^{2}+1)^{2}\\ge4t(t^{2}-1) rearranges to (t^{2}-2t-1)^{2}\\ge0, which holds for all t>1.",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": 0.5728918992315463,
+      "support": null
+    },
+    {
+      "id": "l22",
+      "natural_language": "The quadratic in p has positive roots satisfying the interval condition precisely when s>=4.",
+      "statement": "The quadratic in \\(p\\) has positive roots \\(p=[s^2\\pm s\\sqrt{s^2-16}]/8\\) satisfying \\(0<p\\le s^2/4\\) precisely when \\(s\\ge4\\), so the given relation forces \\(s\\ge4\\).",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.3651483716701108,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "problem_id": "aime_1983_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Domain condition 0 < x < \\pi",
+      "statement": "0 < x < \\pi",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The given expression equals \\(9x\\sin x + \\frac{4}{x\\sin x}\\)",
+      "statement": "\\frac{9x^2\\sin^2 x + 4}{x\\sin x} = 9x\\sin x + \\frac{4}{x\\sin x}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Rewrite expression as 9t + 4/t with t = x sin x",
+      "statement": "Let t = x sin x > 0; then expression equals 9t + 4/t",
+      "dependencies": [
+        "l0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Minimum value is 12 (equality attainable)",
+      "statement": "Minimum of expression on (0, π) equals 12",
+      "dependencies": [
+        "l2",
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "By AM-GM, 9t + 4/t \\ge 12 with equality iff t = 2/3",
+      "statement": "9t + 4/t \\ge 2\\sqrt(9t · 4/t) = 12, equality iff t = 2/3",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "x sin x attains 2/3 on (0, \\pi)",
+      "statement": "There exists x \\in (0, \\pi) with x sin x = 2/3",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus equality holds for some x∈(0,π), so the original expression attains the value 12",
+      "statement": "Equality holds for some x∈(0,π) so expression attains 12",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

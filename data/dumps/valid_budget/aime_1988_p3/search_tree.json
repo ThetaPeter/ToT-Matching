@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1988_p3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]",
+      "last_claim": "[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim": "[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\nContinue from: [\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]",
+      "last_claim": "Continue from: [\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\nContinue from:\n[\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]",
+      "last_claim": "[\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\n[\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]",
+      "last_claim": "[\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\nContinue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim": "Continue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\nContinue from:\n[\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]\n[\"By the change-of-base formula we have \\(\\log_8 y=\\frac{\\log_2 y}{3}\\), so the equation becomes \\(\\log_2(y/3)=\\frac{\\log_2 y}{3}\\).\", \"Expanding the left-hand side via the difference rule yields \\(\\log_2 y-\\log_2 3=\\log_8 y\\).\"]",
+      "last_claim": "[\"By the change-of-base formula we have \\(\\log_8 y=\\frac{\\log_2 y}{3}\\), so the equation becomes \\(\\log_2(y/3)=\\frac{\\log_2 y}{3}\\).\", \"Expanding the left-hand side via the difference rule yields \\(\\log_2 y-\\log_2 3=\\log_8 y\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.2,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\nContinue from:\n[\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]\nContinue from: [\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]",
+      "last_claim": "Continue from: [\"Let \\( y = \\log_2 x \\), so that \\( x = 2^y \\) and \\( \\log_8 x = y/3 \\).\", \"The given equation then becomes \\( \\log_2(y/3) = \\log_8 y \\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\n[\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]\n[\"Cubing both sides of \\(\\frac{y}{3}=y^{1/3}\\) yields \\(\\frac{y^3}{27}=y\\).\", \"Substituting \\(z=y^{1/3}\\) produces \\(\\frac{z^3}{3}=z\\), hence \\(z(z^2-3)=0\\).\"]",
+      "last_claim": "[\"Cubing both sides of \\(\\frac{y}{3}=y^{1/3}\\) yields \\(\\frac{y^3}{27}=y\\).\", \"Substituting \\(z=y^{1/3}\\) produces \\(\\frac{z^3}{3}=z\\), hence \\(z(z^2-3)=0\\).\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\n[\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]\nContinue from: [\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]",
+      "last_claim": "Continue from: [\"Applying the difference property of logarithms yields \\(\\log_2 y-\\log_2 3=\\frac13\\log_2 y\\).\",\"Raising 2 to both sides produces \\(\\frac y3=y^{1/3}\\).\"]",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\nContinue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\n[\"Raising 2 to both sides or equivalently writing \\(3\\log_2(y/3)=\\log_2 y\\) produces \\(\\log_2((y/3)^3)=\\log_2 y\\), hence \\((y/3)^3=y\\).\",\"Setting \\(z=\\log_2 y\\) rewrites the equation as \\(z-\\log_2 3=z/3\\).\"]",
+      "last_claim": "[\"Raising 2 to both sides or equivalently writing \\(3\\log_2(y/3)=\\log_2 y\\) produces \\(\\log_2((y/3)^3)=\\log_2 y\\), hence \\((y/3)^3=y\\).\",\"Setting \\(z=\\log_2 y\\) rewrites the equation as \\(z-\\log_2 3=z/3\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.95,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Find $(\\log_2 x)^2$ if $\\log_2 (\\log_8 x) = \\log_8 (\\log_2 x)$. Show that it is 027.\n[\"Let \\( y=\\log_2 x \\), so that \\(\\log_8 x=y/3\\).\",\"Change of base yields \\(\\log_2(\\log_8 x)=\\frac13\\log_2(\\log_2 x)\\).\"]\n[\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\nContinue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]\nContinue from: Continue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The given equation is then equivalent to \\(\\log_2(y/3)=\\log_8 y\\).\", \"Change of base on the right-hand side instead yields \\(\\log_8 y=\\frac13\\log_2 y\\), so \\(\\log_2(y/3)=\\frac13\\log_2 y\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

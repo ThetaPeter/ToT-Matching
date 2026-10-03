@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_153",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to $X$; for example $\\lfloor 3\\frac{1}{2} \\rfloor = 3$. If $N = \\frac{1}{3}$, what is the value of $\\lfloor 10N \\rfloor + \\lfloor 100N \\rfloor + \\lfloor 1000N \\rfloor + \\lfloor 10,000N \\rfloor$? Show that it is 3702.",
+      "statement": "We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to $X$; for example $\\lfloor 3\\frac{1}{2} \\rfloor = 3$. If $N = \\frac{1}{3}$, what is the value of $\\lfloor 10N \\rfloor + \\lfloor 100N \\rfloor + \\lfloor 1000N \\rfloor + \\lfloor 10,000N \\rfloor$? Show that it is 3702.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l6321",
+      "natural_language": "Advance the argument (step 9829): continue from We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to",
+      "statement": "Advance the argument (step 9829): continue from We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.28628287191988194,
+      "support": null
+    },
+    {
+      "id": "l6322",
+      "natural_language": "Advance the argument (step 9830): continue from We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to",
+      "statement": "Advance the argument (step 9830): continue from We write $\\lfloor X \\rfloor$ to mean the greatest integer less than or equal to",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6306562238868912,
+      "support": null
+    }
+  ]
+}

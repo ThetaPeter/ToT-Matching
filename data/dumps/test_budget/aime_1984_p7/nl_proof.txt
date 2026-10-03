@@ -1,0 +1,29 @@
+The given facts include \(f(84)=f(f(89))\) and the explicit values \(f(n)=n-3\) for \(n=1000,\dots,1004\) (equivalently \(f(1000+k)=997+k\) for \(k=0,\dots,4\)).
+
+From the latter, \(f(m)=f(m+2)\) holds for each \(m=995,\dots,999\). Combining this periodicity with the explicit values on \(\{1000,\dots,1004\}\) yields
+\[
+f(995)=f(997),\quad f(996)=f(998),\quad f(997)=f(999),\quad f(998)=997,\quad f(999)=998.
+\]
+A further evaluation then produces the three values
+\[
+f(995)=998,\quad f(996)=997,\quad f(997)=998.
+\]
+(The same data also give the auxiliary identities \(f(990)=f(f(997))\), \(f(991)=f(f(998))\), \(f(992)=f(f(999))\).)
+
+Iterating the original relation \(f(84)=f(f(89))\) twice more produces
+\[
+f(84)=f(f(f(94)))=f(f(f(f(f(f(104)))))).
+\]
+A parallel iteration of the same relation produces the shorter chain
+\[
+f(84)=f(f(f(f(99)))).
+\]
+These two expressions together imply that \(f(84)\) equals the \(184\)-fold iterate \(f^{184}(1004)\).
+
+Unfolding one further step with the already-computed values on \(\{995,\dots,999\}\) determines \(f\) on the preceding interval \(\{990,\dots,994\}\). The resulting table, together with the values already obtained on \(\{995,\dots,999\}\), shows that
+\[
+f(n)=\begin{cases}997 & \text{if \(n\) is even},\\998 & \text{if \(n\) is odd}\end{cases}
+\]
+throughout the whole interval \([990,999]\).
+
+Starting from the explicit value \(f(1004)=1001\) and applying the just-established pattern on \([990,999]\) a total of \(184\) times therefore yields \(f^{184}(1004)=997\). Consequently \(f(84)=997\).

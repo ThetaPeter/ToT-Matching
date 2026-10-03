@@ -1,0 +1,374 @@
+{
+  "problem_id": "amc12a_2020_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "n is a positive multiple of 5 whose prime factors lie in {2,3,5,7}",
+      "statement": "n=2^a 3^b 5^c 7^d with a,b,c,d non-negative integers, c\\ge1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Write 5!=2^3·3·5 and 10!=2^8·3^4·5^2·7",
+      "statement": "prime factorizations of 5! and 10! are known",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "lcm(5!,n)=2^max(3,a)·3^max(1,b)·5^max(1,c)·7^max(0,d)",
+      "statement": "lcm expression in exponents",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "gcd(10!,n)=2^min(8,a)·3^min(4,b)·5^min(2,c)·7^min(1,d)",
+      "statement": "gcd expression in exponents",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "the given equation becomes max(3,a)=min(8,a), max(1,b)=min(4,b), max(1,c)=1+min(2,c), max(0,d)=min(1,d)",
+      "statement": "exponent-wise equality after substituting lcm and 5·gcd",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "the four independent inequalities on a,b,c,d each admit 4,3,4,4 solutions respectively",
+      "statement": "count solutions per exponent",
+      "dependencies": [
+        "ts_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "total number of admissible n is 4·3·4·4=48",
+      "statement": "multiply the numbers of choices",
+      "dependencies": [
+        "ts_2",
+        "ts_4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "n is of the form 2^x 3^y 5^z 7^w with x,y,w\\ge0 and z\\ge1",
+      "statement": "n=2^x 3^y 5^z 7^w with x,y,w non-negative integers, z\\ge1",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Equating prime exponents in lcm(5!,n)=5 gcd(10!,n) yields the four independent conditions max(3,x)=min(8,x), max(1,y)=min(4,y), z=1+min(2,z) and w=min(1,w)",
+      "statement": "exponent conditions from lcm=5*gcd",
+      "dependencies": [
+        "tc_3",
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "total number of admissible n is 48",
+      "statement": "multiply the numbers of choices for the four exponents",
+      "dependencies": [
+        "ts_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "The exponent conditions are equivalent to x∈{3,4,5,6,7,8}, y∈{1,2,3,4}, z=3 and w∈{0,1}",
+      "statement": "exponent ranges from conditions",
+      "dependencies": [
+        "ts_4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus there are 6·4·1·2=48 such positive integers n",
+      "statement": "total number of admissible n is 48",
+      "dependencies": [
+        "ts_6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Solving the four conditions separately gives x in {3,4,5,6,7,8} (6 choices), y in {1,2,3,4} (4 choices), z=3 (1 choice), w in {0,1} (2 choices)",
+      "statement": "exponent ranges obtained by case analysis on each max/min equation",
+      "dependencies": [
+        "ts_4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "total number of admissible n is 6*4*1*2=48",
+      "statement": "multiply the numbers of choices for the four exponents",
+      "dependencies": [
+        "ts_8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "n is of the form 2^a 3^b 5^c 7^d with c\\ge1",
+      "statement": "n=2^a 3^b 5^c 7^d with a,b,c,d non-negative integers, c\\ge1",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The equality of prime exponents in lcm(5!,n)=5⋅gcd(10!,n) must hold separately for each of 2,3,5,7",
+      "statement": "exponent equalities are independent across primes",
+      "dependencies": [
+        "tc_4",
+        "ts_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "total number of admissible n is 48",
+      "statement": "multiply the numbers of choices for the four exponents",
+      "dependencies": [
+        "ts_10",
+        "ts_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "the number of such n is 48, which is choice (D)",
+      "statement": "answer is 48",
+      "dependencies": [
+        "ts_3",
+        "ts_5",
+        "ts_7",
+        "ts_9",
+        "ts_11",
+        "tc_5",
+        "ts_22"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "The four exponent conditions are independent, so the number of admissible tuples (x,y,z,w) is the product of the sizes of the four sets of admissible exponents.",
+      "statement": "independence implies product of cardinalities",
+      "dependencies": [
+        "ts_6"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "Hence exactly 6·4·1·2=48 such n exist, which is option (D).",
+      "statement": "total is 48, answer D",
+      "dependencies": [
+        "ts_13"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "The number of such n is 48, which is choice (D)",
+      "statement": "answer is 48 (D)",
+      "dependencies": [
+        "ts_7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_16",
+      "natural_language": "The number of such n is 48, which is choice (D)",
+      "statement": "answer is 48 (D)",
+      "dependencies": [
+        "ts_12"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_17",
+      "natural_language": "exponent conditions reduce to a\\in{3..8} (6 choices), b\\in{1..4} (4 choices), c=3 (1 choice), d\\in{0,1} (2 choices)",
+      "statement": "independent per-prime solution counts",
+      "dependencies": [
+        "tc_4",
+        "ts_10",
+        "ts_1"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_18",
+      "natural_language": "total admissible n equals 6\times4\times1\times2=48",
+      "statement": "product of exponent cardinalities",
+      "dependencies": [
+        "ts_17"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_19",
+      "natural_language": "the number of such n is 48, which is choice (D)",
+      "statement": "answer is 48 (D)",
+      "dependencies": [
+        "ts_18"
+      ],
+      "search_node_id": "sn_5",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "These exponent ranges are readily checked to satisfy the four independent max/min conditions, so every such n works",
+      "statement": "ranges x\\in{3..8}, y\\in{1..4}, z=3, w\\in{0,1} all satisfy the original conditions",
+      "dependencies": [
+        "ts_6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_20",
+      "natural_language": "Thus there are 6·4·1·2=48 such positive integers n",
+      "statement": "total admissible n equals 48 after verification",
+      "dependencies": [
+        "l3",
+        "ts_6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_21",
+      "natural_language": "Therefore exactly 48 positive integers n satisfy the given conditions.",
+      "statement": "exactly 48 admissible n",
+      "dependencies": [
+        "ts_7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_5",
+      "natural_language": "No primes other than 2, 3, 5 and 7 may divide n, for any such prime would appear to a positive power on the left-hand side of the given LCM–GCD identity but to power 0 on the right-hand side",
+      "statement": "prime factors of n lie in {2,3,5,7}",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_22",
+      "natural_language": "The four independent exponent ranges therefore enumerate all solutions, confirming that the number of admissible n is exactly 48.",
+      "statement": "ranges enumerate all solutions and total is exactly 48",
+      "dependencies": [
+        "ts_6",
+        "l3",
+        "ts_8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

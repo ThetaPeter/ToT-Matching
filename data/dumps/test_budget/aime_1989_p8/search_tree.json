@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1989_p8",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]",
+      "last_claim": "[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim": "Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nThe next first difference is therefore 211, and s_4=s_3+211=334.",
+      "last_claim": "The next first difference is therefore 211, and s_4=s_3+211=334.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\nContinue from:\n[\"Let \\(a(n)=\\sum_{k=1}^7(n+k-1)^2 x_k\\). Then \\(a(1)=1\\), \\(a(2)=12\\), \\(a(3)=123\\) and the desired quantity is \\(a(4)\\).\", \"The map \\(n\\mapsto a(n)\\) is a quadratic polynomial \\(An^2+Bn+C\\).\"]",
+      "last_claim": "[\"Let \\(a(n)=\\sum_{k=1}^7(n+k-1)^2 x_k\\). Then \\(a(1)=1\\), \\(a(2)=12\\), \\(a(3)=123\\) and the desired quantity is \\(a(4)\\).\", \"The map \\(n\\mapsto a(n)\\) is a quadratic polynomial \\(An^2+Bn+C\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\n[\"The identity 9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1 holds, confirming the target equals 334.\", \"Equivalently the target equals s_4; the constant second difference of 100 produces the next first difference 211, whence s_4=123+211=334.\"]",
+      "last_claim": "[\"The identity 9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1 holds, confirming the target equals 334.\", \"Equivalently the target equals s_4; the constant second difference of 100 produces the next first difference 211, whence s_4=123+211=334.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\nContinue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim": "Continue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nThe next first difference is therefore 211, and s_4=s_3+211=334.\n[\"Hence \\(16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7=s_4=334\\).\", \"Equivalently, the relations \\(A+2B=11\\) and \\(A+B=61/2\\) yield \\(A=50\\), \\(B=-39/2\\), so that \\(9A+6B+C=334\\).\"]",
+      "last_claim": "[\"Hence \\(16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7=s_4=334\\).\", \"Equivalently, the relations \\(A+2B=11\\) and \\(A+B=61/2\\) yield \\(A=50\\), \\(B=-39/2\\), so that \\(9A+6B+C=334\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nThe next first difference is therefore 211, and s_4=s_3+211=334.\nContinue from: The next first difference is therefore 211, and s_4=s_3+211=334.",
+      "last_claim": "Continue from: The next first difference is therefore 211, and s_4=s_3+211=334.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\n[\"The identity 9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1 holds, confirming the target equals 334.\", \"Equivalently the target equals s_4; the constant second difference of 100 produces the next first difference 211, whence s_4=123+211=334.\"]\nBoth methods therefore independently establish that the target expression equals 334.",
+      "last_claim": "Both methods therefore independently establish that the target expression equals 334.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\n[\"The identity 9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1 holds, confirming the target equals 334.\", \"Equivalently the target equals s_4; the constant second difference of 100 produces the next first difference 211, whence s_4=123+211=334.\"]\nThe same constant second difference of 100 likewise determines all further s_n (e.g. s_5=645) even though the original 7-variable system remains underdetermined.",
+      "last_claim": "The same constant second difference of 100 likewise determines all further s_n (e.g. s_5=645) even though the original 7-variable system remains underdetermined.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\nContinue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\n[\"Substituting the obtained values yields \\(9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1=334\\).\", \"The same value is recovered from the finite-difference approach, since the constant second difference 100 produces the next first difference \\(111+100=211\\) and therefore the next term \\(123+211=334\\).\"]",
+      "last_claim": "[\"Substituting the obtained values yields \\(9A+6B+C=9\\cdot50+6\\cdot(-19.5)+1=450-117+1=334\\).\", \"The same value is recovered from the finite-difference approach, since the constant second difference 100 produces the next first difference \\(111+100=211\\) and therefore the next term \\(123+211=334\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Assume that $x_1,x_2,\\ldots,x_7$ are real numbers such that\n$\\begin{align*}\nx_1 + 4x_2 + 9x_3 + 16x_4 + 25x_5 + 36x_6 + 49x_7 &= 1, \\\\\n4x_1 + 9x_2 + 16x_3 + 25x_4 + 36x_5 + 49x_6 + 64x_7 &= 12, \\\\\n9x_1 + 16x_2 + 25x_3 + 36x_4 + 49x_5 + 64x_6 + 81x_7 &= 123.\n\\end{align*}$\nFind the value of $16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7$. Show that it is 334.\n[\"Let \\(A=\\sum_{k=1}^7 x_k\\), \\(B=\\sum_{k=1}^7 kx_k\\) and \\(C=\\sum_{k=1}^7 k^2x_k\\). The given equations are then \\(C=1\\), \\(A+2B+C=12\\) and \\(4A+4B+C=123\\).\", \"Define \\(s_n=\\sum_{k=1}^7(k+n-1)^2x_k\\). Then \\(s_n\\) is a quadratic polynomial in \\(n\\), so its second differences are constant; the given data yield first differences 11 and 111, hence constant second difference 100.\"]\nSolving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\nContinue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.\nContinue from: Continue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim": "Continue from: Continue from: Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

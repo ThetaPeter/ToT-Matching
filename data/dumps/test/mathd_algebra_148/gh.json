@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_148",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Given $f(x)=cx^3-9x+3$ and $f(2)=9$, find the value of $c$. Show that it is 3.",
+      "statement": "Given $f(x)=cx^3-9x+3$ and $f(2)=9$, find the value of $c$. Show that it is 3.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.38575837490522985,
+      "support": null
+    },
+    {
+      "id": "l6267",
+      "natural_language": "Advance the argument (step 9745): continue from Given $f(x)=cx^3-9x+3$ and $f(2)=9$, find the value of $c$. Show that it is 3.",
+      "statement": "Advance the argument (step 9745): continue from Given $f(x)=cx^3-9x+3$ and $f(2)=9$, find the value of $c$. Show that it is 3.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8500000000000001,
+      "support": null
+    }
+  ]
+}

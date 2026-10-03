@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2003_p25",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.",
+      "statement": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.35166958581108637,
+      "support": null
+    },
+    {
+      "id": "l2271",
+      "natural_language": "Advance the argument (step 3529): continue from Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$",
+      "statement": "Advance the argument (step 3529): continue from Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.3575277429186745,
+      "support": null
+    }
+  ]
+}

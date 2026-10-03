@@ -1,0 +1,113 @@
+{
+  "problem_id": "aime_1996_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c be roots of x^3 + 3x^2 + 4x - 11 = 0",
+      "statement": "roots(a,b,c,x^3+3x^2+4x-11=0)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "By Vieta's formulas: a+b+c=-3, ab+bc+ca=4, abc=11",
+      "statement": "Vieta(a+b+c=-3,ab+bc+ca=4,abc=11)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Identity: (a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc",
+      "statement": "(a+b)(b+c)(c+a)=(a+b+c)(ab+bc+ca)-abc",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "By Vieta on the second cubic the product of its roots equals -t",
+      "statement": "product((a+b),(b+c),(c+a))=-t",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The proof is complete: t equals 23 (with r=6,s=-1).",
+      "statement": "t=23,r=6,s=-1 (proof complete)",
+      "dependencies": [
+        "l5",
+        "l7",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Therefore (a+b)(b+c)(c+a)=(-3)(4)-11=-23",
+      "statement": "(a+b)(b+c)(c+a)=-23",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "By Vieta on the second cubic, the product of its roots equals -t, so t=23",
+      "statement": "product((a+b),(b+c),(c+a))=-t => t=23",
+      "dependencies": [
+        "l3",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Hence t=23 as required.",
+      "statement": "t=23 (conclusion)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The same Vieta relations also yield r=6 and s=-1, confirming consistency of the transformed cubic",
+      "statement": "r=6,s=-1 (consistency)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

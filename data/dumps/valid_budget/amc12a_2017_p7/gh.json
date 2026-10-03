@@ -1,0 +1,87 @@
+{
+  "problem_id": "amc12a_2017_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "f satisfies f(1)=2, f(n)=f(n-1)+1 for even n, and f(n)=f(n-2)+2 for odd n>1",
+      "statement": "forall n, the recursive clauses hold",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.11952286093343936,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "instantiate the closed form at n=2017 to obtain f(2017)=2018",
+      "statement": "f(2017)=2018",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2860387767736777,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "The claimed closed form holds for the base cases n=1 and n=2.",
+      "statement": "f(1)=2 and f(2)=3",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "The closed form therefore holds for every positive integer n.",
+      "statement": "forall n in positive integers, f(n)=n+1",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6324555320336759,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "If n is even and the closed form holds at n-1, then it holds at n.",
+      "statement": "forall even n, (f(n-1)=(n-1)+1) => f(n)=n+1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b11",
+      "salience": 0.3354101966249685,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "If n is even then f(n)=f(n-1)+1=(n-1)+1+1=n+1",
+      "statement": "forall even n, (f(k)=k+1 for all k<n) => f(n)=n+1",
+      "dependencies": [
+        "tc_1",
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.3086066999241839,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "If n is odd and n>1 then f(n)=f(n-2)+2=(n-2)+1+2=n+1",
+      "statement": "forall odd n>1, (f(k)=k+1 for all k<n) => f(n)=n+1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.0,
+      "support": null
+    }
+  ]
+}

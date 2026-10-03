@@ -1,0 +1,333 @@
+{
+  "problem_id": "aimeII_2001_p3",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define the sequence by x1=211, x2=375, x3=420, x4=523 and xn=xn-1-xn-2+xn-3-xn-4 for n>=5.",
+      "statement": "sequence defined by given initials and linear recurrence of order 4",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The linear recurrence implies that the generating sequence of consecutive 4-tuples is completely determined by the initial 4-tuple, so it suffices to compute the first several terms until the initial 4-tuple reappears.",
+      "statement": "future evolution and periodicity determined by 4-tuple state repetition",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Direct computation of the first 12 terms yields x11=x1 and x12=x2, and by the recurrence the sequence is therefore periodic with period 10.",
+      "statement": "sequence is periodic with period 10",
+      "dependencies": [
+        "tc_1",
+        "l0"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "For any positive integer k, x_{10k+r}=x_r when 1<=r<=10.",
+      "statement": "explicit reduction of index modulo 10",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "531≡1 mod 10 so x531=x1=211; 753≡3 mod 10 so x753=x3=420; 975≡5 mod 10 so x975=x5=267; their sum is 211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l2",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Direct computation yields x_5=267, x_6=-211, x_7=-375, x_8=-420, x_9=-523, x_10=-267 and x_11=211=x_1, hence the sequence is purely periodic of period 10.",
+      "statement": "sequence is purely periodic with period 10",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Reducing the given indices therefore yields 531≡1, 753≡3 and 975≡5 mod 10, so x_531 + x_753 + x_975 = x_1 + x_3 + x_5 =211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Since the sequence is purely periodic of period 10, we have x_n = x_{n mod 10} (with the representative in {1,...,10}) for every n >=1.",
+      "statement": "reduction of index via pure period 10",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Computing successive terms of the recurrence produces the 4-tuple (x_{11},x_{12},x_{13},x_{14})=(211,375,420,523), which coincides with the initial 4-tuple, so the sequence of 4-tuples (and hence the sequence itself) is periodic of period 10.",
+      "statement": "4-tuple (x11..x14) matches initial 4-tuple hence period 10",
+      "dependencies": [
+        "tc_1",
+        "l0"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Consequently every term depends only on its index modulo 10, and the required sum may be evaluated by reducing the three indices 531, 753 and 975 modulo 10.",
+      "statement": "terms depend only on index mod 10; sum obtained by reducing indices mod 10",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The residues of the three indices modulo 10 are uniquely determined by the last digits of those indices, confirming 531≡1, 753≡3 and 975≡5.",
+      "statement": "last digits determine residues mod 10 confirming given congruences",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Adding the three corresponding terms of the fundamental period therefore yields exactly 211+420+267=898.",
+      "statement": "sum of reduced terms equals 898",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "x531+x753+x975=898",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Since the sequence is purely periodic of period 10, we have x_n = x_{n mod 10} (with the representative in {1,...,10}) for every n >=1.",
+      "statement": "reduction of index via pure period 10",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Reducing the given indices therefore yields 531≡1, 753≡3 and 975≡5 mod 10, so x_531 + x_753 + x_975 = x_1 + x_3 + x_5 =211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Since the sequence is purely periodic of period 10, we have x_n = x_{n mod 10} (with the convention that remainder 0 corresponds to x_10).",
+      "statement": "reduction of index via pure period 10 with explicit remainder-0 convention",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Thus 531≡1 mod 10, 753≡3 mod 10 and 975≡5 mod 10, so x_531 + x_753 + x_975 = x_1 + x_3 + x_5 = 211 + 420 + 267 = 898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Since the sequence is purely periodic of period 10, we have x_n = x_{n mod 10} (with the representative in {1,...,10}) for every n >=1.",
+      "statement": "reduction of index via pure period 10",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Reducing the given indices therefore yields 531≡1, 753≡3 and 975≡5 mod 10, so x_531 + x_753 + x_975 = x_1 + x_3 + x_5 =211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Thus x_{531}+x_{753}+x_{975}=898.",
+      "statement": "sum equals 898 by modular reduction",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "This establishes the required identity.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Since the sequence is purely periodic of period 10, we have x_n = x_{n mod 10} (with the representative in {1,...,10}) for every n >=1.",
+      "statement": "reduction of index via pure period 10",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Reducing the given indices therefore yields 531≡1, 753≡3 and 975≡5 mod 10, so x_531 + x_753 + x_975 = x_1 + x_3 + x_5 =211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The linear recurrence is of order 4, so uniqueness of the solution of the IVP implies that it suffices to check x_{11}=x_1 together with the three subsequent terms matching the initial data in order to conclude that the period is exactly 10.",
+      "statement": "periodicity of period 10 justified by uniqueness of IVP",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "x531+x753+x975=898",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l14",
+        "l4"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Because the characteristic polynomial of the recurrence divides t^{10}-1, every term of the sequence is completely determined by its residue class modulo 10.",
+      "statement": "char poly divides t^10-1 implies terms depend only on index mod 10",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Consequently x_{531}+x_{753}+x_{975}=x_1+x_3+x_5=211+420+267=898.",
+      "statement": "x531+x753+x975=898",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

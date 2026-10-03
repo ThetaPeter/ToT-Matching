@@ -1,0 +1,449 @@
+{
+  "problem_id": "amc12a_2009_p25",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "The given recurrence is the tangent-addition formula, so a_n=tan θ_n whenever θ_{n+2}=θ_n+θ_{n+1} (provided the relevant tangents are defined).",
+      "statement": "a_n=tan(θ_n) ∧ (θ_{n+2}=θ_n+θ_{n+1})",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The initial data force θ_1=π/4 and θ_2=π/6, and therefore θ_n=F_{n-2}·(π/4)+F_{n-3}·(π/6) where F_k is the Fibonacci sequence (with F_{-1}=1, F_0=0).",
+      "statement": "θ_1=π/4 ∧ θ_2=π/6 ∧ θ_n=F_{n-2}·(π/4)+F_{n-3}·(π/6)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "F_{2007} ≡ 0 (mod 12) and F_{2008} ≡ 0 (mod 12) hold by the Pisano period π(12)=24",
+      "statement": "F_{2007} ≡ 0 (mod 12) ∧ F_{2008} ≡ 0 (mod 12)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "F_{2007} ≡ 0 (mod 12) and F_{2008} ≡ 0 (mod 12) imply θ_2009 ≡ 0 (mod π)",
+      "statement": "θ_2009 = kπ for integer k",
+      "dependencies": [
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore θ_2009 = kπ so a_2009=tan(kπ)=0 hence |a_2009|=0",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l3",
+        "l6",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Hence a_2009=tan(F_2007 π/4 + F_2006 π/6).",
+      "statement": "a_2009=tan(F_2007 π/4 + F_2006 π/6)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The value is zero precisely when 3F_2007 + 2F_2006 is a multiple of 12.",
+      "statement": "tan(F_2007 π/4 + F_2006 π/6)=0 ⇔ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Thus θ_2009 = F_2007·(π/4) + F_2006·(π/6).",
+      "statement": "θ_2009 = F_2007·(π/4) + F_2006·(π/6)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "tan(θ_2009)=0 ⇔ 3F_2007 + 2F_2006 ≡ 0 (mod 12).",
+      "statement": "tan(θ_2009)=0 ⇔ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "F_2007 ≡ F_2006 ≡ 0 (mod 12) by the Pisano period π(12)=24, hence 3F_2007 + 2F_2006 ≡ 0 (mod 12).",
+      "statement": "F_2007 ≡ 0 (mod 12) ∧ F_2006 ≡ 0 (mod 12) ⇒ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Therefore θ_2009 ≡ 0 (mod π) so a_2009 = tan(kπ) = 0 hence |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The given recurrence is identical to the tangent-addition formula, so there exist angles θ_n satisfying a_n=tan θ_n together with the linear relation θ_{n+2}=θ_n+θ_{n+1} (modulo the period and poles of tan).",
+      "statement": "a_n=tan(θ_n) ∧ (θ_{n+2}=θ_n+θ_{n+1} mod period/poles)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "The initial data determine θ_1=π/4 and θ_2=π/6, whence the first few angles are θ_3=5π/12, θ_4=7π/12 and θ_5=π, which already yields a_5=tan π=0.",
+      "statement": "θ_1=π/4 ∧ θ_2=π/6 ∧ θ_5=π ∧ a_5=0",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Hence |a_2009|=0 by the same Fibonacci-linear combination and Pisano periodicity that forces θ_n ≡ 0 (mod π) for the required index.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l13",
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Correct linear combination from initial angles and recurrence gives θ_n = F_{n-2}·(π/4) + F_{n-1}·(π/6).",
+      "statement": "θ_n = F_{n-2}·(π/4) + F_{n-1}·(π/6)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Thus θ_2009 = F_2007·(π/4) + F_2008·(π/6).",
+      "statement": "θ_2009 = F_2007·(π/4) + F_2008·(π/6)",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "tan(θ_2009)=0 ⇔ 3 F_2007 + 2 F_2008 ≡ 0 (mod 12).",
+      "statement": "tan(θ_2009)=0 ⇔ 12 | (3 F_2007 + 2 F_2008)",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "F_2007 ≡ 10 (mod 12) and F_2008 ≡ 3 (mod 12) by Pisano period π(12)=24, hence 3·10 + 2·3 ≡ 0 (mod 12).",
+      "statement": "F_2007 ≡ 10 (mod 12) ∧ F_2008 ≡ 3 (mod 12) ⇒ 12 | (3 F_2007 + 2 F_2008)",
+      "dependencies": [
+        "l16"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Therefore θ_2009 ≡ 0 (mod π) so a_2009 = tan(kπ) = 0 hence |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "The sequence F_n mod 12 is periodic of period 24 (the Pisano period π(12)).",
+      "statement": "F_n mod 12 has period 24",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Hence F_2006 ≡ F_14 (mod 12) and F_2007 ≡ F_15 (mod 12), so it remains only to evaluate 3F_15 + 2F_14 modulo 12.",
+      "statement": "F_2006 ≡ F_14 (mod 12) ∧ F_2007 ≡ F_15 (mod 12) ⇒ evaluate 3F_15 + 2F_14 (mod 12)",
+      "dependencies": [
+        "l18",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Therefore θ_2009 ≡ 0 (mod π) so a_2009 = tan(kπ) = 0 hence |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l19",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "F_2007 ≡ 0 (mod 12) and F_2006 ≡ 0 (mod 12) hold by the Pisano period π(12)=24",
+      "statement": "F_2007 ≡ 0 (mod 12) ∧ F_2006 ≡ 0 (mod 12)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "F_2007 ≡ 0 and F_2006 ≡ 0 (mod 12) imply 3F_2007 + 2F_2006 ≡ 0 (mod 12)",
+      "statement": "F_2007 ≡ 0 (mod 12) ∧ F_2006 ≡ 0 (mod 12) ⇒ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Therefore a_2009 = tan(kπ) = 0 hence |a_2009|=0",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l8",
+        "l21"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "The angles therefore admit the closed form θ_n=F_{n-2}(π/4)+F_{n-1}(π/6) (Fibonacci numbers normalized by F_0=0, F_1=1, F_{-1}=1).",
+      "statement": "θ_n = F_{n-2}·(π/4) + F_{n-1}·(π/6)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Hence θ_n is an integer multiple of π if and only if 3F_{n-2}+2F_{n-1} is divisible by 12, which holds for n=2009, so a_{2009}=0.",
+      "statement": "θ_2009 ≡ 0 (mod π) ⇒ a_2009=0",
+      "dependencies": [
+        "l22",
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Therefore |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Because θ_5 ≡ 0 (mod π) the Fibonacci-linear combination forces θ_n ≡ 0 (mod π) precisely when n ≡ 0 (mod 5) in the angle sequence, but the Pisano period π(12)=24 together with the explicit coefficients shows the stronger congruence θ_2009 ≡ 0 (mod π).",
+      "statement": "θ_5 ≡ 0 (mod π) ∧ (Pisano + Fibonacci coeffs) ⇒ θ_2009 ≡ 0 (mod π)",
+      "dependencies": [
+        "l13",
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Therefore θ_2009 ≡ 0 (mod π) so a_2009 = tan(kπ) = 0 hence |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l24"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "The sequence of Fibonacci numbers modulo 12 is periodic of period 24, so it suffices to reduce the indices 2007 and 2008 modulo 24.",
+      "statement": "F_n mod 12 has period 24 ⇒ reduce 2007,2008 mod 24",
+      "dependencies": [
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l26",
+      "natural_language": "Direct evaluation then yields 3F_{15}+2F_{16}≡0 (mod 12), hence θ_{2009} is an integer multiple of π and a_{2009}=0.",
+      "statement": "3F_{15}+2F_{16}≡0 (mod 12) ⇒ θ_{2009}≡0 (mod π) ⇒ a_{2009}=0",
+      "dependencies": [
+        "l25"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Therefore |a_{2009}|=0.",
+      "statement": "|a_{2009}|=0",
+      "dependencies": [
+        "l26"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l27",
+      "natural_language": "The sequence of angles therefore obeys the closed form θ_n=F_{n-2}(π/4)+F_{n-1}(π/6) (F_1=F_2=1), so a_n=0 precisely when this quantity is an integer multiple of π (and is not a pole of tan).",
+      "statement": "θ_n = F_{n-2}·(π/4) + F_{n-1}·(π/6) ∧ (a_n=0 ⇔ θ_n ≡ 0 (mod π))",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l28",
+      "natural_language": "Direct computation of the first few terms after a_5 shows a_6=a_4, a_7=a_6 and thereafter the sequence of a_n is periodic of period 6, hence a_{2009}=a_5=0.",
+      "statement": "a_n periodic with period 6 ∧ a_5=0 ⇒ a_{2009}=0",
+      "dependencies": [
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Therefore |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l27",
+        "l28"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Therefore |a_2009|=0.",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l28"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12a_2021_p9",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Which of the following is equivalent to\n$(2+3)(2^2+3^2)(2^4+3^4)(2^8+3^8)(2^{16}+3^{16})(2^{32}+3^{32})(2^{64}+3^{64})?$\n$\\textbf{(A)} ~3^{127} + 2^{127} \\qquad\\textbf{(B)} ~3^{127} + 2^{127} + 2 \\cdot 3^{63} + 3 \\cdot 2^{63} \\qquad\\textbf{(C)} ~3^{128}-2^{128} \\qquad\\textbf{(D)} ~3^{128} + 2^{128} \\qquad\\textbf{(E)} Show that it is \\textbf{(C)} ~3^{128}-2^{128}.",
+      "statement": "Which of the following is equivalent to\n$(2+3)(2^2+3^2)(2^4+3^4)(2^8+3^8)(2^{16}+3^{16})(2^{32}+3^{32})(2^{64}+3^{64})?$\n$\\textbf{(A)} ~3^{127} + 2^{127} \\qquad\\textbf{(B)} ~3^{127} + 2^{127} + 2 \\cdot 3^{63} + 3 \\cdot 2^{63} \\qquad\\textbf{(C)} ~3^{128}-2^{128} \\qquad\\textbf{(D)} ~3^{128} + 2^{128} \\qquad\\textbf{(E)} Show that it is \\textbf{(C)} ~3^{128}-2^{128}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6299407883487121,
+      "support": null
+    },
+    {
+      "id": "l3355",
+      "natural_language": "Advance the argument (step 5215): continue from Advance the argument (step 5210): continue from Which of the following is equiva",
+      "statement": "Advance the argument (step 5215): continue from Advance the argument (step 5210): continue from Which of the following is equiva",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b7",
+      "salience": 0.4155813868856493,
+      "support": null
+    }
+  ]
+}

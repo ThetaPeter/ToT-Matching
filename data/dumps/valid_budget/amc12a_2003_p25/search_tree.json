@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2003_p25",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim": "[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\n[\"If \\(a>0\\), the roots of \\(ax^2+bx\\) are \\(0\\) and \\(-b/a<0\\), so \\(ax^2+bx\\ge0\\) for \\(x\\le-b/a\\) or \\(x\\ge0\\), and thus \\(D\\not\\subseteq[0,\\infty)\\).\",\"If \\(a=0\\), then \\(D=[0,\\infty)\\) and the range of \\(\\sqrt{bx}\\) is likewise \\([0,\\infty)\\), so the two sets coincide.\"]",
+      "last_claim": "[\"If \\(a>0\\), the roots of \\(ax^2+bx\\) are \\(0\\) and \\(-b/a<0\\), so \\(ax^2+bx\\ge0\\) for \\(x\\le-b/a\\) or \\(x\\ge0\\), and thus \\(D\\not\\subseteq[0,\\infty)\\).\",\"If \\(a=0\\), then \\(D=[0,\\infty)\\) and the range of \\(\\sqrt{bx}\\) is likewise \\([0,\\infty)\\), so the two sets coincide.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim": "Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\n[\"The range of \\(f\\) is contained in \\([0,\\\\infty)\\), so the common set \\(D\\) satisfies \\(D\\subseteq[0,\\\\infty)\\).\",\"Consequently the inequality \\(ax^2+bx\\\\ge0\\) holds if and only if \\(x\\\\in D\\).\"]",
+      "last_claim": "[\"The range of \\(f\\) is contained in \\([0,\\\\infty)\\), so the common set \\(D\\) satisfies \\(D\\subseteq[0,\\\\infty)\\).\",\"Consequently the inequality \\(ax^2+bx\\\\ge0\\) holds if and only if \\(x\\\\in D\\).\"]",
+      "last_claim_id": "tc_5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.65,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.75,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\n[\"If a>0 then the quadratic ax^{2}+bx opens upwards and is nonnegative outside the interval with endpoints 0 and -b/a; the presence of the negative root -b/a therefore forces D to contain an interval of negative numbers, contradicting D\\subseteq[0,\\infty).\",\"If a=0 then D={x:bx\\ge0}=[0,\\infty) (since b>0), so it remains only to check whether the range of f(x)=\\sqrt(bx) equals [0,\\infty).\"]",
+      "last_claim": "[\"If a>0 then the quadratic ax^{2}+bx opens upwards and is nonnegative outside the interval with endpoints 0 and -b/a; the presence of the negative root -b/a therefore forces D to contain an interval of negative numbers, contradicting D\\subseteq[0,\\infty).\",\"If a=0 then D={x:bx\\ge0}=[0,\\infty) (since b>0), so it remains only to check whether the range of f(x)=\\sqrt(bx) equals [0,\\infty).\"]",
+      "last_claim_id": "tc_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim": "Continue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\nContinue from: Continue from:\n[\"The range of \\(f\\) is always contained in \\([0,\\infty)\\), so any \\(a\\) for which domain equals range must have domain contained in \\([0,\\infty)\\).\",\"If \\(a>0\\) then \\(ax^2+bx\\ge0\\) on an unbounded set that includes an interval of negative reals, so the domain cannot equal the range.\"]",
+      "last_claim": "[\"The range of \\(f\\) is always contained in \\([0,\\infty)\\), so any \\(a\\) for which domain equals range must have domain contained in \\([0,\\infty)\\).\",\"If \\(a>0\\) then \\(ax^2+bx\\ge0\\) on an unbounded set that includes an interval of negative reals, so the domain cannot equal the range.\"]",
+      "last_claim_id": "tc_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.75,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: Continue from: ",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\n[\"Hence \\(ax^2+bx<0\\) for all \\(x<0\\).\",\"In particular the only possible root of \\(ax+b=0\\) that could lie in the non-positive reals is \\(x=0\\).\"]",
+      "last_claim": "[\"Hence \\(ax^2+bx<0\\) for all \\(x<0\\).\",\"In particular the only possible root of \\(ax+b=0\\) that could lie in the non-positive reals is \\(x=0\\).\"]",
+      "last_claim_id": "tc_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]\nContinue from: Continue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim": "Continue from: Continue from: Continue from: [\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"Consequently \\(D=\\{x:ax^2+bx\\ge0\\}\\) and this set must be contained in the non-negative reals.\"]",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.75,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from:\n[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"The inequality \\(x(ax+b)\\ge0\\) together with \\(D\\subseteq[0,\\infty)\\) forces \\(D\\) to be a closed interval of the form \\([0,c]\\) or \\([c,\\infty)\\) (or a singleton) for some \\(c\\ge0\\).\"]",
+      "last_claim": "[\"The range of \\(f\\) is contained in \\([0,\\infty)\\), so if the domain \\(D\\) equals the range then necessarily \\(D\\subseteq[0,\\infty)\\).\",\"The inequality \\(x(ax+b)\\ge0\\) together with \\(D\\subseteq[0,\\infty)\\) forces \\(D\\) to be a closed interval of the form \\([0,c]\\) or \\([c,\\infty)\\) (or a singleton) for some \\(c\\ge0\\).\"]",
+      "last_claim_id": "tc_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.65,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "Let $f(x)= \\sqrt{ax^2+bx} $.  For how many [[real number | real]] values of $a$ is there at least one [[positive number | positive]] value of $ b $ for which the [[domain]] of $f $ and the [[range]] of $ f $ are the same [[set]]?\n\n$ \\mathrm{(A) \\ 0 } \\qquad \\mathrm{(B) \\ 1 } \\qquad \\mathrm{(C) \\ 2 } \\qquad \\mathrm{(D) \\ 3 } \\qquad \\mathrm{(E) \\ \\mathrm{infinitely \\ many} }  $ Show that it is \\mathrm{(B) \\ 2 }.\nContinue from:\nContinue from: Continue from:\nContinue from: Continue from: Continue from:\nContinue from: Continue from: Continue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: Continue from: Continue from: ",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

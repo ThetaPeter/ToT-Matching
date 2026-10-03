@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_2varlineareq_fp3zeq11_3tfm1m5zeqn68_feqn10_zeq7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.",
+      "last_claim": "The second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.",
+      "last_claim": "The first equation rearranges to f=11-3z.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.\n[\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]",
+      "last_claim": "[\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.\nContinue from: The second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.",
+      "last_claim": "Continue from: The second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.7,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\n[\"Substitute \\(f=11-3z\\) into the second equation to obtain \\(3((11-3z)-1)-5z=-68\\).\",\"Expand the second equation independently to \\(3f-3-5z=-68\\), then insert \\(f=11-3z\\).\"]",
+      "last_claim": "[\"Substitute \\(f=11-3z\\) into the second equation to obtain \\(3((11-3z)-1)-5z=-68\\).\",\"Expand the second equation independently to \\(3f-3-5z=-68\\), then insert \\(f=11-3z\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.",
+      "last_claim": "Continue from: The first equation rearranges to f=11-3z.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_6",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nSubstitute f=11-3z into the second equation to obtain 3((11-3z)-1)-5z=-68.",
+      "last_claim": "Substitute f=11-3z into the second equation to obtain 3((11-3z)-1)-5z=-68.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_6",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nRewrite the second equation as 3f-3-5z=-68, hence 3f-5z=-65, then insert f=11-3z.",
+      "last_claim": "Rewrite the second equation as 3f-3-5z=-68, hence 3f-5z=-65, then insert f=11-3z.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.\n[\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]\n[\"Subtracting \\(3f-5z=-65\\) from \\(3f+9z=33\\) yields \\(14z=98\\).\", \"Substituting \\(f=11-3z\\) into \\(3f-5z=-65\\) yields \\(3(11-3z)-5z=-65\\).\"]",
+      "last_claim": "[\"Subtracting \\(3f-5z=-65\\) from \\(3f+9z=33\\) yields \\(14z=98\\).\", \"Substituting \\(f=11-3z\\) into \\(3f-5z=-65\\) yields \\(3(11-3z)-5z=-65\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe second equation expands to 3f-3-5z=-68, hence 3f-5z=-65.\n[\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]\nContinue from: [\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]",
+      "last_claim": "Continue from: [\"Multiplying the first equation by 3 yields \\(3f+9z=33\\).\", \"Solving the first equation for \\(f\\) gives \\(f=11-3z\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nSubstitute f=11-3z into the second equation to obtain 3((11-3z)-1)-5z=-68.\nSimplify the inner parentheses to obtain 3(10-3z)-5z=-68.",
+      "last_claim": "Simplify the inner parentheses to obtain 3(10-3z)-5z=-68.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nSubstitute f=11-3z into the second equation to obtain 3((11-3z)-1)-5z=-68.\nExpand to obtain 33-9z-3-5z=-68.",
+      "last_claim": "Expand to obtain 33-9z-3-5z=-68.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nRewrite the second equation as 3f-3-5z=-68, hence 3f-5z=-65, then insert f=11-3z.\nSubstitute to obtain 3(11-3z)-5z=-65.",
+      "last_claim": "Substitute to obtain 3(11-3z)-5z=-65.",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Given that $f + 3z = 11$ and $3(f - 1) - 5z = -68$, show that $f = -10$ and $z = 7$.\nThe first equation rearranges to f=11-3z.\nContinue from: The first equation rearranges to f=11-3z.\nRewrite the second equation as 3f-3-5z=-68, hence 3f-5z=-65, then insert f=11-3z.\nExpand the substituted equation as 33-9z-5z=-65.",
+      "last_claim": "Expand the substituted equation as 33-9z-5z=-65.",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

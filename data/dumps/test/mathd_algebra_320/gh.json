@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_320",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in simplified form as $\\dfrac{a + \\sqrt{b}}{c}$ such that $a,$ $b,$ and $c$ are positive integers, what is $a + b + c$? Show that it is 26.",
+      "statement": "Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in simplified form as $\\dfrac{a + \\sqrt{b}}{c}$ such that $a,$ $b,$ and $c$ are positive integers, what is $a + b + c$? Show that it is 26.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.03282660821493064,
+      "support": null
+    },
+    {
+      "id": "l7725",
+      "natural_language": "Advance the argument (step 12013): continue from Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in",
+      "statement": "Advance the argument (step 12013): continue from Let $x$ be a positive number such that $2x^2 = 4x + 9.$ If $x$ can be written in",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6778343894045651,
+      "support": null
+    }
+  ]
+}

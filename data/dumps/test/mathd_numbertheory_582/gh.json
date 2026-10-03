@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_582",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (n + 8)$ is divided by $9$? Show that it is 0.",
+      "statement": "If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (n + 8)$ is divided by $9$? Show that it is 0.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l11991",
+      "natural_language": "Advance the argument (step 18649): continue from If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (",
+      "statement": "Advance the argument (step 18649): continue from If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5370786110720978,
+      "support": null
+    },
+    {
+      "id": "l11992",
+      "natural_language": "Advance the argument (step 18650): continue from If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (",
+      "statement": "Advance the argument (step 18650): continue from If $n$ is a multiple of three, what is the remainder when $(n + 4) + (n + 6) + (",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.7669649888473705,
+      "support": null
+    }
+  ]
+}

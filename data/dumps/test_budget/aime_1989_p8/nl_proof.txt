@@ -1,0 +1,24 @@
+The given equations are
+\[
+x_1+4x_2+9x_3+16x_4+25x_5+36x_6+49x_7=1,
+\]
+\[
+4x_1+9x_2+16x_3+25x_4+36x_5+49x_6+64x_7=12,
+\]
+\[
+9x_1+16x_2+25x_3+36x_4+49x_5+64x_6+81x_7=123.
+\]
+Define \(s_n=\sum(k+n-1)^2x_k\). Then \(s_n\) is quadratic in \(n\), so its second differences are constant. The given data yield first differences \(11\) and \(111\), hence a constant second difference of \(100\).
+
+Let \(A=\sum x_k\), \(B=\sum kx_k\), and \(C=\sum k^2x_k\). The given equations are then \(C=1\), \(A+2B+C=12\), and \(4A+4B+C=123\). Solving \(A+2B=11\) and \(2A+2B=61\) yields \(A=50\) and \(B=-19.5\). Substituting these values produces
+\[
+9A+6B+C=9\cdot50+6\cdot(-19.5)+1=450-117+1=334,
+\]
+so the target value \(9A+6B+C\) equals \(334\).
+
+The same value is recovered from the finite-difference approach: the constant second difference \(100\) produces the next first difference \(111+100=211\) and therefore the next term \(123+211=334\).
+
+Both methods therefore independently establish that the target expression equals \(334\), i.e.,
+\[
+16x_1+25x_2+36x_3+49x_4+64x_5+81x_6+100x_7=334.
+\]

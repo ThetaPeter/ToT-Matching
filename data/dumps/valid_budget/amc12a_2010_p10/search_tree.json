@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2010_p10",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).",
+      "last_claim": "The four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe last two terms immediately yield that the common difference equals 2q.",
+      "last_claim": "The last two terms immediately yield that the common difference equals 2q.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe last two terms immediately yield that the common difference equals 2q.\n[\"The difference between the second and third terms likewise equals 2q, so 3p-q-9=2q.\"]",
+      "last_claim": "[\"The difference between the second and third terms likewise equals 2q, so 3p-q-9=2q.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe last two terms immediately yield that the common difference equals 2q.\n[\"The difference between the first and second terms is 9-p, which must also equal 2q.\"]",
+      "last_claim": "[\"The difference between the first and second terms is 9-p, which must also equal 2q.\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"The third consecutive difference simplifies immediately to 2q, so the common difference of the sequence is d=2q.\"]",
+      "last_claim": "[\"The third consecutive difference simplifies immediately to 2q, so the common difference of the sequence is d=2q.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]",
+      "last_claim": "[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_6",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"Equating the second and third consecutive differences yields (3p-q)-9=2q, which rearranges to 3p-3q=9 or equivalently p-q=3.\"]",
+      "last_claim": "[\"Equating the second and third consecutive differences yields (3p-q)-9=2q, which rearranges to 3p-3q=9 or equivalently p-q=3.\"]",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_6",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"The common difference also equals the third consecutive difference 2q, so 9-p=2q.\"]",
+      "last_claim": "[\"The common difference also equals the third consecutive difference 2q, so 9-p=2q.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe last two terms immediately yield that the common difference equals 2q.\n[\"The difference between the second and third terms likewise equals 2q, so 3p-q-9=2q.\"]\n[\"Thus 3p-9=3q, so q=p-3.\"]",
+      "last_claim": "[\"Thus 3p-9=3q, so q=p-3.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe last two terms immediately yield that the common difference equals 2q.\n[\"The difference between the second and third terms likewise equals 2q, so 3p-q-9=2q.\"]\n[\"The first-to-second difference is likewise 2q, so 9-p=2q.\"]",
+      "last_claim": "[\"The first-to-second difference is likewise 2q, so 9-p=2q.\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"Equating the second and third consecutive differences yields (3p-q)-9=2q, which rearranges to 3p-3q=9 or equivalently p-q=3.\"]\n[\"Substituting q=p-3 into the earlier relation 4p-q=18 produces 3p+3=18, so p=5 and q=2.\"]",
+      "last_claim": "[\"Substituting q=p-3 into the earlier relation 4p-q=18 produces 3p+3=18, so p=5 and q=2.\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"Equating the second and third consecutive differences yields (3p-q)-9=2q, which rearranges to 3p-3q=9 or equivalently p-q=3.\"]\n[\"The common difference is therefore 9-p=4, and the 2010th term is 5+2009\u00b74=8041.\"]",
+      "last_claim": "[\"The common difference is therefore 9-p=4, and the 2010th term is 5+2009\u00b74=8041.\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"The common difference also equals the third consecutive difference 2q, so 9-p=2q.\"]\n[\"Substituting q=(9-p)/2 into the earlier relation 4p-q=18 produces 4p-(9-p)/2=18, which clears to 9p=45 and thus p=5.\"]",
+      "last_claim": "[\"Substituting q=(9-p)/2 into the earlier relation 4p-q=18 produces 4p-(9-p)/2=18, which clears to 9p=45 and thus p=5.\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The first four terms of an arithmetic sequence are $p$, $9$, $3p-q$, and $3p+q$. What is the $2010^\\text{th}$ term of this sequence?\n\n$\\textbf{(A)}\\ 8041 \\qquad \\textbf{(B)}\\ 8043 \\qquad \\textbf{(C)}\\ 8045 \\qquad \\textbf{(D)}\\ 8047 \\qquad \\textbf{(E)}\\ 8049$ Show that it is \\textbf{(A) }8041.\nThe four given terms form an arithmetic progression, so the three consecutive differences are equal: 9-p=(3p-q)-9=(3p+q)-(3p-q).\n[\"Equating the first two consecutive differences yields the linear relation 9-p=(3p-q)-9, which rearranges to 4p-q=18.\"]\n[\"The common difference also equals the third consecutive difference 2q, so 9-p=2q.\"]\n[\"Hence q=2, the first term is 5 and the common difference is 4, so the 2010th term equals 5+2009*4=8041.\"]",
+      "last_claim": "[\"Hence q=2, the first term is 5 and the common difference is 4, so the 2010th term equals 5+2009*4=8041.\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

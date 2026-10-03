@@ -1,0 +1,540 @@
+{
+  "problem_id": "amc12a_2009_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let the side length of the cube be a positive real number s.",
+      "statement": "s > 0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Original volume of the cube is s cubed.",
+      "statement": "V = s^3",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Given that the new volume is 5 less than the original volume.",
+      "statement": "V' = V - 5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Equating the two expressions for V' yields s^3 - s = s^3 - 5, hence s = 5 and V = 125.",
+      "statement": "V = 125",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let the side length of the cube be \\(s>0\\).",
+      "statement": "s > 0",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)=s^3-s\\).",
+      "statement": "V' = s^3 - s",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Set the two expressions for V' equal: s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Subtract s^3 from both sides to obtain -s = -5, hence s = 5.",
+      "statement": "s = 5",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Thus the original volume is V = s^3 = 125, which is option (D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l6",
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Hence \\(s=5\\) and the original volume is \\(s^3=125\\).",
+      "statement": "V = 125",
+      "dependencies": [
+        "l7",
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The new volume is 5 less than the original volume, so V' = V - 5.",
+      "statement": "V' = V - 5",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Equate the two expressions: s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Subtract s^3 from both sides: -s = -5, so s = 5.",
+      "statement": "s = 5",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Original volume V = s^3 = 125 (option D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l10",
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "Let the side length of the original cube be \\(s>1\\).",
+      "statement": "s > 1",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "The new solid then has dimensions \\(s+1\\), \\(s-1\\) and \\(s\\), so its volume is \\(s(s^2-1)\\).",
+      "statement": "V' = s(s^2 - 1)",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Equate the two expressions for V': s(s^2-1) = s^3 - 5.",
+      "statement": "s(s^2 - 1) = s^3 - 5",
+      "dependencies": [
+        "l11",
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Simplify to obtain -s = -5, hence s = 5.",
+      "statement": "s = 5",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Thus the original volume is V = s^3 = 125 (option D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l13",
+        "l1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Equate the two volume expressions: s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Subtract s^3 from both sides to obtain -s = -5, hence s = 5.",
+      "statement": "s = 5",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Thus the original volume is V = s^3 = 125 (option D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l15",
+        "l1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Since \\(s=5>1\\), the new dimensions \\(s+1\\), \\(s-1\\) and \\(s\\) are all positive.",
+      "statement": "s+1>0, s-1>0, s>0",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The original volume is therefore \\(125\\), which is choice (D).",
+      "statement": "V=125 (option D)",
+      "dependencies": [
+        "l16",
+        "l6",
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The new volume is 5 less than the original, so \\(s^3-s=s^3-5\\).",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Hence \\(s=5\\) and the original volume is \\(s^3=125\\).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l17",
+        "l1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "The new volume is 5 less than the cube's volume s^3, so s^3-s=s^3-5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Equating and simplifying therefore yields s=5, hence the original volume is 125.",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l18",
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "The new volume is 5 less than the original volume, so V' = s^3 - 5.",
+      "statement": "V' = s^3 - 5",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Equating the expressions for V': s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l19"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Simplifying gives s = 5.",
+      "statement": "s = 5",
+      "dependencies": [
+        "l20"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Thus the original volume is s^3 = 125 (option D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l21",
+        "l1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "Since the new solid must have positive side lengths we require s>1.",
+      "statement": "s > 1",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "so s=5 is admissible.",
+      "statement": "s=5>1 admissible",
+      "dependencies": [
+        "tc_4",
+        "l6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "The original volume is therefore 125, corresponding to choice (D).",
+      "statement": "V=125 (option D)",
+      "dependencies": [
+        "l22",
+        "l1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "The new volume is 5 less than the original, so s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Hence s = 5 and the original volume is s^3 = 125 (option D).",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l23",
+        "l1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Since \\(s=5>1\\), the new dimensions \\(6\\), \\(4\\) and \\(5\\) are all positive, so they form a valid rectangular solid.",
+      "statement": "dimensions 6,4,5 >0 valid",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "Direct substitution confirms the volumes: the cube has volume \\(125\\) while the new solid has volume \\(6\\cdot4\\cdot5=120\\), which is indeed \\(5\\) less.",
+      "statement": "V=125, V'=120=V-5",
+      "dependencies": [
+        "l24",
+        "l1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Verification confirms original volume is 125 (option D).",
+      "statement": "V=125 (option D)",
+      "dependencies": [
+        "l25",
+        "l1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l26",
+      "natural_language": "The new volume is 5 less than the cube's volume s^3, so s^3 - s = s^3 - 5.",
+      "statement": "s^3 - s = s^3 - 5",
+      "dependencies": [
+        "l4",
+        "l3"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "Equating and simplifying therefore yields s=5, hence the original volume is 125.",
+      "statement": "V = 125 (option D)",
+      "dependencies": [
+        "l26",
+        "l1"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

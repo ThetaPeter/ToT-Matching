@@ -1,0 +1,39 @@
+{
+  "problem_id": "aime_1983_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $x$, $y$ and $z$ all exceed $1$ and let $w$ be a positive number such that $\\log_x w = 24$, $\\log_y w = 40$ and $\\log_{xyz} w = 12$. Find $\\log_z w$. Show that it is 060.",
+      "statement": "Let $x$, $y$ and $z$ all exceed $1$ and let $w$ be a positive number such that $\\log_x w = 24$, $\\log_y w = 40$ and $\\log_{xyz} w = 12$. Find $\\log_z w$. Show that it is 060.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2733040833050606,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Advance the argument (step 1): continue from Let $x$, $y$ and $z$ all exceed $1$ and let $w$ be a positive number such that $",
+      "statement": "Advance the argument (step 1): continue from Let $x$, $y$ and $z$ all exceed $1$ and let $w$ be a positive number such that $",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6400757530925303,
+      "support": null
+    }
+  ]
+}

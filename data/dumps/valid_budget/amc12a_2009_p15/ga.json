@@ -1,0 +1,525 @@
+{
+  "problem_id": "amc12a_2009_p15",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Restate the target claim: the equation sum_{k=1}^n k i^k = 48 + 49i holds precisely when n = 97.",
+      "statement": "sum_{k=1}^n k i^k = 48 + 49i ⇔ n = 97",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The closed-form formula for the arithmetico-geometric series S = sum_{k=1}^n k r^k is S = r(1 - (n+1)r^n + n r^{n+1}) / (1-r)^2 for r \neq 1.",
+      "statement": "sum k r^k = r(1-(n+1)r^n + n r^{n+1}) / (1-r)^2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Substitute r = i into the closed form and simplify using i^4 = 1 and (1-i)^2 = -2i to obtain an explicit expression depending on n mod 4.",
+      "statement": "S(n,i) = i(1-(n+1)i^n + n i^{n+1}) / (1-i)^2",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "For n ≡ 1 (mod 4) the powers of i evaluate to i^n = i and i^{n+1} = -1, yielding the real and imaginary parts Re(S) = (n+1)/2 and Im(S) = -(n-1)/2.",
+      "statement": "n=4m+1 \\Rightarrow Re(S)=(n+1)/2, Im(S)=-(n-1)/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Set n = 97 = 4·24 + 1. Then Re(S) = 49 and Im(S) = -48, so S = 48 + 49i, confirming the target equation.",
+      "statement": "n=97 ⇒ S=48+49i",
+      "dependencies": [
+        "l3",
+        "l5",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Let S = sum_{k=1}^n k i^k. The closed-form formula sum k r^k = r(1-(n+1)r^n + n r^{n+1}) / (1-r)^2 with r = i yields an explicit expression for S.",
+      "statement": "S = i(1-(n+1)i^n + n i^{n+1}) / (1-i)^2",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Because i^4 = 1, the summands k i^k are periodic of period 4, so it suffices to evaluate the partial sums according to the residue class of n modulo 4.",
+      "statement": "i^4=1 ⇒ periodicity of period 4 for summands; evaluate S by n mod 4",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "For n ≡ 0 (mod 4) the powers evaluate to i^n = 1 and i^{n+1} = i, yielding Re(S) = -n/2 and Im(S) = (n+2)/2.",
+      "statement": "n=4m ⇒ Re(S)=-n/2, Im(S)=(n+2)/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "For n ≡ 2 (mod 4) the powers evaluate to i^n = -1 and i^{n+1} = -i, yielding Re(S) = -(n+2)/2 and Im(S) = n/2.",
+      "statement": "n=4m+2 ⇒ Re(S)=-(n+2)/2, Im(S)=n/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "For n ≡ 3 (mod 4) the powers evaluate to i^n = -i and i^{n+1} = 1, yielding Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+3 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "The target equation holds if and only if n=97, because the (Re,Im) pairs for the other three residue classes modulo 4 never equal (48,49) for any positive integer n.",
+      "statement": "sum = 48+49i ⇔ n=97",
+      "dependencies": [
+        "l3",
+        "l6",
+        "l7",
+        "l8",
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "The closed form sum_{k=1}^n k r^k = r(1-(n+1)r^n + n r^{n+1}) / (1-r)^2 holds for r=i.",
+      "statement": "sum k r^k = r(1-(n+1)r^n + n r^{n+1}) / (1-r)^2 holds at r=i",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Powers of i are periodic of period 4, so the value of the sum depends on n mod 4.",
+      "statement": "i^4=1 ⇒ S depends only on n mod 4",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Set n=97=4*24+1. Then Re(S)=49 and Im(S)=-48, so S=48+49i, confirming the target equation.",
+      "statement": "n=97 ⇒ S=48+49i",
+      "dependencies": [
+        "l10",
+        "l3",
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l3c",
+      "natural_language": "For n ≡ 1 (mod 4) the powers of i evaluate to i^n = i and i^{n+1} = -1; after simplifying the closed form, Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+1 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Set n=97=4*24+1. Then Re(S)=48 and Im(S)=49, so S=48+49i, confirming the target equation holds precisely for this n.",
+      "statement": "n=97 ⇒ S=48+49i",
+      "dependencies": [
+        "l3c",
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Substituting r=i into the arithmetico-geometric formula produces the explicit value S=i(1-(n+1)i^n + n i^{n+1}) / (1-i)^2, which simplifies after multiplying numerator and denominator by the conjugate of the denominator.",
+      "statement": "S = i(1-(n+1)i^n + n i^{n+1}) / (1-i)^2 after conjugate simplification",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Grouping the summands in complete residue classes modulo 4 yields four arithmetic series whose closed forms can be evaluated separately according to n mod 4, after which the unique multiple-choice candidate that matches 48+49i is identified.",
+      "statement": "S evaluated by four mod-4 arithmetic series; unique match is n=97",
+      "dependencies": [
+        "l11",
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "The equation holds precisely for n=97 among the given choices, confirming answer D.",
+      "statement": "sum = 48+49i ⇔ n=97 (multiple choice)",
+      "dependencies": [
+        "l12",
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "For n ≡ 1 (mod 4) the closed form simplifies (after multiplying by the conjugate of the denominator) to Re(S) = (n+1)/2 and Im(S) = -(n-1)/2.",
+      "statement": "n=4m+1 \\Rightarrow Re(S)=(n+1)/2, Im(S)=-(n-1)/2",
+      "dependencies": [
+        "l4",
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Set n=97=4·24+1. Then Re(S)=49 and Im(S)=-48, hence S=48+49i, confirming the target equation holds precisely for this n among the choices.",
+      "statement": "n=97 \\Rightarrow S=48+49i (and no other option works)",
+      "dependencies": [
+        "l13",
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The successive powers of i cycle every four terms as i,-1,-i,1.",
+      "statement": "i^k cycles as i,-1,-i,1 for k mod 4",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Grouping the sum into complete 4-term blocks beginning at indices 4j+1 shows that each such block contributes exactly 2-2i.",
+      "statement": "each 4-term block sums to 2-2i",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "With 24 complete blocks for n=97=4*24+1 the blocks contribute 48-48i; the final term 97i yields total 48+49i, confirming the target equation.",
+      "statement": "n=97 ⇒ S=48+49i (block decomposition)",
+      "dependencies": [
+        "l15",
+        "tc_1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "For n ≡ 1 (mod 4), after substituting into the closed form and simplifying by multiplying numerator and denominator by the conjugate of the denominator, Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+1 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [
+        "l4",
+        "l5"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Set n=97=4*24+1. Then Re(S)=48 and Im(S)=49, hence S=48+49i, confirming the target equation holds precisely for this n among the choices.",
+      "statement": "n=97 ⇒ S=48+49i (and no other option works)",
+      "dependencies": [
+        "l16",
+        "tc_1"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Substituting r=i into the closed form and using (1-i)^2=-2i produces the explicit expression S=1/2((n+1)i^n - n i^{n+1} -1).",
+      "statement": "S = 1/2((n+1)i^n - n i^{n+1} -1)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Grouping the summands in complete periods of length 4 yields a closed arithmetic expression for each residue class n≡r (mod 4), which can then be set equal to 48+49i.",
+      "statement": "S evaluated by mod-4 arithmetic series; equals 48+49i iff n=97",
+      "dependencies": [
+        "l17",
+        "l5"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The equation holds precisely for n=97 (choice D), because the (Re,Im) pairs for the other three residue classes modulo 4 never equal (48,49) for any positive integer n.",
+      "statement": "sum=48+49i ⇔ n=97 (answer D)",
+      "dependencies": [
+        "l18",
+        "l3",
+        "l6",
+        "l7",
+        "l8",
+        "tc_1"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "For n ≡ 1 (mod 4) the closed form simplifies after multiplying by the conjugate of the denominator to Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+1 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [
+        "l4",
+        "l5"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Set n=97=4*24+1. Then Re(S)=48 and Im(S)=49, so S=48+49i, confirming the target equation holds precisely for this n (choice D).",
+      "statement": "n=97 ⇒ S=48+49i (answer D)",
+      "dependencies": [
+        "l19",
+        "tc_1"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Let n=4q+r with 0\\le r<4. Then the sum equals q(2-2i) plus the contribution of the remaining r terms.",
+      "statement": "n=4q+r \\Rightarrow S=q(2-2i)+remainder(r)",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "For n=97=4*24+1, q=24 and r=1, the block sum is 48-48i and the final term 97i yields total 48+49i, confirming the target equation and answer D.",
+      "statement": "n=97 \\Rightarrow S=48+49i (block form)",
+      "dependencies": [
+        "l20",
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "The target 48+49i has positive imaginary part, so r cannot be 0 (which yields a purely non-positive imaginary part).",
+      "statement": "48+49i has Im>0 ⇒ r ≠ 0",
+      "dependencies": [
+        "l15"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "For remainder r=1 the block decomposition yields S = q(2-2i) + (4q+1)i, whose imaginary part is positive precisely when q \\ge 0.",
+      "statement": "r=1 ⇒ Im(S)=2q+1 >0",
+      "dependencies": [
+        "l20",
+        "l21"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The only solution among the choices is n=97=4*24+1, confirming answer D.",
+      "statement": "sum=48+49i ⇔ n=97 (answer D)",
+      "dependencies": [
+        "l21",
+        "l22",
+        "l20",
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l23",
+      "natural_language": "Let S = sum_{k=1}^n k i^k. Then S = i (1 - (n+1) i^n + n i^{n+1}) / (1-i)^2.",
+      "statement": "S = i(1-(n+1)i^n + n i^{n+1}) / (1-i)^2",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l24",
+      "natural_language": "Since i^4 = 1, the powers of i are periodic with period 4, so it suffices to consider n modulo 4.",
+      "statement": "i^4=1 ⇒ S depends only on n mod 4",
+      "dependencies": [
+        "l23"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Set n=97=4*24+1. Then Re(S)=49 and Im(S)=-48, so S=48+49i, confirming the target equation holds precisely for this n.",
+      "statement": "n=97 ⇒ S=48+49i",
+      "dependencies": [
+        "l24",
+        "l3",
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l25",
+      "natural_language": "Correct simplification of closed form for n ≡ 1 (mod 4) yields Re(S) = (n-1)/2 and Im(S) = (n+1)/2.",
+      "statement": "n=4m+1 ⇒ Re(S)=(n-1)/2, Im(S)=(n+1)/2",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "n=97=4*24+1 gives Re(S)=48 and Im(S)=49, hence S=48+49i, so the equation holds precisely for choice D.",
+      "statement": "n=97 ⇒ S=48+49i (answer D)",
+      "dependencies": [
+        "l25",
+        "tc_1"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

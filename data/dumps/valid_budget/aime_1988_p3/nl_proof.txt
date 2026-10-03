@@ -1,0 +1,7 @@
+We start from the equation \(\log_2(\log_8 x)=\log_8(\log_2 x)\). Let \(y=\log_2 x\), so that \(x=2^y\) and \(\log_8 x=y/3\). Substituting these relations, the given equation becomes \(\log_2(y/3)=\log_8 y\).
+
+The change-of-base formula yields \(\log_8 y=\frac13\log_2 y\), and therefore \(\log_2(y/3)=\frac13\log_2 y\). Expanding the left-hand side then gives \(\log_2 y-\log_2 3=\frac13\log_2 y\). Rearrangement produces \(\frac23\log_2 y=\log_2 3\), hence \(y=3^{3/2}\). Squaring both sides, we obtain \(y^2=(3^{3/2})^2=27\).
+
+(The same conclusion follows by rewriting the displayed equation as \(\frac y3=y^{1/3}\), which again forces \(y=3^{3/2}\) and therefore \(y^2=27\).)
+
+Since \(y=\log_2 x\), we conclude \((\log_2 x)^2=27\).

@@ -1,0 +1,37 @@
+{
+  "problem_id": "amc12a_2019_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $z=\\frac{1+i}{\\sqrt{2}}.$What is $\\left(z^{1^2}+z^{2^2}+z^{3^2}+\\dots+z^{{12}^2}\\right) \\cdot \\left(\\frac{1}{z^{1^2}}+\\frac{1}{z^{2^2}}+\\frac{1}{z^{3^2}}+\\dots+\\frac{1}{z^{{12}^2}}\\right)?$\n\n$\\textbf{(A) } 18 \\qquad \\textbf{(B) } 72-36\\sqrt2 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 72 \\qquad \\textbf{(E) } 72+36\\sqrt2$ Show that it is \\textbf{(C) }36.",
+      "statement": "Let $z=\\frac{1+i}{\\sqrt{2}}.$What is $\\left(z^{1^2}+z^{2^2}+z^{3^2}+\\dots+z^{{12}^2}\\right) \\cdot \\left(\\frac{1}{z^{1^2}}+\\frac{1}{z^{2^2}}+\\frac{1}{z^{3^2}}+\\dots+\\frac{1}{z^{{12}^2}}\\right)?$\n\n$\\textbf{(A) } 18 \\qquad \\textbf{(B) } 72-36\\sqrt2 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 72 \\qquad \\textbf{(E) } 72+36\\sqrt2$ Show that it is \\textbf{(C) }36.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2872015408226713,
+      "support": null
+    },
+    {
+      "id": "ts_dead_1909",
+      "natural_language": "dead-end unused case 5343: discard this alternative",
+      "statement": "dead-end unused case 5343: discard this alternative",
+      "dependencies": [],
+      "search_node_id": "sn_37",
+      "branch_id": "b51",
+      "salience": 0.17177950029416045,
+      "support": null
+    }
+  ]
+}

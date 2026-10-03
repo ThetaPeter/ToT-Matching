@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2003_p1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.",
+      "last_claim": "The k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.",
+      "last_claim": "Pairwise differences are therefore all equal to 1, so the total difference equals 2003.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nThe difference between the k-th even and k-th odd counting number is 2k-(2k-1)=1 for each k=1 to 2003.",
+      "last_claim": "The difference between the k-th even and k-th odd counting number is 2k-(2k-1)=1 for each k=1 to 2003.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nHence the desired difference of sums equals the sum of 2003 ones, which is 2003.",
+      "last_claim": "Hence the desired difference of sums equals the sum of 2003 ones, which is 2003.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nHence the difference of the two sums is exactly 2003.",
+      "last_claim": "Hence the difference of the two sums is exactly 2003.",
+      "last_claim_id": "ts_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nThis establishes that the correct choice is (D).",
+      "last_claim": "This establishes that the correct choice is (D).",
+      "last_claim_id": "ts_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nHence the desired difference of sums equals the sum of 2003 ones, which is 2003.\nTherefore the required difference equals 2003.",
+      "last_claim": "Therefore the required difference equals 2003.",
+      "last_claim_id": "ts_5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nHence the desired difference of sums equals the sum of 2003 ones, which is 2003.\nHence the correct choice is (D).",
+      "last_claim": "Hence the correct choice is (D).",
+      "last_claim_id": "ts_6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nThis establishes that the correct choice is (D).\nThe pairing argument is complete and no further algebraic identities are required.",
+      "last_claim": "The pairing argument is complete and no further algebraic identities are required.",
+      "last_claim_id": "ts_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nThis establishes that the correct choice is (D).\nAn independent verification via closed-form formulas for the two arithmetic series likewise yields the difference 2003.",
+      "last_claim": "An independent verification via closed-form formulas for the two arithmetic series likewise yields the difference 2003.",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.95,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nHence the desired difference of sums equals the sum of 2003 ones, which is 2003.\nHence the correct choice is (D).\nThe difference equals 2003, confirming option (D).",
+      "last_claim": "The difference equals 2003, confirming option (D).",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nThe k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.\nHence the desired difference of sums equals the sum of 2003 ones, which is 2003.\nHence the correct choice is (D).\nNo further computation is required once the pairwise differences of 1 are summed.",
+      "last_claim": "No further computation is required once the pairwise differences of 1 are summed.",
+      "last_claim_id": "ts_11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nThis establishes that the correct choice is (D).\nAn independent verification via closed-form formulas for the two arithmetic series likewise yields the difference 2003.\n[\"The sum of the first n even counting numbers equals n(n+1).\"]",
+      "last_claim": "[\"The sum of the first n even counting numbers equals n(n+1).\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.\nPairwise differences are therefore all equal to 1, so the total difference equals 2003.\nThis establishes that the correct choice is (D).\nAn independent verification via closed-form formulas for the two arithmetic series likewise yields the difference 2003.\n[\"The sum of the first n odd counting numbers equals n^{2}, so their difference is n.\"]",
+      "last_claim": "[\"The sum of the first n odd counting numbers equals n^{2}, so their difference is n.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

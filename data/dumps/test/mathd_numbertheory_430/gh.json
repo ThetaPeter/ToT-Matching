@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_430",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $A$, $B$, and $C$ represent three distinct digits from 1 to 9 and they satisfy the following equations, what is the value of the sum $A+B+C$? (In the equation below, $AA$ represents a two-digit number both of whose digits are $A$.) $$A+B=C$$$$AA-B=2\\times C$$$$C\\times B=AA+A$$ Show that it is 8.",
+      "statement": "If $A$, $B$, and $C$ represent three distinct digits from 1 to 9 and they satisfy the following equations, what is the value of the sum $A+B+C$? (In the equation below, $AA$ represents a two-digit number both of whose digits are $A$.) $$A+B=C$$$$AA-B=2\\times C$$$$C\\times B=AA+A$$ Show that it is 8.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5911975668985759,
+      "support": null
+    },
+    {
+      "id": "l11235",
+      "natural_language": "Advance the argument (step 17473): continue from If $A$, $B$, and $C$ represent three distinct digits from 1 to 9 and they satisf",
+      "statement": "Advance the argument (step 17473): continue from If $A$, $B$, and $C$ represent three distinct digits from 1 to 9 and they satisf",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5434929763894061,
+      "support": null
+    }
+  ]
+}

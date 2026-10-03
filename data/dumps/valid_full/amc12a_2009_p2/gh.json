@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2009_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.",
+      "statement": "Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\textbf{(A)}\\ \\frac {5}{4} \\qquad \\textbf{(B)}\\ \\frac {3}{2} \\qquad \\textbf{(C)}\\ \\frac {5}{3} \\qquad \\textbf{(D)}\\ 2 \\qquad \\textbf{(E)}\\ 3$ Show that it is \\text{C}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l2596",
+      "natural_language": "Advance the argument (step 4034): continue from Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\tex",
+      "statement": "Advance the argument (step 4034): continue from Which of the following is equal to $1 + \\frac {1}{1 + \\frac {1}{1 + 1}}$?\n\n$\\tex",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.755988119001975,
+      "support": null
+    },
+    {
+      "id": "l2600",
+      "natural_language": "Advance the argument (step 4040): continue from Advance the argument (step 4034): continue from Which of the following is equal",
+      "statement": "Advance the argument (step 4040): continue from Advance the argument (step 4034): continue from Which of the following is equal",
+      "dependencies": [
+        "l2596"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b8",
+      "salience": 0.5349506156386412,
+      "support": null
+    }
+  ]
+}

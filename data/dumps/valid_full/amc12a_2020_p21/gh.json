@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2020_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.",
+      "statement": "How many positive integers $n$ are there such that $n$ is a multiple of $5$, and the least common multiple of $5!$ and $n$ equals $5$ times the greatest common divisor of $10!$ and $n?$\n\n$\\textbf{(A) } 12 \\qquad \\textbf{(B) } 24 \\qquad \\textbf{(C) } 36 \\qquad \\textbf{(D) } 48 \\qquad \\textbf{(E) } 72$ Show that it is \\textbf{(D) } 48.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.506092940047463,
+      "support": null
+    },
+    {
+      "id": "l3567",
+      "natural_language": "Advance the argument (step 5545): continue from How many positive integers $n$ are there such that $n$ is a multiple of $5$, and",
+      "statement": "Advance the argument (step 5545): continue from How many positive integers $n$ are there such that $n$ is a multiple of $5$, and",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5987066163014243,
+      "support": null
+    }
+  ]
+}

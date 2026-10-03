@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2002_p13",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Two different positive numbers $a$ and $b$ each differ from their reciprocals by $1$. What is $a+b$?\n\n$\n\\text{(A) }1\n\\qquad\n\\text{(B) }2\n\\qquad\n\\text{(C) }\\sqrt 5\n\\qquad\n\\text{(D) }\\sqrt 6\n\\qquad\n\\text{(E) }3\n$ Show that it is (C) \\sqrt 5.",
+      "statement": "Two different positive numbers $a$ and $b$ each differ from their reciprocals by $1$. What is $a+b$?\n\n$\n\\text{(A) }1\n\\qquad\n\\text{(B) }2\n\\qquad\n\\text{(C) }\\sqrt 5\n\\qquad\n\\text{(D) }\\sqrt 6\n\\qquad\n\\text{(E) }3\n$ Show that it is (C) \\sqrt 5.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l2109",
+      "natural_language": "Advance the argument (step 3277): continue from Two different positive numbers $a$ and $b$ each differ from their reciprocals by",
+      "statement": "Advance the argument (step 3277): continue from Two different positive numbers $a$ and $b$ each differ from their reciprocals by",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.2555828254111792,
+      "support": null
+    },
+    {
+      "id": "l2110",
+      "natural_language": "Advance the argument (step 3278): continue from Two different positive numbers $a$ and $b$ each differ from their reciprocals by",
+      "statement": "Advance the argument (step 3278): continue from Two different positive numbers $a$ and $b$ each differ from their reciprocals by",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.322971120733087,
+      "support": null
+    }
+  ]
+}

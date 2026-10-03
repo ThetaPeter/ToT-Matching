@@ -1,0 +1,39 @@
+{
+  "problem_id": "numbertheory_nckeqnm1ckpnm1ckm1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Show that for positive integers $n$ and $k$ with $k \\leq n$, we have \n$\\binom{n}{k} = \\binom{n-1}{k} + \\binom{n-1}{k-1}$.",
+      "statement": "Show that for positive integers $n$ and $k$ with $k \\leq n$, we have \n$\\binom{n}{k} = \\binom{n-1}{k} + \\binom{n-1}{k-1}$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l12639",
+      "natural_language": "Advance the argument (step 19657): continue from Show that for positive integers $n$ and $k$ with $k \\leq n$, we have \n$\\binom{n}",
+      "statement": "Advance the argument (step 19657): continue from Show that for positive integers $n$ and $k$ with $k \\leq n$, we have \n$\\binom{n}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8237544710479141,
+      "support": null
+    }
+  ]
+}

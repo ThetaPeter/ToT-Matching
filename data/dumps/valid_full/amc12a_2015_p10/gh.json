@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2015_p10",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.",
+      "statement": "Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(A)}\\ 8 \\qquad\\textbf{(B)}\\ 10 \\qquad\\textbf{(C)}\\ 15 \\qquad\\textbf{(D)}\\ 18 \\qquad\\textbf{(E)}\\ 26$ Show that it is \\textbf{(E)}\\ 26.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3273268353539886,
+      "support": null
+    },
+    {
+      "id": "l3135",
+      "natural_language": "Advance the argument (step 4873): continue from Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(",
+      "statement": "Advance the argument (step 4873): continue from Integers $x$ and $y$ with $x>y>0$ satisfy $x+y+xy=80$. What is $x$?\n\n$ \\textbf{(",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.670820393249937,
+      "support": null
+    }
+  ]
+}

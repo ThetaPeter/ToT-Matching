@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2008_p4",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.",
+      "last_claim": "The given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe general term of the product may be written as (k+1)/k for k ranging from 1 to 501, so the product equals 502/1.",
+      "last_claim": "The general term of the product may be written as (k+1)/k for k ranging from 1 to 501, so the product equals 502/1.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]",
+      "last_claim": "[\"Therefore the product simplifies exactly to 2008/4.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Evaluating the remaining fraction gives 2008/4 = 502.\"]",
+      "last_claim": "[\"Evaluating the remaining fraction gives 2008/4 = 502.\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe general term of the product may be written as (k+1)/k for k ranging from 1 to 501, so the product equals 502/1.\nThe first factor equals 8/4=(1+1)/1, so the indexing of k begins at 1.",
+      "last_claim": "The first factor equals 8/4=(1+1)/1, so the indexing of k begins at 1.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe general term of the product may be written as (k+1)/k for k ranging from 1 to 501, so the product equals 502/1.\nThe last factor equals 2008/2004=502/501, so the indexing of k ends at 501.",
+      "last_claim": "The last factor equals 2008/2004=502/501, so the indexing of k ends at 501.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\n2008/4 evaluates to 502.",
+      "last_claim": "2008/4 evaluates to 502.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\nThus the original product equals 502, which is option (B).",
+      "last_claim": "Thus the original product equals 502, which is option (B).",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Evaluating the remaining fraction gives 2008/4 = 502.\"]\nTherefore the value of the product is 502, which is choice (B).",
+      "last_claim": "Therefore the value of the product is 502, which is choice (B).",
+      "last_claim_id": "ts_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Evaluating the remaining fraction gives 2008/4 = 502.\"]\nHence the given product equals option (B).",
+      "last_claim": "Hence the given product equals option (B).",
+      "last_claim_id": "ts_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\n2008/4 evaluates to 502.\nTherefore the original product equals 502.",
+      "last_claim": "Therefore the original product equals 502.",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\n2008/4 evaluates to 502.\nHence the given multiple-choice answer is (B).",
+      "last_claim": "Hence the given multiple-choice answer is (B).",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\nThus the original product equals 502, which is option (B).\n2008/4 equals 502.",
+      "last_claim": "2008/4 equals 502.",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Which of the following is equal to the [[product]]\n$\\frac{8}{4}\\cdot\\frac{12}{8}\\cdot\\frac{16}{12}\\cdot\\cdots\\cdot\\frac{4n+4}{4n}\\cdot\\cdots\\cdot\\frac{2008}{2004}?$\n\n$\\textbf{(A)}\\ 251\\qquad\\textbf{(B)}\\ 502\\qquad\\textbf{(C)}\\ 1004\\qquad\\textbf{(D)}\\ 2008\\qquad\\textbf{(E)}\\ 4016$ Show that it is \\textbf{(B)}.\nThe given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.\n[\"Therefore the product simplifies exactly to 2008/4.\"]\nThus the original product equals 502, which is option (B).\nHence the given product equals option (B).",
+      "last_claim": "Hence the given product equals option (B).",
+      "last_claim_id": "ts_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

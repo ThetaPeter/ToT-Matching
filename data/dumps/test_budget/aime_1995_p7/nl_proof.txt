@@ -1,0 +1,33 @@
+Let \(s=\sin t+\cos t\) and \(p=\sin t\cos t\). Expanding the given identity \((1+\sin t)(1+\cos t)=5/4\) immediately yields
+\[
+s+p=\frac14.
+\]
+The elementary identity \((\sin t+\cos t)^2=1+2\sin t\cos t\) rearranges to
+\[
+s^2-2p=1.
+\]
+Substitute \(p=\frac14-s\) into the last equation:
+\[
+s^2-2\Bigl(\frac14-s\Bigr)=1\qquad\Longrightarrow\qquad s^2+2s-\frac32=0.
+\]
+The quadratic formula produces the two formal roots \(s=-1\pm\sqrt{10}/2\). The feasible root (the one compatible with the range of \(s=\sin t+\cos t\)) is
+\[
+s=-1+\frac{\sqrt{10}}2.
+\]
+Now expand the complementary product:
+\[
+(1-\sin t)(1-\cos t)=1-s+p.
+\]
+Using \(p=\frac14-s\) again gives
+\[
+1-s+p=\frac54-2s.
+\]
+Insert the feasible value of \(s\):
+\[
+\frac54-2\Bigl(-1+\frac{\sqrt{10}}2\Bigr)=\frac{13}4-\sqrt{10}.
+\]
+Thus
+\[
+(1-\sin t)(1-\cos t)=\frac{13}4-\sqrt{10},
+\]
+so \(k+m+n=13+4+10=27\).

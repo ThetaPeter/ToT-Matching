@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_numbertheory_739",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot\\,\\cdots\\,\\cdot (n-1)\\cdot n$.\n\nWhat is the remainder when $9!$ is divided by $10$? Show that it is 0.",
+      "statement": "For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot\\,\\cdots\\,\\cdot (n-1)\\cdot n$.\n\nWhat is the remainder when $9!$ is divided by $10$? Show that it is 0.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l12207",
+      "natural_language": "Advance the argument (step 18985): continue from For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot",
+      "statement": "Advance the argument (step 18985): continue from For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.2886751345948129,
+      "support": null
+    },
+    {
+      "id": "l12208",
+      "natural_language": "Advance the argument (step 18986): continue from For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot",
+      "statement": "Advance the argument (step 18986): continue from For each positive integer $n$, let $n!$ denote the product $1\\cdot 2\\cdot 3\\cdot",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.592999453328881,
+      "support": null
+    }
+  ]
+}

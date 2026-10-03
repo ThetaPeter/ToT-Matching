@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_2varlineareq_xpeeq7_2xpeeq3_eeq11_xeqn4",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim": "[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting these values back into both original equations confirms they hold.\"]",
+      "last_claim": "[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting these values back into both original equations confirms they hold.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim": "Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\nContinue from:\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\", \"Solving the first equation for \\(e\\) gives \\(e=7-x\\).\"]",
+      "last_claim": "[\"Subtracting the first equation from the second yields \\(x=-4\\).\", \"Solving the first equation for \\(e\\) gives \\(e=7-x\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]",
+      "last_claim": "[\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting these values back into both original equations confirms they hold.\"]\nThe two original equations are therefore satisfied simultaneously.",
+      "last_claim": "The two original equations are therefore satisfied simultaneously.",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting these values back into both original equations confirms they hold.\"]\nUniqueness follows because the coefficient matrix is invertible.",
+      "last_claim": "Uniqueness follows because the coefficient matrix is invertible.",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.2,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]\n[\"The coefficient matrix of the linear system is invertible over \\(\\mathbb{C}\\), so the solution pair is unique.\",\"Both original equations are recovered upon substituting the obtained values, completing the proof.\"]",
+      "last_claim": "[\"The coefficient matrix of the linear system is invertible over \\(\\mathbb{C}\\), so the solution pair is unique.\",\"Both original equations are recovered upon substituting the obtained values, completing the proof.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.8,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]\nContinue from: [\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]",
+      "last_claim": "Continue from: [\"Verification in the second equation gives \\(2(-4)+11=3\\), confirming consistency.\",\"Hence the unique solution over \\(\\mathbb{C}\\) is \\(x=-4\\) and \\(e=11\\).\"]",
+      "last_claim_id": "ts_13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\n[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting into the second equation confirms \\(2(-4)+11=3\\).\"]",
+      "last_claim": "[\"Therefore \\(x=-4\\) and \\(e=11\\).\", \"Substituting into the second equation confirms \\(2(-4)+11=3\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Given two complex numbers x and e, if we assume that $x + e = 7$ and $2x + e = 3$, then show that $e = 11$ and $x=-4$.\n[\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]\nContinue from: Continue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim": "Continue from: Continue from: Continue from: [\"Subtracting the first equation from the second yields \\(x=-4\\).\",\"Substituting \\(x=-4\\) into \\(x+e=7\\) yields \\(e=11\\).\"]",
+      "last_claim_id": "l21",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

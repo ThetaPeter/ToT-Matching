@@ -1,0 +1,204 @@
+{
+  "problem_id": "aime_1983_p3",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim": "[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.92,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim": "[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\nContinue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim": "Continue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\nContinue from:\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). Then \\( t^2-15=2t \\).\", \"Let \\( u=x^2+18x \\). Then \\( u+30=2\\sqrt{u+45} \\) with \\( u+45\\geq 0 \\).\"]",
+      "last_claim": "[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). Then \\( t^2-15=2t \\).\", \"Let \\( u=x^2+18x \\). Then \\( u+30=2\\sqrt{u+45} \\) with \\( u+45\\geq 0 \\).\"]",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\n[\"The roots of \\(x^2+18x+20=0\\) are \\(-9\\pm\\sqrt{61}\\), and \\(\\sqrt{61}>6\\) so both lie in the domain \\(|x+9|\\ge6\\).\",\"By Vieta the product of these two real roots is exactly 20.\"]",
+      "last_claim": "[\"The roots of \\(x^2+18x+20=0\\) are \\(-9\\pm\\sqrt{61}\\), and \\(\\sqrt{61}>6\\) so both lie in the domain \\(|x+9|\\ge6\\).\",\"By Vieta the product of these two real roots is exactly 20.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\nContinue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim": "Continue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\nContinue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"Solving \\(t^2-2t-15=0\\) yields \\(t=5\\) (discard \\(t=-3\\) as \\(t\\geq0\\)).\",\"Thus \\(x^2+18x+20=0\\), both roots satisfy \\(|x+9|\\geq6\\) and have product 20.\"]",
+      "last_claim": "[\"Solving \\(t^2-2t-15=0\\) yields \\(t=5\\) (discard \\(t=-3\\) as \\(t\\geq0\\)).\",\"Thus \\(x^2+18x+20=0\\), both roots satisfy \\(|x+9|\\geq6\\) and have product 20.\"]",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\nContinue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\nContinue from: Continue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\n[\"The roots of \\(x^2+18x+20=0\\) are \\(-9\\pm\\sqrt{61}\\), and \\(\\sqrt{61}>6\\) so both lie in the domain \\(|x+9|\\ge6\\).\",\"By Vieta the product of these two real roots is exactly 20.\"]\nBoth candidate roots satisfy the original equation after substitution, confirming they are genuine solutions.",
+      "last_claim": "Both candidate roots satisfy the original equation after substitution, confirming they are genuine solutions.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\n[\"The roots of \\(x^2+18x+20=0\\) are \\(-9\\pm\\sqrt{61}\\), and \\(\\sqrt{61}>6\\) so both lie in the domain \\(|x+9|\\ge6\\).\",\"By Vieta the product of these two real roots is exactly 20.\"]\nThe original equation therefore has exactly these two real roots, and Vieta already yields their product 20.",
+      "last_claim": "The original equation therefore has exactly these two real roots, and Vieta already yields their product 20.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\nContinue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\n[\"Let \\(y=x+9\\). Then \\(y^2=61\\), so \\(|x+9|=\\sqrt{61}>6\\).\", \"By Vieta the product of roots of \\(x^2+18x+20=0\\) is \\(20\\).\"]",
+      "last_claim": "[\"Let \\(y=x+9\\). Then \\(y^2=61\\), so \\(|x+9|=\\sqrt{61}>6\\).\", \"By Vieta the product of roots of \\(x^2+18x+20=0\\) is \\(20\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "What is the product of the [[real]] [[root]]s of the [[equation]] $x^2 + 18x + 30 = 2 \\sqrt{x^2 + 18x + 45}$? Show that it is 020.\n[\"Let \\( t=\\sqrt{x^2+18x+45}\\geq 0 \\). The equation rewrites as \\( t^2-15=2t \\).\",\"The expression under the square root is nonnegative precisely when \\( |x+9|\\geq 6 \\).\"]\n[\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\nContinue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]\nContinue from: Continue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"The equation \\(t^2-2t-15=0\\) has roots \\(t=5\\) and \\(t=-3\\), so \\(t=5\\).\",\"Thus \\(x^2+18x+20=0\\), whose roots both satisfy \\(|x+9|\\ge6\\) and have product \\(20\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

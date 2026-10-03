@@ -1,0 +1,434 @@
+{
+  "problem_id": "amc12_2001_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let N be a two-digit integer satisfying N = P(N) + S(N).",
+      "statement": "N=10a+b with a\\in{1..9}, b\\in{0..9} and 10a+b=a*b+a+b",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Algebraic simplification of the defining equation.",
+      "statement": "10a+b=a*b+a+b implies 9a=a*b",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Since a\neq0 we may divide by a.",
+      "statement": "9a=a*b implies b=9",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The units digit of any such N must be 9.",
+      "statement": "b=9 (units digit of N is 9)",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Substitute b=9 back into the original equation to verify it holds identically for every valid a.",
+      "statement": "For b=9 the equation 10a+9=9a+a+9 reduces to an identity, true for all a in {1..9}",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is 9.",
+      "statement": "units digit of N is 9",
+      "dependencies": [
+        "l3",
+        "ts_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Rearranging terms yields 9a=ab.",
+      "statement": "10a+b=ab+a+b implies 9a=ab",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Since a\neq0, it follows that b=9.",
+      "statement": "9a=ab implies b=9",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "The units digit of any such N must be 9, hence the answer is 9.",
+      "statement": "b=9 (units digit of N is 9)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Subtract a+b from both sides of the equation.",
+      "statement": "10a+b=ab+a+b implies 9a=ab",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Divide both sides by a (valid since a\\ge1).",
+      "statement": "9a=ab implies b=9",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Any such two-digit N must have units digit 9, which is option (E).",
+      "statement": "units digit of N is 9",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let N=10a+b where a∈{1,…,9} and b∈{0,…,9}.",
+      "statement": "N=10a+b with a∈{1,…,9}, b∈{0,…,9}",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "The given equation is then equivalent to 10a+b=ab+a+b.",
+      "statement": "10a+b=ab+a+b",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is 9.",
+      "statement": "units digit of N is 9",
+      "dependencies": [
+        "tc_3",
+        "l2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "The units digit of N is 9, so the correct choice is (E).",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "ts_2",
+        "ts_3",
+        "ts_4",
+        "ts_5"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Therefore the units digit of N is b=9.",
+      "statement": "units digit of N is 9",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Substituting b=9 recovers the identity 10a+9=9a+a+9, so every such N works.",
+      "statement": "For b=9 the equation holds identically for all a in {1..9}",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is 9.",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l8",
+        "l9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Substitute b=9 back to verify the original equation holds for every valid a.",
+      "statement": "For b=9 the equation 10a+9=9a+a+9 is an identity for all a in {1..9}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is (E) 9.",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l5",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Subtracting b from both sides of the equation.",
+      "statement": "10a+b=ab+a+b implies 10a=ab+a",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Rearranging terms yields 9a=ab.",
+      "statement": "10a=ab+a implies 9a=ab",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Since a\neq0 we may divide by a.",
+      "statement": "9a=ab implies b=9",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is 9.",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l13",
+        "ts_6"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Subtract a+b from both sides.",
+      "statement": "10a+b=ab+a+b implies 9a=ab",
+      "dependencies": [
+        "tc_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Divide by a (a\\ge1).",
+      "statement": "9a=ab implies b=9",
+      "dependencies": [
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Units digit of N is 9, hence answer (E).",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l15",
+        "ts_6"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Hence every two-digit N ending in 9 satisfies the given equation.",
+      "statement": "For all a in {1..9} the pair (a,9) satisfies 10a+b=ab+a+b",
+      "dependencies": [
+        "l5",
+        "l9"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Hence every two-digit N ending in 9 satisfies the given equation, so the units digit is invariably 9.",
+      "statement": "units digit of N is 9 (answer (E))",
+      "dependencies": [
+        "l16",
+        "ts_6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The multiple-choice answer is therefore (E).",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l9",
+        "ts_6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Thus the units digit of N is b=9.",
+      "statement": "units digit of N is b=9",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Hence N corresponds to choice (E).",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Substitute b=9 into the original equation to obtain an identity.",
+      "statement": "For b=9 the equation 10a+9=9a+a+9 holds for every a in {1..9}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "All two-digit solutions have units digit 9, hence the answer is (E) 9.",
+      "statement": "answer is (E) 9",
+      "dependencies": [
+        "l5",
+        "l18"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

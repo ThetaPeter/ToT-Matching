@@ -1,0 +1,18 @@
+Assume \(x,y,z\in\mathbb{Z}\) satisfy \((x-y)^2+(y-z)^2+(z-x)^2=xyz\). Set \(s=x+y+z\), \(p=xy+yz+zx\) and \(q=xyz\). Expanding the given identity yields \(2(s^2-3p)=q\). In particular \(q/2\in\mathbb{Z}\).
+
+The elementary identity \(x^3+y^3+z^3=s^3-3sp+3q\) together with the relation \(2(s^2-3p)=q\) rearranges to
+\[
+x^3+y^3+z^3-3q=s(s^2-3p).
+\]
+Substituting \(3q=6(s^2-3p)\) then gives
+\[
+x^3+y^3+z^3=(s+6)(s^2-3p).
+\]
+Equivalently, since \(s^2-3p=q/2\),
+\[
+x^3+y^3+z^3=(q/2)(s+6).
+\]
+In either form it follows that \(s+6\) divides \(x^3+y^3+z^3\), i.e.,
+\[
+(x+y+z+6)\mid(x^3+y^3+z^3).
+\]

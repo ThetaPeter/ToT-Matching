@@ -1,0 +1,54 @@
+{
+  "problem_id": "algebra_sqineq_2at2pclta2c2p41pc",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume a and c are real numbers.",
+      "statement": "a ∈ ℝ ∧ c ∈ ℝ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "∀ a,c ∈ ℝ, 2a(2+c) ≤ a^{2} + c^{2} + 4(1+c)",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The difference RHS-LHS expands identically to (a-2-c)^2.",
+      "statement": "RHS - LHS = (a - 2 - c)^2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The desired inequality rearranges equivalently to (a-c-2)^2 ≥ 0.",
+      "statement": "2a(2+c) ≤ a^{2} + c^{2} + 4(1+c) ↔ (a - c - 2)^{2} ≥ 0",
+      "dependencies": [
+        "tc_1",
+        "l1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

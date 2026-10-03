@@ -1,0 +1,59 @@
+{
+  "problem_id": "algebra_amgm_sumasqdivbsqgeqsumbdiva",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a, b, c be positive real numbers",
+      "statement": "a>0 \\land b>0 \\land c>0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.8750000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "By AM-GM, a^2/b^2 + b^2/c^2 >= 2a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} \\ge 2\\frac{a}{c}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.390094748802747,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "By AM-GM, b^2/c^2 + c^2/a^2 >= 2b/a",
+      "statement": "\\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\ge 2\\frac{b}{a}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5039526306789697,
+      "support": null
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "a^2/b^2 + b^2/c^2 + c^2/a^2 >= b/a + c/b + a/c",
+      "statement": "\\frac{a^2}{b^2} + \\frac{b^2}{c^2} + \\frac{c^2}{a^2} \\geq \\frac{b}{a} + \\frac{c}{b} + \\frac{a}{c}",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.5915204817512771,
+      "support": null
+    },
+    {
+      "id": "l16",
+      "natural_language": "Equality holds if and only if a=b=c",
+      "statement": "Equality holds \\iff a=b=c",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": 0.33593550657351257,
+      "support": null
+    }
+  ]
+}

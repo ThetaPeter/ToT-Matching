@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_76",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "For integers $n$, let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2 & \\text{ if }n\\text{ is odd}, \\\\\nn^2 - 4n - 1 & \\text{ if }n\\text{ is even}.\n\\end{array}\n\\right.\\]Find $f(f(f(f(f(4)))))$. Show that it is 1.",
+      "statement": "For integers $n$, let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2 & \\text{ if }n\\text{ is odd}, \\\\\nn^2 - 4n - 1 & \\text{ if }n\\text{ is even}.\n\\end{array}\n\\right.\\]Find $f(f(f(f(f(4)))))$. Show that it is 1.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6324555320336759,
+      "support": null
+    },
+    {
+      "id": "l9183",
+      "natural_language": "Advance the argument (step 14281): continue from For integers $n$, let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2 & \\text{ if }n\\text",
+      "statement": "Advance the argument (step 14281): continue from For integers $n$, let \\[f(n) = \\left\\{\n\\begin{array}{cl}\nn^2 & \\text{ if }n\\text",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.44430211746591924,
+      "support": null
+    }
+  ]
+}

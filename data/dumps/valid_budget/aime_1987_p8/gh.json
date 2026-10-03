@@ -1,0 +1,51 @@
+{
+  "problem_id": "aime_1987_p8",
+  "nodes": [
+    {
+      "id": "tc_2",
+      "natural_language": "The given inequality is equivalent to 6n/7 < k < 7n/8 for a positive integer k",
+      "statement": "(6n/7) < k < (7n/8) for positive integer k",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.2672612419124244,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "The length of this open interval is n/56",
+      "statement": "(7n/8 - 6n/7) = n/56",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5445811486371709,
+      "support": null
+    },
+    {
+      "id": "l0",
+      "natural_language": "The given inequality is equivalent to 6n/7 < k < 7n/8",
+      "statement": "8/15 < n/(n+k) < 7/13 \\Leftrightarrow 6n/7 < k < 7n/8",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.40422604172722154,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "For n=112 the interval equals (96,98) and therefore contains exactly one integer k=97",
+      "statement": "((6*112/7),(7*112/8)) ∩ ℤ = {97}",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.46776427696374895,
+      "support": null
+    }
+  ]
+}

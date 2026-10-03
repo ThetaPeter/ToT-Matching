@@ -1,0 +1,88 @@
+{
+  "problem_id": "amc12a_2009_p25",
+  "nodes": [
+    {
+      "id": "l4",
+      "natural_language": "The given recurrence is the tangent-addition formula, so a_n=tan θ_n whenever θ_{n+2}=θ_n+θ_{n+1} (provided the relevant tangents are defined).",
+      "statement": "a_n=tan(θ_n) ∧ (θ_{n+2}=θ_n+θ_{n+1})",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The initial data force θ_1=π/4 and θ_2=π/6, and therefore θ_n=F_{n-2}·(π/4)+F_{n-3}·(π/6) where F_k is the Fibonacci sequence (with F_{-1}=1, F_0=0).",
+      "statement": "θ_1=π/4 ∧ θ_2=π/6 ∧ θ_n=F_{n-2}·(π/4)+F_{n-3}·(π/6)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "F_{2007} ≡ 0 (mod 12) and F_{2008} ≡ 0 (mod 12) hold by the Pisano period π(12)=24",
+      "statement": "F_{2007} ≡ 0 (mod 12) ∧ F_{2008} ≡ 0 (mod 12)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "F_{2007} ≡ 0 (mod 12) and F_{2008} ≡ 0 (mod 12) imply θ_2009 ≡ 0 (mod π)",
+      "statement": "θ_2009 = kπ for integer k",
+      "dependencies": [
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore θ_2009 = kπ so a_2009=tan(kπ)=0 hence |a_2009|=0",
+      "statement": "|a_2009|=0",
+      "dependencies": [
+        "l3",
+        "l6",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Hence a_2009=tan(F_2007 π/4 + F_2006 π/6).",
+      "statement": "a_2009=tan(F_2007 π/4 + F_2006 π/6)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "The value is zero precisely when 3F_2007 + 2F_2006 is a multiple of 12.",
+      "statement": "tan(F_2007 π/4 + F_2006 π/6)=0 ⇔ 12 | (3F_2007 + 2F_2006)",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

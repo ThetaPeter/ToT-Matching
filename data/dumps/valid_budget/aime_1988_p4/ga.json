@@ -1,0 +1,467 @@
+{
+  "problem_id": "aime_1988_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose that |x_i| < 1 for i = 1, 2, \\dots, n",
+      "statement": "|x_i|<1 \\forall i\\in\\{1..n\\}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "sum |x_i| = 19 + |sum x_i|",
+      "statement": "S - |T| = 19 where S=\\sum|x_i|, T=\\sum x_i",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let P = sum of positives, N = sum of |negatives|. Then S-|T|=2 min(P,N)=19 so min(P,N)=9.5",
+      "statement": "2 min(P,N)=19",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Each |x_i|<1 implies at least 10 terms needed to sum to 9.5 in the smaller group and likewise for the larger group",
+      "statement": "min(P,N)=9.5 requires \\ge10 terms each in pos and neg groups",
+      "dependencies": [
+        "l1",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "WLOG assume sum x_i >=0, whence 2 sum_{x_i<0} |x_i|=19",
+      "statement": "WLOG T>=0 implies 2N=19",
+      "dependencies": [
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Each negative term contributes strictly less than 1, so at least ten negative terms are required",
+      "statement": "N=9.5 requires >=10 negative terms",
+      "dependencies": [
+        "l3",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l2",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Take ten x_i = 0.95 and ten x_i = -0.95; then S=19, T=0 so S=|T|+19 holds with n=20",
+      "statement": "n=20 is achievable via 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "l2",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l2",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Since S+ >= S- =9.5 and each positive term is strictly less than 1, at least ten positive terms are required, hence n>=20",
+      "statement": "S+>=9.5 requires >=10 positive terms so n>=20",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The value n=20 is attained by ten terms equal to 0.95 and ten equal to -0.95",
+      "statement": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l6",
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Since T = P - N >=0 we have P >= N =9.5, so positives also require at least 10 terms",
+      "statement": "P>=9.5 requires >=10 positive terms",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l8",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Because each |x_i|<1 we have P<#positives and N<#negatives, hence at least 10 terms of each sign are required and thus n>=20.",
+      "statement": "P < #pos \\land N < #neg \\implies n \\ge 20 (given min(P,N)=9.5)",
+      "dependencies": [
+        "l3",
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l9",
+        "l7"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "The same bound is realized by any ten values a\\in(0.9,1) and ten values -a",
+      "statement": "n=20 attained by 10*a + 10*(-a) for any a\\in(0.9,1)",
+      "dependencies": [
+        "l7",
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus the smallest possible n is exactly 20",
+      "statement": "min n=20 (exactly)",
+      "dependencies": [
+        "l9",
+        "l10"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Since S_+ >= S_- =9.5 and each positive term is strictly less than 1, at least ten positive terms are required, hence n>=20",
+      "statement": "S_+>=9.5 requires >=10 positive terms so n>=20",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "The value n=20 is attained by ten terms equal to 0.95 and ten equal to -0.95",
+      "statement": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l11",
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "The positive terms likewise sum to at least 9.5 and each is strictly less than 1, so at least ten positive terms are required and thus n\\ge20",
+      "statement": "S_+ >=9.5 requires >=10 positive terms so n>=20",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "The value n=20 is attained by taking ten terms equal to 0.95 and ten equal to -0.95",
+      "statement": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Since T = P - N >=0 we have P >= N =9.5, so positives also require at least 10 terms",
+      "statement": "P>=9.5 requires >=10 positive terms",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "statement": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l15",
+        "l16"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Direct substitution confirms that ten terms 0.95 and ten terms -0.95 satisfy both |x_i|<1 and the given identity",
+      "statement": "10*(0.95)+10*(-0.95) satisfies |x_i|<1 and S=|T|+19",
+      "dependencies": [
+        "l12",
+        "tc_1",
+        "tc_2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus the smallest possible value of n is exactly 20",
+      "statement": "min n=20 (exactly)",
+      "dependencies": [
+        "l11",
+        "l17"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Since S_+ >= S_- =9.5 and each positive term is strictly less than 1, at least ten positive terms are required, hence n>=20",
+      "statement": "S_+>=9.5 requires >=10 positive terms so n>=20",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "The value n=20 is attained by ten terms equal to 0.95 and ten equal to -0.95",
+      "statement": "n=20 attained by 10*(0.95)+10*(-0.95)",
+      "dependencies": [
+        "tc_1",
+        "l3"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l18",
+        "l19"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "For these twenty values one has sum |x_i|=19 and sum x_i=0, so the given equality holds",
+      "statement": "\\sum|x_i|=19 \\land \\sum x_i=0 \\implies S=|T|+19",
+      "dependencies": [
+        "l14",
+        "tc_2"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Hence the smallest possible n is exactly 20",
+      "statement": "min n=20 (exactly)",
+      "dependencies": [
+        "l13",
+        "l20"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "smallest possible n is 20",
+      "statement": "min n=20",
+      "dependencies": [
+        "l13",
+        "l14"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

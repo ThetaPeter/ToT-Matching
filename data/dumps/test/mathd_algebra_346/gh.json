@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_346",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that it is 7.",
+      "statement": "Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that it is 7.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l8049",
+      "natural_language": "Advance the argument (step 12517): continue from Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that",
+      "statement": "Advance the argument (step 12517): continue from Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.778498944161523,
+      "support": null
+    },
+    {
+      "id": "l8050",
+      "natural_language": "Advance the argument (step 12518): continue from Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that",
+      "statement": "Advance the argument (step 12518): continue from Let $f(x) = 2x-3$ and $g(x) = x+1$. What is the value of $g(f(5)-1)$? Show that",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3872983346207417,
+      "support": null
+    }
+  ]
+}

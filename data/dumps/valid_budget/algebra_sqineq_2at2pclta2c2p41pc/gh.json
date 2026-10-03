@@ -1,0 +1,47 @@
+{
+  "problem_id": "algebra_sqineq_2at2pclta2c2p41pc",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume a and c are real numbers.",
+      "statement": "a ∈ ℝ ∧ c ∈ ℝ",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6741998624632423,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "The difference RHS-LHS expands identically to (a-2-c)^2.",
+      "statement": "RHS - LHS = (a - 2 - c)^2",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.49487165930539356,
+      "support": null
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Therefore the original inequality holds for all real a and c.",
+      "statement": "∀ a,c ∈ ℝ, 2a(2+c) ≤ a^{2} + c^{2} + 4(1+c)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": 0.657951694959769,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "The inequality is therefore an identity of squares and cannot fail for any real pair (a,c).",
+      "statement": "2a(2+c) ≤ a^2 + c^2 + 4(1+c) holds ∀ a,c ∈ ℝ as it is equivalent to an identity of squares",
+      "dependencies": [],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5222329678670936,
+      "support": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+Given \(x,y\in\mathbb{R}\setminus\{0\}\) with \(x\neq y\) and \(x+2/x=y+2/y\).
+
+Multiplying through by \(xy\) yields \(xy(x+2/x)=xy(y+2/y)\), which rearranges to \(x^2 y+2y=xy^2+2x\).
+
+Rearranging further gives \(x^2 y-xy^2+2y-2x=0\), or equivalently \(xy(x-y)-2(x-y)=0\).
+
+Starting from the original equation and rearranging also produces \(x-y+2((y-x)/(xy))=0\), which factors as \((x-y)(1-2/(xy))=0\).
+
+The two factorizations \(xy(x-y)=2(x-y)\) and \((x-y)(1-2/(xy))=0\) are therefore available. Combined with \(x\neq y\), both force \(xy=2\).
+
+Thus \((x-y)(xy-2)=0\) (or equivalently \((x-y)(1-2/(xy))=0\)) together with \(x\neq y\) imply \(xy=2\).

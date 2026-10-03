@@ -1,0 +1,215 @@
+{
+  "problem_id": "amc12a_2010_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Start with the equation 7^{x+7} = 8^x",
+      "statement": "7^{x+7} = 8^x",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Conclude b=8/7",
+      "statement": "b = 8/7 (choice C)",
+      "dependencies": [
+        "l8",
+        "l12",
+        "l14",
+        "l15",
+        "l16",
+        "l17",
+        "l18",
+        "l20",
+        "l22"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Rewrite 7^{x+7}=8^x as 7^x · 7^7 = 8^x",
+      "statement": "7^x · 7^7 = 8^x",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "Divide both sides by 7^x to obtain 7^7 = (8/7)^x",
+      "statement": "7^7 = (8/7)^x",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "Take log base (8/7) of both sides of 7^7 = (8/7)^x to obtain x = log_{8/7} 7^7",
+      "statement": "x = \\log_{8/7} 7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "From x = log_{8/7} 7^7 conclude b = 8/7",
+      "statement": "b = 8/7",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Rewrite as x = \\log_{8/7} 7^7",
+      "statement": "x = \\log_{8/7} 7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Conclude b = 8/7",
+      "statement": "b = 8/7",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "Take logarithm base 8/7 of both sides of 7^7 = (8/7)^x to obtain x = log_{8/7} 7^7",
+      "statement": "x = \\log_{8/7} 7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Therefore b=8/7, matching choice (C)",
+      "statement": "b = 8/7 (choice C)",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "Uniqueness follows because t\\mapsto(8/7)^t is injective",
+      "statement": "The map t \\mapsto (8/7)^t is injective, hence the solution x is unique",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "Verify that \\(7^{x+7}=(8/7)^x\\cdot7^x=8^x\\) holds when \\(x=\\log_{8/7}7^7\\)",
+      "statement": "7^{x+7}=(8/7)^x\\cdot7^x=8^x holds at x=log_{8/7}7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Note that the same identity follows from taking log_{8/7} of both sides of 7^7=(8/7)^x",
+      "statement": "Identity follows from log_{8/7} of both sides of 7^7=(8/7)^x",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "This is already in the form x=log_b 7^7 with b=8/7",
+      "statement": "x = \\log_b 7^7 with b=8/7",
+      "dependencies": [
+        "l11"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l20",
+      "natural_language": "Hence the required value is 8/7",
+      "statement": "b = 8/7",
+      "dependencies": [
+        "l19"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l21",
+      "natural_language": "Rewrite as x = \\log_{8/7} 7^7",
+      "statement": "x = \\log_{8/7} 7^7",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l22",
+      "natural_language": "Conclude b = 8/7",
+      "statement": "b = 8/7",
+      "dependencies": [
+        "l21"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "problem_id": "amc12a_2003_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Restate the target claim: the difference between the sum of the first 2003 even counting numbers and the sum of the first 2003 odd counting numbers equals 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The sum of the first n even counting numbers is n(n+1).",
+      "statement": "sum_{k=1}^n 2k = n(n+1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "The sum of the first n odd counting numbers is n^2.",
+      "statement": "sum_{k=1}^n (2k-1) = n^2",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Substitute n=2003 into the even and odd sum formulas, then subtract to obtain the difference 2003.",
+      "statement": "2003*2004 - 2003^2 = 2003",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The k-th even counting number is 2k and the k-th odd counting number is 2k-1 for each k=1 to 2003.",
+      "statement": "\\forall k\\in\\{1..2003\\}, (even_k=2k)\\land(odd_k=2k-1)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Hence the desired difference of sums equals the sum of 2003 ones, which is 2003.",
+      "statement": "sum_{k=1}^{2003} [(2k)-(2k-1)] = 2003·1 = 2003",
+      "dependencies": [
+        "tc_1",
+        "l5",
+        "l6"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The difference between the k-th even and k-th odd counting number is 2k-(2k-1)=1 for each k=1 to 2003.",
+      "statement": "\\forall k\\in\\{1..2003\\}, 2k-(2k-1)=1",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The sum of 2003 ones equals 2003.",
+      "statement": "sum_{k=1}^{2003} 1 = 2003",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "Hence the difference of the two sums is exactly 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [
+        "ts_2"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "This establishes that the correct choice is (D).",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003, hence answer (D)",
+      "dependencies": [
+        "ts_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Therefore the required difference equals 2003.",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003",
+      "dependencies": [
+        "ts_2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Hence the correct choice is (D).",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003, hence answer (D)",
+      "dependencies": [
+        "ts_3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The pairing argument is complete and no further algebraic identities are required.",
+      "statement": "Pairing suffices to conclude difference = 2003; algebraic identities unnecessary",
+      "dependencies": [
+        "ts_3"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "An independent verification via closed-form formulas for the two arithmetic series likewise yields the difference 2003.",
+      "statement": "2003*2004 - 2003^2 = 2003",
+      "dependencies": [
+        "tc_1",
+        "l1",
+        "l2",
+        "l4"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "This establishes that the correct choice is (D).",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003, hence answer (D)",
+      "dependencies": [
+        "ts_8"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The difference equals 2003, confirming option (D).",
+      "statement": "sum_{k=1}^{2003} 2k - sum_{k=1}^{2003} (2k-1) = 2003, hence answer (D)",
+      "dependencies": [
+        "ts_2"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "No further computation is required once the pairwise differences of 1 are summed.",
+      "statement": "Pairwise differences sum to 2003; computation complete",
+      "dependencies": [
+        "ts_2",
+        "l6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The sum of the first n even counting numbers equals n(n+1).",
+      "statement": "sum_{k=1}^n 2k = n(n+1)",
+      "dependencies": [],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The sum of the first n odd counting numbers equals n^{2}, so their difference is n.",
+      "statement": "sum_{k=1}^n (2k-1)=n^2 \\implies sum_{k=1}^n 2k - sum_{k=1}^n (2k-1)=n",
+      "dependencies": [
+        "l1",
+        "l2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Substitute n=2003 to obtain difference 2003, confirming (D).",
+      "statement": "2003*2004-2003^2=2003, hence answer (D)",
+      "dependencies": [
+        "tc_1",
+        "l7"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

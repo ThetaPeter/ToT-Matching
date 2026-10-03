@@ -1,0 +1,9 @@
+Assume the recursive clauses defining \(f\) hold for all \(n\) (tc_1).
+
+From the recursive clauses it follows that \(f(1)=2\) and \(f(2)=3\) (l1). Likewise, the recursive clauses yield that whenever \(n\) is even and \(f(n-1)=(n-1)+1\), one has \(f(n)=n+1\) (l2), and that whenever \(n>1\) is odd and \(f(n-2)=(n-2)+1\), one has \(f(n)=n+1\) (l7).
+
+The three preceding facts together imply \(f(n)=n+1\) for every positive integer \(n\) (l9).
+
+The recursive clauses also give the stronger inductive implications that, for even \(n\), if \(f(k)=k+1\) holds for all \(k<n\) then \(f(n)=n+1\) (l8), and that, for odd \(n>1\), if \(f(k)=k+1\) holds for all \(k<n\) then \(f(n)=n+1\) (l10).
+
+Combining the universal identity \(f(n)=n+1\) with these two inductive implications produces \(f(2017)=2018\) (ts_2), which is the required evaluation (ts_1).

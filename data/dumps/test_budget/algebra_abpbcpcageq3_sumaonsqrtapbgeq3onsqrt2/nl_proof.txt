@@ -1,0 +1,20 @@
+Assume \(a>0\), \(b>0\), \(c>0\) and \(ab+bc+ca\ge 3\). Without loss of generality we may cyclically permute the variables so that \(a\ge b\ge c>0\).
+
+It is enough to treat the boundary case \(ab+bc+ca=3\), since the strict inequality \(ab+bc+ca>3\) already forces
+\[
+\sum\frac{a}{\sqrt{a+b}}> \frac{3}{\sqrt{2}}.
+\]
+Thus we now assume \(ab+bc+ca=3\). In this case the elementary inequality \(s:=a+b+c\ge 3\) holds, with equality if and only if \(a=b=c=1\).
+
+Cauchy’s inequality in Engel form yields
+\[
+\Bigl(\sum\frac{a}{\sqrt{a+b}}\Bigr)^2\ge\frac{s^2}{\sum(a+b)}.
+\]
+The right-hand side together with \(s\ge 3\) implies
+\[
+\sum\frac{a}{\sqrt{a+b}}\ge\frac{s}{\sqrt{2}}\ge\frac{3}{\sqrt{2}}.
+\]
+Equality holds when \(a=b=c=1\). Combining the two cases \(ab+bc+ca=3\) and \(ab+bc+ca>3\) therefore gives the asserted lower bound
+\[
+\sum\frac{a}{\sqrt{a+b}}\ge\frac{3}{\sqrt{2}}.
+\]

@@ -1,0 +1,79 @@
+{
+  "problem_id": "amc12a_2003_p25",
+  "nodes": [
+    {
+      "id": "l3",
+      "natural_language": "Case a = 0 forces D = [0, +inf) and range = [0, +inf) only if b arbitrary positive",
+      "statement": "a = 0 yields D = [0, +inf) and range = [0, +inf), satisfying equality.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4479140087646835,
+      "support": null
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": 0.6068660849090083,
+      "support": null
+    },
+    {
+      "id": "tc_7",
+      "natural_language": "If a>0 then the quadratic ax^{2}+bx opens upwards and is nonnegative outside the interval with endpoints 0 and -b/a; the presence of the negative root -b/a therefore forces D to contain an interval of negative numbers, contradicting D\\subseteq[0,\\infty).",
+      "statement": "a>0 implies D contains negative numbers, contradicting tc_3.",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": 0.3072549338995136,
+      "support": null
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [],
+      "search_node_id": "sn_6",
+      "branch_id": "b9",
+      "salience": 0.32338083338177726,
+      "support": null
+    },
+    {
+      "id": "tc_12",
+      "natural_language": "The range of f is contained in [0,∞), so if the domain D equals the range then necessarily D\\subseteq[0,∞).",
+      "statement": "Range(f) \\subseteq [0,∞) \\Rightarrow (D = Range(f) \\Rightarrow D \\subseteq [0,∞)).",
+      "dependencies": [],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.20412414523193154,
+      "support": null
+    },
+    {
+      "id": "tc_13",
+      "natural_language": "The inequality x(ax+b)\\ge0 together with D\\subseteq[0,∞) forces D to be a closed interval of the form [0,c] or [c,∞) (or a singleton) for some c\\ge0.",
+      "statement": "D = {x \\in ℝ | a x^{2} + b x \\ge 0} \\subseteq [0,∞) implies D is [0,c], [c,∞) or {0} for some c \\ge 0.",
+      "dependencies": [
+        "tc_12"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.390094748802747,
+      "support": null
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Exactly two real values of a admit at least one b>0 making domain equal range",
+      "statement": "The number of valid real a is exactly 2.",
+      "dependencies": [
+        "tc_13"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b13",
+      "salience": 0.2750095491084634,
+      "support": null
+    }
+  ]
+}

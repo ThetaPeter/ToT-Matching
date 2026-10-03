@@ -1,0 +1,332 @@
+{
+  "problem_id": "amc12a_2002_p21",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The sequence is defined by a1=4, a2=7 and an = (a_{n-2}+a_{n-1}) mod 10 for n>2.",
+      "statement": "a_1=4, a_2=7, a_n=(a_{n-2}+a_{n-1}) mod 10 (n>2)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The sequence is periodic with period 12: 4,7,1,8,9,7,6,3,9,2,1,3.",
+      "statement": "period(a,12) and block=[4,7,1,8,9,7,6,3,9,2,1,3]",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "S_n=60k + prefix_r where n=12k+r and prefix_r is the sum of the first r terms of the block.",
+      "statement": "S_n=60k + prefix_r (n=12k+r)",
+      "dependencies": [
+        "l5",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "prefix_6=36 and prefix_7=42.",
+      "statement": "prefix_6=36, prefix_7=42",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "For n=1998=12*166+6, S_n=9960+36=9996<=10000.",
+      "statement": "S_1998=9996",
+      "dependencies": [
+        "ts_1",
+        "ts_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "For n=1999=12*166+7, S_n=9960+42=10002>10000.",
+      "statement": "S_1999=10002",
+      "dependencies": [
+        "ts_1",
+        "ts_2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "For all m<1999, S_m<=9996<10000, hence 1999 is minimal.",
+      "statement": "min{n:S_n>10000}=1999",
+      "dependencies": [
+        "ts_7",
+        "ts_8",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l0",
+      "natural_language": "The sequence of units digits is purely periodic.",
+      "statement": "purely_periodic(units(a))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "The minimal period of the sequence is 12.",
+      "statement": "min_period(a,12)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "The sequence is purely periodic with period 12.",
+      "statement": "purely_periodic(a) and period(a,12)",
+      "dependencies": [
+        "l0",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "The repeating block is 4,7,1,8,9,7,6,3,9,2,1,3 and the sum of one period is 60.",
+      "statement": "block=[4,7,1,8,9,7,6,3,9,2,1,3] and sum(block)=60",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The sum of one period of 12 terms is 60.",
+      "statement": "sum(block)=60",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Thus S_{12k}=60k, so S_1992=9960.",
+      "statement": "S_{12k}=60k and S_1992=9960",
+      "dependencies": [
+        "l6",
+        "l4",
+        "l9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\)",
+      "statement": "S_1998=9996",
+      "dependencies": [
+        "ts_6",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\)",
+      "statement": "S_1999=10002",
+      "dependencies": [
+        "ts_7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "The first six terms of a period sum to 36, so S_1998=9960+36=9996<10000",
+      "statement": "S_1998=9996",
+      "dependencies": [
+        "ts_6",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "The seventh term of a period is 6, so S_1999=9996+6=10002>10000",
+      "statement": "S_1999=10002",
+      "dependencies": [
+        "ts_9"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "For all m<1999, S_m<=9996<10000, hence 1999 is minimal.",
+      "statement": "min{n:S_n>10000}=1999",
+      "dependencies": [
+        "ts_10",
+        "l4"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Every term of the sequence is a positive digit (1-9), hence the partial sums S_n are strictly increasing.",
+      "statement": "strictly_increasing(S)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "Therefore the smallest n with S_n>10000 is exactly 1999.",
+      "statement": "min{n:S_n>10000}=1999",
+      "dependencies": [
+        "ts_8",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "The first six terms of a period sum to 36, so \\(S_{1998}=9960+36=9996<10000\\)",
+      "statement": "S_1998=9996",
+      "dependencies": [
+        "ts_6",
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "The seventh term of a period is 6, so \\(S_{1999}=9996+6=10002>10000\\)",
+      "statement": "S_1999=10002",
+      "dependencies": [
+        "ts_13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_15",
+      "natural_language": "For all m<1999, S_m<=9996<10000, hence 1999 is minimal.",
+      "statement": "min{n:S_n>10000}=1999",
+      "dependencies": [
+        "ts_14",
+        "l8"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "After 166 periods we have n=1992 and S_{1992}=9960.",
+      "statement": "n=1992 and S_1992=9960",
+      "dependencies": [
+        "l3",
+        "l6"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_16",
+      "natural_language": "The next seven terms are 4,7,1,8,9,7,6, whence S_{1998}=9996<10000 and S_{1999}=10002>10000.",
+      "statement": "S_1998=9996<10000 and S_1999=10002>10000",
+      "dependencies": [
+        "l9",
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_17",
+      "natural_language": "Therefore the smallest n with S_n>10000 is exactly 1999.",
+      "statement": "min{n:S_n>10000}=1999",
+      "dependencies": [
+        "ts_16",
+        "l8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

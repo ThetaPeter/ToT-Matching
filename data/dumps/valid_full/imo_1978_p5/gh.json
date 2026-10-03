@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1978_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f$ be an injective function from ${1,2,3,\\ldots}$ in itself. Prove that for any $n$ we have: $\\sum_{k=1}^{n} f(k)k^{-2} \\geq \\sum_{k=1}^{n} k^{-1}.$",
+      "statement": "Let $f$ be an injective function from ${1,2,3,\\ldots}$ in itself. Prove that for any $n$ we have: $\\sum_{k=1}^{n} f(k)k^{-2} \\geq \\sum_{k=1}^{n} k^{-1}.$",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6285872661926204,
+      "support": null
+    },
+    {
+      "id": "l4755",
+      "natural_language": "Advance the argument (step 7393): continue from Let $f$ be an injective function from ${1,2,3,\\ldots}$ in itself. Prove that for",
+      "statement": "Advance the argument (step 7393): continue from Let $f$ be an injective function from ${1,2,3,\\ldots}$ in itself. Prove that for",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6708203932499369,
+      "support": null
+    }
+  ]
+}

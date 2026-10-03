@@ -1,0 +1,49 @@
+{
+  "problem_id": "amc12a_2008_p4",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "The given product is P = (8/4) * (12/8) * (16/12) * ... * (2008/2004).",
+      "statement": "P = \\prod_{k=2}^{502} (4k)/(4(k-1))",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.9270471647242887,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore the value of the product equals 502.",
+      "statement": "P = 502",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.6135719910778964,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "The given product is telescoping, with all intermediate factors cancelling, and therefore equals 2008/4.",
+      "statement": "P = 2008/4",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.25,
+      "support": null
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Thus the original product equals 502, which is option (B).",
+      "statement": "P = 502 (option B)",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.6324555320336759,
+      "support": null
+    }
+  ]
+}

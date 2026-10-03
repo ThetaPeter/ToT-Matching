@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1977_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f(n)$ be a function $f: \\mathbb{N}^{+}\\to\\mathbb{N}^{+}$. Prove that if $ f(n+1) > f(f(n)) $ for each positive integer $n$, then $f(n)=n$.",
+      "statement": "Let $f(n)$ be a function $f: \\mathbb{N}^{+}\\to\\mathbb{N}^{+}$. Prove that if $ f(n+1) > f(f(n)) $ for each positive integer $n$, then $f(n)=n$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.5196558419693048,
+      "support": null
+    },
+    {
+      "id": "l4701",
+      "natural_language": "Advance the argument (step 7309): continue from Let $f(n)$ be a function $f: \\mathbb{N}^{+}\\to\\mathbb{N}^{+}$. Prove that if $ f",
+      "statement": "Advance the argument (step 7309): continue from Let $f(n)$ be a function $f: \\mathbb{N}^{+}\\to\\mathbb{N}^{+}$. Prove that if $ f",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7360747380985777,
+      "support": null
+    }
+  ]
+}

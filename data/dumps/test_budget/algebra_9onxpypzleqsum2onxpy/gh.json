@@ -1,0 +1,63 @@
+{
+  "problem_id": "algebra_9onxpypzleqsum2onxpy",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let x, y, z be positive real numbers.",
+      "statement": "x > 0, y > 0, z > 0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.668153104781061,
+      "support": null
+    },
+    {
+      "id": "l_amhm",
+      "natural_language": "By AM-HM on the positive numbers x+y, y+z, z+x.",
+      "statement": "\\frac{2(x+y+z)}{3} \\ge \\frac{3}{\\sum 1/(x+y)}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3481553119113957,
+      "support": null
+    },
+    {
+      "id": "l13",
+      "natural_language": "The claimed inequality is homogeneous of degree -1.",
+      "statement": "The inequality 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x) is homogeneous of degree -1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.5656854249492381,
+      "support": null
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "We restate the theorem as the target claim proved via either AM-HM or Titu: 9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x).",
+      "statement": "9/(x+y+z) \\le 2/(x+y)+2/(y+z)+2/(z+x)",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": 0.40201512610368484,
+      "support": null
+    },
+    {
+      "id": "l17",
+      "natural_language": "The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\).",
+      "statement": "\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}",
+      "dependencies": [
+        "l_amhm"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5773502691896258,
+      "support": null
+    }
+  ]
+}

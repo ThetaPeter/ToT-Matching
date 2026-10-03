@@ -1,0 +1,39 @@
+{
+  "problem_id": "aimeI_2000_p7",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.",
+      "statement": "Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equations $xyz = 1,$ $x + \\frac {1}{z} = 5,$ and $y + \\frac {1}{x} = 29.$ Then $z + \\frac {1}{y} = \\frac {m}{n},$ where $m$ and $n$ are [[relatively prime]] positive integers. Find $m + n$.\n\n\nnote: this is the type of problem that makes you think symmetry, but actually can be solved easily with substitution, and other normal technniques Show that it is 005.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.445435403187374,
+      "support": null
+    },
+    {
+      "id": "l112",
+      "natural_language": "Advance the argument (step 170): continue from Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equat",
+      "statement": "Advance the argument (step 170): continue from Suppose that $x,$ $y,$ and $z$ are three positive numbers that satisfy the equat",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.4969561880566595,
+      "support": null
+    }
+  ]
+}

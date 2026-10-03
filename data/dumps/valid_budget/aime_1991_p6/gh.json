@@ -1,0 +1,61 @@
+{
+  "problem_id": "aime_1991_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Suppose r is a real number satisfying the given floor sum equation equal to 546.",
+      "statement": "floor(r + 19/100) + ... + floor(r + 91/100) = 546",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.34426518632954817,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "The given sum equals 73n plus the fractional-part sum, which totals 546.",
+      "statement": "Then \\(\\sum_{k=19}^{91}\\lfloor r+k/100\rfloor=73n+\\sum_{k=19}^{91}\\lfloor f+k/100\rfloor=546\\).",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3077287274483319,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Each term floor(f + k/100) equals 0 or 1, hence the fractional sum S satisfies 0 ≤ S ≤ 73 and 73n + S = 546.",
+      "statement": "0 ≤ S ≤ 73 and 73n + S = 546 where S = sum floor(f + k/100).",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.3302003302004952,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "The sum equals the number of integers k with 19\\le k\\le91 and k\\ge t, which is therefore 35.",
+      "statement": "The sum equals the number of integers \\(k\\) with \\(19\\le k\\le91\\) and \\(k\\ge t\\), hence equals 35.",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": 0.6761234037828133,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Thus 91-max(19,⌈t⌉)+1=35, so max(19,⌈t⌉)=57 and hence ⌈t⌉=57.",
+      "statement": "91-\\max(19,\\lceil t\rceil)+1=35, so \\max(19,\\lceil t\rceil)=57 and hence \\lceil t\rceil=57.",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": 0.25660011963983365,
+      "support": null
+    }
+  ]
+}

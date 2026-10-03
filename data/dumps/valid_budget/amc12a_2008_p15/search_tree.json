@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2008_p15",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\n[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]",
+      "last_claim": "[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.75,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.1,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\n[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]\nThe units digit of k is 0.",
+      "last_claim": "The units digit of k is 0.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\n[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]\nThe units digit of k^{2} is 0.",
+      "last_claim": "The units digit of k^{2} is 0.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]",
+      "last_claim": "[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\n[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]\nThe units digit of k^{2} is 0.\nk is divisible by 4.",
+      "last_claim": "k is divisible by 4.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\n[\"The units digit of \\(2008^2\\) is 4.\", \"The units digit of \\(2^{2008}\\) is 6.\"]\nThe units digit of k^{2} is 0.\nThe units digits of successive powers of 2 cycle every 4 as 2, 4, 8, 6.",
+      "last_claim": "The units digits of successive powers of 2 cycle every 4 as 2, 4, 8, 6.",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nk^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "last_claim": "k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nHence the required units digit is 6, which is option D.",
+      "last_claim": "Hence the required units digit is 6, which is option D.",
+      "last_claim_id": "ts_2",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nk^{2} + 2^k therefore has units digit 0 + 6 = 6.\n[\"Therefore the units digit of \\(k^2+2^k\\) is 6.\", \"Hence the answer is (D).\"]",
+      "last_claim": "[\"Therefore the units digit of \\(k^2+2^k\\) is 6.\", \"Hence the answer is (D).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nk^{2} + 2^k therefore has units digit 0 + 6 = 6.\nContinue from: k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "last_claim": "Continue from: k^{2} + 2^k therefore has units digit 0 + 6 = 6.",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nHence the required units digit is 6, which is option D.\nSince the units digits of k^{2} and 2^k are 0 and 6 respectively, their sum has units digit 6.",
+      "last_claim": "Since the units digits of k^{2} and 2^k are 0 and 6 respectively, their sum has units digit 6.",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "Let $k={2008}^{2}+{2}^{2008}$. What is the units digit of $k^2+2^k$?\n\n$\\mathrm{(A)}\\ 0\\qquad\\mathrm{(B)}\\ 2\\qquad\\mathrm{(C)}\\ 4\\qquad\\mathrm{(D)}\\ 6\\qquad\\mathrm{(E)}\\ 8$ Show that it is D.\nContinue from:\n[\"k is even and in fact k \\equiv 0 (mod 10), so the units digit of k^{2} is 0.\", \"The exponent k satisfies k \\equiv 0 (mod 4), hence the units digit of 2^k is 6.\"]\nHence the required units digit is 6, which is option D.\nThis matches option D, completing the proof.",
+      "last_claim": "This matches option D, completing the proof.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

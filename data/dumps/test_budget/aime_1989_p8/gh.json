@@ -1,0 +1,51 @@
+{
+  "problem_id": "aime_1989_p8",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "the target weighted sum equals 334",
+      "statement": "16x_1 + 25x_2 + 36x_3 + 49x_4 + 64x_5 + 81x_6 + 100x_7 = 334",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.09128709291752769,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Define A,B,C sums and rewrite equations",
+      "statement": "Let A=∑x_k, B=∑k x_k, C=∑k^{2}x_k. The given equations are then C=1, A+2B+C=12 and 4A+4B+C=123.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "Solve linear system for A and B",
+      "statement": "Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.15430334996209194,
+      "support": null
+    },
+    {
+      "id": "l5",
+      "natural_language": "Obtain A=50, B=-19.5 from the linear system and compute the target sum",
+      "statement": "Solving A+2B=11 and 2A+2B=61 yields A=50, B=-19.5, so the target value 9A+6B+C equals 334.",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": 0.3922322702763681,
+      "support": null
+    }
+  ]
+}

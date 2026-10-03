@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tot"
+version = "0.1.0"
+description = "Dumpable claim-DAG IR and Phase-1 prompted ToT pipeline (Converter, ToT, GI-only proof/Lean)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pytest>=8.0",
+    "pydantic>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.11",
+]
+
+[project.optional-dependencies]
+minilm = ["sentence-transformers>=3.0"]
+torch = ["torch>=2.1"]
+ncp = ["torch>=2.1", "transformers>=4.40"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["tot*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"

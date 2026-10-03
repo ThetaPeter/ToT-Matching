@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_2rootsintpoly_am10tap11eqasqpam110",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).",
+      "last_claim": "By distributivity, (a-10)(a+11)=a(a+11)-10(a+11).",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.",
+      "last_claim": "Expanding the left-hand side yields a^2+11a-10a-110.",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nCombining like terms gives a^2+(11-10)a-110=a^2+a-110.",
+      "last_claim": "Combining like terms gives a^2+(11-10)a-110=a^2+a-110.",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nHence the expanded left-hand side equals the right-hand side.",
+      "last_claim": "Hence the expanded left-hand side equals the right-hand side.",
+      "last_claim_id": "l4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, a(a+11)=a^{2}+11a.",
+      "last_claim": "By distributivity, a(a+11)=a^{2}+11a.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, -10(a+11)=-10a-110.",
+      "last_claim": "By distributivity, -10(a+11)=-10a-110.",
+      "last_claim_id": "l6",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nCombining like terms gives a^2+(11-10)a-110=a^2+a-110.\nTherefore (a-10)(a+11)=a^{2}+a-110 for every complex a.",
+      "last_claim": "Therefore (a-10)(a+11)=a^{2}+a-110 for every complex a.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nCombining like terms gives a^2+(11-10)a-110=a^2+a-110.\nThe same algebraic identity holds in any commutative ring, hence in \u2102.",
+      "last_claim": "The same algebraic identity holds in any commutative ring, hence in \u2102.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.5,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, a(a+11)=a^{2}+11a.\nBy distributivity, -10(a+11)=-10a-110.",
+      "last_claim": "By distributivity, -10(a+11)=-10a-110.",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.9,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, a(a+11)=a^{2}+11a.\nSubstituting the expansion of a(a+11) yields (a-10)(a+11)=a^{2}+11a-10(a+11).",
+      "last_claim": "Substituting the expansion of a(a+11) yields (a-10)(a+11)=a^{2}+11a-10(a+11).",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nCombining like terms gives a^2+(11-10)a-110=a^2+a-110.\nTherefore (a-10)(a+11)=a^{2}+a-110 for every complex a.\n[\"The two sides are identical as elements of \\(\\mathbb{C}[a]\\).\",\"The same identity therefore holds after substituting any complex value for \\(a\\).\"]",
+      "last_claim": "[\"The two sides are identical as elements of \\(\\mathbb{C}[a]\\).\",\"The same identity therefore holds after substituting any complex value for \\(a\\).\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nExpanding the left-hand side yields a^2+11a-10a-110.\nCombining like terms gives a^2+(11-10)a-110=a^2+a-110.\nTherefore (a-10)(a+11)=a^{2}+a-110 for every complex a.\nContinue from: Therefore (a-10)(a+11)=a^{2}+a-110 for every complex a.",
+      "last_claim": "Continue from: Therefore (a-10)(a+11)=a^{2}+a-110 for every complex a.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_10",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, a(a+11)=a^{2}+11a.\nSubstituting the expansion of a(a+11) yields (a-10)(a+11)=a^{2}+11a-10(a+11).\nBy distributivity, -10(a+11)=-10a-110.",
+      "last_claim": "By distributivity, -10(a+11)=-10a-110.",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_10",
+      "proof_state": "Show that for any complex number $a$, $(a-10)(a+11)=a^2+a-110$.\nBy distributivity, (a-10)(a+11)=a(a+11)-10(a+11).\nBy distributivity, a(a+11)=a^{2}+11a.\nSubstituting the expansion of a(a+11) yields (a-10)(a+11)=a^{2}+11a-10(a+11).\nBy distributivity, 10(a+11)=10a+110.",
+      "last_claim": "By distributivity, 10(a+11)=10a+110.",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

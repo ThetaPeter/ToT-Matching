@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_400",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Five plus $500\\%$ of $10$ is the same as $110\\%$ of what number? Show that it is 50.",
+      "statement": "Five plus $500\\%$ of $10$ is the same as $110\\%$ of what number? Show that it is 50.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.47434164902525694,
+      "support": null
+    },
+    {
+      "id": "l8428",
+      "natural_language": "Advance the argument (step 13106): continue from Five plus $500\\%$ of $10$ is the same as $110\\%$ of what number? Show that it is",
+      "statement": "Advance the argument (step 13106): continue from Five plus $500\\%$ of $10$ is the same as $110\\%$ of what number? Show that it is",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.8528028654224418,
+      "support": null
+    }
+  ]
+}

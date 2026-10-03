@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12_2000_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.",
+      "statement": "$\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\ \\frac {1}{3} \\qquad \\textbf{(D)} \\ \\frac {1}{2} \\qquad \\textbf{(E)} \\ 2$ Show that it is $\\text{E}$.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1731",
+      "natural_language": "Advance the argument (step 2689): continue from $\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\",
+      "statement": "Advance the argument (step 2689): continue from $\\textbf{(A)} \\ - 2 \\qquad \\textbf{(B)} \\ \\frac { -1 }{2} \\qquad \\textbf{(C)} \\",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.8728715609439697,
+      "support": null
+    },
+    {
+      "id": "l_dead_961",
+      "natural_language": "dead-end unused case 2691: discard this alternative",
+      "statement": "dead-end unused case 2691: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.20244408254472904,
+      "support": null
+    }
+  ]
+}

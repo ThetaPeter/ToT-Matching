@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2021_p18",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is the value of $z+\\frac 6z?$\n\n$\\textbf{(A) }-2 \\qquad \\textbf{(B) }-1 \\qquad \\textbf{(C) }\\frac12\\qquad \\textbf{(D) }1 \\qquad \\textbf{(E) }4$ Show that it is \\textbf{(A) }-2.",
+      "statement": "Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is the value of $z+\\frac 6z?$\n\n$\\textbf{(A) }-2 \\qquad \\textbf{(B) }-1 \\qquad \\textbf{(C) }\\frac12\\qquad \\textbf{(D) }1 \\qquad \\textbf{(E) }4$ Show that it is \\textbf{(A) }-2.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4195906791483446,
+      "support": null
+    },
+    {
+      "id": "l4000",
+      "natural_language": "Advance the argument (step 6218): continue from Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is",
+      "statement": "Advance the argument (step 6218): continue from Let $z$ be a complex number satisfying $12|z|^2=2|z+2|^2+|z^2+1|^2+31.$ What is",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.6593804733957871,
+      "support": null
+    }
+  ]
+}

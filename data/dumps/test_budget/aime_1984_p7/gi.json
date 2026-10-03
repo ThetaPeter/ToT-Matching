@@ -1,0 +1,194 @@
+{
+  "problem_id": "aime_1984_p7",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "We restate the theorem as the target claim to prove: f(84) equals 997.",
+      "statement": "f(84)=997",
+      "dependencies": [
+        "tc_1",
+        "tc_7",
+        "tc_9",
+        "tc_5",
+        "tc_6",
+        "tc_8",
+        "tc_10",
+        "tc_12",
+        "tc_13",
+        "tc_14"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_1",
+      "natural_language": "Since 84<1000 we have f(84)=f(f(89)).",
+      "statement": "f(84)=f(f(89))",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "For k=0..4, f(1000+k)=997+k by the n>=1000 case of the definition.",
+      "statement": "f(1000+k)=997+k (k=0..4)",
+      "dependencies": [],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "For m=995..999 we have f(m)=f(f(m+5))=f(m+2) after one unfolding and applying tc_2.",
+      "statement": "f(m)=f(m+2) (m=995..999)",
+      "dependencies": [
+        "tc_2"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_4",
+      "natural_language": "Since 89<1000 we have f(89)=f(f(94)), hence f(84)=f(f(f(94))).",
+      "statement": "f(84)=f(f(f(94)))",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_5",
+      "natural_language": "We unfold the recurrence until the argument is at least 1000, at which point the first clause applies.",
+      "statement": "f(84)=f(f(f(f(f(f(104))))))",
+      "dependencies": [
+        "tc_4"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_6",
+      "natural_language": "For n in [1000,1004], f(n)=n-3, so f(1000)=997, f(1001)=998, f(1002)=999, f(1003)=1000, f(1004)=1001.",
+      "statement": "f(n)=n-3 for n=1000..1004 (explicit values)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_7",
+      "natural_language": "For n in [995,999], unfold once to obtain f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998.",
+      "statement": "f(995)=f(997), f(996)=f(998), f(997)=f(999), f(998)=997, f(999)=998",
+      "dependencies": [
+        "tc_2",
+        "tc_3"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_8",
+      "natural_language": "Then f(997)=f(999)=998, f(996)=f(998)=997 and f(995)=f(997)=998.",
+      "statement": "f(995)=998, f(996)=997, f(997)=998",
+      "dependencies": [
+        "tc_7"
+      ],
+      "search_node_id": "sn_6",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_9",
+      "natural_language": "Since 94<1000 we have f(94)=f(f(99)), hence f(84)=f(f(f(f(99)))).",
+      "statement": "f(84)=f(f(f(f(99))))",
+      "dependencies": [
+        "tc_4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_10",
+      "natural_language": "Repeating the unfolding yields f(84)=f^{184}(1004) after 184 applications of n |-> n+5 starting from 84.",
+      "statement": "f(84)=f^{184}(1004)",
+      "dependencies": [
+        "tc_5",
+        "tc_9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_11",
+      "natural_language": "For 990\\le n\\le994 unfold once to get f(994)=f(f(999))=f(998)=997, f(993)=f(f(998))=f(997)=998, f(992)=f(f(997))=f(998)=997, f(991)=f(f(996))=f(997)=998 and f(990)=f(f(995))=f(998)=997.",
+      "statement": "f(990..994) values after one unfold using prior results",
+      "dependencies": [
+        "tc_8",
+        "tc_7"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_12",
+      "natural_language": "Thus on [990,999] one has f(n)=997 for even n and f(n)=998 for odd n.",
+      "statement": "f(n) = 997 (even n), 998 (odd n) on [990,999]",
+      "dependencies": [
+        "tc_11",
+        "tc_8"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_13",
+      "natural_language": "Since 184 is even, iterating f 184 times from 1004 lands on an even argument in [990,999], hence equals 997 by tc_12.",
+      "statement": "f^{184}(1004)=997",
+      "dependencies": [
+        "tc_10",
+        "tc_12",
+        "tc_6"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_14",
+      "natural_language": "Likewise substitute to obtain f(990)=f(f(995)), f(991)=f(f(996)) and f(992)=f(f(997)), which by the relations on [995,999] become nested applications of f to 997,998,999.",
+      "statement": "f(990)=f(f(997)), f(991)=f(f(998)), f(992)=f(f(999))",
+      "dependencies": [
+        "tc_7"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

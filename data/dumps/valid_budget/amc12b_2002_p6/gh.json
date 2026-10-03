@@ -1,0 +1,75 @@
+{
+  "problem_id": "amc12b_2002_p6",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "a and b are nonzero reals such that a and b are roots of x^2 + a x + b = 0",
+      "statement": "a,b ∈ ℝ \\ {0} ∧ roots(a,b; x^{2} + a x + b)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.9133462590326238,
+      "support": null
+    },
+    {
+      "id": "l2",
+      "natural_language": "Vieta's product: a b = b",
+      "statement": "a b = b",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.09449111825230681,
+      "support": null
+    },
+    {
+      "id": "l3",
+      "natural_language": "Since b≠0, dividing both sides of ab=b yields a=1",
+      "statement": "a=1",
+      "dependencies": [
+        "l2",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.15075567228888181,
+      "support": null
+    },
+    {
+      "id": "l4",
+      "natural_language": "By Vieta the sum of the roots also satisfies a+b=-a",
+      "statement": "a + b = -a",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Hence the pair is (1,-2)",
+      "statement": "(a,b) = (1,-2)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.31622776601683794,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Substituting a=1 into a+b=-a yields 1+b=-1",
+      "statement": "a=1 → 1 + b = -1",
+      "dependencies": [
+        "l3",
+        "l4"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.3333333333333334,
+      "support": null
+    }
+  ]
+}

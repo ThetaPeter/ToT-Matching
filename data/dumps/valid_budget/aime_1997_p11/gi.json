@@ -1,0 +1,187 @@
+{
+  "problem_id": "aime_1997_p11",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Define x as the given ratio of sums",
+      "statement": "x = (sum_{n=1 to 44} cos n°)/(sum_{n=1 to 44} sin n°)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "The greatest integer not exceeding 100x equals 241",
+      "statement": "floor(100x)=241",
+      "dependencies": [
+        "tc_1",
+        "l2",
+        "l7",
+        "l4",
+        "l9",
+        "l10",
+        "l11",
+        "l13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "The sums of sines and cosines of an arithmetic progression yield \\sum_{n=1}^{44} sin n° = (sin 22° sin 22.5°)/sin 0.5° and \\sum_{n=1}^{44} cos n° = (sin 22° cos 22.5°)/sin 0.5°",
+      "statement": "\\sum_{n=1}^{44}\\sin n^\\circ=\\frac{\\sin 22^\\circ\\sin 22.5^\\circ}{\\sin 0.5^\\circ} and \\sum_{n=1}^{44}\\cos n^\\circ=\\frac{\\sin 22^\\circ\\cos 22.5^\\circ}{\\sin 0.5^\\circ}",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Consequently x = cot 22.5°",
+      "statement": "x=\\cot 22.5^\\circ",
+      "dependencies": [
+        "l1",
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Since tan 45°=1=2 tan 22.5°/(1-tan² 22.5°), we obtain tan 22.5°=√2-1, hence x=cot 22.5°=√2+1",
+      "statement": "tan 45^\\circ=1=\\frac{2\\tan 22.5^\\circ}{1-\\tan^2 22.5^\\circ} \\implies \\tan 22.5^\\circ=\\sqrt{2}-1 \\implies x=\\cot 22.5^\\circ=\\sqrt{2}+1",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Thus 100x=100(1+√2). The bounds 1.41421<√2<1.41422 yield 241.421<100x<241.422, so floor(100x)=241",
+      "statement": "100x=100(1+\\sqrt{2}), \\quad 1.41421<\\sqrt{2}<1.41422 \\implies 241.421<100x<241.422 \\implies \\lfloor 100x\\rfloor=241",
+      "dependencies": [
+        "l3"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "It is well-known that cot 22.5°=1+√2",
+      "statement": "\\cot 22.5^\\circ=1+\\sqrt{2}",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "The half-angle formula yields tan 22.5°=√2-1, so x=1+√2",
+      "statement": "\\tan 22.5^\\circ=\\sqrt{2}-1 \\implies x=1+\\sqrt{2}",
+      "dependencies": [
+        "l5"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Thus 100x=100(1+√2). The bounds 1.41421<√2<1.41422 yield 241.421<100x<241.422, so floor(100x)=241",
+      "statement": "100x=100(1+\\sqrt{2}), \\quad 1.41421<\\sqrt{2}<1.41422 \\implies 241.421<100x<241.422 \\implies \\lfloor 100x\\rfloor=241",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "Using the double-angle formula for tangent at 45° yields tan 22.5°=\\sqrt2−1, hence x=cot 22.5°=\\sqrt2+1",
+      "statement": "tan 45^\\circ=1=\\frac{2\\tan 22.5^\\circ}{1-\\tan^2 22.5^\\circ} \\implies \\tan 22.5^\\circ=\\sqrt{2}-1 \\implies x=\\sqrt{2}+1",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Thus 100x=100(1+\\sqrt2). The bounds 1.41421<\\sqrt2<1.41422 yield 241.421<100x<241.422, so floor(100x)=241",
+      "statement": "100x=100(1+\\sqrt{2}), \\quad 1.41421<\\sqrt{2}<1.41422 \\implies 241.421<100x<241.422 \\implies \\lfloor 100x\\rfloor=241",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_10",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "The lower bound follows from \\(1.41421^2=1.9999928241<2\\), hence \\(\\sqrt{2}>1.41421\\).",
+      "statement": "1.41421^2=1.9999928241<2 \\implies \\sqrt{2}>1.41421",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "The upper bound follows from \\(1.41422^2=2.0000182084>2\\), hence \\(\\sqrt{2}<1.41422\\).",
+      "statement": "1.41422^2=2.0000182084>2 \\implies \\sqrt{2}<1.41422",
+      "dependencies": [],
+      "search_node_id": "sn_9",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Since tan 45°=1=2 tan 22.5°/(1-tan² 22.5°), we obtain tan 22.5°=√2-1, hence x=cot 22.5°=√2+1",
+      "statement": "tan 45^\\circ=1=\\frac{2\\tan 22.5^\\circ}{1-\\tan^2 22.5^\\circ} \\implies \\tan 22.5^\\circ=\\sqrt{2}-1 \\implies x=\\cot 22.5^\\circ=\\sqrt{2}+1",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "Thus 100x=100(1+√2). The bounds 1.41421<√2<1.41422 yield 241.421<100x<241.422, so floor(100x)=241",
+      "statement": "100x=100(1+\\sqrt{2}), \\quad 1.41421<\\sqrt{2}<1.41422 \\implies 241.421<100x<241.422 \\implies \\lfloor 100x\\rfloor=241",
+      "dependencies": [
+        "l12"
+      ],
+      "search_node_id": "sn_9",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

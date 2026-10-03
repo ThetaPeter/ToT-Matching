@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_89",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Simplify $(7b^3)^2 \\cdot (4b^2)^{-3},$ given that $b$ is non-zero. Show that it is \\frac{49}{64}.",
+      "statement": "Simplify $(7b^3)^2 \\cdot (4b^2)^{-3},$ given that $b$ is non-zero. Show that it is \\frac{49}{64}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l9183",
+      "natural_language": "Advance the argument (step 14281): continue from Simplify $(7b^3)^2 \\cdot (4b^2)^{-3},$ given that $b$ is non-zero. Show that it",
+      "statement": "Advance the argument (step 14281): continue from Simplify $(7b^3)^2 \\cdot (4b^2)^{-3},$ given that $b$ is non-zero. Show that it",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.700140042014005,
+      "support": null
+    },
+    {
+      "id": "l_dead_5101",
+      "natural_language": "dead-end unused case 14283: discard this alternative",
+      "statement": "dead-end unused case 14283: discard this alternative",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b3",
+      "salience": 0.4269408401788921,
+      "support": null
+    }
+  ]
+}

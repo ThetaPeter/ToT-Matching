@@ -1,0 +1,419 @@
+{
+  "problem_id": "amc12a_2003_p24",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assume a ≥ b > 1 are real numbers.",
+      "statement": "a ≥ b > 1",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Let t = log_a b. Then 0 < t ≤ 1.",
+      "statement": "t := log_a b ∧ 0 < t ≤ 1",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Rewrite the expression: log_a(a/b) + log_b(b/a) = 2 - (t + 1/t).",
+      "statement": "expr = 2 - (t + 1/t)",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "By AM-GM inequality, for t > 0 we have t + 1/t ≥ 2 with equality iff t = 1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Therefore expr ≤ 0 with equality when t=1 (i.e., a=b), so the largest possible value is 0.",
+      "statement": "expr ≤ 0 ∧ max(expr)=0",
+      "dependencies": [
+        "l2",
+        "l3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Let t=log_a b. Then 0<t\\le1 and the expression equals 2-t-1/t.",
+      "statement": "t := log_a b ∧ 0 < t ≤ 1 ∧ expr = 2 - t - 1/t",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l5",
+      "natural_language": "When a=b the expression equals 0; it remains to show the expression is always ≤ 0.",
+      "statement": "(a=b ⇒ expr=0) ∧ (expr ≤ 0)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_2",
+      "natural_language": "Therefore expr ≤ 0 with equality when t=1 (i.e., a=b), so the largest possible value is 0.",
+      "statement": "expr ≤ 0 ∧ max(expr)=0",
+      "dependencies": [
+        "l3",
+        "l5"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_3",
+      "natural_language": "The largest possible value is therefore 0, corresponding to choice (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l6",
+      "natural_language": "By AM-GM, t+1/t ≥ 2 for all t>0, with equality iff t=1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "Hence 2-t-1/t ≤ 0 on (0,1], so the original expression is at most 0.",
+      "statement": "expr ≤ 0 on (0,1]",
+      "dependencies": [
+        "l4",
+        "l6"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b3",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l8",
+      "natural_language": "By AM-GM, t + 1/t ≥ 2 for all t > 0, with equality iff t = 1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l9",
+      "natural_language": "Hence 2 - t - 1/t ≤ 0 on (0,1], with equality precisely when t = 1.",
+      "statement": "expr ≤ 0 on (0,1] ∧ (=0 ⇔ t=1)",
+      "dependencies": [
+        "l4",
+        "l8"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_4",
+      "natural_language": "Therefore expr ≤ 0 with equality when a = b, so the largest possible value is 0 and the answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l5",
+        "l9"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b4",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Let t = log_a b. Then 0 < t ≤ 1 and the expression equals 2 - t - 1/t.",
+      "statement": "t := log_a b ∧ 0 < t ≤ 1 ∧ expr = 2 - t - 1/t",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Rewrite as (1 - log_a b) + (1 - log_b a).",
+      "statement": "expr = (1 - log_a b) + (1 - log_b a)",
+      "dependencies": [
+        "l10"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_5",
+      "natural_language": "Therefore expr ≤ 0 with equality when a = b, so the largest possible value is 0 and the answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l3",
+        "l11"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b5",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_6",
+      "natural_language": "Therefore the largest possible value is 0, corresponding to choice (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "ts_4"
+      ],
+      "search_node_id": "sn_2",
+      "branch_id": "b6",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l12",
+      "natural_language": "Equality holds precisely when t=1, i.e., when a=b>1, so the bound 0 is attained.",
+      "statement": "(=0 ⇔ t=1) ∧ (a=b>1 ⇒ expr=0)",
+      "dependencies": [
+        "l9"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_7",
+      "natural_language": "Thus the original expression never exceeds 0, and the largest possible value is 0.",
+      "statement": "expr ≤ 0 ∧ max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l12",
+        "l5"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b7",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l13",
+      "natural_language": "When a=b then t=1 so expr=0, attaining the bound.",
+      "statement": "(a=b ⇒ expr=0) ∧ (bound attained)",
+      "dependencies": [
+        "l4"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_8",
+      "natural_language": "Thus expr ≤ 0 with equality at a=b, so largest value is 0 and answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l7",
+        "l13"
+      ],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l14",
+      "natural_language": "By AM-GM, t+1/t ≥ 2 for t>0, with equality iff t=1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l15",
+      "natural_language": "Hence 2-t-1/t ≤ 0 on (0,1], so the original expression is always ≤ 0.",
+      "statement": "expr ≤ 0 on (0,1]",
+      "dependencies": [
+        "l4",
+        "l14"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_9",
+      "natural_language": "Therefore expr ≤ 0 with equality when a=b, so the largest possible value is 0 and the answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l5",
+        "l15"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l16",
+      "natural_language": "By AM-GM, t + 1/t ≥ 2 for all t > 0, with equality iff t = 1.",
+      "statement": "∀t>0 (t + 1/t ≥ 2) ∧ (=2 ⇔ t=1)",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_10",
+      "natural_language": "Hence expr = 2 - (t + 1/t) ≤ 0 on (0,1], with equality precisely when t = 1 (i.e., a = b). Thus the largest possible value is 0 and the answer is (B).",
+      "statement": "expr ≤ 0 on (0,1] ∧ (=0 ⇔ t=1) ∧ max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l4",
+        "l5",
+        "l16"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b10",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l17",
+      "natural_language": "The proof is complete: the expression equals 2-t-1/t \\le 0 with equality at t=1.",
+      "statement": "expr = 2-t-1/t \\wedge expr \\le 0 \\wedge (=0 \\leftrightarrow t=1)",
+      "dependencies": [
+        "l4",
+        "l14"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l18",
+      "natural_language": "Direct substitution a=b>1 recovers the value 0, confirming it is attained.",
+      "statement": "(a=b>1 \to expr=0) \\wedge (bound attained)",
+      "dependencies": [
+        "l17"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_11",
+      "natural_language": "Thus expr \\le 0 with equality at a=b, so largest value is 0 and answer is (B).",
+      "statement": "max(expr)=0 \\wedge answer=B",
+      "dependencies": [
+        "l18",
+        "l5"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_12",
+      "natural_language": "The largest possible value is therefore 0, corresponding to choice (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "ts_7"
+      ],
+      "search_node_id": "sn_7",
+      "branch_id": "b12",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "l19",
+      "natural_language": "Equality holds precisely when t=1, i.e., when a=b>1, so the bound 0 is attained.",
+      "statement": "(=0 ⇔ t=1) ∧ (a=b>1 ⇒ expr=0)",
+      "dependencies": [
+        "l14",
+        "l15"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_13",
+      "natural_language": "Thus the original expression never exceeds 0 and the largest possible value is 0.",
+      "statement": "expr ≤ 0 ∧ max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l19",
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": null,
+      "support": 0.0
+    },
+    {
+      "id": "ts_14",
+      "natural_language": "Therefore expr ≤ 0 with equality when a=b, so the largest possible value is 0 and the answer is (B).",
+      "statement": "max(expr)=0 ∧ answer=B",
+      "dependencies": [
+        "l14",
+        "l15",
+        "l5"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b14",
+      "salience": null,
+      "support": 0.0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+The given equations may be written in the form
+\[
+\sum_j\frac{a_j}{p_k-q_j}=1\qquad(k=1,2,3,4),
+\]
+where \(a=(x^2,y^2,z^2,w^2)\), \(p_k=(2k)^2\) and \(q_j=(2j-1)^2\). Equivalently, they constitute the Cauchy system \(C\mathbf{v}=\mathbf{1}\) with entries \(C_{jk}=1/(e_j^2-o_k^2)\) and unknown vector \(\mathbf{v}=(x^2,y^2,z^2,w^2)\). Consequently the desired sum equals \(\sum v_k\).
+
+Define the monic degree-4 polynomials
+\[
+Q(s)=\prod_{k=0}^3\bigl(s-(2k+1)^2\bigr),\qquad P(s)=\prod_{j=1}^4\bigl(s-(2j)^2\bigr).
+\]
+The Cauchy interpolation identity then yields the rational-function identity
+\[
+\sum_k\frac{v_k}{s-o_k^2}=1-\frac{P(s)}{Q(s)}
+\]
+valid for all \(s\). Both \(P\) and \(Q\) being monic of degree 4, the coefficient of \(s^3\) in \(Q-P\) is precisely \(\sum e_j^2-\sum o_k^2\). Hence, as \(s\to\infty\),
+\[
+1-\frac{P(s)}{Q(s)}\sim\Bigl(\sum e_j^2-\sum o_k^2\Bigr)s^{-1}.
+\]
+The left-hand side of the identity has the same leading coefficient \(\sum v_k\), so
+\[
+\sum v_k=\sum e_j^2-\sum o_k^2.
+\]
+The elementary sums are \(\sum p_k=4+16+36+64=120\) and \(\sum q_j=1+9+25+49=84\), and therefore
+\[
+\sum v_k=120-84=36.
+\]
+(The same value is recovered by evaluating the residues \(v_k=-P(o_k^2)/Q'(o_k^2)\) and summing them.) Thus
+\[
+x^2+y^2+z^2+w^2=36.
+\]

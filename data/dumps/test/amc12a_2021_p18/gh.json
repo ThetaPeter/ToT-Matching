@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2021_p18",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let $f$ be a function defined on the set of positive rational numbers with the property that $f(a\\cdot b)=f(a)+f(b)$ for all positive rational numbers $a$ and $b$. Suppose that $f$ also has the property that $f(p)=p$ for every prime number $p$. For which of the following numbers $x$ is $f(x)<0$?\n\n$\\textbf{(A) }\\frac{17}{32} \\qquad \\textbf{(B) }\\frac{11}{16} \\qquad \\textbf{(C) }\\frac79 \\qquad \\textbf{(D) }\\frac76\\qquad \\textbf{(E) }\\frac{25}{11}$ Show that it is \\textbf{(E) }\\frac{25}{11}.",
+      "statement": "Let $f$ be a function defined on the set of positive rational numbers with the property that $f(a\\cdot b)=f(a)+f(b)$ for all positive rational numbers $a$ and $b$. Suppose that $f$ also has the property that $f(p)=p$ for every prime number $p$. For which of the following numbers $x$ is $f(x)<0$?\n\n$\\textbf{(A) }\\frac{17}{32} \\qquad \\textbf{(B) }\\frac{11}{16} \\qquad \\textbf{(C) }\\frac79 \\qquad \\textbf{(D) }\\frac76\\qquad \\textbf{(E) }\\frac{25}{11}$ Show that it is \\textbf{(E) }\\frac{25}{11}.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l3027",
+      "natural_language": "Advance the argument (step 4705): continue from Let $f$ be a function defined on the set of positive rational numbers with the p",
+      "statement": "Advance the argument (step 4705): continue from Let $f$ be a function defined on the set of positive rational numbers with the p",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.5784135302545808,
+      "support": null
+    },
+    {
+      "id": "l3028",
+      "natural_language": "Advance the argument (step 4706): continue from Let $f$ be a function defined on the set of positive rational numbers with the p",
+      "statement": "Advance the argument (step 4706): continue from Let $f$ be a function defined on the set of positive rational numbers with the p",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.43222768231970504,
+      "support": null
+    }
+  ]
+}

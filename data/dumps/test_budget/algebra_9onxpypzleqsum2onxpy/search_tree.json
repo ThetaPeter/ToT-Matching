@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_9onxpypzleqsum2onxpy",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim": "[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.8,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]",
+      "last_claim": "[\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.95,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim": "Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim_id": "l_amhm",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\nContinue from:\n[\"Apply Titu's lemma (Cauchy\u2013Schwarz in Engel form) to obtain \\(\\frac{1}{x+y}+\\frac{1}{y+z}+\\frac{1}{z+x}\\ge\\frac{9}{2(x+y+z)}\\).\",\"By homogeneity it is enough to prove the inequality under the additional assumption \\(x+y+z=1\\).\"]",
+      "last_claim": "[\"Apply Titu's lemma (Cauchy\u2013Schwarz in Engel form) to obtain \\(\\frac{1}{x+y}+\\frac{1}{y+z}+\\frac{1}{z+x}\\ge\\frac{9}{2(x+y+z)}\\).\",\"By homogeneity it is enough to prove the inequality under the additional assumption \\(x+y+z=1\\).\"]",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]",
+      "last_claim": "[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_4",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]\n[\"Equality holds in AM-HM precisely when \\(x+y=y+z=z+x\\), hence when \\(x=y=z\\).\",\"Equality holds in Titu/Cauchy when \\(x+y=y+z=z+x\\), hence when \\(x=y=z\\).\"]",
+      "last_claim": "[\"Equality holds in AM-HM precisely when \\(x+y=y+z=z+x\\), hence when \\(x=y=z\\).\",\"Equality holds in Titu/Cauchy when \\(x+y=y+z=z+x\\), hence when \\(x=y=z\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]\nContinue from: [\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]",
+      "last_claim": "Continue from: [\"AM-HM applied to \\(x+y\\), \\(y+z\\), \\(z+x\\) yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the desired inequality.\",\"Titu's lemma already produces \\(\\sum\\frac{1}{x+y}\\ge\\frac{9}{2(x+y+z)}\\); multiplying through by 2 gives the claimed bound.\"]",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]\n[\"Equality holds if and only if \\(x=y=z\\).\",\"The claimed inequality is homogeneous of degree \\(-1\\).\"]",
+      "last_claim": "[\"Equality holds if and only if \\(x=y=z\\).\",\"The claimed inequality is homogeneous of degree \\(-1\\).\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.2,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]\nContinue from: [\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]",
+      "last_claim": "Continue from: [\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\), which rearranges to the target inequality.\",\"Multiplying the Titu bound by 2 immediately produces \\(\\sum 2/(x+y)\\ge 9/(x+y+z)\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\n[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\).\",\"Multiplying Titu's inequality by 2 immediately yields the claimed bound.\"]",
+      "last_claim": "[\"The AM-HM inequality yields \\(\\frac{2(x+y+z)}{3}\\ge\\frac{3}{\\sum 1/(x+y)}\\).\",\"Multiplying Titu's inequality by 2 immediately yields the claimed bound.\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "Show that for any three positive real numbers $x$, $y$, and $z$, $9/(x+y+z)\\leq 2/(x+y)+2/(y+z)+2/(z+x)$.\n[\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]\nContinue from: Continue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim": "Continue from: Continue from: Continue from: [\"By AM-HM on the positive numbers \\(x+y\\), \\(y+z\\), \\(z+x\\).\",\"By Titu's lemma: \\(\\sum\\frac{1^2}{x+y}\\ge\\frac{9}{2(x+y+z)}\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

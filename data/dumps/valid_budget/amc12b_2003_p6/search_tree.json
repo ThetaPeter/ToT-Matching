@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12b_2003_p6",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim": "[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim_id": "tc_0",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.85,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\nContinue from:\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\), so that the second term is \\(ar=2\\) and the fourth term is \\(ar^3=6\\).\", \"Dividing the fourth term by the second term yields \\(r^2=3\\).\"]",
+      "last_claim": "[\"Let the first term be \\(a\\) and the common ratio be \\(r\\), so that the second term is \\(ar=2\\) and the fourth term is \\(ar^3=6\\).\", \"Dividing the fourth term by the second term yields \\(r^2=3\\).\"]",
+      "last_claim_id": "tc_2",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.8,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim": "[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\nContinue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim": "Continue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_5",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\n[\"Hence the possible values of the first term are \\(\\dfrac{2\\sqrt{3}}{3}\\) and \\(-\\dfrac{2\\sqrt{3}}{3}\\).\", \"Only the latter value appears among the given answer choices.\"]",
+      "last_claim": "[\"Hence the possible values of the first term are \\(\\dfrac{2\\sqrt{3}}{3}\\) and \\(-\\dfrac{2\\sqrt{3}}{3}\\).\", \"Only the latter value appears among the given answer choices.\"]",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_5",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\nContinue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim": "Continue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_6",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\nContinue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the two equations gives \\(r^2=3\\).\", \"Hence \\(r=\\sqrt{3}\\) or \\(r=-\\sqrt{3}\\).\"]",
+      "last_claim": "[\"Dividing the two equations gives \\(r^2=3\\).\", \"Hence \\(r=\\sqrt{3}\\) or \\(r=-\\sqrt{3}\\).\"]",
+      "last_claim_id": "l17",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_6",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\nContinue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\nContinue from: Continue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]",
+      "last_claim_id": "l19",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\n[\"Hence the possible values of the first term are \\(\\dfrac{2\\sqrt{3}}{3}\\) and \\(-\\dfrac{2\\sqrt{3}}{3}\\).\", \"Only the latter value appears among the given answer choices.\"]\nTherefore a possible first term is \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "last_claim": "Therefore a possible first term is \\(-\\frac{2\\sqrt{3}}{3}\\).",
+      "last_claim_id": "ts_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\n[\"Hence the possible values of the first term are \\(\\dfrac{2\\sqrt{3}}{3}\\) and \\(-\\dfrac{2\\sqrt{3}}{3}\\).\", \"Only the latter value appears among the given answer choices.\"]\nThis matches choice (B).",
+      "last_claim": "This matches choice (B).",
+      "last_claim_id": "l22",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\nContinue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\n[\"Both values of \\(a\\) work, as \\(ar^3=(ar)r^2=2\\cdot3=6\\).\", \"Only \\(-\\frac{2\\sqrt{3}}{3}\\) is among the choices, hence (B).\"]",
+      "last_claim": "[\"Both values of \\(a\\) work, as \\(ar^3=(ar)r^2=2\\cdot3=6\\).\", \"Only \\(-\\frac{2\\sqrt{3}}{3}\\) is among the choices, hence (B).\"]",
+      "last_claim_id": "l23",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The second and fourth terms of a geometric sequence are $2$ and $6$. Which of the following is a possible first term?\n\n$\\textbf{(A) } -\\sqrt{3}  \\qquad\\textbf{(B) } -\\frac{2\\sqrt{3}}{3} \\qquad\\textbf{(C) } -\\frac{\\sqrt{3}}{3} \\qquad\\textbf{(D) } \\sqrt{3} \\qquad\\textbf{(E) } 3$ Show that it is \\textbf{(B)}\\ -\\frac{2\\sqrt{3}}{3}.\n[\"Let the first term be \\(a\\) and the common ratio be \\(r\\).\", \"The given terms then satisfy \\(ar=2\\) and \\(ar^3=6\\).\"]\n[\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\nContinue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]\nContinue from: Continue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim": "Continue from: Continue from: [\"Dividing the equations yields \\(r^2=3\\).\", \"Thus \\(r=\\pm\\sqrt{3}\\) and \\(a=2/r=\\pm\\frac{2\\sqrt{3}}{3}\\).\"]",
+      "last_claim_id": "l25",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b3",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

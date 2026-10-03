@@ -1,0 +1,49 @@
+{
+  "problem_id": "aime_1997_p9",
+  "nodes": [
+    {
+      "id": "tc_3",
+      "natural_language": "Since 1/sqrt(3)<a^{-1}<1/sqrt(2)<1, we have <a^{-1}>=a^{-1}",
+      "statement": "⟨ a^{-1} ⟩ = a^{-1}",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.17407765595569785,
+      "support": null
+    },
+    {
+      "id": "tc_12",
+      "natural_language": "multiply by a to obtain cubic equation a^3-2a-1=0",
+      "statement": "a^3-2a-1=0",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.43301270189221946,
+      "support": null
+    },
+    {
+      "id": "tc_13",
+      "natural_language": "a satisfies a^3=2a+1 so higher powers reduce via recurrence",
+      "statement": "a^3=2a+1",
+      "dependencies": [
+        "tc_12"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.4029114820126901,
+      "support": null
+    },
+    {
+      "id": "tc_14",
+      "natural_language": "recurrence yields a^{12}=144 a^{-1}+233",
+      "statement": "a^{12}=144 a^{-1}+233",
+      "dependencies": [
+        "tc_13"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.21320071635561047,
+      "support": null
+    }
+  ]
+}

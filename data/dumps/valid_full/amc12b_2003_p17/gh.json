@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12b_2003_p17",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.",
+      "statement": "If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\ -\\frac 12 \n\\qquad\\mathrm{(B)}\\ 0 \n\\qquad\\mathrm{(C)}\\ \\frac 12\n\\qquad\\mathrm{(D)}\\ \\frac 35 \n\\qquad\\mathrm{(E)}\\ 1$ Show that it is \\mathrm{(D)} \\frac 35.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l3837",
+      "natural_language": "Advance the argument (step 5965): continue from If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\",
+      "statement": "Advance the argument (step 5965): continue from If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.64048986934008,
+      "support": null
+    },
+    {
+      "id": "l3838",
+      "natural_language": "Advance the argument (step 5966): continue from If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\",
+      "statement": "Advance the argument (step 5966): continue from If $\\log (xy^3) = 1$ and $\\log (x^2y) = 1$, what is $\\log (xy)$?\n\n$\\mathrm{(A)}\\",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.3283053930987497,
+      "support": null
+    }
+  ]
+}

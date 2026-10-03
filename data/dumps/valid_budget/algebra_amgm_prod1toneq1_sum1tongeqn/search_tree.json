@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_amgm_prod1toneq1_sum1tongeqn",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]",
+      "last_claim": "[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]",
+      "last_claim_id": "l1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.8,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\n[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]",
+      "last_claim": "[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.9,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\nContinue from: [\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]",
+      "last_claim": "Continue from: [\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.5,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nIf some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "last_claim": "If some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.85,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nProceed by induction on n.",
+      "last_claim": "Proceed by induction on n.",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.7,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\n[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]\n[\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]",
+      "last_claim": "[\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\n[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]\nContinue from: [\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]",
+      "last_claim": "Continue from: [\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]",
+      "last_claim_id": "ts_9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nIf some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.\n[\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]",
+      "last_claim": "[\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]",
+      "last_claim_id": "l12",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nIf some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.\nContinue from: If some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "last_claim": "Continue from: If some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.6,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nIf some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.\n[\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]\n[\"The case \\(n=1\\) is immediate, since \\(a_0=1\\) forces the sum to equal \\(1\\).\", \"Assume the claim holds for products of length \\(n-1\\ge1\\); for length \\(n\\) apply the inductive hypothesis after rescaling two of the factors so that their product is \\(1\\).\"]",
+      "last_claim": "[\"The case \\(n=1\\) is immediate, since \\(a_0=1\\) forces the sum to equal \\(1\\).\", \"Assume the claim holds for products of length \\(n-1\\ge1\\); for length \\(n\\) apply the inductive hypothesis after rescaling two of the factors so that their product is \\(1\\).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.3,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_9",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\nContinue from:\nIf some a_i=0 then the product vanishes, contradicting the hypothesis, so every a_i>0.\n[\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]\nContinue from: [\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]",
+      "last_claim": "Continue from: [\"By the AM-GM inequality, \\(\\frac1n\\sum_{i=0}^{n-1}a_i\\ge\\bigl(\\prod_{i=0}^{n-1}a_i\\bigr)^{1/n}=1\\), hence \\(\\sum a_i\\ge n\\).\", \"We proceed by induction on \\(n\\).\"]",
+      "last_claim_id": "l18",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\n[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]\n[\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]\n[\"From a_{n-1}\\ge1 and a_{n-2}\\le1 we obtain (a_{n-1}-1)(1-a_{n-2})\\ge0, which rearranges to a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}.\",\"The (n-1)-tuple (a_0,\\ldots,a_{n-3},a_{n-1}a_{n-2}) is nonnegative and has product 1, so the inductive hypothesis supplies \\sum_{i=0}^{n-3}a_i+a_{n-1}a_{n-2}\\ge n-1, and adding the preceding inequality yields the desired bound for n.\"]",
+      "last_claim": "[\"From a_{n-1}\\ge1 and a_{n-2}\\le1 we obtain (a_{n-1}-1)(1-a_{n-2})\\ge0, which rearranges to a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}.\",\"The (n-1)-tuple (a_0,\\ldots,a_{n-3},a_{n-1}a_{n-2}) is nonnegative and has product 1, so the inductive hypothesis supplies \\sum_{i=0}^{n-3}a_i+a_{n-1}a_{n-2}\\ge n-1, and adding the preceding inequality yields the desired bound for n.\"]",
+      "last_claim_id": "l20",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.9,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_7",
+      "proof_state": "Show that for any real-valued function $a$ on the natural numbers such that $\\forall i \\in \\mathbb{N}, a_i \\geq 0$, if $prod_{i=0}^{n-1} a_i = 1$, then $sum_{i=0}^{n-1} a_i \\geq n$.\n[\"We proceed by induction on n (base n=1 is immediate; for the inductive step we may assume without loss of generality that a_{n-1} \\ge 1 and a_{n-2} \\le 1).\",\"The claim is the AM-GM inequality applied to the n-tuple (a_0,\\ldots,a_{n-1}).\"]\n[\"If a_{n-1}\\ge1 and a_{n-2}\\le1 then (a_{n-1}-1)(1-a_{n-2})\\ge0, hence a_{n-1}+a_{n-2}\\ge1+a_{n-1}a_{n-2}; the (n-1)-tuple with last entry a_{n-1}a_{n-2} has product 1, so the inductive hypothesis yields the desired bound.\",\"By the AM-GM inequality the arithmetic mean of a_0,\\ldots,a_{n-1} is at least the geometric mean, which equals 1, and the claimed inequality follows at once.\"]\n[\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]\nContinue from: [\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]",
+      "last_claim": "Continue from: [\"If every a_i\\ge1 then the product constraint forces all a_i=1 (hence the sum equals n); likewise if every a_i\\le1. Thus some term is \\ge1 and some term is \\le1, so after relabeling we may assume a_{n-1}\\ge1 and a_{n-2}\\le1.\",\"Equality holds in AM-GM if and only if a_0=\\cdots=a_{n-1}, which together with the product constraint forces every a_i=1.\"]",
+      "last_claim_id": "l10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b8",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

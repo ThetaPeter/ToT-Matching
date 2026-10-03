@@ -1,0 +1,69 @@
+{
+  "problem_id": "aime_1999_p11",
+  "nodes": [
+    {
+      "id": "l6",
+      "natural_language": "Apply formula with a=d=5°, n=35 yields [sin(87.5°)/sin(2.5°)] sin(90°)",
+      "statement": "sum = [sin(87.5°)/sin(2.5°)] sin(90°)=sin(87.5°)/sin(2.5°)",
+      "dependencies": [],
+      "search_node_id": "sn_2",
+      "branch_id": "b3",
+      "salience": 0.20412414523193154,
+      "support": null
+    },
+    {
+      "id": "l12",
+      "natural_language": "cot(2.5°)=tan(87.5°), hence m=175, n=2 and m+n=177",
+      "statement": "sum = tan(175/2) with m=175,n=2 coprime and m/n<90 implies m+n=177",
+      "dependencies": [],
+      "search_node_id": "sn_3",
+      "branch_id": "b8",
+      "salience": 0.33968311024337877,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Thus the given sum equals tan(87.5°)",
+      "statement": "sum_{k=1}^{35} sin(5k°) = tan(87.5°)",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.4082482904638631,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Hence m/n=175/2 with m,n coprime, so m+n=177",
+      "statement": "sum = tan(175/2) with m=175,n=2 coprime and m/n<90 implies m+n=177",
+      "dependencies": [
+        "l8"
+      ],
+      "search_node_id": "sn_4",
+      "branch_id": "b9",
+      "salience": 0.32732683535398865,
+      "support": null
+    },
+    {
+      "id": "l15",
+      "natural_language": "sum = cot(2.5°)=tan(87.5°)=tan(175/2)",
+      "statement": "sum = tan(175/2)",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b11",
+      "salience": 0.19245008972987526,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "sum = sin(87.5°)/sin(2.5°)=cos(2.5°)/sin(2.5°)=cot(2.5°)",
+      "statement": "sum = cot(2.5°)",
+      "dependencies": [
+        "l6"
+      ],
+      "search_node_id": "sn_8",
+      "branch_id": "b13",
+      "salience": 0.5222329678670936,
+      "support": null
+    }
+  ]
+}

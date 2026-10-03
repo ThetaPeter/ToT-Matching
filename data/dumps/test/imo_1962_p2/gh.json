@@ -1,0 +1,39 @@
+{
+  "problem_id": "imo_1962_p2",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Determine all real numbers $x$ which satisfy the inequality:\n\n<center>\n$\\sqrt{\\sqrt{3-x}-\\sqrt{x+1}}>\\dfrac{1}{2}$\n</center> Show that it is \\left[ ~ -1,\\quad 1-\\dfrac{\\sqrt{127}}{32} ~ \\right).",
+      "statement": "Determine all real numbers $x$ which satisfy the inequality:\n\n<center>\n$\\sqrt{\\sqrt{3-x}-\\sqrt{x+1}}>\\dfrac{1}{2}$\n</center> Show that it is \\left[ ~ -1,\\quad 1-\\dfrac{\\sqrt{127}}{32} ~ \\right).",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l1",
+      "natural_language": "We restate the theorem as the target claim to prove.",
+      "statement": "We restate the theorem as the target claim to prove.",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.370251191077329,
+      "support": null
+    },
+    {
+      "id": "l4324",
+      "natural_language": "Advance the argument (step 6722): continue from Determine all real numbers $x$ which satisfy the inequality:\n\n<center>\n$\\sqrt{\\s",
+      "statement": "Advance the argument (step 6722): continue from Determine all real numbers $x$ which satisfy the inequality:\n\n<center>\n$\\sqrt{\\s",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5118906968889915,
+      "support": null
+    }
+  ]
+}

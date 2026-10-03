@@ -1,0 +1,138 @@
+{
+  "problem_id": "amc12b_2020_p5",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Let a be the number of games played by A. Then A won (2/3)a games and lost (1/3)a games.",
+      "statement": "wins_A = (2/3)a ∧ losses_A = (1/3)a",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_2",
+      "natural_language": "Let b be the number of games played by B. Then B won (5/8)b games and lost (3/8)b games.",
+      "statement": "wins_B = (5/8)b ∧ losses_B = (3/8)b",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "tc_3",
+      "natural_language": "B won 7 more games than A and lost 7 more games than A.",
+      "statement": "wins_B = wins_A + 7 ∧ losses_B = losses_A + 7",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l1",
+      "natural_language": "Substitute the expressions from tc_1 and tc_2 into the equations of tc_3 to obtain the system (5/8)b = (2/3)a + 7 and (3/8)b = (1/3)a + 7.",
+      "statement": "(5/8)b = (2/3)a + 7 ∧ (3/8)b = (1/3)a + 7",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l2",
+      "natural_language": "Multiply the first equation by 24 and the second by 24 to clear denominators, yielding 15b = 16a + 168 and 9b = 8a + 168.",
+      "statement": "15b = 16a + 168 ∧ 9b = 8a + 168",
+      "dependencies": [
+        "l1"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l3",
+      "natural_language": "Subtract the second simplified equation from the first to obtain 6b = 8a, hence b = (4/3)a.",
+      "statement": "b = (4/3)a",
+      "dependencies": [
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l4",
+      "natural_language": "Substitute b = (4/3)a into 9b = 8a + 168 to obtain 9*(4/3)a = 8a + 168, which simplifies to 12a = 8a + 168, hence 4a = 168 and a = 42.",
+      "statement": "a = 42",
+      "dependencies": [
+        "l3",
+        "l2"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "ts_1",
+      "natural_language": "Team A has played 42 games, which is answer choice (C).",
+      "statement": "a = 42 ∧ answer = C",
+      "dependencies": [
+        "l4",
+        "l11"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l7",
+      "natural_language": "The given conditions yield the two equations \\(\\frac{5}{8}b=\\frac{2}{3}a+7\\) and \\(\\frac{3}{8}b=\\frac{1}{3}a+7\\).",
+      "statement": "(5/8)b = (2/3)a + 7 ∧ (3/8)b = (1/3)a + 7",
+      "dependencies": [
+        "tc_1",
+        "tc_2",
+        "tc_3"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l10",
+      "natural_language": "Subtracting the two equations from l7 yields (1/4)b = (1/3)a, hence b = (4/3)a.",
+      "statement": "(1/4)b = (1/3)a ∧ b = (4/3)a",
+      "dependencies": [
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    },
+    {
+      "id": "l11",
+      "natural_language": "Substitute b = (4/3)a into the second equation of l7 to obtain 9*(4/3)a = 8a + 168, hence 12a = 8a + 168, so a = 42.",
+      "statement": "a = 42",
+      "dependencies": [
+        "l10",
+        "l7"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": null,
+      "support": 1.0
+    }
+  ]
+}

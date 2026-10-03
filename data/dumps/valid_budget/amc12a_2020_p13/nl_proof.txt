@@ -1,0 +1,29 @@
+From the given identity
+\[
+\sqrt[a]{\bigl(N\sqrt[b]{\bigl(N\sqrt[c]{N}\bigr)}\bigr)}=\sqrt[36]{N^{25}},
+\]
+rewrite the left-hand side by successive extraction of roots to obtain
+\[
+N^{[1+(1+1/c)/b]/a}.
+\]
+Equating exponents with the right-hand side therefore yields
+\[
+\frac{1+(1+1/c)/b}{a}=\frac{25}{36}.
+\]
+Clearing the remaining denominators produces the Diophantine relation
+\[
+36(bc+c+1)=25abc,
+\]
+which may equivalently be written
+\[
+36\bigl[(b+1)c+1\bigr]=25abc.
+\]
+The first form immediately implies the congruence
+\[
+bc+c+1\equiv0\pmod{25}.
+\]
+Combined with the same relation it also forces
+\[
+36\mid abc.
+\]
+The only triple of positive integers \(a,b,c\) satisfying the last three conditions simultaneously is \(a=4\), \(b=3\), \(c=6\). In particular \(b=3\).

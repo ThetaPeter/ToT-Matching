@@ -1,0 +1,204 @@
+{
+  "problem_id": "amc12a_2013_p7",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.",
+      "last_claim": "",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_8 = S_9 - S_7 = 68",
+      "last_claim": "S_8 = S_9 - S_7 = 68",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.9,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26",
+      "last_claim": "S_6 = S_8 - S_7 = 26",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_2",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16",
+      "last_claim": "S_5 = S_7 - S_6 = 16",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_2",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_4 = S_6 - S_5 = 10",
+      "last_claim": "S_4 = S_6 - S_5 = 10",
+      "last_claim_id": "l3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.4,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_1",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_8 = S_9 - S_7 = 68\nS_6 = S_8 - S_7 = 26",
+      "last_claim": "S_6 = S_8 - S_7 = 26",
+      "last_claim_id": "l5",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_1",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_8 = S_9 - S_7 = 68\nS_5 = S_7 - S_6 = 16",
+      "last_claim": "S_5 = S_7 - S_6 = 16",
+      "last_claim_id": "l7",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.3,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nS_4 = S_6 - S_5 = 10",
+      "last_claim": "S_4 = S_6 - S_5 = 10",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nThus S_4 = 10",
+      "last_claim": "Thus S_4 = 10",
+      "last_claim_id": "l9",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_5",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_8 = S_9 - S_7 = 68\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16",
+      "last_claim": "S_5 = S_7 - S_6 = 16",
+      "last_claim_id": "l11",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_5",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_8 = S_9 - S_7 = 68\nS_6 = S_8 - S_7 = 26\nS_4 = S_6 - S_5 = 10",
+      "last_claim": "S_4 = S_6 - S_5 = 10",
+      "last_claim_id": "l13",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.2,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_7",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nS_4 = S_6 - S_5 = 10\n[\"Therefore \\(S_4=10\\).\", \"This is choice \\(\\textbf{(C)}\\).\"]",
+      "last_claim": "[\"Therefore \\(S_4=10\\).\", \"This is choice \\(\\textbf{(C)}\\).\"]",
+      "last_claim_id": "l14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_7",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nS_4 = S_6 - S_5 = 10\nContinue from: S_4 = S_6 - S_5 = 10",
+      "last_claim": "Continue from: S_4 = S_6 - S_5 = 10",
+      "last_claim_id": "l8",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_8",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nThus S_4 = 10\n[\"We verify consistency: S_8=S_9-S_7=68 and S_6=S_8-S_7=26.\"]",
+      "last_claim": "[\"We verify consistency: S_8=S_9-S_7=68 and S_6=S_8-S_7=26.\"]",
+      "last_claim_id": "l15",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_8",
+      "proof_state": "The sequence $S_1, S_2, S_3, \\cdots, S_{10}$ has the property that every term beginning with the third is the sum of the previous two.  That is, $ S_n = S_{n-2} + S_{n-1} \\text{ for } n \\ge 3. $ Suppose that $S_9 = 110$ and $S_7 = 42$.  What is $S_4$?\n\n$ \\textbf{(A)}\\ 4\\qquad\\textbf{(B)}\\ 6\\qquad\\textbf{(C)}\\ 10\\qquad\\textbf{(D)}\\ 12\\qquad\\textbf{(E)}\\ 16\\qquad $ Show that it is \\textbf{(C) }{10}.\nS_6 = S_8 - S_7 = 26\nS_5 = S_7 - S_6 = 16\nThus S_4 = 10\n[\"S_4=S_6-S_5=26-16=10, matching option (C).\"]",
+      "last_claim": "[\"S_4=S_6-S_5=26-16=10, matching option (C).\"]",
+      "last_claim_id": "l16",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b4",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b9",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}

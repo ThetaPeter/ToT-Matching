@@ -1,0 +1,72 @@
+{
+  "problem_id": "algebra_abpbcpcageq3_sumaonsqrtapbgeq3onsqrt2",
+  "nodes": [
+    {
+      "id": "ts_1",
+      "natural_language": "Under the given conditions, the inequality 3/sqrt(2) <= a/sqrt(a+b) + b/sqrt(b+c) + c/sqrt(c+a) holds.",
+      "statement": "3/sqrt(2) <= a/sqrt(a+b) + b/sqrt(b+c) + c/sqrt(c+a)",
+      "dependencies": [
+        "l10",
+        "l11",
+        "l18"
+      ],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l8",
+      "natural_language": "Let s=a+b+c. Then s²≥3(ab+bc+ca)=9, hence s≥3.",
+      "statement": "ab+bc+ca=3 → s=a+b+c ≥3",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.22645540682891918,
+      "support": null
+    },
+    {
+      "id": "l9",
+      "natural_language": "Apply Cauchy-Schwarz in the form (sum a/√(a+b))^2 ≥ (a+b+c)^2 / sum(a+b).",
+      "statement": "(sum a/√(a+b))^2 ≥ s^2 / sum(a+b)",
+      "dependencies": [],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.3077287274483319,
+      "support": null
+    },
+    {
+      "id": "l10",
+      "natural_language": "Since sum(a+b)=2s the CS bound simplifies to sum ≥ s/√2, and with s≥3 we obtain sum ≥3/√2.",
+      "statement": "sum a/√(a+b) ≥ s/√2 ≥3/√2",
+      "dependencies": [
+        "l8",
+        "l9"
+      ],
+      "search_node_id": "sn_1",
+      "branch_id": "b5",
+      "salience": 0.14625448482542613,
+      "support": null
+    },
+    {
+      "id": "l11",
+      "natural_language": "It suffices to assume ab+bc+ca=3, as scaling the variables by k>1 strictly increases the target sum while the constraint is quadratic.",
+      "statement": "ab+bc+ca>3 → ∑ a/√(a+b) > 3/√2",
+      "dependencies": [],
+      "search_node_id": "sn_4",
+      "branch_id": "b7",
+      "salience": 0.0,
+      "support": null
+    },
+    {
+      "id": "l18",
+      "natural_language": "By cyclic symmetry we may assume a\\ge b\\ge c>0.",
+      "statement": "a\\ge b\\ge c>0 (wlog by cyclic permutation)",
+      "dependencies": [],
+      "search_node_id": "sn_7",
+      "branch_id": "b13",
+      "salience": 0.34641016151377546,
+      "support": null
+    }
+  ]
+}

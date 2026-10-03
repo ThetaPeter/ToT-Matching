@@ -1,0 +1,39 @@
+{
+  "problem_id": "amc12a_2003_p1",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.",
+      "statement": "What is the difference between the sum of the first $2003$ even counting numbers and the sum of the first $2003$ odd counting numbers? \n\n$ \\mathrm{(A) \\ } 0\\qquad \\mathrm{(B) \\ } 1\\qquad \\mathrm{(C) \\ } 2\\qquad \\mathrm{(D) \\ } 2003\\qquad \\mathrm{(E) \\ } 4006 $ Show that it is \\mathrm{(D)}\\ 2003.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l2163",
+      "natural_language": "Advance the argument (step 3361): continue from What is the difference between the sum of the first $2003$ even counting numbers",
+      "statement": "Advance the argument (step 3361): continue from What is the difference between the sum of the first $2003$ even counting numbers",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6414475072384819,
+      "support": null
+    },
+    {
+      "id": "l2164",
+      "natural_language": "Advance the argument (step 3362): continue from What is the difference between the sum of the first $2003$ even counting numbers",
+      "statement": "Advance the argument (step 3362): continue from What is the difference between the sum of the first $2003$ even counting numbers",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5462309935991352,
+      "support": null
+    }
+  ]
+}

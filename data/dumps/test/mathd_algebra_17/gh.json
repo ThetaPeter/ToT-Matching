@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_17",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it is 8.",
+      "statement": "Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it is 8.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0,
+      "support": null
+    },
+    {
+      "id": "l6537",
+      "natural_language": "Advance the argument (step 10165): continue from Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it",
+      "statement": "Advance the argument (step 10165): continue from Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.7590721152765897,
+      "support": null
+    },
+    {
+      "id": "l6538",
+      "natural_language": "Advance the argument (step 10166): continue from Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it",
+      "statement": "Advance the argument (step 10166): continue from Solve for $a$: $$\\sqrt{4+\\sqrt{16+16a}}+ \\sqrt{1+\\sqrt{1+a}} = 6.$$ Show that it",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.11775104429418558,
+      "support": null
+    }
+  ]
+}

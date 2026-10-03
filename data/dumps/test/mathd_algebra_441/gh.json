@@ -1,0 +1,39 @@
+{
+  "problem_id": "mathd_algebra_441",
+  "nodes": [
+    {
+      "id": "tc_1",
+      "natural_language": "Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\frac{35}{3x}$. Show that it is 10.",
+      "statement": "Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\frac{35}{3x}$. Show that it is 10.",
+      "dependencies": [],
+      "search_node_id": null,
+      "branch_id": null,
+      "salience": 1.0000000000000002,
+      "support": null
+    },
+    {
+      "id": "l8751",
+      "natural_language": "Advance the argument (step 13609): continue from Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\fra",
+      "statement": "Advance the argument (step 13609): continue from Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\fra",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b1",
+      "salience": 0.6851601597031489,
+      "support": null
+    },
+    {
+      "id": "l8752",
+      "natural_language": "Advance the argument (step 13610): continue from Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\fra",
+      "statement": "Advance the argument (step 13610): continue from Assuming $x\\ne0$, simplify $\\frac{12}{x \\cdot x} \\cdot \\frac{x^4}{14x}\\cdot \\fra",
+      "dependencies": [
+        "tc_1"
+      ],
+      "search_node_id": "sn_0",
+      "branch_id": "b2",
+      "salience": 0.5252793231671498,
+      "support": null
+    }
+  ]
+}

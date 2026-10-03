@@ -1,0 +1,9 @@
+The sum \(\sum_{k=1}^{35}\sin(5k^\circ)\) equals the imaginary part of \(\sum_{k=1}^{35}\exp(i5k^\circ)\). The closed-form summation formula for this geometric series of complex exponentials therefore yields an explicit value for the original trigonometric sum. Applying the formula with angle \(5^\circ\) and \(n=35\) produces the identity
+\[
+\sum_{k=1}^{35}\sin(5k^\circ)=\tan(175/2).
+\]
+(The same identity is recovered from the arithmetic-progression formula for sines with first term \(5^\circ\), common difference \(5^\circ\) and \(35\) terms, which simplifies first to \(\sin(87.5^\circ)/\sin(2.5^\circ)\) and then to \(\cot(2.5^\circ)=\tan(87.5^\circ)=\tan(175/2)\).)
+
+Writing the right-hand side as \(\tan(m/n)\) with \(m=175\) and \(n=2\) (already in lowest terms and with \(m/n<90\)) therefore gives \(m+n=177\).
+
+Thus \(\sum_{k=1}^{35}\sin(5k^\circ)=\tan(m/n)\) implies \(m+n=177\).

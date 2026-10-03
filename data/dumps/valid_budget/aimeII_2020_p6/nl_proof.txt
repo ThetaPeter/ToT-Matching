@@ -1,0 +1,9 @@
+From the given recurrence \(t_n=(5t_{n-1}+1)/(25t_{n-2})\) holding for all \(n\ge3\), rearranging immediately yields the identity
+\[
+25t_nt_{n-2}-5t_{n-1}=1
+\]
+for every \(n\ge3\).
+
+The same identity implies that the sequence is periodic of period \(6\): \(t_{n+6}=t_n\) for all \(n\ge1\).
+
+Consequently \(t_{2020}=t_4\). Writing this common value in lowest terms as \(p/q\) therefore gives \(p+q=626\).

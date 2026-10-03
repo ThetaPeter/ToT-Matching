@@ -1,0 +1,9 @@
+Let \(n=\lfloor r\rfloor\) and \(f=\{r\}\), so that \(r=n+f\) with \(n\in\mathbb{Z}\) and \(0\le f<1\). Then
+\[
+\sum_{k=19}^{91}\lfloor r+k/100\rfloor=73n+\sum_{k=19}^{91}\lfloor f+k/100\rfloor=546.
+\]
+Write \(S=\sum_{k=19}^{91}\lfloor f+k/100\rfloor\). The inequalities \(0\le S\le73\) together with \(73n+S=546\) force \(n=7\) and \(S=35\).
+
+Thus the number of integers \(k\in[19,91]\) satisfying \(k>100(1-f)\) equals \(35\). Equivalently, the number of such \(k\) with \(k\ge t\) (where \(t=100(1-f)\)) equals \(35\). This count is \(91-\max(19,\lceil t\rceil)+1=35\), so \(\max(19,\lceil t\rceil)=57\) and therefore \(\lceil t\rceil=57\). Hence \(56<t\le57\), which rearranges to \(43\le100f<44\).
+
+Combining with \(n=7\) yields \(743\le100r<744\), so \(\lfloor100r\rfloor=743\).

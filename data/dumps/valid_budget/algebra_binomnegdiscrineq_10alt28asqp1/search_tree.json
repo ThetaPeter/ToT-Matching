@@ -1,0 +1,204 @@
+{
+  "problem_id": "algebra_binomnegdiscrineq_10alt28asqp1",
+  "nodes": [
+    {
+      "id": "sn_0",
+      "parent_id": null,
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.",
+      "last_claim": "",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 0,
+      "score": 1.0,
+      "branch_id": "b0"
+    },
+    {
+      "id": "sn_1",
+      "parent_id": "sn_0",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim": "[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 1.0,
+      "branch_id": "b1"
+    },
+    {
+      "id": "sn_2",
+      "parent_id": "sn_0",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\nContinue from: ",
+      "last_claim": "Continue from: ",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 1,
+      "score": 0.0,
+      "branch_id": "b2"
+    },
+    {
+      "id": "sn_3",
+      "parent_id": "sn_1",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim": "[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim_id": "tc_3",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b3"
+    },
+    {
+      "id": "sn_4",
+      "parent_id": "sn_1",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim": "Continue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim_id": "tc_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b4"
+    },
+    {
+      "id": "sn_5",
+      "parent_id": "sn_2",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\nContinue from:\n[\"Rewrite the desired inequality as \\(28a^2-10a+1\\ge0\\).\",\"Observe that the quadratic \\(28x^2-10x+1\\) has negative discriminant \\(100-112=-12\\) and positive leading coefficient.\"]",
+      "last_claim": "[\"Rewrite the desired inequality as \\(28a^2-10a+1\\ge0\\).\",\"Observe that the quadratic \\(28x^2-10x+1\\) has negative discriminant \\(100-112=-12\\) and positive leading coefficient.\"]",
+      "last_claim_id": "tc_4",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 1.0,
+      "branch_id": "b5"
+    },
+    {
+      "id": "sn_6",
+      "parent_id": "sn_2",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\nContinue from:\nContinue from: Continue from: ",
+      "last_claim": "Continue from: Continue from: ",
+      "last_claim_id": "ts_1",
+      "sink_claim_id": "ts_1",
+      "depth": 2,
+      "score": 0.0,
+      "branch_id": "b6"
+    },
+    {
+      "id": "sn_7",
+      "parent_id": "sn_3",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\n[\"Equality never holds, so \\(10a<28a^2+1\\) for every real \\(a\\).\",\"The argument is complete.\"]",
+      "last_claim": "[\"Equality never holds, so \\(10a<28a^2+1\\) for every real \\(a\\).\",\"The argument is complete.\"]",
+      "last_claim_id": "tc_6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 0.85,
+      "branch_id": "b7"
+    },
+    {
+      "id": "sn_8",
+      "parent_id": "sn_3",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\nContinue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim": "Continue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim_id": "tc_7",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b8"
+    },
+    {
+      "id": "sn_9",
+      "parent_id": "sn_4",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]",
+      "last_claim": "[\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]",
+      "last_claim_id": "tc_8",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b9"
+    },
+    {
+      "id": "sn_10",
+      "parent_id": "sn_4",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: Continue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim": "Continue from: Continue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]",
+      "last_claim_id": "ts_6",
+      "sink_claim_id": "ts_1",
+      "depth": 3,
+      "score": 1.0,
+      "branch_id": "b10"
+    },
+    {
+      "id": "sn_11",
+      "parent_id": "sn_8",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\nContinue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\n[\"The original inequality therefore holds for every real number \\(a\\).\", \"In fact the inequality is always strict, since the quadratic never vanishes.\"]",
+      "last_claim": "[\"The original inequality therefore holds for every real number \\(a\\).\", \"In fact the inequality is always strict, since the quadratic never vanishes.\"]",
+      "last_claim_id": "tc_10",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 0.85,
+      "branch_id": "b11"
+    },
+    {
+      "id": "sn_12",
+      "parent_id": "sn_8",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\nContinue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]\nContinue from: Continue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim": "Continue from: Continue from: [\"Thus \\(28x^2-10x+1>0\\) for every real \\(x\\).\", \"Therefore \\(28a^2-10a+1\\geq 0\\) holds for every real \\(a\\), which is the desired inequality.\"]",
+      "last_claim_id": "tc_12",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b12"
+    },
+    {
+      "id": "sn_13",
+      "parent_id": "sn_9",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]\n[\"The original inequality therefore holds for every real \\(a\\), and is in fact strict.\", \"This completes the proof.\"]",
+      "last_claim": "[\"The original inequality therefore holds for every real \\(a\\), and is in fact strict.\", \"This completes the proof.\"]",
+      "last_claim_id": "tc_13",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b13"
+    },
+    {
+      "id": "sn_14",
+      "parent_id": "sn_9",
+      "proof_state": "For any real number a, show that $10a \\leq 28a^2 + 1$.\n[\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\nContinue from: [\"The inequality is equivalent to \\(28a^2-10a+1\\geq 0\\).\", \"The quadratic \\(28x^2-10x+1\\) has discriminant \\(100-112=-12<0\\) and positive leading coefficient.\"]\n[\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]\nContinue from: [\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]",
+      "last_claim": "Continue from: [\"Therefore the quadratic \\(28x^2-10x+1\\) is strictly positive for every real \\(x\\).\", \"Hence \\(28a^2-10a+1>0\\) for every real \\(a\\), which yields the desired inequality.\"]",
+      "last_claim_id": "tc_14",
+      "sink_claim_id": "ts_1",
+      "depth": 4,
+      "score": 1.0,
+      "branch_id": "b14"
+    }
+  ],
+  "branches": [
+    {
+      "branch_id": "b5",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b6",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b7",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b10",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b11",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b12",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b13",
+      "sink_claim_id": "ts_1"
+    },
+    {
+      "branch_id": "b14",
+      "sink_claim_id": "ts_1"
+    }
+  ]
+}
