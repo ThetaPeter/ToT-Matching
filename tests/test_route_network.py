@@ -74,7 +74,12 @@ def _embeddings_b() -> dict[str, np.ndarray]:
 def test_flow_attention_outgoing_weights_sum_to_one() -> None:
     dag = _branching_ga()
     embeddings = _embeddings_a()
-    model = FlowDAGNN(in_dim=6, hidden_dim=8, n_layers=1, seed=0)
+    model = FlowDAGNN(
+        in_dim=int(_embeddings_a()["tc_1"].shape[0]) + EXTRA_FEATURES,
+        hidden_dim=8,
+        n_layers=1,
+        seed=0,
+    )
     outgoing = model.outgoing_attention(dag, embeddings)
     assert set(outgoing["tc_1"]) == {"l1", "l_skip"}
     assert sum(outgoing["tc_1"].values()) == pytest.approx(1.0, abs=1e-6)
@@ -122,7 +127,12 @@ def test_overfit_keep_set_matches_gh_ids(tmp_path) -> None:
 def test_feasibility_prior_scores_every_ga_node() -> None:
     dag = _branching_ga()
     embeddings = _embeddings_a()
-    model = FlowDAGNN(in_dim=6, hidden_dim=8, n_layers=1, seed=1)
+    model = FlowDAGNN(
+        in_dim=int(_embeddings_a()["tc_1"].shape[0]) + EXTRA_FEATURES,
+        hidden_dim=8,
+        n_layers=1,
+        seed=1,
+    )
     scores = feasibility_prior(model, dag, embeddings)
     assert set(scores) == dag.node_id_set()
     assert keep_set_from_scores(scores) <= dag.node_id_set()
@@ -144,7 +154,12 @@ def test_node_feature_support_extra_always_zero() -> None:
 def test_dump_load_weights_roundtrip(tmp_path) -> None:
     dag = _branching_ga()
     embeddings = _embeddings_a()
-    model = FlowDAGNN(in_dim=6, hidden_dim=8, n_layers=1, seed=2)
+    model = FlowDAGNN(
+        in_dim=int(_embeddings_a()["tc_1"].shape[0]) + EXTRA_FEATURES,
+        hidden_dim=8,
+        n_layers=1,
+        seed=2,
+    )
     before = feasibility_prior(model, dag, embeddings)
     path = tmp_path / "route.npz"
     dump_weights(
@@ -163,4 +178,265 @@ def test_dump_load_weights_roundtrip(tmp_path) -> None:
     assert meta["keep_threshold"] == pytest.approx(0.3)
     assert meta["pos_weight"] == pytest.approx(3.5)
     assert meta["embedder"] == "hashed"
-    assert meta["in_dim"] == 6
+    assert meta["in_dim"] == int(_embeddings_a()["tc_1"].shape[0]) + EXTRA_FEATURES
+
+
+def test_node_feature_search_extras_default_zero() -> None:
+    embeddings = _embeddings_a()
+    node = _node("tc_1", [], salience=0.3, support=1.0)
+    feat = node_feature(node, embeddings)
+    assert feat[-4] == 0.0
+    assert feat[-3] == 0.0
+    filled = node_feature(node, embeddings, search_feats={"tc_1": (0.25, 0.9)})
+    assert filled[-4] == pytest.approx(0.25)
+    assert filled[-3] == pytest.approx(0.9)
+    assert filled[-2] == pytest.approx(0.3)
+    assert filled[-1] == 0.0
+
+
+def test_sibling_pairs_skip_unanimous_groups() -> None:
+    from tot.route.search_labels import claim_search_features, sibling_rank_pairs
+
+    tree = {
+        "nodes": [
+            {
+                "id": "sn_0",
+                "parent_id": None,
+                "last_claim_id": "tc_1",
+                "depth": 0,
+                "score": 1.0,
+            },
+            {
+                "id": "sn_1",
+                "parent_id": "sn_0",
+                "last_claim_id": "l_pos",
+                "depth": 1,
+                "score": 0.9,
+            },
+            {
+                "id": "sn_2",
+                "parent_id": "sn_0",
+                "last_claim_id": "l_neg",
+                "depth": 1,
+                "score": 0.2,
+            },
+            {
+                "id": "sn_3",
+                "parent_id": "sn_1",
+                "last_claim_id": "ts_1",
+                "depth": 2,
+                "score": 0.8,
+            },
+        ]
+    }
+    pairs = sibling_rank_pairs(tree, {"tc_1", "l_pos", "ts_1"})
+    assert ("l_pos", "l_neg") in pairs
+    feats = claim_search_features(tree)
+    assert feats["l_pos"][0] == pytest.approx(1.0 / 8.0)
+    assert feats["l_neg"][1] == pytest.approx(0.2)
+
+
+def test_gold_path_prefers_path_coverage_over_leaf_membership() -> None:
+    from tot.route.search_labels import gold_search_path
+
+    tree = {
+        "nodes": [
+            {"id": "sn_0", "parent_id": None, "last_claim_id": "tc_1", "depth": 0},
+            {"id": "sn_1", "parent_id": "sn_0", "last_claim_id": "l_few", "depth": 1},
+            {"id": "sn_2", "parent_id": "sn_0", "last_claim_id": "l_a", "depth": 1},
+            {"id": "sn_3", "parent_id": "sn_1", "last_claim_id": "ts_hit", "depth": 2},
+            {"id": "sn_4", "parent_id": "sn_2", "last_claim_id": "l_b", "depth": 2},
+        ]
+    }
+    assert gold_search_path(tree, {"l_few", "ts_hit", "l_b"}) == [
+        "sn_0",
+        "sn_1",
+        "sn_3",
+    ]
+
+
+def test_pred_path_uses_leaf_sum_not_greedy_child() -> None:
+    from tot.route.search_labels import pred_path_core, pred_search_path
+
+    ga = ClaimDAG(
+        problem_id="sum_decode",
+        nodes=[
+            _node("tc_1", []),
+            _node("l_pos", ["tc_1"]),
+            _node("l_neg", ["tc_1"]),
+            _node("ts_1", ["l_pos"]),
+        ],
+    )
+    tree = {
+        "nodes": [
+            {"id": "sn_0", "parent_id": None, "last_claim_id": "tc_1", "depth": 0},
+            {"id": "sn_1", "parent_id": "sn_0", "last_claim_id": "l_pos", "depth": 1},
+            {"id": "sn_2", "parent_id": "sn_0", "last_claim_id": "l_neg", "depth": 1},
+            {"id": "sn_3", "parent_id": "sn_1", "last_claim_id": "ts_1", "depth": 2},
+        ]
+    }
+    scores = {"tc_1": 0.5, "l_pos": 0.40, "l_neg": 0.45, "ts_1": 0.90}
+    assert pred_search_path(tree, scores) == ["sn_0", "sn_1", "sn_3"]
+    assert pred_path_core(tree, ga, scores) == {"tc_1", "l_pos", "ts_1"}
+
+
+def test_gold_path_core_follows_gh_covering_leaf() -> None:
+    from tot.eval.metrics import always_keep_f1, nr_alignment_f1
+    from tot.route.search_labels import gold_path_core, pred_path_core
+
+    ga = ClaimDAG(
+        problem_id="path_core",
+        nodes=[
+            _node("tc_1", []),
+            _node("l_pos", ["tc_1"]),
+            _node("l_neg", ["tc_1"]),
+            _node("ts_1", ["l_pos"]),
+        ],
+    )
+    tree = {
+        "nodes": [
+            {"id": "sn_0", "parent_id": None, "last_claim_id": "tc_1", "depth": 0},
+            {"id": "sn_1", "parent_id": "sn_0", "last_claim_id": "l_pos", "depth": 1},
+            {"id": "sn_2", "parent_id": "sn_0", "last_claim_id": "l_neg", "depth": 1},
+            {"id": "sn_3", "parent_id": "sn_1", "last_claim_id": "ts_1", "depth": 2},
+        ]
+    }
+    sn_path, gold = gold_path_core(tree, ga, {"ts_1", "l_pos"})
+    assert sn_path == ["sn_0", "sn_1", "sn_3"]
+    assert gold == {"tc_1", "l_pos", "ts_1"}
+    pred = pred_path_core(
+        tree, ga, {"tc_1": 0.5, "l_pos": 0.9, "l_neg": 0.1, "ts_1": 0.8}
+    )
+    assert pred == gold
+    assert nr_alignment_f1(pred, gold) > always_keep_f1(ga.node_id_set(), gold)
+
+
+def test_keep_set_from_sibling_rank_picks_group_max() -> None:
+    from tot.route.search_labels import keep_set_from_sibling_rank
+
+    tree = {
+        "nodes": [
+            {"id": "sn_0", "parent_id": None, "last_claim_id": "tc_1"},
+            {"id": "sn_1", "parent_id": "sn_0", "last_claim_id": "l_pos"},
+            {"id": "sn_2", "parent_id": "sn_0", "last_claim_id": "l_neg"},
+        ]
+    }
+    kept = keep_set_from_sibling_rank(tree, {"tc_1": 0.4, "l_pos": 0.9, "l_neg": 0.2})
+    assert kept == {"tc_1", "l_pos"}
+
+
+def test_run_tot_frontier_keeps_winning_sibling() -> None:
+    from tot.controller import run_tot
+    from tot.providers.base import MockExtractor, MockReasoner
+
+    dag, tree = run_tot(
+        MockReasoner(include_dead=True),
+        MockExtractor(),
+        "Prove 1+1=2.",
+        problem_id="sib_frontier",
+        k=2,
+        depth=2,
+        beam=2,
+    )
+    depth1 = [node for node in tree["nodes"] if node["depth"] == 1]
+    assert depth1
+    live = [node for node in depth1 if "dead-end" not in node["last_claim"]]
+    dead = [node for node in depth1 if "dead-end" in node["last_claim"]]
+    assert live
+    assert dead
+    depth2_parents = {
+        node["parent_id"] for node in tree["nodes"] if node["depth"] == 2
+    }
+    assert depth2_parents <= {node["id"] for node in live}
+
+
+def test_path_core_train_recovers_gold_chain() -> None:
+    from tot.eval.metrics import always_keep_f1, nr_alignment_f1
+    from tot.route.search_labels import (
+        gold_path_core,
+        path_rank_lists,
+        pred_path_core,
+        sibling_rank_pairs_on_path,
+    )
+
+    ga = ClaimDAG(
+        problem_id="path_train",
+        nodes=[
+            _node("tc_1", []),
+            _node("l_pos", ["tc_1"]),
+            _node("l_neg", ["tc_1"]),
+            _node("ts_1", ["l_pos"]),
+        ],
+    )
+    tree = {
+        "nodes": [
+            {"id": "sn_0", "parent_id": None, "last_claim_id": "tc_1", "depth": 0},
+            {"id": "sn_1", "parent_id": "sn_0", "last_claim_id": "l_pos", "depth": 1},
+            {"id": "sn_2", "parent_id": "sn_0", "last_claim_id": "l_neg", "depth": 1},
+            {"id": "sn_3", "parent_id": "sn_1", "last_claim_id": "ts_1", "depth": 2},
+        ]
+    }
+    sn_path, gold = gold_path_core(tree, ga, {"ts_1"})
+    embeddings = {
+        "tc_1": np.array([1.0, 0.0, 0.0, 0.0]),
+        "l_pos": np.array([0.9, 0.1, 0.0, 0.0]),
+        "l_neg": np.array([0.0, 1.0, 0.0, 0.0]),
+        "ts_1": np.array([0.85, 0.0, 0.2, 0.0]),
+    }
+    search_feats = {
+        "tc_1": (0.0, 1.0),
+        "l_pos": (0.125, 0.4),
+        "l_neg": (0.125, 0.9),
+        "ts_1": (0.25, 0.5),
+    }
+    model = train_route_network(
+        graphs=[(ga, gold)],
+        embeddings=embeddings,
+        epochs=80,
+        lr=0.2,
+        hidden_dim=8,
+        n_layers=1,
+        seed=0,
+        sibling_pairs=[sibling_rank_pairs_on_path(tree, sn_path)],
+        search_feats=[search_feats],
+        path_ranks=[path_rank_lists(tree, sn_path)],
+    )
+    scores = model.score_nodes(ga, embeddings, search_feats=search_feats)
+    pred = pred_path_core(tree, ga, scores)
+    assert nr_alignment_f1(pred, gold) > always_keep_f1(ga.node_id_set(), gold)
+
+
+def test_sibling_rank_train_scores_positive_child_higher() -> None:
+    ga = ClaimDAG(
+        problem_id="sib",
+        nodes=[
+            _node("tc_1", []),
+            _node("l_pos", ["tc_1"]),
+            _node("l_neg", ["tc_1"]),
+        ],
+    )
+    keep = {"tc_1", "l_pos"}
+    embeddings = {
+        "tc_1": np.array([1.0, 0.0, 0.0, 0.0]),
+        "l_pos": np.array([0.2, 0.0, 0.0, 0.0]),
+        "l_neg": np.array([0.0, 1.0, 0.0, 0.0]),
+    }
+    search_feats = {
+        "tc_1": (0.0, 1.0),
+        "l_pos": (0.125, 0.4),
+        "l_neg": (0.125, 0.9),
+    }
+    pairs = [("l_pos", "l_neg")]
+    model = train_route_network(
+        graphs=[(ga, keep)],
+        embeddings=embeddings,
+        epochs=80,
+        lr=0.2,
+        hidden_dim=8,
+        n_layers=1,
+        seed=0,
+        sibling_pairs=[pairs],
+        search_feats=[search_feats],
+    )
+    scores = model.score_nodes(ga, embeddings, search_feats=search_feats)
+    assert scores["l_pos"] > scores["l_neg"]

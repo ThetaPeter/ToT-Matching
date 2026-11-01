@@ -69,8 +69,12 @@ def train_route_network(
     json_pairs: Sequence[tuple[str | Path, str | Path]] | None = None,
     backend: str = "numpy",
     pos_weight: float | None = None,
+    sibling_pairs: Sequence[Sequence[tuple[str, str]]] | None = None,
+    search_feats: Sequence[Mapping[str, tuple[float, float]]] | None = None,
+    path_ranks: Sequence[tuple[Sequence[str], Sequence[Sequence[str]]] | None]
+    | None = None,
 ) -> Any:
-    """SGD on node-wise pos-weighted BCE. Label 1 iff the GA node id is in GH.
+    """SGD on node-wise pos-weighted BCE plus sibling ranking.
 
     ``pos_weight`` defaults to n_drop/n_keep on this train set (not a constant).
     ``backend="torch"`` uses TorchFlowDAGNN (outgoing flow attention).
@@ -95,12 +99,16 @@ def train_route_network(
             n_layers=n_layers,
             seed=seed,
             pos_weight=pw,
+            sibling_pairs=sibling_pairs,
+            search_feats=search_feats,
+            path_ranks=path_ranks,
         )
     if backend != "numpy":
         raise ValueError(f"unknown route backend {backend!r} (use numpy|torch)")
     first_dag, _ = labeled[0]
     first_emb = _embed_map(first_dag, embeddings, 0)
-    feats = build_features(first_dag, first_emb)
+    first_search = search_feats[0] if search_feats else None
+    feats = build_features(first_dag, first_emb, search_feats=first_search)
     in_dim = next(iter(feats.values())).shape[0]
     if in_dim < EXTRA_FEATURES:
         raise ValueError(
@@ -111,7 +119,20 @@ def train_route_network(
         losses = []
         for i, (dag, keep) in enumerate(labeled):
             emb = _embed_map(dag, embeddings, i)
-            losses.append(model.node_loss(dag, keep, emb, pos_weight=pw))
+            pairs = sibling_pairs[i] if sibling_pairs is not None else None
+            feats_i = search_feats[i] if search_feats is not None else None
+            path_i = path_ranks[i] if path_ranks is not None else None
+            losses.append(
+                model.node_loss(
+                    dag,
+                    keep,
+                    emb,
+                    pos_weight=pw,
+                    pairs=pairs,
+                    search_feats=feats_i,
+                    path_rank=path_i,
+                )
+            )
         loss = losses[0]
         for term in losses[1:]:
             loss = loss + term

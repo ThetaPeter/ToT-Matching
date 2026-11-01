@@ -42,7 +42,7 @@ def embedder_for_route_weights(
     kind = str(persisted_kind or "")
     raise SystemExit(
         f"route-weights in_dim={in_dim} is incompatible with hashed "
-        f"({FALLBACK_DIM}+{EXTRA_FEATURES}) or MiniLM ({MINILM_DIM}+{EXTRA_FEATURES}) "
+        f"({FALLBACK_DIM}+{EXTRA_FEATURES}) or MiniLM ({MINILM_DIM}+{EXTRA_FEATURES}) extras "
         f"embedders (persisted embedder={kind!r})."
     )
 

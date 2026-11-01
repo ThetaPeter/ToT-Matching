@@ -102,8 +102,7 @@ def run_tot(
                 scored.append(child)
         if not scored:
             break
-        scored.sort(key=lambda node: node.score, reverse=True)
-        frontier = scored[: max(1, beam)]
+        frontier = _sibling_rank_frontier(scored, beam)
     tree = _tree_dict(problem_id, nodes, dag)
     return dag, tree
 
@@ -174,10 +173,30 @@ def resume_tot(
                 scored.append(child)
         if not scored:
             break
-        scored.sort(key=lambda item: item.score, reverse=True)
-        frontier = scored[: max(1, beam)]
+        frontier = _sibling_rank_frontier(scored, beam)
     problem_id = str(tree.get("problem_id") or dag.problem_id)
     return dag, _tree_dict(problem_id, nodes, dag)
+
+
+def _sibling_winners(children: list[SearchNode]) -> list[SearchNode]:
+    """Keep the max-score child of each parent. Ties are all kept."""
+    by_parent: dict[str | None, list[SearchNode]] = {}
+    for child in children:
+        by_parent.setdefault(child.parent_id, []).append(child)
+    winners: list[SearchNode] = []
+    for group in by_parent.values():
+        best = max(float(child.score) for child in group)
+        winners.extend(
+            child for child in group if float(child.score) >= best - 1e-12
+        )
+    return winners
+
+
+def _sibling_rank_frontier(children: list[SearchNode], beam: int) -> list[SearchNode]:
+    """Sibling winners first, then the usual beam cut."""
+    winners = _sibling_winners(children)
+    winners.sort(key=lambda node: node.score, reverse=True)
+    return winners[: max(1, beam)]
 
 
 def _score_with_prior(

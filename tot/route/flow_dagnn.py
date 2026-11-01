@@ -14,10 +14,53 @@ from typing import Any
 import numpy as np
 
 from tot.ir.schema import ClaimDAG, ClaimNode
-from tot.route._autograd import Tensor, as_tensor, bce_with_logits, sigmoid, softmax, tanh
+from tot.route._autograd import (
+    Tensor,
+    as_tensor,
+    bce_with_logits,
+    sigmoid,
+    softmax,
+    softplus,
+    tanh,
+)
 
 KEEP_THRESHOLD = 0.5
-EXTRA_FEATURES = 2
+
+
+def _path_score_sum(logits: Mapping[str, Any], claim_ids: Sequence[str], sig) -> Any:
+    terms = [sig(logits[cid]) for cid in claim_ids if cid in logits]
+    if not terms:
+        return None
+    total = terms[0]
+    for term in terms[1:]:
+        total = total + term
+    return total
+
+
+def _path_rank_terms(
+    logits: Mapping[str, Any],
+    path_rank: tuple[Sequence[str], Sequence[Sequence[str]]] | None,
+    sig,
+    softplus_fn,
+) -> list:
+    if not path_rank:
+        return []
+    gold_claims, other_paths = path_rank
+    gold_s = _path_score_sum(logits, gold_claims, sig)
+    if gold_s is None:
+        return []
+    terms = []
+    for other in other_paths:
+        neg_s = _path_score_sum(logits, other, sig)
+        if neg_s is None:
+            continue
+        terms.append(softplus_fn(neg_s - gold_s))
+    return terms
+
+
+# depth, reasoner score, salience, support (support always 0 at prior time)
+SEARCH_FEATURE_DIM = 2
+EXTRA_FEATURES = 4
 
 
 def pos_weight_from_graphs(graphs: Sequence[tuple[ClaimDAG, set[str]]]) -> float:
@@ -82,16 +125,26 @@ def predecessor_map(dag: ClaimDAG) -> dict[str, list[str]]:
     return {node.id: sorted(node.dependencies) for node in dag.nodes}
 
 
-def node_feature(node: ClaimNode, embeddings: Mapping[str, np.ndarray]) -> np.ndarray:
+def node_feature(
+    node: ClaimNode,
+    embeddings: Mapping[str, np.ndarray],
+    search_feats: Mapping[str, tuple[float, float]] | None = None,
+) -> np.ndarray:
     if node.id not in embeddings:
         raise KeyError(f"missing embedding for node {node.id!r}")
     emb = np.asarray(embeddings[node.id], dtype=np.float64).reshape(-1)
+    depth = 0.0
+    reasoner_score = 0.0
+    if search_feats and node.id in search_feats:
+        depth, reasoner_score = search_feats[node.id]
     extra = np.array(
         [
+            float(depth),
+            float(reasoner_score),
             0.0 if node.salience is None else float(node.salience),
             # Always 0: `support` is a post-search Determinator bit. A live ToT
             # prior scores a growing DAG and would not see it, so training must
-            # not leak that extra. EXTRA_FEATURES stays 2 (in_dim = emb + 2).
+            # not leak that extra.
             0.0,
         ],
         dtype=np.float64,
@@ -99,8 +152,15 @@ def node_feature(node: ClaimNode, embeddings: Mapping[str, np.ndarray]) -> np.nd
     return np.concatenate([emb, extra])
 
 
-def build_features(dag: ClaimDAG, embeddings: Mapping[str, np.ndarray]) -> dict[str, np.ndarray]:
-    return {node.id: node_feature(node, embeddings) for node in dag.nodes}
+def build_features(
+    dag: ClaimDAG,
+    embeddings: Mapping[str, np.ndarray],
+    search_feats: Mapping[str, tuple[float, float]] | None = None,
+) -> dict[str, np.ndarray]:
+    return {
+        node.id: node_feature(node, embeddings, search_feats=search_feats)
+        for node in dag.nodes
+    }
 
 
 def _dot(left: Tensor, right: Tensor) -> Tensor:
@@ -180,8 +240,9 @@ class FlowDAGNN:
         self,
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> dict[str, Tensor]:
-        features = build_features(dag, embeddings)
+        features = build_features(dag, embeddings, search_feats=search_feats)
         for node_id, feat in features.items():
             if feat.shape[0] != self.in_dim:
                 raise ValueError(
@@ -264,13 +325,28 @@ class FlowDAGNN:
             )
         return logits
 
-    def logits(self, dag: ClaimDAG, embeddings: Mapping[str, np.ndarray]) -> dict[str, float]:
-        return {node_id: float(logit.data) for node_id, logit in self._forward(dag, embeddings).items()}
+    def logits(
+        self,
+        dag: ClaimDAG,
+        embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
+    ) -> dict[str, float]:
+        return {
+            node_id: float(logit.data)
+            for node_id, logit in self._forward(dag, embeddings, search_feats=search_feats).items()
+        }
 
-    def score_nodes(self, dag: ClaimDAG, embeddings: Mapping[str, np.ndarray]) -> dict[str, float]:
+    def score_nodes(
+        self,
+        dag: ClaimDAG,
+        embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
+    ) -> dict[str, float]:
         """Feasibility scores in (0, 1) for every GA node id."""
         scored: dict[str, float] = {}
-        for node_id, logit in self._forward(dag, embeddings).items():
+        for node_id, logit in self._forward(
+            dag, embeddings, search_feats=search_feats
+        ).items():
             scored[node_id] = float(sigmoid(as_tensor(float(logit.data))).data)
         return scored
 
@@ -279,26 +355,29 @@ class FlowDAGNN:
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
         threshold: float = KEEP_THRESHOLD,
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> set[str]:
-        scores = self.score_nodes(dag, embeddings)
+        scores = self.score_nodes(dag, embeddings, search_feats=search_feats)
         return {node_id for node_id, score in scores.items() if score >= threshold}
 
     def outgoing_attention(
         self,
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> dict[str, dict[str, float]]:
         """Forward-pass flow weights: sender → {successor: β}. Rows sum to 1."""
-        self._forward(dag, embeddings)
+        self._forward(dag, embeddings, search_feats=search_feats)
         return {src: dict(dsts) for src, dsts in self._last_flow.items()}
 
     def reverse_attention(
         self,
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> dict[str, dict[str, float]]:
         """Reverse-pass weights over original outgoing neighbors."""
-        self._forward(dag, embeddings)
+        self._forward(dag, embeddings, search_feats=search_feats)
         return {src: dict(dsts) for src, dsts in self._last_reverse.items()}
 
     def flow_attention_matrix(
@@ -322,8 +401,11 @@ class FlowDAGNN:
         keep: set[str],
         embeddings: Mapping[str, np.ndarray],
         pos_weight: float = 1.0,
+        pairs: Sequence[tuple[str, str]] | None = None,
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
+        path_rank: tuple[Sequence[str], Sequence[Sequence[str]]] | None = None,
     ) -> Tensor:
-        logits = self._forward(dag, embeddings)
+        logits = self._forward(dag, embeddings, search_feats=search_feats)
         weight = float(pos_weight)
         losses: list[Tensor] = []
         for node in dag.nodes:
@@ -335,7 +417,30 @@ class FlowDAGNN:
         total = losses[0]
         for loss in losses[1:]:
             total = total + loss
-        return total / float(len(losses))
+        bce = total / float(len(losses))
+        rank_pairs = [
+            (pos, neg)
+            for pos, neg in (pairs or [])
+            if pos in logits and neg in logits and pos != neg
+        ]
+        extra = bce
+        if rank_pairs:
+            rank_terms: list[Tensor] = []
+            for pos, neg in rank_pairs:
+                score_pos = sigmoid(logits[pos])
+                score_neg = sigmoid(logits[neg])
+                rank_terms.append(softplus(score_neg - score_pos))
+            rank = rank_terms[0]
+            for term in rank_terms[1:]:
+                rank = rank + term
+            extra = extra + rank / float(len(rank_terms))
+        path_terms = _path_rank_terms(logits, path_rank, sigmoid, softplus)
+        if path_terms:
+            path_loss = path_terms[0]
+            for term in path_terms[1:]:
+                path_loss = path_loss + term
+            extra = extra + path_loss / float(len(path_terms))
+        return extra
 
     def state_dict(self) -> dict[str, Any]:
         payload: dict[str, Any] = {

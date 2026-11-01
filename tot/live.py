@@ -24,6 +24,7 @@ from tot.providers.base import MockEmbedder, MockExtractor, MockProver, MockReas
 from tot.route.flow_dagnn import EXTRA_FEATURES, KEEP_THRESHOLD
 from tot.route.io import load_route_meta, load_route_model
 from tot.route.prior import embed_nodes, embedder_for_route_weights, feasibility_prior, keep_set_from_scores
+from tot.route.search_labels import keep_set_from_sibling_rank, load_search_tree
 
 NodePrior = Callable[[ClaimDAG], dict[str, float]]
 
@@ -363,6 +364,13 @@ def main(argv: list[str] | None = None) -> int:
             pred = keep_set_from_scores(scores, threshold=float(keep_tau))
             row["nr_pred_ids"] = sorted(pred)
             row["keep_threshold"] = float(keep_tau)
+            tree_path = dump_dir / "search_tree.json"
+            if tree_path.is_file():
+                sib = keep_set_from_sibling_rank(
+                    load_search_tree(tree_path), scores
+                ) & result.ga.node_id_set()
+                if sib:
+                    row["sibling_pred_ids"] = sorted(sib)
         summary.append(row)
         print(
             f"{problem.id}: lean={row['lean_success']} "

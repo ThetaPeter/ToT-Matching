@@ -230,6 +230,12 @@ def softmax(scores: Sequence[Tensor]) -> list[Tensor]:
     return [term / total for term in shifted]
 
 
+def softplus(tensor: Tensor | float | int) -> Tensor:
+    """Stable ``log(1 + exp(x))``."""
+    tensor = as_tensor(tensor)
+    return relu(tensor) + log1p(exp(-abs_t(tensor)))
+
+
 def bce_with_logits(logit: Tensor, target: float) -> Tensor:
     """Stable binary cross-entropy with a 0/1 target."""
     y = float(target)

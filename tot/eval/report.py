@@ -26,6 +26,13 @@ from tot.ir.dump import load
 from tot.route.flow_dagnn import EXTRA_FEATURES, KEEP_THRESHOLD
 from tot.route.io import load_route_meta, load_route_model
 from tot.route.prior import embed_nodes, embedder_for_route_weights, keep_set_from_scores
+from tot.route.search_labels import (
+    keep_set_from_sibling_rank,
+    load_search_tree,
+    optional_path_labels,
+    optional_tree_labels,
+    pred_path_core,
+)
 
 
 def _token_f1(pred: str, gold: str) -> float:
@@ -157,15 +164,26 @@ def main(argv: list[str] | None = None) -> int:
 
         if route_model is not None:
             emb = embed_nodes(ga, embedder)
-            pred = keep_set_from_scores(
-                route_model.score_nodes(ga, emb),
-                threshold=float(keep_threshold),
-            )
-            nr_precision, nr_recall = set_precision_recall(pred, gh_ids)
+            tree_path = problem_dir / "search_tree.json"
+            if tree_path.is_file():
+                _pairs, search_feats, gold_core = optional_path_labels(
+                    problem_dir, ga, gh_ids
+                )
+                scores = route_model.score_nodes(ga, emb, search_feats=search_feats)
+                tree = load_search_tree(tree_path)
+                pred = pred_path_core(tree, ga, scores) & ga_ids
+                gold = gold_core & ga_ids
+                row["gold_path_ids"] = sorted(gold)
+            else:
+                _pairs, search_feats = optional_tree_labels(problem_dir, gh_ids)
+                scores = route_model.score_nodes(ga, emb, search_feats=search_feats)
+                pred = keep_set_from_scores(scores, threshold=float(keep_threshold))
+                gold = gh_ids
+            nr_precision, nr_recall = set_precision_recall(pred, gold)
             row["nr_pred_ids"] = sorted(pred)
-            row["nr_vs_gh_f1"] = nr_alignment_f1(pred, gh_ids)
-            row["always_keep_f1"] = always_keep_f1(ga_ids, gh_ids)
-            row["gh_keep_rate"] = keep_rate(gh_ids, ga_ids)
+            row["nr_vs_gh_f1"] = nr_alignment_f1(pred, gold)
+            row["always_keep_f1"] = always_keep_f1(ga_ids, gold)
+            row["gh_keep_rate"] = keep_rate(gold, ga_ids)
             row["nr_pred_keep_rate"] = keep_rate(pred, ga_ids)
             row["gi_keep_rate"] = keep_rate(gi_ids, ga_ids)
             row["nr_precision"] = nr_precision
@@ -173,6 +191,17 @@ def main(argv: list[str] | None = None) -> int:
             row["nr_pred_is_all_ga"] = pred == ga_ids
             row["nr_pred_empty"] = len(pred) == 0
             nr_sets.append(pred)
+            gh_sets[-1] = gold
+            if tree_path.is_file():
+                sib = keep_set_from_sibling_rank(load_search_tree(tree_path), scores)
+                sib &= ga_ids
+                if sib:
+                    sib_p, sib_r = set_precision_recall(sib, gold)
+                    row["sibling_pred_ids"] = sorted(sib)
+                    row["sibling_vs_gh_f1"] = nr_alignment_f1(sib, gold)
+                    row["sibling_keep_rate"] = keep_rate(sib, ga_ids)
+                    row["sibling_precision"] = sib_p
+                    row["sibling_recall"] = sib_r
 
         gold = writeups.get(problem_id)
         if gold is not None and nl_proof:
@@ -208,6 +237,10 @@ def main(argv: list[str] | None = None) -> int:
         "pred_all_ga_count": pred_all_ga_count if route_model is not None else None,
         "mean_nr_precision": _mean("nr_precision"),
         "mean_nr_recall": _mean("nr_recall"),
+        "mean_sibling_vs_gh_f1": _mean("sibling_vs_gh_f1"),
+        "mean_sibling_keep_rate": _mean("sibling_keep_rate"),
+        "mean_sibling_precision": _mean("sibling_precision"),
+        "mean_sibling_recall": _mean("sibling_recall"),
         "keep_threshold_used": float(keep_threshold) if route_model is not None else None,
         "embedder": embedder.kind,
         "proof_quality_metric": "token_f1 + MiniLM cosine vs human writeup",
@@ -225,11 +258,15 @@ def main(argv: list[str] | None = None) -> int:
     print(
         f"n={report['n']} lean={report['lean_success_rate']} "
         f"GI-vs-GH={report['mean_gi_vs_gh_f1']} "
-        f"NR-vs-GH={report['mean_nr_vs_gh_f1']} "
+        f"NR-vs-gold={report['mean_nr_vs_gh_f1']} "
         f"always-keep={report['mean_always_keep_f1']} "
-        f"GH-keep={report['gh_keep_rate_pooled']} "
+        f"gold-keep={report['gh_keep_rate_pooled']} "
         f"NR-keep={report['nr_pred_keep_rate_pooled']} "
         f"GI-keep={report['gi_keep_rate_pooled']} "
+        f"NR-P={report['mean_nr_precision']} "
+        f"NR-R={report['mean_nr_recall']} "
+        f"sibling-vs-gold={report['mean_sibling_vs_gh_f1']} "
+        f"sibling-keep={report['mean_sibling_keep_rate']} "
         f"proof_token_f1={report['mean_proof_token_f1']}"
     )
     print(f"Wrote {out}")

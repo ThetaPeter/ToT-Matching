@@ -15,6 +15,13 @@ from tot.ir.dump import load
 from tot.route.flow_dagnn import KEEP_THRESHOLD, EXTRA_FEATURES, pos_weight_from_graphs
 from tot.route.io import dump_weights, route_meta_payload
 from tot.route.prior import embed_nodes, keep_set_from_scores
+from tot.route.search_labels import (
+    gold_search_path,
+    load_search_tree,
+    optional_path_labels,
+    path_rank_lists,
+    pred_path_core,
+)
 from tot.route.train import train_route_network
 
 KEEP_RATE_TAU_GRID = tuple(round(i * 0.05, 2) for i in range(1, 20))
@@ -72,8 +79,85 @@ def select_keep_rate_cell(
     return best, note
 
 
-def _score_graphs(model, graphs, embeddings) -> list[dict[str, float]]:
-    return [model.score_nodes(ga, emb) for (ga, _keep), emb in zip(graphs, embeddings)]
+def select_f1_gap_cell(cells: list[dict[str, Any]]) -> tuple[dict[str, Any], str]:
+    """Pick (pos_weight, τ) by train F1 minus always-keep; never peeks at test."""
+    if not cells:
+        raise ValueError("empty F1-gap sweep")
+    zero_empty = [cell for cell in cells if int(cell["empty_pred"]) == 0]
+    pool = zero_empty or cells
+    best = max(
+        pool,
+        key=lambda cell: (
+            float(cell["mean_nr_vs_gh_f1"]) - float(cell["mean_always_keep_f1"]),
+            float(cell["mean_nr_vs_gh_f1"]),
+            -int(cell["empty_pred"]),
+        ),
+    )
+    note = (
+        "max train F1 minus always-keep among runs with zero empty keep-sets"
+        if zero_empty
+        else "all sweep cells had empty keep-sets; max train F1 minus always-keep"
+    )
+    return best, note
+
+
+def _score_graphs(model, graphs, embeddings, search_feats=None) -> list[dict[str, float]]:
+    scored = []
+    for i, ((ga, _keep), emb) in enumerate(zip(graphs, embeddings)):
+        feats = search_feats[i] if search_feats is not None else None
+        scored.append(model.score_nodes(ga, emb, search_feats=feats))
+    return scored
+
+
+def _stats_from_path_cores(
+    graphs,
+    score_maps: list[dict[str, float]],
+    trees: list[dict[str, Any] | None],
+) -> dict[str, Any]:
+    empty_pred = 0
+    pred_all_ga = 0
+    n_pred = 0
+    n_ga = 0
+    n_gold = 0
+    f1s: list[float] = []
+    always_f1s: list[float] = []
+    rows: list[dict[str, Any]] = []
+    for (ga, keep), scores, tree in zip(graphs, score_maps, trees):
+        ga_ids = ga.node_id_set()
+        pred = pred_path_core(tree, ga, scores) if tree else set()
+        pred &= ga_ids
+        n_ga += len(ga_ids)
+        n_pred += len(pred)
+        n_gold += len(set(keep) & ga_ids)
+        if not pred:
+            empty_pred += 1
+        if pred == ga_ids:
+            pred_all_ga += 1
+        f1s.append(nr_alignment_f1(pred, keep))
+        always_f1s.append(always_keep_f1(ga_ids, keep))
+        rows.append(
+            {
+                "problem_id": ga.problem_id,
+                "pred_ids": sorted(pred),
+                "gold_path_ids": sorted(keep),
+                "nr_vs_gh_f1": f1s[-1],
+                "always_keep_f1": always_f1s[-1],
+                "gh_keep_rate": keep_rate(keep, ga_ids),
+                "nr_pred_keep_rate": keep_rate(pred, ga_ids),
+            }
+        )
+    nr_pooled = (float(n_pred) / float(n_ga)) if n_ga else 0.0
+    gold_pooled = (float(n_gold) / float(n_ga)) if n_ga else 0.0
+    return {
+        "keep_threshold": None,
+        "empty_pred": empty_pred,
+        "pred_all_ga": pred_all_ga,
+        "gh_keep_rate_pooled": gold_pooled,
+        "nr_pred_keep_rate_pooled": nr_pooled,
+        "mean_nr_vs_gh_f1": float(np.mean(f1s)) if f1s else 0.0,
+        "mean_always_keep_f1": float(np.mean(always_f1s)) if always_f1s else 0.0,
+        "rows": rows,
+    }
 
 
 def _stats_from_scores(
@@ -194,6 +278,13 @@ def build_arg_parser() -> argparse.ArgumentParser:
         action="store_false",
         help="Disable the train-only keep-rate sweep; use --pos-weight and --keep-threshold.",
     )
+    parser.set_defaults(select_f1_gap=False)
+    parser.add_argument(
+        "--select-f1-gap",
+        dest="select_f1_gap",
+        action="store_true",
+        help="Sweep-select τ by train F1 minus always-keep instead of keep-rate match.",
+    )
     return parser
 
 
@@ -207,10 +298,17 @@ def main(argv: list[str] | None = None) -> int:
     embedder = SentenceEmbedder(allow_download=args.allow_minilm_download)
     graphs = []
     embeddings = []
+    sibling_pairs = []
+    search_feats = []
+    path_ranks: list[tuple[list[str], list[list[str]]] | None] = []
+    trees: list[dict[str, Any] | None] = []
     for i, (ga_path, gh_path) in enumerate(pairs):
         ga = load(ga_path)
         gh = load(gh_path)
-        graphs.append((ga, gh.node_id_set()))
+        pairs_i, feats_i, keep = optional_path_labels(
+            ga_path.parent, ga, gh.node_id_set()
+        )
+        graphs.append((ga, keep))
         emb = embed_nodes(ga, embedder)
         if i == 0 and args.allow_minilm_download and embedder.kind != "minilm":
             raise SystemExit(
@@ -220,6 +318,19 @@ def main(argv: list[str] | None = None) -> int:
                 "all-MiniLM-L6-v2 weights are available."
             )
         embeddings.append(emb)
+        sibling_pairs.append(pairs_i)
+        search_feats.append(feats_i)
+        tree_path = ga_path.parent / "search_tree.json"
+        if tree_path.is_file():
+            tree = load_search_tree(tree_path)
+            trees.append(tree)
+            path_ranks.append(
+                path_rank_lists(tree, gold_search_path(tree, gh.node_id_set()))
+            )
+        else:
+            trees.append(None)
+            path_ranks.append(None)
+    use_path_core = all(tree is not None for tree in trees)
 
     first_emb = next(iter(embeddings[0].values()))
     in_dim = int(np.asarray(first_emb).reshape(-1).shape[0]) + EXTRA_FEATURES
@@ -233,6 +344,9 @@ def main(argv: list[str] | None = None) -> int:
         n_layers=args.layers,
         seed=args.seed,
         backend=args.backend,
+        sibling_pairs=sibling_pairs,
+        search_feats=search_feats,
+        path_ranks=path_ranks,
     )
 
     sweep_table: list[dict[str, Any]] = []
@@ -246,20 +360,38 @@ def main(argv: list[str] | None = None) -> int:
         for pos_weight in pos_weight_sweep_values(ratio):
             model = train_route_network(**train_kwargs, pos_weight=pos_weight)
             models[pos_weight] = model
-            score_maps = _score_graphs(model, graphs, embeddings)
-            for tau in KEEP_RATE_TAU_GRID:
-                stats = _stats_from_scores(graphs, score_maps, tau)
+            score_maps = _score_graphs(model, graphs, embeddings, search_feats)
+            if use_path_core:
+                stats = _stats_from_path_cores(graphs, score_maps, trees)
                 sweep_table.append(
                     {
                         "pos_weight": float(pos_weight),
-                        "keep_threshold": float(tau),
+                        "keep_threshold": KEEP_THRESHOLD,
                         "nr_pred_keep_rate_pooled": stats["nr_pred_keep_rate_pooled"],
                         "empty_pred": stats["empty_pred"],
                         "pred_all_ga": stats["pred_all_ga"],
                         "mean_nr_vs_gh_f1": stats["mean_nr_vs_gh_f1"],
+                        "mean_always_keep_f1": stats["mean_always_keep_f1"],
                     }
                 )
-        best, selected_note = select_keep_rate_cell(sweep_table, gh_keep_rate)
+            else:
+                for tau in KEEP_RATE_TAU_GRID:
+                    stats = _stats_from_scores(graphs, score_maps, tau)
+                    sweep_table.append(
+                        {
+                            "pos_weight": float(pos_weight),
+                            "keep_threshold": float(tau),
+                            "nr_pred_keep_rate_pooled": stats["nr_pred_keep_rate_pooled"],
+                            "empty_pred": stats["empty_pred"],
+                            "pred_all_ga": stats["pred_all_ga"],
+                            "mean_nr_vs_gh_f1": stats["mean_nr_vs_gh_f1"],
+                            "mean_always_keep_f1": stats["mean_always_keep_f1"],
+                        }
+                    )
+        if args.select_f1_gap:
+            best, selected_note = select_f1_gap_cell(sweep_table)
+        else:
+            best, selected_note = select_keep_rate_cell(sweep_table, gh_keep_rate)
         pos_weight = float(best["pos_weight"])
         keep_threshold = float(best["keep_threshold"])
         model = min(models.items(), key=lambda item: abs(item[0] - pos_weight))[1]
@@ -278,8 +410,12 @@ def main(argv: list[str] | None = None) -> int:
             + ("CLI" if args.keep_threshold is not None else "library 0.5")
         )
 
-    score_maps = _score_graphs(model, graphs, embeddings)
-    stats = _stats_from_scores(graphs, score_maps, keep_threshold)
+    score_maps = _score_graphs(model, graphs, embeddings, search_feats)
+    if use_path_core:
+        stats = _stats_from_path_cores(graphs, score_maps, trees)
+        keep_threshold = float(keep_threshold)
+    else:
+        stats = _stats_from_scores(graphs, score_maps, keep_threshold)
     report = {
         "backend": args.backend,
         "n_graphs": len(graphs),

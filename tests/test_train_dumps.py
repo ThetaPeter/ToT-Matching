@@ -13,6 +13,7 @@ from tot.route.train_dumps import (
     build_arg_parser,
     main as train_dumps_main,
     pos_weight_sweep_values,
+    select_f1_gap_cell,
     select_keep_rate_cell,
 )
 
@@ -82,6 +83,35 @@ def test_select_keep_rate_all_empty_min_then_closest() -> None:
     best, note = select_keep_rate_cell(cells, gh_keep_rate=0.25)
     assert best["keep_threshold"] == pytest.approx(0.7)
     assert "min empty_pred" in note
+
+
+def test_select_f1_gap_prefers_zero_empty_then_max_gap() -> None:
+    cells = [
+        {
+            "pos_weight": 1.0,
+            "keep_threshold": 0.3,
+            "empty_pred": 1,
+            "mean_nr_vs_gh_f1": 0.70,
+            "mean_always_keep_f1": 0.40,
+        },
+        {
+            "pos_weight": 1.0,
+            "keep_threshold": 0.5,
+            "empty_pred": 0,
+            "mean_nr_vs_gh_f1": 0.50,
+            "mean_always_keep_f1": 0.45,
+        },
+        {
+            "pos_weight": 2.0,
+            "keep_threshold": 0.6,
+            "empty_pred": 0,
+            "mean_nr_vs_gh_f1": 0.48,
+            "mean_always_keep_f1": 0.45,
+        },
+    ]
+    best, note = select_f1_gap_cell(cells)
+    assert best["keep_threshold"] == pytest.approx(0.5)
+    assert "zero empty" in note
 
 
 def test_train_dumps_numpy_persists_meta(tmp_path) -> None:

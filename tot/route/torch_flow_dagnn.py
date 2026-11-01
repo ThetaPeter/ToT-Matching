@@ -6,7 +6,7 @@ Public scoring contract matches the numpy ``FlowDAGNN`` used by ToT priors:
 
 from __future__ import annotations
 
-from collections.abc import Mapping
+from collections.abc import Mapping, Sequence
 from typing import Any
 
 import numpy as np
@@ -15,6 +15,7 @@ from tot.ir.schema import ClaimDAG
 from tot.route.flow_dagnn import (
     KEEP_THRESHOLD,
     EXTRA_FEATURES,
+    _path_rank_terms,
     build_features,
     pos_weight_from_graphs,
     predecessor_map,
@@ -72,8 +73,9 @@ class TorchFlowDAGNN(nn.Module):
         self,
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> dict[str, torch.Tensor]:
-        feats = build_features(dag, embeddings)
+        feats = build_features(dag, embeddings, search_feats=search_feats)
         order = topological_ids(dag)
         succ = successor_map(dag)
         pred = predecessor_map(dag)
@@ -142,10 +144,11 @@ class TorchFlowDAGNN(nn.Module):
         self,
         dag: ClaimDAG,
         embeddings: Mapping[str, np.ndarray],
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
     ) -> dict[str, float]:
         self.eval()
         with torch.no_grad():
-            logits = self.forward_logits(dag, embeddings)
+            logits = self.forward_logits(dag, embeddings, search_feats=search_feats)
             return {
                 node_id: float(torch.sigmoid(logit))
                 for node_id, logit in logits.items()
@@ -165,8 +168,11 @@ class TorchFlowDAGNN(nn.Module):
         keep_ids: set[str],
         embeddings: Mapping[str, np.ndarray],
         pos_weight: float = 1.0,
+        pairs: Sequence[tuple[str, str]] | None = None,
+        search_feats: Mapping[str, tuple[float, float]] | None = None,
+        path_rank: tuple[Sequence[str], Sequence[Sequence[str]]] | None = None,
     ) -> torch.Tensor:
-        logits = self.forward_logits(dag, embeddings)
+        logits = self.forward_logits(dag, embeddings, search_feats=search_feats)
         weight = float(pos_weight)
         losses = []
         for node_id, logit in logits.items():
@@ -177,7 +183,26 @@ class TorchFlowDAGNN(nn.Module):
             if float(target) == 1.0 and weight != 1.0:
                 loss = loss * weight
             losses.append(loss)
-        return torch.stack(losses).mean()
+        bce = torch.stack(losses).mean()
+        rank_pairs = [
+            (pos, neg)
+            for pos, neg in (pairs or [])
+            if pos in logits and neg in logits and pos != neg
+        ]
+        extra = bce
+        if rank_pairs:
+            rank_terms = []
+            for pos, neg in rank_pairs:
+                score_pos = torch.sigmoid(logits[pos])
+                score_neg = torch.sigmoid(logits[neg])
+                rank_terms.append(nn.functional.softplus(score_neg - score_pos))
+            extra = extra + torch.stack(rank_terms).mean()
+        path_terms = _path_rank_terms(
+            logits, path_rank, torch.sigmoid, nn.functional.softplus
+        )
+        if path_terms:
+            extra = extra + torch.stack(path_terms).mean()
+        return extra
 
     def state_dict_numpy(self) -> dict[str, Any]:
         payload: dict[str, Any] = {
@@ -209,14 +234,19 @@ def train_torch_route_network(
     n_layers: int = 2,
     seed: int = 0,
     pos_weight: float | None = None,
+    sibling_pairs: Sequence[Sequence[tuple[str, str]]] | None = None,
+    search_feats: Sequence[Mapping[str, tuple[float, float]]] | None = None,
+    path_ranks: Sequence[tuple[Sequence[str], Sequence[Sequence[str]]] | None]
+    | None = None,
 ) -> TorchFlowDAGNN:
-    """SGD on node-wise pos-weighted BCE with GH keep-id labels."""
+    """SGD on node-wise pos-weighted BCE plus sibling ranking."""
     first_dag, _ = graphs[0]
     if isinstance(embeddings, list):
         first_emb = embeddings[0]
     else:
         first_emb = embeddings
-    feats = build_features(first_dag, first_emb)
+    first_search = search_feats[0] if search_feats else None
+    feats = build_features(first_dag, first_emb, search_feats=first_search)
     in_dim = next(iter(feats.values())).shape[0]
     if in_dim < EXTRA_FEATURES:
         raise ValueError("node features must include embedding dims plus extras")
@@ -231,7 +261,20 @@ def train_torch_route_network(
         losses = []
         for i, (dag, keep) in enumerate(graphs):
             emb = embeddings[i] if isinstance(embeddings, list) else embeddings
-            losses.append(model.node_loss(dag, keep, emb, pos_weight=pw))
+            pairs = sibling_pairs[i] if sibling_pairs is not None else None
+            feats_i = search_feats[i] if search_feats is not None else None
+            path_i = path_ranks[i] if path_ranks is not None else None
+            losses.append(
+                model.node_loss(
+                    dag,
+                    keep,
+                    emb,
+                    pos_weight=pw,
+                    pairs=pairs,
+                    search_feats=feats_i,
+                    path_rank=path_i,
+                )
+            )
         loss = torch.stack(losses).mean()
         loss.backward()
         optim.step()
